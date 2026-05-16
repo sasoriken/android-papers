@@ -104,21 +104,41 @@ jobs:
             --add-label "auto-merge-approved" \
             --repo "${{ github.repository }}"
 
-      - name: Sync data/ into site/data/
+      - name: Sync data/ into docs/data/
         if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
         run: |
-          mkdir -p site/data/papers
-          cp data/index.json site/data/
-          cp data/papers/*.json site/data/papers/ 2>/dev/null || true
+          mkdir -p docs/data/papers
+          cp data/index.json docs/data/
+          cp data/papers/*.json docs/data/papers/ 2>/dev/null || true
 
-      - name: Commit site/data/ sync to PR branch
+      - name: Build papers.js
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const indexPath = 'docs/data/index.json';
+          const papersDir = 'docs/data/papers';
+          if (!fs.existsSync(indexPath)) process.exit(0);
+          const index = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+          const papers = {};
+          if (fs.existsSync(papersDir)) {
+            fs.readdirSync(papersDir).filter(f => f.endsWith('.json')).forEach(f => {
+              papers[f] = JSON.parse(fs.readFileSync(path.join(papersDir, f), 'utf-8'));
+            });
+          }
+          const js = '// Auto-generated\nwindow.__ARCHIVE_DATA__ = ' + JSON.stringify({index, papers}) + ';\n';
+          fs.writeFileSync('docs/data/papers.js', js, 'utf-8');
+          "
+
+      - name: Commit docs/data/ sync to PR branch
         if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
         run: |
           git config user.name  "UNIT-Ω"
           git config user.email "unit-omega@noreply.github.com"
-          git add site/data/
+          git add docs/data/
           git diff --staged --quiet \
-            || git commit -m "chore: sync site/data/ [skip ci]"
+            || git commit -m "chore: sync docs/data/"
           git push origin HEAD:"${{ github.event.pull_request.head.ref }}"
 
       - name: Merge Jules PR
