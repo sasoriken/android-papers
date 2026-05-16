@@ -16,9 +16,8 @@
 name: Generate Architecture Paper
 
 on:
-  schedule:
-    # UTC 03:00 = JST 12:00 (正午)  ※ lesson #6: cron は UTC
-    - cron: '0 3 * * *'
+  # schedule 無効化: Jules (create-issue.yml) に一本化したため
+  # 手動実行は引き続き可能 (※ ANTHROPIC_API_KEY シークレット必要)
   workflow_dispatch:
     # lesson #7: main に merge 後でないとボタンが出ない
     inputs:
