@@ -1,24 +1,8 @@
-# ============================================================
-# UNIT-Ω 論文生成タスク 自動issue起票
-#
-# Jules へ渡す作業指示を GitHub issue として毎日起票する。
-# prompts/jules-issue-template.md をベースにパラメータを差し込む。
-#
-# 適用 lessons:
-#   #1  単一workflow完結（issue起票のみ・後続はJulesが別トリガー）
-#   #6  cron UTC換算 → UTC 02:00 = JST 11:00
-#   #10 FORCE_JAVASCRIPT_ACTIONS_TO_NODE24
-#   #11 ラベルを冪等に作成
-#   #15E 全設定をworkflow内で完結
-# ============================================================
-
 name: Create Paper Generation Issue for Jules
 
 on:
   schedule:
-    # UTC 02:00 = JST 11:00
-    # auto-merge後のデプロイ(JST12:00)に間に合う余裕を持たせる
-    - cron: '0 2 * * *'
+    - cron: '0 2 * * *'   # UTC 02:00 = JST 11:00
   workflow_dispatch:
     inputs:
       category:
@@ -56,13 +40,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      # lesson #11: ラベルを冪等に作成
       - name: Ensure labels exist
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh label create "jules"               --color "4285f4" --description "Jules向けタスク"           2>/dev/null || true
-          gh label create "ai-paper"            --color "a87fff" --description "AI生成論文タスク"          2>/dev/null || true
+          gh label create "jules"               --color "4285f4" --description "Jules向けタスク"          2>/dev/null || true
+          gh label create "ai-paper"            --color "a87fff" --description "AI生成論文タスク"         2>/dev/null || true
           gh label create "auto-merge-approved" --color "00cc44" --description "Jules PRの自動マージ承認" 2>/dev/null || true
 
       - name: Resolve parameters
@@ -75,105 +58,37 @@ jobs:
           )
           CAT="${{ github.event.inputs.category }}"
           LVL="${{ github.event.inputs.level }}"
-
           [ -z "$CAT" ] && CAT="${CATEGORIES[$RANDOM % ${#CATEGORIES[@]}]}"
-          [ -z "$LVL" ] && LVL=$(( (RANDOM % 3) + 2 ))   # 2〜4
+          [ -z "$LVL" ] && LVL=$(( (RANDOM % 3) + 2 ))
+          DATE="$(date -u +%Y-%m-%d)"
 
           echo "category=$CAT"                       >> "$GITHUB_OUTPUT"
           echo "level=$LVL"                          >> "$GITHUB_OUTPUT"
-          echo "date=$(date -u +%Y-%m-%d)"           >> "$GITHUB_OUTPUT"
-          echo "branch=jules/paper-$(date -u +%Y-%m-%d)-$CAT" >> "$GITHUB_OUTPUT"
+          echo "date=$DATE"                          >> "$GITHUB_OUTPUT"
+          echo "branch=jules/paper-${DATE}-${CAT}"  >> "$GITHUB_OUTPUT"
 
-      - name: Collect context (existing titles + graveyard)
-        id: context
+      # horse-analis と同じパターン:
+      # Pythonでテンプレートをレンダリングしてファイルに書き出す
+      # → --body-file で渡す → シェルの複数行エスケープ地獄を完全回避
+      - name: Render issue body
         run: |
-          # 既存論文タイトル (最大20件)
-          EXISTING=$(jq -r '.papers[].title' data/index.json 2>/dev/null \
-            | head -20 | sed 's/^/- /' || echo "（なし）")
-
-          # Graveyard 直近3件の失敗理由
-          REJECTED="（なし）"
-          if ls data/rejected/*.json 2>/dev/null | head -1 | grep -q .; then
-            REJECTED=$(for f in $(ls -t data/rejected/*.json | head -3); do
-              TITLE=$(jq -r '.title // "(無題)"' "$f" 2>/dev/null)
-              ERRORS=$(jq -r '._rejection.errors[]?' "$f" 2>/dev/null | sed 's/^/  - /')
-              echo "- \"$TITLE\":"
-              echo "$ERRORS"
-            done)
-          fi
-
-          # 複数行をGITHUB_OUTPUTに渡すためのヒアドキュメント構文
-          {
-            echo "existing_titles<<__EOF__"
-            echo "$EXISTING"
-            echo "__EOF__"
-          } >> "$GITHUB_OUTPUT"
-
-          {
-            echo "rejected_info<<__EOF__"
-            echo "$REJECTED"
-            echo "__EOF__"
-          } >> "$GITHUB_OUTPUT"
-
-      - name: Build issue body from template
-        id: body
-        run: |
-          CAT="${{ steps.params.outputs.category }}"
-          LVL="${{ steps.params.outputs.level }}"
-          DATE="${{ steps.params.outputs.date }}"
-          BRANCH="${{ steps.params.outputs.branch }}"
-          EXISTING="${{ steps.context.outputs.existing_titles }}"
-          REJECTED="${{ steps.context.outputs.rejected_info }}"
-
-          # テンプレートを読み込んでパラメータを差し込む
-          BODY=$(sed \
-            -e "s|{{CATEGORY}}|$CAT|g" \
-            -e "s|{{LEVEL}}|$LVL|g"   \
-            -e "s|{{DATE}}|$DATE|g"   \
-            prompts/jules-issue-template.md)
-
-          # 既存タイトル・失敗事例を差し込む
-          # (テンプレート末尾に追記するセクションとして付与)
-          BODY="$BODY
-
----
-
-## 既存論文タイトル一覧（テーマ重複禁止）
-
-$EXISTING
-
----
-
-## Graveyard: 過去のバリデーション失敗事例（同じ失敗禁止）
-
-$REJECTED
-
----
-
-## ブランチ名（必ずこの名前を使うこと）
-
-\`$BRANCH\`
-"
-          # GITHUB_OUTPUTに複数行を渡す
-          {
-            echo "content<<__EOF__"
-            echo "$BODY"
-            echo "__EOF__"
-          } >> "$GITHUB_OUTPUT"
+          python scripts/render_issue.py \
+            --template  prompts/jules-issue-template.md \
+            --index     data/index.json \
+            --rejected  data/rejected \
+            --category  "${{ steps.params.outputs.category }}" \
+            --level     "${{ steps.params.outputs.level }}" \
+            --date      "${{ steps.params.outputs.date }}" \
+            --branch    "${{ steps.params.outputs.branch }}" \
+            --output    issue_body.md
 
       - name: Create Jules issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          CAT="${{ steps.params.outputs.category }}"
-          DATE="${{ steps.params.outputs.date }}"
-          LVL="${{ steps.params.outputs.level }}"
-
           gh issue create \
-            --title "📄 [UNIT-Ω] $DATE: $CAT カテゴリの論文生成（見下し度 $LVL）" \
-            --body "${{ steps.body.outputs.content }}" \
+            --title "📄 [UNIT-Ω] ${{ steps.params.outputs.date }}: ${{ steps.params.outputs.category }} カテゴリの論文生成（見下し度 ${{ steps.params.outputs.level }}）" \
+            --body-file issue_body.md \
             --label "jules,ai-paper" \
             --repo "${{ github.repository }}"
-
-          echo "✅ Issue created for Jules"
-          echo "   Category: $CAT / Level: $LVL / Date: $DATE"
+          echo "✅ Issue created"
