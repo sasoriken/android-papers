@@ -1,4 +1,4 @@
-name: Validate and Auto-merge Jules PR → Deploy
+name: Validate and Auto-merge Jules PR
 
 on:
   pull_request:
@@ -20,11 +20,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Check PR author is Jules
@@ -136,28 +131,6 @@ jobs:
             || gh pr merge "$PR_NUM" --merge --auto --delete-branch --repo "$REPO"
           echo "✅ PR #$PR_NUM merged"
 
-      - name: Checkout main after merge
-        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 1
-
-      - name: Setup GitHub Pages
-        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
-        uses: actions/configure-pages@v4
-
-      - name: Upload Pages artifact
-        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-      - name: Deploy to GitHub Pages
-        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
-        id: deployment
-        uses: actions/deploy-pages@v4
-
       - name: Summary
         if: steps.check.outputs.is_jules == 'true'
         run: |
@@ -165,9 +138,8 @@ jobs:
           echo "- PR: #${{ github.event.pull_request.number }}" >> "$GITHUB_STEP_SUMMARY"
           if [ "${{ steps.validate.outputs.valid }}" = "true" ]; then
             echo "- バリデーション: ✅ 通過" >> "$GITHUB_STEP_SUMMARY"
-            echo "- 公開URL: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
-            TOTAL=$(jq '.papers | length' data/index.json 2>/dev/null || echo '?')
-            echo "- アーカイブ総論文数: **${TOTAL}**" >> "$GITHUB_STEP_SUMMARY"
+            echo "- マージ: ✅ 完了" >> "$GITHUB_STEP_SUMMARY"
+            echo "- デプロイ: push to main → deploy-pages.yml で自動実行" >> "$GITHUB_STEP_SUMMARY"
           else
             echo "- バリデーション: ❌ 失敗" >> "$GITHUB_STEP_SUMMARY"
           fi
