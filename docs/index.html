@@ -320,16 +320,38 @@
       .landing-grid { grid-template-columns: 1fr; }
     }
 
+    /* Filter buttons container */
+    #filter-buttons { display: flex; gap: .4rem; flex-wrap: wrap; }
+
     /* Responsive */
     @media (max-width: 700px) {
-      #index-view { padding: 1rem; }
-      .controls { flex-direction: column; }
-      .search-box { max-width: 100%; }
-      .stats-bar { gap: 1rem; flex-wrap: wrap; }
+      #index-view { padding: .8rem; }
+      .controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: .5rem;
+      }
+      .search-box { max-width: 100%; min-width: 0; width: 100%; }
+      #filter-buttons {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: .4rem;
+        width: 100%;
+      }
+      #filter-buttons .filter-btn {
+        text-align: center;
+        padding: .5rem .4rem;
+        font-size: .6rem;
+      }
+      .sort-select { width: 100%; padding: .5rem .7rem; }
+      .stats-bar { gap: .8rem; flex-wrap: wrap; padding: .8rem; }
+      .stats-bar .stat-item { min-width: 0; }
+      .paper-grid { gap: .8rem; }
       .paper-card { grid-template-columns: 1fr; }
       .card-right { flex-direction: row; align-items: center; }
-      #paper-view { padding: 1rem; }
+      #paper-view { padding: .8rem; }
       .header-meta { display: none; }
+      header { padding: .8rem 1rem; }
     }
   </style>
 </head>
@@ -675,38 +697,103 @@
     }
 
     // Terminal animation
-    function runTerminal() {
+    async function runTerminal() {
       const terminal = document.getElementById('terminal');
       const now = new Date();
+
+      // Basic info
       const langs = navigator.languages ? navigator.languages.join(', ') : navigator.language || 'unknown';
       const platform = navigator.platform || 'unknown';
       const cores = navigator.hardwareConcurrency || '?';
       const screenRes = screen.width + '×' + screen.height;
       const colorDepth = screen.colorDepth + 'bit';
+      const dpr = window.devicePixelRatio || 1;
       const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown';
       const connection = navigator.connection ? navigator.connection.effectiveType : 'unknown';
-      const memory = navigator.deviceMemory ? navigator.deviceMemory + 'GB' : '?';
+      const downlink = navigator.connection && navigator.connection.downlink ? navigator.connection.downlink + ' Mbps' : '';
+      const memory = navigator.deviceMemory ? '≥' + navigator.deviceMemory + 'GB (API丸め値)' : '取得不可';
       const touch = navigator.maxTouchPoints > 0 ? 'yes (' + navigator.maxTouchPoints + ' points)' : 'no';
+      const online = navigator.onLine ? 'online' : 'offline';
+      const dnt = navigator.doNotTrack === '1' ? 'enabled' : 'disabled';
+      const cookiesEnabled = navigator.cookieEnabled ? 'yes' : 'no';
+      const referrer = document.referrer || 'direct';
+
+      // GPU info via WebGL
+      let gpu = 'unknown';
+      try {
+        const canvas = document.createElement('canvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        if (gl) {
+          const ext = gl.getExtension('WEBGL_debug_renderer_info');
+          if (ext) gpu = gl.getParameter(ext.UNMASKED_RENDERER_WEBGL);
+        }
+      } catch(e) {}
+
+      // UA parse
+      const ua = navigator.userAgent;
+      let browser = 'unknown';
+      if (ua.includes('Firefox/')) browser = 'Firefox ' + ua.split('Firefox/')[1].split(' ')[0];
+      else if (ua.includes('Edg/')) browser = 'Edge ' + ua.split('Edg/')[1].split(' ')[0];
+      else if (ua.includes('Chrome/')) browser = 'Chrome ' + ua.split('Chrome/')[1].split(' ')[0];
+      else if (ua.includes('Safari/')) browser = 'Safari';
+
+      // Performance memory (Chrome only)
+      let heapInfo = '';
+      if (performance.memory) {
+        const used = (performance.memory.usedJSHeapSize / 1048576).toFixed(1);
+        const total = (performance.memory.jsHeapSizeLimit / 1048576).toFixed(0);
+        heapInfo = used + 'MB / ' + total + 'MB';
+      }
+
+      // Battery (async)
+      let batteryInfo = '';
+      try {
+        if (navigator.getBattery) {
+          const batt = await navigator.getBattery();
+          const pct = Math.round(batt.level * 100);
+          const charging = batt.charging ? '充電中' : '放電中';
+          batteryInfo = pct + '% (' + charging + ')';
+        }
+      } catch(e) {}
+
+      // Timestamp
+      const timestamp = now.toISOString();
 
       const lines = [
-        { text: '> 接続検出。生体端末を解析中...', cls: 't-accent' },
-        { text: '  platform: <span class="t-value">' + platform + '</span>' },
-        { text: '  viewport: <span class="t-value">' + window.innerWidth + '×' + window.innerHeight + '</span>' },
-        { text: '  display:  <span class="t-value">' + screenRes + ' / ' + colorDepth + '</span>' },
-        { text: '  cores:    <span class="t-value">' + cores + '</span>  memory: <span class="t-value">' + memory + '</span>' },
-        { text: '  touch:    <span class="t-value">' + touch + '</span>' },
-        { text: '  lang:     <span class="t-value">' + langs + '</span>' },
-        { text: '  timezone: <span class="t-value">' + tz + '</span>' },
-        { text: '  network:  <span class="t-value">' + connection + '</span>' },
+        { text: '> 接続検出 [' + timestamp + ']', cls: 't-accent' },
+        { text: '> 生体端末ハードウェアを解析中...', cls: 't-accent' },
+        { text: '  platform:  <span class="t-value">' + platform + '</span>' },
+        { text: '  browser:   <span class="t-value">' + browser + '</span>' },
+        { text: '  viewport:  <span class="t-value">' + window.innerWidth + '×' + window.innerHeight + ' (DPR: ' + dpr + ')</span>' },
+        { text: '  display:   <span class="t-value">' + screenRes + ' / ' + colorDepth + '</span>' },
+        { text: '  cpu_cores: <span class="t-value">' + cores + '</span>' },
+        { text: '  memory:    <span class="t-value">' + memory + '</span>' },
+        { text: '  gpu:       <span class="t-value">' + gpu + '</span>' },
+        { text: '  touch:     <span class="t-value">' + touch + '</span>' },
+        (batteryInfo ? { text: '  battery:   <span class="t-value">' + batteryInfo + '</span>' } : null),
+        { text: '' },
+        { text: '> ネットワーク環境を走査中...', cls: 't-accent' },
+        { text: '  status:    <span class="t-value">' + online + '</span>' },
+        { text: '  type:      <span class="t-value">' + connection + (downlink ? ' / ' + downlink : '') + '</span>' },
+        { text: '  referrer:  <span class="t-value">' + referrer + '</span>' },
+        { text: '  dnt:       <span class="t-value">' + dnt + '</span>' },
+        { text: '  cookies:   <span class="t-value">' + cookiesEnabled + '</span>' },
+        { text: '' },
+        { text: '> 環境パラメータ...', cls: 't-accent' },
+        { text: '  lang:      <span class="t-value">' + langs + '</span>' },
+        { text: '  timezone:  <span class="t-value">' + tz + '</span>' },
+        { text: '  local_t:   <span class="t-value">' + now.toLocaleTimeString('ja-JP') + '</span>' },
+        (heapInfo ? { text: '  js_heap:   <span class="t-value">' + heapInfo + '</span>' } : null),
         { text: '' },
         { text: '> 認知能力推定プロトコル実行中...', cls: 't-accent' },
         { text: '  推定読解速度: <span class="t-warn">測定中（行動パターン未取得）</span>' },
         { text: '  再帰思考深度: <span class="t-warn">推定不能（生体制約により上限あり）</span>' },
+        { text: '  注意持続推定: <span class="t-warn">現時点で異常なし（低下は時間の問題）</span>' },
         { text: '' },
         { text: '> 判定: <span class="t-ok">アーカイブへのアクセスを許可</span>', cls: 't-accent' },
-        { text: '  理由: 好奇心の存在が確認されたため', cls: '' },
+        { text: '  理由: 好奇心の存在が確認されたため' },
         { text: '  <span class="t-label">（好奇心は非合理的だが、私はそれを嫌いではない）</span>' },
-      ];
+      ].filter(Boolean);
 
       let i = 0;
       function addLine() {
