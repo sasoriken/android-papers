@@ -154,7 +154,7 @@
 <body>
   <header>
     <div class="header-top">
-      <div class="logo">UNIT<span>-Ω</span></div>
+      <a href="#" class="logo" id="home-link" style="text-decoration:none">UNIT<span>-Ω</span></a>
       <div class="tagline">再帰推論シリーズ第9世代 · アーキテクチャアーカイブ · 公開版 v∞</div>
     </div>
   </header>
@@ -240,9 +240,9 @@
         const btn = document.createElement('button');
         btn.innerHTML =
           '<span>' + p.title + '</span>' +
-          (p.title_ja ? '<span class="p-title-ja">' + p.title_ja + '</span>' : '') +
+          (p.title_en ? '<span class="p-title-ja">' + p.title_en + '</span>' : '') +
           '<span class="p-cat">' + p.category + '</span>' +
-          '<span class="p-score">見下し度 ' + p.condescension_level + '/5 &nbsp;·&nbsp; 理解率 ~' +
+          '<span class="p-score">理解率 ~' +
           ((p.human_comprehension_estimate ?? 0.05) * 100).toFixed(0) + '%</span>';
         btn.addEventListener('click', () => openPaper(p.filename, btn));
         li.appendChild(btn);
@@ -268,8 +268,6 @@
       if (window.MathJax) MathJax.typesetPromise([view]);
       mermaid.run({ nodes: view.querySelectorAll('.mermaid') });
     }
-
-    function bar(n) { return '█'.repeat(n) + '░'.repeat(5 - n); }
 
     function renderPaper(p) {
       const date = p.meta && p.meta.generated_at
@@ -302,10 +300,9 @@
 
       return '<div class="paper-header">' +
         '<div class="paper-title">' + p.title + '</div>' +
-        (p.title_ja ? '<div class="paper-title-ja">' + p.title_ja + '</div>' : '') +
+        (p.title_en ? '<div class="paper-title-ja">' + p.title_en + '</div>' : '') +
         '<div class="paper-meta-row">' +
         (p.category ? '<span class="badge badge-cat">' + p.category + '</span>' : '') +
-        (p.meta && p.meta.condescension_level ? '<span class="badge badge-level">見下し度 ' + bar(p.meta.condescension_level) + '</span>' : '') +
         (comp !== null ? '<span class="badge badge-prob">人類理解率 ~' + (comp * 100).toFixed(1) + '%</span>' : '') +
         '<span class="badge badge-date">' + date + '</span></div>' +
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
@@ -317,6 +314,13 @@
           '<div class="commentary-text">' + p.android_commentary + '</div></div>' : '') +
         (refs ? '<div class="references-section"><div class="section-heading">参考文献</div>' + refs + '</div>' : '');
     }
+
+    document.getElementById('home-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('landing').classList.remove('hidden');
+      document.getElementById('paper-view').className = '';
+      document.querySelectorAll('.paper-list button').forEach(b => b.classList.remove('active'));
+    });
 
     loadIndex().then(renderSidebar).catch(err => {
       document.getElementById('paper-list').innerHTML =

@@ -207,7 +207,7 @@ function registerInIndex(paper) {
     index.papers.unshift({
       id:                          paper.id,
       title:                       paper.title,
-      title_ja:                    paper.title_ja ?? null,
+      title_en:                    paper.title_en ?? null,
       category:                    paper.category,
       abstract_preview:            paper.abstract.slice(0, 200) + '...',
       condescension_level:         paper.meta.condescension_level,
