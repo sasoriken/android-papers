@@ -21,6 +21,34 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Sync data/ into site/data/
+        run: |
+          mkdir -p site/data/papers
+          if [ -f data/index.json ]; then
+            cp data/index.json site/data/
+          fi
+          cp data/papers/*.json site/data/papers/ 2>/dev/null || true
+
+      - name: Build papers.js (inline data for file:// fallback)
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const indexPath = 'site/data/index.json';
+          const papersDir = 'site/data/papers';
+          if (!fs.existsSync(indexPath)) process.exit(0);
+          const index = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+          const papers = {};
+          if (fs.existsSync(papersDir)) {
+            fs.readdirSync(papersDir).filter(f => f.endsWith('.json')).forEach(f => {
+              papers[f] = JSON.parse(fs.readFileSync(path.join(papersDir, f), 'utf-8'));
+            });
+          }
+          const js = '// Auto-generated — do not edit manually\nwindow.__ARCHIVE_DATA__ = ' + JSON.stringify({index, papers}) + ';\n';
+          fs.writeFileSync('site/data/papers.js', js, 'utf-8');
+          console.log('Built papers.js with ' + Object.keys(papers).length + ' papers');
+          "
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 

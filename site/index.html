@@ -199,16 +199,33 @@
     </main>
   </div>
 
+  <script src="data/papers.js"></script>
   <script>
     mermaid.initialize({ theme: 'dark', startOnLoad: false });
 
     async function loadIndex() {
-      const r = await fetch('./data/index.json');
-      return r.json();
+      try {
+        const r = await fetch('./data/index.json');
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      } catch (e) {
+        // Fallback for file:// protocol or fetch failure
+        if (window.__ARCHIVE_DATA__) return window.__ARCHIVE_DATA__.index;
+        throw e;
+      }
     }
     async function loadPaper(filename) {
-      const r = await fetch('./data/papers/' + filename);
-      return r.json();
+      try {
+        const r = await fetch('./data/papers/' + filename);
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      } catch (e) {
+        // Fallback for file:// protocol or fetch failure
+        if (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[filename]) {
+          return window.__ARCHIVE_DATA__.papers[filename];
+        }
+        throw e;
+      }
     }
 
     function renderSidebar(index) {
