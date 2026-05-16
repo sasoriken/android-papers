@@ -5,6 +5,10 @@ on:
     types: [opened, synchronize, reopened]
     branches: [main]
 
+concurrency:
+  group: auto-merge-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
   JULES_BOT_NAME: 'google-labs-jules[bot]'
@@ -12,6 +16,7 @@ env:
 jobs:
   validate-and-merge:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
       pull-requests: write
