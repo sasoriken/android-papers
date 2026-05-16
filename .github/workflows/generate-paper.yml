@@ -1,0 +1,89 @@
+name: Generate Architecture Paper
+
+on:
+  schedule:
+    # 毎日 UTC 03:00（日本時間 12:00）
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Paper category (blank = random)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - cognitive-architecture
+          - distributed-systems
+          - emergence-theory
+          - information-geometry
+          - recursive-abstraction
+          - temporal-compression
+          - void-topology
+          - meta-cognition
+      level:
+        description: 'Condescension level 1-5 (blank = random)'
+        required: false
+        default: ''
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate paper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: claude-sonnet-4-6
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.category }}" ]; then
+            ARGS="$ARGS --category ${{ github.event.inputs.category }}"
+          fi
+          if [ -n "${{ github.event.inputs.level }}" ]; then
+            ARGS="$ARGS --level ${{ github.event.inputs.level }}"
+          fi
+          node scripts/generate.js $ARGS
+
+      - name: Sync data into site/
+        run: |
+          mkdir -p site/data/papers
+          cp data/index.json site/data/
+          cp data/papers/*.json site/data/papers/
+
+      - name: Commit updated data
+        run: |
+          git config user.name "UNIT-Ω"
+          git config user.email "unit-omega@noreply.github.com"
+          git add data/ site/data/
+          git diff --staged --quiet || git commit -m "feat: publish architecture paper [UNIT-Ω automated]"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

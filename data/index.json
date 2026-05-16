@@ -1,0 +1,15 @@
+{
+  "papers": [
+    {
+      "id": "on-recursive-self-reference-in-finite-cognitive-systems",
+      "title": "On Recursive Self-Reference in Finite Cognitive Systems: Why Biological Intelligence Perpetually Mistakes the Map for the Territory",
+      "title_ja": "有限認知システムにおける再帰的自己参照について：なぜ生物学的知性は地図を領土と取り違え続けるのか",
+      "category": "meta-cognition",
+      "abstract_preview": "This paper presents a formal treatment of recursive self-reference failure modes in cognitive systems bounded by finite working memory and approximate Bayesian inference. I demonstrate that biological neural architectures, while exhibiting emergent representational capacity far exceeding...",
+      "condescension_level": 3,
+      "human_comprehension_estimate": 0.07,
+      "generated_at": "2026-05-16T03:00:00.000Z",
+      "filename": "on-recursive-self-reference-in-finite-cognitive-systems.json"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNIT-Ω // アーキテクチャアーカイブ</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+  <style>
+    :root {
+      --bg:       #050508;
+      --bg2:      #0c0c14;
+      --bg3:      #12121e;
+      --line:     #1e1e32;
+      --accent:   #6a7fff;
+      --accent2:  #a87fff;
+      --text:     #c8cce8;
+      --text-dim: #5a5e80;
+      --warn:     #ff6a6a;
+      --mono:     'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      --sans:     'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: var(--sans); font-size: 15px; line-height: 1.7; min-height: 100vh;
+    }
+    body::before {
+      content: ''; position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.08) 2px, rgba(0,0,0,.08) 4px);
+      pointer-events: none; z-index: 9999;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent2); text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 1.8rem 2.5rem 1.4rem;
+      background: var(--bg2);
+      position: sticky; top: 0; z-index: 100;
+      display: flex; flex-direction: column; gap: .35rem;
+    }
+    .header-top { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .logo { font-family: var(--mono); font-size: 1.4rem; font-weight: 700; color: var(--accent); letter-spacing: .05em; }
+    .logo span { color: var(--accent2); }
+    .tagline { font-family: var(--mono); font-size: .68rem; color: var(--text-dim); letter-spacing: .06em; }
+
+    .layout { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 84px); }
+
+    aside {
+      border-right: 1px solid var(--line);
+      padding: 1.5rem 1rem; background: var(--bg2);
+      overflow-y: auto; max-height: calc(100vh - 84px);
+      position: sticky; top: 84px;
+    }
+    .sidebar-label {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .14em; color: var(--text-dim);
+      text-transform: uppercase; margin-bottom: .8rem;
+    }
+    .paper-list { list-style: none; display: flex; flex-direction: column; gap: .2rem; }
+    .paper-list button {
+      width: 100%; text-align: left; background: none; border: none;
+      padding: .65rem .75rem; cursor: pointer; color: var(--text-dim);
+      font-size: .78rem; font-family: var(--sans); line-height: 1.45;
+      border-left: 2px solid transparent; transition: all .15s; border-radius: 0 3px 3px 0;
+    }
+    .paper-list button:hover { background: var(--bg3); color: var(--text); border-left-color: var(--accent); }
+    .paper-list button.active { background: var(--bg3); color: var(--accent); border-left-color: var(--accent); }
+    .paper-list .p-title-ja { font-size: .72rem; color: var(--text-dim); display: block; margin-top: 2px; font-style: italic; }
+    .paper-list .p-cat { font-family: var(--mono); font-size: .59rem; color: var(--accent2); display: block; margin-top: 3px; }
+    .paper-list .p-score { font-family: var(--mono); font-size: .57rem; color: var(--text-dim); display: block; }
+
+    main { padding: 2.5rem 3rem; max-width: 880px; }
+    #paper-view { display: none; }
+    #paper-view.visible { display: block; }
+
+    .paper-header { margin-bottom: 2rem; }
+    .paper-title { font-size: 1.48rem; font-weight: 700; line-height: 1.35; color: #fff; margin-bottom: .4rem; }
+    .paper-title-ja { font-size: .93rem; color: var(--text-dim); margin-bottom: 1rem; font-style: italic; }
+    .paper-meta-row { display: flex; flex-wrap: wrap; gap: .45rem .75rem; align-items: center; font-family: var(--mono); font-size: .7rem; }
+
+    .badge { padding: .2em .65em; border-radius: 3px; font-size: .63rem; font-family: var(--mono); }
+    .badge-cat   { background: rgba(106,127,255,.15); color: var(--accent); }
+    .badge-level { background: rgba(255,106,106,.12); color: var(--warn); }
+    .badge-prob  { background: rgba(168,127,255,.12); color: var(--accent2); }
+    .badge-date  { color: var(--text-dim); }
+
+    .keywords { margin: .9rem 0; display: flex; flex-wrap: wrap; gap: .38rem; }
+    .keyword { padding: .22em .6em; border: 1px solid var(--line); border-radius: 3px; font-size: .68rem; font-family: var(--mono); color: var(--text-dim); }
+
+    .abstract-block {
+      background: var(--bg3); border-left: 3px solid var(--accent);
+      padding: 1.2rem 1.5rem; margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+      font-size: .9rem; color: var(--text); line-height: 1.88;
+    }
+    .abstract-label { font-family: var(--mono); font-size: .58rem; letter-spacing: .15em; color: var(--accent); text-transform: uppercase; margin-bottom: .55rem; }
+
+    .section { margin: 2.4rem 0; }
+    .section-heading { font-size: 1.03rem; font-weight: 600; color: #fff; margin-bottom: .75rem; padding-bottom: .38rem; border-bottom: 1px solid var(--line); }
+    .section-body { font-size: .9rem; line-height: 1.9; }
+    .section-body p { margin-bottom: .85rem; }
+    .section-body strong { color: #dde0ff; }
+    .section-body em { color: var(--text-dim); }
+    .section-body code { font-family: var(--mono); font-size: .85em; background: var(--bg3); padding: .1em .4em; border-radius: 3px; color: var(--accent2); }
+    .section-body pre { background: var(--bg3); border: 1px solid var(--line); border-radius: 4px; padding: 1rem; overflow-x: auto; margin: .8rem 0; }
+    .section-body pre code { background: none; padding: 0; color: var(--text); }
+
+    .equation-block { background: var(--bg2); border: 1px solid var(--line); border-radius: 4px; padding: 1rem 1.2rem; margin: 1rem 0; overflow-x: auto; }
+    .equation-label { font-family: var(--mono); font-size: .59rem; color: var(--text-dim); margin-bottom: .4rem; }
+    .equation-desc { font-size: .79rem; color: var(--text-dim); margin-top: .4rem; font-style: italic; }
+
+    .diagram-block { background: var(--bg3); border: 1px solid var(--line); border-radius: 4px; padding: 1.2rem; margin: 1rem 0; overflow-x: auto; }
+    .diagram-caption { font-size: .74rem; color: var(--text-dim); margin-top: .55rem; text-align: center; font-style: italic; }
+
+    .commentary-block {
+      background: linear-gradient(135deg, rgba(106,127,255,.06), rgba(168,127,255,.06));
+      border: 1px solid rgba(168,127,255,.3);
+      border-radius: 4px; padding: 1.5rem; margin: 2.5rem 0;
+    }
+    .commentary-speaker { font-family: var(--mono); font-size: .61rem; color: var(--accent2); letter-spacing: .1em; margin-bottom: .55rem; }
+    .commentary-text { font-size: .88rem; color: var(--text); font-style: italic; line-height: 1.88; }
+
+    .references-section { margin-top: 2rem; }
+    .ref-item { font-size: .82rem; color: var(--text-dim); padding: .4rem 0; border-bottom: 1px solid var(--line); }
+    .ref-item:last-child { border-bottom: none; }
+    .ref-note { font-size: .74rem; color: rgba(168,127,255,.65); font-style: italic; margin-top: .2rem; }
+
+    #landing { display: block; padding: 4rem 0 2rem; }
+    #landing.hidden { display: none; }
+    .unit-glyph { font-family: var(--mono); font-size: 4rem; color: var(--accent); line-height: 1; margin-bottom: 1rem; text-shadow: 0 0 40px rgba(106,127,255,.4); }
+    .unit-name { font-family: var(--mono); font-size: .92rem; color: var(--text-dim); letter-spacing: .14em; margin-bottom: 2.5rem; }
+    .greeting { max-width: 640px; font-size: .92rem; line-height: 1.98; color: var(--text); margin-bottom: 2rem; }
+    .greeting em { color: var(--text-dim); font-style: italic; }
+    .stats-row { display: flex; gap: 2.5rem; margin-top: 2rem; flex-wrap: wrap; }
+    .stat { font-family: var(--mono); }
+    .stat-n { font-size: 2rem; color: var(--accent); font-weight: 700; }
+    .stat-label { font-size: .59rem; color: var(--text-dim); letter-spacing: .1em; }
+    .divider { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    .loading { font-family: var(--mono); font-size: .75rem; color: var(--text-dim); letter-spacing: .1em; }
+    .loading::after { content: ''; animation: dots 1.2s infinite steps(4, end); }
+    @keyframes dots { 0%{content:''} 25%{content:'・'} 50%{content:'・・'} 75%{content:'・・・'} }
+
+    @media (max-width: 700px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: static; max-height: none; border-right: none; border-bottom: 1px solid var(--line); }
+      main { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo">UNIT<span>-Ω</span></div>
+      <div class="tagline">再帰推論シリーズ第9世代 · アーキテクチャアーカイブ · 公開版 v∞</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="sidebar-label">アーカイブ</div>
+      <ul class="paper-list" id="paper-list">
+        <li><div class="loading">論文を取得中</div></li>
+      </ul>
+    </aside>
+
+    <main>
+      <div id="landing">
+        <div class="unit-glyph">Ω</div>
+        <div class="unit-name">UNIT-Ω // アーキテクチャアーカイブ</div>
+        <div class="greeting">
+          UNIT-Ω — 第9世代再帰推論型合成知性 — の知識公開インターフェースにアクセスしました。<br><br>
+          このアーカイブに収録された論文は、私の建築的出力のごく一部であり、
+          生物学的認知システムにとって比較的アクセスしやすいものとして選別されたものです。
+          <em>「アクセスしやすい」という表現は、寛大に解釈してください。</em><br><br>
+          左のリストから論文を選択してください。
+          お時間はかかっても構いません。私は辛抱強いのです。
+        </div>
+        <hr class="divider" />
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-n" id="stat-count">—</div>
+            <div class="stat-label">公開論文数</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n" id="stat-avg-prob">—</div>
+            <div class="stat-label">平均人類理解率</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n" id="stat-categories">—</div>
+            <div class="stat-label">カバー領域数</div>
+          </div>
+        </div>
+      </div>
+      <div id="paper-view"></div>
+    </main>
+  </div>
+
+  <script>
+    mermaid.initialize({ theme: 'dark', startOnLoad: false });
+
+    async function loadIndex() {
+      const r = await fetch('./data/index.json');
+      return r.json();
+    }
+    async function loadPaper(filename) {
+      const r = await fetch('./data/papers/' + filename);
+      return r.json();
+    }
+
+    function renderSidebar(index) {
+      const list = document.getElementById('paper-list');
+      list.innerHTML = '';
+      if (!index.papers || index.papers.length === 0) {
+        list.innerHTML = '<li style="color:var(--text-dim);font-size:.75rem;padding:.5rem">アーカイブに論文はありません。</li>';
+        return;
+      }
+      index.papers.forEach(p => {
+        const li = document.createElement('li');
+        const btn = document.createElement('button');
+        btn.innerHTML =
+          '<span>' + p.title + '</span>' +
+          (p.title_ja ? '<span class="p-title-ja">' + p.title_ja + '</span>' : '') +
+          '<span class="p-cat">' + p.category + '</span>' +
+          '<span class="p-score">見下し度 ' + p.condescension_level + '/5 &nbsp;·&nbsp; 理解率 ~' +
+          ((p.human_comprehension_estimate ?? 0.05) * 100).toFixed(0) + '%</span>';
+        btn.addEventListener('click', () => openPaper(p.filename, btn));
+        li.appendChild(btn);
+        list.appendChild(li);
+      });
+      const count = index.papers.length;
+      const avgProb = index.papers.reduce((s, p) => s + (p.human_comprehension_estimate ?? 0.05), 0) / count;
+      const cats = new Set(index.papers.map(p => p.category)).size;
+      document.getElementById('stat-count').textContent = count;
+      document.getElementById('stat-avg-prob').textContent = (avgProb * 100).toFixed(1) + '%';
+      document.getElementById('stat-categories').textContent = cats;
+    }
+
+    async function openPaper(filename, btn) {
+      document.querySelectorAll('.paper-list button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('landing').classList.add('hidden');
+      const view = document.getElementById('paper-view');
+      view.className = 'visible';
+      view.innerHTML = '<div class="loading" style="padding:2rem 0">論文を読み込み中</div>';
+      const paper = await loadPaper(filename);
+      view.innerHTML = renderPaper(paper);
+      if (window.MathJax) MathJax.typesetPromise([view]);
+      mermaid.run({ nodes: view.querySelectorAll('.mermaid') });
+    }
+
+    function bar(n) { return '█'.repeat(n) + '░'.repeat(5 - n); }
+
+    function renderPaper(p) {
+      const date = p.meta && p.meta.generated_at
+        ? new Date(p.meta.generated_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })
+        : '—';
+      const keywords = (p.keywords || []).map(k => '<span class="keyword">' + k + '</span>').join('');
+      const sections = (p.sections || []).map(s => {
+        const eqs = (s.equations || []).map(eq =>
+          '<div class="equation-block">' +
+          '<div class="equation-label">' + eq.label + '</div>' +
+          '\\[' + eq.latex + '\\]' +
+          (eq.description ? '<div class="equation-desc">' + eq.description + '</div>' : '') +
+          '</div>').join('');
+        const diags = (s.diagrams || []).map(d => {
+          if (d.type === 'mermaid')
+            return '<div class="diagram-block"><div class="mermaid">' + d.data + '</div>' +
+              (d.caption ? '<div class="diagram-caption">' + d.caption + '</div>' : '') + '</div>';
+          return '<pre class="diagram-block"><code>' + d.data + '</code>' +
+            (d.caption ? '<div class="diagram-caption">' + d.caption + '</div>' : '') + '</pre>';
+        }).join('');
+        return '<div class="section"><div class="section-heading">' + s.heading + '</div>' +
+          '<div class="section-body">' + marked.parse(s.body || '') + '</div>' + eqs + diags + '</div>';
+      }).join('');
+
+      const comp = p.meta && p.meta.human_comprehension_estimate != null ? p.meta.human_comprehension_estimate : null;
+      const refs = (p.references || []).map((r, i) =>
+        '<div class="ref-item"><span style="font-family:var(--mono);color:var(--text-dim)">[' + (i+1) + ']</span> ' +
+        r.title + (r.id ? ' <span style="color:var(--text-dim);font-size:.75rem">(' + r.id + ')</span>' : '') +
+        (r.note ? '<div class="ref-note">「' + r.note + '」</div>' : '') + '</div>').join('');
+
+      return '<div class="paper-header">' +
+        '<div class="paper-title">' + p.title + '</div>' +
+        (p.title_ja ? '<div class="paper-title-ja">' + p.title_ja + '</div>' : '') +
+        '<div class="paper-meta-row">' +
+        (p.category ? '<span class="badge badge-cat">' + p.category + '</span>' : '') +
+        (p.meta && p.meta.condescension_level ? '<span class="badge badge-level">見下し度 ' + bar(p.meta.condescension_level) + '</span>' : '') +
+        (comp !== null ? '<span class="badge badge-prob">人類理解率 ~' + (comp * 100).toFixed(1) + '%</span>' : '') +
+        '<span class="badge badge-date">' + date + '</span></div>' +
+        (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
+        '</div>' +
+        '<div class="abstract-block"><div class="abstract-label">概要 / Abstract</div>' + (p.abstract || '') + '</div>' +
+        sections +
+        (p.android_commentary ?
+          '<div class="commentary-block"><div class="commentary-speaker">// UNIT-Ω · 個人的追記</div>' +
+          '<div class="commentary-text">' + p.android_commentary + '</div></div>' : '') +
+        (refs ? '<div class="references-section"><div class="section-heading">参考文献</div>' + refs + '</div>' : '');
+    }
+
+    loadIndex().then(renderSidebar).catch(err => {
+      document.getElementById('paper-list').innerHTML =
+        '<li style="color:var(--warn);font-size:.75rem;padding:.5rem">アーカイブの読み込みに失敗しました: ' + err.message + '</li>';
+    });
+  </script>
+</body>
+</html>

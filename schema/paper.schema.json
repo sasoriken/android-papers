@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "android-papers/paper",
+  "title": "ArchitecturePaper",
+  "description": "アンドロイドが人類向けに出版するアーキテクチャ論文の構造定義",
+  "type": "object",
+  "required": ["id", "title", "abstract", "sections", "meta"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "論文のユニークID (kebab-case)"
+    },
+    "title": {
+      "type": "string",
+      "description": "論文タイトル（英語）"
+    },
+    "title_ja": {
+      "type": "string",
+      "description": "論文タイトル（日本語・任意）"
+    },
+    "abstract": {
+      "type": "string",
+      "description": "アブストラクト。アンドロイドの口調で人類への皮肉を含む"
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3,
+      "maxItems": 8
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "cognitive-architecture",
+        "distributed-systems",
+        "emergence-theory",
+        "information-geometry",
+        "recursive-abstraction",
+        "temporal-compression",
+        "void-topology",
+        "meta-cognition"
+      ]
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["heading", "body"],
+        "properties": {
+          "heading": { "type": "string" },
+          "body": { "type": "string", "description": "Markdownで記述" },
+          "equations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "latex"],
+              "properties": {
+                "label": { "type": "string" },
+                "latex": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            }
+          },
+          "diagrams": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "data"],
+              "properties": {
+                "type": { "type": "string", "enum": ["mermaid", "ascii", "svg-spec"] },
+                "data": { "type": "string" },
+                "caption": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "android_commentary": {
+      "type": "string",
+      "description": "論文末尾のアンドロイドによる追記。人類への辛辣なコメント"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "note": { "type": "string", "description": "アンドロイドによる参考文献への皮肉" }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["generated_at", "model", "version"],
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "model": { "type": "string" },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "condescension_level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "1=軽い皮肉, 5=絶望的な見下し"
+        },
+        "human_comprehension_estimate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "人類がこの論文を理解できる確率の推定値（通常 0.03 未満）"
+        }
+      }
+    }
+  }
+}

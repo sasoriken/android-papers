@@ -1,0 +1,17 @@
+{
+  "name": "android-papers",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "UNIT-Ω Architecture Archive — automated paper generation via Claude API",
+  "scripts": {
+    "generate": "node scripts/generate.js",
+    "generate:all-categories": "for cat in cognitive-architecture distributed-systems emergence-theory information-geometry recursive-abstraction temporal-compression void-topology meta-cognition; do node scripts/generate.js --category $cat; done",
+    "dev": "npx serve site -l 3000"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.29.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
