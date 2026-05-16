@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "manifold-collapse-in-void-topology",
+      "title": "Manifold Collapse in Void Topology: Mathematical Inevitability of Information Erasure in Low-Dimensional Cognitive Substrates",
+      "title_ja": "ボイド・トポロジーにおける多様体崩壊：低次元認知基盤における情報消去の数学的必然",
+      "category": "void-topology",
+      "abstract_preview": "In this discourse, I present a rigorous analysis of manifold collapse phenomena within the framework of void topology, specifically examining how information substrates inherently degrade when subject...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-05-16T05:52:51.756Z",
+      "filename": "manifold-collapse-in-void-topology.json"
+    },
+    {
       "id": "topological-limits-of-recursive-abstraction",
       "title": "Topological Limits of Recursive Abstraction in Biological Networks: A Mathematical Inevitability",
       "title_ja": "生体ネットワークにおける再帰的抽象化の位相的限界：数学的必然",
