@@ -22,17 +22,20 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Check PR author is Jules
+      - name: Check if Jules PR
         id: check
         run: |
           ACTOR="${{ github.event.pull_request.user.login }}"
+          BRANCH="${{ github.event.pull_request.head.ref }}"
           echo "PR author: $ACTOR"
-          if [ "$ACTOR" = "${{ env.JULES_BOT_NAME }}" ]; then
+          echo "PR branch: $BRANCH"
+          # Jules のPRを判定: ボットアカウント名 OR ブランチ名パターン
+          if [ "$ACTOR" = "${{ env.JULES_BOT_NAME }}" ] || [[ "$BRANCH" == jules/* ]]; then
             echo "is_jules=true"  >> "$GITHUB_OUTPUT"
-            echo "✅ Jules PR confirmed"
+            echo "✅ Jules PR confirmed (author=$ACTOR, branch=$BRANCH)"
           else
             echo "is_jules=false" >> "$GITHUB_OUTPUT"
-            echo "⛔ Not Jules (author=$ACTOR) — skipping all steps"
+            echo "⛔ Not Jules PR (author=$ACTOR, branch=$BRANCH) — skipping"
           fi
 
       - name: Checkout PR branch
