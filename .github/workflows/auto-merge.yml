@@ -37,7 +37,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
   # Jules の GitHub bot ユーザー名
   # 実際のbot名はJulesが作ったPRのauthorで確認して変更すること
-  JULES_BOT_NAME: 'gemini-code-assist[bot]'
+  JULES_BOT_NAME: 'google-labs-jules[bot]'
 
 jobs:
   validate-and-merge:
