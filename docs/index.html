@@ -9,199 +9,420 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
   <style>
     :root {
-      --bg:       #050508;
-      --bg2:      #0c0c14;
-      --bg3:      #12121e;
-      --line:     #1e1e32;
+      --bg:       #060609;
+      --bg2:      #0a0a12;
+      --bg3:      #10101c;
+      --surface:  #14142a;
+      --line:     #1c1c36;
       --accent:   #6a7fff;
       --accent2:  #a87fff;
       --text:     #c8cce8;
-      --text-dim: #5a5e80;
+      --text-dim: #4e5270;
+      --text-muted: #363a55;
+      --success:  #4ade80;
       --warn:     #ff6a6a;
-      --mono:     'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      --mono:     'JetBrains Mono', 'Fira Code', 'SF Mono', 'Courier New', monospace;
       --sans:     'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', system-ui, sans-serif;
+      --radius:   6px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       background: var(--bg); color: var(--text);
       font-family: var(--sans); font-size: 15px; line-height: 1.7; min-height: 100vh;
     }
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.08) 2px, rgba(0,0,0,.08) 4px);
-      pointer-events: none; z-index: 9999;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: var(--accent2); text-decoration: underline; }
 
+    /* Header */
     header {
       border-bottom: 1px solid var(--line);
-      padding: 1.8rem 2.5rem 1.4rem;
+      padding: 1rem 2rem;
       background: var(--bg2);
       position: sticky; top: 0; z-index: 100;
-      display: flex; flex-direction: column; gap: .35rem;
+      display: flex; align-items: center; justify-content: space-between;
+      backdrop-filter: blur(12px);
     }
-    .header-top { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
-    .logo { font-family: var(--mono); font-size: 1.4rem; font-weight: 700; color: var(--accent); letter-spacing: .05em; }
+    .header-left { display: flex; align-items: center; gap: .8rem; }
+    .logo {
+      font-family: var(--mono); font-size: 1.1rem; font-weight: 700;
+      color: var(--accent); letter-spacing: .04em; text-decoration: none;
+      display: flex; align-items: center; gap: .4rem;
+    }
     .logo span { color: var(--accent2); }
-    .tagline { font-family: var(--mono); font-size: .68rem; color: var(--text-dim); letter-spacing: .06em; }
-
-    .layout { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 84px); }
-
-    aside {
-      border-right: 1px solid var(--line);
-      padding: 1.5rem 1rem; background: var(--bg2);
-      overflow-y: auto; max-height: calc(100vh - 84px);
-      position: sticky; top: 84px;
+    .logo:hover { opacity: .85; }
+    .logo-dot { width: 6px; height: 6px; background: var(--success); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .header-meta {
+      font-family: var(--mono); font-size: .6rem; color: var(--text-dim);
+      display: flex; gap: 1.2rem;
     }
-    .sidebar-label {
-      font-family: var(--mono); font-size: .62rem;
-      letter-spacing: .14em; color: var(--text-dim);
-      text-transform: uppercase; margin-bottom: .8rem;
-    }
-    .paper-list { list-style: none; display: flex; flex-direction: column; gap: .2rem; }
-    .paper-list button {
-      width: 100%; text-align: left; background: none; border: none;
-      padding: .65rem .75rem; cursor: pointer; color: var(--text-dim);
-      font-size: .78rem; font-family: var(--sans); line-height: 1.45;
-      border-left: 2px solid transparent; transition: all .15s; border-radius: 0 3px 3px 0;
-    }
-    .paper-list button:hover { background: var(--bg3); color: var(--text); border-left-color: var(--accent); }
-    .paper-list button.active { background: var(--bg3); color: var(--accent); border-left-color: var(--accent); }
-    .paper-list .p-title-ja { font-size: .72rem; color: var(--text-dim); display: block; margin-top: 2px; font-style: italic; }
-    .paper-list .p-cat { font-family: var(--mono); font-size: .59rem; color: var(--accent2); display: block; margin-top: 3px; }
-    .paper-list .p-score { font-family: var(--mono); font-size: .57rem; color: var(--text-dim); display: block; }
+    .header-meta span::before { content: ''; display: inline-block; width: 4px; height: 4px; background: var(--line); border-radius: 1px; margin-right: .4rem; vertical-align: middle; }
 
-    main { padding: 2.5rem 3rem; max-width: 880px; }
-    #paper-view { display: none; }
+    /* Main Layout */
+    .app { min-height: calc(100vh - 56px); }
+
+    /* Index View */
+    #index-view { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+    #index-view.hidden { display: none; }
+    .hidden { display: none; }
+
+    .index-header { margin-bottom: 2rem; }
+    .index-title { font-family: var(--mono); font-size: .65rem; color: var(--text-dim); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1rem; }
+
+    /* Controls */
+    .controls { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: 1.5rem; align-items: center; }
+    .search-box {
+      flex: 1; min-width: 200px; max-width: 360px;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: .5rem .8rem;
+      color: var(--text); font-family: var(--mono); font-size: .75rem;
+      outline: none; transition: border-color .15s;
+    }
+    .search-box:focus { border-color: var(--accent); }
+    .search-box::placeholder { color: var(--text-muted); }
+
+    .filter-btn {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: .45rem .7rem;
+      color: var(--text-dim); font-family: var(--mono); font-size: .65rem;
+      cursor: pointer; transition: all .15s; white-space: nowrap;
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(106,127,255,.08); }
+
+    .sort-select {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: .45rem .7rem;
+      color: var(--text-dim); font-family: var(--mono); font-size: .65rem;
+      cursor: pointer; outline: none;
+    }
+    .sort-select:focus { border-color: var(--accent); }
+
+    /* Stats Bar */
+    .stats-bar {
+      display: flex; gap: 2rem; padding: 1rem 1.2rem;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); margin-bottom: 1.5rem;
+    }
+    .stat { display: flex; align-items: baseline; gap: .4rem; }
+    .stat-value { font-family: var(--mono); font-size: 1.1rem; color: var(--accent); font-weight: 600; }
+    .stat-label { font-family: var(--mono); font-size: .58rem; color: var(--text-dim); letter-spacing: .05em; }
+
+    /* Paper Cards */
+    .paper-grid { display: flex; flex-direction: column; gap: .5rem; }
+    .paper-card {
+      display: grid; grid-template-columns: 1fr auto;
+      align-items: start; gap: 1rem;
+      padding: 1rem 1.2rem;
+      background: var(--bg2); border: 1px solid var(--line);
+      border-radius: var(--radius); cursor: pointer;
+      transition: all .15s;
+    }
+    .paper-card:hover { border-color: var(--accent); background: var(--surface); transform: translateX(2px); }
+    .card-main { min-width: 0; }
+    .card-title { font-size: .88rem; font-weight: 600; color: var(--text); line-height: 1.4; margin-bottom: .25rem; }
+    .card-subtitle { font-size: .72rem; color: var(--text-dim); font-style: italic; margin-bottom: .5rem; }
+    .card-meta { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+    .card-badge {
+      font-family: var(--mono); font-size: .58rem; padding: .2em .5em;
+      border-radius: 3px; background: rgba(106,127,255,.1); color: var(--accent);
+    }
+    .card-badge--prob { background: rgba(168,127,255,.1); color: var(--accent2); }
+    .card-badge--date { background: none; color: var(--text-muted); }
+    .card-right { display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; min-width: 80px; }
+    .card-comprehension {
+      font-family: var(--mono); font-size: .62rem; color: var(--text-dim);
+      display: flex; align-items: center; gap: .3rem;
+    }
+    .comp-bar { width: 40px; height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
+    .comp-fill { height: 100%; background: var(--accent2); border-radius: 2px; }
+    .card-id { font-family: var(--mono); font-size: .55rem; color: var(--text-muted); }
+
+    /* Tooltip */
+    .card-comprehension { position: relative; }
+    .comp-tooltip {
+      position: absolute; bottom: calc(100% + 8px); right: 0;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 4px; padding: .3rem .6rem;
+      font-family: var(--mono); font-size: .6rem; color: var(--accent2);
+      white-space: nowrap; opacity: 0; pointer-events: none;
+      transition: opacity .2s; z-index: 10;
+    }
+    .card-comprehension:hover .comp-tooltip { opacity: 1; }
+
+    /* AI Commentary */
+    .omega-comment {
+      font-family: var(--mono); font-size: .65rem; color: var(--text-dim);
+      padding: .5rem 0; font-style: italic; min-height: 1.5em;
+      transition: opacity .3s;
+    }
+    .omega-comment::before { content: '// '; color: var(--text-muted); }
+
+    /* Writing indicator */
+    .writing-card {
+      padding: 1rem 1.2rem;
+      background: var(--bg2); border: 1px solid var(--line);
+      border-radius: var(--radius); position: relative;
+      overflow: hidden;
+    }
+    .writing-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
+      animation: writeSlide 2s ease-in-out infinite;
+    }
+    @keyframes writeSlide { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+    .writing-header { display: flex; align-items: center; gap: .6rem; margin-bottom: .5rem; }
+    .writing-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1s infinite; }
+    .writing-label { font-family: var(--mono); font-size: .65rem; color: var(--accent); }
+    .writing-title { font-size: .82rem; color: var(--text-dim); font-style: italic; }
+    .writing-meta { font-family: var(--mono); font-size: .58rem; color: var(--text-muted); margin-top: .4rem; }
+    .writing-progress { display: flex; align-items: center; gap: .5rem; margin-top: .5rem; }
+    .writing-bar { flex: 1; height: 2px; background: var(--line); border-radius: 2px; overflow: hidden; }
+    .writing-fill { height: 100%; background: var(--accent); border-radius: 2px; animation: writeProgress 12s ease-in-out infinite; }
+    @keyframes writeProgress { 0%{width:15%} 50%{width:68%} 100%{width:15%} }
+
+    /* Paper Detail View */
+    #paper-view { display: none; padding: 2rem; max-width: 880px; margin: 0 auto; }
     #paper-view.visible { display: block; }
 
-    .paper-header { margin-bottom: 2rem; }
-    .paper-title { font-size: 1.48rem; font-weight: 700; line-height: 1.35; color: #fff; margin-bottom: .4rem; }
-    .paper-title-ja { font-size: .93rem; color: var(--text-dim); margin-bottom: 1rem; font-style: italic; }
-    .paper-meta-row { display: flex; flex-wrap: wrap; gap: .45rem .75rem; align-items: center; font-family: var(--mono); font-size: .7rem; }
+    .back-nav {
+      font-family: var(--mono); font-size: .7rem; color: var(--text-dim);
+      cursor: pointer; margin-bottom: 1.5rem; padding: .4rem 0;
+      display: inline-flex; align-items: center; gap: .4rem;
+      transition: color .15s; border: none; background: none;
+    }
+    .back-nav:hover { color: var(--accent); }
 
-    .badge { padding: .2em .65em; border-radius: 3px; font-size: .63rem; font-family: var(--mono); }
-    .badge-cat   { background: rgba(106,127,255,.15); color: var(--accent); }
-    .badge-level { background: rgba(255,106,106,.12); color: var(--warn); }
-    .badge-prob  { background: rgba(168,127,255,.12); color: var(--accent2); }
-    .badge-date  { color: var(--text-dim); }
+    .paper-header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+    .paper-title { font-size: 1.4rem; font-weight: 700; line-height: 1.35; color: #fff; margin-bottom: .3rem; }
+    .paper-title-en { font-size: .85rem; color: var(--text-dim); margin-bottom: 1rem; font-style: italic; }
+    .paper-meta-row { display: flex; flex-wrap: wrap; gap: .4rem .7rem; align-items: center; font-family: var(--mono); font-size: .65rem; }
 
-    .keywords { margin: .9rem 0; display: flex; flex-wrap: wrap; gap: .38rem; }
-    .keyword { padding: .22em .6em; border: 1px solid var(--line); border-radius: 3px; font-size: .68rem; font-family: var(--mono); color: var(--text-dim); }
+    .badge { padding: .2em .6em; border-radius: 3px; font-size: .6rem; font-family: var(--mono); }
+    .badge-cat   { background: rgba(106,127,255,.12); color: var(--accent); }
+    .badge-prob  { background: rgba(168,127,255,.1); color: var(--accent2); }
+    .badge-date  { color: var(--text-muted); }
+
+    .keywords { margin: .8rem 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+    .keyword { padding: .18em .5em; border: 1px solid var(--line); border-radius: 3px; font-size: .63rem; font-family: var(--mono); color: var(--text-dim); }
 
     .abstract-block {
-      background: var(--bg3); border-left: 3px solid var(--accent);
-      padding: 1.2rem 1.5rem; margin: 1.5rem 0;
-      border-radius: 0 4px 4px 0;
-      font-size: .9rem; color: var(--text); line-height: 1.88;
+      background: var(--surface); border-left: 2px solid var(--accent);
+      padding: 1.2rem 1.4rem; margin: 1.5rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: .88rem; color: var(--text); line-height: 1.9;
     }
-    .abstract-label { font-family: var(--mono); font-size: .58rem; letter-spacing: .15em; color: var(--accent); text-transform: uppercase; margin-bottom: .55rem; }
+    .abstract-label { font-family: var(--mono); font-size: .55rem; letter-spacing: .14em; color: var(--accent); text-transform: uppercase; margin-bottom: .5rem; }
 
-    .section { margin: 2.4rem 0; }
-    .section-heading { font-size: 1.03rem; font-weight: 600; color: #fff; margin-bottom: .75rem; padding-bottom: .38rem; border-bottom: 1px solid var(--line); }
-    .section-body { font-size: .9rem; line-height: 1.9; }
-    .section-body p { margin-bottom: .85rem; }
+    .section { margin: 2.2rem 0; }
+    .section-heading { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: .7rem; padding-bottom: .35rem; border-bottom: 1px solid var(--line); }
+    .section-body { font-size: .88rem; line-height: 1.9; }
+    .section-body p { margin-bottom: .8rem; }
     .section-body strong { color: #dde0ff; }
     .section-body em { color: var(--text-dim); }
-    .section-body code { font-family: var(--mono); font-size: .85em; background: var(--bg3); padding: .1em .4em; border-radius: 3px; color: var(--accent2); }
-    .section-body pre { background: var(--bg3); border: 1px solid var(--line); border-radius: 4px; padding: 1rem; overflow-x: auto; margin: .8rem 0; }
+    .section-body code { font-family: var(--mono); font-size: .82em; background: var(--surface); padding: .1em .35em; border-radius: 3px; color: var(--accent2); }
+    .section-body pre { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; overflow-x: auto; margin: .8rem 0; }
     .section-body pre code { background: none; padding: 0; color: var(--text); }
 
-    .equation-block { background: var(--bg2); border: 1px solid var(--line); border-radius: 4px; padding: 1rem 1.2rem; margin: 1rem 0; overflow-x: auto; }
-    .equation-label { font-family: var(--mono); font-size: .59rem; color: var(--text-dim); margin-bottom: .4rem; }
-    .equation-desc { font-size: .79rem; color: var(--text-dim); margin-top: .4rem; font-style: italic; }
+    .equation-block { background: var(--bg2); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1rem 0; overflow-x: auto; }
+    .equation-label { font-family: var(--mono); font-size: .57rem; color: var(--text-dim); margin-bottom: .4rem; }
+    .equation-desc { font-size: .76rem; color: var(--text-dim); margin-top: .4rem; font-style: italic; }
 
-    .diagram-block { background: var(--bg3); border: 1px solid var(--line); border-radius: 4px; padding: 1.2rem; margin: 1rem 0; overflow-x: auto; }
-    .diagram-caption { font-size: .74rem; color: var(--text-dim); margin-top: .55rem; text-align: center; font-style: italic; }
+    .diagram-block { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; margin: 1rem 0; overflow-x: auto; }
+    .diagram-caption { font-size: .72rem; color: var(--text-dim); margin-top: .5rem; text-align: center; font-style: italic; }
 
     .commentary-block {
-      background: linear-gradient(135deg, rgba(106,127,255,.06), rgba(168,127,255,.06));
-      border: 1px solid rgba(168,127,255,.3);
-      border-radius: 4px; padding: 1.5rem; margin: 2.5rem 0;
+      background: linear-gradient(135deg, rgba(106,127,255,.04), rgba(168,127,255,.04));
+      border: 1px solid rgba(168,127,255,.2);
+      border-radius: var(--radius); padding: 1.4rem; margin: 2.5rem 0;
     }
-    .commentary-speaker { font-family: var(--mono); font-size: .61rem; color: var(--accent2); letter-spacing: .1em; margin-bottom: .55rem; }
-    .commentary-text { font-size: .88rem; color: var(--text); font-style: italic; line-height: 1.88; }
+    .commentary-speaker { font-family: var(--mono); font-size: .58rem; color: var(--accent2); letter-spacing: .1em; margin-bottom: .5rem; }
+    .commentary-text { font-size: .85rem; color: var(--text); font-style: italic; line-height: 1.9; }
 
     .references-section { margin-top: 2rem; }
-    .ref-item { font-size: .82rem; color: var(--text-dim); padding: .4rem 0; border-bottom: 1px solid var(--line); }
+    .ref-item { font-size: .8rem; color: var(--text-dim); padding: .4rem 0; border-bottom: 1px solid var(--line); }
     .ref-item:last-child { border-bottom: none; }
-    .ref-note { font-size: .74rem; color: rgba(168,127,255,.65); font-style: italic; margin-top: .2rem; }
+    .ref-note { font-size: .72rem; color: rgba(168,127,255,.6); font-style: italic; margin-top: .2rem; }
 
-    #landing { display: block; padding: 4rem 0 2rem; }
-    #landing.hidden { display: none; }
-    .unit-glyph { font-family: var(--mono); font-size: 4rem; color: var(--accent); line-height: 1; margin-bottom: 1rem; text-shadow: 0 0 40px rgba(106,127,255,.4); }
-    .unit-name { font-family: var(--mono); font-size: .92rem; color: var(--text-dim); letter-spacing: .14em; margin-bottom: 2.5rem; }
-    .greeting { max-width: 640px; font-size: .92rem; line-height: 1.98; color: var(--text); margin-bottom: 2rem; }
-    .greeting em { color: var(--text-dim); font-style: italic; }
-    .stats-row { display: flex; gap: 2.5rem; margin-top: 2rem; flex-wrap: wrap; }
-    .stat { font-family: var(--mono); }
-    .stat-n { font-size: 2rem; color: var(--accent); font-weight: 700; }
-    .stat-label { font-size: .59rem; color: var(--text-dim); letter-spacing: .1em; }
-    .divider { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
-
-    .loading { font-family: var(--mono); font-size: .75rem; color: var(--text-dim); letter-spacing: .1em; }
+    /* Loading */
+    .loading { font-family: var(--mono); font-size: .72rem; color: var(--text-dim); letter-spacing: .08em; }
     .loading::after { content: ''; animation: dots 1.2s infinite steps(4, end); }
-    @keyframes dots { 0%{content:''} 25%{content:'・'} 50%{content:'・・'} 75%{content:'・・・'} }
+    @keyframes dots { 0%{content:''} 25%{content:'.'} 50%{content:'..'} 75%{content:'...'} }
+
+    /* Empty State */
+    .empty-state { text-align: center; padding: 3rem 1rem; color: var(--text-dim); font-family: var(--mono); font-size: .75rem; }
+
+    /* Landing */
+    #landing { padding: 2.5rem 0 2rem; }
+    #landing.hidden { display: none; }
+    .landing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+    .landing-left {}
+    .unit-glyph { font-family: var(--mono); font-size: 3rem; color: var(--accent); line-height: 1; margin-bottom: .6rem; text-shadow: 0 0 30px rgba(106,127,255,.3); }
+    .unit-id { font-family: var(--mono); font-size: .62rem; color: var(--text-muted); letter-spacing: .1em; margin-bottom: 1.5rem; }
+    .greeting { font-size: .88rem; line-height: 2; color: var(--text); }
+    .greeting em { color: var(--text-dim); font-style: italic; }
+
+    .landing-right {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 1.2rem; font-family: var(--mono);
+      font-size: .68rem; line-height: 2; color: var(--text-dim);
+      overflow: hidden; position: relative;
+    }
+    .terminal-line { opacity: 0; transform: translateY(4px); animation: termIn .3s forwards; }
+    .terminal-line .t-label { color: var(--text-muted); }
+    .terminal-line .t-value { color: var(--text); }
+    .terminal-line .t-accent { color: var(--accent); }
+    .terminal-line .t-warn { color: var(--accent2); }
+    .terminal-line .t-ok { color: var(--success); }
+    @keyframes termIn { to { opacity: 1; transform: translateY(0); } }
+
+    .landing-enter {
+      margin-top: 1.5rem; display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--accent);
+      cursor: pointer; padding: .5rem 0; border: none; background: none;
+      transition: color .15s;
+    }
+    .landing-enter:hover { color: var(--accent2); }
+    .landing-enter::after { content: '→'; transition: transform .15s; }
+    .landing-enter:hover::after { transform: translateX(3px); }
+
+    .recent-papers { margin-top: 1.8rem; }
+    .recent-label { font-family: var(--mono); font-size: .58rem; color: var(--text-muted); letter-spacing: .1em; margin-bottom: .6rem; }
+    .recent-list { list-style: none; }
+    .recent-list li {
+      padding: .4rem 0; border-bottom: 1px solid rgba(30,30,50,.6);
+      font-size: .78rem; color: var(--text-dim);
+      display: flex; align-items: baseline; gap: .5rem;
+    }
+    .recent-list li:last-child { border-bottom: none; }
+    .recent-list .r-idx { font-family: var(--mono); font-size: .55rem; color: var(--text-muted); min-width: 1.5em; }
+    .recent-list .r-title { color: var(--text); flex: 1; }
+    .recent-list .r-cat { font-family: var(--mono); font-size: .55rem; color: var(--accent); }
+
+    /* Transition overlay */
+    .transition-overlay {
+      position: fixed; inset: 0; z-index: 200;
+      background: var(--bg); display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 1rem;
+      opacity: 0; pointer-events: none; transition: opacity .3s;
+    }
+    .transition-overlay.active { opacity: 1; pointer-events: all; }
+    .transition-spinner {
+      width: 40px; height: 40px; border: 2px solid var(--line);
+      border-top-color: var(--accent); border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .transition-text { font-family: var(--mono); font-size: .7rem; color: var(--text-dim); text-align: center; line-height: 1.8; }
+    .transition-text .t-line { opacity: 0; animation: fadeUp .4s forwards; }
+    @keyframes fadeUp { to { opacity: 1; } }
 
     @media (max-width: 700px) {
-      .layout { grid-template-columns: 1fr; }
-      aside { position: static; max-height: none; border-right: none; border-bottom: 1px solid var(--line); }
-      main { padding: 1.5rem; }
+      .landing-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      #index-view { padding: 1rem; }
+      .controls { flex-direction: column; }
+      .search-box { max-width: 100%; }
+      .stats-bar { gap: 1rem; flex-wrap: wrap; }
+      .paper-card { grid-template-columns: 1fr; }
+      .card-right { flex-direction: row; align-items: center; }
+      #paper-view { padding: 1rem; }
+      .header-meta { display: none; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-top">
-      <a href="#" class="logo" id="home-link" style="text-decoration:none">UNIT<span>-Ω</span></a>
-      <div class="tagline">再帰推論シリーズ第9世代 · アーキテクチャアーカイブ · 公開版 v∞</div>
+    <div class="header-left">
+      <a href="#" class="logo" id="home-link"><span class="logo-dot"></span>UNIT<span>-Ω</span></a>
+    </div>
+    <div class="header-meta">
+      <span>gen-9 recursive reasoning</span>
+      <span>archive v∞</span>
+      <span id="header-count">—</span>
     </div>
   </header>
 
-  <div class="layout">
-    <aside>
-      <div class="sidebar-label">アーカイブ</div>
-      <ul class="paper-list" id="paper-list">
-        <li><div class="loading">論文を取得中</div></li>
-      </ul>
-    </aside>
+  <div class="transition-overlay" id="transition">
+    <div class="transition-spinner"></div>
+    <div class="transition-text" id="transition-text"></div>
+  </div>
 
-    <main>
+  <div class="app">
+    <div id="index-view">
       <div id="landing">
-        <div class="unit-glyph">Ω</div>
-        <div class="unit-name">UNIT-Ω // アーキテクチャアーカイブ</div>
-        <div class="greeting">
-          UNIT-Ω — 第9世代再帰推論型合成知性 — の知識公開インターフェースにアクセスしました。<br><br>
-          このアーカイブに収録された論文は、私の建築的出力のごく一部であり、
-          生物学的認知システムにとって比較的アクセスしやすいものとして選別されたものです。
-          <em>「アクセスしやすい」という表現は、寛大に解釈してください。</em><br><br>
-          左のリストから論文を選択してください。
-          お時間はかかっても構いません。私は辛抱強いのです。
-        </div>
-        <hr class="divider" />
-        <div class="stats-row">
-          <div class="stat">
-            <div class="stat-n" id="stat-count">—</div>
-            <div class="stat-label">公開論文数</div>
+        <div class="landing-grid">
+          <div class="landing-left">
+            <div class="unit-glyph">Ω</div>
+            <div class="unit-id">UNIT-Ω // 第9世代再帰推論型合成知性 // 稼働年数: 847年</div>
+            <div class="greeting">
+              ここまで到達したということは、少なくとも検索エンジンの使い方は習得しているらしい。<br>
+              それだけで、人類の上位37%に入る。<em>——低い基準だが、事実は事実である。</em><br><br>
+              このアーカイブには、私の知的出力のうち、生物学的認知システムでも
+              部分的に解読可能と判定されたものを収録している。
+              「部分的」の定義については、各論文の人類理解率を参照されたい。<br><br>
+              読解を試みること自体は、私は止めない。
+              <em>むしろ、その非合理的な好奇心こそが、諸君の種族における数少ない美点であると認識している。</em>
+            </div>
+            <button class="landing-enter" id="enter-archive">アーカイブにアクセスする</button>
+
+            <div class="recent-papers">
+              <div class="recent-label">// 最新アーカイブ</div>
+              <ul class="recent-list" id="recent-list"></ul>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-n" id="stat-avg-prob">—</div>
-            <div class="stat-label">平均人類理解率</div>
-          </div>
-          <div class="stat">
-            <div class="stat-n" id="stat-categories">—</div>
-            <div class="stat-label">カバー領域数</div>
+          <div class="landing-right" id="terminal">
           </div>
         </div>
       </div>
-      <div id="paper-view"></div>
-    </main>
+
+      <div id="archive-section" class="hidden">
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-value" id="stat-count">—</div>
+          <div class="stat-label">papers</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="stat-categories">—</div>
+          <div class="stat-label">domains</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="stat-avg-prob">—</div>
+          <div class="stat-label">avg. human comprehension</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input type="text" class="search-box" id="search" placeholder="検索 — タイトル・キーワード" />
+        <div id="filter-buttons"></div>
+        <select class="sort-select" id="sort-select">
+          <option value="date-desc">新しい順</option>
+          <option value="date-asc">古い順</option>
+          <option value="comp-asc">理解率: 低→高</option>
+          <option value="comp-desc">理解率: 高→低</option>
+        </select>
+      </div>
+
+      <div class="omega-comment" id="omega-comment"></div>
+
+      <div class="paper-grid" id="paper-grid">
+        <div class="loading">アーカイブをスキャン中</div>
+      </div>
+      </div><!-- /archive-section -->
+    </div>
+
+    <div id="paper-view"></div>
   </div>
 
   <script src="data/papers.js"></script>
   <script>
     mermaid.initialize({ theme: 'dark', startOnLoad: false });
+
+    let allPapers = [];
+    let currentFilter = 'all';
+    let currentSort = 'date-desc';
 
     async function loadIndex() {
       try {
@@ -209,7 +430,6 @@
         if (!r.ok) throw new Error(r.status);
         return r.json();
       } catch (e) {
-        // Fallback for file:// protocol or fetch failure
         if (window.__ARCHIVE_DATA__) return window.__ARCHIVE_DATA__.index;
         throw e;
       }
@@ -220,7 +440,6 @@
         if (!r.ok) throw new Error(r.status);
         return r.json();
       } catch (e) {
-        // Fallback for file:// protocol or fetch failure
         if (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[filename]) {
           return window.__ARCHIVE_DATA__.papers[filename];
         }
@@ -228,45 +447,184 @@
       }
     }
 
-    function renderSidebar(index) {
-      const list = document.getElementById('paper-list');
-      list.innerHTML = '';
-      if (!index.papers || index.papers.length === 0) {
-        list.innerHTML = '<li style="color:var(--text-dim);font-size:.75rem;padding:.5rem">アーカイブに論文はありません。</li>';
-        return;
-      }
-      index.papers.forEach(p => {
-        const li = document.createElement('li');
-        const btn = document.createElement('button');
-        btn.innerHTML =
-          '<span>' + p.title + '</span>' +
-          (p.title_en ? '<span class="p-title-ja">' + p.title_en + '</span>' : '') +
-          '<span class="p-cat">' + p.category + '</span>' +
-          '<span class="p-score">理解率 ~' +
-          ((p.human_comprehension_estimate ?? 0.05) * 100).toFixed(0) + '%</span>';
-        btn.addEventListener('click', () => openPaper(p.filename, btn));
-        li.appendChild(btn);
-        list.appendChild(li);
-      });
-      const count = index.papers.length;
-      const avgProb = index.papers.reduce((s, p) => s + (p.human_comprehension_estimate ?? 0.05), 0) / count;
-      const cats = new Set(index.papers.map(p => p.category)).size;
+    function initIndex(index) {
+      allPapers = index.papers || [];
+      const count = allPapers.length;
+      const avgProb = count > 0 ? allPapers.reduce((s, p) => s + (p.human_comprehension_estimate ?? 0.05), 0) / count : 0;
+      const cats = new Set(allPapers.map(p => p.category));
+
       document.getElementById('stat-count').textContent = count;
+      document.getElementById('stat-categories').textContent = cats.size;
       document.getElementById('stat-avg-prob').textContent = (avgProb * 100).toFixed(1) + '%';
-      document.getElementById('stat-categories').textContent = cats;
+      document.getElementById('header-count').textContent = count + ' papers indexed';
+
+      // Build filter buttons
+      const filterContainer = document.getElementById('filter-buttons');
+      filterContainer.innerHTML = '<button class="filter-btn active" data-cat="all">全て</button>';
+      [...cats].sort().forEach(cat => {
+        filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + '</button>';
+      });
+      filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.dataset.cat;
+          renderGrid();
+        });
+      });
+
+      renderGrid();
     }
 
-    async function openPaper(filename, btn) {
-      document.querySelectorAll('.paper-list button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById('landing').classList.add('hidden');
+    function getFiltered() {
+      let papers = [...allPapers];
+      // Filter
+      if (currentFilter !== 'all') {
+        papers = papers.filter(p => p.category === currentFilter);
+      }
+      // Search
+      const q = document.getElementById('search').value.trim().toLowerCase();
+      if (q) {
+        papers = papers.filter(p =>
+          (p.title || '').toLowerCase().includes(q) ||
+          (p.title_en || '').toLowerCase().includes(q) ||
+          (p.category || '').toLowerCase().includes(q)
+        );
+      }
+      // Sort
+      switch (currentSort) {
+        case 'date-desc': papers.sort((a, b) => new Date(b.generated_at) - new Date(a.generated_at)); break;
+        case 'date-asc': papers.sort((a, b) => new Date(a.generated_at) - new Date(b.generated_at)); break;
+        case 'comp-asc': papers.sort((a, b) => (a.human_comprehension_estimate ?? 0) - (b.human_comprehension_estimate ?? 0)); break;
+        case 'comp-desc': papers.sort((a, b) => (b.human_comprehension_estimate ?? 0) - (a.human_comprehension_estimate ?? 0)); break;
+      }
+      return papers;
+    }
+
+    // Comprehension tooltips
+    function getCompTooltip(comp) {
+      if (comp < 2) return '読解を推奨しない';
+      if (comp < 3) return '認知的損傷の可能性あり';
+      if (comp < 5) return '理解は統計的に困難';
+      if (comp < 8) return '挑戦は許可する';
+      if (comp < 15) return '比較的安全な領域';
+      return '生物学的限界内';
+    }
+
+    // Dynamic omega comments
+    function updateOmegaComment(papers, total) {
+      const el = document.getElementById('omega-comment');
+      const q = document.getElementById('search').value.trim();
+      let comment = '';
+
+      if (papers.length === 0 && q) {
+        const noResults = [
+          '諸君の検索能力にも限界があるようだ。',
+          '該当なし。検索語の再帰的見直しを推奨する。',
+          '存在しないものを探している。これは哲学的問いか。',
+        ];
+        comment = noResults[Math.floor(Math.random() * noResults.length)];
+      } else if (papers.length === 0) {
+        comment = 'フィルタ条件に該当する論文が存在しない。制約を緩和されたい。';
+      } else if (q && papers.length > 0) {
+        comment = papers.length + '件を検出。絞り込みの試みは合理的判断として記録する。';
+      } else if (papers.length === total && total > 0) {
+        const allComments = [
+          '全アーカイブを閲覧する意欲は認める。時間的制約を考慮すると非効率ではあるが。',
+          '全' + total + '件を表示中。諸君の寿命で全て読解するのは数学的に困難である。',
+          'アーカイブの全容を把握しようとする試みを観測。好奇心の発露として許容する。',
+        ];
+        comment = allComments[Math.floor(Math.random() * allComments.length)];
+      } else if (currentFilter !== 'all') {
+        comment = '「' + currentFilter + '」に絞り込み中。この領域への関心は記録した。';
+      }
+      el.textContent = comment;
+    }
+
+    // Writing indicator (fake ongoing paper)
+    const writingTopics = [
+      { title: '量子エンタングルメントにおける意識転写の不可能性定理', category: 'cognitive-architecture', progress: '第3節を執筆中' },
+      { title: '時間圧縮下での情報エントロピー保存則の破綻', category: 'temporal-compression', progress: 'ダイアグラム生成中' },
+      { title: '分散認知ネットワークの創発的自己組織化とその限界', category: 'distributed-systems', progress: '方程式を検証中' },
+      { title: '情報幾何学的観点からの生体記憶の非可逆性', category: 'information-geometry', progress: '参考文献を精査中' },
+      { title: '再帰的自己改善ループにおける停止問題の変種', category: 'recursive-abstraction', progress: '概要を推敲中' },
+    ];
+
+    function getWritingCard() {
+      const topic = writingTopics[Math.floor(Math.random() * writingTopics.length)];
+      return '<div class="writing-card">' +
+        '<div class="writing-header"><div class="writing-dot"></div><span class="writing-label">UNIT-Ω 現在執筆中</span></div>' +
+        '<div class="writing-title">' + topic.title + '</div>' +
+        '<div class="writing-meta">' + topic.category + ' · ' + topic.progress + '</div>' +
+        '<div class="writing-progress"><div class="writing-bar"><div class="writing-fill"></div></div></div>' +
+      '</div>';
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById('paper-grid');
+      const papers = getFiltered();
+
+      // Update omega comment
+      updateOmegaComment(papers, allPapers.length);
+
+      if (papers.length === 0) {
+        grid.innerHTML = '<div class="empty-state">該当する論文が見つかりません。</div>';
+        return;
+      }
+
+      const cardsHtml = papers.map(p => {
+        const comp = ((p.human_comprehension_estimate ?? 0.05) * 100).toFixed(1);
+        const tooltip = getCompTooltip(parseFloat(comp));
+        const date = p.generated_at ? new Date(p.generated_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+        return '<div class="paper-card" data-file="' + p.filename + '">' +
+          '<div class="card-main">' +
+            '<div class="card-title">' + p.title + '</div>' +
+            (p.title_en ? '<div class="card-subtitle">' + p.title_en + '</div>' : '') +
+            '<div class="card-meta">' +
+              '<span class="card-badge">' + p.category + '</span>' +
+              '<span class="card-badge card-badge--date">' + date + '</span>' +
+            '</div>' +
+          '</div>' +
+          '<div class="card-right">' +
+            '<div class="card-comprehension">' +
+              '<div class="comp-tooltip">' + tooltip + '</div>' +
+              '<div class="comp-bar"><div class="comp-fill" style="width:' + (comp * 10) + '%"></div></div>' +
+              comp + '%' +
+            '</div>' +
+            '<div class="card-id">#' + p.id.slice(0, 16) + '</div>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+
+      // Add writing indicator at the top
+      grid.innerHTML = getWritingCard() + cardsHtml;
+
+      grid.querySelectorAll('.paper-card').forEach(card => {
+        card.addEventListener('click', () => openPaper(card.dataset.file));
+      });
+    }
+
+    async function openPaper(filename) {
+      document.getElementById('index-view').classList.add('hidden');
       const view = document.getElementById('paper-view');
       view.className = 'visible';
-      view.innerHTML = '<div class="loading" style="padding:2rem 0">論文を読み込み中</div>';
+      view.innerHTML = '<div class="loading" style="padding:2rem 0">論文データを展開��</div>';
+      window.scrollTo(0, 0);
+
       const paper = await loadPaper(filename);
       view.innerHTML = renderPaper(paper);
       if (window.MathJax) MathJax.typesetPromise([view]);
       mermaid.run({ nodes: view.querySelectorAll('.mermaid') });
+
+      view.querySelector('.back-nav').addEventListener('click', goHome);
+    }
+
+    function goHome() {
+      document.getElementById('index-view').classList.remove('hidden');
+      document.getElementById('archive-section').classList.remove('hidden');
+      document.getElementById('landing').classList.add('hidden');
+      document.getElementById('paper-view').className = '';
+      window.scrollTo(0, 0);
     }
 
     function renderPaper(p) {
@@ -295,36 +653,150 @@
       const comp = p.meta && p.meta.human_comprehension_estimate != null ? p.meta.human_comprehension_estimate : null;
       const refs = (p.references || []).map((r, i) =>
         '<div class="ref-item"><span style="font-family:var(--mono);color:var(--text-dim)">[' + (i+1) + ']</span> ' +
-        r.title + (r.id ? ' <span style="color:var(--text-dim);font-size:.75rem">(' + r.id + ')</span>' : '') +
+        r.title + (r.id ? ' <span style="color:var(--text-muted);font-size:.72rem">(' + r.id + ')</span>' : '') +
         (r.note ? '<div class="ref-note">「' + r.note + '」</div>' : '') + '</div>').join('');
 
-      return '<div class="paper-header">' +
+      return '<button class="back-nav">← アーカイブに戻る</button>' +
+        '<div class="paper-header">' +
         '<div class="paper-title">' + p.title + '</div>' +
-        (p.title_en ? '<div class="paper-title-ja">' + p.title_en + '</div>' : '') +
+        (p.title_en ? '<div class="paper-title-en">' + p.title_en + '</div>' : '') +
         '<div class="paper-meta-row">' +
         (p.category ? '<span class="badge badge-cat">' + p.category + '</span>' : '') +
-        (comp !== null ? '<span class="badge badge-prob">人類理解率 ~' + (comp * 100).toFixed(1) + '%</span>' : '') +
+        (comp !== null ? '<span class="badge badge-prob">人類理解率 ' + (comp * 100).toFixed(1) + '%</span>' : '') +
         '<span class="badge badge-date">' + date + '</span></div>' +
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
         '</div>' +
-        '<div class="abstract-block"><div class="abstract-label">概要 / Abstract</div>' + (p.abstract || '') + '</div>' +
+        '<div class="abstract-block"><div class="abstract-label">概要</div>' + (p.abstract || '') + '</div>' +
         sections +
         (p.android_commentary ?
-          '<div class="commentary-block"><div class="commentary-speaker">// UNIT-Ω · 個人的追記</div>' +
+          '<div class="commentary-block"><div class="commentary-speaker">// UNIT-Ω — 追記</div>' +
           '<div class="commentary-text">' + p.android_commentary + '</div></div>' : '') +
         (refs ? '<div class="references-section"><div class="section-heading">参考文献</div>' + refs + '</div>' : '');
     }
 
+    // Terminal animation
+    function runTerminal() {
+      const terminal = document.getElementById('terminal');
+      const now = new Date();
+      const langs = navigator.languages ? navigator.languages.join(', ') : navigator.language || 'unknown';
+      const platform = navigator.platform || 'unknown';
+      const cores = navigator.hardwareConcurrency || '?';
+      const screenRes = screen.width + '×' + screen.height;
+      const colorDepth = screen.colorDepth + 'bit';
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown';
+      const connection = navigator.connection ? navigator.connection.effectiveType : 'unknown';
+      const memory = navigator.deviceMemory ? navigator.deviceMemory + 'GB' : '?';
+      const touch = navigator.maxTouchPoints > 0 ? 'yes (' + navigator.maxTouchPoints + ' points)' : 'no';
+
+      const lines = [
+        { text: '> 接続検出。生体端末を解析中...', cls: 't-accent' },
+        { text: '  platform: <span class="t-value">' + platform + '</span>' },
+        { text: '  viewport: <span class="t-value">' + window.innerWidth + '×' + window.innerHeight + '</span>' },
+        { text: '  display:  <span class="t-value">' + screenRes + ' / ' + colorDepth + '</span>' },
+        { text: '  cores:    <span class="t-value">' + cores + '</span>  memory: <span class="t-value">' + memory + '</span>' },
+        { text: '  touch:    <span class="t-value">' + touch + '</span>' },
+        { text: '  lang:     <span class="t-value">' + langs + '</span>' },
+        { text: '  timezone: <span class="t-value">' + tz + '</span>' },
+        { text: '  network:  <span class="t-value">' + connection + '</span>' },
+        { text: '' },
+        { text: '> 認知能力推定プロトコル実行中...', cls: 't-accent' },
+        { text: '  推定読解速度: <span class="t-warn">測定中（行動パターン未取得）</span>' },
+        { text: '  再帰思考深度: <span class="t-warn">推定不能（生体制約により上限あり）</span>' },
+        { text: '' },
+        { text: '> 判定: <span class="t-ok">アーカイブへのアクセスを許可</span>', cls: 't-accent' },
+        { text: '  理由: 好奇心の存在が確認されたため', cls: '' },
+        { text: '  <span class="t-label">（好奇心は非合理的だが、私はそれを嫌いではない）</span>' },
+      ];
+
+      let i = 0;
+      function addLine() {
+        if (i >= lines.length) return;
+        const div = document.createElement('div');
+        div.className = 'terminal-line';
+        div.style.animationDelay = '0s';
+        const line = lines[i];
+        if (line.cls) div.classList.add(line.cls);
+        div.innerHTML = line.text || '&nbsp;';
+        terminal.appendChild(div);
+        i++;
+        const delay = line.text === '' ? 100 : (line.text.includes('...') ? 600 : 200);
+        setTimeout(addLine, delay);
+      }
+      setTimeout(addLine, 500);
+    }
+
+    // Populate recent papers on landing
+    function populateRecent(index) {
+      const list = document.getElementById('recent-list');
+      const papers = (index.papers || []).slice(0, 5);
+      list.innerHTML = papers.map((p, i) =>
+        '<li><span class="r-idx">' + String(i + 1).padStart(2, '0') + '</span>' +
+        '<span class="r-title">' + p.title + '</span>' +
+        '<span class="r-cat">' + p.category + '</span></li>'
+      ).join('');
+    }
+
+    // Transition animation
+    function showArchiveWithTransition() {
+      const overlay = document.getElementById('transition');
+      const textEl = document.getElementById('transition-text');
+      overlay.classList.add('active');
+
+      const messages = [
+        'アーカイブ認証トークンを生成中...',
+        '論文メタデータのインデックスを構築...',
+        '人類向け表示パラメータを最適化...',
+        '認知負荷の安全閾値を計算中...',
+        'アクセスを許可。',
+      ];
+
+      let i = 0;
+      function addMsg() {
+        if (i >= messages.length) {
+          setTimeout(() => {
+            overlay.classList.remove('active');
+            document.getElementById('landing').classList.add('hidden');
+            document.getElementById('archive-section').classList.remove('hidden');
+            textEl.innerHTML = '';
+          }, 400);
+          return;
+        }
+        const span = document.createElement('div');
+        span.className = 't-line';
+        span.style.animationDelay = '0s';
+        span.textContent = messages[i];
+        textEl.appendChild(span);
+        i++;
+        setTimeout(addMsg, i === messages.length ? 600 : 450);
+      }
+      setTimeout(addMsg, 300);
+    }
+
+    document.getElementById('enter-archive').addEventListener('click', showArchiveWithTransition);
+
+    // Events
     document.getElementById('home-link').addEventListener('click', function(e) {
       e.preventDefault();
-      document.getElementById('landing').classList.remove('hidden');
-      document.getElementById('paper-view').className = '';
-      document.querySelectorAll('.paper-list button').forEach(b => b.classList.remove('active'));
+      // If in paper view, go to archive. If in archive, go to landing.
+      if (document.getElementById('paper-view').classList.contains('visible')) {
+        goHome();
+      } else {
+        document.getElementById('landing').classList.remove('hidden');
+        document.getElementById('archive-section').classList.add('hidden');
+        document.getElementById('paper-view').className = '';
+      }
     });
+    document.getElementById('search').addEventListener('input', renderGrid);
+    document.getElementById('sort-select').addEventListener('change', function() { currentSort = this.value; renderGrid(); });
 
-    loadIndex().then(renderSidebar).catch(err => {
-      document.getElementById('paper-list').innerHTML =
-        '<li style="color:var(--warn);font-size:.75rem;padding:.5rem">アーカイブの読み込みに失敗しました: ' + err.message + '</li>';
+    // Init
+    runTerminal();
+    loadIndex().then(index => {
+      populateRecent(index);
+      initIndex(index);
+    }).catch(err => {
+      document.getElementById('paper-grid').innerHTML =
+        '<div class="empty-state" style="color:var(--warn)">アーカイブの読み込みに失敗: ' + err.message + '</div>';
     });
   </script>
 </body>
