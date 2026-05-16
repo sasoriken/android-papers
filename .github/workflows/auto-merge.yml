@@ -1,0 +1,215 @@
+# ============================================================
+# Jules PR 専用 バリデーション → 自動マージ → デプロイ
+#
+# 【フロー全体像】
+#   create-issue.yml (cron)
+#     → GitHub issue + julesラベル
+#   Jules (外部)
+#     → 論文JSON生成 → PR送信
+#   このワークフロー (pull_request)
+#     → 作成者チェック → バリデーション → マージ → Pages デプロイ
+#
+# 【セキュリティ設計】
+#   段階1: PR作成者が Jules bot かどうかチェック (JULES_BOT_NAME)
+#   段階2: 論文JSONがスキーマを満たすかバリデーション
+#   段階3: 両方通過した場合のみマージ＋デプロイ
+#   → 外部の野良PRはマージもデプロイも一切されない
+#
+# 適用 lessons:
+#   #1  GITHUB_TOKEN連鎖 → マージ〜デプロイを1 workflow に統合
+#   #2  shallow clone    → fetch-depth: 0
+#   #3  race condition   → sleep 10 + --auto フォールバック
+#   #4  Allow auto-merge → Settings で要有効化
+#   #5  権限設定         → contents/pages/id-token/pull-requests: write
+#   #9  [skip ci]       → commitしないため不要
+#   #10 Node.js廃止     → FORCE_JAVASCRIPT_ACTIONS_TO_NODE24
+# ============================================================
+
+name: Validate and Auto-merge Jules PR → Deploy
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    # Jules が作るブランチ名パターンに絞ることで不要な起動を減らす
+    branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+  # Jules の GitHub bot ユーザー名
+  # 実際のbot名はJulesが作ったPRのauthorで確認して変更すること
+  JULES_BOT_NAME: 'gemini-code-assist[bot]'
+
+jobs:
+  validate-and-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # lesson #5
+      pull-requests: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # ── 段階1: 作成者チェック ──────────────────────────────
+      - name: Check PR author is Jules
+        id: check
+        run: |
+          ACTOR="${{ github.event.pull_request.user.login }}"
+          echo "PR author: $ACTOR"
+          if [ "$ACTOR" = "${{ env.JULES_BOT_NAME }}" ]; then
+            echo "is_jules=true"  >> "$GITHUB_OUTPUT"
+            echo "✅ Jules PR confirmed"
+          else
+            echo "is_jules=false" >> "$GITHUB_OUTPUT"
+            echo "⛔ Not Jules (author=$ACTOR) — skipping all steps"
+          fi
+
+      # ── Checkout (Julesのみ) ───────────────────────────────
+      - name: Checkout PR branch
+        if: steps.check.outputs.is_jules == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0   # lesson #2: diff取得のため全履歴必要
+
+      - name: Setup Node.js
+        if: steps.check.outputs.is_jules == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        if: steps.check.outputs.is_jules == 'true'
+        run: npm install
+
+      # ── 段階2: バリデーション ──────────────────────────────
+      - name: Validate changed papers
+        if: steps.check.outputs.is_jules == 'true'
+        id: validate
+        run: |
+          # PRで追加・変更されたdata/papers/*.jsonのみ対象
+          CHANGED=$(git diff --name-only "origin/${{ github.event.pull_request.base.ref }}...HEAD" \
+            -- 'data/papers/*.json' 2>/dev/null || echo "")
+
+          # lesson #2 の安全策: 空ならwarning
+          if [ -z "$CHANGED" ]; then
+            echo "::warning::No paper JSON changes detected"
+            echo "valid=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Changed papers:"
+          echo "$CHANGED"
+
+          FAILED=0
+          for f in $CHANGED; do
+            [ -f "$f" ] && node scripts/validate.js "$f" || FAILED=$((FAILED+1))
+          done
+
+          if [ "$FAILED" -gt 0 ]; then
+            echo "valid=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "valid=true"  >> "$GITHUB_OUTPUT"
+            echo "✅ All papers passed validation"
+          fi
+
+      # バリデーション失敗時のコメント
+      - name: Comment validation failure
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --body "⚠️ **UNIT-Ω バリデーション失敗**
+
+論文JSONがスキーマを満たしていないためマージを中止しました。
+上記 \`Validate changed papers\` ステップでエラー内容を確認し、修正して再プッシュしてください。" \
+            --repo "${{ github.repository }}"
+          exit 1
+
+      # ── 段階3: ラベル付与 ──────────────────────────────────
+      - name: Label Jules PR as approved
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # lesson #11: ラベルを冪等に作成
+          gh label create "auto-merge-approved" --color "00cc44" \
+            --description "Jules PRの自動マージ承認済み" 2>/dev/null || true
+          gh pr edit "${{ github.event.pull_request.number }}" \
+            --add-label "auto-merge-approved" \
+            --repo "${{ github.repository }}"
+
+      # ── 段階4: site/data/ を同期してからマージ ─────────────
+      - name: Sync data/ into site/data/
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        run: |
+          mkdir -p site/data/papers
+          cp data/index.json site/data/
+          cp data/papers/*.json site/data/papers/ 2>/dev/null || true
+
+      - name: Commit site/data/ sync to PR branch
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        run: |
+          git config user.name  "UNIT-Ω"
+          git config user.email "unit-omega@noreply.github.com"
+          git add site/data/
+          git diff --staged --quiet \
+            || git commit -m "chore: sync site/data/ [skip ci]"
+          git push origin HEAD:"${{ github.event.pull_request.head.ref }}"
+
+      # ── 段階5: マージ ──────────────────────────────────────
+      # lesson #3: race condition → sleep 10 + --auto フォールバック
+      - name: Merge Jules PR
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        id: merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUM="${{ github.event.pull_request.number }}"
+          REPO="${{ github.repository }}"
+
+          sleep 10  # mergeability 再計算待ち
+
+          gh pr merge "$PR_NUM" --merge --delete-branch --repo "$REPO" \
+            || gh pr merge "$PR_NUM" --merge --auto --delete-branch --repo "$REPO"
+
+          echo "✅ PR #$PR_NUM merged"
+
+      # ── 段階6: GitHub Pages デプロイ ───────────────────────
+      # lesson #1: GITHUB_TOKEN連鎖でdeployが起動しないため、同じworkflow内でデプロイする
+      - name: Checkout main after merge
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup GitHub Pages
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Summary
+        if: steps.check.outputs.is_jules == 'true'
+        run: |
+          echo "## UNIT-Ω Jules PR 処理結果" >> $GITHUB_STEP_SUMMARY
+          echo "- PR: #${{ github.event.pull_request.number }}" >> $GITHUB_STEP_SUMMARY
+          echo "- バリデーション: ${{ steps.validate.outputs.valid == 'true' && '✅ 通過' || '❌ 失敗' }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.validate.outputs.valid }}" = "true" ]; then
+            echo "- 公開URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+            TOTAL=$(jq '.papers | length' data/index.json 2>/dev/null || echo '?')
+            echo "- アーカイブ総論文数: **${TOTAL}**" >> $GITHUB_STEP_SUMMARY
+          fi

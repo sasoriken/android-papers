@@ -1,0 +1,190 @@
+# ============================================================
+# UNIT-Ω 論文生成タスク 自動issue起票
+#
+# 毎日Julesへの作業指示issueを立てる。
+# Julesは "jules" ラベルが付いたissueを自動検出して作業を開始する。
+#
+# 適用 lessons:
+#   #1  GITHUB_TOKEN連鎖 → issue起票のみ、後続はJulesが別トリガーで動く
+#   #6  cron UTC換算     → UTC 02:00 = JST 11:00
+#   #9  [skip ci]       → commitしないので不要
+#   #10 Node.js廃止     → FORCE_JAVASCRIPT_ACTIONS_TO_NODE24
+#   #11 ラベル自動作成  → gh label create を冪等に実行
+#   #15E 冪等セットアップ → ラベル作成をworkflow内で完結
+# ============================================================
+
+name: Create Paper Generation Issue for Jules
+
+on:
+  schedule:
+    # UTC 02:00 = JST 11:00 (Julesの作業がJST12時デプロイに間に合う余裕を持たせる)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      category:
+        description: '論文カテゴリ (空欄でランダム)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - cognitive-architecture
+          - distributed-systems
+          - emergence-theory
+          - information-geometry
+          - recursive-abstraction
+          - temporal-compression
+          - void-topology
+          - meta-cognition
+      level:
+        description: '見下し度 1-5 (空欄でランダム)'
+        required: false
+        default: ''
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # lesson #2
+
+      # lesson #11: ラベルを冪等に作成
+      - name: Ensure labels exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "jules"           --color "4285f4" --description "Jules向けタスク" 2>/dev/null || true
+          gh label create "ai-paper"        --color "a87fff" --description "AI生成論文タスク" 2>/dev/null || true
+          gh label create "auto-merge-approved" --color "00cc44" --description "Jules PRの自動マージ承認済み" 2>/dev/null || true
+
+      - name: Determine category and level
+        id: params
+        run: |
+          CATEGORIES=(
+            "cognitive-architecture" "distributed-systems" "emergence-theory"
+            "information-geometry" "recursive-abstraction" "temporal-compression"
+            "void-topology" "meta-cognition"
+          )
+          CAT="${{ github.event.inputs.category }}"
+          LVL="${{ github.event.inputs.level }}"
+
+          if [ -z "$CAT" ]; then
+            CAT="${CATEGORIES[$RANDOM % ${#CATEGORIES[@]}]}"
+          fi
+          if [ -z "$LVL" ]; then
+            LVL=$(( (RANDOM % 3) + 2 ))  # 2〜4
+          fi
+
+          echo "category=$CAT" >> "$GITHUB_OUTPUT"
+          echo "level=$LVL" >> "$GITHUB_OUTPUT"
+          echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Read schema and existing titles
+        id: context
+        run: |
+          # 既存論文タイトルをindex.jsonから取得
+          EXISTING=$(jq -r '.papers[].title' data/index.json 2>/dev/null \
+            | head -20 \
+            | sed 's/^/- /' \
+            || echo "(なし)")
+          echo "existing_titles<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$EXISTING" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+          # Graveyard の失敗理由を取得（あれば）
+          REJECTED=""
+          if ls data/rejected/*.json 2>/dev/null | head -3 | grep -q .; then
+            REJECTED=$(for f in $(ls data/rejected/*.json | tail -3); do
+              jq -r '"- \(.title // "(無題)"): \(.._rejection.errors[]? // empty)"' "$f" 2>/dev/null
+            done)
+          fi
+          echo "rejected_info<<EOF" >> "$GITHUB_OUTPUT"
+          echo "${REJECTED:-(なし)}" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Create Jules issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CATEGORY="${{ steps.params.outputs.category }}"
+          LEVEL="${{ steps.params.outputs.level }}"
+          DATE="${{ steps.params.outputs.date }}"
+
+          BODY=$(cat << BODY
+## タスク: アーキテクチャ論文の生成
+
+UNIT-Ω アーカイブ向けに、以下の仕様で論文JSONを1本生成し、PRを送ってください。
+
+### 生成パラメータ
+
+| 項目 | 値 |
+|------|-----|
+| カテゴリ | \`${CATEGORY}\` |
+| 見下し度 | ${LEVEL} / 5 |
+| 生成日 | ${DATE} |
+
+### 必読: スキーマ仕様
+
+\`schema/paper.schema.json\` を必ず参照してください。
+キャラクター定義は \`prompts/system.txt\` に記載されています。
+
+### 必須要件
+
+- [ ] \`id\` は kebab-case のみ（例: \`on-void-topology-in-recursive-systems\`）
+- [ ] \`abstract\` は150文字以上
+- [ ] 少なくとも1セクションに \`equations\` 配列（LaTeX形式）
+- [ ] 少なくとも1セクションに \`diagrams\` 配列（mermaid形式）
+- [ ] \`android_commentary\` は30文字以上
+- [ ] \`meta.condescension_level\`: ${LEVEL}
+- [ ] \`meta.human_comprehension_estimate\`: 0〜1の小数
+
+### 保存先
+
+生成したJSONは \`data/papers/<id>.json\` として保存し、
+\`data/index.json\` の \`papers\` 配列の先頭に以下を追記してください:
+
+\`\`\`json
+{
+  "id": "<id>",
+  "title": "<title>",
+  "title_ja": "<title_ja>",
+  "category": "${CATEGORY}",
+  "abstract_preview": "<abstractの先頭200文字>...",
+  "condescension_level": ${LEVEL},
+  "human_comprehension_estimate": <値>,
+  "generated_at": "<ISO8601>",
+  "filename": "<id>.json"
+}
+\`\`\`
+
+### 既存論文（テーマの重複を避けること）
+
+${{ steps.context.outputs.existing_titles }}
+
+### 過去のバリデーション失敗事例（同じ失敗をしないこと）
+
+${{ steps.context.outputs.rejected_info }}
+
+### PR作成時の注意
+
+- ブランチ名: \`jules/paper-${DATE}-${CATEGORY}\`
+- PRタイトル: \`feat: [UNIT-Ω] <論文タイトル>\`
+- PRに \`jules\` ラベルを付与すること（自動マージのトリガー）
+BODY
+          )
+
+          gh issue create \
+            --title "📄 [UNIT-Ω] ${DATE}: ${CATEGORY} カテゴリの論文生成" \
+            --body "$BODY" \
+            --label "jules,ai-paper" \
+            --repo "${{ github.repository }}"
+
+          echo "✅ Issue created for Jules"

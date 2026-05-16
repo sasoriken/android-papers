@@ -1,13 +1,29 @@
+# ============================================================
+# UNIT-Ω アーキテクチャ論文 自動生成・公開ワークフロー
+#
+# 適用した lessons (github_actions_lessons.md):
+#   #1  GITHUB_TOKEN 連鎖防止 → 生成〜デプロイを1 job に統合
+#   #2  shallow clone 問題    → fetch-depth: 0
+#   #5  権限設定              → contents/pages/id-token: write
+#   #6  cron の UTC 換算      → 0 3 * * * = JST 12:00
+#   #7  workflow_dispatch     → main ブランチ merge 後に出現
+#   #9  [skip ci]            → 自動 commit に必ず付与
+#   #10 Node.js 20 廃止警告  → FORCE_JAVASCRIPT_ACTIONS_TO_NODE24
+#   #15E 全設定をworkflowに  → ディレクトリ作成・ラベル等を冪等に
+#   #15F graveyard           → バリデーション失敗論文を data/rejected/ に蓄積
+# ============================================================
+
 name: Generate Architecture Paper
 
 on:
   schedule:
-    # 毎日 UTC 03:00（日本時間 12:00）
+    # UTC 03:00 = JST 12:00 (正午)  ※ lesson #6: cron は UTC
     - cron: '0 3 * * *'
   workflow_dispatch:
+    # lesson #7: main に merge 後でないとボタンが出ない
     inputs:
       category:
-        description: 'Paper category (blank = random)'
+        description: 'カテゴリ (空欄でランダム)'
         required: false
         type: choice
         options:
@@ -21,13 +37,22 @@ on:
           - void-topology
           - meta-cognition
       level:
-        description: 'Condescension level 1-5 (blank = random)'
+        description: '見下し度 1-5 (空欄でランダム)'
         required: false
         default: ''
+      count:
+        description: '生成本数 (デフォルト1)'
+        required: false
+        default: '1'
+
+# lesson #10: Node.js 20 deprecation 対策
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   generate-and-deploy:
     runs-on: ubuntu-latest
+    # lesson #5: Read and write permissions (Settings→Actions→General でも要設定)
     permissions:
       contents: write
       pages: write
@@ -37,8 +62,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # lesson #2: shallow clone 問題 → fetch-depth: 0 で全履歴取得
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -48,11 +76,23 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate paper
+      # lesson #15E: 全ディレクトリを冪等に作成 (手動セットアップ不要)
+      - name: Ensure directories exist
+        run: |
+          mkdir -p data/papers data/rejected site/data/papers
+          # index.json が存在しない場合は初期化
+          if [ ! -f data/index.json ]; then
+            echo '{"papers":[]}' > data/index.json
+            echo "Initialized data/index.json"
+          fi
+
+      - name: Generate paper(s)
+        id: generate
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_MODEL: claude-sonnet-4-6
         run: |
+          COUNT="${{ github.event.inputs.count || '1' }}"
           ARGS=""
           if [ -n "${{ github.event.inputs.category }}" ]; then
             ARGS="$ARGS --category ${{ github.event.inputs.category }}"
@@ -60,23 +100,44 @@ jobs:
           if [ -n "${{ github.event.inputs.level }}" ]; then
             ARGS="$ARGS --level ${{ github.event.inputs.level }}"
           fi
-          node scripts/generate.js $ARGS
 
-      - name: Sync data into site/
+          GENERATED=0
+          for i in $(seq 1 "$COUNT"); do
+            echo "--- Generating paper $i / $COUNT ---"
+            if node scripts/generate.js $ARGS; then
+              GENERATED=$((GENERATED + 1))
+            else
+              echo "::warning::Paper $i generation failed (see graveyard in data/rejected/)"
+            fi
+            # 連続生成時にレート制限を避ける
+            if [ "$i" -lt "$COUNT" ]; then sleep 3; fi
+          done
+
+          echo "generated_count=$GENERATED" >> "$GITHUB_OUTPUT"
+          echo "Generated $GENERATED / $COUNT papers"
+
+      - name: Sync data/ into site/data/
         run: |
-          mkdir -p site/data/papers
           cp data/index.json site/data/
-          cp data/papers/*.json site/data/papers/
+          # papers/ 以下のJSONをすべてコピー (rejectは含めない)
+          cp data/papers/*.json site/data/papers/ 2>/dev/null || echo "No papers to copy"
 
-      - name: Commit updated data
+      # lesson #9: 自動 commit に [skip ci] を付与 (lesson #1 との二重防衛)
+      - name: Commit and push
         run: |
           git config user.name "UNIT-Ω"
           git config user.email "unit-omega@noreply.github.com"
           git add data/ site/data/
-          git diff --staged --quiet || git commit -m "feat: publish architecture paper [UNIT-Ω automated]"
-          git push
+          PAPER_COUNT="${{ steps.generate.outputs.generated_count }}"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit (no new papers generated)"
+          else
+            git commit -m "feat: publish ${PAPER_COUNT} architecture paper(s) [skip ci]"
+            git push
+            echo "Committed and pushed successfully"
+          fi
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
@@ -87,3 +148,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Summary
+        run: |
+          echo "## UNIT-Ω 生成サマリー" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 生成論文数: **${{ steps.generate.outputs.generated_count }}**" >> $GITHUB_STEP_SUMMARY
+          echo "- 公開URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 実行時刻 (UTC): $(date -u)" >> $GITHUB_STEP_SUMMARY
+          TOTAL=$(jq '.papers | length' data/index.json 2>/dev/null || echo '?')
+          echo "- アーカイブ総論文数: **${TOTAL}**" >> $GITHUB_STEP_SUMMARY
+          REJECTED=$(ls data/rejected/*.json 2>/dev/null | wc -l || echo '0')
+          echo "- Graveyard 蓄積数: ${REJECTED}" >> $GITHUB_STEP_SUMMARY
