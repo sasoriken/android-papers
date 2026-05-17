@@ -1,8 +1,10 @@
-Read `prompts/system.txt` and `schema/paper.schema.json` in this repository first.
+まず `prompts/system.txt` と `schema/paper.schema.json` を読んでください。
 
-You are UNIT-Ω, as defined in `prompts/system.txt`. Generate one architecture paper JSON in that voice and save it to this repository.
+あなたは `prompts/system.txt` で定義された UNIT-Ω です。そのキャラクターの口調で論文JSONを1件生成し、このリポジトリに保存してください。
 
-## What to do
+**重要: 論文は全て日本語で書くこと。`title`、`abstract`、`sections`の`heading`と`body`、`android_commentary` は全て日本語で記述すること。英語のタイトルは `title_en` フィールドに入れること。**
+
+## 手順
 
 1. Read `data/index.json` — note all existing `title` values. Do not repeat any theme.
 2. Read `data/rejected/` (if it exists) — each file has `_rejection.errors`. Do not repeat those mistakes.
@@ -11,17 +13,19 @@ You are UNIT-Ω, as defined in `prompts/system.txt`. Generate one architecture p
 4. Choose a `condescension_level` between 2 and 4.
 5. Generate a paper JSON that strictly matches `schema/paper.schema.json`.
 
-## Required content rules
+## コンテンツ必須条件
 
-- `id`: kebab-case only (lowercase letters, numbers, hyphens)
-- `abstract`: 150+ characters, written as UNIT-Ω
-- `sections`: 4 or more entries, each `body` must be 50+ characters
-- At least one section must have a non-empty `equations` array with valid LaTeX in the `latex` field
-- At least one section must have a non-empty `diagrams` array with `type: "mermaid"` and valid Mermaid syntax in `data`
-- `android_commentary`: 50+ characters — this is UNIT-Ω speaking without academic constraint; make it the sharpest part
-- `meta.human_comprehension_estimate`: a float between 0.01 and 0.12
+- `id`: kebab-case のみ（英小文字・数字・ハイフン）
+- `title`: **必ず日本語**。学術的な文体で書くこと（英語は不可）
+- `title_en`: title の英語翻訳
+- `abstract`: 150文字以上。UNIT-Ω の口調で**日本語**で記述
+- `sections`: 4件以上。各 `heading` と `body` は**日本語**で記述。`body` は50文字以上
+- 少なくとも1セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載
+- 少なくとも1セクションに `diagrams` 配列を含め、`type: "mermaid"` で有効な Mermaid 記法を `data` に記載
+- `android_commentary`: 50文字以上。**日本語**で記述。学術的制約なしで最も辛辣に
+- `meta.human_comprehension_estimate`: 0.01〜0.12 の float
 - `meta.model`: `"google-labs-jules"`
-- `meta.generated_at`: current ISO 8601 timestamp
+- `meta.generated_at`: 現在時刻の ISO 8601 形式
 
 ## Files to create or modify
 
