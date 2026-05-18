@@ -13,11 +13,11 @@
     },
     "title": {
       "type": "string",
-      "description": "論文タイトル（英語）"
+      "description": "論文タイトル（必ず日本語・学術的文体）。英語タイトルを入れてはならない"
     },
-    "title_ja": {
+    "title_en": {
       "type": "string",
-      "description": "論文タイトル（日本語・任意）"
+      "description": "title の英語翻訳（任意）。論文の主タイトルは title フィールドの日本語"
     },
     "abstract": {
       "type": "string",

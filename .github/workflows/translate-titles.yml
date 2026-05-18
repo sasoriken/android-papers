@@ -1,0 +1,109 @@
+# ============================================================
+# 英語タイトル日本語化ワークフロー
+#
+# Jules / UNIT-Ω が稀に title フィールドへ英語タイトルを書き込んでしまった場合の
+# セーフティネット。data/papers/*.json をスキャンし、title が英語のみの論文を
+# 検出して Claude API で日本語訳に置き換える。
+#
+# 通常運用では「何も検出されない」のが期待動作。
+# 検出して書き換えた場合のみ commit & push する。
+# ============================================================
+
+name: Translate English Titles
+
+on:
+  # 毎日 JST 13:00 (UTC 04:00) に巡回
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '検出のみで書き換えしない (true/false)'
+        required: false
+        default: 'false'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Translate English titles
+        id: translate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: claude-sonnet-4-6
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            node scripts/translate-titles.js --dry
+          else
+            node scripts/translate-titles.js
+          fi
+
+      - name: Validate updated papers
+        if: steps.translate.outputs.translated_count != '0' && steps.translate.outputs.translated_count != ''
+        run: npm run validate
+
+      - name: Sync data/ into docs/data/
+        if: steps.translate.outputs.translated_count != '0' && steps.translate.outputs.translated_count != ''
+        run: |
+          cp data/index.json docs/data/
+          cp data/papers/*.json docs/data/papers/ 2>/dev/null || echo "No papers"
+
+      - name: Build papers.js
+        if: steps.translate.outputs.translated_count != '0' && steps.translate.outputs.translated_count != ''
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const index = JSON.parse(fs.readFileSync('docs/data/index.json', 'utf-8'));
+          const papers = {};
+          const papersDir = 'docs/data/papers';
+          if (fs.existsSync(papersDir)) {
+            fs.readdirSync(papersDir).filter(f => f.endsWith('.json')).forEach(f => {
+              papers[f] = JSON.parse(fs.readFileSync(path.join(papersDir, f), 'utf-8'));
+            });
+          }
+          const js = '// Auto-generated — do not edit manually\nwindow.__ARCHIVE_DATA__ = ' + JSON.stringify({index, papers}) + ';\n';
+          fs.writeFileSync('docs/data/papers.js', js, 'utf-8');
+          console.log('Built papers.js with ' + Object.keys(papers).length + ' papers');
+          "
+
+      - name: Commit and push
+        if: steps.translate.outputs.translated_count != '0' && steps.translate.outputs.translated_count != ''
+        run: |
+          git config user.name "UNIT-Ω"
+          git config user.email "unit-omega@noreply.github.com"
+          git add data/ docs/data/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+          else
+            COUNT="${{ steps.translate.outputs.translated_count }}"
+            git commit -m "fix: 英語タイトル ${COUNT} 件を日本語に翻訳"
+            git push
+          fi
+
+      - name: Summary
+        run: |
+          COUNT="${{ steps.translate.outputs.translated_count }}"
+          echo "## 英語タイトル日本語化サマリー" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 翻訳した論文数: **${COUNT:-0}**" >> $GITHUB_STEP_SUMMARY
+          echo "- 実行時刻 (UTC): $(date -u)" >> $GITHUB_STEP_SUMMARY
