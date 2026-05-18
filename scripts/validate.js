@@ -29,6 +29,11 @@ function validate(paper, sourcePath) {
   if (!paper.id || typeof paper.id !== 'string') errors.push('id がありません');
   if (paper.id && !/^[a-z0-9-]+$/.test(paper.id)) errors.push('id は kebab-case のみ');
   if (!paper.title)    errors.push('title がありません');
+  // title は日本語必須。ひらがな/カタカナ/CJK のいずれかを最低1文字含まなければ NG。
+  // （英語混じりは可。完全に英語のみのタイトルを弾く。）
+  if (paper.title && !/[぀-ゟ゠-ヿ一-鿿]/.test(paper.title)) {
+    errors.push('title は日本語必須。英語タイトルは title_en に入れてください');
+  }
   if (!paper.abstract) errors.push('abstract がありません');
   if (paper.abstract && paper.abstract.length < 100) errors.push('abstract が短すぎます（100文字以上）');
   if (!CATEGORIES.includes(paper.category)) errors.push(`category が無効: ${paper.category}`);

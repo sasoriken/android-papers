@@ -35,8 +35,8 @@
 ```json
 {
   "id": "<id>",
-  "title": "<title>",
-  "title_ja": "<title_ja>",
+  "title": "<日本語タイトル>",
+  "title_en": "<英語タイトル>",
   "category": "<category>",
   "abstract_preview": "<first 200 chars of abstract>...",
   "condescension_level": <level>,
