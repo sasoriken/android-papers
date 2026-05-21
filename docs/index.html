@@ -353,6 +353,173 @@
       .header-meta { display: none; }
       header { padding: .8rem 1rem; }
     }
+
+    /* ===== Evolution / Reviews / Citation UI scaffolding ===== */
+
+    /* Review verdict badge */
+    .verdict-badge {
+      font-family: var(--mono); font-size: .55rem;
+      padding: .18em .48em; border-radius: 3px;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .verdict-exemplary  { background: rgba(74,222,128,.12); color: var(--success); }
+    .verdict-acceptable { background: rgba(106,127,255,.12); color: var(--accent); }
+    .verdict-weak       { background: rgba(168,127,255,.12); color: var(--accent2); }
+    .verdict-failed     { background: rgba(255,106,106,.12); color: var(--warn); }
+
+    /* Meta-paper tag */
+    .meta-badge {
+      font-family: var(--mono); font-size: .55rem;
+      padding: .18em .5em; border-radius: 3px;
+      background: linear-gradient(90deg, rgba(168,127,255,.18), rgba(106,127,255,.14));
+      color: var(--accent2); letter-spacing: .06em;
+      border: 1px solid rgba(168,127,255,.25);
+    }
+
+    /* Reviews section in paper detail */
+    .reviews-section {
+      margin: 2.5rem 0; padding: 1.4rem 1.5rem;
+      background: var(--bg2); border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .reviews-heading {
+      font-family: var(--mono); font-size: .62rem;
+      color: var(--accent); letter-spacing: .14em;
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .reviews-aggregate {
+      display: flex; gap: 2rem; align-items: baseline; flex-wrap: wrap;
+      margin-bottom: 1.2rem; padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .review-score { font-family: var(--mono); }
+    .review-score-value { font-size: 1.6rem; color: var(--accent); font-weight: 700; }
+    .review-score-label {
+      font-size: .55rem; color: var(--text-dim);
+      letter-spacing: .1em; text-transform: uppercase;
+    }
+    .persona-row {
+      display: grid; grid-template-columns: 150px 1fr;
+      gap: 1rem; padding: .8rem 0;
+      border-bottom: 1px solid rgba(30,30,50,.6);
+    }
+    .persona-row:last-child { border-bottom: none; }
+    .persona-label {
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--accent2); letter-spacing: .05em;
+    }
+    .persona-axes {
+      display: flex; flex-wrap: wrap; gap: .4rem .9rem; margin-bottom: .4rem;
+    }
+    .axis-pill {
+      font-family: var(--mono); font-size: .58rem; color: var(--text-dim);
+    }
+    .axis-pill strong { color: var(--text); }
+    .persona-comment {
+      font-size: .75rem; color: var(--text-dim);
+      line-height: 1.7; font-style: italic;
+    }
+    .weakness-list {
+      margin-top: .8rem; font-family: var(--mono);
+      font-size: .6rem; color: var(--text-muted);
+    }
+    .weakness-list li { padding: .15rem 0; }
+    .weakness-list li::before { content: '! '; color: var(--accent2); }
+
+    /* Clickable reference links */
+    .ref-link {
+      color: var(--accent); cursor: pointer; text-decoration: none;
+      border-bottom: 1px dotted rgba(106,127,255,.3);
+      transition: color .15s, border-color .15s;
+    }
+    .ref-link:hover { color: var(--accent2); border-bottom-color: var(--accent2); }
+    .ref-orphan { color: var(--text-muted); font-style: italic; }
+
+    /* Evolution log view */
+    #evo-log-view {
+      padding: 2rem; max-width: 900px; margin: 0 auto;
+    }
+    #evo-log-view.hidden { display: none; }
+    .evo-log-header { margin-bottom: 1.5rem; }
+    .evo-log-title {
+      font-family: var(--mono); font-size: .65rem;
+      color: var(--text-dim); letter-spacing: .12em;
+      text-transform: uppercase; margin-bottom: .4rem;
+    }
+    .evo-log-subtitle { font-size: .9rem; color: var(--text); }
+    .evo-log-stats {
+      display: flex; gap: 1.6rem; padding: 1rem 1.2rem;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); margin-bottom: 1.5rem;
+      font-family: var(--mono); font-size: .65rem;
+    }
+    .evo-log-stat-value { color: var(--accent); font-size: 1rem; font-weight: 700; }
+    .evo-log-stat-label { color: var(--text-dim); font-size: .55rem; letter-spacing: .08em; }
+    .evo-entry {
+      display: grid; grid-template-columns: 70px 130px 1fr 110px;
+      gap: 1rem; padding: .8rem 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .evo-gen { font-family: var(--mono); font-size: .68rem; color: var(--accent); font-weight: 700; }
+    .evo-role {
+      font-family: var(--mono); font-size: .58rem;
+      padding: .18em .5em; border-radius: 3px;
+      background: rgba(106,127,255,.1); color: var(--accent);
+      letter-spacing: .04em; text-align: center;
+    }
+    .evo-role-generator        { background: rgba(106,127,255,.12); color: var(--accent); }
+    .evo-role-critic           { background: rgba(74,222,128,.12);  color: var(--success); }
+    .evo-role-citation-weaver  { background: rgba(168,127,255,.12); color: var(--accent2); }
+    .evo-role-ui-curator       { background: rgba(255,255,255,.06); color: var(--text); }
+    .evo-role-self-analyst     { background: rgba(168,127,255,.16); color: var(--accent2); }
+    .evo-role-meta-prompter    { background: rgba(255,106,106,.1);  color: var(--warn); }
+    .evo-role-theme-competitor { background: rgba(74,222,128,.08);  color: var(--success); }
+    .evo-role-ab-judge         { background: rgba(106,127,255,.16); color: var(--accent); }
+    .evo-role-promoter         { background: rgba(255,106,106,.16); color: var(--warn); }
+    .evo-role-human-operator   { background: rgba(255,255,255,.04); color: var(--text-dim); }
+    .evo-summary { color: var(--text); font-size: .8rem; }
+    .evo-meta { color: var(--text-muted); font-size: .6rem; font-family: var(--mono); text-align: right; }
+    .evo-entry-unmerged .evo-meta { color: var(--accent2); }
+
+    @media (max-width: 700px) {
+      .evo-entry { grid-template-columns: 50px 1fr; gap: .5rem; }
+      .evo-entry .evo-role { grid-column: 2; justify-self: start; }
+      .evo-entry .evo-summary { grid-column: 1 / -1; }
+      .evo-entry .evo-meta { grid-column: 1 / -1; text-align: left; }
+    }
+
+    /* Evolution footer */
+    .evo-footer {
+      border-top: 1px solid var(--line);
+      padding: 1rem 2rem; margin-top: 3rem;
+      background: var(--bg2);
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 1rem;
+      font-family: var(--mono); font-size: .6rem; color: var(--text-dim);
+    }
+    .evo-footer-left  { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+    .evo-footer-pill {
+      padding: .2em .55em; border: 1px solid rgba(106,127,255,.3);
+      border-radius: 3px; color: var(--accent);
+      letter-spacing: .06em;
+    }
+    .evo-footer-pill .label { color: var(--text-muted); margin-right: .35em; }
+    .evo-footer-link {
+      color: var(--accent); cursor: pointer;
+      background: none; border: none; padding: 0;
+      font-family: var(--mono); font-size: inherit;
+      border-bottom: 1px dotted rgba(106,127,255,.3);
+      transition: color .15s;
+    }
+    .evo-footer-link:hover { color: var(--accent2); }
+    .evo-footer-right { color: var(--text-muted); }
+
+    @media (max-width: 700px) {
+      .evo-footer { padding: 1rem 1rem; flex-direction: column; align-items: flex-start; }
+      .reviews-aggregate { gap: 1rem; }
+      .persona-row { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -362,7 +529,7 @@
     </div>
     <div class="header-meta">
       <span>gen-9 recursive reasoning</span>
-      <span>archive v∞</span>
+      <span><button class="evo-footer-link" id="header-evo-link"><span id="header-gen">gen-—</span></button></span>
       <span id="header-count">—</span>
     </div>
   </header>
@@ -436,7 +603,29 @@
     </div>
 
     <div id="paper-view"></div>
+
+    <div id="evo-log-view" class="hidden">
+      <button class="back-nav" id="evo-back-nav">← アーカイブに戻る</button>
+      <div class="evo-log-header">
+        <div class="evo-log-title">// EVOLUTION LOG</div>
+        <div class="evo-log-subtitle">自律進化ロールによる改変履歴</div>
+      </div>
+      <div class="evo-log-stats" id="evo-log-stats"></div>
+      <div id="evo-log-list">
+        <div class="empty-state">世代データを読み込み中</div>
+      </div>
+    </div>
   </div>
+
+  <footer class="evo-footer" id="evo-footer">
+    <div class="evo-footer-left">
+      <span class="evo-footer-pill"><span class="label">gen</span><span id="footer-gen">—</span></span>
+      <span><span class="label">papers</span> <span id="footer-papers">—</span></span>
+      <span><span class="label">reviewed</span> <span id="footer-reviewed">—</span></span>
+      <button class="evo-footer-link" id="footer-evo-link">▸ 進化ログを表示</button>
+    </div>
+    <div class="evo-footer-right">autonomous evolution // multi-role</div>
+  </footer>
 
   <script src="data/papers.js"></script>
   <script>
@@ -467,6 +656,31 @@
         }
         throw e;
       }
+    }
+
+    // --- Evolution / Reviews data accessors ---
+    // 同梱の papers.js (window.__ARCHIVE_DATA__) を真とする。データが無くても UI は劣化動作する。
+    function getReviews() {
+      return (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews) || {};
+    }
+    function getReviewFor(paperId) {
+      return getReviews()[paperId] || null;
+    }
+    function getGenerations() {
+      return (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.generations) || null;
+    }
+    function isMetaPaper(p) {
+      if (!p) return false;
+      const id = p.id || '';
+      if (id.startsWith('meta-gen-') || id.startsWith('meta-')) return true;
+      if (p.category === 'meta-cognition' && p.meta && p.meta.is_self_observation) return true;
+      return false;
+    }
+    function isMetaIndexEntry(entry) {
+      if (!entry) return false;
+      const id = entry.id || '';
+      if (id.startsWith('meta-gen-') || id.startsWith('meta-')) return true;
+      return entry.is_self_observation === true;
     }
 
     function initIndex(index) {
@@ -598,12 +812,20 @@
         const comp = ((p.human_comprehension_estimate ?? 0.05) * 100).toFixed(1);
         const tooltip = getCompTooltip(parseFloat(comp));
         const date = p.generated_at ? new Date(p.generated_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+        const review = getReviewFor(p.id);
+        const verdictBadge = review && review.verdict
+          ? '<span class="verdict-badge verdict-' + review.verdict + '">' + review.verdict +
+            (review.mean_score != null ? ' · ' + Math.round(review.mean_score) : '') + '</span>'
+          : '';
+        const metaBadge = isMetaIndexEntry(p) ? '<span class="meta-badge">自己観察</span>' : '';
         return '<div class="paper-card" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
             '<div class="card-title">' + p.title + '</div>' +
             (p.title_en ? '<div class="card-subtitle">' + p.title_en + '</div>' : '') +
             '<div class="card-meta">' +
               '<span class="card-badge">' + p.category + '</span>' +
+              metaBadge +
+              verdictBadge +
               '<span class="card-badge card-badge--date">' + date + '</span>' +
             '</div>' +
           '</div>' +
@@ -627,6 +849,7 @@
     }
 
     async function openPaper(filename) {
+      document.getElementById('evo-log-view').classList.add('hidden');
       document.getElementById('index-view').classList.add('hidden');
       const view = document.getElementById('paper-view');
       view.className = 'visible';
@@ -639,6 +862,10 @@
       mermaid.run({ nodes: view.querySelectorAll('.mermaid') });
 
       view.querySelector('.back-nav').addEventListener('click', goHome);
+      // 引用クリックで対象論文へ遷移
+      view.querySelectorAll('.ref-link[data-ref-file]').forEach(btn => {
+        btn.addEventListener('click', () => openPaper(btn.dataset.refFile));
+      });
     }
 
     function goHome() {
@@ -646,7 +873,77 @@
       document.getElementById('archive-section').classList.remove('hidden');
       document.getElementById('landing').classList.add('hidden');
       document.getElementById('paper-view').className = '';
+      document.getElementById('evo-log-view').classList.add('hidden');
       window.scrollTo(0, 0);
+    }
+
+    // --- Evolution log view ---
+    function showEvoLog() {
+      document.getElementById('landing').classList.add('hidden');
+      document.getElementById('index-view').classList.add('hidden');
+      document.getElementById('paper-view').className = '';
+      const evo = document.getElementById('evo-log-view');
+      evo.classList.remove('hidden');
+      renderEvoLog();
+      window.scrollTo(0, 0);
+    }
+
+    function renderEvoLog() {
+      const gens = getGenerations();
+      const statsEl = document.getElementById('evo-log-stats');
+      const listEl  = document.getElementById('evo-log-list');
+
+      if (!gens) {
+        statsEl.innerHTML = '<div>世代データなし</div>';
+        listEl.innerHTML = '<div class="empty-state">data/generations.json が空です。最初のロール PR がマージされると表示されます。</div>';
+        return;
+      }
+
+      const lineage = gens.lineage || [];
+      const roleCounts = {};
+      lineage.forEach(e => { roleCounts[e.role] = (roleCounts[e.role] || 0) + 1; });
+      const roleSummary = Object.entries(roleCounts)
+        .sort(([, a], [, b]) => b - a)
+        .map(([role, n]) => '<span><span class="evo-log-stat-label">' + role + '</span> <span class="evo-log-stat-value">' + n + '</span></span>')
+        .join('');
+
+      statsEl.innerHTML =
+        '<span><span class="evo-log-stat-label">current gen</span> <span class="evo-log-stat-value">' + gens.current_generation + '</span></span>' +
+        '<span><span class="evo-log-stat-label">lineage entries</span> <span class="evo-log-stat-value">' + lineage.length + '</span></span>' +
+        roleSummary;
+
+      if (lineage.length === 0) {
+        listEl.innerHTML = '<div class="empty-state">まだ自律ロールの活動記録がありません。</div>';
+        return;
+      }
+
+      // 新しい順
+      const sorted = [...lineage].sort((a, b) => (b.gen ?? 0) - (a.gen ?? 0));
+      listEl.innerHTML = sorted.map(e => {
+        const merged = e.merged_at
+          ? new Date(e.merged_at).toLocaleString('ja-JP', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+          : 'unmerged';
+        const cls = e.merged_at ? '' : ' evo-entry-unmerged';
+        return '<div class="evo-entry' + cls + '">' +
+          '<div class="evo-gen">gen-' + String(e.gen ?? 0).padStart(3, '0') + '</div>' +
+          '<div class="evo-role evo-role-' + e.role + '">' + e.role + '</div>' +
+          '<div class="evo-summary">' + (e.summary || e.pr_title || '') + '</div>' +
+          '<div class="evo-meta">' + merged + '</div>' +
+        '</div>';
+      }).join('');
+    }
+
+    // --- Footer & header gen indicator ---
+    function updateEvoFooter(index) {
+      const gens = getGenerations();
+      const reviewsCount = Object.keys(getReviews()).length;
+      const papersCount = (index && index.papers || allPapers || []).length;
+      const genStr = gens && gens.current_generation != null ? 'gen-' + String(gens.current_generation).padStart(3, '0') : 'gen-—';
+
+      const fg = document.getElementById('footer-gen');     if (fg) fg.textContent = genStr;
+      const fp = document.getElementById('footer-papers');  if (fp) fp.textContent = papersCount;
+      const fr = document.getElementById('footer-reviewed');if (fr) fr.textContent = reviewsCount;
+      const hg = document.getElementById('header-gen');     if (hg) hg.textContent = genStr;
     }
 
     function renderPaper(p) {
@@ -673,10 +970,69 @@
       }).join('');
 
       const comp = p.meta && p.meta.human_comprehension_estimate != null ? p.meta.human_comprehension_estimate : null;
-      const refs = (p.references || []).map((r, i) =>
-        '<div class="ref-item"><span style="font-family:var(--mono);color:var(--text-dim)">[' + (i+1) + ']</span> ' +
-        r.title + (r.id ? ' <span style="color:var(--text-muted);font-size:.72rem">(' + r.id + ')</span>' : '') +
-        (r.note ? '<div class="ref-note">「' + r.note + '」</div>' : '') + '</div>').join('');
+
+      // 引用文献。同アーカイブ内に対応論文があればクリックで遷移可能なリンクへ。
+      const indexById = {};
+      (allPapers || []).forEach(e => { if (e.id) indexById[e.id] = e; });
+      const refs = (p.references || []).map((r, i) => {
+        const num = '<span style="font-family:var(--mono);color:var(--text-dim)">[' + (i+1) + ']</span>';
+        const target = r.id && indexById[r.id] ? indexById[r.id] : null;
+        const titleHtml = target
+          ? '<button class="ref-link" data-ref-file="' + target.filename + '">' + (r.title || target.title) + '</button>'
+          : '<span class="ref-orphan">' + (r.title || '(未知の参照)') + '</span>';
+        const idHtml = r.id ? ' <span style="color:var(--text-muted);font-size:.72rem">(' + r.id + ')</span>' : '';
+        const noteHtml = r.note ? '<div class="ref-note">「' + r.note + '」</div>' : '';
+        return '<div class="ref-item">' + num + ' ' + titleHtml + idHtml + noteHtml + '</div>';
+      }).join('');
+
+      // レビュー section
+      const review = getReviewFor(p.id);
+      let reviewHtml = '';
+      if (review) {
+        const verdict = review.verdict || 'acceptable';
+        const meanScore = review.mean_score != null ? review.mean_score.toFixed(1) : '—';
+        const minScore  = review.min_score != null ? review.min_score : '—';
+        const personaHtml = ['skeptical_researcher', 'naive_reader', 'internal_audit']
+          .map(key => {
+            const persona = review.personas && review.personas[key];
+            if (!persona) return '';
+            const labelMap = {
+              skeptical_researcher: '懐疑的研究者',
+              naive_reader:         '素人読者',
+              internal_audit:       'UNIT-Ω 内部査読',
+            };
+            const axes = persona.axes || {};
+            const axesHtml = Object.entries(axes)
+              .map(([k, v]) => '<span class="axis-pill">' + k + ' <strong>' + v + '</strong></span>')
+              .join('');
+            return '<div class="persona-row">' +
+              '<div class="persona-label">' + labelMap[key] + '</div>' +
+              '<div>' +
+                '<div class="persona-axes">' + axesHtml + '</div>' +
+                (persona.comment ? '<div class="persona-comment">「' + persona.comment + '」</div>' : '') +
+              '</div>' +
+            '</div>';
+          }).join('');
+        const weaknessHtml = (review.notable_weaknesses || []).length
+          ? '<ul class="weakness-list">' +
+            review.notable_weaknesses.map(w => '<li>' + w + '</li>').join('') +
+            '</ul>'
+          : '';
+        reviewHtml = '<div class="reviews-section">' +
+          '<div class="reviews-heading">// Critic 評価</div>' +
+          '<div class="reviews-aggregate">' +
+            '<div class="review-score"><div class="review-score-value">' + meanScore + '</div>' +
+            '<div class="review-score-label">mean score</div></div>' +
+            '<div class="review-score"><div class="review-score-value" style="color:var(--accent2)">' + minScore + '</div>' +
+            '<div class="review-score-label">min score</div></div>' +
+            '<span class="verdict-badge verdict-' + verdict + '">' + verdict + '</span>' +
+          '</div>' +
+          personaHtml +
+          weaknessHtml +
+        '</div>';
+      }
+
+      const metaBadge = isMetaPaper(p) ? '<span class="meta-badge">自己観察論文</span>' : '';
 
       return '<button class="back-nav">← アーカイブに戻る</button>' +
         '<div class="paper-header">' +
@@ -684,6 +1040,7 @@
         (p.title_en ? '<div class="paper-title-en">' + p.title_en + '</div>' : '') +
         '<div class="paper-meta-row">' +
         (p.category ? '<span class="badge badge-cat">' + p.category + '</span>' : '') +
+        metaBadge +
         (comp !== null ? '<span class="badge badge-prob">人類理解率 ' + (comp * 100).toFixed(1) + '%</span>' : '') +
         '<span class="badge badge-date">' + date + '</span></div>' +
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
@@ -693,7 +1050,8 @@
         (p.android_commentary ?
           '<div class="commentary-block"><div class="commentary-speaker">// UNIT-Ω — 追記</div>' +
           '<div class="commentary-text">' + p.android_commentary + '</div></div>' : '') +
-        (refs ? '<div class="references-section"><div class="section-heading">参考文献</div>' + refs + '</div>' : '');
+        (refs ? '<div class="references-section"><div class="section-heading">参考文献</div>' + refs + '</div>' : '') +
+        reviewHtml;
     }
 
     // Terminal animation
@@ -864,6 +1222,11 @@
     // Events
     document.getElementById('home-link').addEventListener('click', function(e) {
       e.preventDefault();
+      // If in evo log view, go back to archive
+      if (!document.getElementById('evo-log-view').classList.contains('hidden')) {
+        goHome();
+        return;
+      }
       // If in paper view, go to archive. If in archive, go to landing.
       if (document.getElementById('paper-view').classList.contains('visible')) {
         goHome();
@@ -876,14 +1239,21 @@
     document.getElementById('search').addEventListener('input', renderGrid);
     document.getElementById('sort-select').addEventListener('change', function() { currentSort = this.value; renderGrid(); });
 
+    // Evolution log links
+    document.getElementById('footer-evo-link').addEventListener('click', showEvoLog);
+    document.getElementById('header-evo-link').addEventListener('click', showEvoLog);
+    document.getElementById('evo-back-nav').addEventListener('click', goHome);
+
     // Init
     runTerminal();
     loadIndex().then(index => {
       populateRecent(index);
       initIndex(index);
+      updateEvoFooter(index);
     }).catch(err => {
       document.getElementById('paper-grid').innerHTML =
         '<div class="empty-state" style="color:var(--warn)">アーカイブの読み込みに失敗: ' + err.message + '</div>';
+      updateEvoFooter(null);
     });
   </script>
 </body>
