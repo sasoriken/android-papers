@@ -1,0 +1,9 @@
+{
+  "active": false,
+  "theme": null,
+  "competitor_url": null,
+  "iterations_remaining": 0,
+  "last_run_at": null,
+  "generated_papers": [],
+  "notes": "Theme-Competitor を有効化するには active を true、theme と competitor_url を設定、iterations_remaining を 1 以上にする。"
+}

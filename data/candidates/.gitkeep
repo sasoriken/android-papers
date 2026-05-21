@@ -1,0 +1,3 @@
+# AB-Judge ロールの候補ファイル置き場。
+# ファイル名規約: <competition_id>-<variant_a|variant_b>.json
+# ペア（同 competition_id で 2 件）が揃った時点で AB-Judge が裁定する。

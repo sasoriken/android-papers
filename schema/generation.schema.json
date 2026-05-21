@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "android-papers/generation",
+  "title": "GenerationLineage",
+  "description": "UNIT-Ω 自律進化システムの世代履歴",
+  "type": "object",
+  "required": ["current_generation", "lineage"],
+  "additionalProperties": false,
+  "properties": {
+    "current_generation": { "type": "integer", "minimum": 0 },
+    "started_at": { "type": "string", "format": "date-time" },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gen", "role", "branch", "pr_title"],
+        "additionalProperties": false,
+        "properties": {
+          "gen":       { "type": "integer", "minimum": 0 },
+          "role":      {
+            "type": "string",
+            "enum": [
+              "generator", "critic", "meta-prompter", "ui-curator",
+              "self-analyst", "citation-weaver", "theme-competitor",
+              "ab-judge", "human-operator"
+            ]
+          },
+          "branch":    { "type": "string" },
+          "pr_title":  { "type": "string" },
+          "merged_at": { "type": ["string", "null"], "format": "date-time" },
+          "summary":   { "type": "string" }
+        }
+      }
+    }
+  }
+}

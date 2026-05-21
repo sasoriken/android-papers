@@ -1,5 +1,20 @@
 name: Validate and Auto-merge Jules PR
 
+# ============================================================
+# Jules 自律ロールが作成した PR をロール別バリデーション →
+# constitution-guard 成功時のみ自動マージするワークフロー。
+#
+# 対応ロール:
+#   jules/paper-*   / jules/gen-*   → generator (paper schema)
+#   jules/critic-*                  → critic (review schema)
+#   jules/meta-*                    → meta-prompter (meta-proposal schema)
+#   jules/ui-*                      → ui-curator (HTML 基本サニティ)
+#   jules/self-*                    → self-analyst (paper schema)
+#   jules/cite-*                    → citation-weaver (paper schema 全件再検証)
+#   jules/theme-*                   → theme-competitor (paper schema)
+#   jules/ab-judge-*                → ab-judge (paper schema for promoted)
+# ============================================================
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -20,6 +35,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      checks: read
 
     steps:
       - name: Check if Jules PR
@@ -29,13 +45,25 @@ jobs:
           BRANCH="${{ github.event.pull_request.head.ref }}"
           echo "PR author: $ACTOR"
           echo "PR branch: $BRANCH"
-          # Jules のPRを判定: ボットアカウント名 OR ブランチ名パターン
           if [ "$ACTOR" = "${{ env.JULES_BOT_NAME }}" ] || [[ "$BRANCH" == jules/* ]]; then
-            echo "is_jules=true"  >> "$GITHUB_OUTPUT"
-            echo "✅ Jules PR confirmed (author=$ACTOR, branch=$BRANCH)"
+            echo "is_jules=true" >> "$GITHUB_OUTPUT"
+            # ロール判定
+            case "$BRANCH" in
+              jules/paper-*|jules/gen-*)  ROLE="generator" ;;
+              jules/critic-*)             ROLE="critic" ;;
+              jules/meta-*)               ROLE="meta-prompter" ;;
+              jules/ui-*)                 ROLE="ui-curator" ;;
+              jules/self-*)               ROLE="self-analyst" ;;
+              jules/cite-*)               ROLE="citation-weaver" ;;
+              jules/theme-*)              ROLE="theme-competitor" ;;
+              jules/ab-judge-*)           ROLE="ab-judge" ;;
+              *)                          ROLE="unknown" ;;
+            esac
+            echo "role=$ROLE" >> "$GITHUB_OUTPUT"
+            echo "✅ Jules PR confirmed (role=$ROLE)"
           else
             echo "is_jules=false" >> "$GITHUB_OUTPUT"
-            echo "⛔ Not Jules PR (author=$ACTOR, branch=$BRANCH) — skipping"
+            echo "⛔ Not Jules PR — skipping"
           fi
 
       - name: Checkout PR branch
@@ -55,30 +83,94 @@ jobs:
         if: steps.check.outputs.is_jules == 'true'
         run: npm install
 
-      - name: Validate changed papers
+      # ----------- Constitution Guard（必ず実行） -----------
+      - name: Constitution guard
         if: steps.check.outputs.is_jules == 'true'
-        id: validate
+        id: cguard
         run: |
-          CHANGED=$(git diff --name-only "origin/${{ github.event.pull_request.base.ref }}...HEAD" \
-            -- 'data/papers/*.json' 2>/dev/null || echo "")
-
+          BASE="origin/${{ github.event.pull_request.base.ref }}"
+          git fetch origin "${{ github.event.pull_request.base.ref }}" --depth=50 || true
+          CHANGED=$(git diff --name-only "$BASE...HEAD")
           if [ -z "$CHANGED" ]; then
-            echo "::warning::No paper JSON changes detected"
-            echo "valid=true" >> "$GITHUB_OUTPUT"
+            echo "No changed files."
             exit 0
           fi
+          mapfile -t FILES < <(echo "$CHANGED" | grep -v '^$')
+          node scripts/check-constitution.js --branch "${{ github.event.pull_request.head.ref }}" "${FILES[@]}"
 
-          echo "Changed papers: $CHANGED"
+      # ----------- ロール別バリデーション -----------
+      - name: Validate by role
+        if: steps.check.outputs.is_jules == 'true' && steps.cguard.outcome == 'success'
+        id: validate
+        run: |
+          ROLE="${{ steps.check.outputs.role }}"
+          BASE="origin/${{ github.event.pull_request.base.ref }}"
           FAILED=0
-          for f in $CHANGED; do
-            [ -f "$f" ] && node scripts/validate.js "$f" || FAILED=$((FAILED+1))
-          done
+
+          case "$ROLE" in
+            generator|self-analyst|theme-competitor|ab-judge)
+              echo "--- Validating paper JSONs ---"
+              CHANGED=$(git diff --name-only "$BASE...HEAD" -- 'data/papers/*.json' 2>/dev/null || echo "")
+              if [ -z "$CHANGED" ]; then
+                echo "::warning::No paper JSON changes detected"
+              else
+                for f in $CHANGED; do
+                  [ -f "$f" ] && node scripts/validate.js "$f" || FAILED=$((FAILED+1))
+                done
+              fi
+              ;;
+            critic)
+              echo "--- Validating review JSONs ---"
+              CHANGED=$(git diff --name-only "$BASE...HEAD" -- 'data/reviews/*.json' 2>/dev/null || echo "")
+              if [ -z "$CHANGED" ]; then
+                echo "::warning::No review JSON changes detected"
+              else
+                for f in $CHANGED; do
+                  [ -f "$f" ] && node scripts/validate-review.js "$f" || FAILED=$((FAILED+1))
+                done
+              fi
+              ;;
+            meta-prompter)
+              echo "--- Validating meta-proposal JSONs ---"
+              CHANGED=$(git diff --name-only "$BASE...HEAD" -- 'data/meta-proposals/*.json' 2>/dev/null || echo "")
+              if [ -z "$CHANGED" ]; then
+                echo "::warning::No proposal JSON changes detected"
+              else
+                for f in $CHANGED; do
+                  [ -f "$f" ] && node scripts/validate-meta-proposal.js "$f" || FAILED=$((FAILED+1))
+                done
+              fi
+              ;;
+            citation-weaver)
+              echo "--- Re-validating all papers (citations modify existing papers) ---"
+              npm run validate || FAILED=1
+              ;;
+            ui-curator)
+              echo "--- Basic HTML sanity check ---"
+              if [ -f docs/index.html ]; then
+                # 簡易: 必須 ID が壊れていないか
+                for id in landing archive-section paper-view paper-grid search sort-select; do
+                  if ! grep -q "id=\"$id\"" docs/index.html; then
+                    echo "::error::docs/index.html: required #${id} not found"
+                    FAILED=$((FAILED+1))
+                  fi
+                done
+                # 外部依存の追加検出（追加されてないか）
+                ALLOWED_CDNS=$(grep -oE 'https://cdnjs[^"]+' docs/index.html | sort -u)
+                echo "External scripts:"
+                echo "$ALLOWED_CDNS"
+              fi
+              ;;
+            *)
+              echo "::warning::Unknown role, skipping role-specific validation"
+              ;;
+          esac
 
           if [ "$FAILED" -gt 0 ]; then
             echo "valid=false" >> "$GITHUB_OUTPUT"
           else
-            echo "valid=true"  >> "$GITHUB_OUTPUT"
-            echo "✅ All papers passed validation"
+            echo "valid=true" >> "$GITHUB_OUTPUT"
+            echo "✅ Role-specific validation passed"
           fi
 
       - name: Comment validation failure
@@ -86,14 +178,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          printf '⚠️ **UNIT-Ω バリデーション失敗**\n\n論文JSONがスキーマを満たしていないためマージを中止しました。\n上記 `Validate changed papers` ステップでエラー内容を確認し、修正して再プッシュしてください。' \
-            > /tmp/comment.md
+          printf '⚠️ **UNIT-Ω バリデーション失敗** (role=%s)\n\n本 PR は role 別バリデーションを通過しませんでした。\n上記 `Validate by role` ステップでエラー内容を確認し、修正して再プッシュしてください。' \
+            "${{ steps.check.outputs.role }}" > /tmp/comment.md
           gh pr comment "${{ github.event.pull_request.number }}" \
             --body-file /tmp/comment.md \
             --repo "${{ github.repository }}"
           exit 1
 
-      - name: Label Jules PR as approved
+      - name: Label approved
         if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -104,15 +196,33 @@ jobs:
             --add-label "auto-merge-approved" \
             --repo "${{ github.repository }}"
 
+      # ----------- 公開資産の同期（generator / self-analyst / theme-competitor / ab-judge / citation-weaver） -----------
       - name: Sync data/ into docs/data/
-        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        if: |
+          steps.check.outputs.is_jules == 'true'
+          && steps.validate.outputs.valid == 'true'
+          && contains(fromJSON('["generator","self-analyst","theme-competitor","ab-judge","citation-weaver"]'), steps.check.outputs.role)
         run: |
           mkdir -p docs/data/papers
-          cp data/index.json docs/data/
+          cp data/index.json docs/data/ 2>/dev/null || true
           cp data/papers/*.json docs/data/papers/ 2>/dev/null || true
 
+      - name: Aggregate reviews (critic role)
+        if: |
+          steps.check.outputs.is_jules == 'true'
+          && steps.validate.outputs.valid == 'true'
+          && steps.check.outputs.role == 'critic'
+        run: |
+          node scripts/aggregate-reviews.js
+          # data/reviews-summary.json も docs に同期（UI-Curator や Meta-Prompter が読む）
+          mkdir -p docs/data
+          cp data/reviews-summary.json docs/data/ 2>/dev/null || true
+
       - name: Build papers.js
-        if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
+        if: |
+          steps.check.outputs.is_jules == 'true'
+          && steps.validate.outputs.valid == 'true'
+          && contains(fromJSON('["generator","self-analyst","theme-competitor","ab-judge","citation-weaver"]'), steps.check.outputs.role)
         run: |
           node -e "
           const fs = require('fs');
@@ -131,15 +241,18 @@ jobs:
           fs.writeFileSync('docs/data/papers.js', js, 'utf-8');
           "
 
-      - name: Commit docs/data/ sync to PR branch
+      - name: Commit derived assets
         if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
         run: |
           git config user.name  "UNIT-Ω"
           git config user.email "unit-omega@noreply.github.com"
-          git add docs/data/
-          git diff --staged --quiet \
-            || git commit -m "chore: sync docs/data/"
-          git push origin HEAD:"${{ github.event.pull_request.head.ref }}"
+          git add docs/data/ data/reviews-summary.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Nothing to commit (no derived assets changed)"
+          else
+            git commit -m "chore: sync derived assets for role=${{ steps.check.outputs.role }}"
+            git push origin HEAD:"${{ github.event.pull_request.head.ref }}"
+          fi
 
       - name: Merge Jules PR
         if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'
@@ -159,10 +272,10 @@ jobs:
         run: |
           echo "## UNIT-Ω Jules PR 処理結果" >> "$GITHUB_STEP_SUMMARY"
           echo "- PR: #${{ github.event.pull_request.number }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Role: ${{ steps.check.outputs.role }}" >> "$GITHUB_STEP_SUMMARY"
           if [ "${{ steps.validate.outputs.valid }}" = "true" ]; then
             echo "- バリデーション: ✅ 通過" >> "$GITHUB_STEP_SUMMARY"
             echo "- マージ: ✅ 完了" >> "$GITHUB_STEP_SUMMARY"
-            echo "- デプロイ: push to main → deploy-pages.yml で自動実行" >> "$GITHUB_STEP_SUMMARY"
           else
             echo "- バリデーション: ❌ 失敗" >> "$GITHUB_STEP_SUMMARY"
           fi

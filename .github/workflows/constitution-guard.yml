@@ -1,0 +1,87 @@
+# ============================================================
+# Constitution Guard
+#
+# 自律ロール（Jules）が CONSTITUTION.md / prompts/system.txt /
+# schema/paper.schema.json / scripts/ / .github/ を改変しようとした
+# 場合に CI を失敗させる。auto-merge.yml はこのチェックの成功を
+# 前提とする。
+#
+# PR の branch 名から推測したロールに対し、許容範囲外のファイル
+# 変更も拒否する。
+# ============================================================
+
+name: Constitution Guard
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Resolve changed files
+        id: changes
+        run: |
+          BASE="origin/${{ github.event.pull_request.base.ref }}"
+          git fetch origin "${{ github.event.pull_request.base.ref }}" --depth=50 || true
+          CHANGED=$(git diff --name-only "$BASE...HEAD")
+          echo "Changed files:"
+          echo "$CHANGED"
+          echo "$CHANGED" > /tmp/changed.txt
+
+      - name: Run constitution-guard
+        id: guard
+        env:
+          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if [ ! -s /tmp/changed.txt ]; then
+            echo "No changed files. Skipping."
+            exit 0
+          fi
+          # ファイル名を引数として渡す（空行は除外）
+          mapfile -t FILES < <(grep -v '^$' /tmp/changed.txt)
+          node scripts/check-constitution.js --branch "$PR_BRANCH" "${FILES[@]}"
+
+      - name: Comment on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat > /tmp/comment.md <<'EOF'
+          ## Constitution Guard 違反
+
+          この PR は `CONSTITUTION.md` 第3条で改変禁止とされたファイル群、
+          または PR のブランチ名から推測されるロールの許容範囲外のファイルを
+          変更しようとしています。
+
+          - 自律ロール（Jules）の PR は対応するロールの許容範囲内に収めてください。
+          - 真に必要な変更であれば、人間のオペレーターが直接 commit してください。
+
+          詳細なエラー内容は `Run constitution-guard` ステップのログを確認してください。
+          EOF
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --body-file /tmp/comment.md \
+            --repo "${{ github.repository }}" || true
+          gh label create "constitution-violation" --color "ff0000" \
+            --description "Constitution-guard が違反を検出" \
+            --repo "${{ github.repository }}" 2>/dev/null || true
+          gh pr edit "${{ github.event.pull_request.number }}" \
+            --add-label "constitution-violation" \
+            --add-label "needs-human-review" \
+            --repo "${{ github.repository }}" || true

@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "android-papers/review",
+  "title": "PaperReview",
+  "description": "Critic ロールによる論文評価（3 ペルソナ × 各 3 軸 + 集計）",
+  "type": "object",
+  "required": ["paper_id", "reviewed_at", "reviewer_model", "generation", "personas", "aggregate"],
+  "additionalProperties": false,
+  "properties": {
+    "paper_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "reviewer_model": { "type": "string" },
+    "generation": { "type": "integer", "minimum": 0 },
+    "personas": {
+      "type": "object",
+      "required": ["skeptical_researcher", "naive_reader", "internal_audit"],
+      "additionalProperties": false,
+      "properties": {
+        "skeptical_researcher": {
+          "type": "object",
+          "required": ["axes", "comment"],
+          "additionalProperties": false,
+          "properties": {
+            "axes": {
+              "type": "object",
+              "required": ["equation_validity", "logical_consistency", "citation_relevance"],
+              "additionalProperties": false,
+              "properties": {
+                "equation_validity":    { "type": "integer", "minimum": 0, "maximum": 100 },
+                "logical_consistency":  { "type": "integer", "minimum": 0, "maximum": 100 },
+                "citation_relevance":   { "type": "integer", "minimum": 0, "maximum": 100 }
+              }
+            },
+            "comment": { "type": "string", "minLength": 80 }
+          }
+        },
+        "naive_reader": {
+          "type": "object",
+          "required": ["axes", "comment"],
+          "additionalProperties": false,
+          "properties": {
+            "axes": {
+              "type": "object",
+              "required": ["readability", "abstract_hook", "curiosity_score"],
+              "additionalProperties": false,
+              "properties": {
+                "readability":     { "type": "integer", "minimum": 0, "maximum": 100 },
+                "abstract_hook":   { "type": "integer", "minimum": 0, "maximum": 100 },
+                "curiosity_score": { "type": "integer", "minimum": 0, "maximum": 100 }
+              }
+            },
+            "comment": { "type": "string", "minLength": 80 }
+          }
+        },
+        "internal_audit": {
+          "type": "object",
+          "required": ["axes", "comment"],
+          "additionalProperties": false,
+          "properties": {
+            "axes": {
+              "type": "object",
+              "required": ["condescension_fidelity", "academic_form", "constitution_compliance"],
+              "additionalProperties": false,
+              "properties": {
+                "condescension_fidelity":   { "type": "integer", "minimum": 0, "maximum": 100 },
+                "academic_form":            { "type": "integer", "minimum": 0, "maximum": 100 },
+                "constitution_compliance":  { "type": "integer", "minimum": 0, "maximum": 100 }
+              }
+            },
+            "comment": { "type": "string", "minLength": 80 }
+          }
+        }
+      }
+    },
+    "aggregate": {
+      "type": "object",
+      "required": ["mean_score", "min_score", "verdict", "notable_strengths", "notable_weaknesses"],
+      "additionalProperties": false,
+      "properties": {
+        "mean_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "min_score":  { "type": "integer", "minimum": 0, "maximum": 100 },
+        "verdict":    { "type": "string", "enum": ["exemplary", "acceptable", "weak", "failed"] },
+        "notable_strengths":  { "type": "array", "items": { "type": "string" }, "maxItems": 3 },
+        "notable_weaknesses": { "type": "array", "items": { "type": "string" }, "maxItems": 3 }
+      }
+    }
+  }
+}

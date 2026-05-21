@@ -1,0 +1,3 @@
+# Meta-Prompter ロールが改善提案を保存するディレクトリ。
+# ファイル名規約: <YYYY-MM-DD>-<short-slug>.json
+# 採用は scripts/promote-proposal.js で手動 promote する。
