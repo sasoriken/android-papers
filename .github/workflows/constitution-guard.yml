@@ -8,6 +8,13 @@
 #
 # PR の branch 名から推測したロールに対し、許容範囲外のファイル
 # 変更も拒否する。
+#
+# **人間のオペレーターによる PR には作動しない**（CONSTITUTION.md
+# 第5条「改正は人間のオペレーターが直接 commit する場合のみ有効」
+# に基づき、人間は不変ファイルを改変できる）。
+# Jules PR の判定基準:
+#   - PR 作者が google-labs-jules[bot]
+#   - OR branch 名が jules/* で始まる
 # ============================================================
 
 name: Constitution Guard
@@ -17,6 +24,9 @@ on:
     types: [opened, synchronize, reopened]
     branches: [main]
 
+env:
+  JULES_BOT_NAME: 'google-labs-jules[bot]'
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -24,18 +34,36 @@ jobs:
       contents: read
       pull-requests: write
     steps:
+      - name: Determine if Jules PR
+        id: check
+        run: |
+          ACTOR="${{ github.event.pull_request.user.login }}"
+          BRANCH="${{ github.event.pull_request.head.ref }}"
+          echo "PR author: $ACTOR"
+          echo "PR branch: $BRANCH"
+          if [ "$ACTOR" = "${{ env.JULES_BOT_NAME }}" ] || [[ "$BRANCH" == jules/* ]]; then
+            echo "is_jules=true" >> "$GITHUB_OUTPUT"
+            echo "✅ Jules PR — constitution-guard will run"
+          else
+            echo "is_jules=false" >> "$GITHUB_OUTPUT"
+            echo "⏭️  Human PR — constitution-guard skipped (Constitution 第5条)"
+          fi
+
       - name: Checkout PR
+        if: steps.check.outputs.is_jules == 'true'
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
       - name: Setup Node.js
+        if: steps.check.outputs.is_jules == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Resolve changed files
+        if: steps.check.outputs.is_jules == 'true'
         id: changes
         run: |
           BASE="origin/${{ github.event.pull_request.base.ref }}"
@@ -46,6 +74,7 @@ jobs:
           echo "$CHANGED" > /tmp/changed.txt
 
       - name: Run constitution-guard
+        if: steps.check.outputs.is_jules == 'true'
         id: guard
         env:
           PR_BRANCH: ${{ github.event.pull_request.head.ref }}
@@ -59,7 +88,7 @@ jobs:
           node scripts/check-constitution.js --branch "$PR_BRANCH" "${FILES[@]}"
 
       - name: Comment on failure
-        if: failure()
+        if: failure() && steps.check.outputs.is_jules == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
