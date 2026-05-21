@@ -27,6 +27,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const PROPOSALS_DIR = join(ROOT, 'data', 'meta-proposals');
 const APPLIED_DIR   = join(PROPOSALS_DIR, 'applied');
+const GEN_FILE      = join(ROOT, 'data', 'generations.json');
 
 const ALLOWED_TARGETS = new Set([
   'prompts/jules-scheduled-prompt.md',
@@ -127,7 +128,34 @@ function applyChange(proposalFilePath, item, dry) {
   proposalRaw.applied_change = { target_file: item.target_file, change_type: item.change_type };
   writeFileSync(proposalFilePath, JSON.stringify(proposalRaw, null, 2), 'utf-8');
 
+  // generations.json に lineage を append
+  appendLineage({
+    target_file: item.target_file,
+    change_type: item.change_type,
+    proposal_id: proposalRaw.proposal_id,
+  });
+
   return { original, updated };
+}
+
+function appendLineage({ target_file, change_type, proposal_id }) {
+  if (!existsSync(GEN_FILE)) return;
+  let gen;
+  try { gen = JSON.parse(readFileSync(GEN_FILE, 'utf-8')); }
+  catch { return; }
+  if (!Array.isArray(gen.lineage)) gen.lineage = [];
+  // promoter は世代を進めない（提案の付随処理に過ぎないため current_generation はそのまま）
+  const branch = process.env.PROMOTE_BRANCH ?? '(manual)';
+  const prTitle = process.env.PROMOTE_PR_TITLE ?? `meta: promote ${proposal_id} → ${target_file}`;
+  gen.lineage.push({
+    gen: gen.current_generation ?? 0,
+    role: 'promoter',
+    branch,
+    pr_title: prTitle,
+    merged_at: null,
+    summary: `${change_type} → ${target_file} (proposal=${proposal_id})`,
+  });
+  writeFileSync(GEN_FILE, JSON.stringify(gen, null, 2) + '\n', 'utf-8');
 }
 
 function main() {

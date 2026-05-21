@@ -45,6 +45,7 @@ jobs:
           BRANCH="${{ github.event.pull_request.head.ref }}"
           echo "PR author: $ACTOR"
           echo "PR branch: $BRANCH"
+          # Jules ボット作者 or jules/* branch（promoter 含む）が対象
           if [ "$ACTOR" = "${{ env.JULES_BOT_NAME }}" ] || [[ "$BRANCH" == jules/* ]]; then
             echo "is_jules=true" >> "$GITHUB_OUTPUT"
             # ロール判定
@@ -57,6 +58,7 @@ jobs:
               jules/cite-*)               ROLE="citation-weaver" ;;
               jules/theme-*)              ROLE="theme-competitor" ;;
               jules/ab-judge-*)           ROLE="ab-judge" ;;
+              jules/promote-*)            ROLE="promoter" ;;
               *)                          ROLE="unknown" ;;
             esac
             echo "role=$ROLE" >> "$GITHUB_OUTPUT"
@@ -146,20 +148,57 @@ jobs:
               npm run validate || FAILED=1
               ;;
             ui-curator)
-              echo "--- Basic HTML sanity check ---"
-              if [ -f docs/index.html ]; then
-                # 簡易: 必須 ID が壊れていないか
+              echo "--- HTML sanity + CDN whitelist check ---"
+              if [ ! -f docs/index.html ]; then
+                echo "::error::docs/index.html missing"
+                FAILED=$((FAILED+1))
+              else
+                # 必須 ID
                 for id in landing archive-section paper-view paper-grid search sort-select; do
                   if ! grep -q "id=\"$id\"" docs/index.html; then
                     echo "::error::docs/index.html: required #${id} not found"
                     FAILED=$((FAILED+1))
                   fi
                 done
-                # 外部依存の追加検出（追加されてないか）
-                ALLOWED_CDNS=$(grep -oE 'https://cdnjs[^"]+' docs/index.html | sort -u)
-                echo "External scripts:"
-                echo "$ALLOWED_CDNS"
+                # CDN ホワイトリスト（追加が禁止）
+                node -e '
+                  const fs = require("fs");
+                  const html = fs.readFileSync("docs/index.html", "utf-8");
+                  const allowed = [
+                    /^https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/(marked|mathjax|mermaid)\//,
+                  ];
+                  const scriptSrcs = [...html.matchAll(/<script[^>]+src=["\x27]([^"\x27]+)["\x27]/g)].map(m=>m[1]).filter(s=>/^https?:\/\//.test(s));
+                  const linkHrefs  = [...html.matchAll(/<link[^>]+href=["\x27]([^"\x27]+)["\x27]/g)].map(m=>m[1]).filter(s=>/^https?:\/\//.test(s));
+                  const violations = [...scriptSrcs, ...linkHrefs].filter(u => !allowed.some(re => re.test(u)));
+                  if (violations.length) {
+                    console.error("::error::Unauthorized external resource(s):");
+                    violations.forEach(v => console.error("  - " + v));
+                    process.exit(1);
+                  }
+                  console.log("External resources OK:", [...scriptSrcs, ...linkHrefs]);
+                ' || FAILED=$((FAILED+1))
               fi
+              ;;
+            promoter)
+              echo "--- Promoter PR sanity check ---"
+              # 適用対象 prompts/*.md は空でないこと
+              CHANGED=$(git diff --name-only "$BASE...HEAD" -- 'prompts/*.md' 2>/dev/null || echo "")
+              for f in $CHANGED; do
+                if [ -f "$f" ] && [ ! -s "$f" ]; then
+                  echo "::error::$f is empty after promote"
+                  FAILED=$((FAILED+1))
+                fi
+              done
+              # 提案ファイルに applied_at が記録されているか
+              PROP_CHANGED=$(git diff --name-only "$BASE...HEAD" -- 'data/meta-proposals/*.json' 2>/dev/null || echo "")
+              for f in $PROP_CHANGED; do
+                if [ -f "$f" ]; then
+                  if ! grep -q '"applied_at"' "$f"; then
+                    echo "::error::$f: applied_at not recorded"
+                    FAILED=$((FAILED+1))
+                  fi
+                fi
+              done
               ;;
             *)
               echo "::warning::Unknown role, skipping role-specific validation"
@@ -196,16 +235,21 @@ jobs:
             --add-label "auto-merge-approved" \
             --repo "${{ github.repository }}"
 
-      # ----------- 公開資産の同期（generator / self-analyst / theme-competitor / ab-judge / citation-weaver） -----------
+      # ----------- 公開資産の同期 -----------
+      # data/index.json, data/papers/, data/generations.json, data/reviews/ を
+      # docs/data/ にコピーし、papers.js を再ビルド。UI-Curator と promoter
+      # は同期不要（プロンプト/UIのみ改変するため）。
       - name: Sync data/ into docs/data/
         if: |
           steps.check.outputs.is_jules == 'true'
           && steps.validate.outputs.valid == 'true'
-          && contains(fromJSON('["generator","self-analyst","theme-competitor","ab-judge","citation-weaver"]'), steps.check.outputs.role)
+          && contains(fromJSON('["generator","self-analyst","theme-competitor","ab-judge","citation-weaver","critic"]'), steps.check.outputs.role)
         run: |
-          mkdir -p docs/data/papers
+          mkdir -p docs/data/papers docs/data/reviews
           cp data/index.json docs/data/ 2>/dev/null || true
           cp data/papers/*.json docs/data/papers/ 2>/dev/null || true
+          cp data/generations.json docs/data/ 2>/dev/null || true
+          cp data/reviews/*.json docs/data/reviews/ 2>/dev/null || true
 
       - name: Aggregate reviews (critic role)
         if: |
@@ -214,7 +258,6 @@ jobs:
           && steps.check.outputs.role == 'critic'
         run: |
           node scripts/aggregate-reviews.js
-          # data/reviews-summary.json も docs に同期（UI-Curator や Meta-Prompter が読む）
           mkdir -p docs/data
           cp data/reviews-summary.json docs/data/ 2>/dev/null || true
 
@@ -222,24 +265,8 @@ jobs:
         if: |
           steps.check.outputs.is_jules == 'true'
           && steps.validate.outputs.valid == 'true'
-          && contains(fromJSON('["generator","self-analyst","theme-competitor","ab-judge","citation-weaver"]'), steps.check.outputs.role)
-        run: |
-          node -e "
-          const fs = require('fs');
-          const path = require('path');
-          const indexPath = 'docs/data/index.json';
-          const papersDir = 'docs/data/papers';
-          if (!fs.existsSync(indexPath)) process.exit(0);
-          const index = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
-          const papers = {};
-          if (fs.existsSync(papersDir)) {
-            fs.readdirSync(papersDir).filter(f => f.endsWith('.json')).forEach(f => {
-              papers[f] = JSON.parse(fs.readFileSync(path.join(papersDir, f), 'utf-8'));
-            });
-          }
-          const js = '// Auto-generated\nwindow.__ARCHIVE_DATA__ = ' + JSON.stringify({index, papers}) + ';\n';
-          fs.writeFileSync('docs/data/papers.js', js, 'utf-8');
-          "
+          && contains(fromJSON('["generator","self-analyst","theme-competitor","ab-judge","citation-weaver","critic"]'), steps.check.outputs.role)
+        run: node scripts/build-papers-js.js
 
       - name: Commit derived assets
         if: steps.check.outputs.is_jules == 'true' && steps.validate.outputs.valid == 'true'

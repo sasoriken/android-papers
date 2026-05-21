@@ -109,6 +109,16 @@ const ROLE_RULES = {
     allowed_prefixes: ['data/papers/', 'data/rejected/'],
     description: 'Generator (gen-N branch): 新規論文 + index + graveyard',
   },
+  'promoter': {
+    branch_prefix: 'jules/promote-',
+    allowed_paths: ['data/generations.json'],
+    allowed_prefixes: ['prompts/', 'data/meta-proposals/'],
+    forbidden_paths: [
+      'prompts/system.txt',          // already IMMUTABLE
+      'prompts/meta-prompter-prompt.md', // self-modification ガード
+    ],
+    description: 'Auto-promote: meta-proposal で提案された prompt 改変と提案 applied_at 追記',
+  },
 };
 
 function detectRole(branchName) {
@@ -133,6 +143,7 @@ function isAllowedForRole(filePath, role) {
   const rules = ROLE_RULES[role];
   if (!rules) return false;
 
+  if (rules.forbidden_paths?.includes(filePath)) return false;
   if (rules.forbidden_prefixes?.some(p => filePath.startsWith(p))) return false;
   // Derived assets (synced by auto-merge workflow) are universally allowed
   // except where forbidden_prefixes explicitly excludes them.

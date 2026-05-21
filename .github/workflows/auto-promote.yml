@@ -1,0 +1,134 @@
+# ============================================================
+# Auto-promote Meta-Proposals
+#
+# Meta-Prompter が data/meta-proposals/ に作成した提案のうち、
+# priority 最高 & リスク non-high の 1 件を実際にプロンプトファイルへ
+# 適用する。
+#
+# 実行タイミング: 毎週月曜 22:00 UTC (火 07:00 JST)
+#   ← Meta-Prompter の日曜 21:00 JST 実行 + マージから半日以上経過してから
+#
+# 動作:
+#   1. dry-run で promote 候補があるか確認
+#   2. 候補があれば branch jules/promote-<YYYY-MM-DD> を作成
+#   3. scripts/promote-proposal.js --pick-best を実行
+#   4. 変更を commit & push して PR を作成
+#   5. auto-merge.yml の promoter role 経路で auto-merge される
+#
+# 失敗時: PR を作らずに exit 0（次回再試行）
+# ============================================================
+
+name: Auto-promote Meta-Proposals
+
+on:
+  schedule:
+    # 月曜 22:00 UTC = 火 07:00 JST
+    - cron: '0 22 * * 1'
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Dry-run to detect promote candidate
+        id: dry
+        run: |
+          # promote:best --dry は exit 0 で候補有無を log に出す
+          OUT=$(node scripts/promote-proposal.js --dry --pick-best 2>&1) || OUT=""
+          echo "$OUT"
+          if echo "$OUT" | grep -q "未適用の提案がありません"; then
+            echo "has_candidate=false" >> "$GITHUB_OUTPUT"
+            echo "No promote candidate. Skipping."
+          elif echo "$OUT" | grep -q "Would apply"; then
+            echo "has_candidate=true" >> "$GITHUB_OUTPUT"
+            # 候補の target_file をログから抽出（"Would apply add to prompts/foo.md" 形式）
+            TARGET=$(echo "$OUT" | grep -oE 'prompts/[^[:space:]]+' | head -1)
+            echo "target=$TARGET" >> "$GITHUB_OUTPUT"
+            echo "Promote candidate: $TARGET"
+          else
+            echo "has_candidate=false" >> "$GITHUB_OUTPUT"
+            echo "Unexpected dry-run output. Skipping for safety."
+          fi
+
+      - name: Apply promote and create PR
+        if: steps.dry.outputs.has_candidate == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          # 同日に複数走らせた場合の衝突回避のためタイムスタンプ付加
+          BRANCH="jules/promote-${DATE}-$(date -u +%H%M)"
+
+          git config user.name  "UNIT-Ω Auto-Promoter"
+          git config user.email "unit-omega-promoter@noreply.github.com"
+          git checkout -b "$BRANCH"
+
+          # 実適用（環境変数で branch / pr_title を渡し、lineage に記録される）
+          TARGET="${{ steps.dry.outputs.target }}"
+          export PROMOTE_BRANCH="$BRANCH"
+          export PROMOTE_PR_TITLE="meta: [Auto-Promoter] promote proposal → ${TARGET}"
+          node scripts/promote-proposal.js --pick-best
+
+          git add prompts/ data/meta-proposals/ data/generations.json 2>/dev/null || true
+
+          if git diff --staged --quiet; then
+            echo "::warning::Promote produced no diff. Aborting PR creation."
+            exit 0
+          fi
+
+          TARGET="${{ steps.dry.outputs.target }}"
+          git commit -m "meta: [Auto-Promoter] apply meta-proposal to ${TARGET}"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "meta: [Auto-Promoter] promote proposal → ${TARGET}" \
+            --body "$(cat <<EOF
+          ## Auto-promoted meta-proposal
+
+          Meta-Prompter による未適用提案のうち、priority 最高・リスク non-high の
+          1 件を ${TARGET} へ適用しました。
+
+          - Source: \`data/meta-proposals/applied/\` に backup あり
+          - Constitution-guard: prompts/system.txt と prompts/meta-prompter-prompt.md
+            は変更不可（promoter role ガード）
+          - 巻き戻し: 不要 PR の場合は \`git revert\` してください
+
+          このPRは auto-merge.yml の promoter role 経路で自動マージされます。
+          EOF
+          )" \
+            --label "promoter,auto-promoted" || true
+
+      - name: Summary
+        run: |
+          echo "## Auto-Promoter 実行結果" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.dry.outputs.has_candidate }}" = "true" ]; then
+            echo "- 候補: ✅ あり (${{ steps.dry.outputs.target }})" >> "$GITHUB_STEP_SUMMARY"
+            echo "- 結果: PR を作成しました" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "- 候補: なし (skip)" >> "$GITHUB_STEP_SUMMARY"
+          fi

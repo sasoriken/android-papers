@@ -93,9 +93,20 @@ Settings → Secrets and variables → Actions → New repository secret
 
 ---
 
-## 6. Meta-Prompter 提案の promote（人間操作）
+## 6. Meta-Prompter 提案の promote（自動 + 手動）
 
-Meta-Prompter は `data/meta-proposals/` に改善提案 JSON を作成するだけで、プロンプトファイルは書き換えません。採用するには:
+### 自動 promote（推奨）
+
+`.github/workflows/auto-promote.yml` が毎週火曜 07:00 JST（UTC 月 22:00）に
+実行され、未適用の提案のうち priority 最高・リスク non-high の 1 件を
+自動的にプロンプトファイルへ適用 → PR 化します。PR は `promoter` role
+として `auto-merge.yml` 経由で constitution-guard を通過した上で自動
+マージされます。
+
+意図的にスキップしたい場合は Actions タブから `Auto-promote Meta-Proposals`
+を停止できます。
+
+### 手動 promote
 
 ```bash
 # 提案を確認
@@ -111,7 +122,16 @@ npm run promote -- <proposal_id>
 node scripts/promote-proposal.js --dry <proposal_id>
 ```
 
-promote 後は backup が `data/meta-proposals/applied/` に保存されるため、容易に巻き戻せます。
+promote 後は backup が `data/meta-proposals/applied/` に保存され、提案 JSON
+にも `applied_at` と `applied_change` が記録されます。容易に巻き戻せます。
+
+### Auto-Promoter の安全装置
+
+- 不可変ファイル（`prompts/system.txt` / `CONSTITUTION.md` / `schema/paper.schema.json` / `scripts/` / `.github/`）と
+  `prompts/meta-prompter-prompt.md` への変更は constitution-guard が物理的に拒否
+- 高リスク（`risk_assessment.level == "high"`）の提案は promote 対象外
+- 提案スキーマ違反のものは promote 対象外
+- anchor が見つからない提案は適用失敗で安全に停止
 
 ---
 
@@ -154,6 +174,7 @@ android-papers/
 │   ├── generate-paper.yml      # 旧 API ベース generate（残置）
 │   ├── auto-merge.yml          # ロール別バリデーション + 自動マージ
 │   ├── constitution-guard.yml  # 不変ファイル保護
+│   ├── auto-promote.yml        # Meta-Prompter 提案の週次自動 promote
 │   └── translate-titles.yml    # 英タイトル日本語化セーフティ
 ├── prompts/
 │   ├── system.txt                       # UNIT-Ω コア（不可変）
@@ -178,7 +199,8 @@ android-papers/
 │   ├── translate-titles.js          # 英タイトル日本語化
 │   ├── aggregate-reviews.js         # レビュー集計
 │   ├── check-constitution.js        # Constitution-guard 本体
-│   ├── promote-proposal.js          # 提案 → プロンプト適用
+│   ├── promote-proposal.js          # 提案 → プロンプト適用（lineage 記録）
+│   ├── build-papers-js.js           # docs/data/papers.js 集約ビルダー
 │   └── revert-generation.js         # 世代ロールバック支援
 ├── data/
 │   ├── index.json                # 論文インデックス

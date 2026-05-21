@@ -13,7 +13,7 @@
 各ロールは独立した Jules の scheduled task として登録される。
 時間帯をずらすことで PR のコンフリクトと相互干渉を回避する。
 
-| 時刻 (JST) | ロール             | プロンプトファイル                         | 出力先                             |
+| 時刻 (JST) | ロール             | プロンプトファイル / トリガー              | 出力先                             |
 |------------|--------------------|--------------------------------------------|------------------------------------|
 | 12:00 毎日 | Generator          | `prompts/jules-scheduled-prompt.md`        | `data/papers/<id>.json`            |
 | 15:00 毎日 | Critic             | `prompts/critic-prompt.md`                 | `data/reviews/<paper-id>.json`     |
@@ -21,6 +21,7 @@
 | 21:00 毎日 | UI-Curator         | `prompts/ui-curator-prompt.md`             | `docs/index.html` の小幅改善         |
 | 日曜 09:00 | Self-Analyst       | `prompts/self-analyst-prompt.md`           | `data/papers/meta-gen-NNN.json`    |
 | 日曜 21:00 | Meta-Prompter      | `prompts/meta-prompter-prompt.md`          | `data/meta-proposals/<ts>.json`    |
+| 火 07:00   | Auto-Promoter      | `.github/workflows/auto-promote.yml` (cron) | プロンプトファイルへ提案を適用     |
 | 随時       | Theme-Competitor   | `prompts/theme-competition-prompt.md`      | `data/themes/active.json` に応じる |
 | 随時       | AB-Judge           | `prompts/ab-judge-prompt.md`               | `data/candidates/` から勝者を採用  |
 
@@ -54,10 +55,13 @@
                       data/meta-proposals/<ts>.json
                                   │
                                   ▼
-                       (人間の promote 操作)
-                                  │
-                                  ▼
-                    prompts/<role>-prompt.md の更新
+                       Auto-Promoter (火 07:00 JST)
+                       — 最高優先度・非高リスクの提案 1 件を抽出
+                       — promote-proposal.js が
+                         prompts/<role>-prompt.md へ適用
+                       — branch: jules/promote-<date>
+                       — auto-merge.yml の promoter role 経路で
+                         constitution-guard を経て自動マージ
 ```
 
 ---
@@ -81,6 +85,7 @@
 | `data/generations.json`           | 全ロール（append-only）                |
 | `docs/index.html`                 | UI-Curator                             |
 | `docs/data/`                      | 自動同期（auto-merge ワークフロー）    |
+| `prompts/<role>-prompt.md`        | Auto-Promoter（system.txt と meta-prompter-prompt.md を除く） |
 
 `.github/workflows/constitution-guard.yml` は不可変ファイルへの変更を含む PR を
 検出した時点で自動マージを拒否し、人間のレビューラベル `needs-human-review` を付ける。
