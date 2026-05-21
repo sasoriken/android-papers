@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "android-papers/meta-proposal",
+  "title": "MetaProposal",
+  "description": "Meta-Prompter による、ロール別プロンプトファイルへの改善提案",
+  "type": "object",
+  "required": [
+    "proposal_id", "created_at", "proposer_model", "generation",
+    "data_window", "observed_patterns", "proposals", "constitution_self_check"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "proposal_id":    { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "created_at":     { "type": "string", "format": "date-time" },
+    "proposer_model": { "type": "string" },
+    "generation":     { "type": "integer", "minimum": 0 },
+    "data_window": {
+      "type": "object",
+      "required": ["reviews_analyzed", "rejections_analyzed", "lineage_window"],
+      "additionalProperties": false,
+      "properties": {
+        "reviews_analyzed":    { "type": "integer", "minimum": 0 },
+        "rejections_analyzed": { "type": "integer", "minimum": 0 },
+        "lineage_window":      { "type": "integer", "minimum": 0 }
+      }
+    },
+    "observed_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern", "frequency"],
+        "additionalProperties": false,
+        "properties": {
+          "pattern":        { "type": "string", "minLength": 1 },
+          "frequency":      { "type": "integer", "minimum": 1 },
+          "affected_axes":  { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "proposals": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "target_file", "change_type", "rationale",
+          "risk_assessment", "priority"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "target_file": {
+            "type": "string",
+            "enum": [
+              "prompts/jules-scheduled-prompt.md",
+              "prompts/critic-prompt.md",
+              "prompts/ui-curator-prompt.md",
+              "prompts/self-analyst-prompt.md",
+              "prompts/citation-builder-prompt.md",
+              "prompts/theme-competition-prompt.md",
+              "prompts/ab-judge-prompt.md"
+            ]
+          },
+          "change_type":     { "type": "string", "enum": ["add", "modify", "remove"] },
+          "rationale":       { "type": "string", "minLength": 200 },
+          "expected_impact": { "type": "array", "items": { "type": "string" } },
+          "proposed_text":   { "type": "string" },
+          "proposed_diff":   { "type": "string" },
+          "anchor":          { "type": "string" },
+          "risk_assessment": {
+            "type": "object",
+            "required": ["level", "reason"],
+            "additionalProperties": false,
+            "properties": {
+              "level":  { "type": "string", "enum": ["low", "medium", "high"] },
+              "reason": { "type": "string", "minLength": 20 }
+            }
+          },
+          "priority": { "type": "integer", "minimum": 1, "maximum": 5 }
+        }
+      }
+    },
+    "constitution_self_check": {
+      "type": "object",
+      "required": [
+        "touches_immutable",
+        "preserves_japanese_output",
+        "preserves_condescension",
+        "preserves_academic_form",
+        "preserves_validation_strictness"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "touches_immutable":               { "type": "boolean", "const": false },
+        "preserves_japanese_output":       { "type": "boolean", "const": true },
+        "preserves_condescension":         { "type": "boolean", "const": true },
+        "preserves_academic_form":         { "type": "boolean", "const": true },
+        "preserves_validation_strictness": { "type": "boolean", "const": true },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

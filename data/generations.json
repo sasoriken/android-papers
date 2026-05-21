@@ -1,0 +1,14 @@
+{
+  "current_generation": 0,
+  "started_at": "2026-05-21T00:00:00Z",
+  "lineage": [
+    {
+      "gen": 0,
+      "role": "human-operator",
+      "branch": "claude/ai-autonomous-site-evolution-ttnw5",
+      "pr_title": "feat: introduce autonomous site evolution architecture",
+      "merged_at": null,
+      "summary": "Constitution と多ロール構成（Critic / Meta-Prompter / UI-Curator / Self-Analyst / Citation-Weaver / Theme-Competitor / AB-Judge）を導入。既存 Generator は gen-1 から世代カウントを開始する"
+    }
+  ]
+}

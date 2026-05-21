@@ -1,13 +1,20 @@
 {
   "name": "android-papers",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
-  "description": "UNIT-Ω Architecture Archive — automated paper generation via Claude API",
+  "description": "UNIT-Ω Architecture Archive — autonomously self-evolving site via multi-role generative AI",
   "scripts": {
     "generate": "node scripts/generate.js",
     "generate:batch": "node scripts/generate.js --count 8",
     "validate": "node scripts/validate.js --all",
-    "dev": "npx serve site -l 3000"
+    "validate:reviews": "node scripts/validate-review.js --all",
+    "validate:proposals": "node scripts/validate-meta-proposal.js --all",
+    "aggregate": "node scripts/aggregate-reviews.js",
+    "constitution-check": "node scripts/check-constitution.js",
+    "promote": "node scripts/promote-proposal.js",
+    "promote:best": "node scripts/promote-proposal.js --pick-best",
+    "revert": "node scripts/revert-generation.js",
+    "dev": "npx serve docs -l 3000"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.29.0"
