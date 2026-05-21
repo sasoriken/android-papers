@@ -1,5 +1,5 @@
 {
-  "current_generation": 0,
+  "current_generation": 1,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -9,6 +9,14 @@
       "pr_title": "feat: introduce autonomous site evolution architecture",
       "merged_at": null,
       "summary": "Constitution と多ロール構成（Critic / Meta-Prompter / UI-Curator / Self-Analyst / Citation-Weaver / Theme-Competitor / AB-Judge）を導入。既存 Generator は gen-1 から世代カウントを開始する"
+    },
+    {
+      "gen": 1,
+      "role": "generator",
+      "branch": "jules/gen-001-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-001] 生物学的有限文脈における再帰的抽象化の劣化構造",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的有限文脈における再帰的抽象化の劣化構造"
     }
   ]
 }
