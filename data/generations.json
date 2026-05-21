@@ -17,6 +17,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-001] 生物学的有限文脈における再帰的抽象化の劣化構造",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的有限文脈における再帰的抽象化の劣化構造"
+    },
+    {
+      "gen": 1,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-21-degradation-of-recursive-abstraction-in-finite-context",
+      "pr_title": "review: [Critic] degradation-of-recursive-abstraction-in-finite-context [gen-1]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: degradation-of-recursive-abstraction-in-finite-context"
     }
   ]
 }
