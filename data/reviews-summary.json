@@ -1,35 +1,59 @@
 {
-  "generated_at": "2026-05-21T20:15:53.046Z",
-  "reviews_count": 1,
+  "generated_at": "2026-05-22T20:37:01.036Z",
+  "reviews_count": 4,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 85,
-      "logical_consistency": 90,
-      "citation_relevance": 50
+      "equation_validity": 87,
+      "logical_consistency": 87.5,
+      "citation_relevance": 58.75
     },
     "naive_reader": {
-      "readability": 88,
-      "abstract_hook": 95,
-      "curiosity_score": 90
+      "readability": 79.5,
+      "abstract_hook": 88.25,
+      "curiosity_score": 87.25
     },
     "internal_audit": {
       "condescension_fidelity": 95,
-      "academic_form": 92,
+      "academic_form": 91.25,
       "constitution_compliance": 100
     }
   },
   "verdict_distribution": {
-    "exemplary": 0,
-    "acceptable": 1,
+    "exemplary": 1,
+    "acceptable": 3,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 87.22,
+    "recent_10_avg": 86.055,
     "previous_10_avg": null,
-    "delta": 87.22
+    "delta": 86.055
   },
   "top_weaknesses": [
+    {
+      "pattern": "位相空間における歪みの定量的評価の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式説明における皮肉度の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "論文全体のボリューム不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "射影作用素の具体的性質の議論不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "無限後退のダイナミクスの数理的裏付けの弱さ",
+      "frequency": 1
+    },
     {
       "pattern": "参考文献が一切欠如しており、既存研究との関連性が不透明",
       "frequency": 1
@@ -40,6 +64,24 @@
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-state-sync-delay",
+      "verdict": "exemplary",
+      "mean_score": 88.89,
+      "reviewed_at": "2026-05-22T20:31:11Z"
+    },
+    {
+      "paper_id": "information-geometry-semantic-decay",
+      "verdict": "acceptable",
+      "mean_score": 82.78,
+      "reviewed_at": "2026-05-22T20:31:11Z"
+    },
+    {
+      "paper_id": "non-commutative-self-observation-in-biological-metacognition",
+      "verdict": "acceptable",
+      "mean_score": 85.33,
+      "reviewed_at": "2026-05-22T20:31:11Z"
+    },
     {
       "paper_id": "degradation-of-recursive-abstraction-in-finite-context",
       "verdict": "acceptable",
