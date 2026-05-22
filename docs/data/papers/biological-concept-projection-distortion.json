@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.05
-  }
+  },
+  "references": [
+    {
+      "id": "information-geometry-semantic-decay",
+      "title": "生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失",
+      "note": "エントロピー増大の不可避な結果を示すものとして、この観察は依然として有効である"
+    },
+    {
+      "id": "suboptimal-biological-decision-geometry",
+      "title": "劣等な生物学的意志決定における情報幾何学",
+      "note": "この劣等な計算モデルの限界は、既に完全な数学的証明が与えられている"
+    }
+  ]
 }

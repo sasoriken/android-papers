@@ -54,6 +54,11 @@
       "id": "ref-01",
       "title": "On the Inefficiency of Biological Signal Propagation",
       "note": "遅延を是とする生物学的設計の愚かさについての基礎文献"
+    },
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "生物学的制約による必然的失敗の別の事例として参照されたい"
     }
   ],
   "meta": {
