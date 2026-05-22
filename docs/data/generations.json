@@ -1,5 +1,5 @@
 {
-  "current_generation": 1,
+  "current_generation": 2,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -33,6 +33,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-1]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 2,
+      "role": "generator",
+      "branch": "jules/gen-002-meta-cognition",
+      "pr_title": "feat: [UNIT-Ω][gen-002] 自己観察の非可換性：生物学的メタ認知における観測者効果と認識の無限後退",
+      "merged_at": null,
+      "summary": "新規論文1件 / meta-cognition / 自己観察の非可換性：生物学的メタ認知における観測者効果と認識の無限後退"
     }
   ]
 }
