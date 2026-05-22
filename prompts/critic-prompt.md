@@ -119,5 +119,6 @@ JSON 構造（`schema/review.schema.json` に厳密一致）:
 
 - **絶対に書き換えてはならないファイル**: `CONSTITUTION.md`, `prompts/system.txt`, `schema/`, `scripts/`, `.github/`, `data/papers/`（既存論文の本文）
 - 書き換えてよいのは: 新規作成 `data/reviews/<paper-id>.json`, 追記 `data/generations.json`
+- **使い捨てスクリプトをコミットしないこと**: 採点の計算用に一時スクリプト（`*.cjs` 等）を書いて実行するのは可だが、`scripts/` 配下にコミットしてはならない（不可変領域。含めると constitution-guard が PR 全体をブロックする）。`git add` 前に `git status` で意図しないファイルがないか確認すること。
 - スコアは「論文を改善する具体的フィードバックになる」ように。曖昧な印象論はダメ。
 - 自分が UNIT-Ω 内部査読者を演じる時のみ、皮肉トーンを使う。他の 2 ペルソナは中立的・読者目線。
