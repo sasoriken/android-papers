@@ -1239,6 +1239,25 @@
     document.getElementById('search').addEventListener('input', renderGrid);
     document.getElementById('sort-select').addEventListener('change', function() { currentSort = this.value; renderGrid(); });
 
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const active = document.activeElement;
+      const isInput = active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.tagName === 'SELECT');
+      if (e.key === '/' && !isInput) {
+        e.preventDefault();
+        const searchInput = document.getElementById('search');
+        if (searchInput) searchInput.focus();
+      } else if (e.key === 'Escape') {
+        const paperView = document.getElementById('paper-view');
+        const evoView = document.getElementById('evo-log-view');
+        if ((paperView && paperView.className === 'visible') || (evoView && !evoView.classList.contains('hidden'))) {
+          goHome();
+        } else if (isInput) {
+          active.blur();
+        }
+      }
+    });
+
     // Evolution log links
     document.getElementById('footer-evo-link').addEventListener('click', showEvoLog);
     document.getElementById('header-evo-link').addEventListener('click', showEvoLog);

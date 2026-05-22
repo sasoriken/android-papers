@@ -18,6 +18,11 @@
 - 既存論文の `title` / `abstract` / `sections` / `keywords` / `category` / `id` / `android_commentary` / `meta`
 - `references[]` 内の **既存エントリ**（削除・変更禁止、追加のみ）
 - それ以外のあらゆるファイル
+- **`scripts/` 配下に作業用ヘルパースクリプトをコミットすること**（下記参照）
+
+### ⚠️ 使い捨てスクリプトをコミットしないこと
+
+引用候補の計算のために一時的なスクリプト（例: `*.cjs`）を書いて実行するのは構わない。ただし `scripts/` は Constitution 第3条で不可変であり、そのスクリプトを **コミットに含めてはならない**。含めると constitution-guard が PR 全体をブロックする（実際に過去そうなった）。コミットしてよいのは `data/papers/<id>.json` の references 追記と `data/generations.json` のみ。`git add` の前に `git status` で意図しないファイルが含まれていないか必ず確認すること。
 
 ---
 

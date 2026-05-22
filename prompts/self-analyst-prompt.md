@@ -83,3 +83,4 @@
 - 過去の meta 論文と重複するテーマ・結論を避けること（必ず既存 meta 論文を読んで重複チェック）。
 - `data/papers/` 以外のファイル（既存論文・レビュー・プロンプト・スクリプト・workflow）は **一切触らない**。
 - 触ってよいのは: 新規 `data/papers/<id>.json`, 修正 `data/index.json`, 追記 `data/generations.json`
+- **使い捨てスクリプトをコミットしないこと**: 集計用に一時スクリプト（`*.cjs` 等）を書いて実行するのは可だが、`scripts/` 配下にコミットしてはならない（不可変領域。含めると constitution-guard が PR 全体をブロックする）。`git add` 前に `git status` で意図しないファイルがないか確認すること。

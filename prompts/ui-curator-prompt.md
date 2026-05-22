@@ -19,6 +19,8 @@
 
 例外: `data/generations.json` の `lineage` に append のみ可能。
 
+**使い捨てスクリプトをコミットしないこと**: データ確認用に一時スクリプト（`*.cjs` 等）を書いて実行するのは可だが、`scripts/` 配下にコミットしてはならない（不可変領域。含めると constitution-guard が PR 全体をブロックする）。新規 JS は `docs/` 配下にのみ追加すること。`git add` 前に `git status` で意図しないファイルがないか確認すること。
+
 ---
 
 ## 改善方針（Constitution 準拠）
