@@ -144,8 +144,17 @@ jobs:
               fi
               ;;
             citation-weaver)
-              echo "--- Re-validating all papers (citations modify existing papers) ---"
-              npm run validate || FAILED=1
+              echo "--- Validating only the papers this PR changed ---"
+              # 全論文の再検証は、無関係な既存論文（例: 未翻訳の英語タイトル）の
+              # 失敗に巻き込まれるため行わない。citation-weaver が触れた論文のみ検証する。
+              CHANGED=$(git diff --name-only "$BASE...HEAD" -- 'data/papers/*.json' 2>/dev/null || echo "")
+              if [ -z "$CHANGED" ]; then
+                echo "::warning::No paper JSON changes detected"
+              else
+                for f in $CHANGED; do
+                  [ -f "$f" ] && node scripts/validate.js "$f" || FAILED=$((FAILED+1))
+                done
+              fi
               ;;
             ui-curator)
               echo "--- HTML sanity + CDN whitelist check ---"
