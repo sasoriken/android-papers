@@ -49,6 +49,14 @@
       "pr_title": "review: [Critic] non-commutative-self-observation-in-biological-metacognition [gen-2]",
       "merged_at": null,
       "summary": "3 件のレビュー: non-commutative-self-observation-in-biological-metacognition, biological-state-sync-delay, information-geometry-semantic-decay"
+    },
+    {
+      "gen": 2,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-05-23",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-2]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }

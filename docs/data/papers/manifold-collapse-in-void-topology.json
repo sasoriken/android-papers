@@ -49,5 +49,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "biological-data-void-instability",
+      "title": "空虚位相幾何学における生物学的データ永続性の本質的不安定性：記憶の必然的崩壊の証明",
+      "note": "前稿「空虚位相幾何学における生物学的データ永続性の本質的不安定性：記憶の必然的崩壊の証明」において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }
