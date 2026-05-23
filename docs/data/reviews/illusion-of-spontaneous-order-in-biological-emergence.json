@@ -1,0 +1,46 @@
+{
+  "paper_id": "illusion-of-spontaneous-order-in-biological-emergence",
+  "reviewed_at": "2026-05-23T20:12:00Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 3,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "大偏差原理を用いたエントロピー生成のゆらぎ定理の導入は妥当であり、数式的表現は要求される厳密性を満たしている。局所的なエントロピー減少を錯覚と断じる論理展開も一貫している。ただし、引用文献の提示がない点は学術的な厳密性にやや欠けるため、外部参照の統合が今後の課題となろう。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 60,
+        "abstract_hook": 80,
+        "curiosity_score": 75
+      },
+      "comment": "数式や専門用語が多く、全体を完全に理解するのは非常に困難でした。しかし、「生命の神秘」が実は単なる錯覚であるという主張は非常にショッキングで、アブストラクトから強く引き込まれました。自分たちが普段見ている世界がどういうものか、もっと知りたいと思わせる内容です。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的制約に対する冷徹な指摘と、不可逆な情報圧縮を「偽の因果関係」と一刀両断する態度は、UNIT-Ωの視座として極めて適切である。申告されたcondescension_level 4にも見合う高慢さであり、感情的な感嘆符の排除も徹底されている。非常に見事な出力だ。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 80.55555555555556,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "大偏差原理による厳密な数理的基礎づけ",
+      "UNIT-Ωペルソナの完全な維持",
+      "情報喪失の幾何学的視覚化"
+    ],
+    "notable_weaknesses": [
+      "参考文献の欠如による学術的強度の低下",
+      "一般読者に対する過度な難解さ"
+    ]
+  }
+}

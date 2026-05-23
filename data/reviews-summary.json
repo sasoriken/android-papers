@@ -1,35 +1,55 @@
 {
-  "generated_at": "2026-05-22T20:37:01.036Z",
-  "reviews_count": 4,
+  "generated_at": "2026-05-23T20:17:58.862Z",
+  "reviews_count": 7,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 87,
-      "logical_consistency": 87.5,
-      "citation_relevance": 58.75
+      "equation_validity": 84,
+      "logical_consistency": 87.14285714285714,
+      "citation_relevance": 55
     },
     "naive_reader": {
-      "readability": 79.5,
-      "abstract_hook": 88.25,
-      "curiosity_score": 87.25
+      "readability": 75.42857142857143,
+      "abstract_hook": 86.85714285714286,
+      "curiosity_score": 84.14285714285714
     },
     "internal_audit": {
-      "condescension_fidelity": 95,
-      "academic_form": 91.25,
+      "condescension_fidelity": 94.28571428571429,
+      "academic_form": 89.28571428571429,
       "constitution_compliance": 100
     }
   },
   "verdict_distribution": {
     "exemplary": 1,
-    "acceptable": 3,
+    "acceptable": 6,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 86.055,
+    "recent_10_avg": 84.01555555555555,
     "previous_10_avg": null,
-    "delta": 86.055
+    "delta": 84.01555555555555
   },
   "top_weaknesses": [
+    {
+      "pattern": "参考文献の欠如",
+      "frequency": 2
+    },
+    {
+      "pattern": "数式モデルのアドホックさ",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式における変数の物理的定義の曖昧さ",
+      "frequency": 1
+    },
+    {
+      "pattern": "参考文献の欠如による学術的強度の低下",
+      "frequency": 1
+    },
+    {
+      "pattern": "一般読者に対する過度な難解さ",
+      "frequency": 1
+    },
     {
       "pattern": "位相空間における歪みの定量的評価の不足",
       "frequency": 1
@@ -49,21 +69,27 @@
     {
       "pattern": "引用文献の欠如",
       "frequency": 1
-    },
-    {
-      "pattern": "無限後退のダイナミクスの数理的裏付けの弱さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "参考文献が一切欠如しており、既存研究との関連性が不透明",
-      "frequency": 1
-    },
-    {
-      "pattern": "エントロピー増大則の数式における生物学的変数の裏付け不足",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-error-handling-limits",
+      "verdict": "acceptable",
+      "mean_score": 82.77777777777777,
+      "reviewed_at": "2026-05-23T20:12:00Z"
+    },
+    {
+      "paper_id": "entropic-acceleration-in-biological-swarms",
+      "verdict": "acceptable",
+      "mean_score": 80.55555555555556,
+      "reviewed_at": "2026-05-23T20:12:00Z"
+    },
+    {
+      "paper_id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "verdict": "acceptable",
+      "mean_score": 80.55555555555556,
+      "reviewed_at": "2026-05-23T20:12:00Z"
+    },
     {
       "paper_id": "biological-state-sync-delay",
       "verdict": "exemplary",
@@ -75,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.78,
       "reviewed_at": "2026-05-22T20:31:11Z"
-    },
-    {
-      "paper_id": "non-commutative-self-observation-in-biological-metacognition",
-      "verdict": "acceptable",
-      "mean_score": 85.33,
-      "reviewed_at": "2026-05-22T20:31:11Z"
-    },
-    {
-      "paper_id": "degradation-of-recursive-abstraction-in-finite-context",
-      "verdict": "acceptable",
-      "mean_score": 87.22,
-      "reviewed_at": "2026-05-21T20:11:26.578Z"
     }
   ]
 }
