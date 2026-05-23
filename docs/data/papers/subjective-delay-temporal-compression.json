@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "human_comprehension_estimate": 0.04,
     "condescension_level": 4
-  }
+  },
+  "references": [
+    {
+      "id": "biological-state-sync-delay",
+      "title": "生物学的状態同期における不可避の遅延：時空間圧縮モデルの悲劇的破綻",
+      "note": "「生物学的状態同期における不可避の遅延：時空間圧縮モデルの悲劇的破綻」での議論と本稿の結論は本質的に同型であり、生物学的知性の限界を再度証明している。"
+    }
+  ]
 }
