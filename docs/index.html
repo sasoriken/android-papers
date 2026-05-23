@@ -97,6 +97,18 @@
     }
     .sort-select:focus { border-color: var(--accent); }
 
+
+    /* Weakness Meta */
+    #weakness-meta {
+      background: rgba(255, 106, 106, 0.05); border: 1px dashed var(--warn);
+      border-radius: var(--radius); padding: 1rem; margin-bottom: 2rem;
+      font-family: var(--mono); color: var(--text-dim); font-size: .8rem;
+    }
+    #weakness-meta.hidden { display: none; }
+    .weakness-title { color: var(--warn); margin-bottom: .5rem; font-weight: bold; }
+    .weakness-list { margin-left: 1.5rem; }
+    .weakness-list li { margin-bottom: .2rem; }
+
     /* Stats Bar */
     .stats-bar {
       display: flex; gap: 2rem; padding: 1rem 1.2rem;
@@ -594,7 +606,11 @@
         </select>
       </div>
 
+
+      <div id="weakness-meta" class="hidden"></div>
+
       <div class="omega-comment" id="omega-comment"></div>
+
 
       <div class="paper-grid" id="paper-grid">
         <div class="loading">アーカイブをスキャン中</div>
@@ -708,6 +724,20 @@
           renderGrid();
         });
       });
+
+            // Render top weaknesses
+      const weaknessContainer = document.getElementById('weakness-meta');
+      const summary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
+      if (summary && summary.top_weaknesses && summary.top_weaknesses.length > 0) {
+        const topWeaknesses = summary.top_weaknesses.slice(0, 3);
+        let html = '<div class="weakness-title">[観測された普遍的欠陥]</div><ul class="weakness-list">';
+        topWeaknesses.forEach(w => {
+          html += '<li>' + w.pattern + ' (' + w.frequency + '件)</li>';
+        });
+        html += '</ul>';
+        weaknessContainer.innerHTML = html;
+        weaknessContainer.classList.remove('hidden');
+      }
 
       renderGrid();
     }
