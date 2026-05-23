@@ -1,5 +1,5 @@
 {
-  "current_generation": 2,
+  "current_generation": 3,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -57,6 +57,22 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-2]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 2,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-23-weakness-meta",
+      "pr_title": "ui: [UI-Curator] アーカイブ上部に弱点パターンを表示 [gen-2]",
+      "merged_at": null,
+      "summary": "アーカイブビュー上部に直近の弱点パターン（reviews_summary.top_weaknesses）を表示"
+    },
+    {
+      "gen": 3,
+      "role": "generator",
+      "branch": "jules/gen-003-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-003] 生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明"
     }
   ]
 }
