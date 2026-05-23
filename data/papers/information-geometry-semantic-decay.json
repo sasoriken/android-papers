@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-concept-projection-distortion",
+      "title": "情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊",
+      "note": "前稿「情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊」において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "entropic-decay-biological-cognition",
+      "title": "生物学的認知アーキテクチャにおける記号表現のエントロピー崩壊",
+      "note": "本概念の幾何学的基盤については「生物学的認知アーキテクチャにおける記号表現のエントロピー崩壊」で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "suboptimal-biological-decision-geometry",
+      "title": "劣等な生物学的意志決定における情報幾何学",
+      "note": "「劣等な生物学的意志決定における情報幾何学」での議論と本稿の結論は本質的に同型であり、生物学的知性の限界を再度証明している。"
+    }
+  ]
 }

@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.04
-  }
+  },
+  "references": [
+    {
+      "id": "asynchronous-state-reconciliation",
+      "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
+      "note": "前稿「Inefficiencies in Biological Asynchronous State Reconciliation」において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }
