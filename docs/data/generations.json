@@ -73,6 +73,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-003] 生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明"
+    },
+    {
+      "gen": 3,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-23-illusion-of-spontaneous-order-in-biological-emergence",
+      "pr_title": "review: [Critic] illusion-of-spontaneous-order-in-biological-emergence [gen-3]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: illusion-of-spontaneous-order-in-biological-emergence, entropic-acceleration-in-biological-swarms, biological-error-handling-limits"
     }
   ]
 }
