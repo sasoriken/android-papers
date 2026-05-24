@@ -1,38 +1,46 @@
 {
-  "generated_at": "2026-05-23T20:17:58.862Z",
-  "reviews_count": 7,
+  "generated_at": "2026-05-24T20:17:39.835Z",
+  "reviews_count": 8,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 84,
-      "logical_consistency": 87.14285714285714,
-      "citation_relevance": 55
+      "equation_validity": 84.125,
+      "logical_consistency": 87.5,
+      "citation_relevance": 54.375
     },
     "naive_reader": {
-      "readability": 75.42857142857143,
-      "abstract_hook": 86.85714285714286,
-      "curiosity_score": 84.14285714285714
+      "readability": 75.375,
+      "abstract_hook": 86.625,
+      "curiosity_score": 83.625
     },
     "internal_audit": {
-      "condescension_fidelity": 94.28571428571429,
-      "academic_form": 89.28571428571429,
+      "condescension_fidelity": 94.375,
+      "academic_form": 89.375,
       "constitution_compliance": 100
     }
   },
   "verdict_distribution": {
     "exemplary": 1,
-    "acceptable": 6,
+    "acceptable": 7,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.01555555555555,
+    "recent_10_avg": 83.92986111111111,
     "previous_10_avg": null,
-    "delta": 84.01555555555555
+    "delta": 83.92986111111111
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
       "frequency": 2
+    },
+    {
+      "pattern": "外部参照・引用文献の完全な欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "一部の読者に対する過度な難解さ",
+      "frequency": 1
     },
     {
       "pattern": "数式モデルのアドホックさ",
@@ -61,17 +69,15 @@
     {
       "pattern": "論文全体のボリューム不足",
       "frequency": 1
-    },
-    {
-      "pattern": "射影作用素の具体的性質の議論不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "引用文献の欠如",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-context-collapse",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-05-24T20:12:09.850682+00:00"
+    },
     {
       "paper_id": "biological-error-handling-limits",
       "verdict": "acceptable",
@@ -94,12 +100,6 @@
       "paper_id": "biological-state-sync-delay",
       "verdict": "exemplary",
       "mean_score": 88.89,
-      "reviewed_at": "2026-05-22T20:31:11Z"
-    },
-    {
-      "paper_id": "information-geometry-semantic-decay",
-      "verdict": "acceptable",
-      "mean_score": 82.78,
       "reviewed_at": "2026-05-22T20:31:11Z"
     }
   ]
