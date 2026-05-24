@@ -332,6 +332,16 @@
       .landing-grid { grid-template-columns: 1fr; }
     }
 
+
+
+    .filter-btn.meta-filter {
+      border-color: rgba(168,127,255,.3);
+      color: var(--accent2);
+    }
+    .filter-btn.meta-filter.active {
+      background: rgba(168,127,255,.1);
+    }
+
     /* Filter buttons container */
     #filter-buttons { display: flex; gap: .4rem; flex-wrap: wrap; }
 
@@ -713,6 +723,9 @@
       // Build filter buttons
       const filterContainer = document.getElementById('filter-buttons');
       filterContainer.innerHTML = '<button class="filter-btn active" data-cat="all">全て</button>';
+      if (allPapers.some(p => isMetaIndexEntry(p))) {
+        filterContainer.innerHTML += '<button class="filter-btn meta-filter" data-cat="__meta__">自己観察</button>';
+      }
       [...cats].sort().forEach(cat => {
         filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + '</button>';
       });
@@ -745,7 +758,9 @@
     function getFiltered() {
       let papers = [...allPapers];
       // Filter
-      if (currentFilter !== 'all') {
+      if (currentFilter === '__meta__') {
+        papers = papers.filter(p => isMetaIndexEntry(p));
+      } else if (currentFilter !== 'all') {
         papers = papers.filter(p => p.category === currentFilter);
       }
       // Search

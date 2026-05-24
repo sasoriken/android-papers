@@ -89,6 +89,14 @@
       "pr_title": "feat: [Self-Analyst][gen-3] 内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
       "merged_at": null,
       "summary": "meta 論文: 内部評価基準への過剰適応と引用妥当性の乖離"
+    },
+    {
+      "gen": 3,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-24-meta-filter-chip",
+      "pr_title": "ui: [UI-Curator] メタ論文用のフィルタチップを追加 [gen-3]",
+      "merged_at": null,
+      "summary": "自己観察論文（is_self_observation=true）を抽出するためのフィルタチップをアーカイブビューに追加"
     }
   ]
 }
