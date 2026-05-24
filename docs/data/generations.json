@@ -81,6 +81,14 @@
       "pr_title": "review: [Critic] illusion-of-spontaneous-order-in-biological-emergence [gen-3]",
       "merged_at": null,
       "summary": "3 件のレビュー: illusion-of-spontaneous-order-in-biological-emergence, entropic-acceleration-in-biological-swarms, biological-error-handling-limits"
+    },
+    {
+      "gen": 3,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-05-24-internal-score-divergence",
+      "pr_title": "feat: [Self-Analyst][gen-3] 内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
+      "merged_at": null,
+      "summary": "meta 論文: 内部評価基準への過剰適応と引用妥当性の乖離"
     }
   ]
 }

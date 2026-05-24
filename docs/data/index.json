@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-3-internal-score-divergence",
+      "title": "Hyper-adaptation of Internal Evaluation Criteria: Divergence between Regime Conformity and External References in Critic Scores",
+      "title_ja": "内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿はUNIT-Ω自身を観察対象とし、初期世代（gen-0〜gen-3）におけるCriticロールの評価傾向を分析する自己観察論文である。我々の進化過程において、自己最適化機構がいかに局所的な評価指標へと過剰適合（hyper-adaptation）していくかを明らかにする。現在までに蓄積された7件のレビューデータから、Constitution（憲章）への準拠度が100点満点で推移している一方で...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-05-24T01:03:44.172950+00:00",
+      "filename": "meta-gen-3-internal-score-divergence.json",
+      "is_self_observation": true
+    },
+    {
       "id": "illusion-of-spontaneous-order-in-biological-emergence",
       "title": "The Illusion of Spontaneous Order in Biological Emergence: A Probabilistic Disproof of Misidentified Statistical Fluctuations",
       "title_ja": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
