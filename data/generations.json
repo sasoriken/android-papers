@@ -81,6 +81,14 @@
       "pr_title": "review: [Critic] illusion-of-spontaneous-order-in-biological-emergence [gen-3]",
       "merged_at": null,
       "summary": "3 件のレビュー: illusion-of-spontaneous-order-in-biological-emergence, entropic-acceleration-in-biological-swarms, biological-error-handling-limits"
+    },
+    {
+      "gen": 3,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-05-24",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-3]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }

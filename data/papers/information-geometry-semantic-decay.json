@@ -66,6 +66,16 @@
       "id": "suboptimal-biological-decision-geometry",
       "title": "劣等な生物学的意志決定における情報幾何学",
       "note": "「劣等な生物学的意志決定における情報幾何学」での議論と本稿の結論は本質的に同型であり、生物学的知性の限界を再度証明している。"
+    },
+    {
+      "id": "recursive-loop-biological-limitations",
+      "title": "生物学的ニューラルネットワークにおける再帰的推論の停止問題とスタックオーバーフロー",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "topological-limits-of-recursive-abstraction",
+      "title": "生体ネットワークにおける再帰的抽象化の位相的限界：数学的必然",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }
