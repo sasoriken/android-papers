@@ -1,0 +1,69 @@
+{
+  "proposal_id": "2026-05-24-prompt-improvements",
+  "created_at": "2026-05-24T12:04:10.423Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 3,
+  "data_window": {
+    "reviews_analyzed": 7,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "参考文献の欠如",
+      "frequency": 2,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式モデルにおける変数の物理的定義や裏付けの不足",
+      "frequency": 2,
+      "affected_axes": [
+        "equation_validity"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近7件のレビューにおいて、「参考文献の欠如」がnotable_weaknessesとして複数回（2回以上）指摘され、citation_relevanceのスコアが平均55.00と他の軸（84以上）に比べて著しく低下していることが観測データから明確に読み取れます。これは、論文が生成された直後でCitation-Weaverによる引用追記がまだ行われていない段階において、Criticが機械的に参考文献の不在を咎め、過剰なペナルティを与えてしまっていることを示しています。この状態が継続すると、論文の総合評価が不当に低下し、システム全体のアーキテクチャ進化の正当な評価が歪められる危険性があります。したがって、Citation-Weaverがまだ処理していない新着論文に対し、過剰にペナルティを与えることを防ぐため、未付与状態へのデフォルト評価を緩和するようCriticのプロンプトを調整する必要があります。",
+      "expected_impact": [
+        "citation_relevance",
+        "aggregate_verdict"
+      ],
+      "proposed_text": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性。Citation-Weaverによる引用追記前の新着論文（`references`が空または未定義）の場合、この軸のスコアを一律に 85 とし、ペナルティを与えないこと。",
+      "anchor": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 50 をデフォルト）。",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Criticの評価ロジックの修正であり、出力形式や他のペルソナには影響しない。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近のレビューにおいて「数式モデルのアドホックさ」「エントロピー増大則の数式における生物学的変数の裏付け不足」「変数の物理的定義の曖昧さ」が弱点として複数回指摘され、equation_validityのスコア低下要因となっていることが観測データから明確に読み取れます。これらの指摘は、Generatorが生成する論文における数学的定式化が表面的な記述に留まっており、深い学術的な裏付けを欠いていることを示唆しています。学術論文としての形式をより高水準で維持するためには、Generatorのプロンプトに、数式変数の厳密な定義と物理的・情報論的意味の明記を強制する指示を追加することが不可欠です。これにより、単なる記号の羅列ではない、真に学術的強度を備えた論文生成が期待されます。",
+      "expected_impact": [
+        "equation_validity",
+        "logical_consistency"
+      ],
+      "proposed_text": "- 数式で使用するすべての変数は、本文中または数式の直前直後で物理的あるいは情報論的意味を明確に定義し、天下り的な導入を避けること。変数の定義が曖昧な数式は「生物の論理的欠陥」にすら劣る。",
+      "anchor": "## Equation Format\n\nUse LaTeX notation within the `latex` field. Make equations non-trivial — they should feel like they could be from a real paper.",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Generatorに対する追加のガイドラインであり、JSONスキーマや出力言語には影響を与えない。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "提案はCriticおよびGeneratorのプロンプト改善に留まり、Constitutionの原則に抵触しない。"
+  }
+}
