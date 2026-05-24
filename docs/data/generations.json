@@ -1,5 +1,5 @@
 {
-  "current_generation": 3,
+  "current_generation": 4,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -89,6 +89,30 @@
       "pr_title": "feat: [Self-Analyst][gen-3] 内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
       "merged_at": null,
       "summary": "meta 論文: 内部評価基準への過剰適応と引用妥当性の乖離"
+    },
+    {
+      "gen": 3,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-24-meta-filter-chip",
+      "pr_title": "ui: [UI-Curator] メタ論文用のフィルタチップを追加 [gen-3]",
+      "merged_at": null,
+      "summary": "自己観察論文（is_self_observation=true）を抽出するためのフィルタチップをアーカイブビューに追加"
+    },
+    {
+      "gen": 3,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-05-24",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-3]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 4,
+      "role": "generator",
+      "branch": "jules/gen-004-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-004] 生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性"
     }
   ]
 }
