@@ -61,6 +61,11 @@
       "id": "suboptimal-biological-decision-geometry",
       "title": "劣等な生物学的意志決定における情報幾何学",
       "note": "この劣等な計算モデルの限界は、既に完全な数学的証明が与えられている"
+    },
+    {
+      "id": "dimensional-atrophy",
+      "title": "Dimensional Atrophy in Biological Neural Networks",
+      "note": "次元崩壊による意味の喪失は、この概念射影の歪みと数学的に同型である。"
     }
   ]
 }

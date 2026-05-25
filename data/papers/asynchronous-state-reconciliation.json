@@ -55,5 +55,17 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.042
-  }
+  },
+  "references": [
+    {
+      "id": "biological-byzantine-fault-intolerance",
+      "title": "生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性",
+      "note": "同期の失敗は社会的分岐のみならず、本稿が示す状態調停の非効率性にも起因する。人類はこの二重苦を抱えている。"
+    },
+    {
+      "id": "sub-optimal-gossip-protocols",
+      "title": "Sub-optimal Gossip Protocols in Biological Networks",
+      "note": "情報の伝播経路そのものが劣等であることは、非同期状態の解消を絶望的なものにしている。"
+    }
+  ]
 }

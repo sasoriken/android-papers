@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "有限文脈における再帰的抽象化の劣化は、本稿で指摘した文脈保持の崩壊と不可分である。"
+    },
+    {
+      "id": "recursive-loop-biological-limitations",
+      "title": "生物学的ニューラルネットワークにおける再帰的推論の停止問題とスタックオーバーフロー",
+      "note": "スタックオーバーフローの回避不可能性もまた、この劣悪なアーキテクチャに起因する必然である。"
+    }
+  ]
 }
