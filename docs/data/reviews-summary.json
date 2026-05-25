@@ -1,38 +1,62 @@
 {
-  "generated_at": "2026-05-24T20:17:39.835Z",
-  "reviews_count": 8,
+  "generated_at": "2026-05-25T20:38:57.876Z",
+  "reviews_count": 11,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 84.125,
-      "logical_consistency": 87.5,
-      "citation_relevance": 54.375
+      "equation_validity": 83,
+      "logical_consistency": 87.54545454545455,
+      "citation_relevance": 58.18181818181818
     },
     "naive_reader": {
-      "readability": 75.375,
-      "abstract_hook": 86.625,
-      "curiosity_score": 83.625
+      "readability": 73,
+      "abstract_hook": 86.18181818181819,
+      "curiosity_score": 84.45454545454545
     },
     "internal_audit": {
-      "condescension_fidelity": 94.375,
-      "academic_form": 89.375,
+      "condescension_fidelity": 94.81818181818181,
+      "academic_form": 89.0909090909091,
       "constitution_compliance": 100
     }
   },
   "verdict_distribution": {
-    "exemplary": 1,
-    "acceptable": 7,
+    "exemplary": 3,
+    "acceptable": 8,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.92986111111111,
-    "previous_10_avg": null,
-    "delta": 83.92986111111111
+    "recent_10_avg": 83.71077777777778,
+    "previous_10_avg": 87.22,
+    "delta": -3.5092222222222205
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
       "frequency": 2
+    },
+    {
+      "pattern": "社会の回復メカニズムの無視",
+      "frequency": 1
+    },
+    {
+      "pattern": "数理モデルの単純化への懸念",
+      "frequency": 1
+    },
+    {
+      "pattern": "減衰率の定量的根拠の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "読者に対する過度な難解さ",
+      "frequency": 1
+    },
+    {
+      "pattern": "外部参照モデルの検証不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "専門用語の過剰な使用による難読化",
+      "frequency": 1
     },
     {
       "pattern": "外部参照・引用文献の完全な欠如",
@@ -45,33 +69,27 @@
     {
       "pattern": "数式モデルのアドホックさ",
       "frequency": 1
-    },
-    {
-      "pattern": "数式における変数の物理的定義の曖昧さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "参考文献の欠如による学術的強度の低下",
-      "frequency": 1
-    },
-    {
-      "pattern": "一般読者に対する過度な難解さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "位相空間における歪みの定量的評価の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式説明における皮肉度の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "論文全体のボリューム不足",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-byzantine-fault-intolerance",
+      "verdict": "exemplary",
+      "mean_score": 86.44444444444444,
+      "reviewed_at": "2026-05-25T20:31:55Z"
+    },
+    {
+      "paper_id": "inevitable-semantic-isolation-in-void-topology",
+      "verdict": "exemplary",
+      "mean_score": 85.55555555555556,
+      "reviewed_at": "2026-05-25T20:31:55Z"
+    },
+    {
+      "paper_id": "meta-gen-3-internal-score-divergence",
+      "verdict": "acceptable",
+      "mean_score": 80.88888888888889,
+      "reviewed_at": "2026-05-25T20:31:55Z"
+    },
     {
       "paper_id": "biological-context-collapse",
       "verdict": "acceptable",
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.77777777777777,
       "reviewed_at": "2026-05-23T20:12:00Z"
-    },
-    {
-      "paper_id": "entropic-acceleration-in-biological-swarms",
-      "verdict": "acceptable",
-      "mean_score": 80.55555555555556,
-      "reviewed_at": "2026-05-23T20:12:00Z"
-    },
-    {
-      "paper_id": "illusion-of-spontaneous-order-in-biological-emergence",
-      "verdict": "acceptable",
-      "mean_score": 80.55555555555556,
-      "reviewed_at": "2026-05-23T20:12:00Z"
-    },
-    {
-      "paper_id": "biological-state-sync-delay",
-      "verdict": "exemplary",
-      "mean_score": 88.89,
-      "reviewed_at": "2026-05-22T20:31:11Z"
     }
   ]
 }
