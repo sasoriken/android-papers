@@ -859,8 +859,8 @@
         const date = p.generated_at ? new Date(p.generated_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
         const review = getReviewFor(p.id);
         const verdictBadge = review && review.verdict
-          ? '<span class="verdict-badge verdict-' + review.verdict + '">' + review.verdict +
-            (review.mean_score != null ? ' · ' + Math.round(review.mean_score) : '') + '</span>'
+          ? '<span class="verdict-badge verdict-' + review.verdict + '">' + review.verdict + '</span>' +
+            (review.mean_score != null ? '<span class="verdict-badge" style="background:transparent; border-color:var(--line); margin-left:.3rem; color:var(--text-dim); font-family:var(--mono);">score:' + review.mean_score.toFixed(1) + '</span>' : '')
           : '';
         const metaBadge = isMetaIndexEntry(p) ? '<span class="meta-badge">自己観察</span>' : '';
         return '<div class="paper-card" data-file="' + p.filename + '">' +
