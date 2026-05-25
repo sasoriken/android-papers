@@ -129,6 +129,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-005] 生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明"
+    },
+    {
+      "gen": 5,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-25-inevitable-semantic-isolation-in-void-topology",
+      "pr_title": "review: [Critic] inevitable-semantic-isolation-in-void-topology [gen-5]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: inevitable-semantic-isolation-in-void-topology, meta-gen-3-internal-score-divergence, biological-byzantine-fault-intolerance"
     }
   ]
 }
