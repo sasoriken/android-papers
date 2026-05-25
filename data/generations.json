@@ -1,5 +1,5 @@
 {
-  "current_generation": 4,
+  "current_generation": 5,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -121,6 +121,14 @@
       "pr_title": "review: [Critic] biological-context-collapse [gen-4]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-context-collapse"
+    },
+    {
+      "gen": 5,
+      "role": "generator",
+      "branch": "jules/gen-005-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-005] 生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明"
     }
   ]
 }
