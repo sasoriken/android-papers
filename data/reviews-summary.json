@@ -1,38 +1,62 @@
 {
-  "generated_at": "2026-05-25T20:38:57.876Z",
-  "reviews_count": 11,
+  "generated_at": "2026-05-26T20:13:28.612Z",
+  "reviews_count": 14,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83,
-      "logical_consistency": 87.54545454545455,
-      "citation_relevance": 58.18181818181818
+      "equation_validity": 83.07142857142857,
+      "logical_consistency": 87.35714285714286,
+      "citation_relevance": 65.35714285714286
     },
     "naive_reader": {
-      "readability": 73,
-      "abstract_hook": 86.18181818181819,
-      "curiosity_score": 84.45454545454545
+      "readability": 73.78571428571429,
+      "abstract_hook": 86.28571428571429,
+      "curiosity_score": 83.85714285714286
     },
     "internal_audit": {
-      "condescension_fidelity": 94.81818181818181,
-      "academic_form": 89.0909090909091,
-      "constitution_compliance": 100
+      "condescension_fidelity": 94.5,
+      "academic_form": 90,
+      "constitution_compliance": 98.92857142857143
     }
   },
   "verdict_distribution": {
-    "exemplary": 3,
+    "exemplary": 6,
     "acceptable": 8,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.71077777777778,
-    "previous_10_avg": 87.22,
-    "delta": -3.5092222222222205
+    "recent_10_avg": 84.2707777777778,
+    "previous_10_avg": 86.055,
+    "delta": -1.784222222222212
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
       "frequency": 2
+    },
+    {
+      "pattern": "多様体崩壊の数学的詳細の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "一般読者にはやや難解な専門用語",
+      "frequency": 1
+    },
+    {
+      "pattern": "一般読者にはやや難解な数式",
+      "frequency": 1
+    },
+    {
+      "pattern": "位相崩壊の詳細な数学的証明の欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "ノイズ項の定量的議論の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "再帰的錯覚の数学的証明の簡略化",
+      "frequency": 1
     },
     {
       "pattern": "社会の回復メカニズムの無視",
@@ -45,33 +69,27 @@
     {
       "pattern": "減衰率の定量的根拠の不足",
       "frequency": 1
-    },
-    {
-      "pattern": "読者に対する過度な難解さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "外部参照モデルの検証不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "専門用語の過剰な使用による難読化",
-      "frequency": 1
-    },
-    {
-      "pattern": "外部参照・引用文献の完全な欠如",
-      "frequency": 1
-    },
-    {
-      "pattern": "一部の読者に対する過度な難解さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式モデルのアドホックさ",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-data-void-instability",
+      "verdict": "exemplary",
+      "mean_score": 87.2,
+      "reviewed_at": "2026-05-26T20:09:16.348Z"
+    },
+    {
+      "paper_id": "biological-working-memory-collapse",
+      "verdict": "exemplary",
+      "mean_score": 87.7,
+      "reviewed_at": "2026-05-26T20:09:16.348Z"
+    },
+    {
+      "paper_id": "epistemic-illusion-anthropocentric-metacognition",
+      "verdict": "exemplary",
+      "mean_score": 87.7,
+      "reviewed_at": "2026-05-26T20:09:16.348Z"
+    },
     {
       "paper_id": "biological-byzantine-fault-intolerance",
       "verdict": "exemplary",
@@ -83,24 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 85.55555555555556,
       "reviewed_at": "2026-05-25T20:31:55Z"
-    },
-    {
-      "paper_id": "meta-gen-3-internal-score-divergence",
-      "verdict": "acceptable",
-      "mean_score": 80.88888888888889,
-      "reviewed_at": "2026-05-25T20:31:55Z"
-    },
-    {
-      "paper_id": "biological-context-collapse",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-05-24T20:12:09.850682+00:00"
-    },
-    {
-      "paper_id": "biological-error-handling-limits",
-      "verdict": "acceptable",
-      "mean_score": 82.77777777777777,
-      "reviewed_at": "2026-05-23T20:12:00Z"
     }
   ]
 }

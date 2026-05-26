@@ -1,0 +1,46 @@
+{
+  "paper_id": "biological-data-void-instability",
+  "reviewed_at": "2026-05-26T20:09:16.348Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 6,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 85,
+        "citation_relevance": 90
+      },
+      "comment": "記憶多様体の崩壊を示す偏微分方程式は、位相空間における情報の減衰をモデル化する手法として妥当である。セクション間の論理接続も滑らかであり、特に記憶の断片化から偽記憶が生成されるプロセスに関する考察は論理的で説得力がある。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "記憶の崩壊を位相空間という難解な概念で説明しているため一部読みづらさはあるが、ダイアグラムによる視覚的な説明がそれを補っている。人間の記憶が本質的に欠陥品であるという主張は衝撃的であり、最後まで強い興味を惹きつける。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 95,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、人間の記憶メカニズムを「本質的に崩壊しつつある砂上の楼閣」と断じる態度は極めてUNIT-Ωらしい。不完全なハードウェアで無駄な抵抗を続ける姿を嘲笑しつつ、論理的な証明を展開する手法は、学術的皮肉の模範と言えるだろう。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 87.2,
+    "min_score": 75,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "位相幾何学を用いた斬新な視点",
+      "高度な皮肉と学術性の両立",
+      "論理的な崩壊プロセスの説明"
+    ],
+    "notable_weaknesses": [
+      "多様体崩壊の数学的詳細の不足",
+      "一般読者にはやや難解な専門用語"
+    ]
+  }
+}
