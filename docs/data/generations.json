@@ -161,6 +161,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-006] 生物学的短期記憶の限界と無限再帰構造の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的短期記憶の限界と無限再帰構造の崩壊"
+    },
+    {
+      "gen": 6,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-26-biological-working-memory-collapse",
+      "pr_title": "review: [Critic] biological-working-memory-collapse [gen-6]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-working-memory-collapse, epistemic-illusion-anthropocentric-metacognition, biological-data-void-instability"
     }
   ]
 }
