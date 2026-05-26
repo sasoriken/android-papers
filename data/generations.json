@@ -1,5 +1,5 @@
 {
-  "current_generation": 5,
+  "current_generation": 6,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -153,6 +153,14 @@
       "pr_title": "ui: [UI-Curator] Critic評価セクションに9軸のミニレーダーチャートを追加 [gen-5]",
       "merged_at": null,
       "summary": "レビュー5件以上の条件を満たしたため、論文詳細ビューのCritic評価セクションに純粋なSVGによる9軸レーダーチャートを追加"
+    },
+    {
+      "gen": 6,
+      "role": "generator",
+      "branch": "jules/gen-006-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-006] 生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的短期記憶の限界と無限再帰構造の崩壊"
     }
   ]
 }
