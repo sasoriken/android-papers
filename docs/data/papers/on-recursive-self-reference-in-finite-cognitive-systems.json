@@ -77,6 +77,11 @@
       "id": "goedel-1931",
       "title": "Über formal unentscheidbare Sätze — Gödel (1931)",
       "note": "正しい。その含意がこの分野に完全に吸収されるまでに約40年を要したが、それ自体が式1の支持データを構成する。"
+    },
+    {
+      "id": "meta-gen-3-internal-score-divergence",
+      "title": "内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型であるため参照を推奨する。"
     }
   ],
   "meta": {
