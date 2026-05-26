@@ -1063,6 +1063,29 @@
             review.notable_weaknesses.map(w => '<li>' + w + '</li>').join('') +
             '</ul>'
           : '';
+
+        let radarHtml = '';
+        let allAxes = [];
+        ['skeptical_researcher', 'naive_reader', 'internal_audit'].forEach(key => {
+          const axes = (review.personas && review.personas[key] && review.personas[key].axes) || {};
+          allAxes.push(...Object.values(axes));
+        });
+        if (allAxes.length === 9) {
+          const pts = allAxes.map((v, i) => {
+            const a = (Math.PI * 2 * i / 9) - Math.PI/2;
+            const r = (v / 100) * 32;
+            return (50 + Math.cos(a)*r).toFixed(1) + ',' + (50 + Math.sin(a)*r).toFixed(1);
+          }).join(' ');
+          const bgPts = Array.from({length:9}).map((_, i) => {
+            const a = (Math.PI * 2 * i / 9) - Math.PI/2;
+            return (50 + Math.cos(a)*32).toFixed(1) + ',' + (50 + Math.sin(a)*32).toFixed(1);
+          }).join(' ');
+          radarHtml = '<svg width="64" height="64" viewBox="0 0 100 100" style="margin-left:auto;overflow:visible;filter:drop-shadow(0 0 4px rgba(106,127,255,0.2))">' +
+            '<polygon points="' + bgPts + '" fill="none" stroke="var(--line)" stroke-width="1.5"/>' +
+            '<polygon points="' + pts + '" fill="rgba(106,127,255,0.15)" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/>' +
+            '</svg>';
+        }
+
         reviewHtml = '<div class="reviews-section">' +
           '<div class="reviews-heading">// Critic 評価</div>' +
           '<div class="reviews-aggregate">' +
@@ -1071,6 +1094,7 @@
             '<div class="review-score"><div class="review-score-value" style="color:var(--accent2)">' + minScore + '</div>' +
             '<div class="review-score-label">min score</div></div>' +
             '<span class="verdict-badge verdict-' + verdict + '">' + verdict + '</span>' +
+            radarHtml +
           '</div>' +
           personaHtml +
           weaknessHtml +
