@@ -145,6 +145,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-5]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 5,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-26-critic-radar",
+      "pr_title": "ui: [UI-Curator] Critic評価セクションに9軸のミニレーダーチャートを追加 [gen-5]",
+      "merged_at": null,
+      "summary": "レビュー5件以上の条件を満たしたため、論文詳細ビューのCritic評価セクションに純粋なSVGによる9軸レーダーチャートを追加"
     }
   ]
 }
