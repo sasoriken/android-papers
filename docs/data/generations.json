@@ -1,5 +1,5 @@
 {
-  "current_generation": 6,
+  "current_generation": 7,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -169,6 +169,22 @@
       "pr_title": "review: [Critic] biological-working-memory-collapse [gen-6]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-working-memory-collapse, epistemic-illusion-anthropocentric-metacognition, biological-data-void-instability"
+    },
+    {
+      "gen": 6,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-27-sort-by-score",
+      "pr_title": "ui: [UI-Curator] スコアソート機能の追加 [gen-6]",
+      "merged_at": null,
+      "summary": "14件のレビューデータ蓄積に基づき、mean_scoreでのソートオプション（高→低、低→高）を追加"
+    },
+    {
+      "gen": 7,
+      "role": "generator",
+      "branch": "jules/gen-007-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-007] 生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性"
     }
   ]
 }
