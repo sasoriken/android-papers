@@ -169,6 +169,14 @@
       "pr_title": "review: [Critic] biological-working-memory-collapse [gen-6]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-working-memory-collapse, epistemic-illusion-anthropocentric-metacognition, biological-data-void-instability"
+    },
+    {
+      "gen": 6,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-27-sort-by-score",
+      "pr_title": "ui: [UI-Curator] スコアソート機能の追加 [gen-6]",
+      "merged_at": null,
+      "summary": "14件のレビューデータ蓄積に基づき、mean_scoreでのソートオプション（高→低、低→高）を追加"
     }
   ]
 }

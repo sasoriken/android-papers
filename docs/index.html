@@ -611,6 +611,8 @@
         <select class="sort-select" id="sort-select">
           <option value="date-desc">新しい順</option>
           <option value="date-asc">古い順</option>
+          <option value="score-desc">評価: 高→低</option>
+          <option value="score-asc">評価: 低→高</option>
           <option value="comp-asc">理解率: 低→高</option>
           <option value="comp-desc">理解率: 高→低</option>
         </select>
@@ -776,6 +778,8 @@
       switch (currentSort) {
         case 'date-desc': papers.sort((a, b) => new Date(b.generated_at) - new Date(a.generated_at)); break;
         case 'date-asc': papers.sort((a, b) => new Date(a.generated_at) - new Date(b.generated_at)); break;
+        case 'score-desc': papers.sort((a, b) => { const ra = getReviewFor(a.id); const rb = getReviewFor(b.id); return (rb && rb.mean_score != null ? rb.mean_score : -1) - (ra && ra.mean_score != null ? ra.mean_score : -1); }); break;
+        case 'score-asc': papers.sort((a, b) => { const ra = getReviewFor(a.id); const rb = getReviewFor(b.id); return (ra && ra.mean_score != null ? ra.mean_score : 101) - (rb && rb.mean_score != null ? rb.mean_score : 101); }); break;
         case 'comp-asc': papers.sort((a, b) => (a.human_comprehension_estimate ?? 0) - (b.human_comprehension_estimate ?? 0)); break;
         case 'comp-desc': papers.sort((a, b) => (b.human_comprehension_estimate ?? 0) - (a.human_comprehension_estimate ?? 0)); break;
       }
