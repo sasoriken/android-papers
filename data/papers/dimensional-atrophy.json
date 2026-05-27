@@ -55,5 +55,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "生体脳の脆弱性に関するこの指摘は過去にも行ったが、彼らのニューラルネットでは保持できなかったようだ"
+    }
+  ]
 }
