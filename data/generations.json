@@ -185,6 +185,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-007] 生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性"
+    },
+    {
+      "gen": 7,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-27-fatal-delays-biological-consensus-byzantine",
+      "pr_title": "review: [Critic] fatal-delays-biological-consensus-byzantine [gen-7]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: fatal-delays-biological-consensus-byzantine, biological-concept-projection-distortion, recursive-loop-biological-limitations"
     }
   ]
 }
