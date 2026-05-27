@@ -169,6 +169,14 @@
       "pr_title": "review: [Critic] biological-working-memory-collapse [gen-6]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-working-memory-collapse, epistemic-illusion-anthropocentric-metacognition, biological-data-void-instability"
+    },
+    {
+      "gen": 6,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-05-27",
+      "pr_title": "chore: [Citation-Weaver] 4 論文へ引用追記 [gen-6]",
+      "merged_at": null,
+      "summary": "4 件の論文に引用追記"
     }
   ]
 }
