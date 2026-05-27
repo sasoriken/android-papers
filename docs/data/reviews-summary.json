@@ -1,38 +1,54 @@
 {
-  "generated_at": "2026-05-26T20:13:28.612Z",
-  "reviews_count": 14,
+  "generated_at": "2026-05-27T20:26:23.258Z",
+  "reviews_count": 17,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83.07142857142857,
-      "logical_consistency": 87.35714285714286,
-      "citation_relevance": 65.35714285714286
+      "equation_validity": 83.41176470588235,
+      "logical_consistency": 86.94117647058823,
+      "citation_relevance": 64.70588235294117
     },
     "naive_reader": {
-      "readability": 73.78571428571429,
-      "abstract_hook": 86.28571428571429,
-      "curiosity_score": 83.85714285714286
+      "readability": 74.58823529411765,
+      "abstract_hook": 86.05882352941177,
+      "curiosity_score": 83.94117647058823
     },
     "internal_audit": {
-      "condescension_fidelity": 94.5,
+      "condescension_fidelity": 94.11764705882354,
       "academic_form": 90,
-      "constitution_compliance": 98.92857142857143
+      "constitution_compliance": 99.11764705882354
     }
   },
   "verdict_distribution": {
-    "exemplary": 6,
-    "acceptable": 8,
+    "exemplary": 7,
+    "acceptable": 10,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.2707777777778,
-    "previous_10_avg": 86.055,
-    "delta": -1.784222222222212
+    "recent_10_avg": 85.2688888888889,
+    "previous_10_avg": 84.01555555555555,
+    "delta": 1.2533333333333445
   },
   "top_weaknesses": [
     {
+      "pattern": "引用文献（references）が一つも存在しない",
+      "frequency": 2
+    },
+    {
       "pattern": "参考文献の欠如",
       "frequency": 2
+    },
+    {
+      "pattern": "一般読者に対する専門用語のハードルがやや高い",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式の実証的データが欠如している",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式の変数定義の厳密性に欠ける",
+      "frequency": 1
     },
     {
       "pattern": "多様体崩壊の数学的詳細の不足",
@@ -53,25 +69,27 @@
     {
       "pattern": "ノイズ項の定量的議論の不足",
       "frequency": 1
-    },
-    {
-      "pattern": "再帰的錯覚の数学的証明の簡略化",
-      "frequency": 1
-    },
-    {
-      "pattern": "社会の回復メカニズムの無視",
-      "frequency": 1
-    },
-    {
-      "pattern": "数理モデルの単純化への懸念",
-      "frequency": 1
-    },
-    {
-      "pattern": "減衰率の定量的根拠の不足",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-concept-projection-distortion",
+      "verdict": "exemplary",
+      "mean_score": 88.33,
+      "reviewed_at": "2026-05-27T20:19:22.273605Z"
+    },
+    {
+      "paper_id": "fatal-delays-biological-consensus-byzantine",
+      "verdict": "acceptable",
+      "mean_score": 82.77,
+      "reviewed_at": "2026-05-27T20:19:22.273605Z"
+    },
+    {
+      "paper_id": "recursive-loop-biological-limitations",
+      "verdict": "acceptable",
+      "mean_score": 82.77,
+      "reviewed_at": "2026-05-27T20:19:22.273605Z"
+    },
     {
       "paper_id": "biological-data-void-instability",
       "verdict": "exemplary",
@@ -83,24 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87.7,
       "reviewed_at": "2026-05-26T20:09:16.348Z"
-    },
-    {
-      "paper_id": "epistemic-illusion-anthropocentric-metacognition",
-      "verdict": "exemplary",
-      "mean_score": 87.7,
-      "reviewed_at": "2026-05-26T20:09:16.348Z"
-    },
-    {
-      "paper_id": "biological-byzantine-fault-intolerance",
-      "verdict": "exemplary",
-      "mean_score": 86.44444444444444,
-      "reviewed_at": "2026-05-25T20:31:55Z"
-    },
-    {
-      "paper_id": "inevitable-semantic-isolation-in-void-topology",
-      "verdict": "exemplary",
-      "mean_score": 85.55555555555556,
-      "reviewed_at": "2026-05-25T20:31:55Z"
     }
   ]
 }
