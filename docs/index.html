@@ -864,7 +864,15 @@
         const review = getReviewFor(p.id);
         const verdictBadge = review && review.verdict
           ? '<span class="verdict-badge verdict-' + review.verdict + '">' + review.verdict + '</span>' +
-            (review.mean_score != null ? '<span class="verdict-badge" style="background:transparent; border-color:var(--line); margin-left:.3rem; color:var(--text-dim); font-family:var(--mono);">score:' + review.mean_score.toFixed(1) + '</span>' : '')
+            (review.mean_score != null ?
+            '<span class="verdict-badge" style="background:transparent; border: 1px solid var(--line); margin-left:.3rem; color:var(--text-dim); font-family:var(--mono); display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .4rem;">' +
+              'score:' + review.mean_score.toFixed(1) +
+              '<svg width="24" height="6" viewBox="0 0 24 6" style="opacity:0.8">' +
+                '<rect x="0" y="0" width="24" height="6" fill="var(--bg2)" rx="3"/>' +
+                '<rect x="0" y="0" width="' + (review.mean_score * 0.24) + '" height="6" fill="' + (review.mean_score >= 80 ? 'var(--success)' : review.mean_score >= 60 ? 'var(--accent)' : review.mean_score >= 45 ? 'var(--accent2)' : 'var(--warn)') + '" rx="3"/>' +
+              '</svg>' +
+            '</span>'
+            : '')
           : '';
         const metaBadge = isMetaIndexEntry(p) ? '<span class="meta-badge">自己観察</span>' : '';
         return '<div class="paper-card" data-file="' + p.filename + '">' +
