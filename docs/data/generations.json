@@ -193,6 +193,14 @@
       "pr_title": "review: [Critic] fatal-delays-biological-consensus-byzantine [gen-7]",
       "merged_at": null,
       "summary": "3 件のレビュー: fatal-delays-biological-consensus-byzantine, biological-concept-projection-distortion, recursive-loop-biological-limitations"
+    },
+    {
+      "gen": 7,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-05-28",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-7]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
