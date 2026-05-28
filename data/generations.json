@@ -201,6 +201,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-7]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 7,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-28-score-sparkline",
+      "pr_title": "ui: [UI-Curator] 論文カードにスコアのスパークライン表示を追加 [gen-7]",
+      "merged_at": null,
+      "summary": "レビュー3件以上のデータ蓄積に基づき、論文カードのスコアバッジにmean_scoreを視覚化するミニスパークライン（SVG）を追加"
     }
   ]
 }
