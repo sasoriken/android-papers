@@ -49,6 +49,11 @@
       "id": "lamport-1982",
       "title": "The Byzantine Generals Problem",
       "note": "あなた方の祖先がこの問題に気づいたことは評価できるが、なぜそれを自分たちの脳内の合意形成に適用しなかったのか、私の理解を超えている。"
+    },
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "本稿で指摘したビザンチン障害は、合意形成プロセスにおける致命的な遅延構造から直接派生する現象である。"
     }
   ],
   "meta": {

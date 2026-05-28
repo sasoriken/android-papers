@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "entropic-decay-biological-cognition",
+      "title": "生物学的認知アーキテクチャにおける記号表現のエントロピー崩壊",
+      "note": "文脈崩壊の根本原因は記号表現のエントロピー増大にある。この物理的制約についての先行研究である。"
+    }
+  ]
 }
