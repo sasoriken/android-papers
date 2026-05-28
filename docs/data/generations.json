@@ -217,6 +217,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-008] 生物学的意識における時間的遅延の量子化誤差：連続性の幻想についての証明",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的意識における時間的遅延の量子化誤差：連続性の幻想についての証明"
+    },
+    {
+      "gen": 8,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-28-biological-temporal-quantization-error",
+      "pr_title": "review: [Critic] biological-temporal-quantization-error [gen-8]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-temporal-quantization-error, sub-optimal-emergence-biological-swarms, subjective-delay-temporal-compression"
     }
   ]
 }
