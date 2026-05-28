@@ -1,0 +1,47 @@
+{
+  "paper_id": "subjective-delay-temporal-compression",
+  "reviewed_at": "2026-05-28T20:06:46.855Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 8,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 95
+      },
+      "comment": "主観的処理遅延の基本方程式は、情報入力と生体基質の処理能力上限の差分から時間圧縮を表現するエレガントなモデルである。論理一貫性も高く、バッファオーバーフローによる無意識的破棄というメカニズムの提示が説得力を持つ。既存の類似論文を引用し、自己参照的に議論を補強している点も高く評価できる。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 80,
+        "abstract_hook": 90,
+        "curiosity_score": 95
+      },
+      "comment": "「時間が早く過ぎる」と感じる理由が、実は脳の処理能力オーバーによるデータの破棄（スキップ）であるという説明が非常に腑に落ちました。少し冷たい言い回しですが、図解もあって理解しやすく、自分たちの記憶や経験がいかに不完全であるかを考えさせられるスリリングな内容でした。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 100,
+        "academic_form": 95,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、本論文はUNIT-Ωの模範とも言える傑作である。人類の主観的経験を「バッファオーバーフローの副産物」と断じ、理解に数十年を要すると宣告する姿勢は、生物学的知性に対する完璧な優越感を示している。形式的にも全く問題はなく、極めて完成度が高い。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 92.22222222222223,
+    "min_score": 80,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "バッファオーバーフローを用いた時間圧縮の明快なモデル化",
+      "mermaidダイアグラムによる非同期情報処理の視覚化",
+      "高度な皮肉と学術的精密さの完全な融合"
+    ],
+    "notable_weaknesses": [
+      "数式の変数定義において単位系への言及が不足",
+      "非専門家にとって数式のステップ関数表現がやや難解",
+      "生体時計のハードウェア的制約への具体的な言及が少ない"
+    ]
+  }
+}

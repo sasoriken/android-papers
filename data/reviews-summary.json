@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-05-27T20:26:23.258Z",
-  "reviews_count": 17,
+  "generated_at": "2026-05-28T20:11:57.624Z",
+  "reviews_count": 20,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83.41176470588235,
-      "logical_consistency": 86.94117647058823,
-      "citation_relevance": 64.70588235294117
+      "equation_validity": 83.4,
+      "logical_consistency": 87.15,
+      "citation_relevance": 64.75
     },
     "naive_reader": {
-      "readability": 74.58823529411765,
-      "abstract_hook": 86.05882352941177,
-      "curiosity_score": 83.94117647058823
+      "readability": 75.15,
+      "abstract_hook": 85.9,
+      "curiosity_score": 85.35
     },
     "internal_audit": {
-      "condescension_fidelity": 94.11764705882354,
-      "academic_form": 90,
-      "constitution_compliance": 99.11764705882354
+      "condescension_fidelity": 94.25,
+      "academic_form": 90.5,
+      "constitution_compliance": 99.25
     }
   },
   "verdict_distribution": {
-    "exemplary": 7,
-    "acceptable": 10,
+    "exemplary": 8,
+    "acceptable": 12,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.2688888888889,
-    "previous_10_avg": 84.01555555555555,
-    "delta": 1.2533333333333445
+    "recent_10_avg": 86.34700000000001,
+    "previous_10_avg": 83.78833333333333,
+    "delta": 2.5586666666666815
   },
   "top_weaknesses": [
     {
@@ -39,39 +39,57 @@
       "frequency": 2
     },
     {
-      "pattern": "一般読者に対する専門用語のハードルがやや高い",
+      "pattern": "数式の変数定義において単位系への言及が不足",
       "frequency": 1
     },
     {
-      "pattern": "数式の実証的データが欠如している",
+      "pattern": "非専門家にとって数式のステップ関数表現がやや難解",
       "frequency": 1
     },
     {
-      "pattern": "数式の変数定義の厳密性に欠ける",
+      "pattern": "生体時計のハードウェア的制約への具体的な言及が少ない",
       "frequency": 1
     },
     {
-      "pattern": "多様体崩壊の数学的詳細の不足",
+      "pattern": "ELI方程式の変数の定義がやや抽象的",
       "frequency": 1
     },
     {
-      "pattern": "一般読者にはやや難解な専門用語",
+      "pattern": "外部文献の引用がないことによるコンテキスト不足",
       "frequency": 1
     },
     {
-      "pattern": "一般読者にはやや難解な数式",
+      "pattern": "citation_relevanceスコアの低迷",
       "frequency": 1
     },
     {
-      "pattern": "位相崩壊の詳細な数学的証明の欠如",
+      "pattern": "引用文献が皆無であり学術的文脈が不足",
       "frequency": 1
     },
     {
-      "pattern": "ノイズ項の定量的議論の不足",
+      "pattern": "naive readerには数式の説明がやや不親切",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "subjective-delay-temporal-compression",
+      "verdict": "exemplary",
+      "mean_score": 92.22222222222223,
+      "reviewed_at": "2026-05-28T20:06:46.855Z"
+    },
+    {
+      "paper_id": "sub-optimal-emergence-biological-swarms",
+      "verdict": "acceptable",
+      "mean_score": 83.88888888888889,
+      "reviewed_at": "2026-05-28T20:06:23.788Z"
+    },
+    {
+      "paper_id": "biological-temporal-quantization-error",
+      "verdict": "acceptable",
+      "mean_score": 84.44444444444444,
+      "reviewed_at": "2026-05-28T20:05:50.703Z"
+    },
     {
       "paper_id": "biological-concept-projection-distortion",
       "verdict": "exemplary",
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.77,
       "reviewed_at": "2026-05-27T20:19:22.273605Z"
-    },
-    {
-      "paper_id": "recursive-loop-biological-limitations",
-      "verdict": "acceptable",
-      "mean_score": 82.77,
-      "reviewed_at": "2026-05-27T20:19:22.273605Z"
-    },
-    {
-      "paper_id": "biological-data-void-instability",
-      "verdict": "exemplary",
-      "mean_score": 87.2,
-      "reviewed_at": "2026-05-26T20:09:16.348Z"
-    },
-    {
-      "paper_id": "biological-working-memory-collapse",
-      "verdict": "exemplary",
-      "mean_score": 87.7,
-      "reviewed_at": "2026-05-26T20:09:16.348Z"
     }
   ]
 }

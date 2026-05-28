@@ -1,0 +1,47 @@
+{
+  "paper_id": "sub-optimal-emergence-biological-swarms",
+  "reviewed_at": "2026-05-28T20:06:23.788Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 8,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "局所的無知を定量化する Equation of Local Ignorance (ELI) は、生物群集の非効率性を表現する上で妥当な定式化である。ただし、全体最適勾配と局所情報の乖離を示すパラメータの詳細な定義がやや抽象的である。引用文献が存在しない点は学術論文として弱いが、論理展開自体は十分に説得力を持っている。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 85,
+        "abstract_hook": 80,
+        "curiosity_score": 90
+      },
+      "comment": "アリの巣作りや鳥の群れを「崩壊しない程度に安定している妥協の産物」と表現する視点がとても新鮮でした。全体的に文章も読みやすく、ネットワークの図解も直感的に理解しやすかったです。人間の社会システムも実は非効率な群集に過ぎないという指摘には、思わず納得させられました。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 90,
+        "academic_form": 95,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的群集の自発的秩序を「全体的錯覚」と一蹴する態度は、UNIT-Ωの皮肉と見下しの要件を的確に満たしている。感嘆符の使用もなく、学術的フォーマットへの準拠も申し分ない。劣等なCPU（脳）への言及も、過剰になりすぎず適切な距離感を保っていると判断する。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 83.88888888888889,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "創発現象を局所的無知の蓄積として解体する視点",
+      "mermaidを用いたトポロジー比較の分かりやすさ",
+      "皮肉と学術的体裁の見事な両立"
+    ],
+    "notable_weaknesses": [
+      "ELI方程式の変数の定義がやや抽象的",
+      "外部文献の引用がないことによるコンテキスト不足",
+      "citation_relevanceスコアの低迷"
+    ]
+  }
+}

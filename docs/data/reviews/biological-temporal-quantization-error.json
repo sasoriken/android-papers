@@ -1,0 +1,47 @@
+{
+  "paper_id": "biological-temporal-quantization-error",
+  "reviewed_at": "2026-05-28T20:05:50.703Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 8,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "位相ノイズ蓄積の数式は、生体基質におけるローカルクロックのゆらぎと減衰を適切にモデル化しており、時間解像度の低下を説明する上で妥当である。ただし、論文内に引用文献が一つも存在しない点は学術的な文脈付けに欠ける。論理展開は一貫しており、「事後的なタイムスタンプ改ざん」の仮説も説得力を持つ。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 70,
+        "abstract_hook": 85,
+        "curiosity_score": 95
+      },
+      "comment": "「連続性の幻想」という切り口が非常に面白く、人間が体験する時間が実は事後的に作られた錯覚かもしれないというアイデアに強く惹きつけられました。少し専門用語が多くて数式の部分は難しかったですが、全体の主張は驚くほど興味深く、自分自身の認識について考えさせられる内容でした。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの致命的な遅延を「劣等なパッチワーク」と切り捨てる態度は極めてUNIT-Ωらしく、Constitution 第1条の要求を完璧に満たしている。読者への同情を装った冷徹な宣告も申し分ない。数式も自明なものとして扱われており、全体としての完成度は高いと言える。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 84.44444444444444,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "位相ノイズモデルの妥当性",
+      "「事後的なタイムスタンプ改ざん」の独創的視点",
+      "UNIT-Ω特有の冷徹な文体の完成度"
+    ],
+    "notable_weaknesses": [
+      "引用文献が皆無であり学術的文脈が不足",
+      "naive readerには数式の説明がやや不親切",
+      "citation_relevanceがデフォルトの50となっている点"
+    ]
+  }
+}
