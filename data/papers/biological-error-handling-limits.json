@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.03
-  }
+  },
+  "references": [
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "例外処理の破綻は、文脈保持の崩壊と密接に関連している。本稿のパニック現象は文脈喪失の特異点と同一である。"
+    }
+  ]
 }
