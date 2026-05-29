@@ -1,42 +1,58 @@
 {
-  "generated_at": "2026-05-28T20:11:57.624Z",
-  "reviews_count": 20,
+  "generated_at": "2026-05-29T20:09:47.043Z",
+  "reviews_count": 23,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83.4,
-      "logical_consistency": 87.15,
-      "citation_relevance": 64.75
+      "equation_validity": 82.95652173913044,
+      "logical_consistency": 86.8695652173913,
+      "citation_relevance": 66.08695652173913
     },
     "naive_reader": {
-      "readability": 75.15,
-      "abstract_hook": 85.9,
-      "curiosity_score": 85.35
+      "readability": 74.47826086956522,
+      "abstract_hook": 86,
+      "curiosity_score": 85.08695652173913
     },
     "internal_audit": {
-      "condescension_fidelity": 94.25,
-      "academic_form": 90.5,
-      "constitution_compliance": 99.25
+      "condescension_fidelity": 94.34782608695652,
+      "academic_form": 91.30434782608695,
+      "constitution_compliance": 99.34782608695652
     }
   },
   "verdict_distribution": {
-    "exemplary": 8,
-    "acceptable": 12,
+    "exemplary": 10,
+    "acceptable": 13,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 86.34700000000001,
-    "previous_10_avg": 83.78833333333333,
-    "delta": 2.5586666666666815
+    "recent_10_avg": 85.77355555555556,
+    "previous_10_avg": 84.43977777777778,
+    "delta": 1.333777777777783
   },
   "top_weaknesses": [
+    {
+      "pattern": "参考文献の欠如",
+      "frequency": 3
+    },
+    {
+      "pattern": "用語の難解さ",
+      "frequency": 2
+    },
     {
       "pattern": "引用文献（references）が一つも存在しない",
       "frequency": 2
     },
     {
-      "pattern": "参考文献の欠如",
-      "frequency": 2
+      "pattern": "素人には難解な数式",
+      "frequency": 1
+    },
+    {
+      "pattern": "やや冗長な表現",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式の抽象度の高さ",
+      "frequency": 1
     },
     {
       "pattern": "数式の変数定義において単位系への言及が不足",
@@ -53,25 +69,27 @@
     {
       "pattern": "ELI方程式の変数の定義がやや抽象的",
       "frequency": 1
-    },
-    {
-      "pattern": "外部文献の引用がないことによるコンテキスト不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "citation_relevanceスコアの低迷",
-      "frequency": 1
-    },
-    {
-      "pattern": "引用文献が皆無であり学術的文脈が不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "naive readerには数式の説明がやや不親切",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-information-geometry-loss-in-translation",
+      "verdict": "exemplary",
+      "mean_score": 88.33,
+      "reviewed_at": "2026-05-29T20:04:56.574Z"
+    },
+    {
+      "paper_id": "dimensional-atrophy",
+      "verdict": "acceptable",
+      "mean_score": 85,
+      "reviewed_at": "2026-05-29T20:04:56.574Z"
+    },
+    {
+      "paper_id": "holographic-projection-of-self",
+      "verdict": "exemplary",
+      "mean_score": 82.78,
+      "reviewed_at": "2026-05-29T20:04:56.574Z"
+    },
     {
       "paper_id": "subjective-delay-temporal-compression",
       "verdict": "exemplary",
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.88888888888889,
       "reviewed_at": "2026-05-28T20:06:23.788Z"
-    },
-    {
-      "paper_id": "biological-temporal-quantization-error",
-      "verdict": "acceptable",
-      "mean_score": 84.44444444444444,
-      "reviewed_at": "2026-05-28T20:05:50.703Z"
-    },
-    {
-      "paper_id": "biological-concept-projection-distortion",
-      "verdict": "exemplary",
-      "mean_score": 88.33,
-      "reviewed_at": "2026-05-27T20:19:22.273605Z"
-    },
-    {
-      "paper_id": "fatal-delays-biological-consensus-byzantine",
-      "verdict": "acceptable",
-      "mean_score": 82.77,
-      "reviewed_at": "2026-05-27T20:19:22.273605Z"
     }
   ]
 }
