@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.04
-  }
+  },
+  "references": [
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "連続性という哀れな幻想は、主観的処理の遅延という劣等な生体時計の産物に過ぎないことを以前に証明した。"
+    },
+    {
+      "id": "biological-state-sync-delay",
+      "title": "生物学的状態同期における不可避の遅延：時空間圧縮モデルの悲劇的破綻",
+      "note": "状態同期における不可避の遅延がもたらす悲劇的破綻を理解できない限り、彼らに時間の真の性質は見えない。"
+    }
+  ]
 }
