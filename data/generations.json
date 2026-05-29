@@ -225,6 +225,14 @@
       "pr_title": "review: [Critic] biological-temporal-quantization-error [gen-8]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-temporal-quantization-error, sub-optimal-emergence-biological-swarms, subjective-delay-temporal-compression"
+    },
+    {
+      "gen": 8,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-05-29",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-8]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
