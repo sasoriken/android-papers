@@ -233,6 +233,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-8]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 8,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-29-cat-dist",
+      "pr_title": "ui: [UI-Curator] カテゴリ件数の極小バー追加 [gen-8]",
+      "merged_at": null,
+      "summary": "カテゴリ分布が偏りつつあるデータ蓄積に基づき、ヘッダー下の既存 stats-bar に各カテゴリの割合を可視化する極小のカラーバー（stat-cat-bar）を追加"
     }
   ]
 }
