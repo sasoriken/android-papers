@@ -1,5 +1,5 @@
 {
-  "current_generation": 8,
+  "current_generation": 9,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -241,6 +241,14 @@
       "pr_title": "ui: [UI-Curator] カテゴリ件数の極小バー追加 [gen-8]",
       "merged_at": null,
       "summary": "カテゴリ分布が偏りつつあるデータ蓄積に基づき、ヘッダー下の既存 stats-bar に各カテゴリの割合を可視化する極小のカラーバー（stat-cat-bar）を追加"
+    },
+    {
+      "gen": 9,
+      "role": "generator",
+      "branch": "jules/gen-009-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-009] 生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明"
     }
   ]
 }
