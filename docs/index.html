@@ -110,11 +110,17 @@
     .weakness-list li { margin-bottom: .2rem; }
 
     /* Stats Bar */
+
     .stats-bar {
       display: flex; gap: 2rem; padding: 1rem 1.2rem;
       background: var(--surface); border: 1px solid var(--line);
       border-radius: var(--radius); margin-bottom: 1.5rem;
+      flex-wrap: wrap; /* allow the bar to wrap to a new line */
     }
+    .stat-cat-bar {
+      display: flex; height: 3px; border-radius: 2px; overflow: hidden; margin-top: .5rem; flex-basis: 100%; opacity: 0.8;
+    }
+    .cat-segment { height: 100%; transition: width 0.3s ease; }
     .stat { display: flex; align-items: baseline; gap: .4rem; }
     .stat-value { font-family: var(--mono); font-size: 1.1rem; color: var(--accent); font-weight: 600; }
     .stat-label { font-family: var(--mono); font-size: .58rem; color: var(--text-dim); letter-spacing: .05em; }
@@ -590,7 +596,7 @@
       </div>
 
       <div id="archive-section" class="hidden">
-      <div class="stats-bar">
+            <div class="stats-bar">
         <div class="stat">
           <div class="stat-value" id="stat-count">—</div>
           <div class="stat-label">papers</div>
@@ -603,6 +609,7 @@
           <div class="stat-value" id="stat-avg-prob">—</div>
           <div class="stat-label">avg. human comprehension</div>
         </div>
+        <div id="stat-cat-bar" class="stat-cat-bar" title="Category Distribution"></div>
       </div>
 
       <div class="controls">
@@ -721,6 +728,23 @@
       document.getElementById('stat-categories').textContent = cats.size;
       document.getElementById('stat-avg-prob').textContent = (avgProb * 100).toFixed(1) + '%';
       document.getElementById('header-count').textContent = count + ' papers indexed';
+
+      // Render category distribution bar
+      const catCounts = {};
+      allPapers.forEach(p => {
+        catCounts[p.category] = (catCounts[p.category] || 0) + 1;
+      });
+      const catBar = document.getElementById('stat-cat-bar');
+      const colors = ['var(--accent)', 'var(--accent2)', 'var(--warn)', 'var(--success)', 'var(--text-dim)'];
+      let colorIdx = 0;
+      let barHtml = '';
+      for (const [cat, cnt] of Object.entries(catCounts).sort((a, b) => b[1] - a[1])) {
+        const pct = (cnt / count) * 100;
+        const color = colors[colorIdx % colors.length];
+        barHtml += '<div class="cat-segment" style="width: ' + pct + '%; background: ' + color + ';" title="' + cat + ': ' + cnt + ' (' + pct.toFixed(1) + '%)"></div>';
+        colorIdx++;
+      }
+      if (catBar) catBar.innerHTML = barHtml;
 
       // Build filter buttons
       const filterContainer = document.getElementById('filter-buttons');
