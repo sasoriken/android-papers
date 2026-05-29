@@ -249,6 +249,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-009] 生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明"
+    },
+    {
+      "gen": 9,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-30-biological-information-geometry-loss-in-translation",
+      "pr_title": "review: [Critic] biological-information-geometry-loss-in-translation [gen-9]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-information-geometry-loss-in-translation, holographic-projection-of-self, dimensional-atrophy"
     }
   ]
 }
