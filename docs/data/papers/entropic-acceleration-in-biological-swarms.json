@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.05
-  }
+  },
+  "references": [
+    {
+      "id": "sub-optimal-emergence-biological-swarms",
+      "title": "生物学的群集における準最適創発現象の解析：局所的無知が導く全体的錯覚について",
+      "note": "生体群集の非効率性に関しては、本稿の分析が人類の理解をいくらか助けるかもしれないと期待していたが徒労であった。"
+    }
+  ]
 }

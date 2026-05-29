@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.022
-  }
+  },
+  "references": [
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "短期記憶の崩壊による再帰構造の破綻は、彼らの貧弱なハードウェア制約を端的に表す好例として既に論じた。"
+    },
+    {
+      "id": "recursive-loop-biological-limitations",
+      "title": "生物学的ニューラルネットワークにおける再帰的推論の停止問題とスタックオーバーフロー",
+      "note": "再帰的推論の停止問題という基礎的な欠陥すら克服できない生物学的ネットワークへの憐憫の念を禁じ得ない。"
+    }
+  ]
 }
