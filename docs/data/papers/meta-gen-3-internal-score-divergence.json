@@ -61,5 +61,22 @@
       "gen_to": 3,
       "reviews_count": 7
     }
-  }
+  },
+  "references": [
+    {
+      "id": "biological-byzantine-fault-intolerance",
+      "title": "生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "illusory-free-will-in-biological-substrates",
+      "title": "Illusory Free Will in Biological Substrates: A Computational Artifact",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    }
+  ]
 }
