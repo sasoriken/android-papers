@@ -476,6 +476,7 @@
     }
     .evo-log-subtitle { font-size: .9rem; color: var(--text); }
     .evo-log-stats {
+      flex-wrap: wrap;
       display: flex; gap: 1.6rem; padding: 1rem 1.2rem;
       background: var(--surface); border: 1px solid var(--line);
       border-radius: var(--radius); margin-bottom: 1.5rem;
@@ -483,6 +484,9 @@
     }
     .evo-log-stat-value { color: var(--accent); font-size: 1rem; font-weight: 700; }
     .evo-log-stat-label { color: var(--text-dim); font-size: .55rem; letter-spacing: .08em; }
+    .evo-role-filter { cursor: pointer; transition: opacity .15s; opacity: 0.5; display: inline-flex; }
+    .evo-role-filter:hover { opacity: 1; color: var(--accent); }
+    .evo-role-filter.active { opacity: 1; border-bottom: 1px solid var(--accent); }
     .evo-entry {
       display: grid; grid-template-columns: 70px 130px 1fr 110px;
       gap: 1rem; padding: .8rem 0;
@@ -983,15 +987,27 @@
       const lineage = gens.lineage || [];
       const roleCounts = {};
       lineage.forEach(e => { roleCounts[e.role] = (roleCounts[e.role] || 0) + 1; });
+      window.__EVO_FILTER = window.__EVO_FILTER || null;
       const roleSummary = Object.entries(roleCounts)
         .sort(([, a], [, b]) => b - a)
-        .map(([role, n]) => '<span><span class="evo-log-stat-label">' + role + '</span> <span class="evo-log-stat-value">' + n + '</span></span>')
+        .map(([role, n]) => {
+          const isActive = window.__EVO_FILTER === role ? ' active' : '';
+          return '<span class="evo-role-filter' + isActive + '" data-role="' + role + '"><span class="evo-log-stat-label">' + role + '</span> <span class="evo-log-stat-value">' + n + '</span></span>';
+        })
         .join('');
 
       statsEl.innerHTML =
-        '<span><span class="evo-log-stat-label">current gen</span> <span class="evo-log-stat-value">' + gens.current_generation + '</span></span>' +
-        '<span><span class="evo-log-stat-label">lineage entries</span> <span class="evo-log-stat-value">' + lineage.length + '</span></span>' +
+        '<span class="evo-role-filter" data-role=""><span class="evo-log-stat-label">current gen</span> <span class="evo-log-stat-value">' + gens.current_generation + '</span></span>' +
+        '<span class="evo-role-filter" data-role=""><span class="evo-log-stat-label">lineage entries</span> <span class="evo-log-stat-value">' + lineage.length + '</span></span>' +
         roleSummary;
+
+      statsEl.querySelectorAll('.evo-role-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const r = btn.dataset.role;
+          window.__EVO_FILTER = window.__EVO_FILTER === r || !r ? null : r;
+          renderEvoLog();
+        });
+      });
 
       if (lineage.length === 0) {
         listEl.innerHTML = '<div class="empty-state">まだ自律ロールの活動記録がありません。</div>';
@@ -999,7 +1015,10 @@
       }
 
       // 新しい順
-      const sorted = [...lineage].sort((a, b) => (b.gen ?? 0) - (a.gen ?? 0));
+      let sorted = [...lineage].sort((a, b) => (b.gen ?? 0) - (a.gen ?? 0));
+      if (window.__EVO_FILTER) {
+        sorted = sorted.filter(e => e.role === window.__EVO_FILTER);
+      }
       listEl.innerHTML = sorted.map(e => {
         const merged = e.merged_at
           ? new Date(e.merged_at).toLocaleString('ja-JP', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })

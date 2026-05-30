@@ -265,6 +265,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-9]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 9,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-05-30-evo-role-filters",
+      "pr_title": "ui: [UI-Curator] Evolution Log にロール別フィルタチップを追加 [gen-9]",
+      "merged_at": null,
+      "summary": "Evolution Log の件数増大に基づき、ロール別のフィルタチップを .evo-log-stats 内に追加"
     }
   ]
 }
