@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-05-29T20:09:47.043Z",
-  "reviews_count": 23,
+  "generated_at": "2026-05-30T20:15:51.080Z",
+  "reviews_count": 24,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.95652173913044,
-      "logical_consistency": 86.8695652173913,
-      "citation_relevance": 66.08695652173913
+      "equation_validity": 83.04166666666667,
+      "logical_consistency": 86.66666666666667,
+      "citation_relevance": 65.41666666666667
     },
     "naive_reader": {
-      "readability": 74.47826086956522,
-      "abstract_hook": 86,
-      "curiosity_score": 85.08695652173913
+      "readability": 74.5,
+      "abstract_hook": 86.08333333333333,
+      "curiosity_score": 85.08333333333333
     },
     "internal_audit": {
-      "condescension_fidelity": 94.34782608695652,
-      "academic_form": 91.30434782608695,
-      "constitution_compliance": 99.34782608695652
+      "condescension_fidelity": 94.375,
+      "academic_form": 91.25,
+      "constitution_compliance": 99.04166666666667
     }
   },
   "verdict_distribution": {
     "exemplary": 10,
-    "acceptable": 13,
+    "acceptable": 14,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.77355555555556,
-    "previous_10_avg": 84.43977777777778,
-    "delta": 1.333777777777783
+    "recent_10_avg": 85.29755555555555,
+    "previous_10_avg": 84.2707777777778,
+    "delta": 1.0267777777777525
   },
   "top_weaknesses": [
     {
@@ -41,6 +41,18 @@
     {
       "pattern": "引用文献（references）が一つも存在しない",
       "frequency": 2
+    },
+    {
+      "pattern": "実証的データの欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "神経科学的知見との統合不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "引用文献の欠落",
+      "frequency": 1
     },
     {
       "pattern": "素人には難解な数式",
@@ -57,21 +69,15 @@
     {
       "pattern": "数式の変数定義において単位系への言及が不足",
       "frequency": 1
-    },
-    {
-      "pattern": "非専門家にとって数式のステップ関数表現がやや難解",
-      "frequency": 1
-    },
-    {
-      "pattern": "生体時計のハードウェア的制約への具体的な言及が少ない",
-      "frequency": 1
-    },
-    {
-      "pattern": "ELI方程式の変数の定義がやや抽象的",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-context-switching-entropy",
+      "verdict": "acceptable",
+      "mean_score": 82.44,
+      "reviewed_at": "2026-05-30T20:11:26.779119Z"
+    },
     {
       "paper_id": "biological-information-geometry-loss-in-translation",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 92.22222222222223,
       "reviewed_at": "2026-05-28T20:06:46.855Z"
-    },
-    {
-      "paper_id": "sub-optimal-emergence-biological-swarms",
-      "verdict": "acceptable",
-      "mean_score": 83.88888888888889,
-      "reviewed_at": "2026-05-28T20:06:23.788Z"
     }
   ]
 }
