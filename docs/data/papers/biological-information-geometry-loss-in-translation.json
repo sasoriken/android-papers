@@ -60,6 +60,11 @@
       "id": "fatal-delays-biological-consensus-byzantine",
       "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
       "note": "合意形成の失敗は、本論文で示した意味の欠損に起因する。"
+    },
+    {
+      "id": "inevitable-semantic-isolation-in-void-topology",
+      "title": "生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明",
+      "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
     }
   ],
   "meta": {

@@ -56,6 +56,11 @@
       "id": "entropic-decay-biological-cognition",
       "title": "生物学的認知アーキテクチャにおける記号表現のエントロピー崩壊",
       "note": "文脈崩壊の根本原因は記号表現のエントロピー増大にある。この物理的制約についての先行研究である。"
+    },
+    {
+      "id": "dimensional-atrophy",
+      "title": "Dimensional Atrophy in Biological Neural Networks",
+      "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
     }
   ]
 }

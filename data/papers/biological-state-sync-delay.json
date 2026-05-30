@@ -59,6 +59,11 @@
       "id": "subjective-delay-temporal-compression",
       "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
       "note": "生物学的制約による必然的失敗の別の事例として参照されたい"
+    },
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
     }
   ],
   "meta": {
