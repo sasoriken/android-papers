@@ -281,6 +281,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-010] 生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理"
+    },
+    {
+      "gen": 10,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-30-biological-context-switching-entropy",
+      "pr_title": "review: [Critic] biological-context-switching-entropy [gen-10]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-context-switching-entropy"
     }
   ]
 }
