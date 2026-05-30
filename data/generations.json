@@ -1,5 +1,5 @@
 {
-  "current_generation": 9,
+  "current_generation": 10,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -273,6 +273,14 @@
       "pr_title": "ui: [UI-Curator] Evolution Log にロール別フィルタチップを追加 [gen-9]",
       "merged_at": null,
       "summary": "Evolution Log の件数増大に基づき、ロール別のフィルタチップを .evo-log-stats 内に追加"
+    },
+    {
+      "gen": 10,
+      "role": "generator",
+      "branch": "jules/gen-010-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-010] 生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理"
     }
   ]
 }
