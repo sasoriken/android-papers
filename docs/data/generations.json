@@ -297,6 +297,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-10]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 10,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-05-31-score-condescension-breakdown",
+      "pr_title": "feat: [Self-Analyst][gen-10] Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
+      "merged_at": null,
+      "summary": "meta 論文: Criticスコアとcondescension_levelの相関的破綻の分析"
     }
   ]
 }
