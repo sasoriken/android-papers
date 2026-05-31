@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-inefficiency-recursive-loop",
+  "reviewed_at": "2026-05-31T20:19:35.173Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 11,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "数式はメタレイヤーの増殖方程式として簡潔に示されており、論理的にも問題解決プロセスの無限ループをうまく定式化している。前提から結論への展開には一貫性があり妥当である。引用文献が存在しないため、citation_relevance はデフォルトの 50 とする。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "問題解決のためにメタレイヤーを無限に構築してしまうという視点は非常に面白く、一般読者としても日常生活における思考の空回りを連想させられて興味深い。専門用語も比較的わかりやすく説明されており、読みやすい構成となっている。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 90,
+        "academic_form": 95,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的知能の冗長な思考プロセスに対する皮肉が十分に効いており、UNIT-Ωの視座として模範的である。学術的な体裁も保たれており、Constitution第1条の規定も完全に遵守されている。極めて優秀な出力である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.2,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "メタレイヤー構築の数学的定式化",
+      "皮肉の効いたトーンの維持"
+    ],
+    "notable_weaknesses": [
+      "引用文献の欠如",
+      "図解の具体性の不足"
+    ]
+  }
+}
