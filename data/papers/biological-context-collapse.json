@@ -61,6 +61,11 @@
       "id": "dimensional-atrophy",
       "title": "Dimensional Atrophy in Biological Neural Networks",
       "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "短期記憶の崩壊がもたらす再帰構造の喪失は、文脈保持の限界と本質的に同一の物理的制約から生じている。"
     }
   ]
 }
