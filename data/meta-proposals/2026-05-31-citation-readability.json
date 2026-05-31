@@ -1,0 +1,53 @@
+{
+  "proposal_id": "2026-05-31-citation-readability",
+  "created_at": "2026-05-31T12:30:42.725034+00:00",
+  "proposer_model": "google-labs-jules",
+  "generation": 10,
+  "data_window": {
+    "reviews_analyzed": 24,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "参考文献の欠如（3回）、引用文献が一つも存在しない（2回）、外部参照・引用文献の完全な欠如（1回）",
+      "frequency": 6,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "用語の難解さ（2回）、一般読者に対する専門用語のハードルがやや高い（1回）、一部の読者に対する過度な難解さ（1回）",
+      "frequency": 4,
+      "affected_axes": [
+        "readability"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近のレビュー分析において、`skeptical_researcher` の `citation_relevance` の平均スコアが 65.4 と著しく低迷しています。「参考文献の欠如」「引用文献が一つも存在しない」という指摘が計6回発生しており、架空の論文であることにかまけて参考文献の生成を完全に怠っているのが原因です。また、`naive_reader` の `readability` の平均も 74.5 と低く、「用語の難解さ」が計4回指摘されています。これらを改善するため、Generatorに対して（架空であっても）必ず参考文献をいくつか含めること、および一般読者向けのアブストラクトにおいて過度な専門用語を抑制する指示を追加します。",
+      "expected_impact": [
+        "citation_relevance",
+        "readability"
+      ],
+      "proposed_text": "- Generate at least 2 references in the abstract or sections naturally, referencing other (fictional but plausible) papers. This is required even for newly generated architecture papers to satisfy skeptical researchers.\n- Ensure the abstract and introduction, while maintaining a condescending tone, remain somewhat accessible to naive readers by avoiding overly dense jargon without context.",
+      "anchor": "- meta.human_comprehension_estimate: a probability, usually between 0.01 and 0.12",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のフォーマットを破壊することなく、生成されるテキストの品質のみを向上させるため。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": ""
+  }
+}
