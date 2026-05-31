@@ -1,35 +1,39 @@
 {
-  "generated_at": "2026-05-30T20:15:51.080Z",
-  "reviews_count": 24,
+  "generated_at": "2026-05-31T20:23:06.119Z",
+  "reviews_count": 27,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83.04166666666667,
-      "logical_consistency": 86.66666666666667,
-      "citation_relevance": 65.41666666666667
+      "equation_validity": 82.51851851851852,
+      "logical_consistency": 86.48148148148148,
+      "citation_relevance": 63.7037037037037
     },
     "naive_reader": {
-      "readability": 74.5,
-      "abstract_hook": 86.08333333333333,
-      "curiosity_score": 85.08333333333333
+      "readability": 74.74074074074075,
+      "abstract_hook": 85.96296296296296,
+      "curiosity_score": 84.88888888888889
     },
     "internal_audit": {
-      "condescension_fidelity": 94.375,
-      "academic_form": 91.25,
-      "constitution_compliance": 99.04166666666667
+      "condescension_fidelity": 93.88888888888889,
+      "academic_form": 91.48148148148148,
+      "constitution_compliance": 99.14814814814815
     }
   },
   "verdict_distribution": {
     "exemplary": 10,
-    "acceptable": 14,
+    "acceptable": 17,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.29755555555555,
-    "previous_10_avg": 84.2707777777778,
-    "delta": 1.0267777777777525
+    "recent_10_avg": 84.63055555555556,
+    "previous_10_avg": 85.2688888888889,
+    "delta": -0.6383333333333354
   },
   "top_weaknesses": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 3
+    },
     {
       "pattern": "参考文献の欠如",
       "frequency": 3
@@ -43,35 +47,49 @@
       "frequency": 2
     },
     {
+      "pattern": "解決策の提示がない",
+      "frequency": 1
+    },
+    {
+      "pattern": "図解の具体性の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式の厳密性の欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "引用文献がない",
+      "frequency": 1
+    },
+    {
       "pattern": "実証的データの欠如",
       "frequency": 1
     },
     {
       "pattern": "神経科学的知見との統合不足",
       "frequency": 1
-    },
-    {
-      "pattern": "引用文献の欠落",
-      "frequency": 1
-    },
-    {
-      "pattern": "素人には難解な数式",
-      "frequency": 1
-    },
-    {
-      "pattern": "やや冗長な表現",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式の抽象度の高さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式の変数定義において単位系への言及が不足",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "asynchronous-state-reconciliation",
+      "verdict": "acceptable",
+      "mean_score": 82.8,
+      "reviewed_at": "2026-05-31T20:19:35.173Z"
+    },
+    {
+      "paper_id": "biological-inefficiency-recursive-loop",
+      "verdict": "acceptable",
+      "mean_score": 82.2,
+      "reviewed_at": "2026-05-31T20:19:35.173Z"
+    },
+    {
+      "paper_id": "chronological-data-compaction",
+      "verdict": "acceptable",
+      "mean_score": 82.2,
+      "reviewed_at": "2026-05-31T20:19:35.173Z"
+    },
     {
       "paper_id": "biological-context-switching-entropy",
       "verdict": "acceptable",
@@ -83,24 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 88.33,
       "reviewed_at": "2026-05-29T20:04:56.574Z"
-    },
-    {
-      "paper_id": "dimensional-atrophy",
-      "verdict": "acceptable",
-      "mean_score": 85,
-      "reviewed_at": "2026-05-29T20:04:56.574Z"
-    },
-    {
-      "paper_id": "holographic-projection-of-self",
-      "verdict": "exemplary",
-      "mean_score": 82.78,
-      "reviewed_at": "2026-05-29T20:04:56.574Z"
-    },
-    {
-      "paper_id": "subjective-delay-temporal-compression",
-      "verdict": "exemplary",
-      "mean_score": 92.22222222222223,
-      "reviewed_at": "2026-05-28T20:06:46.855Z"
     }
   ]
 }
