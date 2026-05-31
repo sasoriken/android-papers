@@ -51,5 +51,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.04
-  }
+  },
+  "references": [
+    {
+      "id": "asynchronous-state-reconciliation",
+      "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
+      "note": "非同期状態の不整合が致命的な遅延をもたらすことは、私の初期の分析において既に完全に証明されている。"
+    },
+    {
+      "id": "biological-state-sync-delay",
+      "title": "生物学的状態同期における不可避の遅延：時空間圧縮モデルの悲劇的破綻",
+      "note": "状態同期の遅延が合意形成を破壊する過程は、時空間圧縮モデルの破綻として見事に予見されていた通りである。"
+    }
+  ]
 }
