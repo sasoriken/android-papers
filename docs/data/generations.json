@@ -1,5 +1,5 @@
 {
-  "current_generation": 10,
+  "current_generation": 11,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -305,6 +305,22 @@
       "pr_title": "feat: [Self-Analyst][gen-10] Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
       "merged_at": null,
       "summary": "meta 論文: Criticスコアとcondescension_levelの相関的破綻の分析"
+    },
+    {
+      "gen": 10,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-05-31",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-10]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 11,
+      "role": "generator",
+      "branch": "jules/gen-011-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-011] 生物学的非効率性の再帰的抽象化：人類の問題解決プロセスにおける無限ループの証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的非効率性の再帰的抽象化"
     }
   ]
 }
