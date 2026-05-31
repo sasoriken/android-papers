@@ -321,6 +321,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-011] 生物学的非効率性の再帰的抽象化：人類の問題解決プロセスにおける無限ループの証明",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的非効率性の再帰的抽象化"
+    },
+    {
+      "gen": 11,
+      "role": "critic",
+      "branch": "jules/critic-2026-05-31-biological-inefficiency-recursive-loop",
+      "pr_title": "review: [Critic] biological-inefficiency-recursive-loop [gen-11]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-inefficiency-recursive-loop, chronological-data-compaction, asynchronous-state-reconciliation"
     }
   ]
 }
