@@ -337,6 +337,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-011]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 11,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-01-search-enhancement",
+      "pr_title": "ui: [UI-Curator] 検索対象にキーワードと評価(verdict)を追加 [gen-11]",
+      "merged_at": null,
+      "summary": "検索対象に keywords を含める / verdict でフィルタ する機能を追加"
     }
   ]
 }

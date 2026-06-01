@@ -617,7 +617,7 @@
       </div>
 
       <div class="controls">
-        <input type="text" class="search-box" id="search" placeholder="検索 — タイトル・キーワード" />
+        <input type="text" class="search-box" id="search" placeholder="検索 — タイトル・キーワード・評価(verdict)" />
         <div id="filter-buttons"></div>
         <select class="sort-select" id="sort-select">
           <option value="date-desc">新しい順</option>
@@ -796,11 +796,16 @@
       // Search
       const q = document.getElementById('search').value.trim().toLowerCase();
       if (q) {
-        papers = papers.filter(p =>
-          (p.title || '').toLowerCase().includes(q) ||
-          (p.title_en || '').toLowerCase().includes(q) ||
-          (p.category || '').toLowerCase().includes(q)
-        );
+        papers = papers.filter(p => {
+          const full = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
+          const rev = getReviewFor(p.id) || {};
+          const kw = (full.keywords || []).join(' ').toLowerCase();
+          const vd = (rev.verdict || '').toLowerCase();
+          return (p.title || '').toLowerCase().includes(q) ||
+                 (p.title_en || '').toLowerCase().includes(q) ||
+                 (p.category || '').toLowerCase().includes(q) ||
+                 kw.includes(q) || vd.includes(q);
+        });
       }
       // Sort
       switch (currentSort) {
