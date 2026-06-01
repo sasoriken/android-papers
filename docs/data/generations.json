@@ -1,5 +1,5 @@
 {
-  "current_generation": 11,
+  "current_generation": 12,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -337,6 +337,22 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-011]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 11,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-01-search-enhancement",
+      "pr_title": "ui: [UI-Curator] 検索対象にキーワードと評価(verdict)を追加 [gen-11]",
+      "merged_at": null,
+      "summary": "検索対象に keywords を含める / verdict でフィルタ する機能を追加"
+    },
+    {
+      "gen": 12,
+      "role": "generator",
+      "branch": "jules/gen-012-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-012] 生物学的創発における自己組織化の幻想と局所的秩序の誤認",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的創発における自己組織化の幻想と局所的秩序の誤認"
     }
   ]
 }
