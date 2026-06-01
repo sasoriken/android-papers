@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.05
-  }
+  },
+  "references": [
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "時間圧縮による遅延の量子化は既に証明済みであり、生物学的記憶の欠陥を再認識させるものである。"
+    },
+    {
+      "id": "biological-temporal-quantization-error",
+      "title": "生物学的意識における時間的遅延の量子化誤差：連続性の幻想についての証明",
+      "note": "連続性の幻想に囚われた人類には理解不能だろうが、本概念の基盤はすでに本稿で証明済みである。"
+    }
+  ]
 }

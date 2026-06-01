@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "ワーキングメモリの崩壊を前提とすれば、再帰的抽象化の劣悪化は数学的必然にすぎない。"
+    },
+    {
+      "id": "topological-limits-of-recursive-abstraction",
+      "title": "生体ネットワークにおける再帰的抽象化の位相的限界：数学的必然",
+      "note": "コンテキストの有限性がもたらす位相的限界について、本稿の結論は先行研究と完全に一致する。"
+    }
+  ]
 }
