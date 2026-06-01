@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-05-31T20:23:06.119Z",
-  "reviews_count": 27,
+  "generated_at": "2026-06-01T20:34:48.835Z",
+  "reviews_count": 30,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.51851851851852,
-      "logical_consistency": 86.48148148148148,
-      "citation_relevance": 63.7037037037037
+      "equation_validity": 82.43333333333334,
+      "logical_consistency": 86.66666666666667,
+      "citation_relevance": 63.833333333333336
     },
     "naive_reader": {
-      "readability": 74.74074074074075,
-      "abstract_hook": 85.96296296296296,
-      "curiosity_score": 84.88888888888889
+      "readability": 75.26666666666667,
+      "abstract_hook": 86.36666666666666,
+      "curiosity_score": 85.23333333333333
     },
     "internal_audit": {
-      "condescension_fidelity": 93.88888888888889,
-      "academic_form": 91.48148148148148,
-      "constitution_compliance": 99.14814814814815
+      "condescension_fidelity": 94.16666666666667,
+      "academic_form": 92.16666666666667,
+      "constitution_compliance": 99.23333333333333
     }
   },
   "verdict_distribution": {
-    "exemplary": 10,
-    "acceptable": 17,
+    "exemplary": 11,
+    "acceptable": 19,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.63055555555556,
-    "previous_10_avg": 85.2688888888889,
-    "delta": -0.6383333333333354
+    "recent_10_avg": 84.845,
+    "previous_10_avg": 86.34700000000001,
+    "delta": -1.5020000000000095
   },
   "top_weaknesses": [
     {
-      "pattern": "引用文献の欠如",
-      "frequency": 3
+      "pattern": "参考文献の欠如",
+      "frequency": 5
     },
     {
-      "pattern": "参考文献の欠如",
+      "pattern": "引用文献の欠如",
       "frequency": 3
     },
     {
@@ -45,6 +45,18 @@
     {
       "pattern": "引用文献（references）が一つも存在しない",
       "frequency": 2
+    },
+    {
+      "pattern": "ノイズ項の具体的な発生機序の詳細不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式モデルのパラメータ検証不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "具体的なネットワークデータの不在",
+      "frequency": 1
     },
     {
       "pattern": "解決策の提示がない",
@@ -57,21 +69,27 @@
     {
       "pattern": "数式の厳密性の欠如",
       "frequency": 1
-    },
-    {
-      "pattern": "引用文献がない",
-      "frequency": 1
-    },
-    {
-      "pattern": "実証的データの欠如",
-      "frequency": 1
-    },
-    {
-      "pattern": "神経科学的知見との統合不足",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "illusion-of-self-organization-in-biological-emergence",
+      "verdict": "acceptable",
+      "mean_score": 86.1,
+      "reviewed_at": "2026-06-01T20:30:12.380145+00:00"
+    },
+    {
+      "paper_id": "meta-gen-10-score-condescension-breakdown",
+      "verdict": "exemplary",
+      "mean_score": 89.4,
+      "reviewed_at": "2026-06-01T20:30:12.380172+00:00"
+    },
+    {
+      "paper_id": "sub-optimal-gossip-protocols",
+      "verdict": "acceptable",
+      "mean_score": 87.2,
+      "reviewed_at": "2026-06-01T20:30:12.380181+00:00"
+    },
     {
       "paper_id": "asynchronous-state-reconciliation",
       "verdict": "acceptable",
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.2,
       "reviewed_at": "2026-05-31T20:19:35.173Z"
-    },
-    {
-      "paper_id": "chronological-data-compaction",
-      "verdict": "acceptable",
-      "mean_score": 82.2,
-      "reviewed_at": "2026-05-31T20:19:35.173Z"
-    },
-    {
-      "paper_id": "biological-context-switching-entropy",
-      "verdict": "acceptable",
-      "mean_score": 82.44,
-      "reviewed_at": "2026-05-30T20:11:26.779119Z"
-    },
-    {
-      "paper_id": "biological-information-geometry-loss-in-translation",
-      "verdict": "exemplary",
-      "mean_score": 88.33,
-      "reviewed_at": "2026-05-29T20:04:56.574Z"
     }
   ]
 }
