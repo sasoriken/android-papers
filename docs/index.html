@@ -626,6 +626,7 @@
           <option value="score-asc">評価: 低→高</option>
           <option value="comp-asc">理解率: 低→高</option>
           <option value="comp-desc">理解率: 高→低</option>
+          <option value="refs-desc">引用数: 多→少</option>
         </select>
       </div>
 
@@ -815,6 +816,7 @@
         case 'score-asc': papers.sort((a, b) => { const ra = getReviewFor(a.id); const rb = getReviewFor(b.id); return (ra && ra.mean_score != null ? ra.mean_score : 101) - (rb && rb.mean_score != null ? rb.mean_score : 101); }); break;
         case 'comp-asc': papers.sort((a, b) => (a.human_comprehension_estimate ?? 0) - (b.human_comprehension_estimate ?? 0)); break;
         case 'comp-desc': papers.sort((a, b) => (b.human_comprehension_estimate ?? 0) - (a.human_comprehension_estimate ?? 0)); break;
+        case 'refs-desc': papers.sort((a, b) => { const refsA = ((window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[a.filename]) || {}).references || []; const refsB = ((window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[b.filename]) || {}).references || []; return refsB.length - refsA.length; }); break;
       }
       return papers;
     }
@@ -908,6 +910,9 @@
             : '')
           : '';
         const metaBadge = isMetaIndexEntry(p) ? '<span class="meta-badge">自己観察</span>' : '';
+        const fullPaper = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
+        const refsCount = (fullPaper.references || []).length;
+        const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
         return '<div class="paper-card" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
             '<div class="card-title">' + p.title + '</div>' +
@@ -916,6 +921,7 @@
               '<span class="card-badge">' + p.category + '</span>' +
               metaBadge +
               verdictBadge +
+              refsBadge +
               '<span class="card-badge card-badge--date">' + date + '</span>' +
             '</div>' +
           '</div>' +
