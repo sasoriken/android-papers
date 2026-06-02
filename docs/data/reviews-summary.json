@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-01T20:34:48.835Z",
-  "reviews_count": 30,
+  "generated_at": "2026-06-02T20:29:35.374Z",
+  "reviews_count": 31,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.43333333333334,
-      "logical_consistency": 86.66666666666667,
-      "citation_relevance": 63.833333333333336
+      "equation_validity": 81.87096774193549,
+      "logical_consistency": 86.12903225806451,
+      "citation_relevance": 63.38709677419355
     },
     "naive_reader": {
-      "readability": 75.26666666666667,
-      "abstract_hook": 86.36666666666666,
-      "curiosity_score": 85.23333333333333
+      "readability": 75.58064516129032,
+      "abstract_hook": 86.16129032258064,
+      "curiosity_score": 85.06451612903226
     },
     "internal_audit": {
-      "condescension_fidelity": 94.16666666666667,
-      "academic_form": 92.16666666666667,
-      "constitution_compliance": 99.23333333333333
+      "condescension_fidelity": 94.19354838709677,
+      "academic_form": 92.09677419354838,
+      "constitution_compliance": 99.09677419354838
     }
   },
   "verdict_distribution": {
     "exemplary": 11,
-    "acceptable": 19,
+    "acceptable": 20,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.845,
-    "previous_10_avg": 86.34700000000001,
-    "delta": -1.5020000000000095
+    "recent_10_avg": 84.45500000000001,
+    "previous_10_avg": 85.98055555555557,
+    "delta": -1.525555555555556
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,14 @@
       "frequency": 2
     },
     {
+      "pattern": "数式モデルと既存の合意形成アルゴリズムとの理論的接続が甘い点",
+      "frequency": 1
+    },
+    {
+      "pattern": "引用文献が皆無であり、学術的裏付けに乏しい点",
+      "frequency": 1
+    },
+    {
       "pattern": "ノイズ項の具体的な発生機序の詳細不足",
       "frequency": 1
     },
@@ -61,17 +69,15 @@
     {
       "pattern": "解決策の提示がない",
       "frequency": 1
-    },
-    {
-      "pattern": "図解の具体性の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式の厳密性の欠如",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-redundancy-inefficiency-consensus",
+      "verdict": "acceptable",
+      "mean_score": 78.88,
+      "reviewed_at": "2026-06-02T20:23:11.856360Z"
+    },
     {
       "paper_id": "illusion-of-self-organization-in-biological-emergence",
       "verdict": "acceptable",
@@ -94,12 +100,6 @@
       "paper_id": "asynchronous-state-reconciliation",
       "verdict": "acceptable",
       "mean_score": 82.8,
-      "reviewed_at": "2026-05-31T20:19:35.173Z"
-    },
-    {
-      "paper_id": "biological-inefficiency-recursive-loop",
-      "verdict": "acceptable",
-      "mean_score": 82.2,
       "reviewed_at": "2026-05-31T20:19:35.173Z"
     }
   ]
