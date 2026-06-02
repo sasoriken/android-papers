@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.05
-  }
+  },
+  "references": [
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "title": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "entropic-acceleration-in-biological-swarms",
+      "title": "生物学的群知能におけるエントロピー加速の数学的必然性：局所的最適化の悲劇と大域的崩壊",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "sub-optimal-emergence-biological-swarms",
+      "title": "生物学的群集における準最適創発現象の解析：局所的無知が導く全体的錯覚について",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }

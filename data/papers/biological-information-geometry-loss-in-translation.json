@@ -65,6 +65,21 @@
       "id": "inevitable-semantic-isolation-in-void-topology",
       "title": "生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明",
       "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "information-geometry-semantic-decay",
+      "title": "生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-concept-projection-distortion",
+      "title": "情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "suboptimal-biological-decision-geometry",
+      "title": "劣等な生物学的意志決定における情報幾何学",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ],
   "meta": {
