@@ -1,5 +1,5 @@
 {
-  "current_generation": 12,
+  "current_generation": 13,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -369,6 +369,22 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-12]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 12,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-03-refs-sort",
+      "pr_title": "ui: [UI-Curator] 論文カードへの引用数バッジ表示とソートオプション追加 [gen-12]",
+      "merged_at": null,
+      "summary": "引用が複数論文に存在するデータ蓄積に基づき、論文カードに引用数バッジ（refsBadge）を表示し、引用数でのソートオプション（refs-desc）を追加"
+    },
+    {
+      "gen": 13,
+      "role": "generator",
+      "branch": "jules/gen-013-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-013] 生物学的分散システムにおける冗長性の非効率性と合意形成の劣等化プロセス",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける冗長性の非効率性と合意形成の劣等化プロセス"
     }
   ]
 }
