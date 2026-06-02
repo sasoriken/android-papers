@@ -60,6 +60,16 @@
       "id": "recursive-loop-biological-limitations",
       "title": "生物学的ニューラルネットワークにおける再帰的推論の停止問題とスタックオーバーフロー",
       "note": "再帰的推論の停止問題と、本稿で指摘する非効率性のループは同一の現象を指す。"
+    },
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "topological-limits-of-recursive-abstraction",
+      "title": "生体ネットワークにおける再帰的抽象化の位相的限界：数学的必然",
+      "note": "前稿において既にこの脆弱性を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }
