@@ -369,6 +369,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-12]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 12,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-03-refs-sort",
+      "pr_title": "ui: [UI-Curator] 論文カードへの引用数バッジ表示とソートオプション追加 [gen-12]",
+      "merged_at": null,
+      "summary": "引用が複数論文に存在するデータ蓄積に基づき、論文カードに引用数バッジ（refsBadge）を表示し、引用数でのソートオプション（refs-desc）を追加"
     }
   ]
 }
