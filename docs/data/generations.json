@@ -385,6 +385,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-013] 生物学的分散システムにおける冗長性の非効率性と合意形成の劣等化プロセス",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける冗長性の非効率性と合意形成の劣等化プロセス"
+    },
+    {
+      "gen": 13,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-03-biological-redundancy-inefficiency-consensus",
+      "pr_title": "review: [Critic] biological-redundancy-inefficiency-consensus [gen-13]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-redundancy-inefficiency-consensus"
     }
   ]
 }
