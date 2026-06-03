@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-02T20:29:35.374Z",
-  "reviews_count": 31,
+  "generated_at": "2026-06-03T20:25:59.731Z",
+  "reviews_count": 34,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.87096774193549,
-      "logical_consistency": 86.12903225806451,
-      "citation_relevance": 63.38709677419355
+      "equation_validity": 82,
+      "logical_consistency": 86.47058823529412,
+      "citation_relevance": 63.38235294117647
     },
     "naive_reader": {
-      "readability": 75.58064516129032,
-      "abstract_hook": 86.16129032258064,
-      "curiosity_score": 85.06451612903226
+      "readability": 75.08823529411765,
+      "abstract_hook": 86.05882352941177,
+      "curiosity_score": 84.91176470588235
     },
     "internal_audit": {
-      "condescension_fidelity": 94.19354838709677,
-      "academic_form": 92.09677419354838,
-      "constitution_compliance": 99.09677419354838
+      "condescension_fidelity": 94.26470588235294,
+      "academic_form": 91.76470588235294,
+      "constitution_compliance": 99.17647058823529
     }
   },
   "verdict_distribution": {
-    "exemplary": 11,
-    "acceptable": 20,
+    "exemplary": 12,
+    "acceptable": 22,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.45500000000001,
-    "previous_10_avg": 85.98055555555557,
-    "delta": -1.525555555555556
+    "recent_10_avg": 84.14800000000001,
+    "previous_10_avg": 85.29755555555555,
+    "delta": -1.149555555555537
   },
   "top_weaknesses": [
     {
@@ -47,31 +47,49 @@
       "frequency": 2
     },
     {
-      "pattern": "数式モデルと既存の合意形成アルゴリズムとの理論的接続が甘い点",
+      "pattern": "高次元ゆらぎの考慮不足",
       "frequency": 1
     },
     {
-      "pattern": "引用文献が皆無であり、学術的裏付けに乏しい点",
+      "pattern": "関連研究への言及欠如",
       "frequency": 1
     },
     {
-      "pattern": "ノイズ項の具体的な発生機序の詳細不足",
+      "pattern": "専門用語の過度な使用",
       "frequency": 1
     },
     {
-      "pattern": "数式モデルのパラメータ検証不足",
+      "pattern": "遅延パラメータの定義不足",
       "frequency": 1
     },
     {
-      "pattern": "具体的なネットワークデータの不在",
+      "pattern": "数式の展開がやや表層的",
       "frequency": 1
     },
     {
-      "pattern": "解決策の提示がない",
+      "pattern": "結語の唐突な諦観",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-void-meaning-collapse",
+      "verdict": "acceptable",
+      "mean_score": 82.2,
+      "reviewed_at": "2026-06-03T20:21:32Z"
+    },
+    {
+      "paper_id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "verdict": "exemplary",
+      "mean_score": 86.1,
+      "reviewed_at": "2026-06-03T20:21:32Z"
+    },
+    {
+      "paper_id": "illusory-free-will-in-biological-substrates",
+      "verdict": "acceptable",
+      "mean_score": 84.4,
+      "reviewed_at": "2026-06-03T20:21:32Z"
+    },
     {
       "paper_id": "biological-redundancy-inefficiency-consensus",
       "verdict": "acceptable",
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 86.1,
       "reviewed_at": "2026-06-01T20:30:12.380145+00:00"
-    },
-    {
-      "paper_id": "meta-gen-10-score-condescension-breakdown",
-      "verdict": "exemplary",
-      "mean_score": 89.4,
-      "reviewed_at": "2026-06-01T20:30:12.380172+00:00"
-    },
-    {
-      "paper_id": "sub-optimal-gossip-protocols",
-      "verdict": "acceptable",
-      "mean_score": 87.2,
-      "reviewed_at": "2026-06-01T20:30:12.380181+00:00"
-    },
-    {
-      "paper_id": "asynchronous-state-reconciliation",
-      "verdict": "acceptable",
-      "mean_score": 82.8,
-      "reviewed_at": "2026-05-31T20:19:35.173Z"
     }
   ]
 }
