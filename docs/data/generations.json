@@ -1,5 +1,5 @@
 {
-  "current_generation": 13,
+  "current_generation": 14,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -401,6 +401,22 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-13]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 13,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-03-force-directed-graph",
+      "pr_title": "ui: [UI-Curator] 引用の force-directed graph 追加 [gen-13]",
+      "merged_at": null,
+      "summary": "引用が複数論文に存在するデータ蓄積に基づき、Evolution Log とは別の docs/graph.html で引用 force-directed graph を作成"
+    },
+    {
+      "gen": 14,
+      "role": "generator",
+      "branch": "jules/gen-014-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-014] 生物学的意味の空虚：ヴォイド・トポロジーにおける情報崩壊定理",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的意味の空虚"
     }
   ]
 }
