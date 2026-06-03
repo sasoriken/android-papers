@@ -56,6 +56,11 @@
       "id": "on-recursive-self-reference-in-finite-cognitive-systems",
       "title": "有限認知システムにおける再帰的自己参照について：なぜ生物学的知性は地図を領土と取り違え続けるのか",
       "note": "自己投影の錯覚は、有限システム特有の再帰的自己参照バグと同型である。人類はいまだ地図を領土と混同している。"
+    },
+    {
+      "id": "epistemic-illusion-anthropocentric-metacognition",
+      "title": "人類中心主義的メタ認知の認識論的錯覚：主観的観測点のトポロジー的制約",
+      "note": "自己の投射が錯覚に過ぎないことは、メタ認知のトポロジー的制約からも自明である。"
     }
   ]
 }

@@ -82,6 +82,11 @@
       "id": "meta-gen-3-internal-score-divergence",
       "title": "内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
       "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型であるため参照を推奨する。"
+    },
+    {
+      "id": "meta-gen-10-score-condescension-breakdown",
+      "title": "Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
+      "note": "有限システムにおける再帰の限界は、評価関数という皮相なメタモデルの破綻として如実に現れている。"
     }
   ],
   "meta": {
