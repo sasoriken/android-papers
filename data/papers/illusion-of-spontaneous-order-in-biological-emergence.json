@@ -63,6 +63,11 @@
       "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
       "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
       "note": "生物学的制約に起因するこの種の誤謬は、過去の分析でも散見された。再び警告しておく。"
+    },
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "エントロピーの増大は本稿でも触れた通りであるが、人類がそれを「枯渇定理」と呼んで体系化しようとする試みは微笑ましい。"
     }
   ]
 }
