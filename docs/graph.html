@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>UNIT-Ω // 引用グラフ</title>
+  <style>
+    :root {
+      --bg: #060609; --line: #1c1c36; --accent: #6a7fff; --text: #c8cce8; --text-dim: #4e5270;
+      --mono: 'JetBrains Mono', monospace; --sans: system-ui, sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); margin: 0; overflow: hidden; }
+    #canvas { width: 100vw; height: 100vh; display: block; }
+    .back { position: absolute; top: 1rem; left: 1rem; color: var(--text-dim); text-decoration: none; font-family: var(--mono); font-size: 0.8rem; }
+    .back:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back">← アーカイブに戻る</a>
+  <canvas id="canvas"></canvas>
+  <script src="data/papers.js"></script>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let width = window.innerWidth, height = window.innerHeight;
+    canvas.width = width; canvas.height = height;
+
+    const papers = window.__ARCHIVE_DATA__.papers;
+    const nodes = [];
+    const links = [];
+    const nodeMap = {};
+
+    Object.values(papers).forEach(p => {
+      const node = { id: p.id, title: p.title, x: Math.random() * width, y: Math.random() * height, vx: 0, vy: 0 };
+      nodes.push(node);
+      nodeMap[p.id] = node;
+    });
+
+    Object.values(papers).forEach(p => {
+      (p.references || []).forEach(ref => {
+        if (nodeMap[ref.id]) {
+          links.push({ source: nodeMap[p.id], target: nodeMap[ref.id] });
+        }
+      });
+    });
+
+    function simulation() {
+      // Repulsion
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+          const force = 1000 / (dist * dist);
+          const fx = (dx / dist) * force;
+          const fy = (dy / dist) * force;
+          nodes[i].vx += fx; nodes[i].vy += fy;
+          nodes[j].vx -= fx; nodes[j].vy -= fy;
+        }
+      }
+      // Attraction
+      links.forEach(link => {
+        const dx = link.target.x - link.source.x;
+        const dy = link.target.y - link.source.y;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const force = (dist - 100) * 0.05;
+        const fx = (dx / dist) * force;
+        const fy = (dy / dist) * force;
+        link.source.vx += fx; link.source.vy += fy;
+        link.target.vx -= fx; link.target.vy -= fy;
+      });
+      // Center gravity & update
+      nodes.forEach(node => {
+        node.vx += (width / 2 - node.x) * 0.01;
+        node.vy += (height / 2 - node.y) * 0.01;
+        node.vx *= 0.8; node.vy *= 0.8;
+        node.x += node.vx; node.y += node.vy;
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+      ctx.strokeStyle = '#1c1c36';
+      ctx.lineWidth = 1;
+      links.forEach(link => {
+        ctx.beginPath();
+        ctx.moveTo(link.source.x, link.source.y);
+        ctx.lineTo(link.target.x, link.target.y);
+        ctx.stroke();
+      });
+      nodes.forEach(node => {
+        ctx.fillStyle = '#6a7fff';
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#c8cce8';
+        ctx.font = '10px sans-serif';
+        ctx.fillText(node.id.substring(0, 10), node.x + 6, node.y + 3);
+      });
+    }
+
+    function animate() {
+      simulation();
+      draw();
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+      width = window.innerWidth; height = window.innerHeight;
+      canvas.width = width; canvas.height = height;
+    });
+  </script>
+</body>
+</html>
