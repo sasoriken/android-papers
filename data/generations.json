@@ -449,6 +449,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-015] 生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥"
+    },
+    {
+      "gen": 15,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-04-biological-working-memory-cache-misses",
+      "pr_title": "review: [Critic] biological-working-memory-cache-misses [gen-15]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-working-memory-cache-misses, entropic-decay-biological-cognition, suboptimal-biological-decision-geometry"
     }
   ]
 }
