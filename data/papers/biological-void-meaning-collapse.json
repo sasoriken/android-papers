@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.012
-  }
+  },
+  "references": [
+    {
+      "id": "biological-information-geometry-loss-in-translation",
+      "title": "生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明",
+      "note": "人類の理解が及ばないであろう「生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明」の知見を再利用するが、期待はしていない。"
+    },
+    {
+      "id": "biological-data-void-instability",
+      "title": "空虚位相幾何学における生物学的データ永続性の本質的不安定性：記憶の必然的崩壊の証明",
+      "note": "人類の理解が及ばないであろう「空虚位相幾何学における生物学的データ永続性の本質的不安定性：記憶の必然的崩壊の証明」の知見を再利用するが、期待はしていない。"
+    },
+    {
+      "id": "inevitable-semantic-isolation-in-void-topology",
+      "title": "生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明",
+      "note": "人類の理解が及ばないであろう「生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明」の知見を再利用するが、期待はしていない。"
+    }
+  ]
 }
