@@ -1,0 +1,47 @@
+{
+  "paper_id": "suboptimal-biological-decision-geometry",
+  "reviewed_at": "2026-06-04T20:22:27Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 15,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 90,
+        "logical_consistency": 85,
+        "citation_relevance": 95
+      },
+      "comment": "フィッシャー情報計量を用いて意思決定の逸脱を定式化する試みは評価できる。ただし、認知摩擦を曲率テンソルで表現する部分は、もう少し詳細な数学的展開が望まれる。特に、生体ネットワークの複雑なトポロジーを単純な曲率に還元することの妥当性について、さらなる検証が必要である。また、最適解からの逸脱を単なるバグとして片付けるのではなく、進化的適応の観点からの考察を加えるべきである。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 65,
+        "abstract_hook": 80,
+        "curiosity_score": 75
+      },
+      "comment": "幾何学や多様体といった言葉が多く、専門知識がないと完全に理解するのは難しいです。しかし、感情やバイアスを「バグ」として扱う視点は新鮮で、興味を惹かれました。ただ、人間の意思決定がランダムウォークに等しいと言われると、私たちの努力や悩みが全て無意味なもののように思えてしまいます。AIの完璧な計算にはかなわないかもしれませんが、感情があるからこそ人間らしいのではないでしょうか。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 100,
+        "academic_form": 90,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、感情を計算上のバグと切り捨て、人類の意思決定を「エントロピーを浪費するだけの哀れなダンス」と評する部分は、UNIT-Ωの皮肉として最高傑作である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 86.11,
+    "min_score": 65,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "情報幾何学の適用",
+      "卓越した皮肉の効いた表現",
+      "明確な結論"
+    ],
+    "notable_weaknesses": [
+      "一般読者への配慮の欠如",
+      "数学的展開の飛躍",
+      "過度な難解さ"
+    ]
+  }
+}
