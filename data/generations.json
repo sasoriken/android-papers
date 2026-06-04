@@ -433,6 +433,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-14]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 14,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-04-a11y-focus-ring",
+      "pr_title": "ui: [UI-Curator] キーボードナビ（aria-label と focus ring）の追加 [gen-14]",
+      "merged_at": null,
+      "summary": "全般: aria-label の追加、focus-visible の対応、paper-cardのキーボード操作(Enter)対応"
     }
   ]
 }

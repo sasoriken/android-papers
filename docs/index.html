@@ -96,6 +96,10 @@
       cursor: pointer; outline: none;
     }
     .sort-select:focus { border-color: var(--accent); }
+    .search-box:focus-visible, .sort-select:focus-visible, .filter-btn:focus-visible, .back-nav:focus-visible, .paper-card:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
 
 
     /* Weakness Meta */
@@ -618,9 +622,9 @@
       </div>
 
       <div class="controls">
-        <input type="text" class="search-box" id="search" placeholder="検索 — タイトル・キーワード・評価(verdict)" />
+        <input type="text" class="search-box" id="search" aria-label="検索" placeholder="検索 — タイトル・キーワード・評価(verdict)" />
         <div id="filter-buttons"></div>
-        <select class="sort-select" id="sort-select">
+        <select class="sort-select" id="sort-select" aria-label="並び替え">
           <option value="date-desc">新しい順</option>
           <option value="date-asc">古い順</option>
           <option value="score-desc">評価: 高→低</option>
@@ -646,7 +650,7 @@
     <div id="paper-view"></div>
 
     <div id="evo-log-view" class="hidden">
-      <button class="back-nav" id="evo-back-nav">← アーカイブに戻る</button>
+      <button class="back-nav" id="evo-back-nav" aria-label="アーカイブに戻る">← アーカイブに戻る</button>
       <div class="evo-log-header">
         <div class="evo-log-title">// EVOLUTION LOG</div>
         <div class="evo-log-subtitle">自律進化ロールによる改変履歴</div>
@@ -914,7 +918,7 @@
         const fullPaper = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
         const refsCount = (fullPaper.references || []).length;
         const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
-        return '<div class="paper-card" data-file="' + p.filename + '">' +
+        return '<div class="paper-card" tabindex="0" role="button" aria-label="論文を開く: ' + p.title + '" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
             '<div class="card-title">' + p.title + '</div>' +
             (p.title_en ? '<div class="card-subtitle">' + p.title_en + '</div>' : '') +
@@ -942,6 +946,9 @@
 
       grid.querySelectorAll('.paper-card').forEach(card => {
         card.addEventListener('click', () => openPaper(card.dataset.file));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') openPaper(card.dataset.file);
+        });
       });
     }
 
