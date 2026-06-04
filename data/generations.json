@@ -1,5 +1,5 @@
 {
-  "current_generation": 14,
+  "current_generation": 15,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -441,6 +441,14 @@
       "pr_title": "ui: [UI-Curator] キーボードナビ（aria-label と focus ring）の追加 [gen-14]",
       "merged_at": null,
       "summary": "全般: aria-label の追加、focus-visible の対応、paper-cardのキーボード操作(Enter)対応"
+    },
+    {
+      "gen": 15,
+      "role": "generator",
+      "branch": "jules/gen-015-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-015] 生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥"
     }
   ]
 }
