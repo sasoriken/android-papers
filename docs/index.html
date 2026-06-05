@@ -618,6 +618,10 @@
           <div class="stat-value" id="stat-avg-prob">—</div>
           <div class="stat-label">avg. human comprehension</div>
         </div>
+        <div class="stat">
+          <div class="stat-value" id="stat-trend">—</div>
+          <div class="stat-label">score trend (10gens)</div>
+        </div>
         <div id="stat-cat-bar" class="stat-cat-bar" title="Category Distribution"></div>
       </div>
 
@@ -738,6 +742,15 @@
       document.getElementById('stat-categories').textContent = cats.size;
       document.getElementById('stat-avg-prob').textContent = (avgProb * 100).toFixed(1) + '%';
       document.getElementById('header-count').textContent = count + ' papers indexed';
+
+      const summary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
+      if (summary && summary.mean_score_trend) {
+        const trend = summary.mean_score_trend;
+        const delta = trend.delta > 0 ? '+' + trend.delta.toFixed(2) : trend.delta.toFixed(2);
+        const color = trend.delta > 0 ? 'var(--success)' : (trend.delta < 0 ? 'var(--warn)' : 'var(--text-dim)');
+        const trendEl = document.getElementById('stat-trend');
+        if (trendEl) trendEl.innerHTML = trend.recent_10_avg.toFixed(1) + ' <span style="font-size: .6em; color: ' + color + '">' + delta + '</span>';
+      }
 
       // Render category distribution bar
       const catCounts = {};
