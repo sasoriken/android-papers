@@ -1,5 +1,5 @@
 {
-  "current_generation": 15,
+  "current_generation": 16,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -465,6 +465,22 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-15]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 15,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-05-score-trend-stat",
+      "pr_title": "ui: [UI-Curator] アーカイブ上部に Critic スコアトレンドを表示 [gen-15]",
+      "merged_at": null,
+      "summary": "データが既にあるが表示されていない情報を活用するため、reviews_summary.mean_score_trend を stats-bar に表示"
+    },
+    {
+      "gen": 16,
+      "role": "generator",
+      "branch": "jules/gen-016-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-016] 生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析"
     }
   ]
 }
