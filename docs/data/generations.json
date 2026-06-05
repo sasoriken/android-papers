@@ -481,6 +481,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-016] 生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析"
+    },
+    {
+      "gen": 16,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-05-information-geometry-curvature-biological-meaning",
+      "pr_title": "review: [Critic] information-geometry-curvature-biological-meaning [gen-16]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: information-geometry-curvature-biological-meaning"
     }
   ]
 }

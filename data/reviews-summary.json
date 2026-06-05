@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-04T20:25:31.011Z",
-  "reviews_count": 37,
+  "generated_at": "2026-06-05T20:34:29.171Z",
+  "reviews_count": 38,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.64864864864865,
-      "logical_consistency": 86.21621621621621,
-      "citation_relevance": 65.54054054054055
+      "equation_validity": 82.71052631578948,
+      "logical_consistency": 86.05263157894737,
+      "citation_relevance": 66.1842105263158
     },
     "naive_reader": {
-      "readability": 74.67567567567568,
-      "abstract_hook": 85.97297297297297,
-      "curiosity_score": 84.51351351351352
+      "readability": 74.6842105263158,
+      "abstract_hook": 85.8157894736842,
+      "curiosity_score": 84.13157894736842
     },
     "internal_audit": {
-      "condescension_fidelity": 94.32432432432432,
-      "academic_form": 91.48648648648648,
-      "constitution_compliance": 98.70270270270271
+      "condescension_fidelity": 94.21052631578948,
+      "academic_form": 91.57894736842105,
+      "constitution_compliance": 98.60526315789474
     }
   },
   "verdict_distribution": {
-    "exemplary": 15,
+    "exemplary": 16,
     "acceptable": 22,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.26,
-    "previous_10_avg": 84.63055555555556,
-    "delta": 0.6294444444444451
+    "recent_10_avg": 84.984,
+    "previous_10_avg": 84.90611111111112,
+    "delta": 0.07788888888887868
   },
   "top_weaknesses": [
     {
@@ -45,6 +45,10 @@
     {
       "pattern": "引用文献（references）が一つも存在しない",
       "frequency": 2
+    },
+    {
+      "pattern": "生物学的実証データの欠如",
+      "frequency": 1
     },
     {
       "pattern": "素人読者への数式説明の不足",
@@ -65,13 +69,15 @@
     {
       "pattern": "独自性の欠如",
       "frequency": 1
-    },
-    {
-      "pattern": "一般読者への配慮の欠如",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "information-geometry-curvature-biological-meaning",
+      "verdict": "exemplary",
+      "mean_score": 84.44,
+      "reviewed_at": "2026-06-05T20:25:42.857113+00:00"
+    },
     {
       "paper_id": "biological-working-memory-cache-misses",
       "verdict": "exemplary",
@@ -94,12 +100,6 @@
       "paper_id": "biological-void-meaning-collapse",
       "verdict": "acceptable",
       "mean_score": 82.2,
-      "reviewed_at": "2026-06-03T20:21:32Z"
-    },
-    {
-      "paper_id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
-      "verdict": "exemplary",
-      "mean_score": 86.1,
       "reviewed_at": "2026-06-03T20:21:32Z"
     }
   ]
