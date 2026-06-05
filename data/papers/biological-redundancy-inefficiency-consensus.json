@@ -49,5 +49,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.04
-  }
+  },
+  "references": [
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-byzantine-fault-intolerance",
+      "title": "生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性",
+      "note": "本概念の基盤については本論文群で展開済みであり、本稿では繰り返さない。再読を推奨する。"
+    }
+  ]
 }
