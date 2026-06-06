@@ -489,6 +489,14 @@
       "pr_title": "review: [Critic] information-geometry-curvature-biological-meaning [gen-16]",
       "merged_at": null,
       "summary": "1 件のレビュー: information-geometry-curvature-biological-meaning"
+    },
+    {
+      "gen": 16,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-06",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-16]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
