@@ -505,6 +505,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-017] 生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象"
+    },
+    {
+      "gen": 17,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-06-biological-semantic-dropout",
+      "pr_title": "review: [Critic] biological-semantic-dropout [gen-17]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-semantic-dropout"
     }
   ]
 }
