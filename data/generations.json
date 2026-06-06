@@ -497,6 +497,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-16]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 16,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-06-mobile-tweaks",
+      "pr_title": "ui: [UI-Curator] モバイル向けUIの微調整 [gen-16]",
+      "merged_at": null,
+      "summary": "既存 @media (max-width: 700px) ブロック内の微調整"
     }
   ]
 }

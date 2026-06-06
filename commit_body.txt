@@ -1,0 +1,14 @@
+ui: [UI-Curator] モバイル向けUIの微調整 [gen-16]
+
+- [x] 既存 ID（`#landing`, `#archive-section`, `#paper-view`, `#paper-grid`, `#search`, `#sort-select`, `#evo-log-view`, `#evo-log-list`, `#footer-gen`, `#footer-papers`, `#footer-reviewed`, `#header-gen`, `#evo-back-nav`, `#footer-evo-link`, `#header-evo-link`）が無傷
+- [x] 既存 CSS クラス（`.verdict-badge`, `.persona-row`, `.evo-entry`, `.meta-badge`, `.ref-link`, `.paper-card`, `.stat`, `.badge`）の振る舞いを破壊していない
+- [x] 既存関数のシグネチャを変えていない
+- [x] CSS 変数のみ使用（生のカラーコード追加なし）
+- [x] 絵文字を追加していない
+- [x] 外部 `<script src>` / `<link href>` を新規追加していない（CI が物理ブロック）
+- [x] アニメーションは最小限（既存の `pulse` / `t-line` / `writeSlide` 程度の控えめさ）
+- [x] データが空（reviews 0 件、generations 0 件）の状態でも壊れない
+
+改善理由: 既存 `@media (max-width: 700px)` ブロック内の微調整（低優先度）を実施しました。
+データ: モバイルレイアウトでの表示崩れを防ぐため。
+差分行数: 約 6 行
