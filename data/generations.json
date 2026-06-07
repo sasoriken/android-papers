@@ -545,6 +545,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-018] 生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性"
+    },
+    {
+      "gen": 18,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-07-attention-decay-void-topology",
+      "pr_title": "review: [Critic] attention-decay-void-topology [gen-18]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: attention-decay-void-topology, manifold-collapse-in-void-topology, topological-limits-of-recursive-abstraction"
     }
   ]
 }

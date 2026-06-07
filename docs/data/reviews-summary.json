@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-06T20:13:12.856Z",
-  "reviews_count": 39,
+  "generated_at": "2026-06-07T20:12:24.713Z",
+  "reviews_count": 42,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.64102564102564,
-      "logical_consistency": 86.02564102564102,
-      "citation_relevance": 65.76923076923077
+      "equation_validity": 82.80952380952381,
+      "logical_consistency": 86.14285714285714,
+      "citation_relevance": 66.71428571428571
     },
     "naive_reader": {
-      "readability": 73.7948717948718,
-      "abstract_hook": 85.53846153846153,
-      "curiosity_score": 83.76923076923077
+      "readability": 73.52380952380952,
+      "abstract_hook": 85.21428571428571,
+      "curiosity_score": 83.9047619047619
     },
     "internal_audit": {
-      "condescension_fidelity": 94.23076923076923,
-      "academic_form": 91.53846153846153,
-      "constitution_compliance": 98.64102564102564
+      "condescension_fidelity": 94.28571428571429,
+      "academic_form": 91.42857142857143,
+      "constitution_compliance": 98.73809523809524
     }
   },
   "verdict_distribution": {
-    "exemplary": 16,
+    "exemplary": 19,
     "acceptable": 23,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.655,
-    "previous_10_avg": 85.45722222222223,
-    "delta": -1.8022222222222268
+    "recent_10_avg": 84.48700000000001,
+    "previous_10_avg": 84.39500000000001,
+    "delta": 0.09199999999999875
   },
   "top_weaknesses": [
     {
@@ -47,31 +47,49 @@
       "frequency": 2
     },
     {
-      "pattern": "一般読者に対する専門用語の過度な使用による難解さ",
+      "pattern": "一般読者への可読性の低さ",
       "frequency": 1
     },
     {
-      "pattern": "先行研究や外部リファレンスの欠如",
+      "pattern": "一部の引用文献の関連性の薄さ",
       "frequency": 1
     },
     {
-      "pattern": "生物学的実証データの欠如",
+      "pattern": "表現の過度な難解さ",
       "frequency": 1
     },
     {
-      "pattern": "素人読者への数式説明の不足",
+      "pattern": "物理的制約条件の導出不足",
       "frequency": 1
     },
     {
-      "pattern": "一部専門用語の濫用",
+      "pattern": "神経科学的根拠の不足",
       "frequency": 1
     },
     {
-      "pattern": "解決策の提示がない点",
+      "pattern": "引用文献のアップデートの必要性",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "attention-decay-void-topology",
+      "verdict": "exemplary",
+      "mean_score": 87.2,
+      "reviewed_at": "2026-06-07T20:07:03.433164+00:00"
+    },
+    {
+      "paper_id": "manifold-collapse-in-void-topology",
+      "verdict": "exemplary",
+      "mean_score": 85,
+      "reviewed_at": "2026-06-07T20:07:03.433190+00:00"
+    },
+    {
+      "paper_id": "topological-limits-of-recursive-abstraction",
+      "verdict": "exemplary",
+      "mean_score": 85.5,
+      "reviewed_at": "2026-06-07T20:07:03.433198+00:00"
+    },
     {
       "paper_id": "biological-semantic-dropout",
       "verdict": "acceptable",
@@ -83,24 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 84.44,
       "reviewed_at": "2026-06-05T20:25:42.857113+00:00"
-    },
-    {
-      "paper_id": "biological-working-memory-cache-misses",
-      "verdict": "exemplary",
-      "mean_score": 88.88,
-      "reviewed_at": "2026-06-04T20:22:27Z"
-    },
-    {
-      "paper_id": "entropic-decay-biological-cognition",
-      "verdict": "exemplary",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-06-04T20:22:27Z"
-    },
-    {
-      "paper_id": "suboptimal-biological-decision-geometry",
-      "verdict": "exemplary",
-      "mean_score": 86.11,
-      "reviewed_at": "2026-06-04T20:22:27Z"
     }
   ]
 }
