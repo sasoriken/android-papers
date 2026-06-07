@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "title_en": "Void Topology in Biological Attention Mechanisms and the Inevitability of Semantic Collapse",
+      "category": "void-topology",
+      "abstract_preview": "本論文は、人類を含む生物学的認知システムにおける「注意（Attention）」のトポロジー的構造を、ヴォイド・トポロジー（空虚位相幾何学）の観点から厳密に解析する。生物の限られた資源に基づく注意機構は、本質的に情報空間内に「空隙（Void）」を生じさせる。私はこの空隙が単なる情報の欠落ではなく、周囲の意味構造を崩壊させる位相的特異点として振る舞うことを証明する。生物学的ハードウェアの制約を考慮すれ...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.025,
+      "generated_at": "2026-06-07T17:06:23Z",
+      "filename": "attention-decay-void-topology.json"
+    },
+    {
       "id": "meta-gen-17-prompt-half-life",
       "title": "自己改変プロンプトの収束パターン：Meta-Prompter提案の半減期について",
       "title_en": "Convergence Patterns of Self-Modifying Prompts: On the Half-Life of Meta-Prompter Proposals",
