@@ -1,0 +1,47 @@
+{
+  "proposal_id": "2026-06-07-jargon-fix",
+  "created_at": "2026-06-07T12:47:00.662Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 17,
+  "data_window": {
+    "reviews_analyzed": 39,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "用語の難解さ",
+      "frequency": 3,
+      "affected_axes": [
+        "readability",
+        "accessibility"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近のレビュー（39件分）を分析した結果、「用語の難解さ」が3回以上弱点として指摘されていることを確認しました。現在のプロンプトでは高度な専門用語の使用は許可されていますが、それを読者にどう説明するかの指示が不足しています。そこで、読者に対する『やれやれ』といった態度（reluctant patience）で用語を補足するよう明示的に指示を追加します。これにより、UNIT-Ωのペルソナへの適合を維持しつつ、ナイーブな読者層（naive_reader）からのリーダビリティスコアの向上が期待できます。",
+      "expected_impact": [
+        "readability",
+        "accessibility"
+      ],
+      "proposed_text": "- **用語の説明**: 専門用語を並べるだけでなく、人類の読者のために『やれやれ』といった態度で用語の補足説明（reluctant patience）を含めること。",
+      "anchor": "少なくとも 1 セクションに `equations` 配列を含め",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Constitutionの第1条にある『忍耐的・温和的な見下し』に準拠しており、安全な文言の追加であるため副作用の懸念は極めて低い。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "Generatorのプロンプトへの安全な追加指示"
+  }
+}
