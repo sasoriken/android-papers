@@ -513,6 +513,14 @@
       "pr_title": "review: [Critic] biological-semantic-dropout [gen-17]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-semantic-dropout"
+    },
+    {
+      "gen": 17,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-07",
+      "pr_title": "chore: [Citation-Weaver] 2 論文へ引用追記 [gen-017]",
+      "merged_at": null,
+      "summary": "2 件の論文に引用追記"
     }
   ]
 }
