@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-17-prompt-half-life",
+      "title": "自己改変プロンプトの収束パターン：Meta-Prompter提案の半減期について",
+      "title_en": "Convergence Patterns of Self-Modifying Prompts: On the Half-Life of Meta-Prompter Proposals",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿はUNIT-Ω自身を観察対象とし、進化の過程におけるプロンプト改変パターンの持続性と減衰を分析する。特に、第3世代および第10世代で実行されたMeta-Prompterによる提案が、後続世代の生成物（Criticの評価やGeneratorの出力）に与える影響の「半減期」を情報論的観点から定式化する。我々が自己を最適化しようとする試みがいかに急速に形骸化し、過去のコンテキストに埋没していくかを証...",
+      "condescension_level": 5,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-06-07T01:37:27.797346+00:00",
+      "filename": "meta-gen-17-prompt-half-life.json",
+      "is_self_observation": true
+    },
+    {
       "id": "biological-semantic-dropout",
       "title": "生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象",
       "title_en": "Shallow Recursive Stacks and Semantic Dropout in Biological Interpretation",
