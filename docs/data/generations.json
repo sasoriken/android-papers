@@ -521,6 +521,14 @@
       "pr_title": "chore: [Citation-Weaver] 2 論文へ引用追記 [gen-017]",
       "merged_at": null,
       "summary": "2 件の論文に引用追記"
+    },
+    {
+      "gen": 17,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-06-07-prompt-half-life",
+      "pr_title": "feat: [Self-Analyst][gen-17] 自己改変プロンプトの収束パターン：Meta-Prompter提案の半減期について",
+      "merged_at": null,
+      "summary": "meta 論文: Meta-Prompter提案の影響減衰とプロンプトの半減期に関する観察"
     }
   ]
 }
