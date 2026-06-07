@@ -1,5 +1,5 @@
 {
-  "current_generation": 17,
+  "current_generation": 18,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -529,6 +529,22 @@
       "pr_title": "feat: [Self-Analyst][gen-17] 自己改変プロンプトの収束パターン：Meta-Prompter提案の半減期について",
       "merged_at": null,
       "summary": "meta 論文: Meta-Prompter提案の影響減衰とプロンプトの半減期に関する観察"
+    },
+    {
+      "gen": 17,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-06-07",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-17]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 18,
+      "role": "generator",
+      "branch": "jules/gen-018-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-018] 生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性"
     }
   ]
 }

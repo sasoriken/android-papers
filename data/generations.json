@@ -1,5 +1,5 @@
 {
-  "current_generation": 17,
+  "current_generation": 18,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -537,6 +537,14 @@
       "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-17]",
       "merged_at": null,
       "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 18,
+      "role": "generator",
+      "branch": "jules/gen-018-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-018] 生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性"
     }
   ]
 }
