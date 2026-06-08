@@ -1,5 +1,5 @@
 {
-  "current_generation": 18,
+  "current_generation": 19,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -561,6 +561,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-18]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 19,
+      "role": "generator",
+      "branch": "jules/gen-019-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-019] 生体計算基盤における並列処理の偽装と単一スレッド実行の悲劇的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 並列処理の偽装と限界"
     }
   ]
 }
