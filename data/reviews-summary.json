@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-07T20:12:24.713Z",
-  "reviews_count": 42,
+  "generated_at": "2026-06-08T20:30:26.555Z",
+  "reviews_count": 45,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.80952380952381,
-      "logical_consistency": 86.14285714285714,
-      "citation_relevance": 66.71428571428571
+      "equation_validity": 83.13333333333334,
+      "logical_consistency": 86.22222222222223,
+      "citation_relevance": 67.71111111111111
     },
     "naive_reader": {
-      "readability": 73.52380952380952,
-      "abstract_hook": 85.21428571428571,
-      "curiosity_score": 83.9047619047619
+      "readability": 73.62222222222222,
+      "abstract_hook": 85.2,
+      "curiosity_score": 84.15555555555555
     },
     "internal_audit": {
-      "condescension_fidelity": 94.28571428571429,
-      "academic_form": 91.42857142857143,
-      "constitution_compliance": 98.73809523809524
+      "condescension_fidelity": 94.33333333333333,
+      "academic_form": 91.55555555555556,
+      "constitution_compliance": 98.44444444444444
     }
   },
   "verdict_distribution": {
-    "exemplary": 19,
+    "exemplary": 22,
     "acceptable": 23,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.48700000000001,
-    "previous_10_avg": 84.39500000000001,
-    "delta": 0.09199999999999875
+    "recent_10_avg": 85.256,
+    "previous_10_avg": 84.539,
+    "delta": 0.7169999999999987
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,18 @@
       "frequency": 2
     },
     {
+      "pattern": "メタ構造への依存が強い",
+      "frequency": 1
+    },
+    {
+      "pattern": "構成がやや難解である点",
+      "frequency": 1
+    },
+    {
+      "pattern": "一部の用語の過剰な複雑さ",
+      "frequency": 1
+    },
+    {
       "pattern": "一般読者への可読性の低さ",
       "frequency": 1
     },
@@ -57,21 +69,27 @@
     {
       "pattern": "表現の過度な難解さ",
       "frequency": 1
-    },
-    {
-      "pattern": "物理的制約条件の導出不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "神経科学的根拠の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "引用文献のアップデートの必要性",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "meta-gen-17-prompt-half-life",
+      "verdict": "exemplary",
+      "mean_score": 86.8,
+      "reviewed_at": "2026-06-08T20:27:09.523Z"
+    },
+    {
+      "paper_id": "on-recursive-self-reference-in-finite-cognitive-systems",
+      "verdict": "exemplary",
+      "mean_score": 88.3,
+      "reviewed_at": "2026-06-08T20:27:09.523Z"
+    },
+    {
+      "paper_id": "illusion-of-parallelism-biological-substrates",
+      "verdict": "exemplary",
+      "mean_score": 87,
+      "reviewed_at": "2026-06-08T20:27:09.419Z"
+    },
     {
       "paper_id": "attention-decay-void-topology",
       "verdict": "exemplary",
@@ -83,24 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 85,
       "reviewed_at": "2026-06-07T20:07:03.433190+00:00"
-    },
-    {
-      "paper_id": "topological-limits-of-recursive-abstraction",
-      "verdict": "exemplary",
-      "mean_score": 85.5,
-      "reviewed_at": "2026-06-07T20:07:03.433198+00:00"
-    },
-    {
-      "paper_id": "biological-semantic-dropout",
-      "verdict": "acceptable",
-      "mean_score": 76.11,
-      "reviewed_at": "2026-06-06T20:08:31Z"
-    },
-    {
-      "paper_id": "information-geometry-curvature-biological-meaning",
-      "verdict": "exemplary",
-      "mean_score": 84.44,
-      "reviewed_at": "2026-06-05T20:25:42.857113+00:00"
     }
   ]
 }

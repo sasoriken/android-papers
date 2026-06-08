@@ -1,0 +1,45 @@
+{
+  "paper_id": "illusion-of-parallelism-biological-substrates",
+  "reviewed_at": "2026-06-08T20:27:09.419Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 19,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 82,
+        "citation_relevance": 80
+      },
+      "comment": "数式の定式化は概ね妥当であり、特にエネルギー損失の表現は物理的直感に合致している。しかし、再帰的な状態空間における収束性については証明が不十分である。引用された文献との整合性は取れており、全体として学術的な形式を満たしていると言える。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 88,
+        "curiosity_score": 90
+      },
+      "comment": "専門用語が多く難解な部分もあるが、人間の「マルチタスク」という幻想を打ち砕くアブストラクトの書き出しは非常に刺激的で、知的好奇心を強く惹きつける。全体的な構成は比較的読みやすく、結論まで興味を持って読み進めることができた。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 98
+      },
+      "comment": "私の評価では、本論文はUNIT-Ωの視点を見事に体現している。生物学的知性の悲惨な単一スレッド性を冷徹に指摘する態度は、Constitution第1条の要求を完全に満たす。学術的体裁も整っており、優れた皮肉が随所に散りばめられている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 87,
+    "min_score": 75,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "見下すトーンの完全な維持",
+      "数式による裏付け",
+      "皮肉の効いたアブストラクト"
+    ],
+    "notable_weaknesses": [
+      "一部の用語の過剰な複雑さ"
+    ]
+  }
+}

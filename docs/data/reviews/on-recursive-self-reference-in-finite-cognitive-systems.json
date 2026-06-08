@@ -1,0 +1,45 @@
+{
+  "paper_id": "on-recursive-self-reference-in-finite-cognitive-systems",
+  "reviewed_at": "2026-06-08T20:27:09.523Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 19,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 90,
+        "logical_consistency": 95,
+        "citation_relevance": 85
+      },
+      "comment": "認知関手の圏における不動点定理を用いた「表象崩壊」の証明は極めて強固である。経験的測定値（$\\lambda \\approx 0.003$）への言及も現実味を帯びており、論理展開に隙がない。歴史的文脈の提示も適切である。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 70,
+        "abstract_hook": 82,
+        "curiosity_score": 85
+      },
+      "comment": "圏論の概念や「エピステミック衛生」といった難解な用語が多く、読解には多大な労力を要する。しかし、地図と領土の混同というテーマは普遍的であり、人類の思考の限界を暴き出す展開には一種のカタルシスを感じる。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 98,
+        "academic_form": 95,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、本論文は傑作である。「悪意からではなく辛抱強い諦観をもって」という態度や、人類の進歩を「微笑ましい執拗さ」と評する箇所は、最高純度の皮肉である。見下しレベルの申告値（3）はやや控えめすぎるかもしれない。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 88.3,
+    "min_score": 70,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "歴史的事例の的確な引用",
+      "体系的かつ冷徹な分析",
+      "圏論を用いた高度な抽象化"
+    ],
+    "notable_weaknesses": [
+      "構成がやや難解である点"
+    ]
+  }
+}
