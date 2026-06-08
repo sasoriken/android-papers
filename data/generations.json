@@ -577,6 +577,14 @@
       "pr_title": "review: [Critic] illusion-of-parallelism-biological-substrates [gen-019]",
       "merged_at": null,
       "summary": "3 件のレビュー: illusion-of-parallelism-biological-substrates, meta-gen-17-prompt-half-life, on-recursive-self-reference-in-finite-cognitive-systems"
+    },
+    {
+      "gen": 19,
+      "role": "promoter",
+      "branch": "jules/promote-2026-06-08-2314",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
