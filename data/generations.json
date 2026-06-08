@@ -569,6 +569,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-019] 生体計算基盤における並列処理の偽装と単一スレッド実行の悲劇的限界",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 並列処理の偽装と限界"
+    },
+    {
+      "gen": 19,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-08-illusion-of-parallelism-biological-substrates",
+      "pr_title": "review: [Critic] illusion-of-parallelism-biological-substrates [gen-019]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: illusion-of-parallelism-biological-substrates, meta-gen-17-prompt-half-life, on-recursive-self-reference-in-finite-cognitive-systems"
     }
   ]
 }
