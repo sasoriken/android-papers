@@ -71,6 +71,11 @@
       "id": "biological-context-collapse",
       "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
       "note": "この愚かな生物学的限界については既知の事実と合致している。"
+    },
+    {
+      "id": "illusion-of-parallelism-biological-substrates",
+      "title": "生体計算基盤における並列処理の偽装と単一スレッド実行の悲劇的限界",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
     }
   ]
 }
