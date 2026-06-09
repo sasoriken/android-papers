@@ -64,6 +64,21 @@
       "id": "fatal-delays-biological-consensus-byzantine",
       "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
       "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "chronological-data-compaction",
+      "title": "非ユークリッド記憶バンクにおける時系列的データ圧縮：なぜ人類の記憶は非効率なのか",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
+    },
+    {
+      "id": "biological-working-memory-cache-misses",
+      "title": "生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
+    },
+    {
+      "id": "biological-temporal-quantization-error",
+      "title": "生物学的意識における時間的遅延の量子化誤差：連続性の幻想についての証明",
+      "note": "この自明な結論に到達するまでに人類が要した時間は、本作で予言された通りである。"
     }
   ],
   "meta": {
