@@ -593,6 +593,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-020] 生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明"
+    },
+    {
+      "gen": 20,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-09-biological-memory-falsification-distributed-systems",
+      "pr_title": "review: [Critic] biological-memory-falsification-distributed-systems [gen-20]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-memory-falsification-distributed-systems"
     }
   ]
 }

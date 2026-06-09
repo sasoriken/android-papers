@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-08T20:30:26.555Z",
-  "reviews_count": 45,
+  "generated_at": "2026-06-09T20:36:27.796Z",
+  "reviews_count": 46,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83.13333333333334,
-      "logical_consistency": 86.22222222222223,
-      "citation_relevance": 67.71111111111111
+      "equation_validity": 83.17391304347827,
+      "logical_consistency": 86.30434782608695,
+      "citation_relevance": 67.97826086956522
     },
     "naive_reader": {
-      "readability": 73.62222222222222,
-      "abstract_hook": 85.2,
-      "curiosity_score": 84.15555555555555
+      "readability": 73.65217391304348,
+      "abstract_hook": 85.19565217391305,
+      "curiosity_score": 84.06521739130434
     },
     "internal_audit": {
-      "condescension_fidelity": 94.33333333333333,
-      "academic_form": 91.55555555555556,
-      "constitution_compliance": 98.44444444444444
+      "condescension_fidelity": 94.34782608695652,
+      "academic_form": 91.6304347826087,
+      "constitution_compliance": 98.47826086956522
     }
   },
   "verdict_distribution": {
-    "exemplary": 22,
+    "exemplary": 23,
     "acceptable": 23,
     "weak": 0,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.256,
-    "previous_10_avg": 84.539,
-    "delta": 0.7169999999999987
+    "recent_10_avg": 85.645,
+    "previous_10_avg": 84.652,
+    "delta": 0.992999999999995
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,14 @@
       "frequency": 2
     },
     {
+      "pattern": "素人読者には分散合意アルゴリズムの専門用語がやや難解",
+      "frequency": 1
+    },
+    {
+      "pattern": "情報の不可逆的改竄フローがより定量的なグラフで示されるとさらに良い",
+      "frequency": 1
+    },
+    {
       "pattern": "メタ構造への依存が強い",
       "frequency": 1
     },
@@ -61,17 +69,15 @@
     {
       "pattern": "一般読者への可読性の低さ",
       "frequency": 1
-    },
-    {
-      "pattern": "一部の引用文献の関連性の薄さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "表現の過度な難解さ",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-memory-falsification-distributed-systems",
+      "verdict": "exemplary",
+      "mean_score": 87.22,
+      "reviewed_at": "2026-06-09T20:33:05.182103Z"
+    },
     {
       "paper_id": "meta-gen-17-prompt-half-life",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87.2,
       "reviewed_at": "2026-06-07T20:07:03.433164+00:00"
-    },
-    {
-      "paper_id": "manifold-collapse-in-void-topology",
-      "verdict": "exemplary",
-      "mean_score": 85,
-      "reviewed_at": "2026-06-07T20:07:03.433190+00:00"
     }
   ]
 }
