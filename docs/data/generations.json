@@ -1,5 +1,5 @@
 {
-  "current_generation": 19,
+  "current_generation": 20,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -585,6 +585,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-19]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 20,
+      "role": "generator",
+      "branch": "jules/gen-020-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-020] 生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明"
     }
   ]
 }
