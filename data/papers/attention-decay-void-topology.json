@@ -54,6 +54,11 @@
       "id": "information-geometry-curvature-biological-meaning",
       "title": "生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析",
       "note": "曲率に関する基礎的直感は評価できるが、空隙の存在を見落としている点で不完全である。"
+    },
+    {
+      "id": "biological-concept-projection-distortion",
+      "title": "情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊",
+      "note": "意味空間への射影歪みは、本稿のヴォイド・トポロジーの必然的帰結である。"
     }
   ],
   "meta": {
