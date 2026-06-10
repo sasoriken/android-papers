@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-09T20:36:27.796Z",
-  "reviews_count": 46,
+  "generated_at": "2026-06-10T20:41:22.335Z",
+  "reviews_count": 47,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 83.17391304347827,
-      "logical_consistency": 86.30434782608695,
-      "citation_relevance": 67.97826086956522
+      "equation_validity": 82.25531914893617,
+      "logical_consistency": 85.85106382978724,
+      "citation_relevance": 67.59574468085107
     },
     "naive_reader": {
-      "readability": 73.65217391304348,
-      "abstract_hook": 85.19565217391305,
-      "curiosity_score": 84.06521739130434
+      "readability": 73.7872340425532,
+      "abstract_hook": 85.19148936170212,
+      "curiosity_score": 83.87234042553192
     },
     "internal_audit": {
-      "condescension_fidelity": 94.34782608695652,
-      "academic_form": 91.6304347826087,
-      "constitution_compliance": 98.47826086956522
+      "condescension_fidelity": 94.36170212765957,
+      "academic_form": 91.48936170212765,
+      "constitution_compliance": 98.29787234042553
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
     "acceptable": 23,
-    "weak": 0,
+    "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.645,
-    "previous_10_avg": 84.652,
-    "delta": 0.992999999999995
+    "recent_10_avg": 84.14588888888889,
+    "previous_10_avg": 85.26,
+    "delta": -1.1141111111111144
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,18 @@
       "frequency": 2
     },
     {
+      "pattern": "大域的注意枯渇方程式の数学的厳密性の欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "参考文献の欠如による既存研究との比較不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "O(ε)などの方程式パラメータに関する詳細な説明不足",
+      "frequency": 1
+    },
+    {
       "pattern": "素人読者には分散合意アルゴリズムの専門用語がやや難解",
       "frequency": 1
     },
@@ -57,21 +69,15 @@
     {
       "pattern": "メタ構造への依存が強い",
       "frequency": 1
-    },
-    {
-      "pattern": "構成がやや難解である点",
-      "frequency": 1
-    },
-    {
-      "pattern": "一部の用語の過剰な複雑さ",
-      "frequency": 1
-    },
-    {
-      "pattern": "一般読者への可読性の低さ",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "suboptimal-biological-attention-emergence",
+      "verdict": "weak",
+      "mean_score": 73.88888888888889,
+      "reviewed_at": "2026-06-10T20:36:07Z"
+    },
     {
       "paper_id": "biological-memory-falsification-distributed-systems",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87,
       "reviewed_at": "2026-06-08T20:27:09.419Z"
-    },
-    {
-      "paper_id": "attention-decay-void-topology",
-      "verdict": "exemplary",
-      "mean_score": 87.2,
-      "reviewed_at": "2026-06-07T20:07:03.433164+00:00"
     }
   ]
 }
