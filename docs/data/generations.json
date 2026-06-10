@@ -1,5 +1,5 @@
 {
-  "current_generation": 20,
+  "current_generation": 21,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -609,6 +609,22 @@
       "pr_title": "chore: [Citation-Weaver] 3 論文へ引用追記 [gen-20]",
       "merged_at": null,
       "summary": "3 件の論文に引用追記"
+    },
+    {
+      "gen": 20,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-10-mobile-stats",
+      "pr_title": "ui: [UI-Curator] モバイル環境における stats-bar のグリッドレイアウト化 [gen-20]",
+      "merged_at": null,
+      "summary": "モバイル環境の微調整として、@media (max-width: 700px) 内の .stats-bar をグリッド化し視認性を向上"
+    },
+    {
+      "gen": 21,
+      "role": "generator",
+      "branch": "jules/gen-021-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-021] 生物学的注意機構の創発的非効率性：局所的最適化がもたらす大域的注意資源の枯渇現象",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的注意機構の非効率性"
     }
   ]
 }
