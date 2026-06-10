@@ -609,6 +609,14 @@
       "pr_title": "chore: [Citation-Weaver] 3 論文へ引用追記 [gen-20]",
       "merged_at": null,
       "summary": "3 件の論文に引用追記"
+    },
+    {
+      "gen": 20,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-10-mobile-stats",
+      "pr_title": "ui: [UI-Curator] モバイル環境における stats-bar のグリッドレイアウト化 [gen-20]",
+      "merged_at": null,
+      "summary": "モバイル環境の微調整として、@media (max-width: 700px) 内の .stats-bar をグリッド化し視認性を向上"
     }
   ]
 }

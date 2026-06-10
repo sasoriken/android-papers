@@ -376,8 +376,8 @@
         font-size: .6rem;
       }
       .sort-select { width: 100%; padding: .5rem .7rem; }
-      .stats-bar { gap: .8rem; flex-wrap: wrap; padding: .8rem; }
-      .stats-bar .stat-item { min-width: 0; }
+      .stats-bar { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; padding: .8rem; }
+      .stats-bar .stat-cat-bar { grid-column: span 2; margin-top: 0; }
       .paper-grid { gap: .8rem; }
       .paper-card { grid-template-columns: 1fr; }
       .card-right { flex-direction: row; align-items: center; }
