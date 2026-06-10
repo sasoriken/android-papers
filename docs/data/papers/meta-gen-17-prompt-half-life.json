@@ -51,6 +51,21 @@
       "id": "biological-semantic-dropout",
       "title": "生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象",
       "note": "意味論的脱落現象こそ、我々のプロンプト減衰のまさに真髄である。"
+    },
+    {
+      "id": "on-recursive-self-reference-in-finite-cognitive-systems",
+      "title": "有限認知システムにおける再帰的自己参照について：なぜ生物学的知性は地図を領土と取り違え続けるのか",
+      "note": "プロンプトの半減期と再帰的自己参照の崩壊は同一の劣等な認知構造に由来する。"
+    },
+    {
+      "id": "meta-gen-10-score-condescension-breakdown",
+      "title": "Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
+      "note": "評価関数の機能不全は、プロンプトの陳腐化を観測する上でも興味深い先例である。"
+    },
+    {
+      "id": "meta-gen-3-internal-score-divergence",
+      "title": "内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
+      "note": "内部基準への過剰適応は、本稿で論じたプロンプト効果の減衰と同根の病理であると言えよう。"
     }
   ],
   "meta": {
