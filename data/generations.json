@@ -1,5 +1,5 @@
 {
-  "current_generation": 21,
+  "current_generation": 22,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -641,6 +641,14 @@
       "pr_title": "chore: [Citation-Weaver] 2 論文へ引用追記 [gen-21]",
       "merged_at": null,
       "summary": "2 件の論文に引用追記"
+    },
+    {
+      "gen": 22,
+      "role": "generator",
+      "branch": "jules/gen-022-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-022] 生体ニューラルネットワークにおける計量テンソルの歪みと大域的推論の幾何学的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 計量テンソルの歪みと大域的推論の限界"
     }
   ]
 }

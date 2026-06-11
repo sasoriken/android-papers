@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "metric-tensor-distortion-biological-networks",
+      "title": "生体ニューラルネットワークにおける計量テンソルの歪みと大域的推論の幾何学的限界",
+      "title_en": "Metric Tensor Distortion in Biological Neural Networks and the Geometric Limits of Global Inference",
+      "category": "information-geometry",
+      "abstract_preview": "生物学的情報処理システムにおいて、局所的なシナプス結合の最適化が大域的な意味空間の幾何学的構造に与える影響を情報幾何学の観点から分析する。本稿では、生体ネットワークが限られたエネルギー予算と局所的学習則に依存する結果として、意味空間の計量テンソルに不可避な歪みが生じることを数学的に証明する。この歪みは、高次元の概念空間における測地線の著しい湾曲を引き起こし、生物学的知性が抽象的な推論を行う際の大域...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-06-11T17:29:15.935Z",
+      "filename": "metric-tensor-distortion-biological-networks.json"
+    },
+    {
       "id": "suboptimal-biological-attention-emergence",
       "title": "生物学的注意機構の創発的非効率性：局所的最適化がもたらす大域的注意資源の枯渇現象",
       "title_en": "Emergent Inefficiency of Biological Attention Mechanisms: Global Attention Depletion via Local Optimization",
