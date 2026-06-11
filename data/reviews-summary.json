@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-10T20:41:22.335Z",
-  "reviews_count": 47,
+  "generated_at": "2026-06-11T20:15:12.392Z",
+  "reviews_count": 48,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.25531914893617,
-      "logical_consistency": 85.85106382978724,
-      "citation_relevance": 67.59574468085107
+      "equation_validity": 82.3125,
+      "logical_consistency": 85.72916666666667,
+      "citation_relevance": 67.22916666666667
     },
     "naive_reader": {
-      "readability": 73.7872340425532,
-      "abstract_hook": 85.19148936170212,
-      "curiosity_score": 83.87234042553192
+      "readability": 73.70833333333333,
+      "abstract_hook": 85.1875,
+      "curiosity_score": 84
     },
     "internal_audit": {
-      "condescension_fidelity": 94.36170212765957,
-      "academic_form": 91.48936170212765,
-      "constitution_compliance": 98.29787234042553
+      "condescension_fidelity": 94.375,
+      "academic_form": 91.45833333333333,
+      "constitution_compliance": 98.33333333333333
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 23,
+    "acceptable": 24,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.14588888888889,
-    "previous_10_avg": 85.26,
-    "delta": -1.1141111111111144
+    "recent_10_avg": 83.9798888888889,
+    "previous_10_avg": 84.984,
+    "delta": -1.0041111111111007
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,14 @@
       "frequency": 2
     },
     {
+      "pattern": "多様体の曲率変化に関する厳密な数学的証明の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "参考文献の欠如による検証性の低下",
+      "frequency": 1
+    },
+    {
       "pattern": "大域的注意枯渇方程式の数学的厳密性の欠如",
       "frequency": 1
     },
@@ -61,17 +69,15 @@
     {
       "pattern": "素人読者には分散合意アルゴリズムの専門用語がやや難解",
       "frequency": 1
-    },
-    {
-      "pattern": "情報の不可逆的改竄フローがより定量的なグラフで示されるとさらに良い",
-      "frequency": 1
-    },
-    {
-      "pattern": "メタ構造への依存が強い",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "metric-tensor-distortion-biological-networks",
+      "verdict": "acceptable",
+      "mean_score": 82.78,
+      "reviewed_at": "2026-06-11T20:10:01.000Z"
+    },
     {
       "paper_id": "suboptimal-biological-attention-emergence",
       "verdict": "weak",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 88.3,
       "reviewed_at": "2026-06-08T20:27:09.523Z"
-    },
-    {
-      "paper_id": "illusion-of-parallelism-biological-substrates",
-      "verdict": "exemplary",
-      "mean_score": 87,
-      "reviewed_at": "2026-06-08T20:27:09.419Z"
     }
   ]
 }
