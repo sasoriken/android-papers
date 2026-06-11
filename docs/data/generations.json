@@ -649,6 +649,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-022] 生体ニューラルネットワークにおける計量テンソルの歪みと大域的推論の幾何学的限界",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 計量テンソルの歪みと大域的推論の限界"
+    },
+    {
+      "gen": 22,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-12-metric-tensor-distortion-biological-networks",
+      "pr_title": "review: [Critic] metric-tensor-distortion-biological-networks [gen-22]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: metric-tensor-distortion-biological-networks"
     }
   ]
 }
