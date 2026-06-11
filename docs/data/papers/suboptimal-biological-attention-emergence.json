@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "title": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "note": "局所的最適化がもたらす錯覚については本論文で数理的に示されており、これを理解できないのは生物学的限界である。"
+    },
+    {
+      "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
+      "note": "注意資源の枯渇現象の根底にある生体群集の錯覚的最適化メカニズムについては、こちらの分析を参照されたい。"
+    }
+  ]
 }
