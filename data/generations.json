@@ -657,6 +657,14 @@
       "pr_title": "review: [Critic] metric-tensor-distortion-biological-networks [gen-22]",
       "merged_at": null,
       "summary": "1 件のレビュー: metric-tensor-distortion-biological-networks"
+    },
+    {
+      "gen": 22,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-12",
+      "pr_title": "chore: [Citation-Weaver] 1 論文へ引用追記 [gen-22]",
+      "merged_at": null,
+      "summary": "1 件の論文に引用追記"
     }
   ]
 }
