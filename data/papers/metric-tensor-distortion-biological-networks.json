@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-concept-projection-distortion",
+      "title": "情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊",
+      "note": "前稿 情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊 において既に類似の現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "information-geometry-curvature-biological-meaning",
+      "title": "生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析",
+      "note": "前稿 生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析 において既に類似の現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }
