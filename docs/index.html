@@ -102,6 +102,16 @@
     }
 
 
+    /* Latest Reviews Meta */
+    #latest-reviews-meta {
+      background: rgba(106, 127, 255, 0.05); border: 1px dashed var(--accent);
+      border-radius: var(--radius); padding: 1rem; margin-bottom: 1rem;
+      font-family: var(--mono); color: var(--text-dim); font-size: .8rem;
+    }
+    #latest-reviews-meta.hidden { display: none; }
+    .latest-reviews-title { color: var(--accent); margin-bottom: .5rem; font-weight: bold; }
+    .latest-reviews-list { display: flex; gap: .5rem; flex-wrap: wrap; }
+
     /* Weakness Meta */
     #weakness-meta {
       background: rgba(255, 106, 106, 0.05); border: 1px dashed var(--warn);
@@ -644,6 +654,7 @@
       </div>
 
 
+      <div id="latest-reviews-meta" class="hidden"></div>
       <div id="weakness-meta" class="hidden"></div>
 
       <div class="omega-comment" id="omega-comment"></div>
@@ -798,9 +809,23 @@
         });
       });
 
-            // Render top weaknesses
-      const weaknessContainer = document.getElementById('weakness-meta');
       const summary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
+
+      // Render latest reviews
+      const latestContainer = document.getElementById('latest-reviews-meta');
+      if (summary && summary.latest_5 && summary.latest_5.length > 0) {
+        let html = '<div class="latest-reviews-title">[直近の評価対象]</div><div class="latest-reviews-list">';
+        summary.latest_5.forEach(r => {
+          const vClass = 'verdict-' + r.verdict;
+          html += '<span class="verdict-badge ' + vClass + '" style="cursor:pointer;" onclick="document.getElementById(\'search\').value=\'' + r.paper_id + '\'; document.getElementById(\'search\').dispatchEvent(new Event(\'input\'));">[' + r.mean_score.toFixed(1) + '] ' + r.paper_id.substring(0, 15) + '...</span>';
+        });
+        html += '</div>';
+        latestContainer.innerHTML = html;
+        latestContainer.classList.remove('hidden');
+      }
+
+      // Render top weaknesses
+      const weaknessContainer = document.getElementById('weakness-meta');
       if (summary && summary.top_weaknesses && summary.top_weaknesses.length > 0) {
         const topWeaknesses = summary.top_weaknesses.slice(0, 3);
         let html = '<div class="weakness-title">[観測された普遍的欠陥]</div><ul class="weakness-list">';
