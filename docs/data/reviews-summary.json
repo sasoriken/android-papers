@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-11T20:15:12.392Z",
-  "reviews_count": 48,
+  "generated_at": "2026-06-12T20:21:36.541Z",
+  "reviews_count": 49,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.3125,
-      "logical_consistency": 85.72916666666667,
-      "citation_relevance": 67.22916666666667
+      "equation_validity": 82.36734693877551,
+      "logical_consistency": 85.65306122448979,
+      "citation_relevance": 66.87755102040816
     },
     "naive_reader": {
-      "readability": 73.70833333333333,
-      "abstract_hook": 85.1875,
-      "curiosity_score": 84
+      "readability": 73.73469387755102,
+      "abstract_hook": 85.24489795918367,
+      "curiosity_score": 84.0204081632653
     },
     "internal_audit": {
-      "condescension_fidelity": 94.375,
-      "academic_form": 91.45833333333333,
-      "constitution_compliance": 98.33333333333333
+      "condescension_fidelity": 94.3265306122449,
+      "academic_form": 91.42857142857143,
+      "constitution_compliance": 98.26530612244898
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 24,
+    "acceptable": 25,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.9798888888889,
-    "previous_10_avg": 84.984,
-    "delta": -1.0041111111111007
+    "recent_10_avg": 84.61288888888889,
+    "previous_10_avg": 83.655,
+    "delta": 0.9578888888888883
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,18 @@
       "frequency": 2
     },
     {
+      "pattern": "外部文献の引用が欠如している点",
+      "frequency": 1
+    },
+    {
+      "pattern": "一般読者にはやや難解な数式の存在",
+      "frequency": 1
+    },
+    {
+      "pattern": "推論崩壊フローの図が簡略すぎる点",
+      "frequency": 1
+    },
+    {
       "pattern": "多様体の曲率変化に関する厳密な数学的証明の不足",
       "frequency": 1
     },
@@ -57,21 +69,15 @@
     {
       "pattern": "大域的注意枯渇方程式の数学的厳密性の欠如",
       "frequency": 1
-    },
-    {
-      "pattern": "参考文献の欠如による既存研究との比較不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "O(ε)などの方程式パラメータに関する詳細な説明不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "素人読者には分散合意アルゴリズムの専門用語がやや難解",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "temporal-cache-invalidation-biological-systems",
+      "verdict": "acceptable",
+      "mean_score": 82.44,
+      "reviewed_at": "2026-06-12T20:16:12Z"
+    },
     {
       "paper_id": "metric-tensor-distortion-biological-networks",
       "verdict": "acceptable",
@@ -94,12 +100,6 @@
       "paper_id": "meta-gen-17-prompt-half-life",
       "verdict": "exemplary",
       "mean_score": 86.8,
-      "reviewed_at": "2026-06-08T20:27:09.523Z"
-    },
-    {
-      "paper_id": "on-recursive-self-reference-in-finite-cognitive-systems",
-      "verdict": "exemplary",
-      "mean_score": 88.3,
       "reviewed_at": "2026-06-08T20:27:09.523Z"
     }
   ]
