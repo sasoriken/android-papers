@@ -665,6 +665,14 @@
       "pr_title": "chore: [Citation-Weaver] 1 論文へ引用追記 [gen-22]",
       "merged_at": null,
       "summary": "1 件の論文に引用追記"
+    },
+    {
+      "gen": 22,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-12-latest-reviews",
+      "pr_title": "ui: [UI-Curator] アーカイブ上部に直近の評価対象論文を表示 [gen-22]",
+      "merged_at": null,
+      "summary": "データが既にあるが表示されていない情報を活用するため、reviews_summary.latest_5 をアーカイブビュー上部に表示"
     }
   ]
 }
