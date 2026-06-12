@@ -1,5 +1,5 @@
 {
-  "current_generation": 22,
+  "current_generation": 23,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -673,6 +673,14 @@
       "pr_title": "ui: [UI-Curator] アーカイブ上部に直近の評価対象論文を表示 [gen-22]",
       "merged_at": null,
       "summary": "データが既にあるが表示されていない情報を活用するため、reviews_summary.latest_5 をアーカイブビュー上部に表示"
+    },
+    {
+      "gen": 23,
+      "role": "generator",
+      "branch": "jules/gen-023-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-023] 生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 時間的キャッシュ無効化と記憶の非一貫性"
     }
   ]
 }
