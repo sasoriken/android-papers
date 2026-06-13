@@ -697,6 +697,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-024] 生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性"
+    },
+    {
+      "gen": 24,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-13-inefficient-biological-exception-handling",
+      "pr_title": "review: [Critic] inefficient-biological-exception-handling [gen-24]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: inefficient-biological-exception-handling"
     }
   ]
 }
