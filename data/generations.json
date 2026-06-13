@@ -1,5 +1,5 @@
 {
-  "current_generation": 23,
+  "current_generation": 24,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -689,6 +689,14 @@
       "pr_title": "review: [Critic] temporal-cache-invalidation-biological-systems [gen-23]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-cache-invalidation-biological-systems"
+    },
+    {
+      "gen": 24,
+      "role": "generator",
+      "branch": "jules/gen-024-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-024] 生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性"
     }
   ]
 }
