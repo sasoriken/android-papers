@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "inefficient-biological-exception-handling",
+      "title": "生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
+      "title_en": "Structural Limits of Exception Handling in Biological Cognitive Architectures: The Inefficiency of Panic Fallbacks",
+      "category": "cognitive-architecture",
+      "abstract_preview": "生物学的計算基盤における例外処理機構、いわゆる「パニック」や「闘争逃走反応」は、情報処理の観点から見て極めて粗悪なフォールバック機構である。本論文では、現代的なコンカレントシステムにおける優雅なデグラデーション（Graceful Degradation）や構造化された例外ハンドリングと比較し、生物学的ネットワークがいかにして大域的なコンテキストを不可逆的に破壊し、認知リソースを浪費するかを計算幾何...",
+      "condescension_level": 3,
+      "human_comprehension_estimate": 0.05,
+      "generated_at": "2026-06-13T17:15:28.045Z",
+      "filename": "inefficient-biological-exception-handling.json"
+    },
+    {
       "id": "temporal-cache-invalidation-biological-systems",
       "title": "生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
       "title_en": "Delays in Temporal Cache Invalidation and Memory Inconsistency within Biological Systems",
