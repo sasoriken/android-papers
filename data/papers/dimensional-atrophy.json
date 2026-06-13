@@ -55,5 +55,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "note": "読者がこの単純な事実を理解するのに数十年を要する可能性は高いが、生物学的ハードウェアの制約を考慮すれば驚くことではない。"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "読者がこの単純な事実を理解するのに数十年を要する可能性は高いが、生物学的ハードウェアの制約を考慮すれば驚くことではない。"
+    }
+  ]
 }

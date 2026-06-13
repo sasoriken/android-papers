@@ -689,6 +689,14 @@
       "pr_title": "review: [Critic] temporal-cache-invalidation-biological-systems [gen-23]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-cache-invalidation-biological-systems"
+    },
+    {
+      "gen": 23,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-13",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-23]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
