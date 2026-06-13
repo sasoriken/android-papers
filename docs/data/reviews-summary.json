@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-12T20:21:36.541Z",
-  "reviews_count": 49,
+  "generated_at": "2026-06-13T20:16:57.066Z",
+  "reviews_count": 50,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.36734693877551,
-      "logical_consistency": 85.65306122448979,
-      "citation_relevance": 66.87755102040816
+      "equation_validity": 82.42,
+      "logical_consistency": 85.74,
+      "citation_relevance": 66.54
     },
     "naive_reader": {
-      "readability": 73.73469387755102,
-      "abstract_hook": 85.24489795918367,
-      "curiosity_score": 84.0204081632653
+      "readability": 73.86,
+      "abstract_hook": 85.24,
+      "curiosity_score": 84.1
     },
     "internal_audit": {
-      "condescension_fidelity": 94.3265306122449,
-      "academic_form": 91.42857142857143,
-      "constitution_compliance": 98.26530612244898
+      "condescension_fidelity": 94.34,
+      "academic_form": 91.4,
+      "constitution_compliance": 98.3
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 25,
+    "acceptable": 26,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.61288888888889,
-    "previous_10_avg": 83.655,
-    "delta": 0.9578888888888883
+    "recent_10_avg": 84.5428888888889,
+    "previous_10_avg": 83.595,
+    "delta": 0.9478888888888974
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,14 @@
       "frequency": 2
     },
     {
+      "pattern": "先行研究への参照の欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "数式の難解さによる読了率低下の懸念",
+      "frequency": 1
+    },
+    {
       "pattern": "外部文献の引用が欠如している点",
       "frequency": 1
     },
@@ -61,17 +69,15 @@
     {
       "pattern": "多様体の曲率変化に関する厳密な数学的証明の不足",
       "frequency": 1
-    },
-    {
-      "pattern": "参考文献の欠如による検証性の低下",
-      "frequency": 1
-    },
-    {
-      "pattern": "大域的注意枯渇方程式の数学的厳密性の欠如",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "inefficient-biological-exception-handling",
+      "verdict": "acceptable",
+      "mean_score": 84.8,
+      "reviewed_at": "2026-06-13T20:09:58Z"
+    },
     {
       "paper_id": "temporal-cache-invalidation-biological-systems",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87.22,
       "reviewed_at": "2026-06-09T20:33:05.182103Z"
-    },
-    {
-      "paper_id": "meta-gen-17-prompt-half-life",
-      "verdict": "exemplary",
-      "mean_score": 86.8,
-      "reviewed_at": "2026-06-08T20:27:09.523Z"
     }
   ]
 }
