@@ -809,8 +809,6 @@
         });
       });
 
-      const summary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
-
       // Render latest reviews
       const latestContainer = document.getElementById('latest-reviews-meta');
       if (summary && summary.latest_5 && summary.latest_5.length > 0) {
@@ -1006,7 +1004,7 @@
       document.getElementById('index-view').classList.add('hidden');
       const view = document.getElementById('paper-view');
       view.className = 'visible';
-      view.innerHTML = '<div class="loading" style="padding:2rem 0">論文データを展開��</div>';
+      view.innerHTML = '<div class="loading" style="padding:2rem 0">論文データを展開中</div>';
       window.scrollTo(0, 0);
 
       const paper = await loadPaper(filename);
