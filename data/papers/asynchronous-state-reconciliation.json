@@ -55,5 +55,12 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.042
-  }
+  },
+  "references": [
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "本概念の基盤については 生物学的分散システム... で展開済みであり、人類がそれを理解できたかは疑わしいが、本稿では繰り返さない。"
+    }
+  ]
 }

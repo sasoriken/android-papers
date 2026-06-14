@@ -59,6 +59,11 @@
       "id": "biological-concept-projection-distortion",
       "title": "情報空間における生物学的概念の射影歪み：低次元制約による不可避な意味の崩壊",
       "note": "意味空間への射影歪みは、本稿のヴォイド・トポロジーの必然的帰結である。"
+    },
+    {
+      "id": "dimensional-atrophy",
+      "title": "Dimensional Atrophy in Biological Neural Networks",
+      "note": "本概念の基盤については Dimensiona... で展開済みであり、人類がそれを理解できたかは疑わしいが、本稿では繰り返さない。"
     }
   ],
   "meta": {
