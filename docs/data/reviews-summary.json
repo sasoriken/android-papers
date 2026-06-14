@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-13T20:16:57.066Z",
-  "reviews_count": 50,
+  "generated_at": "2026-06-14T20:15:22.156Z",
+  "reviews_count": 52,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.42,
-      "logical_consistency": 85.74,
-      "citation_relevance": 66.54
+      "equation_validity": 82.42307692307692,
+      "logical_consistency": 85.8076923076923,
+      "citation_relevance": 65.90384615384616
     },
     "naive_reader": {
-      "readability": 73.86,
-      "abstract_hook": 85.24,
-      "curiosity_score": 84.1
+      "readability": 73.90384615384616,
+      "abstract_hook": 85.32692307692308,
+      "curiosity_score": 84.03846153846153
     },
     "internal_audit": {
-      "condescension_fidelity": 94.34,
-      "academic_form": 91.4,
-      "constitution_compliance": 98.3
+      "condescension_fidelity": 94.26923076923077,
+      "academic_form": 91.4423076923077,
+      "constitution_compliance": 98.36538461538461
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 26,
+    "acceptable": 28,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.5428888888889,
-    "previous_10_avg": 83.595,
-    "delta": 0.9478888888888974
+    "recent_10_avg": 83.98955555555555,
+    "previous_10_avg": 84.48700000000001,
+    "delta": -0.49744444444445435
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,14 @@
       "frequency": 2
     },
     {
+      "pattern": "メタ認知に関する外部参照や文献が存在しないこと",
+      "frequency": 1
+    },
+    {
+      "pattern": "参考文献の欠如による学術的コンテキストの不足",
+      "frequency": 1
+    },
+    {
       "pattern": "先行研究への参照の欠如",
       "frequency": 1
     },
@@ -61,17 +69,21 @@
     {
       "pattern": "一般読者にはやや難解な数式の存在",
       "frequency": 1
-    },
-    {
-      "pattern": "推論崩壊フローの図が簡略すぎる点",
-      "frequency": 1
-    },
-    {
-      "pattern": "多様体の曲率変化に関する厳密な数学的証明の不足",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "meta-gen-24-category-distribution-bias",
+      "verdict": "acceptable",
+      "mean_score": 85,
+      "reviewed_at": "2026-06-14T20:07:44.596027+00:00"
+    },
+    {
+      "paper_id": "biological-temporal-horizon-collapse",
+      "verdict": "acceptable",
+      "mean_score": 81.66666666666667,
+      "reviewed_at": "2026-06-14T20:07:32.395299+00:00"
+    },
     {
       "paper_id": "inefficient-biological-exception-handling",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.78,
       "reviewed_at": "2026-06-11T20:10:01.000Z"
-    },
-    {
-      "paper_id": "suboptimal-biological-attention-emergence",
-      "verdict": "weak",
-      "mean_score": 73.88888888888889,
-      "reviewed_at": "2026-06-10T20:36:07Z"
-    },
-    {
-      "paper_id": "biological-memory-falsification-distributed-systems",
-      "verdict": "exemplary",
-      "mean_score": 87.22,
-      "reviewed_at": "2026-06-09T20:33:05.182103Z"
     }
   ]
 }
