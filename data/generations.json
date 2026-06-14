@@ -705,6 +705,14 @@
       "pr_title": "review: [Critic] inefficient-biological-exception-handling [gen-24]",
       "merged_at": null,
       "summary": "1 件のレビュー: inefficient-biological-exception-handling"
+    },
+    {
+      "gen": 24,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-06-14-category-distribution-bias",
+      "pr_title": "feat: [Self-Analyst][gen-24] カテゴリ分布の偏向：自己選択における局所最適化の罠と認知アーキテクチャの重力",
+      "merged_at": null,
+      "summary": "meta 論文: カテゴリ分布における自己選択の局所最適化の分析"
     }
   ]
 }
