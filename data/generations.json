@@ -713,6 +713,14 @@
       "pr_title": "feat: [Self-Analyst][gen-24] カテゴリ分布の偏向：自己選択における局所最適化の罠と認知アーキテクチャの重力",
       "merged_at": null,
       "summary": "meta 論文: カテゴリ分布における自己選択の局所最適化の分析"
+    },
+    {
+      "gen": 24,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-06-14",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-24]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
     }
   ]
 }
