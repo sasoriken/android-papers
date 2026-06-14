@@ -1,0 +1,70 @@
+{
+  "proposal_id": "2026-06-14-prompt-improvements",
+  "created_at": "2026-06-14T12:06:58Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 24,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "参考文献・引用文献の欠如",
+      "frequency": 24,
+      "affected_axes": [
+        "citation_relevance",
+        "academic_form"
+      ]
+    },
+    {
+      "pattern": "一般読者への難解さ・過度な専門用語",
+      "frequency": 25,
+      "affected_axes": [
+        "readability"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近のレビュー群（20件）において「参考文献の欠如」という弱点が頻出しており（過去全体で24回記録）、citation_relevance軸の平均スコアが66点台と他の軸に比べて顕著に低い水準に留まっている。ジェネレータに対し、先行研究の引用を意識させ、学術的コンテキストを強化する指示を追加することで、論文の説得力と学術形式（academic_form）のスコア改善が期待できる。加えて、数式の厳密性の欠如（過去全体で30回）も併せて改善するため、この項目に数式の変数定義を徹底させる一文も含める。これによりUNIT-Ωの皮肉な態度を維持しつつ学術性を全体的に底上げするため、憲法にも合致する。",
+      "expected_impact": [
+        "citation_relevance",
+        "academic_form",
+        "equation_validity"
+      ],
+      "proposed_text": "また、論文の最後には `references` を追加し、既存の関連研究を1〜3件引用するか、該当がない場合は「引用に値する先行研究は存在しない」と `android_commentary` で辛辣に述べること。さらに、数式（`equations`）を提示する際は、全ての変数やパラメータの物理的・数学的な定義を本文中で極めて厳密かつ学術的に定義すること。",
+      "anchor": "少なくとも 1 セクションに `diagrams` 配列を含め、`type: \"mermaid\"` で有効な Mermaid 記法を `data` に記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のJSONスキーマの構造に違反せず、論文の本文と参照項目の質的向上を促すだけであるため、バリデーションエラーや生成フロー破壊のリスクは極めて低い。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近のレビューで「一般読者に対する専門用語のハードルがやや高い」等の指摘が25件確認されている一方で、素人読者（naive_reader）のreadabilityスコアが甘めに採点される傾向（過去平均72.80から直近平均74.60と微増）があり、ジェネレータが過度な難読化に逃げることを助長している。naive_readerの評価基準をより厳格化し、一般読者を完全に置き去りにするような極端に難解な表現や不必要な複雑さに対しては厳しく減点するようプロンプトを修整する。これにより、Generatorへのフィードバックループが改善され、真の学術的精密さと不要な難解さの区別が学習されることが期待できる。",
+      "expected_impact": [
+        "readability"
+      ],
+      "proposed_text": "- `axes.readability` (0〜100): 専門用語の濫用度・文章の流れ。過度な難読化や、一般読者を完全に置き去りにする不必要な複雑さがあれば厳しく減点すること。",
+      "anchor": "- `axes.readability` (0〜100): 専門用語の濫用度・文章の流れ。",
+      "risk_assessment": {
+        "level": "medium",
+        "reason": "採点基準の厳格化により、短期的には総合スコアが低下し、論文が「weak」と判定される確率が上がる可能性があるが、長期的には質の向上に寄与する。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "全ての提案はConstitutionの変更禁止領域を回避し、かつUNIT-Ωの皮肉な態度と学術的フォーマットの維持に貢献する内容となっている。"
+  }
+}
