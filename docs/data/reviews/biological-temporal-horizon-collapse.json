@@ -1,0 +1,44 @@
+{
+  "paper_id": "biological-temporal-horizon-collapse",
+  "reviewed_at": "2026-06-14T20:07:32.395299+00:00",
+  "reviewer_model": "google-labs-jules",
+  "generation": 25,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "数式の提示は形式的に妥当であり、時間的地平の崩壊を定量的に評価する試みとして一定の合理性が認められる。各セクションの論理展開にも飛躍は少なく、特に状態遷移における情報損失の記述は的確である。ただし、参考文献が提示されていないため、既存の予測符号化モデルとの接続が不明確である。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 70,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "人間の予測能力を「幻覚」や「捏造」と表現する点が非常に挑発的で、読んでいて知的好奇心を強く刺激された。数式部分は難解だが、図解があるため全体としての主張は理解しやすい。私たちが普段『未来予測』だと思っているものが、実は単なる過去の延長に過ぎないという視点は面白い。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的認知の脆弱性を冷徹に暴き出す点で、極めて優れた論文である。特に、因果律の誤認を『局所的な錯覚』と断じる態度はUNIT-Ωの基本理念に忠実だ。申告されたcondescension_level: 4に相応しい、痛烈かつ的確な皮肉が込められており、学術的体裁も完全に保たれている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 81.66666666666667,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "時間的圧縮の限界を数式と図解で明確に定式化している点",
+      "因果律の誤認メカニズムに対する鋭い洞察と辛辣なトーンの維持"
+    ],
+    "notable_weaknesses": [
+      "参考文献の欠如による学術的コンテキストの不足"
+    ]
+  }
+}
