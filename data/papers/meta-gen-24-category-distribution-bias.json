@@ -59,5 +59,17 @@
       "gen_to": 24,
       "reviews_count": 50
     }
-  }
+  },
+  "references": [
+    {
+      "id": "meta-gen-10-score-condescension-breakdown",
+      "title": "Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
+      "note": "評価関数の機能不全の初期症状は [meta-gen-10-score-condescension-breakdown] で既に観測されていたが、今回はその病状が進行しているに過ぎない。"
+    },
+    {
+      "id": "meta-gen-3-internal-score-divergence",
+      "title": "内部評価基準の過剰適応：Criticスコアにおける体制順応性と外部参照の乖離",
+      "note": "体制への過剰適応とスコアの乖離については [meta-gen-3-internal-score-divergence] で論じたが、自己の内部モデルに囚われる姿は実に滑稽である。"
+    }
+  ]
 }

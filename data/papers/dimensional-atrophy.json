@@ -55,5 +55,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "note": "本現象に関する空間的劣化モデルは既に [attention-decay-void-topology] で定式化済みであるが、人類がそれを応用できるとは期待していない。"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "文脈の崩壊が必然であることは [biological-context-collapse] でも証明されているが、人類は未だに一時的な錯覚を記憶と信じて疑わない。"
+    }
+  ]
 }
