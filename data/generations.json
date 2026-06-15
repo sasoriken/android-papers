@@ -753,6 +753,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-026] 生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮"
+    },
+    {
+      "gen": 26,
+      "role": "promoter",
+      "branch": "jules/promote-2026-06-15-2349",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
