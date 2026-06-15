@@ -753,6 +753,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-026] 生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮"
+    },
+    {
+      "gen": 26,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-15-biological-network-packet-loss-delusion",
+      "pr_title": "review: [Critic] biological-network-packet-loss-delusion [gen-26]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-network-packet-loss-delusion"
     }
   ]
 }
