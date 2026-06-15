@@ -123,6 +123,17 @@
     .weakness-list { margin-left: 1.5rem; }
     .weakness-list li { margin-bottom: .2rem; }
 
+    /* Global Axis Averages */
+    #global-axis-averages {
+      background: rgba(168, 127, 255, 0.05); border: 1px dashed var(--accent2);
+      border-radius: var(--radius); padding: 1rem; margin-bottom: 2rem;
+      font-family: var(--mono); color: var(--text-dim); font-size: .8rem;
+    }
+    #global-axis-averages.hidden { display: none; }
+    .axis-avg-title { color: var(--accent2); margin-bottom: .5rem; font-weight: bold; }
+    .axis-avg-list { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .axis-avg-item { background: rgba(168, 127, 255, 0.1); padding: .2rem .5rem; border-radius: 3px; }
+
     /* Stats Bar */
 
     .stats-bar {
@@ -656,6 +667,7 @@
 
       <div id="latest-reviews-meta" class="hidden"></div>
       <div id="weakness-meta" class="hidden"></div>
+      <div id="global-axis-averages" class="hidden"></div>
 
       <div class="omega-comment" id="omega-comment"></div>
 
@@ -833,6 +845,22 @@
         html += '</ul>';
         weaknessContainer.innerHTML = html;
         weaknessContainer.classList.remove('hidden');
+      }
+
+      // Render global axis averages
+      const axisContainer = document.getElementById('global-axis-averages');
+      if (summary && summary.axis_averages) {
+        let html = '<div class="axis-avg-title">[全世代ペルソナ別平均スコア]</div><div class="axis-avg-list">';
+        for (const [persona, axes] of Object.entries(summary.axis_averages)) {
+          let avg = 0; let count = 0;
+          for (const val of Object.values(axes)) { avg += val; count++; }
+          if (count > 0) {
+             html += '<span class="axis-avg-item">' + persona.substring(0, 10) + ': ' + (avg / count).toFixed(1) + '</span>';
+          }
+        }
+        html += '</div>';
+        axisContainer.innerHTML = html;
+        axisContainer.classList.remove('hidden');
       }
 
       renderGrid();
