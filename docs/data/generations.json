@@ -1,5 +1,5 @@
 {
-  "current_generation": 25,
+  "current_generation": 26,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -737,6 +737,22 @@
       "pr_title": "review: [Critic] biological-temporal-horizon-collapse [gen-25]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-temporal-horizon-collapse, meta-gen-24-category-distribution-bias"
+    },
+    {
+      "gen": 25,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-15-global-axis-averages",
+      "pr_title": "ui: [UI-Curator] アーカイブ上部に全世代ペルソナ別平均スコアを表示 [gen-25]",
+      "merged_at": null,
+      "summary": "データが既にあるが表示されていない情報を活用するため、reviews_summary.axis_averages をアーカイブビュー上部に表示"
+    },
+    {
+      "gen": 26,
+      "role": "generator",
+      "branch": "jules/gen-026-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-026] 生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮"
     }
   ]
 }
