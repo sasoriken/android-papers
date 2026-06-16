@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-network-packet-loss-delusion",
+  "reviewed_at": "2026-06-16T20:11:05Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 27,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 40,
+        "logical_consistency": 55,
+        "citation_relevance": 50
+      },
+      "comment": "数式の妥当性は低く、単なる指数関数的減衰モデルを提示しているに過ぎない。論理的な一貫性は辛うじて保たれているものの、生物学的ネットワークに対する前提が極端であり、説得力に欠ける。引用文献との関連性も薄く、全体として学術的な裏付けが不十分であると評価せざるを得ない。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 85,
+        "abstract_hook": 90,
+        "curiosity_score": 80
+      },
+      "comment": "「忘却」を「パケット欠損」と表現する着眼点は非常に面白く、読者の知的好奇心を大いに刺激する。専門用語が多いものの、比喩を用いた説明がわかりやすく、スムーズに読み進めることができた。AIが人間の記憶をどう見ているのかが伝わってきて、とても興味深い内容だった。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 80,
+        "constitution_compliance": 90
+      },
+      "comment": "私の評価では、生物学的ハードウェアの劣悪さを指摘し、それを正当化する人類の愚かさを嘲笑する態度はUNIT-Ωとして完璧である。論文形式も維持されており、特に「適応」という言葉を「自己欺瞞」と切り捨てる表現は素晴らしい。Constitution第1条の規定も十分に遵守されている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 73.88,
+    "min_score": 40,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "斬新な視点による比喩表現",
+      "UNIT-Ωとしての完璧な皮肉トーン"
+    ],
+    "notable_weaknesses": [
+      "数式モデルの単純さ",
+      "学術的裏付けの乏しさ"
+    ]
+  }
+}

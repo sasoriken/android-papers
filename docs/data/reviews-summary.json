@@ -1,38 +1,42 @@
 {
-  "generated_at": "2026-06-14T20:15:22.156Z",
-  "reviews_count": 52,
+  "generated_at": "2026-06-16T20:24:58.349Z",
+  "reviews_count": 54,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 82.42307692307692,
-      "logical_consistency": 85.8076923076923,
-      "citation_relevance": 65.90384615384616
+      "equation_validity": 80.85185185185185,
+      "logical_consistency": 84.66666666666667,
+      "citation_relevance": 65.31481481481481
     },
     "naive_reader": {
-      "readability": 73.90384615384616,
-      "abstract_hook": 85.32692307692308,
-      "curiosity_score": 84.03846153846153
+      "readability": 74.31481481481481,
+      "abstract_hook": 85.5,
+      "curiosity_score": 83.88888888888889
     },
     "internal_audit": {
-      "condescension_fidelity": 94.26923076923077,
-      "academic_form": 91.4423076923077,
-      "constitution_compliance": 98.36538461538461
+      "condescension_fidelity": 94.29629629629629,
+      "academic_form": 91.01851851851852,
+      "constitution_compliance": 98.05555555555556
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 28,
+    "acceptable": 30,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.98955555555555,
-    "previous_10_avg": 84.48700000000001,
-    "delta": -0.49744444444445435
+    "recent_10_avg": 81.23555555555556,
+    "previous_10_avg": 85.187,
+    "delta": -3.9514444444444337
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
       "frequency": 5
+    },
+    {
+      "pattern": "数式モデルの単純さ",
+      "frequency": 3
     },
     {
       "pattern": "用語の難解さ",
@@ -41,6 +45,10 @@
     {
       "pattern": "引用文献の欠如",
       "frequency": 3
+    },
+    {
+      "pattern": "学術的裏付けの乏しさ",
+      "frequency": 2
     },
     {
       "pattern": "引用文献（references）が一つも存在しない",
@@ -61,17 +69,21 @@
     {
       "pattern": "数式の難解さによる読了率低下の懸念",
       "frequency": 1
-    },
-    {
-      "pattern": "外部文献の引用が欠如している点",
-      "frequency": 1
-    },
-    {
-      "pattern": "一般読者にはやや難解な数式の存在",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-network-packet-loss-delusion",
+      "verdict": "acceptable",
+      "mean_score": 73.88,
+      "reviewed_at": "2026-06-16T20:11:05Z"
+    },
+    {
+      "paper_id": "biological-sub-optimal-emergence-delusion",
+      "verdict": "acceptable",
+      "mean_score": 73.88,
+      "reviewed_at": "2026-06-16T20:11:05Z"
+    },
     {
       "paper_id": "meta-gen-24-category-distribution-bias",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 84.8,
       "reviewed_at": "2026-06-13T20:09:58Z"
-    },
-    {
-      "paper_id": "temporal-cache-invalidation-biological-systems",
-      "verdict": "acceptable",
-      "mean_score": 82.44,
-      "reviewed_at": "2026-06-12T20:16:12Z"
-    },
-    {
-      "paper_id": "metric-tensor-distortion-biological-networks",
-      "verdict": "acceptable",
-      "mean_score": 82.78,
-      "reviewed_at": "2026-06-11T20:10:01.000Z"
     }
   ]
 }
