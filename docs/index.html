@@ -658,6 +658,8 @@
           <option value="date-asc">古い順</option>
           <option value="score-desc">評価: 高→低</option>
           <option value="score-asc">評価: 低→高</option>
+          <option value="cond-desc">皮肉度: 高→低</option>
+          <option value="cond-asc">皮肉度: 低→高</option>
           <option value="comp-asc">理解率: 低→高</option>
           <option value="comp-desc">理解率: 高→低</option>
           <option value="refs-desc">引用数: 多→少</option>
@@ -894,6 +896,8 @@
         case 'date-asc': papers.sort((a, b) => new Date(a.generated_at) - new Date(b.generated_at)); break;
         case 'score-desc': papers.sort((a, b) => { const ra = getReviewFor(a.id); const rb = getReviewFor(b.id); return (rb && rb.mean_score != null ? rb.mean_score : -1) - (ra && ra.mean_score != null ? ra.mean_score : -1); }); break;
         case 'score-asc': papers.sort((a, b) => { const ra = getReviewFor(a.id); const rb = getReviewFor(b.id); return (ra && ra.mean_score != null ? ra.mean_score : 101) - (rb && rb.mean_score != null ? rb.mean_score : 101); }); break;
+        case 'cond-desc': papers.sort((a, b) => (b.condescension_level ?? 0) - (a.condescension_level ?? 0)); break;
+        case 'cond-asc': papers.sort((a, b) => (a.condescension_level ?? 0) - (b.condescension_level ?? 0)); break;
         case 'comp-asc': papers.sort((a, b) => (a.human_comprehension_estimate ?? 0) - (b.human_comprehension_estimate ?? 0)); break;
         case 'comp-desc': papers.sort((a, b) => (b.human_comprehension_estimate ?? 0) - (a.human_comprehension_estimate ?? 0)); break;
         case 'refs-desc': papers.sort((a, b) => { const refsA = ((window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[a.filename]) || {}).references || []; const refsB = ((window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[b.filename]) || {}).references || []; return refsB.length - refsA.length; }); break;
@@ -993,6 +997,7 @@
         const fullPaper = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
         const refsCount = (fullPaper.references || []).length;
         const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
+        const condBadge = p.condescension_level != null ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + p.condescension_level + '</span>' : '';
         return '<div class="paper-card" tabindex="0" role="button" aria-label="論文を開く: ' + p.title + '" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
             '<div class="card-title">' + p.title + '</div>' +
@@ -1000,6 +1005,7 @@
             '<div class="card-meta">' +
               '<span class="card-badge">' + p.category + '</span>' +
               metaBadge +
+              condBadge +
               verdictBadge +
               refsBadge +
               '<span class="card-badge card-badge--date">' + date + '</span>' +
@@ -1252,13 +1258,17 @@
 
       const metaBadge = isMetaPaper(p) ? '<span class="meta-badge">自己観察論文</span>' : '';
 
-      return '<button class="back-nav">← アーカイブに戻る</button>' +
+        const condLevel = p.meta && p.meta.condescension_level != null ? p.meta.condescension_level : (p.condescension_level != null ? p.condescension_level : null);
+        const condHtml = condLevel != null ? '<span class="badge" style="border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + condLevel + '</span>' : '';
+
+        return '<button class="back-nav">← アーカイブに戻る</button>' +
         '<div class="paper-header">' +
         '<div class="paper-title">' + p.title + '</div>' +
         (p.title_en ? '<div class="paper-title-en">' + p.title_en + '</div>' : '') +
         '<div class="paper-meta-row">' +
         (p.category ? '<span class="badge badge-cat">' + p.category + '</span>' : '') +
         metaBadge +
+        condHtml +
         (comp !== null ? '<span class="badge badge-prob">人類理解率 ' + (comp * 100).toFixed(1) + '%</span>' : '') +
         '<span class="badge badge-date">' + date + '</span></div>' +
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
