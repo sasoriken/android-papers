@@ -1,5 +1,5 @@
 {
-  "current_generation": 26,
+  "current_generation": 27,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -761,6 +761,14 @@
       "pr_title": "ui: [UI-Curator] 皮肉度 (condescension_level) の表示とソート機能の実装 [gen-26]",
       "merged_at": null,
       "summary": "UI改善: data/index.json 内に存在する condescension_level をUIにバッジとして表示し、ソート機能にも追加"
+    },
+    {
+      "gen": 27,
+      "role": "generator",
+      "branch": "jules/gen-027-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-027] 生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明"
     }
   ]
 }
