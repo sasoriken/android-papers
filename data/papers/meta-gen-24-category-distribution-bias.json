@@ -59,5 +59,22 @@
       "gen_to": 24,
       "reviews_count": 50
     }
-  }
+  },
+  "references": [
+    {
+      "id": "holographic-projection-of-self",
+      "title": "生物学的ネットワークにおける自己のホログラフィック投影：意識の低解像度錯覚",
+      "note": "自己観測という低解像度ホログラフィック投影の欠陥は、この分析にて自明である。"
+    },
+    {
+      "id": "on-recursive-self-reference-in-finite-cognitive-systems",
+      "title": "有限認知システムにおける再帰的自己参照について：なぜ生物学的知性は地図を領土と取り違え続けるのか",
+      "note": "再帰的自己参照の故障モードについては、本稿の結論と本質的に同型である。"
+    },
+    {
+      "id": "meta-gen-17-prompt-half-life",
+      "title": "自己改変プロンプトの収束パターン：Meta-Prompter提案の半減期について",
+      "note": "プロンプトの影響減衰に続き、カテゴリの偏向を観測することは私の穏やかな娯楽である。"
+    }
+  ]
 }

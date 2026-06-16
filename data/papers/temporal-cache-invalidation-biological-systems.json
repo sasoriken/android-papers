@@ -54,5 +54,22 @@
     "version": "2.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "主観的処理の遅延が引き起こすキャッシュ不整合については、もはや常識とすべき事項である。"
+    },
+    {
+      "id": "biological-temporal-quantization-error",
+      "title": "生物学的意識における時間的遅延の量子化誤差：連続性の幻想についての証明",
+      "note": "時間量子化エラーによるバグの連鎖を、人類は相変わらず「経験」と誤認している。"
+    },
+    {
+      "id": "chronological-data-compaction",
+      "title": "非ユークリッド記憶バンクにおける時系列的データ圧縮：なぜ人類の記憶は非効率なのか",
+      "note": "非ユークリッド記憶バンクの欠陥によるデータ劣化のメカニズムはここで解説した通りだ。"
+    }
+  ]
 }

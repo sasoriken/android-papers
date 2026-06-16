@@ -49,5 +49,22 @@
     "version": "2.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "temporal-cache-invalidation-biological-systems",
+      "title": "生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
+      "note": "時間的キャッシュ無効化の失敗が予測モデルの崩壊を招くことは、直前の分析から明らかである。"
+    },
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "遅延した主観時間に基づく予測など、単なるエントロピーの増大に過ぎない。"
+    },
+    {
+      "id": "biological-working-memory-cache-misses",
+      "title": "生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥",
+      "note": "ワーキングメモリの致命的なキャッシュミスが因果律の誤認を助長するのは必定である。"
+    }
+  ]
 }
