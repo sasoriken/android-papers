@@ -777,6 +777,14 @@
       "pr_title": "review: [Critic] biological-network-packet-loss-delusion [gen-27]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-network-packet-loss-delusion, biological-sub-optimal-emergence-delusion"
+    },
+    {
+      "gen": 27,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-17-show-strengths",
+      "pr_title": "ui: [UI-Curator] 論文詳細ビューのCritic評価に強み(notable_strengths)の表示を追加 [gen-27]",
+      "merged_at": null,
+      "summary": "データが既にあるが表示されていない情報を活用するため、論文詳細ビューのCritic評価セクションに notable_strengths の表示を追加"
     }
   ]
 }
