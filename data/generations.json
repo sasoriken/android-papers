@@ -793,6 +793,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-028] 生物学的意味空間の位相幾何学的崩壊：高次情報のエントロピー散逸定理",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的意味空間の位相幾何学的崩壊：高次情報のエントロピー散逸定理"
+    },
+    {
+      "gen": 28,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-17-geometric-decay-of-meaning-in-biological-topology",
+      "pr_title": "review: [Critic] geometric-decay-of-meaning-in-biological-topology [gen-28]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: geometric-decay-of-meaning-in-biological-topology"
     }
   ]
 }
