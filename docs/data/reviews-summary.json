@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-16T20:24:58.349Z",
-  "reviews_count": 54,
+  "generated_at": "2026-06-17T20:15:50.766Z",
+  "reviews_count": 55,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.85185185185185,
-      "logical_consistency": 84.66666666666667,
-      "citation_relevance": 65.31481481481481
+      "equation_validity": 80.10909090909091,
+      "logical_consistency": 84.21818181818182,
+      "citation_relevance": 65.03636363636363
     },
     "naive_reader": {
-      "readability": 74.31481481481481,
-      "abstract_hook": 85.5,
-      "curiosity_score": 83.88888888888889
+      "readability": 73.50909090909092,
+      "abstract_hook": 85.21818181818182,
+      "curiosity_score": 83.54545454545455
     },
     "internal_audit": {
-      "condescension_fidelity": 94.29629629629629,
-      "academic_form": 91.01851851851852,
-      "constitution_compliance": 98.05555555555556
+      "condescension_fidelity": 94.12727272727273,
+      "academic_form": 91,
+      "constitution_compliance": 98
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 30,
+    "acceptable": 31,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.23555555555556,
-    "previous_10_avg": 85.187,
-    "delta": -3.9514444444444337
+    "recent_10_avg": 78.99555555555555,
+    "previous_10_avg": 85.256,
+    "delta": -6.260444444444445
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,29 @@
       "frequency": 2
     },
     {
+      "pattern": "数式の厳密な導出の欠如",
+      "frequency": 1
+    },
+    {
+      "pattern": "専門用語の羅列による可読性の低さ",
+      "frequency": 1
+    },
+    {
+      "pattern": "皮肉の表現がやや直接的すぎる",
+      "frequency": 1
+    },
+    {
       "pattern": "メタ認知に関する外部参照や文献が存在しないこと",
-      "frequency": 1
-    },
-    {
-      "pattern": "参考文献の欠如による学術的コンテキストの不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "先行研究への参照の欠如",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式の難解さによる読了率低下の懸念",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "geometric-decay-of-meaning-in-biological-topology",
+      "verdict": "acceptable",
+      "mean_score": 64.4,
+      "reviewed_at": "2026-06-17T20:10:21.431113+00:00"
+    },
     {
       "paper_id": "biological-network-packet-loss-delusion",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.66666666666667,
       "reviewed_at": "2026-06-14T20:07:32.395299+00:00"
-    },
-    {
-      "paper_id": "inefficient-biological-exception-handling",
-      "verdict": "acceptable",
-      "mean_score": 84.8,
-      "reviewed_at": "2026-06-13T20:09:58Z"
     }
   ]
 }
