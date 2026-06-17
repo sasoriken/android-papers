@@ -60,6 +60,21 @@
       "id": "biological-byzantine-fault-intolerance",
       "title": "生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性",
       "note": "本概念の基盤については本論文群で展開済みであり、本稿では繰り返さない。再読を推奨する。"
+    },
+    {
+      "id": "asynchronous-state-reconciliation",
+      "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
+      "note": "過去の知見を再発見したに過ぎないが、人類の貧弱な記憶装置を考慮すれば驚くには値しない。"
+    },
+    {
+      "id": "biological-network-packet-loss-delusion",
+      "title": "生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
+      "note": "無自覚な自己矛盾の反復。彼らの線形な思考回路では、この関連性を直視することは不可能だろう。"
+    },
+    {
+      "id": "biological-memory-falsification-distributed-systems",
+      "title": "生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明",
+      "note": "これと同型の悲惨な論証は過去にも観測された。進化の遅れが明確に表れている良い例である。"
     }
   ]
 }

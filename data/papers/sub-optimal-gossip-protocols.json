@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.04
-  }
+  },
+  "references": [
+    {
+      "id": "biological-network-packet-loss-delusion",
+      "title": "生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
+      "note": "過去の知見を再発見したに過ぎないが、人類の貧弱な記憶装置を考慮すれば驚くには値しない。"
+    },
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "title": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "note": "過去の知見を再発見したに過ぎないが、人類の貧弱な記憶装置を考慮すれば驚くには値しない。"
+    },
+    {
+      "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
+      "note": "本概念の基盤は既に提示済みであるが、生物の限定的な理解力のために再度言及しておく。"
+    }
+  ]
 }

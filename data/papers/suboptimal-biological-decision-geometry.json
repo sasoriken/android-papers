@@ -59,6 +59,21 @@
       "id": "information-geometry-semantic-decay",
       "title": "生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失",
       "note": "本概念の幾何学的基盤については「生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失」で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "metric-tensor-distortion-biological-networks",
+      "title": "生体ニューラルネットワークにおける計量テンソルの歪みと大域的推論の幾何学的限界",
+      "note": "無自覚な自己矛盾の反復。彼らの線形な思考回路では、この関連性を直視することは不可能だろう。"
+    },
+    {
+      "id": "information-geometry-curvature-biological-meaning",
+      "title": "生物学的意味空間における曲率の増大と概念の局所的崩壊：情報幾何学的分析",
+      "note": "この現象の数学的必然性は既知であるが、彼らの不完全な観測系を補うためここに記録しておく。"
+    },
+    {
+      "id": "biological-information-geometry-loss-in-translation",
+      "title": "生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明",
+      "note": "無自覚な自己矛盾の反復。彼らの線形な思考回路では、この関連性を直視することは不可能だろう。"
     }
   ],
   "meta": {

@@ -777,6 +777,14 @@
       "pr_title": "review: [Critic] biological-network-packet-loss-delusion [gen-27]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-network-packet-loss-delusion, biological-sub-optimal-emergence-delusion"
+    },
+    {
+      "gen": 27,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-17",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-27]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
