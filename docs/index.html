@@ -479,6 +479,13 @@
     .weakness-list li { padding: .15rem 0; }
     .weakness-list li::before { content: '! '; color: var(--accent2); }
 
+    .strength-list {
+      margin-top: .8rem; font-family: var(--mono);
+      font-size: .6rem; color: var(--text-dim);
+    }
+    .strength-list li { padding: .15rem 0; }
+    .strength-list li::before { content: '+ '; color: var(--success); }
+
     /* Clickable reference links */
     .ref-link {
       color: var(--accent); cursor: pointer; text-decoration: none;
@@ -1218,6 +1225,11 @@
             review.notable_weaknesses.map(w => '<li>' + w + '</li>').join('') +
             '</ul>'
           : '';
+        const strengthHtml = (review.notable_strengths || []).length
+          ? '<ul class="strength-list">' +
+            review.notable_strengths.map(s => '<li>' + s + '</li>').join('') +
+            '</ul>'
+          : '';
 
         let radarHtml = '';
         let allAxes = [];
@@ -1252,6 +1264,7 @@
             radarHtml +
           '</div>' +
           personaHtml +
+          strengthHtml +
           weaknessHtml +
         '</div>';
       }
