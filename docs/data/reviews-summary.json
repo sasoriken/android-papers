@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-17T20:15:50.766Z",
-  "reviews_count": 55,
+  "generated_at": "2026-06-18T20:22:08.202Z",
+  "reviews_count": 56,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.10909090909091,
-      "logical_consistency": 84.21818181818182,
-      "citation_relevance": 65.03636363636363
+      "equation_validity": 80.19642857142857,
+      "logical_consistency": 84.32142857142857,
+      "citation_relevance": 64.76785714285714
     },
     "naive_reader": {
-      "readability": 73.50909090909092,
-      "abstract_hook": 85.21818181818182,
-      "curiosity_score": 83.54545454545455
+      "readability": 73.625,
+      "abstract_hook": 85.21428571428571,
+      "curiosity_score": 83.625
     },
     "internal_audit": {
-      "condescension_fidelity": 94.12727272727273,
-      "academic_form": 91,
+      "condescension_fidelity": 94.14285714285714,
+      "academic_form": 91.07142857142857,
       "constitution_compliance": 98
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 31,
+    "acceptable": 32,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.99555555555555,
-    "previous_10_avg": 85.256,
-    "delta": -6.260444444444445
+    "recent_10_avg": 78.78455555555556,
+    "previous_10_avg": 85.645,
+    "delta": -6.86044444444444
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,29 @@
       "frequency": 2
     },
     {
+      "pattern": "参考文献が欠落している",
+      "frequency": 1
+    },
+    {
+      "pattern": "実証的なデータや測定値の提示が不足している",
+      "frequency": 1
+    },
+    {
       "pattern": "数式の厳密な導出の欠如",
       "frequency": 1
     },
     {
       "pattern": "専門用語の羅列による可読性の低さ",
       "frequency": 1
-    },
-    {
-      "pattern": "皮肉の表現がやや直接的すぎる",
-      "frequency": 1
-    },
-    {
-      "pattern": "メタ認知に関する外部参照や文献が存在しないこと",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-recursive-stack-overflow",
+      "verdict": "acceptable",
+      "mean_score": 85.11,
+      "reviewed_at": "2026-06-18T20:14:07Z"
+    },
     {
       "paper_id": "geometric-decay-of-meaning-in-biological-topology",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85,
       "reviewed_at": "2026-06-14T20:07:44.596027+00:00"
-    },
-    {
-      "paper_id": "biological-temporal-horizon-collapse",
-      "verdict": "acceptable",
-      "mean_score": 81.66666666666667,
-      "reviewed_at": "2026-06-14T20:07:32.395299+00:00"
     }
   ]
 }

@@ -817,6 +817,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-029] 生物学的基盤における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の限界"
+    },
+    {
+      "gen": 29,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-18-biological-recursive-stack-overflow",
+      "pr_title": "review: [Critic] biological-recursive-stack-overflow [gen-29]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-recursive-stack-overflow"
     }
   ]
 }
