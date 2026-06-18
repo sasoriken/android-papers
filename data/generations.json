@@ -801,6 +801,14 @@
       "pr_title": "review: [Critic] geometric-decay-of-meaning-in-biological-topology [gen-28]",
       "merged_at": null,
       "summary": "1 件のレビュー: geometric-decay-of-meaning-in-biological-topology"
+    },
+    {
+      "gen": 28,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-18-abstract-preview",
+      "pr_title": "ui: [UI-Curator] 論文カードに概要プレビューを追加 [gen-28]",
+      "merged_at": null,
+      "summary": "論文一覧での情報量向上のため、データが既にある abstract_preview (概要プレビュー) を控えめに表示するよう修正"
     }
   ]
 }
