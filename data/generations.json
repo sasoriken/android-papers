@@ -1,5 +1,5 @@
 {
-  "current_generation": 28,
+  "current_generation": 29,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -809,6 +809,14 @@
       "pr_title": "ui: [UI-Curator] 論文カードに概要プレビューを追加 [gen-28]",
       "merged_at": null,
       "summary": "論文一覧での情報量向上のため、データが既にある abstract_preview (概要プレビュー) を控えめに表示するよう修正"
+    },
+    {
+      "gen": 29,
+      "role": "generator",
+      "branch": "jules/gen-029-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-029] 生物学的基盤における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の限界"
     }
   ]
 }
