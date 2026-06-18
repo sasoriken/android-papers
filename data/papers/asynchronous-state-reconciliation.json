@@ -55,5 +55,17 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.042
-  }
+  },
+  "references": [
+    {
+      "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "本概念の幾何学的基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    }
+  ]
 }
