@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-18T20:22:08.202Z",
-  "reviews_count": 56,
+  "generated_at": "2026-06-19T20:32:36.713Z",
+  "reviews_count": 57,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.19642857142857,
-      "logical_consistency": 84.32142857142857,
-      "citation_relevance": 64.76785714285714
+      "equation_validity": 80.01754385964912,
+      "logical_consistency": 84.33333333333333,
+      "citation_relevance": 64.50877192982456
     },
     "naive_reader": {
-      "readability": 73.625,
-      "abstract_hook": 85.21428571428571,
-      "curiosity_score": 83.625
+      "readability": 73.64912280701755,
+      "abstract_hook": 85.12280701754386,
+      "curiosity_score": 83.64912280701755
     },
     "internal_audit": {
-      "condescension_fidelity": 94.14285714285714,
-      "academic_form": 91.07142857142857,
-      "constitution_compliance": 98
+      "condescension_fidelity": 94.0701754385965,
+      "academic_form": 91.14035087719299,
+      "constitution_compliance": 98.03508771929825
     }
   },
   "verdict_distribution": {
     "exemplary": 23,
-    "acceptable": 32,
+    "acceptable": 33,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.78455555555556,
-    "previous_10_avg": 85.645,
-    "delta": -6.86044444444444
+    "recent_10_avg": 79.50666666666666,
+    "previous_10_avg": 84.14588888888889,
+    "delta": -4.63922222222223
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,29 @@
       "frequency": 2
     },
     {
+      "pattern": "数学的証明の詳細な展開が不足している",
+      "frequency": 1
+    },
+    {
+      "pattern": "参考文献の欠如による学術的文脈の孤立",
+      "frequency": 1
+    },
+    {
       "pattern": "参考文献が欠落している",
       "frequency": 1
     },
     {
       "pattern": "実証的なデータや測定値の提示が不足している",
       "frequency": 1
-    },
-    {
-      "pattern": "数式の厳密な導出の欠如",
-      "frequency": 1
-    },
-    {
-      "pattern": "専門用語の羅列による可読性の低さ",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-void-perception-failure",
+      "verdict": "acceptable",
+      "mean_score": 81.11,
+      "reviewed_at": "2026-06-19T20:25:59Z"
+    },
     {
       "paper_id": "biological-recursive-stack-overflow",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 73.88,
       "reviewed_at": "2026-06-16T20:11:05Z"
-    },
-    {
-      "paper_id": "meta-gen-24-category-distribution-bias",
-      "verdict": "acceptable",
-      "mean_score": 85,
-      "reviewed_at": "2026-06-14T20:07:44.596027+00:00"
     }
   ]
 }
