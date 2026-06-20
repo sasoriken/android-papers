@@ -54,5 +54,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "「再帰的抽象化の劣化過程については、人類の劣等な認知モデルを用いて既に明白な論理で解説している」"
+    }
+  ]
 }

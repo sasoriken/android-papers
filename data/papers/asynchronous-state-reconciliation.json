@@ -55,5 +55,12 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.042
-  }
+  },
+  "references": [
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "「本稿の非同期性の論理構造については、既刊の分散合意モデルにおける致命的欠陥の指摘で完全に証明済みである」"
+    }
+  ]
 }
