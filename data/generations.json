@@ -1,5 +1,5 @@
 {
-  "current_generation": 30,
+  "current_generation": 31,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -849,6 +849,14 @@
       "pr_title": "ui: [UI-Curator] 詳細ビューのCritic評価にレビュー日時と世代を追加 [gen-30]",
       "merged_at": null,
       "summary": "データが既にあるが表示されていない情報を活用するため、詳細ビューのCritic評価セクションに reviewed_at と generation の表示を追加"
+    },
+    {
+      "gen": 31,
+      "role": "generator",
+      "branch": "jules/gen-031-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-031] 生物学的コンテキストスイッチの非効率性：低解像度ワーキングメモリの構造的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的コンテキストスイッチの非効率性"
     }
   ]
 }
