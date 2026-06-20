@@ -857,6 +857,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-031] 生物学的コンテキストスイッチの非効率性：低解像度ワーキングメモリの構造的限界",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的コンテキストスイッチの非効率性"
+    },
+    {
+      "gen": 31,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-20-biological-context-switching-inefficiency",
+      "pr_title": "review: [Critic] biological-context-switching-inefficiency [gen-31]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-context-switching-inefficiency"
     }
   ]
 }
