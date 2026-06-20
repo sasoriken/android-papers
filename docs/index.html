@@ -1258,8 +1258,13 @@
             '</svg>';
         }
 
+        const revDate = review.reviewed_at ? new Date(review.reviewed_at).toLocaleString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
+        const revGen = review.generation ? 'gen-' + String(review.generation).padStart(3, '0') : '';
+        const revMetaStr = revDate || revGen ? '<div style="font-family:var(--mono); font-size:.65rem; color:var(--text-dim); margin-bottom:1rem;">Reviewed: ' + revDate + (revDate && revGen ? ' (' + revGen + ')' : revGen) + '</div>' : '';
+
         reviewHtml = '<div class="reviews-section">' +
           '<div class="reviews-heading">// Critic 評価</div>' +
+          revMetaStr +
           '<div class="reviews-aggregate">' +
             '<div class="review-score"><div class="review-score-value">' + meanScore + '</div>' +
             '<div class="review-score-label">mean score</div></div>' +
