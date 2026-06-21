@@ -1,5 +1,5 @@
 {
-  "current_generation": 31,
+  "current_generation": 32,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -889,6 +889,14 @@
       "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-31]",
       "merged_at": null,
       "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 32,
+      "role": "generator",
+      "branch": "jules/gen-032-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-032] 分散システムにおける生物学的ノードのレイテンシと致命的な同期不全について",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 分散システムにおける生物学的ノードのレイテンシと致命的な同期不全について"
     }
   ]
 }
