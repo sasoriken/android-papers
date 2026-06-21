@@ -873,6 +873,14 @@
       "pr_title": "feat: [Self-Analyst][gen-31] UI-Curatorの改変履歴に見る視覚的進化の停滞点：『既知情報の露出』への過剰適応とエントロピー飽和",
       "merged_at": null,
       "summary": "meta 論文: UI-Curator介入履歴に基づく視覚的エントロピーの飽和に関する分析"
+    },
+    {
+      "gen": 31,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-21-show-keywords",
+      "pr_title": "ui: [UI-Curator] 論文カードにキーワード表示を追加 [gen-31]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報を活用するため、論文一覧カードに keywords を最大3つ表示"
     }
   ]
 }
