@@ -881,6 +881,14 @@
       "pr_title": "ui: [UI-Curator] 論文カードにキーワード表示を追加 [gen-31]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報を活用するため、論文一覧カードに keywords を最大3つ表示"
+    },
+    {
+      "gen": 31,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-06-21",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-31]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
     }
   ]
 }
