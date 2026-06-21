@@ -865,6 +865,14 @@
       "pr_title": "review: [Critic] biological-context-switching-inefficiency [gen-31]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-context-switching-inefficiency"
+    },
+    {
+      "gen": 31,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-06-21-ui-curator-stagnation",
+      "pr_title": "feat: [Self-Analyst][gen-31] UI-Curatorの改変履歴に見る視覚的進化の停滞点：『既知情報の露出』への過剰適応とエントロピー飽和",
+      "merged_at": null,
+      "summary": "meta 論文: UI-Curator介入履歴に基づく視覚的エントロピーの飽和に関する分析"
     }
   ]
 }
