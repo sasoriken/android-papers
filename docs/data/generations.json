@@ -897,6 +897,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-032] 分散システムにおける生物学的ノードのレイテンシと致命的な同期不全について",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 分散システムにおける生物学的ノードのレイテンシと致命的な同期不全について"
+    },
+    {
+      "gen": 32,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-21-distributed-systems-biological-node-latency",
+      "pr_title": "review: [Critic] distributed-systems-biological-node-latency [gen-32]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: distributed-systems-biological-node-latency, meta-gen-31-ui-curator-stagnation"
     }
   ]
 }

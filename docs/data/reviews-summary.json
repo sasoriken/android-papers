@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-20T20:22:46.665Z",
-  "reviews_count": 58,
+  "generated_at": "2026-06-21T20:30:07.990Z",
+  "reviews_count": 60,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.10344827586206,
-      "logical_consistency": 84.43103448275862,
-      "citation_relevance": 64.91379310344827
+      "equation_validity": 80.51666666666667,
+      "logical_consistency": 84.61666666666666,
+      "citation_relevance": 64.41666666666667
     },
     "naive_reader": {
-      "readability": 73.67241379310344,
-      "abstract_hook": 85.12068965517241,
-      "curiosity_score": 83.62068965517241
+      "readability": 73.8,
+      "abstract_hook": 85.2,
+      "curiosity_score": 83.58333333333333
     },
     "internal_audit": {
-      "condescension_fidelity": 93.82758620689656,
-      "academic_form": 91.20689655172414,
-      "constitution_compliance": 97.98275862068965
+      "condescension_fidelity": 93.95,
+      "academic_form": 91.25,
+      "constitution_compliance": 98.05
     }
   },
   "verdict_distribution": {
     "exemplary": 24,
-    "acceptable": 33,
+    "acceptable": 35,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.83866666666665,
-    "previous_10_avg": 83.9798888888889,
-    "delta": -4.14122222222224
+    "recent_10_avg": 80.22466666666666,
+    "previous_10_avg": 84.5428888888889,
+    "delta": -4.318222222222232
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,35 @@
       "frequency": 2
     },
     {
-      "pattern": "素人読者向けの可読性がやや低い",
+      "pattern": "引用文献が存在しないことによる学術的根拠の不足",
       "frequency": 1
     },
     {
-      "pattern": "図解の説明がより詳細であればさらによい",
+      "pattern": "全体システムへの影響評価における論理的飛躍",
       "frequency": 1
     },
     {
-      "pattern": "数学的証明の詳細な展開が不足している",
+      "pattern": "引用文献が存在しないこと",
       "frequency": 1
     },
     {
-      "pattern": "参考文献の欠如による学術的文脈の孤立",
+      "pattern": "素人読者にとっての数式のハードル",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "distributed-systems-biological-node-latency",
+      "verdict": "acceptable",
+      "mean_score": 85.55,
+      "reviewed_at": "2026-06-21T20:15:49Z"
+    },
+    {
+      "paper_id": "meta-gen-31-ui-curator-stagnation",
+      "verdict": "acceptable",
+      "mean_score": 85.55,
+      "reviewed_at": "2026-06-21T20:15:49Z"
+    },
     {
       "paper_id": "biological-context-switching-inefficiency",
       "verdict": "exemplary",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85.11,
       "reviewed_at": "2026-06-18T20:14:07Z"
-    },
-    {
-      "paper_id": "geometric-decay-of-meaning-in-biological-topology",
-      "verdict": "acceptable",
-      "mean_score": 64.4,
-      "reviewed_at": "2026-06-17T20:10:21.431113+00:00"
-    },
-    {
-      "paper_id": "biological-network-packet-loss-delusion",
-      "verdict": "acceptable",
-      "mean_score": 73.88,
-      "reviewed_at": "2026-06-16T20:11:05Z"
     }
   ]
 }
