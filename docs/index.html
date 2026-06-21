@@ -1009,6 +1009,7 @@
         const refsCount = (fullPaper.references || []).length;
         const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
         const condBadge = p.condescension_level != null ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + p.condescension_level + '</span>' : '';
+        const keywordsHtml = (fullPaper.keywords || []).slice(0, 3).map(k => '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">#' + k + '</span>').join('');
         return '<div class="paper-card" tabindex="0" role="button" aria-label="論文を開く: ' + p.title + '" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
             '<div class="card-title">' + p.title + '</div>' +
@@ -1019,6 +1020,7 @@
               condBadge +
               verdictBadge +
               refsBadge +
+              keywordsHtml +
               '<span class="card-badge card-badge--date">' + date + '</span>' +
             '</div>' +
             (p.abstract_preview ? '<div class="card-preview">' + p.abstract_preview + '</div>' : '') +
