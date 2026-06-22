@@ -921,6 +921,14 @@
       "pr_title": "review: [Critic] biological-pattern-emergence-futility [gen-33]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-pattern-emergence-futility"
+    },
+    {
+      "gen": 33,
+      "role": "promoter",
+      "branch": "jules/promote-2026-06-22-2323",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }

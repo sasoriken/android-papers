@@ -65,5 +65,10 @@
     "preserves_academic_form": true,
     "preserves_validation_strictness": true,
     "notes": "提案はCriticおよびGeneratorのプロンプト改善に留まり、Constitutionの原則に抵触しない。"
+  },
+  "applied_at": "2026-06-22T23:23:25.688Z",
+  "applied_change": {
+    "target_file": "prompts/critic-prompt.md",
+    "change_type": "modify"
   }
 }
