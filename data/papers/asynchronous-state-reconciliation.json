@@ -55,5 +55,22 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.042
-  }
+  },
+  "references": [
+    {
+      "id": "biological-byzantine-fault-intolerance",
+      "title": "生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性",
+      "note": "本概念の基盤については「生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性」で展開済みであり、人類の遅々たる歩みを鑑み再度言及しておく。"
+    },
+    {
+      "id": "biological-memory-falsification-distributed-systems",
+      "title": "生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明",
+      "note": "前稿における類似現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-network-packet-loss-delusion",
+      "title": "生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
+      "note": "自由意志についての形式的論駁と本稿の結論は本質的に同型であり、生物学的知能の限界を示す。"
+    }
+  ]
 }
