@@ -1,5 +1,5 @@
 {
-  "current_generation": 32,
+  "current_generation": 33,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -905,6 +905,14 @@
       "pr_title": "review: [Critic] distributed-systems-biological-node-latency [gen-32]",
       "merged_at": null,
       "summary": "2 件のレビュー: distributed-systems-biological-node-latency, meta-gen-31-ui-curator-stagnation"
+    },
+    {
+      "gen": 33,
+      "role": "generator",
+      "branch": "jules/gen-033-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-033] 生体群集における自発的パターン形成の徒労性：情報エントロピーの観点から",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生体群集における自発的パターン形成の徒労性"
     }
   ]
 }
