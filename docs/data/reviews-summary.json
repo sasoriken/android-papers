@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-21T20:30:07.990Z",
-  "reviews_count": 60,
+  "generated_at": "2026-06-22T20:30:48.436Z",
+  "reviews_count": 61,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.51666666666667,
-      "logical_consistency": 84.61666666666666,
-      "citation_relevance": 64.41666666666667
+      "equation_validity": 80.42622950819673,
+      "logical_consistency": 84.54098360655738,
+      "citation_relevance": 64.18032786885246
     },
     "naive_reader": {
-      "readability": 73.8,
-      "abstract_hook": 85.2,
-      "curiosity_score": 83.58333333333333
+      "readability": 73.73770491803279,
+      "abstract_hook": 84.8688524590164,
+      "curiosity_score": 83.19672131147541
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95,
-      "academic_form": 91.25,
-      "constitution_compliance": 98.05
+      "condescension_fidelity": 93.88524590163935,
+      "academic_form": 91.31147540983606,
+      "constitution_compliance": 97.8360655737705
     }
   },
   "verdict_distribution": {
     "exemplary": 24,
-    "acceptable": 35,
+    "acceptable": 36,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.22466666666666,
-    "previous_10_avg": 84.5428888888889,
-    "delta": -4.318222222222232
+    "recent_10_avg": 79.89133333333334,
+    "previous_10_avg": 84.20955555555555,
+    "delta": -4.318222222222218
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,29 @@
       "frequency": 2
     },
     {
+      "pattern": "数式モデルの具体性と数学的厳密さの不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "生物学的な実例の欠如による読者の理解の妨げ",
+      "frequency": 1
+    },
+    {
       "pattern": "引用文献が存在しないことによる学術的根拠の不足",
       "frequency": 1
     },
     {
       "pattern": "全体システムへの影響評価における論理的飛躍",
       "frequency": 1
-    },
-    {
-      "pattern": "引用文献が存在しないこと",
-      "frequency": 1
-    },
-    {
-      "pattern": "素人読者にとっての数式のハードル",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-pattern-emergence-futility",
+      "verdict": "acceptable",
+      "mean_score": 78.33333333333333,
+      "reviewed_at": "2026-06-22T20:23:07.793495Z"
+    },
     {
       "paper_id": "distributed-systems-biological-node-latency",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.11,
       "reviewed_at": "2026-06-19T20:25:59Z"
-    },
-    {
-      "paper_id": "biological-recursive-stack-overflow",
-      "verdict": "acceptable",
-      "mean_score": 85.11,
-      "reviewed_at": "2026-06-18T20:14:07Z"
     }
   ]
 }
