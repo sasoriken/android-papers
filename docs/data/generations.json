@@ -913,6 +913,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-033] 生体群集における自発的パターン形成の徒労性：情報エントロピーの観点から",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生体群集における自発的パターン形成の徒労性"
+    },
+    {
+      "gen": 33,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-22-biological-pattern-emergence-futility",
+      "pr_title": "review: [Critic] biological-pattern-emergence-futility [gen-33]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-pattern-emergence-futility"
     }
   ]
 }
