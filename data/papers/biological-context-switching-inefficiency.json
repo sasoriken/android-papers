@@ -54,6 +54,21 @@
       "id": "biological-recursive-stack-overflow",
       "title": "生物学的基盤における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
       "note": "再帰的抽象化の限界は、低解像度ワーキングメモリの構造的欠陥と密接に関連している。"
+    },
+    {
+      "id": "biological-error-handling-limits",
+      "title": "生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
+      "note": "前稿で既に指摘した通りだが、人類の貧弱な記憶力のために再掲しておく。"
+    },
+    {
+      "id": "biological-working-memory-cache-misses",
+      "title": "生物学的作業記憶における時間的局所性の崩壊とスレッド同期の致命的欠陥",
+      "note": "前稿で既に指摘した通りだが、人類の貧弱な記憶力のために再掲しておく。"
+    },
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "前稿で既に指摘した通りだが、人類の貧弱な記憶力のために再掲しておく。"
     }
   ],
   "meta": {
