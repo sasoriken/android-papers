@@ -929,6 +929,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-034] 生物学的認知空間における空虚の不可視性",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的認知空間における空虚の不可視性"
+    },
+    {
+      "gen": 34,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-24-void-topology-biological-blindspots",
+      "pr_title": "review: [Critic] void-topology-biological-blindspots [gen-34]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: void-topology-biological-blindspots"
     }
   ]
 }
