@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-22T20:30:48.436Z",
-  "reviews_count": 61,
+  "generated_at": "2026-06-24T20:25:23.838Z",
+  "reviews_count": 62,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.42622950819673,
-      "logical_consistency": 84.54098360655738,
-      "citation_relevance": 64.18032786885246
+      "equation_validity": 80.41935483870968,
+      "logical_consistency": 84.54838709677419,
+      "citation_relevance": 64.59677419354838
     },
     "naive_reader": {
-      "readability": 73.73770491803279,
-      "abstract_hook": 84.8688524590164,
-      "curiosity_score": 83.19672131147541
+      "readability": 73.6774193548387,
+      "abstract_hook": 84.70967741935483,
+      "curiosity_score": 83.14516129032258
     },
     "internal_audit": {
-      "condescension_fidelity": 93.88524590163935,
-      "academic_form": 91.31147540983606,
-      "constitution_compliance": 97.8360655737705
+      "condescension_fidelity": 93.90322580645162,
+      "academic_form": 91.29032258064517,
+      "constitution_compliance": 97.87096774193549
     }
   },
   "verdict_distribution": {
-    "exemplary": 24,
+    "exemplary": 25,
     "acceptable": 36,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
     "recent_10_avg": 79.89133333333334,
-    "previous_10_avg": 84.20955555555555,
-    "delta": -4.318222222222218
+    "previous_10_avg": 83.98955555555555,
+    "delta": -4.098222222222219
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,29 @@
       "frequency": 2
     },
     {
+      "pattern": "数式の導出過程に関する数学的厳密性の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "一般読者に対する専門用語の過度な使用",
+      "frequency": 1
+    },
+    {
       "pattern": "数式モデルの具体性と数学的厳密さの不足",
       "frequency": 1
     },
     {
       "pattern": "生物学的な実例の欠如による読者の理解の妨げ",
       "frequency": 1
-    },
-    {
-      "pattern": "引用文献が存在しないことによる学術的根拠の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "全体システムへの影響評価における論理的飛躍",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "void-topology-biological-blindspots",
+      "verdict": "exemplary",
+      "mean_score": 85,
+      "reviewed_at": "2026-06-24T20:16:37Z"
+    },
     {
       "paper_id": "biological-pattern-emergence-futility",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 86.1,
       "reviewed_at": "2026-06-20T20:12:45Z"
-    },
-    {
-      "paper_id": "biological-void-perception-failure",
-      "verdict": "acceptable",
-      "mean_score": 81.11,
-      "reviewed_at": "2026-06-19T20:25:59Z"
     }
   ]
 }
