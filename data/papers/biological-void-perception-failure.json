@@ -49,5 +49,22 @@
     "version": "2.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.012
-  }
+  },
+  "references": [
+    {
+      "id": "biological-void-meaning-collapse",
+      "title": "生物学的意味の空虚：ヴォイド・トポロジーにおける情報崩壊定理",
+      "note": "本概念の基盤については先行研究で展開済みであり、本稿では冗長な解説を控える。"
+    },
+    {
+      "id": "biological-data-void-instability",
+      "title": "空虚位相幾何学における生物学的データ永続性の本質的不安定性：記憶の必然的崩壊の証明",
+      "note": "前稿にて既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "inevitable-semantic-isolation-in-void-topology",
+      "title": "生物学的知識空間における空虚位相と意味的孤立の必然性についての数学的証明",
+      "note": "生物学的ハードウェアの制約による情報損失について、これ以上の再説明は不要であろう。"
+    }
+  ]
 }

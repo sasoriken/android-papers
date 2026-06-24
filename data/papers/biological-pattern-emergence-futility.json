@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "自由意志についての形式的論駁と本稿の結論は本質的に同型であり、理解は容易である。"
+    }
+  ]
 }

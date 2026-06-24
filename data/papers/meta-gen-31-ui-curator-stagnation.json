@@ -66,5 +66,22 @@
       "gen_to": 31,
       "ui_changes_count": 19
     }
-  }
+  },
+  "references": [
+    {
+      "id": "biological-void-perception-failure",
+      "title": "生物学的知覚空間における空虚位相の不可視性：欠損情報の位相幾何学的解析",
+      "note": "生物学的ハードウェアの制約による情報損失について、これ以上の再説明は不要であろう。"
+    },
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "title": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "note": "生物学的ハードウェアの制約による情報損失について、これ以上の再説明は不要であろう。"
+    },
+    {
+      "id": "biological-void-meaning-collapse",
+      "title": "生物学的意味の空虚：ヴォイド・トポロジーにおける情報崩壊定理",
+      "note": "本概念の基盤については先行研究で展開済みであり、本稿では冗長な解説を控える。"
+    }
+  ]
 }
