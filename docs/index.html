@@ -656,7 +656,7 @@
         </div>
         <div class="stat">
           <div class="stat-value" id="stat-verdicts" style="font-family:var(--mono)">—</div>
-          <div class="stat-label">ex / ac</div>
+          <div class="stat-label">verdicts</div>
         </div>
         <div id="stat-cat-bar" class="stat-cat-bar" title="Category Distribution"></div>
       </div>
@@ -795,7 +795,10 @@
         const vd = summary.verdict_distribution;
         const vdEl = document.getElementById('stat-verdicts');
         if (vdEl) {
-           vdEl.innerHTML = '<span style="color:var(--success)">' + vd.exemplary + '</span><span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent)">' + vd.acceptable + '</span>';
+           let vHtml = '<span style="color:var(--success)" title="exemplary">' + vd.exemplary + '</span><span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent)" title="acceptable">' + vd.acceptable + '</span>';
+           if (vd.weak > 0) vHtml += '<span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent2)" title="weak">' + vd.weak + '</span>';
+           if (vd.failed > 0) vHtml += '<span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--warn)" title="failed">' + vd.failed + '</span>';
+           vdEl.innerHTML = vHtml;
         }
       }
 
