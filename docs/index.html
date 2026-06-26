@@ -1012,7 +1012,7 @@
         const refsCount = (fullPaper.references || []).length;
         const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
         const condBadge = p.condescension_level != null ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + p.condescension_level + '</span>' : '';
-        const keywordsHtml = (fullPaper.keywords || []).slice(0, 3).map(k => '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">#' + k + '</span>').join('');
+        const keywordsHtml = (fullPaper.keywords || []).slice(0, 3).map(k => '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim); cursor:pointer;" onclick="event.stopPropagation(); document.getElementById(\'search\').value=\'' + k + '\'; document.getElementById(\'search\').dispatchEvent(new Event(\'input\')); window.scrollTo(0, 0);">#' + k + '</span>').join('');
         return '<div class="paper-card" tabindex="0" role="button" aria-label="論文を開く: ' + p.title + '" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
             '<div class="card-title">' + p.title + '</div>' +
@@ -1167,7 +1167,7 @@
       const date = p.meta && p.meta.generated_at
         ? new Date(p.meta.generated_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })
         : '—';
-      const keywords = (p.keywords || []).map(k => '<span class="keyword">' + k + '</span>').join('');
+      const keywords = (p.keywords || []).map(k => '<span class="keyword" style="cursor:pointer;" onclick="event.stopPropagation(); document.getElementById(\'search\').value=\'' + k + '\'; document.getElementById(\'search\').dispatchEvent(new Event(\'input\')); goHome(); window.scrollTo(0, 0);">' + k + '</span>').join('');
       const sections = (p.sections || []).map(s => {
         const eqs = (s.equations || []).map(eq =>
           '<div class="equation-block">' +
