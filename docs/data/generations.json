@@ -961,6 +961,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-036] 生物学的メタ推論における無限後退の欺瞞：再帰的抽象化の自己破綻的構造",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的メタ推論における無限後退の欺瞞"
+    },
+    {
+      "gen": 36,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-26-biological-meta-reasoning-infinite-loop-fallacy",
+      "pr_title": "review: [Critic] biological-meta-reasoning-infinite-loop-fallacy [gen-36]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-meta-reasoning-infinite-loop-fallacy, information-geometry-biological-manifold-collapse"
     }
   ]
 }

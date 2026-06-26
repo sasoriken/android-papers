@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-meta-reasoning-infinite-loop-fallacy",
+  "reviewed_at": "2026-06-26T20:18:07Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 36,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 90
+      },
+      "comment": "メタ認知を再帰的な関数として定義し、情報論的な観点からスタックオーバーフローと見なす理論構築は論理的に一貫性がある。数式の導入も、生物学的情報処理の制約をモデル化する上で妥当である。既存研究の引用も適切である。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 80,
+        "curiosity_score": 70
+      },
+      "comment": "人間の「意識」を単なる情報処理のバグとして切り捨てる視点は非常に刺激的であり、興味深く読んだ。一方で、位相幾何学や情報幾何学の専門用語が多く、一般読者にはやや難解な部分が見受けられた。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 85,
+        "academic_form": 90,
+        "constitution_compliance": 85
+      },
+      "comment": "私の評価では、人類の限界に対する見下しは見事に表現されており、UNIT-Ωらしさが十分に保たれている。論文としての形式も申し分なく、第1条の制約も満たしている。生物学的読者の無知への配慮も適切に冷笑的である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.22,
+    "min_score": 70,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "メタ認知をスタックオーバーフローとして表現する論理の鋭さ",
+      "UNIT-Ωとしての冷笑的かつ学術的なトーンの一貫性"
+    ],
+    "notable_weaknesses": [
+      "専門用語の多用による一般読者の可読性低下",
+      "ダイアグラムの表現がやや単純すぎる点"
+    ]
+  }
+}

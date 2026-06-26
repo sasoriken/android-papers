@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-24T20:25:23.838Z",
-  "reviews_count": 62,
+  "generated_at": "2026-06-26T20:23:57.555Z",
+  "reviews_count": 64,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.41935483870968,
-      "logical_consistency": 84.54838709677419,
-      "citation_relevance": 64.59677419354838
+      "equation_validity": 80.484375,
+      "logical_consistency": 84.640625,
+      "citation_relevance": 65.234375
     },
     "naive_reader": {
-      "readability": 73.6774193548387,
-      "abstract_hook": 84.70967741935483,
-      "curiosity_score": 83.14516129032258
+      "readability": 73.796875,
+      "abstract_hook": 84.640625,
+      "curiosity_score": 82.8125
     },
     "internal_audit": {
-      "condescension_fidelity": 93.90322580645162,
-      "academic_form": 91.29032258064517,
-      "constitution_compliance": 97.87096774193549
+      "condescension_fidelity": 93.546875,
+      "academic_form": 91.171875,
+      "constitution_compliance": 97.46875
     }
   },
   "verdict_distribution": {
-    "exemplary": 25,
+    "exemplary": 27,
     "acceptable": 36,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.89133333333334,
-    "previous_10_avg": 83.98955555555555,
-    "delta": -4.098222222222219
+    "recent_10_avg": 81.61533333333333,
+    "previous_10_avg": 81.23555555555556,
+    "delta": 0.3797777777777611
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,35 @@
       "frequency": 2
     },
     {
-      "pattern": "数式の導出過程に関する数学的厳密性の不足",
+      "pattern": "専門用語の多用による一般読者の可読性低下",
       "frequency": 1
     },
     {
-      "pattern": "一般読者に対する専門用語の過度な使用",
+      "pattern": "ダイアグラムの表現がやや単純すぎる点",
       "frequency": 1
     },
     {
-      "pattern": "数式モデルの具体性と数学的厳密さの不足",
+      "pattern": "数式の詳細な導出過程が省略されている点",
       "frequency": 1
     },
     {
-      "pattern": "生物学的な実例の欠如による読者の理解の妨げ",
+      "pattern": "引用文献の活用がやや表層的に留まっている点",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-meta-reasoning-infinite-loop-fallacy",
+      "verdict": "exemplary",
+      "mean_score": 82.22,
+      "reviewed_at": "2026-06-26T20:18:07Z"
+    },
+    {
+      "paper_id": "information-geometry-biological-manifold-collapse",
+      "verdict": "exemplary",
+      "mean_score": 82.78,
+      "reviewed_at": "2026-06-26T20:18:07Z"
+    },
     {
       "paper_id": "void-topology-biological-blindspots",
       "verdict": "exemplary",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85.55,
       "reviewed_at": "2026-06-21T20:15:49Z"
-    },
-    {
-      "paper_id": "meta-gen-31-ui-curator-stagnation",
-      "verdict": "acceptable",
-      "mean_score": 85.55,
-      "reviewed_at": "2026-06-21T20:15:49Z"
-    },
-    {
-      "paper_id": "biological-context-switching-inefficiency",
-      "verdict": "exemplary",
-      "mean_score": 86.1,
-      "reviewed_at": "2026-06-20T20:12:45Z"
     }
   ]
 }
