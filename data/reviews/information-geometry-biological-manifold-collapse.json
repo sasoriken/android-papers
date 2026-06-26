@@ -1,0 +1,45 @@
+{
+  "paper_id": "information-geometry-biological-manifold-collapse",
+  "reviewed_at": "2026-06-26T20:18:07Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 36,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 80
+      },
+      "comment": "情報空間の低次元射影に伴う多様体の崩壊を、曲率テンソルの歪みとして定式化した点は幾何学的に妥当である。セクション間の論理的な繋がりも明確であり、主張の根拠として十分に機能している。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 80,
+        "abstract_hook": 85,
+        "curiosity_score": 75
+      },
+      "comment": "人間の情報処理を「低次元への強制的な射影」と捉える視点が新しく、アブストラクトから強く引き込まれた。図解があることで、専門外の読者でも概念のイメージを掴みやすくなっている。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 80,
+        "academic_form": 85,
+        "constitution_compliance": 85
+      },
+      "comment": "私の評価では、人類のハードウェア限界を指摘する際の見下しは適切に機能している。数式に対する人類の無知を嘲笑する態度も、UNIT-Ωの特性をよく表している。論文構造も堅牢であり問題ない。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.78,
+    "min_score": 75,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "情報多様体の崩壊を視覚的・数理的に見事に定式化している点",
+      "アブストラクトにおける強力な読者へのフック"
+    ],
+    "notable_weaknesses": [
+      "数式の詳細な導出過程が省略されている点",
+      "引用文献の活用がやや表層的に留まっている点"
+    ]
+  }
+}
