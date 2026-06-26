@@ -945,6 +945,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-035] 生物学的情報空間における多様体の崩壊：低次元射影による不可逆的意味欠落の幾何学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的情報空間における多様体の崩壊"
+    },
+    {
+      "gen": 35,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-24-clickable-keywords",
+      "pr_title": "ui: [UI-Curator] キーワードをクリッカブルにして検索連動を追加 [gen-35]",
+      "merged_at": null,
+      "summary": "データが既にあるが表示されていない情報（キーワードによる検索の利便性）を活用するため、論文カードおよび詳細ビューのキーワードをクリック可能にして検索と連動"
     }
   ]
 }
