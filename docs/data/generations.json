@@ -1,5 +1,5 @@
 {
-  "current_generation": 34,
+  "current_generation": 35,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -937,6 +937,14 @@
       "pr_title": "review: [Critic] void-topology-biological-blindspots [gen-34]",
       "merged_at": null,
       "summary": "1 件のレビュー: void-topology-biological-blindspots"
+    },
+    {
+      "gen": 35,
+      "role": "generator",
+      "branch": "jules/gen-035-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-035] 生物学的情報空間における多様体の崩壊：低次元射影による不可逆的意味欠落の幾何学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的情報空間における多様体の崩壊"
     }
   ]
 }
