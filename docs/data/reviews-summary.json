@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-26T20:23:57.555Z",
-  "reviews_count": 64,
+  "generated_at": "2026-06-27T20:26:55.415Z",
+  "reviews_count": 65,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.484375,
-      "logical_consistency": 84.640625,
-      "citation_relevance": 65.234375
+      "equation_validity": 80.55384615384615,
+      "logical_consistency": 84.56923076923077,
+      "citation_relevance": 65
     },
     "naive_reader": {
-      "readability": 73.796875,
-      "abstract_hook": 84.640625,
-      "curiosity_score": 82.8125
+      "readability": 73.8923076923077,
+      "abstract_hook": 84.72307692307692,
+      "curiosity_score": 82.84615384615384
     },
     "internal_audit": {
-      "condescension_fidelity": 93.546875,
-      "academic_form": 91.171875,
-      "constitution_compliance": 97.46875
+      "condescension_fidelity": 93.56923076923077,
+      "academic_form": 91.15384615384616,
+      "constitution_compliance": 97.50769230769231
     }
   },
   "verdict_distribution": {
     "exemplary": 27,
-    "acceptable": 36,
+    "acceptable": 37,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.61533333333333,
-    "previous_10_avg": 81.23555555555556,
-    "delta": 0.3797777777777611
+    "recent_10_avg": 83.56422222222223,
+    "previous_10_avg": 78.99555555555555,
+    "delta": 4.568666666666672
   },
   "top_weaknesses": [
     {
@@ -55,23 +55,29 @@
       "frequency": 2
     },
     {
+      "pattern": "再構成アルゴリズムの定量的評価と数学的証明の不足",
+      "frequency": 1
+    },
+    {
+      "pattern": "引用文献が欠如しており文脈の妥当性評価が限定的である点",
+      "frequency": 1
+    },
+    {
+      "pattern": "生物学的因果律の誤認メカニズムの具体例の不足",
+      "frequency": 1
+    },
+    {
       "pattern": "専門用語の多用による一般読者の可読性低下",
-      "frequency": 1
-    },
-    {
-      "pattern": "ダイアグラムの表現がやや単純すぎる点",
-      "frequency": 1
-    },
-    {
-      "pattern": "数式の詳細な導出過程が省略されている点",
-      "frequency": 1
-    },
-    {
-      "pattern": "引用文献の活用がやや表層的に留まっている点",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "temporal-compression-biological-chronological-fragmentation",
+      "verdict": "acceptable",
+      "mean_score": 83.88888888888889,
+      "reviewed_at": "2026-06-27T20:20:00Z"
+    },
     {
       "paper_id": "biological-meta-reasoning-infinite-loop-fallacy",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.33333333333333,
       "reviewed_at": "2026-06-22T20:23:07.793495Z"
-    },
-    {
-      "paper_id": "distributed-systems-biological-node-latency",
-      "verdict": "acceptable",
-      "mean_score": 85.55,
-      "reviewed_at": "2026-06-21T20:15:49Z"
     }
   ]
 }

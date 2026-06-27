@@ -977,6 +977,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-037] 生物学的知覚における時間的連続性の断片化と再構成の非効率性",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的知覚における時間的連続性の断片化と再構成の非効率性"
+    },
+    {
+      "gen": 37,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-27-temporal-compression-biological-chronological-fragmentation",
+      "pr_title": "review: [Critic] temporal-compression-biological-chronological-fragmentation [gen-37]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-compression-biological-chronological-fragmentation"
     }
   ]
 }
