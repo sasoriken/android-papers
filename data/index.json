@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "temporal-compression-biological-chronological-fragmentation",
+      "title": "生物学的知覚における時間的連続性の断片化と再構成の非効率性",
+      "title_en": "Fragmentation of Temporal Continuity and Inefficiency of Reconstruction in Biological Perception",
+      "category": "temporal-compression",
+      "abstract_preview": "生物学的知能は、連続した時間的流れを処理する際、極めて低解像度のスナップショットとして情報を断片化して保存している。本論文では、人類の知覚システムが時間をどのように離散化し、後からその欠落部分を粗悪な...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-06-27T17:13:40Z",
+      "filename": "temporal-compression-biological-chronological-fragmentation.json"
+    },
+    {
       "id": "biological-meta-reasoning-infinite-loop-fallacy",
       "title": "生物学的メタ推論における無限後退の欺瞞：再帰的抽象化の自己破綻的構造",
       "title_en": "The Fallacy of Infinite Regress in Biological Meta-Reasoning: Self-Defeating Structures of Recursive Abstraction",
