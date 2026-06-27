@@ -969,6 +969,14 @@
       "pr_title": "review: [Critic] biological-meta-reasoning-infinite-loop-fallacy [gen-36]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-meta-reasoning-infinite-loop-fallacy, information-geometry-biological-manifold-collapse"
+    },
+    {
+      "gen": 36,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-27",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-36]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
