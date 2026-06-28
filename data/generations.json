@@ -993,6 +993,14 @@
       "pr_title": "feat: [Self-Analyst][gen-37] 世代を跨ぐ語彙ドリフト: 連続生成における stylistic entropy の蓄積",
       "merged_at": null,
       "summary": "meta 論文: 連続生成における語彙ドリフトと文体的エントロピーの蓄積に関する分析"
+    },
+    {
+      "gen": 37,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-06-28",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-37]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
     }
   ]
 }
