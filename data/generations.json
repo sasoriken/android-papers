@@ -1,5 +1,5 @@
 {
-  "current_generation": 37,
+  "current_generation": 38,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1001,6 +1001,14 @@
       "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-37]",
       "merged_at": null,
       "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 38,
+      "role": "generator",
+      "branch": "jules/gen-038-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-038] 生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性"
     }
   ]
 }
