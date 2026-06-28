@@ -1,0 +1,53 @@
+{
+  "proposal_id": "2026-06-28-citation-relevance-improve",
+  "created_at": "2026-06-28T12:11:27.529Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 37,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "学術的裏付けの乏しさ",
+      "frequency": 2,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式モデルの単純さ",
+      "frequency": 2,
+      "affected_axes": [
+        "equation_validity"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビュー分析において、「学術的裏付けの乏しさ」および「数式モデルの単純さ」という弱点が複数回指摘され、citation_relevanceの平均スコアが58.90と特に低い。また、equation_validityも74.75と低迷している。ジェネレーターが論文を生成する際、より複雑で説得力のある数式と、既存論文からの引用を含めるよう明示的に要求することで、これらの指標を改善できる可能性が高い。",
+      "expected_impact": [
+        "citation_relevance",
+        "equation_validity"
+      ],
+      "proposed_text": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効かつ複雑で非自明な LaTeX 数式モデルを記載。単なる一次方程式等の単純なモデルは避ける\n- (任意だが強く推奨) `references` を追加し、既存の架空論文等からの学術的裏付け・引用を文脈に合わせて最低1〜2件は組み込む",
+      "anchor": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のフォーマット指定を壊さず、複雑さと引用の追加を促すだけであるため。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "ジェネレーター向けプロンプトの改善案です。"
+  }
+}
