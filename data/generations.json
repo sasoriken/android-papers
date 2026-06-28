@@ -1009,6 +1009,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-038] 生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性"
+    },
+    {
+      "gen": 38,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-28-cognitive-architecture-biological-cache-miss",
+      "pr_title": "review: [Critic] cognitive-architecture-biological-cache-miss [gen-38]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: cognitive-architecture-biological-cache-miss, meta-gen-37-stylistic-entropy-accumulation"
     }
   ]
 }
