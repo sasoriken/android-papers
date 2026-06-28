@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-27T20:26:55.415Z",
-  "reviews_count": 65,
+  "generated_at": "2026-06-28T20:43:18.459Z",
+  "reviews_count": 67,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.55384615384615,
-      "logical_consistency": 84.56923076923077,
-      "citation_relevance": 65
+      "equation_validity": 80.61194029850746,
+      "logical_consistency": 84.65671641791045,
+      "citation_relevance": 64.55223880597015
     },
     "naive_reader": {
-      "readability": 73.8923076923077,
-      "abstract_hook": 84.72307692307692,
-      "curiosity_score": 82.84615384615384
+      "readability": 74.22388059701493,
+      "abstract_hook": 84.88059701492537,
+      "curiosity_score": 82.98507462686567
     },
     "internal_audit": {
-      "condescension_fidelity": 93.56923076923077,
-      "academic_form": 91.15384615384616,
-      "constitution_compliance": 97.50769230769231
+      "condescension_fidelity": 93.53731343283582,
+      "academic_form": 91.34328358208955,
+      "constitution_compliance": 97.58208955223881
     }
   },
   "verdict_distribution": {
     "exemplary": 27,
-    "acceptable": 37,
+    "acceptable": 39,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.56422222222223,
-    "previous_10_avg": 78.99555555555555,
-    "delta": 4.568666666666672
+    "recent_10_avg": 83.88622222222222,
+    "previous_10_avg": 79.50666666666666,
+    "delta": 4.379555555555555
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,10 @@
       "frequency": 3
     },
     {
+      "pattern": "参考文献の欠落（引用妥当性の低下）",
+      "frequency": 2
+    },
+    {
       "pattern": "学術的裏付けの乏しさ",
       "frequency": 2
     },
@@ -55,23 +59,31 @@
       "frequency": 2
     },
     {
+      "pattern": "並列処理能力の過小評価",
+      "frequency": 1
+    },
+    {
+      "pattern": "サンプルサイズの小ささ",
+      "frequency": 1
+    },
+    {
       "pattern": "再構成アルゴリズムの定量的評価と数学的証明の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "引用文献が欠如しており文脈の妥当性評価が限定的である点",
-      "frequency": 1
-    },
-    {
-      "pattern": "生物学的因果律の誤認メカニズムの具体例の不足",
-      "frequency": 1
-    },
-    {
-      "pattern": "専門用語の多用による一般読者の可読性低下",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "cognitive-architecture-biological-cache-miss",
+      "verdict": "acceptable",
+      "mean_score": 84.44,
+      "reviewed_at": "2026-06-28T20:30:12Z"
+    },
+    {
+      "paper_id": "meta-gen-37-stylistic-entropy-accumulation",
+      "verdict": "acceptable",
+      "mean_score": 85,
+      "reviewed_at": "2026-06-28T20:30:12Z"
+    },
     {
       "paper_id": "temporal-compression-biological-chronological-fragmentation",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 82.78,
       "reviewed_at": "2026-06-26T20:18:07Z"
-    },
-    {
-      "paper_id": "void-topology-biological-blindspots",
-      "verdict": "exemplary",
-      "mean_score": 85,
-      "reviewed_at": "2026-06-24T20:16:37Z"
-    },
-    {
-      "paper_id": "biological-pattern-emergence-futility",
-      "verdict": "acceptable",
-      "mean_score": 78.33333333333333,
-      "reviewed_at": "2026-06-22T20:23:07.793495Z"
     }
   ]
 }
