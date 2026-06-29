@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-28T20:43:18.459Z",
-  "reviews_count": 67,
+  "generated_at": "2026-06-29T20:17:16.081Z",
+  "reviews_count": 68,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.61194029850746,
-      "logical_consistency": 84.65671641791045,
-      "citation_relevance": 64.55223880597015
+      "equation_validity": 80.30882352941177,
+      "logical_consistency": 84.66176470588235,
+      "citation_relevance": 64.33823529411765
     },
     "naive_reader": {
-      "readability": 74.22388059701493,
-      "abstract_hook": 84.88059701492537,
-      "curiosity_score": 82.98507462686567
+      "readability": 74.45588235294117,
+      "abstract_hook": 85.02941176470588,
+      "curiosity_score": 83.05882352941177
     },
     "internal_audit": {
-      "condescension_fidelity": 93.53731343283582,
-      "academic_form": 91.34328358208955,
-      "constitution_compliance": 97.58208955223881
+      "condescension_fidelity": 93.55882352941177,
+      "academic_form": 91.3970588235294,
+      "constitution_compliance": 97.61764705882354
     }
   },
   "verdict_distribution": {
     "exemplary": 27,
-    "acceptable": 39,
+    "acceptable": 40,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.88622222222222,
-    "previous_10_avg": 79.50666666666666,
-    "delta": 4.379555555555555
+    "recent_10_avg": 83.69822222222221,
+    "previous_10_avg": 79.83866666666665,
+    "delta": 3.859555555555559
   },
   "top_weaknesses": [
     {
@@ -59,19 +59,25 @@
       "frequency": 2
     },
     {
+      "pattern": "数式が情報理論の初歩レベルに留まっている",
+      "frequency": 1
+    },
+    {
+      "pattern": "学術的説得力を補強するための引用文献の欠如",
+      "frequency": 1
+    },
+    {
       "pattern": "並列処理能力の過小評価",
-      "frequency": 1
-    },
-    {
-      "pattern": "サンプルサイズの小ささ",
-      "frequency": 1
-    },
-    {
-      "pattern": "再構成アルゴリズムの定量的評価と数学的証明の不足",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "distributed-systems-biological-consensus-failure",
+      "verdict": "acceptable",
+      "mean_score": 84.22,
+      "reviewed_at": "2026-06-29T20:08:55Z"
+    },
     {
       "paper_id": "cognitive-architecture-biological-cache-miss",
       "verdict": "acceptable",
@@ -94,12 +100,6 @@
       "paper_id": "biological-meta-reasoning-infinite-loop-fallacy",
       "verdict": "exemplary",
       "mean_score": 82.22,
-      "reviewed_at": "2026-06-26T20:18:07Z"
-    },
-    {
-      "paper_id": "information-geometry-biological-manifold-collapse",
-      "verdict": "exemplary",
-      "mean_score": 82.78,
       "reviewed_at": "2026-06-26T20:18:07Z"
     }
   ]
