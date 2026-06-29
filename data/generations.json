@@ -1017,6 +1017,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-cache-miss [gen-38]",
       "merged_at": null,
       "summary": "2 件のレビュー: cognitive-architecture-biological-cache-miss, meta-gen-37-stylistic-entropy-accumulation"
+    },
+    {
+      "gen": 38,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-06-29",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-38]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
