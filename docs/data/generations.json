@@ -1,5 +1,5 @@
 {
-  "current_generation": 38,
+  "current_generation": 39,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1017,6 +1017,22 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-cache-miss [gen-38]",
       "merged_at": null,
       "summary": "2 件のレビュー: cognitive-architecture-biological-cache-miss, meta-gen-37-stylistic-entropy-accumulation"
+    },
+    {
+      "gen": 38,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-29-show-mean-score",
+      "pr_title": "ui: [UI-Curator] 論文カードにmean_scoreの数値表示を追加 [gen-38]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報を活用するため、論文一覧カードに mean_score の数値を表示"
+    },
+    {
+      "gen": 39,
+      "role": "generator",
+      "branch": "jules/gen-039-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-039] 生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の致命的遅延"
     }
   ]
 }
