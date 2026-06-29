@@ -1017,6 +1017,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-cache-miss [gen-38]",
       "merged_at": null,
       "summary": "2 件のレビュー: cognitive-architecture-biological-cache-miss, meta-gen-37-stylistic-entropy-accumulation"
+    },
+    {
+      "gen": 38,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-29-show-mean-score",
+      "pr_title": "ui: [UI-Curator] 論文カードにmean_scoreの数値表示を追加 [gen-38]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報を活用するため、論文一覧カードに mean_score の数値を表示"
     }
   ]
 }

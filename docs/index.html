@@ -1034,6 +1034,10 @@
               '<div class="comp-bar"><div class="comp-fill" style="width:' + (comp * 10) + '%"></div></div>' +
               comp + '%' +
             '</div>' +
+            (getReviewFor(p.filename.replace('.json', '')) && getReviewFor(p.filename.replace('.json', '')).mean_score ?
+              '<div style="text-align:right; margin-bottom:.3rem;" title="Mean Score">' +
+                '<span style="font-size:1.0rem; color:var(--success); font-weight:700;">' + getReviewFor(p.filename.replace('.json', '')).mean_score.toFixed(1) + '</span>' +
+              '</div>' : '') +
             '<div class="card-id">#' + p.id.slice(0, 16) + '</div>' +
           '</div>' +
         '</div>';
