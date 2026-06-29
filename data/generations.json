@@ -1033,6 +1033,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-039] 生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の致命的遅延"
+    },
+    {
+      "gen": 39,
+      "role": "critic",
+      "branch": "jules/critic-2026-06-29-distributed-systems-biological-consensus-failure",
+      "pr_title": "review: [Critic] distributed-systems-biological-consensus-failure [gen-39]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: distributed-systems-biological-consensus-failure"
     }
   ]
 }
