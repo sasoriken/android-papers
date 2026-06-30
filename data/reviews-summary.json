@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-29T20:17:16.081Z",
-  "reviews_count": 68,
+  "generated_at": "2026-06-30T20:44:18.983Z",
+  "reviews_count": 69,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.30882352941177,
-      "logical_consistency": 84.66176470588235,
-      "citation_relevance": 64.33823529411765
+      "equation_validity": 80.3768115942029,
+      "logical_consistency": 84.6231884057971,
+      "citation_relevance": 64.56521739130434
     },
     "naive_reader": {
-      "readability": 74.45588235294117,
-      "abstract_hook": 85.02941176470588,
-      "curiosity_score": 83.05882352941177
+      "readability": 74.31884057971014,
+      "abstract_hook": 85.10144927536231,
+      "curiosity_score": 83.1304347826087
     },
     "internal_audit": {
-      "condescension_fidelity": 93.55882352941177,
-      "academic_form": 91.3970588235294,
-      "constitution_compliance": 97.61764705882354
+      "condescension_fidelity": 93.57971014492753,
+      "academic_form": 91.3768115942029,
+      "constitution_compliance": 97.65217391304348
     }
   },
   "verdict_distribution": {
-    "exemplary": 27,
+    "exemplary": 28,
     "acceptable": 40,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.69822222222221,
-    "previous_10_avg": 79.83866666666665,
-    "delta": 3.859555555555559
+    "recent_10_avg": 83.75322222222222,
+    "previous_10_avg": 80.14966666666666,
+    "delta": 3.603555555555559
   },
   "top_weaknesses": [
     {
@@ -59,19 +59,25 @@
       "frequency": 2
     },
     {
+      "pattern": "数式の厳密な導出がやや不足している",
+      "frequency": 1
+    },
+    {
+      "pattern": "一般読者には専門用語がやや障壁となり得る",
+      "frequency": 1
+    },
+    {
       "pattern": "数式が情報理論の初歩レベルに留まっている",
-      "frequency": 1
-    },
-    {
-      "pattern": "学術的説得力を補強するための引用文献の欠如",
-      "frequency": 1
-    },
-    {
-      "pattern": "並列処理能力の過小評価",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "emergence-theory-biological-illusionary-order",
+      "verdict": "exemplary",
+      "mean_score": 86.1,
+      "reviewed_at": "2026-06-30T20:15:18Z"
+    },
     {
       "paper_id": "distributed-systems-biological-consensus-failure",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.88888888888889,
       "reviewed_at": "2026-06-27T20:20:00Z"
-    },
-    {
-      "paper_id": "biological-meta-reasoning-infinite-loop-fallacy",
-      "verdict": "exemplary",
-      "mean_score": 82.22,
-      "reviewed_at": "2026-06-26T20:18:07Z"
     }
   ]
 }
