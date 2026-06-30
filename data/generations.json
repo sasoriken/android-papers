@@ -1,5 +1,5 @@
 {
-  "current_generation": 39,
+  "current_generation": 40,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1049,6 +1049,14 @@
       "pr_title": "ui: [UI-Curator] 統計バーに評価分布のビジュアルバーを追加 [gen-039]",
       "merged_at": null,
       "summary": "統計バー内の評価(verdict)の配分を視覚化するため、reviews_summary.verdict_distributionのデータに基づいてミニスパークラインバーを追加"
+    },
+    {
+      "gen": 40,
+      "role": "generator",
+      "branch": "jules/gen-040-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-040] 生物学的群集における錯覚的創発：局所的無知に基づく見かけの秩序形成の限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的群集における錯覚的創発：局所的無知に基づく見かけの秩序形成の限界"
     }
   ]
 }
