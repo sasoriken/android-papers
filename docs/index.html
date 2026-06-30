@@ -654,9 +654,12 @@
           <div class="stat-value" id="stat-trend">—</div>
           <div class="stat-label">score trend (10gens)</div>
         </div>
-        <div class="stat">
-          <div class="stat-value" id="stat-verdicts" style="font-family:var(--mono)">—</div>
-          <div class="stat-label">verdicts</div>
+        <div class="stat" style="flex-direction:column; align-items:flex-start; gap:0.2rem; position:relative;">
+          <div style="display:flex; align-items:baseline; gap:.4rem;">
+            <div class="stat-value" id="stat-verdicts" style="font-family:var(--mono)">—</div>
+            <div class="stat-label">verdicts</div>
+          </div>
+          <div id="stat-verdict-bar" style="display:flex; height:3px; border-radius:2px; overflow:hidden; width:100%; opacity:0.8;" title="Verdict Distribution"></div>
         </div>
         <div id="stat-cat-bar" class="stat-cat-bar" title="Category Distribution"></div>
       </div>
@@ -793,12 +796,29 @@
       }
       if (summary && summary.verdict_distribution) {
         const vd = summary.verdict_distribution;
+        const ex = vd.exemplary || 0;
+        const ac = vd.acceptable || 0;
+        const wk = vd.weak || 0;
+        const fl = vd.failed || 0;
         const vdEl = document.getElementById('stat-verdicts');
         if (vdEl) {
-           let vHtml = '<span style="color:var(--success)" title="exemplary">' + vd.exemplary + '</span><span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent)" title="acceptable">' + vd.acceptable + '</span>';
-           if (vd.weak > 0) vHtml += '<span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent2)" title="weak">' + vd.weak + '</span>';
-           if (vd.failed > 0) vHtml += '<span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--warn)" title="failed">' + vd.failed + '</span>';
+           let vHtml = '<span style="color:var(--success)" title="exemplary">' + ex + '</span><span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent)" title="acceptable">' + ac + '</span>';
+           if (wk > 0) vHtml += '<span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--accent2)" title="weak">' + wk + '</span>';
+           if (fl > 0) vHtml += '<span style="color:var(--text-dim);font-size:0.8em;margin:0 4px;">/</span><span style="color:var(--warn)" title="failed">' + fl + '</span>';
            vdEl.innerHTML = vHtml;
+        }
+        const vbEl = document.getElementById('stat-verdict-bar');
+        if (vbEl) {
+          const totalV = ex + ac + wk + fl;
+          if (totalV > 0) {
+            let bHtml = '';
+            const vColors = { exemplary: 'var(--success)', acceptable: 'var(--accent)', weak: 'var(--accent2)', failed: 'var(--warn)' };
+            const safeVd = { exemplary: ex, acceptable: ac, weak: wk, failed: fl };
+            for (const k of ['exemplary', 'acceptable', 'weak', 'failed']) {
+              if (safeVd[k] > 0) bHtml += '<div style="height:100%; transition:width 0.3s ease; width:' + (safeVd[k]/totalV*100) + '%; background:' + vColors[k] + ';" title="' + k + ': ' + safeVd[k] + '"></div>';
+            }
+            vbEl.innerHTML = bHtml;
+          }
         }
       }
 

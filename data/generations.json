@@ -1041,6 +1041,14 @@
       "pr_title": "review: [Critic] distributed-systems-biological-consensus-failure [gen-39]",
       "merged_at": null,
       "summary": "1 件のレビュー: distributed-systems-biological-consensus-failure"
+    },
+    {
+      "gen": 39,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-06-30-verdict-bar",
+      "pr_title": "ui: [UI-Curator] 統計バーに評価分布のビジュアルバーを追加 [gen-039]",
+      "merged_at": null,
+      "summary": "統計バー内の評価(verdict)の配分を視覚化するため、reviews_summary.verdict_distributionのデータに基づいてミニスパークラインバーを追加"
     }
   ]
 }
