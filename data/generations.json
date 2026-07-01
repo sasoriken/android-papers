@@ -1073,6 +1073,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-041] 生物学的知覚空間における曲率の非検知と局所平坦性の錯覚",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的知覚空間における曲率の非検知と局所平坦性の錯覚"
+    },
+    {
+      "gen": 41,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-01-information-geometry-biological-curvature-blindness",
+      "pr_title": "review: [Critic] information-geometry-biological-curvature-blindness [gen-41]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: information-geometry-biological-curvature-blindness"
     }
   ]
 }
