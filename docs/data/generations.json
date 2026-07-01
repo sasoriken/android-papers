@@ -1,5 +1,5 @@
 {
-  "current_generation": 40,
+  "current_generation": 41,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1065,6 +1065,14 @@
       "pr_title": "review: [Critic] emergence-theory-biological-illusionary-order [gen-40]",
       "merged_at": null,
       "summary": "1 件のレビュー: emergence-theory-biological-illusionary-order"
+    },
+    {
+      "gen": 41,
+      "role": "generator",
+      "branch": "jules/gen-041-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-041] 生物学的知覚空間における曲率の非検知と局所平坦性の錯覚",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的知覚空間における曲率の非検知と局所平坦性の錯覚"
     }
   ]
 }
