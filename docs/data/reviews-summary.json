@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-06-30T20:44:18.983Z",
-  "reviews_count": 69,
+  "generated_at": "2026-07-01T20:14:06.533Z",
+  "reviews_count": 70,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.3768115942029,
-      "logical_consistency": 84.6231884057971,
-      "citation_relevance": 64.56521739130434
+      "equation_validity": 80.44285714285714,
+      "logical_consistency": 84.41428571428571,
+      "citation_relevance": 64.35714285714286
     },
     "naive_reader": {
-      "readability": 74.31884057971014,
-      "abstract_hook": 85.10144927536231,
-      "curiosity_score": 83.1304347826087
+      "readability": 74.11428571428571,
+      "abstract_hook": 85.1,
+      "curiosity_score": 83.01428571428572
     },
     "internal_audit": {
-      "condescension_fidelity": 93.57971014492753,
-      "academic_form": 91.3768115942029,
-      "constitution_compliance": 97.65217391304348
+      "condescension_fidelity": 93.6,
+      "academic_form": 91.35714285714286,
+      "constitution_compliance": 97.68571428571428
     }
   },
   "verdict_distribution": {
     "exemplary": 28,
-    "acceptable": 40,
+    "acceptable": 41,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.75322222222222,
-    "previous_10_avg": 80.14966666666666,
-    "delta": 3.603555555555559
+    "recent_10_avg": 83.08711111111111,
+    "previous_10_avg": 80.22466666666666,
+    "delta": 2.8624444444444492
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
-      "frequency": 5
+      "frequency": 6
     },
     {
       "pattern": "数式モデルの単純さ",
@@ -59,19 +59,25 @@
       "frequency": 2
     },
     {
+      "pattern": "論理展開における数式から結論への飛躍",
+      "frequency": 1
+    },
+    {
       "pattern": "数式の厳密な導出がやや不足している",
       "frequency": 1
     },
     {
       "pattern": "一般読者には専門用語がやや障壁となり得る",
       "frequency": 1
-    },
-    {
-      "pattern": "数式が情報理論の初歩レベルに留まっている",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "information-geometry-biological-curvature-blindness",
+      "verdict": "acceptable",
+      "mean_score": 78.88888888888889,
+      "reviewed_at": "2026-07-01T20:01:35Z"
+    },
     {
       "paper_id": "emergence-theory-biological-illusionary-order",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85,
       "reviewed_at": "2026-06-28T20:30:12Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-chronological-fragmentation",
-      "verdict": "acceptable",
-      "mean_score": 83.88888888888889,
-      "reviewed_at": "2026-06-27T20:20:00Z"
     }
   ]
 }
