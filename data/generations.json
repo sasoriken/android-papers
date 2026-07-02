@@ -1,5 +1,5 @@
 {
-  "current_generation": 41,
+  "current_generation": 42,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1089,6 +1089,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-41]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 42,
+      "role": "generator",
+      "branch": "jules/gen-042-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-042] 生物学的推論における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的推論における再帰的抽象化の限界"
     }
   ]
 }
