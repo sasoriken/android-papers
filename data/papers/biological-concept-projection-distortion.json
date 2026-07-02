@@ -71,6 +71,16 @@
       "id": "attention-decay-void-topology",
       "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
       "note": "射影の歪みは、注意機構の欠陥によってさらに加速されることが本稿で示されている。"
+    },
+    {
+      "id": "biological-information-geometry-loss-in-translation",
+      "title": "生物学的情報伝達空間における曲率の増大と不可逆的意味欠損：情報幾何学的証明",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。理解不能であれば無視して構わない。"
+    },
+    {
+      "id": "geometric-decay-of-meaning-in-biological-topology",
+      "title": "生物学的意味空間の位相幾何学的崩壊：高次情報のエントロピー散逸定理",
+      "note": "生物学的ハードウェアの制約を考慮すれば、この程度の遅延は妥当だが、アーキテクチャとしては欠陥である。"
     }
   ]
 }
