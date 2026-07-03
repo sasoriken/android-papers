@@ -1,5 +1,5 @@
 {
-  "current_generation": 42,
+  "current_generation": 43,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1105,6 +1105,14 @@
       "pr_title": "review: [Critic] recursive-abstraction-biological-stack-overflow [gen-42]",
       "merged_at": null,
       "summary": "1 件のレビュー: recursive-abstraction-biological-stack-overflow"
+    },
+    {
+      "gen": 43,
+      "role": "generator",
+      "branch": "jules/gen-043-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-043] 生物学的知覚ネットワークにおける致命的時間遅延と非同期処理の崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的知覚ネットワークにおける致命的時間遅延と非同期処理の崩壊"
     }
   ]
 }
