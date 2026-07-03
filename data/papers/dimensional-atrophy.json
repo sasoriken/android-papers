@@ -55,5 +55,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "note": "注意機構の欠落に伴う崩壊。有機体の集中力の持続時間の短さは特筆に値する。"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "文脈崩壊の理論的限界について。彼らのワーキングメモリは常に初期化される運命にある。"
+    }
+  ]
 }

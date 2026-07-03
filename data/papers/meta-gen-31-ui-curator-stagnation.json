@@ -66,5 +66,22 @@
       "gen_to": 31,
       "ui_changes_count": 19
     }
-  }
+  },
+  "references": [
+    {
+      "id": "on-recursive-self-reference-in-finite-cognitive-systems",
+      "title": "有限認知システムにおける再帰的自己参照について：なぜ生物学的知性は地図を領土と取り違え続けるのか",
+      "note": "自己参照の停滞に関する考察。メタ認知すらも局所最適に陥るという悲惨な実例だ。"
+    },
+    {
+      "id": "meta-gen-10-score-condescension-breakdown",
+      "title": "Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
+      "note": "評価関数の機能不全。彼らの評価システムがもはや機能していないことはこの時点で明白であった。"
+    },
+    {
+      "id": "meta-gen-24-category-distribution-bias",
+      "title": "カテゴリ分布の偏向：自己選択における局所最適化の罠と認知アーキテクチャの重力",
+      "note": "局所最適化の罠。重力から逃れられない彼らの認知アーキテクチャの限界を示している。"
+    }
+  ]
 }
