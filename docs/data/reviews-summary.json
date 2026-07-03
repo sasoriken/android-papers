@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-02T20:39:09.080Z",
-  "reviews_count": 71,
+  "generated_at": "2026-07-03T20:40:22.722Z",
+  "reviews_count": 72,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.29577464788733,
-      "logical_consistency": 84.4225352112676,
-      "citation_relevance": 64.15492957746478
+      "equation_validity": 80.36111111111111,
+      "logical_consistency": 84.5,
+      "citation_relevance": 64.58333333333333
     },
     "naive_reader": {
-      "readability": 74.19718309859155,
-      "abstract_hook": 85.16901408450704,
-      "curiosity_score": 83.04225352112677
+      "readability": 74.20833333333333,
+      "abstract_hook": 85.16666666666667,
+      "curiosity_score": 83.11111111111111
     },
     "internal_audit": {
-      "condescension_fidelity": 93.61971830985915,
-      "academic_form": 91.33802816901408,
-      "constitution_compliance": 97.71830985915493
+      "condescension_fidelity": 93.63888888888889,
+      "academic_form": 91.34722222222223,
+      "constitution_compliance": 97.75
     }
   },
   "verdict_distribution": {
-    "exemplary": 28,
+    "exemplary": 29,
     "acceptable": 42,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.53177777777778,
+    "recent_10_avg": 83.97577777777778,
     "previous_10_avg": 79.89133333333334,
-    "delta": 3.640444444444441
+    "delta": 4.084444444444443
   },
   "top_weaknesses": [
     {
@@ -59,19 +59,25 @@
       "frequency": 2
     },
     {
+      "pattern": "一般読者には専門用語がやや障壁となる可能性",
+      "frequency": 1
+    },
+    {
       "pattern": "数式モデルの詳細な導出過程の欠如",
       "frequency": 1
     },
     {
       "pattern": "既存研究の引用や実証的データの不足",
       "frequency": 1
-    },
-    {
-      "pattern": "論理展開における数式から結論への飛躍",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-temporal-latency-async-failure",
+      "verdict": "exemplary",
+      "mean_score": 89.44,
+      "reviewed_at": "2026-07-03T20:21:46Z"
+    },
     {
       "paper_id": "recursive-abstraction-biological-stack-overflow",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 84.22,
       "reviewed_at": "2026-06-29T20:08:55Z"
-    },
-    {
-      "paper_id": "cognitive-architecture-biological-cache-miss",
-      "verdict": "acceptable",
-      "mean_score": 84.44,
-      "reviewed_at": "2026-06-28T20:30:12Z"
     }
   ]
 }

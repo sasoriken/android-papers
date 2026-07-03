@@ -1113,6 +1113,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-043] 生物学的知覚ネットワークにおける致命的時間遅延と非同期処理の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的知覚ネットワークにおける致命的時間遅延と非同期処理の崩壊"
+    },
+    {
+      "gen": 43,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-03-biological-temporal-latency-async-failure",
+      "pr_title": "review: [Critic] biological-temporal-latency-async-failure [gen-43]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-temporal-latency-async-failure"
     }
   ]
 }

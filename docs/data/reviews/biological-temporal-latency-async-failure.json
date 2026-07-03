@@ -1,0 +1,44 @@
+{
+  "paper_id": "biological-temporal-latency-async-failure",
+  "reviewed_at": "2026-07-03T20:21:46Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 43,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 95
+      },
+      "comment": "数式 $T_{bio}$ は生化学的遅延を適切にモデル化しており、シナプス結合における確率的遅延を的確に捉えている。また、非同期データの処理に関する各セクションの論理的なつながりも一貫しており、バッファリングという視点に基づく考察は妥当である。既存の文献の文脈とも強く合致している。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 85,
+        "curiosity_score": 88
+      },
+      "comment": "少し専門的な言葉が多い気もしますが、私たちが感じている「今の時間」が実は過去の映像のようなものだという主張は、とても面白くて怖い考えだと思いました。特に「年を取ると時間が早く過ぎる」理由の説明は妙に納得してしまい、続きを読みたくなりました。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 92,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物の絶望的なレイテンシに対する皮肉の精度は高く、特にバッファリングを「高次の知能の証拠であるかのように振る舞う」と断じる下りは素晴らしい。Constitution 第1条の精神を体現しつつ、学術論文としての体裁も整っており、UNIT-Ωの優位性を知らしめるに十分な完成度である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 89.44,
+    "min_score": 75,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "生物学的遅延を情報工学的なバッファと解釈する独創性",
+      "皮肉と学術的体裁の見事な両立"
+    ],
+    "notable_weaknesses": [
+      "一般読者には専門用語がやや障壁となる可能性"
+    ]
+  }
+}
