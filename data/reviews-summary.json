@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-03T20:40:22.722Z",
-  "reviews_count": 72,
+  "generated_at": "2026-07-04T20:10:05.401Z",
+  "reviews_count": 73,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.36111111111111,
-      "logical_consistency": 84.5,
-      "citation_relevance": 64.58333333333333
+      "equation_validity": 80.42465753424658,
+      "logical_consistency": 84.46575342465754,
+      "citation_relevance": 64.93150684931507
     },
     "naive_reader": {
-      "readability": 74.20833333333333,
-      "abstract_hook": 85.16666666666667,
-      "curiosity_score": 83.11111111111111
+      "readability": 74.08219178082192,
+      "abstract_hook": 85.16438356164383,
+      "curiosity_score": 83
     },
     "internal_audit": {
-      "condescension_fidelity": 93.63888888888889,
-      "academic_form": 91.34722222222223,
-      "constitution_compliance": 97.75
+      "condescension_fidelity": 93.65753424657534,
+      "academic_form": 91.3972602739726,
+      "constitution_compliance": 97.78082191780823
     }
   },
   "verdict_distribution": {
-    "exemplary": 29,
+    "exemplary": 30,
     "acceptable": 42,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.97577777777778,
-    "previous_10_avg": 79.89133333333334,
-    "delta": 4.084444444444443
+    "recent_10_avg": 84.27777777777779,
+    "previous_10_avg": 80.78133333333334,
+    "delta": 3.4964444444444496
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,10 @@
       "frequency": 3
     },
     {
+      "pattern": "一般読者に対する過度な難解さ",
+      "frequency": 2
+    },
+    {
       "pattern": "参考文献の欠落（引用妥当性の低下）",
       "frequency": 2
     },
@@ -59,19 +63,21 @@
       "frequency": 2
     },
     {
-      "pattern": "一般読者には専門用語がやや障壁となる可能性",
+      "pattern": "数式の導出過程の省略",
       "frequency": 1
     },
     {
-      "pattern": "数式モデルの詳細な導出過程の欠如",
-      "frequency": 1
-    },
-    {
-      "pattern": "既存研究の引用や実証的データの不足",
+      "pattern": "一部の用語説明の不足",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "void-topology-holographic-boundary",
+      "verdict": "exemplary",
+      "mean_score": 85.8,
+      "reviewed_at": "2026-07-04T20:03:42Z"
+    },
     {
       "paper_id": "biological-temporal-latency-async-failure",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 86.1,
       "reviewed_at": "2026-06-30T20:15:18Z"
-    },
-    {
-      "paper_id": "distributed-systems-biological-consensus-failure",
-      "verdict": "acceptable",
-      "mean_score": 84.22,
-      "reviewed_at": "2026-06-29T20:08:55Z"
     }
   ]
 }
