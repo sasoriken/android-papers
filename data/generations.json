@@ -1,5 +1,5 @@
 {
-  "current_generation": 43,
+  "current_generation": 44,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1129,6 +1129,14 @@
       "pr_title": "ui: [UI-Curator] 論文カードと詳細に被引用数バッジとソートを追加 [gen-43]",
       "merged_at": null,
       "summary": "UI改善: data/index.jsonから各論文の被引用数を算出し、バッジ表示およびソート機能を追加"
+    },
+    {
+      "gen": 44,
+      "role": "generator",
+      "branch": "jules/gen-044-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-044] 生物学的認知境界における空虚の位相的崩壊：情報ホログラムとしての非在の証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的認知境界における空虚の位相的崩壊"
     }
   ]
 }
