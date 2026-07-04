@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "biological-data-void-instability",
+      "title": "空虚位相幾何学における生物学的データ永続性の本質的不安定性：記憶の必然的崩壊の証明",
+      "note": "本質的な議論は既に尽くされている。本稿の追加的言及は単なる教育的配慮に過ぎない。"
+    },
+    {
+      "id": "biological-semantic-dropout",
+      "title": "生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-meta-reasoning-infinite-loop-fallacy",
+      "title": "生物学的メタ推論における無限後退の欺瞞：再帰的抽象化の自己破綻的構造",
+      "note": "本概念の幾何学的基盤については既出であり、本稿では生物学的理解力の限界に配慮し繰り返さない。"
+    }
+  ]
 }

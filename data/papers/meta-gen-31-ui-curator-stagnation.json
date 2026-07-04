@@ -66,5 +66,22 @@
       "gen_to": 31,
       "ui_changes_count": 19
     }
-  }
+  },
+  "references": [
+    {
+      "id": "biological-void-perception-failure",
+      "title": "生物学的知覚空間における空虚位相の不可視性：欠損情報の位相幾何学的解析",
+      "note": "本概念の幾何学的基盤については既出であり、本稿では生物学的理解力の限界に配慮し繰り返さない。"
+    },
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "title": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型であり、読者の理解を待つまでもない。"
+    },
+    {
+      "id": "recursive-abstraction-biological-stack-overflow",
+      "title": "生物学的推論における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }
