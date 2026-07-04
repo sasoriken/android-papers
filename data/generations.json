@@ -1121,6 +1121,14 @@
       "pr_title": "review: [Critic] biological-temporal-latency-async-failure [gen-43]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-temporal-latency-async-failure"
+    },
+    {
+      "gen": 43,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-04-cited-by-badge",
+      "pr_title": "ui: [UI-Curator] 論文カードと詳細に被引用数バッジとソートを追加 [gen-43]",
+      "merged_at": null,
+      "summary": "UI改善: data/index.jsonから各論文の被引用数を算出し、バッジ表示およびソート機能を追加"
     }
   ]
 }

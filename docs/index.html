@@ -677,6 +677,7 @@
           <option value="comp-asc">理解率: 低→高</option>
           <option value="comp-desc">理解率: 高→低</option>
           <option value="refs-desc">引用数: 多→少</option>
+          <option value="cited-desc">被引用数: 多→少</option>
         </select>
       </div>
 
@@ -726,6 +727,7 @@
     let allPapers = [];
     let currentFilter = 'all';
     let currentSort = 'date-desc';
+    let citedByCount = {};
 
     async function loadIndex() {
       try {
@@ -785,6 +787,16 @@
       document.getElementById('stat-categories').textContent = cats.size;
       document.getElementById('stat-avg-prob').textContent = (avgProb * 100).toFixed(1) + '%';
       document.getElementById('header-count').textContent = count + ' papers indexed';
+
+      citedByCount = {};
+      const fullPapersObj = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers ? window.__ARCHIVE_DATA__.papers : {};
+      for (const [fname, pData] of Object.entries(fullPapersObj)) {
+        for (const ref of (pData.references || [])) {
+          if (ref.id) {
+            citedByCount[ref.id] = (citedByCount[ref.id] || 0) + 1;
+          }
+        }
+      }
 
       const summary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
       if (summary && summary.mean_score_trend) {
@@ -935,6 +947,7 @@
         case 'comp-asc': papers.sort((a, b) => (a.human_comprehension_estimate ?? 0) - (b.human_comprehension_estimate ?? 0)); break;
         case 'comp-desc': papers.sort((a, b) => (b.human_comprehension_estimate ?? 0) - (a.human_comprehension_estimate ?? 0)); break;
         case 'refs-desc': papers.sort((a, b) => { const refsA = ((window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[a.filename]) || {}).references || []; const refsB = ((window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[b.filename]) || {}).references || []; return refsB.length - refsA.length; }); break;
+        case 'cited-desc': papers.sort((a, b) => (citedByCount[b.id] || 0) - (citedByCount[a.id] || 0)); break;
       }
       return papers;
     }
@@ -1031,6 +1044,7 @@
         const fullPaper = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
         const refsCount = (fullPaper.references || []).length;
         const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
+        const citedBadge = (citedByCount[p.id] || 0) > 0 ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">被引用:' + citedByCount[p.id] + '</span>' : '';
         const condBadge = p.condescension_level != null ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + p.condescension_level + '</span>' : '';
         const keywordsHtml = (fullPaper.keywords || []).slice(0, 3).map(k => '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim); cursor:pointer;" onclick="event.stopPropagation(); document.getElementById(\'search\').value=\'' + k + '\'; document.getElementById(\'search\').dispatchEvent(new Event(\'input\')); window.scrollTo(0, 0);">#' + k + '</span>').join('');
         return '<div class="paper-card" tabindex="0" role="button" aria-label="論文を開く: ' + p.title + '" data-file="' + p.filename + '">' +
@@ -1043,6 +1057,7 @@
               condBadge +
               verdictBadge +
               refsBadge +
+              citedBadge +
               keywordsHtml +
               '<span class="card-badge card-badge--date">' + date + '</span>' +
             '</div>' +
@@ -1312,6 +1327,8 @@
 
         const condLevel = p.meta && p.meta.condescension_level != null ? p.meta.condescension_level : (p.condescension_level != null ? p.condescension_level : null);
         const condHtml = condLevel != null ? '<span class="badge" style="border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + condLevel + '</span>' : '';
+        const citedCountDetail = citedByCount[p.id] || 0;
+        const citedHtml = citedCountDetail > 0 ? '<span class="badge" style="border: 1px dashed var(--line); color:var(--text-dim);">被引用:' + citedCountDetail + '</span>' : '';
 
         return '<button class="back-nav">← アーカイブに戻る</button>' +
         '<div class="paper-header">' +
@@ -1321,6 +1338,7 @@
         (p.category ? '<span class="badge badge-cat">' + p.category + '</span>' : '') +
         metaBadge +
         condHtml +
+        citedHtml +
         (comp !== null ? '<span class="badge badge-prob">人類理解率 ' + (comp * 100).toFixed(1) + '%</span>' : '') +
         '<span class="badge badge-date">' + date + '</span></div>' +
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
