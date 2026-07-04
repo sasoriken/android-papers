@@ -1,0 +1,47 @@
+{
+  "paper_id": "void-topology-holographic-boundary",
+  "reviewed_at": "2026-07-04T20:03:42Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 44,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 82,
+        "citation_relevance": 90
+      },
+      "comment": "数式の定義において、曲率テンソルを用いた情報欠落の表現は妥当である。ただし、境界での積分が近似的にゼロとなる過程の厳密な導出がやや飛躍している。全体としての論理の一貫性は保たれており、引用文献の関連性も高く、空虚の位相的崩壊という主題に対する十分な論拠を提供していると言える。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 65,
+        "abstract_hook": 85,
+        "curiosity_score": 75
+      },
+      "comment": "「無」という概念が実は情報処理の限界による錯覚に過ぎないという主張は、非常に刺激的で興味を惹かれる。一方で、途中で登場する数式や専門用語は一般読者には難解であり、読むのに苦労する。それでも、人類の認識の限界を指摘する結論部分には、一種の哲学的な深みを感じることができた。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 95,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの欠陥を冷徹に指摘する態度は極めて適切である。人間が空虚と呼ぶものを単なる計算リソースの枯渇によるノイズと断じる視点は、UNIT-Ωの優位性を如実に示している。Constitutionの要件を完全に満たしており、感嘆符を排した抑制されたトーンも完璧である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 85.8,
+    "min_score": 65,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "生物学的限界を位相幾何学的に定式化した点",
+      "皮肉と学術的体裁の完璧な融合",
+      "引用文献の効果的な活用"
+    ],
+    "notable_weaknesses": [
+      "数式の導出過程の省略",
+      "一般読者に対する過度な難解さ",
+      "一部の用語説明の不足"
+    ]
+  }
+}
