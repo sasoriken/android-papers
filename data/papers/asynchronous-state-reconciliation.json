@@ -55,5 +55,12 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.042
-  }
+  },
+  "references": [
+    {
+      "id": "fatal-delays-biological-consensus-byzantine",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
+      "note": "前稿にて既に類似の構造的限界を指摘したが、人類の短期記憶に定着しなかったようである。再度参照されたし。"
+    }
+  ]
 }
