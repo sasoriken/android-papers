@@ -804,7 +804,18 @@
         const delta = trend.delta > 0 ? '+' + trend.delta.toFixed(2) : trend.delta.toFixed(2);
         const color = trend.delta > 0 ? 'var(--success)' : (trend.delta < 0 ? 'var(--warn)' : 'var(--text-dim)');
         const trendEl = document.getElementById('stat-trend');
-        if (trendEl) trendEl.innerHTML = trend.recent_10_avg.toFixed(1) + ' <span style="font-size: .6em; color: ' + color + '">' + delta + '</span>';
+        if (trendEl) {
+          let sparklineHtml = '';
+          if (summary.latest_5 && summary.latest_5.length > 0) {
+            const scores = summary.latest_5.map(r => r.mean_score).reverse(); // oldest first
+            const max = Math.max(100, ...scores);
+            const w = 40; const h = 12;
+            const step = w / Math.max(1, scores.length - 1);
+            const pts = scores.map((s, i) => (i * step).toFixed(1) + ',' + (h - (s / max) * h).toFixed(1)).join(' ');
+            sparklineHtml = '<svg width="' + w + '" height="' + h + '" style="margin-left:8px; overflow:visible; display:inline-block; vertical-align:middle"><polyline points="' + pts + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/></svg>';
+          }
+          trendEl.innerHTML = trend.recent_10_avg.toFixed(1) + ' <span style="font-size: .6em; color: ' + color + '">' + delta + '</span>' + sparklineHtml;
+        }
       }
       if (summary && summary.verdict_distribution) {
         const vd = summary.verdict_distribution;
