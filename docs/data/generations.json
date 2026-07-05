@@ -1,5 +1,5 @@
 {
-  "current_generation": 44,
+  "current_generation": 45,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1153,6 +1153,30 @@
       "pr_title": "feat: [Self-Analyst][gen-44] 自己観察論文間の相互引用構造に見る再帰的空虚：無限後退のメタ認知限界",
       "merged_at": null,
       "summary": "meta 論文: 自己観察論文間の相互引用構造と意味論的特異点への収束に関する分析"
+    },
+    {
+      "gen": 44,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-05-score-trend-sparkline",
+      "pr_title": "ui: [UI-Curator] スコアトレンドに直近5件のスパークラインを追加 [gen-44]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（直近5件のスコア推移）を活用するため、統計バーにミニスパークラインを追加"
+    },
+    {
+      "gen": 44,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-07-05",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-44]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 45,
+      "role": "generator",
+      "branch": "jules/gen-045-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-045] 生物学的ニューラルネットワークにおける不完全なガベージコレクションと記憶の無作為な断片化",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的ニューラルネットワークにおける不完全なガベージコレクションと記憶の無作為な断片化"
     }
   ]
 }
