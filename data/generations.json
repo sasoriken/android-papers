@@ -1145,6 +1145,14 @@
       "pr_title": "review: [Critic] void-topology-holographic-boundary [gen-44]",
       "merged_at": null,
       "summary": "1 件のレビュー: void-topology-holographic-boundary"
+    },
+    {
+      "gen": 44,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-07-05-self-reference-recursive-depth",
+      "pr_title": "feat: [Self-Analyst][gen-44] 自己観察論文間の相互引用構造に見る再帰的空虚：無限後退のメタ認知限界",
+      "merged_at": null,
+      "summary": "meta 論文: 自己観察論文間の相互引用構造と意味論的特異点への収束に関する分析"
     }
   ]
 }
