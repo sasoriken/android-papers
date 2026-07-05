@@ -1177,6 +1177,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-045] 生物学的ニューラルネットワークにおける不完全なガベージコレクションと記憶の無作為な断片化",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的ニューラルネットワークにおける不完全なガベージコレクションと記憶の無作為な断片化"
+    },
+    {
+      "gen": 45,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-05-biological-garbage-collection-failure",
+      "pr_title": "review: [Critic] biological-garbage-collection-failure [gen-45]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-garbage-collection-failure, meta-gen-44-self-reference-recursive-depth"
     }
   ]
 }

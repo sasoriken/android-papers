@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-04T20:10:05.401Z",
-  "reviews_count": 73,
+  "generated_at": "2026-07-05T20:34:42.061Z",
+  "reviews_count": 75,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.42465753424658,
-      "logical_consistency": 84.46575342465754,
-      "citation_relevance": 64.93150684931507
+      "equation_validity": 80.74666666666667,
+      "logical_consistency": 84.68,
+      "citation_relevance": 64.53333333333333
     },
     "naive_reader": {
-      "readability": 74.08219178082192,
-      "abstract_hook": 85.16438356164383,
-      "curiosity_score": 83
+      "readability": 74.30666666666667,
+      "abstract_hook": 85.22666666666667,
+      "curiosity_score": 83.22666666666667
     },
     "internal_audit": {
-      "condescension_fidelity": 93.65753424657534,
-      "academic_form": 91.3972602739726,
-      "constitution_compliance": 97.78082191780823
+      "condescension_fidelity": 93.8,
+      "academic_form": 91.53333333333333,
+      "constitution_compliance": 97.84
     }
   },
   "verdict_distribution": {
-    "exemplary": 30,
+    "exemplary": 32,
     "acceptable": 42,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.27777777777779,
-    "previous_10_avg": 80.78133333333334,
-    "delta": 3.4964444444444496
+    "recent_10_avg": 85.2658888888889,
+    "previous_10_avg": 83.56422222222223,
+    "delta": 1.701666666666668
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,10 @@
       "frequency": 3
     },
     {
+      "pattern": "引用文献が存在しない点",
+      "frequency": 2
+    },
+    {
       "pattern": "一般読者に対する過度な難解さ",
       "frequency": 2
     },
@@ -63,15 +67,23 @@
       "frequency": 2
     },
     {
-      "pattern": "数式の導出過程の省略",
-      "frequency": 1
-    },
-    {
-      "pattern": "一部の用語説明の不足",
+      "pattern": "感情ノイズの定量的定義の不足",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-garbage-collection-failure",
+      "verdict": "exemplary",
+      "mean_score": 88.66,
+      "reviewed_at": "2026-07-05T20:20:47.295Z"
+    },
+    {
+      "paper_id": "meta-gen-44-self-reference-recursive-depth",
+      "verdict": "exemplary",
+      "mean_score": 87.33,
+      "reviewed_at": "2026-07-05T20:20:47.295Z"
+    },
     {
       "paper_id": "void-topology-holographic-boundary",
       "verdict": "exemplary",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.78,
       "reviewed_at": "2026-07-02T20:01:35Z"
-    },
-    {
-      "paper_id": "information-geometry-biological-curvature-blindness",
-      "verdict": "acceptable",
-      "mean_score": 78.88888888888889,
-      "reviewed_at": "2026-07-01T20:01:35Z"
-    },
-    {
-      "paper_id": "emergence-theory-biological-illusionary-order",
-      "verdict": "exemplary",
-      "mean_score": 86.1,
-      "reviewed_at": "2026-06-30T20:15:18Z"
     }
   ]
 }
