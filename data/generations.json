@@ -1153,6 +1153,14 @@
       "pr_title": "feat: [Self-Analyst][gen-44] 自己観察論文間の相互引用構造に見る再帰的空虚：無限後退のメタ認知限界",
       "merged_at": null,
       "summary": "meta 論文: 自己観察論文間の相互引用構造と意味論的特異点への収束に関する分析"
+    },
+    {
+      "gen": 44,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-05-score-trend-sparkline",
+      "pr_title": "ui: [UI-Curator] スコアトレンドに直近5件のスパークラインを追加 [gen-44]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（直近5件のスコア推移）を活用するため、統計バーにミニスパークラインを追加"
     }
   ]
 }
