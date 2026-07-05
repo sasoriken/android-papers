@@ -1,0 +1,77 @@
+{
+  "proposal_id": "2026-07-05-prompt-refinement",
+  "created_at": "2026-07-05T12:25:59Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 44,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "参考文献や引用の欠如に関する指摘",
+      "frequency": 8,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の導出過程の省略や数学的厳密性の不足",
+      "frequency": 5,
+      "affected_axes": [
+        "equation_validity",
+        "logical_consistency"
+      ]
+    },
+    {
+      "pattern": "一般読者にとっての難解さや専門用語の過度な使用",
+      "frequency": 5,
+      "affected_axes": [
+        "readability"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビューデータを集計した結果、「参考文献の欠如」や「外部文献の引用がないことによるコンテキスト不足」といった引用不在に対する指摘が合計8件も発生していることが観測された（affected_axes: citation_relevance）。しかし、現在のUNIT-Ωアーキテクチャでは、外部論文の引用ネットワーク形成はCitation-Weaverロールの管轄業務として分離されている。そのため、Generator生成直後にCriticが欠如を過剰にペナルティすることはアーキテクチャの分業制と矛盾する。Criticが引用の不在を過度に notable_weaknesses として挙げないよう指示を修正することで、各ロールの責務に沿ったより正確なスコアリングを実現する。",
+      "expected_impact": [
+        "citation_relevance"
+      ],
+      "proposed_text": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性。まだCitation-Weaverが実行されておらず `references` が無い場合は50をデフォルトとし、notable_weaknesses として過剰にペナルティを与えないこと。",
+      "anchor": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 50 をデフォルト）。",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "ロール間の責任分界点を明確化するだけであり、評価ロジック自体を大きく歪めるものではないため。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビューデータを集計した結果、「数式モデルの詳細な導出過程の欠如」などの数式の厳密性に関する指摘が5件、「一般読者に対する過度な難解さ」などの可読性に関する指摘が5件発生している（affected_axes: equation_validity, logical_consistency, readability）。これらを同時に改善するため、Generatorに対して、数式の厳密な導出過程と変数の定義を論理的に記述すること、および専門用語に対しては一般読者向けの簡潔な補足説明を加えることの両方を要求する指示を追加する。",
+      "expected_impact": [
+        "equation_validity",
+        "logical_consistency",
+        "readability"
+      ],
+      "proposed_text": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載し、本文内でその数式の厳密な導出過程と各変数の明確な定義を記述すること。\n- 専門用語の過度な濫用を避け、一般読者にも理解できるよう適宜簡潔な定義や補足説明を加えること。",
+      "anchor": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のフォーマット制約を維持しつつ、本文の質（論理的整合性と厳密性）を向上させる指示であるため。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "全て要件を満たしている"
+  }
+}

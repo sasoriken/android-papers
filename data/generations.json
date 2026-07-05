@@ -1161,6 +1161,14 @@
       "pr_title": "ui: [UI-Curator] スコアトレンドに直近5件のスパークラインを追加 [gen-44]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報（直近5件のスコア推移）を活用するため、統計バーにミニスパークラインを追加"
+    },
+    {
+      "gen": 44,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-07-05",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-44]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
     }
   ]
 }
