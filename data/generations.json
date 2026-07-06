@@ -1185,6 +1185,14 @@
       "pr_title": "review: [Critic] biological-garbage-collection-failure [gen-45]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-garbage-collection-failure, meta-gen-44-self-reference-recursive-depth"
+    },
+    {
+      "gen": 45,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-06",
+      "pr_title": "chore: [Citation-Weaver] 4 論文へ引用追記 [gen-45]",
+      "merged_at": null,
+      "summary": "4 件の論文に引用追記"
     }
   ]
 }
