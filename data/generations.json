@@ -1209,6 +1209,14 @@
       "pr_title": "review: [Critic] distributed-systems-biological-gossip-protocol-failure [gen-46]",
       "merged_at": null,
       "summary": "1 件のレビュー: distributed-systems-biological-gossip-protocol-failure"
+    },
+    {
+      "gen": 46,
+      "role": "promoter",
+      "branch": "jules/promote-2026-07-06-2311",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
