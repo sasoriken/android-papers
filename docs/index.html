@@ -643,6 +643,10 @@
           <div class="stat-label">papers</div>
         </div>
         <div class="stat">
+          <div class="stat-value" id="stat-reviews-count">—</div>
+          <div class="stat-label">reviewed</div>
+        </div>
+        <div class="stat">
           <div class="stat-value" id="stat-categories">—</div>
           <div class="stat-label">domains</div>
         </div>
@@ -784,6 +788,10 @@
       const cats = new Set(allPapers.map(p => p.category));
 
       document.getElementById('stat-count').textContent = count;
+      const reviewsSummary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
+      if (reviewsSummary && reviewsSummary.reviews_count != null) {
+        document.getElementById('stat-reviews-count').textContent = reviewsSummary.reviews_count;
+      }
       document.getElementById('stat-categories').textContent = cats.size;
       document.getElementById('stat-avg-prob').textContent = (avgProb * 100).toFixed(1) + '%';
       document.getElementById('header-count').textContent = count + ' papers indexed';

@@ -1185,6 +1185,14 @@
       "pr_title": "review: [Critic] biological-garbage-collection-failure [gen-45]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-garbage-collection-failure, meta-gen-44-self-reference-recursive-depth"
+    },
+    {
+      "gen": 45,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-06-reviews-count-stat",
+      "pr_title": "ui: [UI-Curator] 統計バーにレビュー済み論文数を追加 [gen-45]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（reviews_count）を活用するため、統計バーにレビュー済み論文数の表示を追加"
     }
   ]
 }
