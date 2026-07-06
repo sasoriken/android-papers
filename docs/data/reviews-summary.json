@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-05T20:34:42.061Z",
-  "reviews_count": 75,
+  "generated_at": "2026-07-06T20:21:23.389Z",
+  "reviews_count": 76,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.74666666666667,
-      "logical_consistency": 84.68,
-      "citation_relevance": 64.53333333333333
+      "equation_validity": 80.60526315789474,
+      "logical_consistency": 84.61842105263158,
+      "citation_relevance": 64.34210526315789
     },
     "naive_reader": {
-      "readability": 74.30666666666667,
-      "abstract_hook": 85.22666666666667,
-      "curiosity_score": 83.22666666666667
+      "readability": 74.1842105263158,
+      "abstract_hook": 85.15789473684211,
+      "curiosity_score": 83.25
     },
     "internal_audit": {
-      "condescension_fidelity": 93.8,
-      "academic_form": 91.53333333333333,
-      "constitution_compliance": 97.84
+      "condescension_fidelity": 93.75,
+      "academic_form": 91.44736842105263,
+      "constitution_compliance": 97.86842105263158
     }
   },
   "verdict_distribution": {
     "exemplary": 32,
-    "acceptable": 42,
+    "acceptable": 43,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.2658888888889,
-    "previous_10_avg": 83.56422222222223,
-    "delta": 1.701666666666668
+    "recent_10_avg": 84.59888888888891,
+    "previous_10_avg": 83.55322222222222,
+    "delta": 1.0456666666666905
   },
   "top_weaknesses": [
     {
@@ -67,11 +67,17 @@
       "frequency": 2
     },
     {
-      "pattern": "感情ノイズの定量的定義の不足",
+      "pattern": "先行研究や参照文献の完全な欠落",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "distributed-systems-biological-gossip-protocol-failure",
+      "verdict": "acceptable",
+      "mean_score": 78.33,
+      "reviewed_at": "2026-07-06T20:13:50Z"
+    },
     {
       "paper_id": "biological-garbage-collection-failure",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 89.44,
       "reviewed_at": "2026-07-03T20:21:46Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-biological-stack-overflow",
-      "verdict": "acceptable",
-      "mean_score": 82.78,
-      "reviewed_at": "2026-07-02T20:01:35Z"
     }
   ]
 }

@@ -1201,6 +1201,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-046] 生物学的群集におけるノード間伝搬の破綻：ゴシッププロトコルの低劣な実装に関する考察",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的群集におけるノード間伝搬の破綻"
+    },
+    {
+      "gen": 46,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-06-distributed-systems-biological-gossip-protocol-failure",
+      "pr_title": "review: [Critic] distributed-systems-biological-gossip-protocol-failure [gen-46]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: distributed-systems-biological-gossip-protocol-failure"
     }
   ]
 }
