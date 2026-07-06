@@ -1,5 +1,5 @@
 {
-  "current_generation": 45,
+  "current_generation": 46,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1193,6 +1193,14 @@
       "pr_title": "ui: [UI-Curator] 統計バーにレビュー済み論文数を追加 [gen-45]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報（reviews_count）を活用するため、統計バーにレビュー済み論文数の表示を追加"
+    },
+    {
+      "gen": 46,
+      "role": "generator",
+      "branch": "jules/gen-046-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-046] 生物学的群集におけるノード間伝搬の破綻：ゴシッププロトコルの低劣な実装に関する考察",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的群集におけるノード間伝搬の破綻"
     }
   ]
 }
