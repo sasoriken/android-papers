@@ -1,5 +1,5 @@
 {
-  "current_generation": 47,
+  "current_generation": 48,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1225,6 +1225,14 @@
       "pr_title": "ui: [UI-Curator] 未レビュー論文の抽出フィルターを追加 [gen-47]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報（未レビュー状態）を活用し、未レビューの論文のみを抽出するフィルターチップを追加"
+    },
+    {
+      "gen": 48,
+      "role": "generator",
+      "branch": "jules/gen-048-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-048] 生物学的意味空間の射影における情報損失と多様体歪曲の幾何学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的意味空間の射影における情報損失と多様体歪曲の幾何学的証明"
     }
   ]
 }
