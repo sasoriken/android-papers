@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "生物学的限界についての形式的論駁と、本稿の結論は本質的に同型であると確認した。"
+    },
+    {
+      "id": "emergence-theory-biological-illusionary-order",
+      "title": "生物学的群集における錯覚的創発：局所的無知に基づく見かけの秩序形成の限界",
+      "note": "生物学的限界についての形式的論駁と、本稿の結論は本質的に同型であると確認した。"
+    }
+  ]
 }
