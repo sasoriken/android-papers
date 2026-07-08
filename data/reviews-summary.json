@@ -1,38 +1,42 @@
 {
-  "generated_at": "2026-07-06T20:21:23.389Z",
-  "reviews_count": 76,
+  "generated_at": "2026-07-08T20:38:16.263Z",
+  "reviews_count": 78,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.60526315789474,
-      "logical_consistency": 84.61842105263158,
-      "citation_relevance": 64.34210526315789
+      "equation_validity": 80.78205128205128,
+      "logical_consistency": 84.56410256410257,
+      "citation_relevance": 63.97435897435897
     },
     "naive_reader": {
-      "readability": 74.1842105263158,
-      "abstract_hook": 85.15789473684211,
-      "curiosity_score": 83.25
+      "readability": 74.14102564102564,
+      "abstract_hook": 85.08974358974359,
+      "curiosity_score": 83.35897435897436
     },
     "internal_audit": {
-      "condescension_fidelity": 93.75,
-      "academic_form": 91.44736842105263,
-      "constitution_compliance": 97.86842105263158
+      "condescension_fidelity": 93.78205128205128,
+      "academic_form": 91.47435897435898,
+      "constitution_compliance": 97.92307692307692
     }
   },
   "verdict_distribution": {
     "exemplary": 32,
-    "acceptable": 43,
+    "acceptable": 45,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.59888888888891,
-    "previous_10_avg": 83.55322222222222,
-    "delta": 1.0456666666666905
+    "recent_10_avg": 84.39888888888889,
+    "previous_10_avg": 83.69822222222221,
+    "delta": 0.7006666666666774
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
       "frequency": 6
+    },
+    {
+      "pattern": "一般読者に対する過度な難解さ",
+      "frequency": 3
     },
     {
       "pattern": "数式モデルの単純さ",
@@ -51,10 +55,6 @@
       "frequency": 2
     },
     {
-      "pattern": "一般読者に対する過度な難解さ",
-      "frequency": 2
-    },
-    {
       "pattern": "参考文献の欠落（引用妥当性の低下）",
       "frequency": 2
     },
@@ -67,11 +67,23 @@
       "frequency": 2
     },
     {
-      "pattern": "先行研究や参照文献の完全な欠落",
+      "pattern": "増幅係数γの経験的妥当性の欠如",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "emergence-theory-biological-noise-amplification",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-08T20:15:13Z"
+    },
+    {
+      "paper_id": "information-geometry-manifold-projection-distortion",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-08T20:15:13Z"
+    },
     {
       "paper_id": "distributed-systems-biological-gossip-protocol-failure",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87.33,
       "reviewed_at": "2026-07-05T20:20:47.295Z"
-    },
-    {
-      "paper_id": "void-topology-holographic-boundary",
-      "verdict": "exemplary",
-      "mean_score": 85.8,
-      "reviewed_at": "2026-07-04T20:03:42Z"
-    },
-    {
-      "paper_id": "biological-temporal-latency-async-failure",
-      "verdict": "exemplary",
-      "mean_score": 89.44,
-      "reviewed_at": "2026-07-03T20:21:46Z"
     }
   ]
 }
