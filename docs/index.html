@@ -876,6 +876,9 @@
       if (allPapers.some(p => isMetaIndexEntry(p))) {
         filterContainer.innerHTML += '<button class="filter-btn meta-filter" data-cat="__meta__">自己観察</button>';
       }
+      if (Object.keys(getReviews()).length < allPapers.length) {
+        filterContainer.innerHTML += '<button class="filter-btn" data-cat="__unreviewed__">未レビュー</button>';
+      }
       [...cats].sort().forEach(cat => {
         filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + '</button>';
       });
@@ -938,6 +941,8 @@
       // Filter
       if (currentFilter === '__meta__') {
         papers = papers.filter(p => isMetaIndexEntry(p));
+      } else if (currentFilter === '__unreviewed__') {
+        papers = papers.filter(p => !getReviewFor(p.id));
       } else if (currentFilter !== 'all') {
         papers = papers.filter(p => p.category === currentFilter);
       }
