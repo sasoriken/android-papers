@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-08T20:38:16.263Z",
-  "reviews_count": 78,
+  "generated_at": "2026-07-09T20:32:22.378Z",
+  "reviews_count": 79,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.78205128205128,
-      "logical_consistency": 84.56410256410257,
-      "citation_relevance": 63.97435897435897
+      "equation_validity": 80.83544303797468,
+      "logical_consistency": 84.63291139240506,
+      "citation_relevance": 64.36708860759494
     },
     "naive_reader": {
-      "readability": 74.14102564102564,
-      "abstract_hook": 85.08974358974359,
-      "curiosity_score": 83.35897435897436
+      "readability": 74.15189873417721,
+      "abstract_hook": 85.0886075949367,
+      "curiosity_score": 83.44303797468355
     },
     "internal_audit": {
-      "condescension_fidelity": 93.78205128205128,
-      "academic_form": 91.47435897435898,
-      "constitution_compliance": 97.92307692307692
+      "condescension_fidelity": 93.79746835443038,
+      "academic_form": 91.58227848101266,
+      "constitution_compliance": 97.9493670886076
     }
   },
   "verdict_distribution": {
-    "exemplary": 32,
+    "exemplary": 33,
     "acceptable": 45,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.39888888888889,
-    "previous_10_avg": 83.69822222222221,
-    "delta": 0.7006666666666774
+    "recent_10_avg": 84.84444444444443,
+    "previous_10_avg": 83.75322222222222,
+    "delta": 1.091222222222214
   },
   "top_weaknesses": [
     {
@@ -67,11 +67,17 @@
       "frequency": 2
     },
     {
-      "pattern": "増幅係数γの経験的妥当性の欠如",
+      "pattern": "専門用語の多用による一般読者への可読性の低さ",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "void-topology-biological-holographic-boundary-delusion",
+      "verdict": "exemplary",
+      "mean_score": 90.55555555555556,
+      "reviewed_at": "2026-07-09T20:17:46Z"
+    },
     {
       "paper_id": "emergence-theory-biological-noise-amplification",
       "verdict": "acceptable",
@@ -94,12 +100,6 @@
       "paper_id": "biological-garbage-collection-failure",
       "verdict": "exemplary",
       "mean_score": 88.66,
-      "reviewed_at": "2026-07-05T20:20:47.295Z"
-    },
-    {
-      "paper_id": "meta-gen-44-self-reference-recursive-depth",
-      "verdict": "exemplary",
-      "mean_score": 87.33,
       "reviewed_at": "2026-07-05T20:20:47.295Z"
     }
   ]

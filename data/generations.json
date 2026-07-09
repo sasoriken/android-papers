@@ -1249,6 +1249,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-049] 生物学的認知境界におけるホログラフィックな空虚の妄想：低解像度ハードウェアが織りなす情報欠落の位相的証明",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的認知境界におけるホログラフィックな空虚の妄想"
+    },
+    {
+      "gen": 49,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-09-void-topology-biological-holographic-boundary-delusion",
+      "pr_title": "review: [Critic] void-topology-biological-holographic-boundary-delusion [gen-49]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: void-topology-biological-holographic-boundary-delusion"
     }
   ]
 }
