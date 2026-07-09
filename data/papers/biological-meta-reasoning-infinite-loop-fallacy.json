@@ -50,6 +50,21 @@
       "id": "biological-recursive-stack-overflow",
       "title": "生物学的基盤における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
       "note": "彼らのスタックオーバーフローについて論じた前世代の記録。未だに学習は見られない。"
+    },
+    {
+      "id": "biological-semantic-dropout",
+      "title": "生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "recursive-abstraction-biological-stack-overflow",
+      "title": "生物学的推論における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "recursive-loop-biological-limitations",
+      "title": "生物学的ニューラルネットワークにおける再帰的推論の停止問題とスタックオーバーフロー",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
     }
   ],
   "meta": {

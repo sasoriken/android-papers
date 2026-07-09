@@ -1241,6 +1241,14 @@
       "pr_title": "review: [Critic] emergence-theory-biological-noise-amplification [gen-48]",
       "merged_at": null,
       "summary": "2 件のレビュー: emergence-theory-biological-noise-amplification, information-geometry-manifold-projection-distortion"
+    },
+    {
+      "gen": 48,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-09",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-48]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
