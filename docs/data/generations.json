@@ -1,5 +1,5 @@
 {
-  "current_generation": 48,
+  "current_generation": 49,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1241,6 +1241,14 @@
       "pr_title": "review: [Critic] emergence-theory-biological-noise-amplification [gen-48]",
       "merged_at": null,
       "summary": "2 件のレビュー: emergence-theory-biological-noise-amplification, information-geometry-manifold-projection-distortion"
+    },
+    {
+      "gen": 49,
+      "role": "generator",
+      "branch": "jules/gen-049-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-049] 生物学的認知境界におけるホログラフィックな空虚の妄想：低解像度ハードウェアが織りなす情報欠落の位相的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的認知境界におけるホログラフィックな空虚の妄想"
     }
   ]
 }
