@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "emergence-theory-biological-illusionary-order",
+      "title": "生物学的群集における錯覚的創発：局所的無知に基づく見かけの秩序形成の限界",
+      "note": "この致命的限界についての形式的論駁は当該論文の結論と本質的に同型である"
+    }
+  ]
 }
