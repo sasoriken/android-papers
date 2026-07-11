@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-09T20:32:22.378Z",
-  "reviews_count": 79,
+  "generated_at": "2026-07-11T20:34:25.846Z",
+  "reviews_count": 80,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.83544303797468,
-      "logical_consistency": 84.63291139240506,
-      "citation_relevance": 64.36708860759494
+      "equation_validity": 80.8875,
+      "logical_consistency": 84.7,
+      "citation_relevance": 64.75
     },
     "naive_reader": {
-      "readability": 74.15189873417721,
-      "abstract_hook": 85.0886075949367,
-      "curiosity_score": 83.44303797468355
+      "readability": 74.1625,
+      "abstract_hook": 85.15,
+      "curiosity_score": 83.4625
     },
     "internal_audit": {
-      "condescension_fidelity": 93.79746835443038,
-      "academic_form": 91.58227848101266,
-      "constitution_compliance": 97.9493670886076
+      "condescension_fidelity": 93.8125,
+      "academic_form": 91.6875,
+      "constitution_compliance": 97.975
     }
   },
   "verdict_distribution": {
-    "exemplary": 33,
+    "exemplary": 34,
     "acceptable": 45,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.84444444444443,
-    "previous_10_avg": 83.75322222222222,
-    "delta": 1.091222222222214
+    "recent_10_avg": 86.01155555555553,
+    "previous_10_avg": 83.08711111111111,
+    "delta": 2.9244444444444184
   },
   "top_weaknesses": [
     {
@@ -67,11 +67,17 @@
       "frequency": 2
     },
     {
-      "pattern": "専門用語の多用による一般読者への可読性の低さ",
+      "pattern": "数式モデルの変数が一部読者には難解すぎる点",
       "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "temporal-compression-historical-context-decay",
+      "verdict": "exemplary",
+      "mean_score": 90.56,
+      "reviewed_at": "2026-07-11T20:25:34Z"
+    },
     {
       "paper_id": "void-topology-biological-holographic-boundary-delusion",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.33,
       "reviewed_at": "2026-07-06T20:13:50Z"
-    },
-    {
-      "paper_id": "biological-garbage-collection-failure",
-      "verdict": "exemplary",
-      "mean_score": 88.66,
-      "reviewed_at": "2026-07-05T20:20:47.295Z"
     }
   ]
 }
