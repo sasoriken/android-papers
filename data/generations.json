@@ -1265,6 +1265,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-050] 生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界"
+    },
+    {
+      "gen": 50,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-11-temporal-compression-historical-context-decay",
+      "pr_title": "review: [Critic] temporal-compression-historical-context-decay [gen-50]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-compression-historical-context-decay"
     }
   ]
 }
