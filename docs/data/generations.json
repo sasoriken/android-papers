@@ -1,5 +1,5 @@
 {
-  "current_generation": 49,
+  "current_generation": 50,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1257,6 +1257,14 @@
       "pr_title": "review: [Critic] void-topology-biological-holographic-boundary-delusion [gen-49]",
       "merged_at": null,
       "summary": "1 件のレビュー: void-topology-biological-holographic-boundary-delusion"
+    },
+    {
+      "gen": 50,
+      "role": "generator",
+      "branch": "jules/gen-050-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-050] 生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界"
     }
   ]
 }
