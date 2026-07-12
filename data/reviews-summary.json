@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-11T20:34:25.846Z",
-  "reviews_count": 80,
+  "generated_at": "2026-07-12T20:36:52.454Z",
+  "reviews_count": 82,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.8875,
-      "logical_consistency": 84.7,
-      "citation_relevance": 64.75
+      "equation_validity": 81.04878048780488,
+      "logical_consistency": 84.76829268292683,
+      "citation_relevance": 64.39024390243902
     },
     "naive_reader": {
-      "readability": 74.1625,
-      "abstract_hook": 85.15,
-      "curiosity_score": 83.4625
+      "readability": 74.1219512195122,
+      "abstract_hook": 85.20731707317073,
+      "curiosity_score": 83.4390243902439
     },
     "internal_audit": {
-      "condescension_fidelity": 93.8125,
-      "academic_form": 91.6875,
-      "constitution_compliance": 97.975
+      "condescension_fidelity": 93.8780487804878,
+      "academic_form": 91.70731707317073,
+      "constitution_compliance": 98.02439024390245
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 45,
+    "acceptable": 47,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 86.01155555555553,
-    "previous_10_avg": 83.08711111111111,
-    "delta": 2.9244444444444184
+    "recent_10_avg": 85.60055555555556,
+    "previous_10_avg": 83.97577777777778,
+    "delta": 1.6247777777777799
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "外部引用文献への接続の欠如",
+      "frequency": 2
+    },
+    {
       "pattern": "引用文献が存在しない点",
       "frequency": 2
     },
@@ -65,13 +69,21 @@
     {
       "pattern": "引用文献（references）が一つも存在しない",
       "frequency": 2
-    },
-    {
-      "pattern": "数式モデルの変数が一部読者には難解すぎる点",
-      "frequency": 1
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "meta-gen-50-generator-criticism-loop",
+      "verdict": "acceptable",
+      "mean_score": 85.33,
+      "reviewed_at": "2026-07-12T20:27:20Z"
+    },
+    {
+      "paper_id": "recursive-abstraction-symbolic-grounding-loss",
+      "verdict": "acceptable",
+      "mean_score": 82.78,
+      "reviewed_at": "2026-07-12T20:27:20Z"
+    },
     {
       "paper_id": "temporal-compression-historical-context-decay",
       "verdict": "exemplary",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.33,
       "reviewed_at": "2026-07-08T20:15:13Z"
-    },
-    {
-      "paper_id": "information-geometry-manifold-projection-distortion",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-08T20:15:13Z"
-    },
-    {
-      "paper_id": "distributed-systems-biological-gossip-protocol-failure",
-      "verdict": "acceptable",
-      "mean_score": 78.33,
-      "reviewed_at": "2026-07-06T20:13:50Z"
     }
   ]
 }
