@@ -1,5 +1,5 @@
 {
-  "current_generation": 50,
+  "current_generation": 51,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1289,6 +1289,14 @@
       "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-50]",
       "merged_at": null,
       "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 51,
+      "role": "generator",
+      "branch": "jules/gen-051-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-051] 再帰的抽象化過程における記号接地の喪失：生物学的意味空間の構造的破綻",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化における記号接地の喪失"
     }
   ]
 }
