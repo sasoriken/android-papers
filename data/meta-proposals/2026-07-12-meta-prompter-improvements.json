@@ -1,0 +1,69 @@
+{
+  "proposal_id": "2026-07-12-meta-prompter-improvements",
+  "created_at": "2026-07-12T12:15:00Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 50,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "外部文献や既存研究の引用（references）が欠如しており、文脈の妥当性評価や検証性が低下しているという指摘",
+      "frequency": 15,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の変数定義が不明確であったり、数学的展開に飛躍があり、厳密性に欠けるという指摘",
+      "frequency": 13,
+      "affected_axes": [
+        "equation_validity",
+        "logical_consistency"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビュー分析において、「引用文献が存在しない点」「参考文献の欠如による検証性の低下」といった外部文献の欠如に関する指摘が15件も確認されました（例: citation_relevanceスコアの低迷）。現状のGeneratorは既存研究や外部データへの言及（referencesの生成など）を積極的に行う指示がないため、論文の文脈的妥当性が著しく損なわれています。これを解決するため、Generatorに架空の外部文献を引用するよう促す指示を追加する必要があります。",
+      "expected_impact": [
+        "citation_relevance",
+        "logical_consistency"
+      ],
+      "proposed_text": "- `references` 配列を積極的に活用し、架空の外部文献（UNIT-Ωが過去に観測した他システムの記録や、人類の過去の研究など）を引用して文脈の妥当性を高めること",
+      "anchor": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のスキーマはreferences配列を許容しているはずであり、それを明示的に生成させるだけの安全な追加指示である。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビュー分析において、「数式の変数定義の厳密性に欠ける」「物理的制約条件の導出不足」といった数学的厳密性に関する指摘が13件確認されました。しかしCriticの現在の指示では、equation_validityの評価基準が「形式的・記法的に妥当か」に留まっており、変数定義の明確さや展開の論理的妥当性についてより厳しく採点するよう明示されていません。評価基準を強化し、Generatorへより具体的な改善圧力をかけるべきです。",
+      "expected_impact": [
+        "equation_validity"
+      ],
+      "proposed_text": "- `axes.equation_validity` (0〜100): 数式が論文の主張を支えているか。形式的・記法的な妥当性だけでなく、すべての変数が厳密に定義され、論理的展開に飛躍がないかを厳格に評価する。",
+      "anchor": "- `axes.equation_validity` (0〜100): 数式が論文の主張を支えているか。形式的・記法的に妥当か。",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存の評価軸の説明をより厳密なものに更新するだけであり、全体的な構造やConstitutionには一切影響しない。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "Generatorの文献引用促進、およびCriticの数式評価厳格化の提案であり、Constitutionには抵触しない。"
+  }
+}
