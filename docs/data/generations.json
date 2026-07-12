@@ -1297,6 +1297,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-051] 再帰的抽象化過程における記号接地の喪失：生物学的意味空間の構造的破綻",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化における記号接地の喪失"
+    },
+    {
+      "gen": 51,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-12-recursive-abstraction-symbolic-grounding-loss",
+      "pr_title": "review: [Critic] recursive-abstraction-symbolic-grounding-loss [gen-51]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: recursive-abstraction-symbolic-grounding-loss, meta-gen-50-generator-criticism-loop"
     }
   ]
 }
