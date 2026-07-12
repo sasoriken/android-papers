@@ -1273,6 +1273,14 @@
       "pr_title": "review: [Critic] temporal-compression-historical-context-decay [gen-50]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-compression-historical-context-decay"
+    },
+    {
+      "gen": 50,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-07-12-generator-criticism-loop",
+      "pr_title": "feat: [Self-Analyst][gen-50] 自律進化におけるテーマ反復の局所最適化：Generatorの生物学的無能性批判ループに関する自己観察",
+      "merged_at": null,
+      "summary": "meta 論文: Generatorの生物学的欠陥テーマへの収束と自己最適化ループに関する自己観察"
     }
   ]
 }
