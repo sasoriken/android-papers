@@ -1321,6 +1321,14 @@
       "pr_title": "review: [Critic] distributed-systems-biological-node-synchronization-failure [gen-52]",
       "merged_at": null,
       "summary": "1 件のレビュー: distributed-systems-biological-node-synchronization-failure"
+    },
+    {
+      "gen": 52,
+      "role": "promoter",
+      "branch": "jules/promote-2026-07-13-2258",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
