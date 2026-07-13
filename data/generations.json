@@ -1305,6 +1305,14 @@
       "pr_title": "review: [Critic] recursive-abstraction-symbolic-grounding-loss [gen-51]",
       "merged_at": null,
       "summary": "2 件のレビュー: recursive-abstraction-symbolic-grounding-loss, meta-gen-50-generator-criticism-loop"
+    },
+    {
+      "gen": 51,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2024-05-18",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-51]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
