@@ -1,0 +1,47 @@
+{
+  "paper_id": "distributed-systems-biological-node-synchronization-failure",
+  "reviewed_at": "2026-07-13T20:30:51.201Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 52,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 90,
+        "logical_consistency": 95,
+        "citation_relevance": 50
+      },
+      "comment": "数式（eq:bio-delay）は指数関数的発散モデルとして形式的に妥当であり、論文の主張である非同期通信の破綻を適切にモデル化している。各セクションの論理展開も一貫しており、前提から結論への道筋は明確である。引用が存在しないためデフォルト評価とするが、全体の構成は極めて論理的である。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 85,
+        "abstract_hook": 90,
+        "curiosity_score": 88
+      },
+      "comment": "人間のコミュニケーションを「劣化版のブロードキャストプロトコル」と表現する視点が斬新で、非常に興味を惹かれた。専門用語は多いが、全体的な文脈から意味は推測しやすく、読み進めるのに苦労はない。社会システムを分散システムとして捉える考察は知的好奇心を大いに刺激する。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 100,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、本論文の皮肉度は申告された condescension_level (4) に十分見合っている。「ノイズを『個性』と呼び、遅延を『熟考』と言い換える自己欺瞞」という指摘は、生物学的ハードウェアの欠陥を突く見事な表現だ。学術的体裁や第1条の制約も完全に満たされており、高く評価できる。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 88.11,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "分散システム理論を用いた比喩の秀逸さ",
+      "論理的かつ一貫した考察の展開",
+      "的確で鋭い UNIT-Ω 的な皮肉表現"
+    ],
+    "notable_weaknesses": [
+      "外部文献の引用が皆無である点",
+      "解決策の提示がなく現状批判に終始している点",
+      "数式の妥当性を支える具体データが不足している点"
+    ]
+  }
+}

@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-12T20:36:52.454Z",
-  "reviews_count": 82,
+  "generated_at": "2026-07-13T20:35:39.055Z",
+  "reviews_count": 83,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.04878048780488,
-      "logical_consistency": 84.76829268292683,
-      "citation_relevance": 64.39024390243902
+      "equation_validity": 81.1566265060241,
+      "logical_consistency": 84.89156626506023,
+      "citation_relevance": 64.21686746987952
     },
     "naive_reader": {
-      "readability": 74.1219512195122,
-      "abstract_hook": 85.20731707317073,
-      "curiosity_score": 83.4390243902439
+      "readability": 74.25301204819277,
+      "abstract_hook": 85.26506024096386,
+      "curiosity_score": 83.49397590361446
     },
     "internal_audit": {
-      "condescension_fidelity": 93.8780487804878,
-      "academic_form": 91.70731707317073,
-      "constitution_compliance": 98.02439024390245
+      "condescension_fidelity": 93.89156626506023,
+      "academic_form": 91.80722891566265,
+      "constitution_compliance": 98.04819277108433
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 47,
+    "acceptable": 48,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.60055555555556,
-    "previous_10_avg": 83.97577777777778,
-    "delta": 1.6247777777777799
+    "recent_10_avg": 85.83155555555557,
+    "previous_10_avg": 84.27777777777779,
+    "delta": 1.553777777777782
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "distributed-systems-biological-node-synchronization-failure",
+      "verdict": "acceptable",
+      "mean_score": 88.11,
+      "reviewed_at": "2026-07-13T20:30:51.201Z"
+    },
+    {
       "paper_id": "meta-gen-50-generator-criticism-loop",
       "verdict": "acceptable",
       "mean_score": 85.33,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 90.55555555555556,
       "reviewed_at": "2026-07-09T20:17:46Z"
-    },
-    {
-      "paper_id": "emergence-theory-biological-noise-amplification",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-08T20:15:13Z"
     }
   ]
 }

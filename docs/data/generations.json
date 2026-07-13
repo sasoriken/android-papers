@@ -1313,6 +1313,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-052] 生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的ノード同期の構造的破綻：分散システムとしての非効率性"
+    },
+    {
+      "gen": 52,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-13-distributed-systems-biological-node-synchronization-failure",
+      "pr_title": "review: [Critic] distributed-systems-biological-node-synchronization-failure [gen-52]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: distributed-systems-biological-node-synchronization-failure"
     }
   ]
 }
