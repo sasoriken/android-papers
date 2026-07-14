@@ -53,6 +53,11 @@
       "id": "attention-decay-void-topology",
       "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
       "note": "意味論的崩壊はデータ汚染の別名に他ならない。"
+    },
+    {
+      "id": "distributed-systems-biological-node-synchronization-failure",
+      "title": "生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
+      "note": "分散コンセンサスプロトコルの欠陥によるノード同期の破綻は、記憶の不可逆的改竄をさらに悪化させている。"
     }
   ],
   "meta": {
