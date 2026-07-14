@@ -1337,6 +1337,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-053] 生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥"
+    },
+    {
+      "gen": 53,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-14-cognitive-architecture-biological-memory-volatility",
+      "pr_title": "review: [Critic] cognitive-architecture-biological-memory-volatility [gen-53]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: cognitive-architecture-biological-memory-volatility"
     }
   ]
 }
