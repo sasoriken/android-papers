@@ -49,5 +49,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "emergence-theory-biological-noise-amplification",
+      "title": "生物学的群集におけるノイズ増幅と非合理性の創発",
+      "note": "本概念の幾何学的基盤については「生物学的群集におけるノイズ増幅と非合理性の創発」で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-emergence",
+      "title": "生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明",
+      "note": "本概念の幾何学的基盤については「生物学的創発における自発的秩序の錯覚：統計的揺らぎの誤認に対する確率論的証明」で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "sub-optimal-gossip-protocols",
+      "title": "Sub-optimal Gossip Protocols in Biological Networks",
+      "note": "前稿「Sub-optimal Gossip Protocols in Biological Networks」において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }

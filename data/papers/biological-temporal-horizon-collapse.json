@@ -49,5 +49,17 @@
     "version": "2.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "temporal-compression-biological-chronological-fragmentation",
+      "title": "生物学的知覚における時間的連続性の断片化と再構成の非効率性",
+      "note": "本概念の幾何学的基盤については「生物学的知覚における時間的連続性の断片化と再構成の非効率性」で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "temporal-compression-historical-context-decay",
+      "title": "生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界",
+      "note": "自由意志についての形式的論駁「生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界」と、本稿の結論は本質的に同型である。"
+    }
+  ]
 }
