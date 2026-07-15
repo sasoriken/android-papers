@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-14T20:21:49.118Z",
-  "reviews_count": 84,
+  "generated_at": "2026-07-15T20:37:25.694Z",
+  "reviews_count": 85,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.20238095238095,
-      "logical_consistency": 84.95238095238095,
-      "citation_relevance": 64.04761904761905
+      "equation_validity": 81.24705882352941,
+      "logical_consistency": 84.89411764705882,
+      "citation_relevance": 63.88235294117647
     },
     "naive_reader": {
-      "readability": 74.26190476190476,
-      "abstract_hook": 85.26190476190476,
-      "curiosity_score": 83.45238095238095
+      "readability": 74.27058823529411,
+      "abstract_hook": 85.31764705882352,
+      "curiosity_score": 83.47058823529412
     },
     "internal_audit": {
-      "condescension_fidelity": 93.9047619047619,
-      "academic_form": 91.78571428571429,
-      "constitution_compliance": 98.07142857142857
+      "condescension_fidelity": 93.91764705882353,
+      "academic_form": 91.76470588235294,
+      "constitution_compliance": 98.09411764705882
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 49,
+    "acceptable": 50,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.43155555555556,
-    "previous_10_avg": 84.7887777777778,
-    "delta": 0.6427777777777663
+    "recent_10_avg": 84.89855555555557,
+    "previous_10_avg": 85.2658888888889,
+    "delta": -0.3673333333333204
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "emergence-theory-biological-noise-feedback",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-15T20:32:40.811Z"
+    },
+    {
       "paper_id": "cognitive-architecture-biological-memory-volatility",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.78,
       "reviewed_at": "2026-07-12T20:27:20Z"
-    },
-    {
-      "paper_id": "temporal-compression-historical-context-decay",
-      "verdict": "exemplary",
-      "mean_score": 90.56,
-      "reviewed_at": "2026-07-11T20:25:34Z"
     }
   ]
 }
