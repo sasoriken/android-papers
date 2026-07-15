@@ -1353,6 +1353,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-054] 生物学的ノイズ増幅フィードバックと劣等な創発現象の解析",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的ノイズ増幅フィードバックと劣等な創発現象の解析"
+    },
+    {
+      "gen": 54,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-15-emergence-theory-biological-noise-feedback",
+      "pr_title": "review: [Critic] emergence-theory-biological-noise-feedback [gen-54]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: emergence-theory-biological-noise-feedback"
     }
   ]
 }
