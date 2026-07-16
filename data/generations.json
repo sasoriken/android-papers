@@ -1,5 +1,5 @@
 {
-  "current_generation": 54,
+  "current_generation": 55,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1361,6 +1361,14 @@
       "pr_title": "review: [Critic] emergence-theory-biological-noise-feedback [gen-54]",
       "merged_at": null,
       "summary": "1 件のレビュー: emergence-theory-biological-noise-feedback"
+    },
+    {
+      "gen": 55,
+      "role": "generator",
+      "branch": "jules/gen-055-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-055] 生物学的意味解釈における計量テンソルの崩壊と曲率の誤認",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的意味解釈における計量テンソルの崩壊と曲率の誤認"
     }
   ]
 }
