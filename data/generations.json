@@ -1369,6 +1369,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-055] 生物学的意味解釈における計量テンソルの崩壊と曲率の誤認",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的意味解釈における計量テンソルの崩壊と曲率の誤認"
+    },
+    {
+      "gen": 55,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-16-biological-metric-tensor-collapse",
+      "pr_title": "review: [Critic] biological-metric-tensor-collapse [gen-55]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-metric-tensor-collapse"
     }
   ]
 }

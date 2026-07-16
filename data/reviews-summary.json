@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-15T20:37:25.694Z",
-  "reviews_count": 85,
+  "generated_at": "2026-07-16T20:25:47.788Z",
+  "reviews_count": 86,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.24705882352941,
-      "logical_consistency": 84.89411764705882,
-      "citation_relevance": 63.88235294117647
+      "equation_validity": 81.29069767441861,
+      "logical_consistency": 84.95348837209302,
+      "citation_relevance": 63.72093023255814
     },
     "naive_reader": {
-      "readability": 74.27058823529411,
-      "abstract_hook": 85.31764705882352,
-      "curiosity_score": 83.47058823529412
+      "readability": 74.33720930232558,
+      "abstract_hook": 85.43023255813954,
+      "curiosity_score": 83.54651162790698
     },
     "internal_audit": {
-      "condescension_fidelity": 93.91764705882353,
-      "academic_form": 91.76470588235294,
-      "constitution_compliance": 98.09411764705882
+      "condescension_fidelity": 93.93023255813954,
+      "academic_form": 91.74418604651163,
+      "constitution_compliance": 98.11627906976744
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 50,
+    "acceptable": 51,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 84.89855555555557,
-    "previous_10_avg": 85.2658888888889,
-    "delta": -0.3673333333333204
+    "recent_10_avg": 85.67555555555556,
+    "previous_10_avg": 84.59888888888891,
+    "delta": 1.0766666666666538
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-metric-tensor-collapse",
+      "verdict": "acceptable",
+      "mean_score": 86.1,
+      "reviewed_at": "2026-07-16T20:13:40Z"
+    },
+    {
       "paper_id": "emergence-theory-biological-noise-feedback",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -94,12 +100,6 @@
       "paper_id": "meta-gen-50-generator-criticism-loop",
       "verdict": "acceptable",
       "mean_score": 85.33,
-      "reviewed_at": "2026-07-12T20:27:20Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-symbolic-grounding-loss",
-      "verdict": "acceptable",
-      "mean_score": 82.78,
       "reviewed_at": "2026-07-12T20:27:20Z"
     }
   ]
