@@ -63,6 +63,16 @@
       "id": "biological-working-memory-collapse",
       "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-meta-reasoning-infinite-loop-fallacy",
+      "title": "生物学的メタ推論における無限後退の欺瞞：再帰的抽象化の自己破綻的構造",
+      "note": "本概念の幾何学的基盤については先行研究で展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "recursive-abstraction-biological-stack-overflow",
+      "title": "生物学的推論における再帰的抽象化の限界：認知スタックオーバーフローの不可避性",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
     }
   ],
   "meta": {
