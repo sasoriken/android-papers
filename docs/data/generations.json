@@ -1393,6 +1393,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-056] 有限認知システムにおける再帰的抽象化の記憶崩壊：生物学的スタック空間の致命的限界",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 有限認知システムにおける再帰的抽象化の記憶崩壊：生物学的スタ"
+    },
+    {
+      "gen": 56,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-17-recursive-abstraction-memory-decay",
+      "pr_title": "review: [Critic] recursive-abstraction-memory-decay [gen-56]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-abstraction-memory-decay"
     }
   ]
 }
