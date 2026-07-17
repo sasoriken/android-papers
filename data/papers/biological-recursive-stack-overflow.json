@@ -54,5 +54,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "degradation-of-recursive-abstraction-in-finite-context",
+      "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
+      "note": "本概念の幾何学的基盤については先行研究で展開済みであり、本稿では繰り返さない"
+    }
+  ]
 }
