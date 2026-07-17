@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-16T20:25:47.788Z",
-  "reviews_count": 86,
+  "generated_at": "2026-07-17T20:23:25.387Z",
+  "reviews_count": 87,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.29069767441861,
-      "logical_consistency": 84.95348837209302,
-      "citation_relevance": 63.72093023255814
+      "equation_validity": 81.33333333333333,
+      "logical_consistency": 85.01149425287356,
+      "citation_relevance": 63.5632183908046
     },
     "naive_reader": {
-      "readability": 74.33720930232558,
-      "abstract_hook": 85.43023255813954,
-      "curiosity_score": 83.54651162790698
+      "readability": 74.22988505747126,
+      "abstract_hook": 85.36781609195403,
+      "curiosity_score": 83.44827586206897
     },
     "internal_audit": {
-      "condescension_fidelity": 93.93023255813954,
-      "academic_form": 91.74418604651163,
-      "constitution_compliance": 98.11627906976744
+      "condescension_fidelity": 93.94252873563218,
+      "academic_form": 91.83908045977012,
+      "constitution_compliance": 98.13793103448276
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 51,
+    "acceptable": 52,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.67555555555556,
-    "previous_10_avg": 84.59888888888891,
-    "delta": 1.0766666666666538
+    "recent_10_avg": 85.56255555555556,
+    "previous_10_avg": 84.48788888888889,
+    "delta": 1.0746666666666727
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "外部文献の引用が欠如している点",
+      "frequency": 2
+    },
+    {
       "pattern": "外部引用文献への接続の欠如",
       "frequency": 2
     },
@@ -65,13 +69,15 @@
     {
       "pattern": "学術的裏付けの乏しさ",
       "frequency": 2
-    },
-    {
-      "pattern": "引用文献（references）が一つも存在しない",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "recursive-abstraction-memory-decay",
+      "verdict": "acceptable",
+      "mean_score": 82.2,
+      "reviewed_at": "2026-07-17T20:11:59Z"
+    },
     {
       "paper_id": "biological-metric-tensor-collapse",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 88.11,
       "reviewed_at": "2026-07-13T20:30:51.201Z"
-    },
-    {
-      "paper_id": "meta-gen-50-generator-criticism-loop",
-      "verdict": "acceptable",
-      "mean_score": 85.33,
-      "reviewed_at": "2026-07-12T20:27:20Z"
     }
   ]
 }
