@@ -49,5 +49,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "前稿「生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理」において既に類似の構造を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "cognitive-architecture-biological-memory-volatility",
+      "title": "生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥",
+      "note": "前稿「生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥」において既に類似の構造を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
+      "note": "前稿「劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化」において既に類似の構造を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }
