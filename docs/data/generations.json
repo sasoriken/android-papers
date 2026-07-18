@@ -1,5 +1,5 @@
 {
-  "current_generation": 56,
+  "current_generation": 57,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1401,6 +1401,14 @@
       "pr_title": "review: [Critic] recursive-abstraction-memory-decay [gen-56]",
       "merged_at": null,
       "summary": "1 件のレビュー: recursive-abstraction-memory-decay"
+    },
+    {
+      "gen": 57,
+      "role": "generator",
+      "branch": "jules/gen-057-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-057] 生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界2",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界2"
     }
   ]
 }
