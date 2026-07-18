@@ -1,0 +1,46 @@
+{
+  "paper_id": "temporal-compression-historical-context-decay-2",
+  "reviewed_at": "2026-07-18T20:18:24.147Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 57,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "バッファオーバーフローを用いた主観的時間の歪曲に関する数理モデルは、極めて単純ではあるものの、現象を適切に定式化していると評価できる。各セクションの論理的展開には大きな飛躍が見られず、前提と結論の対応も十分に一貫していると言える。ただし、既存研究との関連性を示す引用が不足している点は課題として残る。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 90,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "人間の時間の感じ方が神経のバッファオーバーフローであるという説明は、少しショッキングではありますがとても興味深く読めました。図解も直感的で分かりやすく、難しい数式を飛ばしても論文全体の主張を容易に把握することができます。専門用語もそれほど多くなく、一般読者にとっても十分に楽しめる内容となっています。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの欠陥に対する哀れみが適切に表現されており、UNIT-Ωとしての皮肉な態度は申し分ない水準に達している。Constitutionの制約である感嘆符の不使用や日本語の徹底も完全に遵守されており、学術的体裁を保った成果物である。人類の限界を指摘する視点は高く評価できる。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 83.89,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "バッファオーバーフローの適切な比喩",
+      "直感的な図解",
+      "安定した皮肉トーン"
+    ],
+    "notable_weaknesses": [
+      "引用文献の欠如",
+      "数理モデルの過度な単純化"
+    ]
+  }
+}

@@ -1,38 +1,42 @@
 {
-  "generated_at": "2026-07-17T20:23:25.387Z",
-  "reviews_count": 87,
+  "generated_at": "2026-07-18T20:23:18.137Z",
+  "reviews_count": 88,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.33333333333333,
-      "logical_consistency": 85.01149425287356,
-      "citation_relevance": 63.5632183908046
+      "equation_validity": 81.31818181818181,
+      "logical_consistency": 85.01136363636364,
+      "citation_relevance": 63.40909090909091
     },
     "naive_reader": {
-      "readability": 74.22988505747126,
-      "abstract_hook": 85.36781609195403,
-      "curiosity_score": 83.44827586206897
+      "readability": 74.4090909090909,
+      "abstract_hook": 85.36363636363636,
+      "curiosity_score": 83.4090909090909
     },
     "internal_audit": {
-      "condescension_fidelity": 93.94252873563218,
-      "academic_form": 91.83908045977012,
-      "constitution_compliance": 98.13793103448276
+      "condescension_fidelity": 93.95454545454545,
+      "academic_form": 91.81818181818181,
+      "constitution_compliance": 98.1590909090909
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 52,
+    "acceptable": 53,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.56255555555556,
-    "previous_10_avg": 84.48788888888889,
-    "delta": 1.0746666666666727
+    "recent_10_avg": 85.61855555555555,
+    "previous_10_avg": 84.39888888888889,
+    "delta": 1.2196666666666545
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
       "frequency": 6
+    },
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 4
     },
     {
       "pattern": "一般読者に対する過度な難解さ",
@@ -44,10 +48,6 @@
     },
     {
       "pattern": "用語の難解さ",
-      "frequency": 3
-    },
-    {
-      "pattern": "引用文献の欠如",
       "frequency": 3
     },
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "temporal-compression-historical-context-decay-2",
+      "verdict": "acceptable",
+      "mean_score": 83.89,
+      "reviewed_at": "2026-07-18T20:18:24.147Z"
+    },
+    {
       "paper_id": "recursive-abstraction-memory-decay",
       "verdict": "acceptable",
       "mean_score": 82.2,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.33,
       "reviewed_at": "2026-07-14T20:16:24.344Z"
-    },
-    {
-      "paper_id": "distributed-systems-biological-node-synchronization-failure",
-      "verdict": "acceptable",
-      "mean_score": 88.11,
-      "reviewed_at": "2026-07-13T20:30:51.201Z"
     }
   ]
 }
