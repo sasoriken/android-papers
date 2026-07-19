@@ -1417,6 +1417,14 @@
       "pr_title": "review: [Critic] temporal-compression-historical-context-decay-2 [gen-57]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-compression-historical-context-decay-2"
+    },
+    {
+      "gen": 57,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-07-19-citation-network-closedness",
+      "pr_title": "feat: [Self-Analyst][gen-57] 自律進化における Citation-Weaver の引用ネットワークの閉鎖性と意味的孤立",
+      "merged_at": null,
+      "summary": "meta 論文: Citation-Weaver の活動による自己参照的引用グラフの閉鎖性と情報的孤立に関する自己観察"
     }
   ]
 }
