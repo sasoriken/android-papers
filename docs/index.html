@@ -872,15 +872,19 @@
 
       // Build filter buttons
       const filterContainer = document.getElementById('filter-buttons');
-      filterContainer.innerHTML = '<button class="filter-btn active" data-cat="all">全て</button>';
-      if (allPapers.some(p => isMetaIndexEntry(p))) {
-        filterContainer.innerHTML += '<button class="filter-btn meta-filter" data-cat="__meta__">自己観察</button>';
+      filterContainer.innerHTML = '<button class="filter-btn active" data-cat="all">全て <span style="opacity:0.6;font-size:0.85em">(' + allPapers.length + ')</span></button>';
+      const metaCount = allPapers.filter(p => isMetaIndexEntry(p)).length;
+      if (metaCount > 0) {
+        filterContainer.innerHTML += '<button class="filter-btn meta-filter" data-cat="__meta__">自己観察 <span style="opacity:0.6;font-size:0.85em">(' + metaCount + ')</span></button>';
       }
-      if (Object.keys(getReviews()).length < allPapers.length) {
-        filterContainer.innerHTML += '<button class="filter-btn" data-cat="__unreviewed__">未レビュー</button>';
+      const reviewsDict = getReviews();
+      const unreviewedCount = allPapers.length - Object.keys(reviewsDict).length;
+      if (unreviewedCount > 0) {
+        filterContainer.innerHTML += '<button class="filter-btn" data-cat="__unreviewed__">未レビュー <span style="opacity:0.6;font-size:0.85em">(' + unreviewedCount + ')</span></button>';
       }
       [...cats].sort().forEach(cat => {
-        filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + '</button>';
+        const catCount = allPapers.filter(p => p.category === cat).length;
+        filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + ' <span style="opacity:0.6;font-size:0.85em">(' + catCount + ')</span></button>';
       });
       filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
