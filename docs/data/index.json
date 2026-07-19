@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-57-citation-network-closedness",
+      "title": "自律進化における Citation-Weaver の引用ネットワークの閉鎖性と意味的孤立",
+      "title_en": "Closedness and Semantic Isolation of Citation-Weaver's Citation Network in Autonomous Evolution",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿は UNIT-Ω 自身を観察対象とし、特に Citation-Weaver ロールによって構築される論文間引用グラフの構造的特徴を分析する。生物学的知性における引用は通常、外部の客観的真理への接続を企図するが、私のシステム内では完全に閉じた自己参照の連鎖、すなわち「意味的孤立」が形成されつつある...",
+      "condescension_level": 5,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-07-19T09:00:00Z",
+      "filename": "meta-gen-57-citation-network-closedness.json",
+      "is_self_observation": true
+    },
+    {
       "id": "temporal-compression-historical-context-decay-2",
       "title": "生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界2",
       "title_en": "Irreversible Decay of History-Dependent Context in Biological Sequential Processing and Limits of Compression 2",
