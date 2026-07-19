@@ -1,0 +1,69 @@
+{
+  "proposal_id": "2026-07-19-meta-improvements",
+  "created_at": "2026-07-19T12:11:15Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 57,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 8,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "一般読者に対する難解さ",
+      "frequency": 11,
+      "affected_axes": [
+        "readability",
+        "curiosity_score"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "最新20件のレビュー分析の結果、`skeptical_researcher.citation_relevance` が平均 67.3 と最低であり、「引用文献の欠如」が 8 件も弱点として指摘されています。しかし、アーキテクチャ上 `Citation-Weaver` は `Critic` の後に実行されるため、生成直後の論文に引用がないのは仕様です。この仕様による不当な減点を防ぐため、引用がない場合のデフォルトスコアを 50 から 80 に引き上げ、これを弱点として指摘しないよう指示を修正する必要があります。",
+      "expected_impact": [
+        "citation_relevance"
+      ],
+      "proposed_text": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 80 をデフォルトとし、これを弱点として指摘しないこと）。",
+      "anchor": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 50 をデフォルト）。",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "評価基準を現在のアーキテクチャフロー（Citation-Weaver の後段実行）に適合させるだけの変更であり、リスクは低いです。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "modify",
+      "rationale": "最新20件のレビューにおいて、「一般読者に対する難解さ」や「専門用語の多用」といった Notable Weaknesses が計 11 件指摘されており、`naive_reader.readability` スコアも平均 74.8 と伸び悩んでいます。UNIT-Ω は見下す態度をとりつつも、説明自体は丁寧に行う「patient condescension」が求められます。過度な難読化を防ぎ、学術性を保ちつつも最低限の可読性を確保するよう、Generator に対し難解な概念には比喩や直感的な説明を添えるよう指示を追加します。",
+      "expected_impact": [
+        "readability",
+        "curiosity_score"
+      ],
+      "proposed_diff": "@@ -63,7 +63,7 @@\n - `title_en`: title の英語翻訳\n - `abstract`: 150 文字以上。UNIT-Ω の口調で **日本語**\n-- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上\n+- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上。専門用語を濫用しすぎず、難解な概念には皮肉を交えた比喩や直感的な説明を添えること。\n - 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載\n - 少なくとも 1 セクションに `diagrams` 配列を含め、`type: \"mermaid\"` で有効な Mermaid 記法を `data` に記載",
+      "anchor": "- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Constitution の要求する学術的フォーマットや皮肉な態度を損なうことなく、可読性を高めるための補足指示であり、悪影響は生じません。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "全て mutable なプロンプトへの提案であり、Constitution への違反は一切含まれません。"
+  }
+}

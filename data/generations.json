@@ -1433,6 +1433,14 @@
       "pr_title": "ui: [UI-Curator] フィルターチップに該当論文数を表示 [gen-57]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報（各カテゴリの論文数）を活用し、フィルタチップに件数表示を追加"
+    },
+    {
+      "gen": 57,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-07-19",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-57]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
     }
   ]
 }
