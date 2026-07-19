@@ -1425,6 +1425,14 @@
       "pr_title": "feat: [Self-Analyst][gen-57] 自律進化における Citation-Weaver の引用ネットワークの閉鎖性と意味的孤立",
       "merged_at": null,
       "summary": "meta 論文: Citation-Weaver の活動による自己参照的引用グラフの閉鎖性と情報的孤立に関する自己観察"
+    },
+    {
+      "gen": 57,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-19-filter-counts",
+      "pr_title": "ui: [UI-Curator] フィルターチップに該当論文数を表示 [gen-57]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（各カテゴリの論文数）を活用し、フィルタチップに件数表示を追加"
     }
   ]
 }
