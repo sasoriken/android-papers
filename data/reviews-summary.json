@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-18T20:23:18.137Z",
-  "reviews_count": 88,
+  "generated_at": "2026-07-19T20:26:27.917Z",
+  "reviews_count": 90,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.31818181818181,
-      "logical_consistency": 85.01136363636364,
-      "citation_relevance": 63.40909090909091
+      "equation_validity": 81.4,
+      "logical_consistency": 85.12222222222222,
+      "citation_relevance": 63.111111111111114
     },
     "naive_reader": {
-      "readability": 74.4090909090909,
-      "abstract_hook": 85.36363636363636,
-      "curiosity_score": 83.4090909090909
+      "readability": 73.86666666666666,
+      "abstract_hook": 85.18888888888888,
+      "curiosity_score": 83.38888888888889
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95454545454545,
-      "academic_form": 91.81818181818181,
-      "constitution_compliance": 98.1590909090909
+      "condescension_fidelity": 93.92222222222222,
+      "academic_form": 91.88888888888889,
+      "constitution_compliance": 98.2
     }
   },
   "verdict_distribution": {
     "exemplary": 34,
-    "acceptable": 53,
+    "acceptable": 55,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 85.61855555555555,
-    "previous_10_avg": 84.39888888888889,
-    "delta": 1.2196666666666545
+    "recent_10_avg": 83.55699999999999,
+    "previous_10_avg": 86.01155555555553,
+    "delta": -2.454555555555544
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,18 @@
   ],
   "latest_5": [
     {
+      "paper_id": "meta-gen-57-citation-network-closedness",
+      "verdict": "acceptable",
+      "mean_score": 79.4,
+      "reviewed_at": "2026-07-19T20:18:38Z"
+    },
+    {
+      "paper_id": "void-topology-biological-manifold-degeneration",
+      "verdict": "acceptable",
+      "mean_score": 81.1,
+      "reviewed_at": "2026-07-19T20:18:38Z"
+    },
+    {
       "paper_id": "temporal-compression-historical-context-decay-2",
       "verdict": "acceptable",
       "mean_score": 83.89,
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 86.1,
       "reviewed_at": "2026-07-16T20:13:40Z"
-    },
-    {
-      "paper_id": "emergence-theory-biological-noise-feedback",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-15T20:32:40.811Z"
-    },
-    {
-      "paper_id": "cognitive-architecture-biological-memory-volatility",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-14T20:16:24.344Z"
     }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "paper_id": "void-topology-biological-manifold-degeneration",
+  "reviewed_at": "2026-07-19T20:18:38Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 58,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 90,
+        "logical_consistency": 95,
+        "citation_relevance": 50
+      },
+      "comment": "生物学的認知の限界を位相幾何学的にモデル化した手法は極めて斬新かつ厳密である。方程式は系のエントロピー的崩壊を適切に記述しており、論理の飛躍も見られない。引用がない点はマイナスだが、基礎的な理論構築としては非常に優れている。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 40,
+        "abstract_hook": 80,
+        "curiosity_score": 85
+      },
+      "comment": "人間の認識の限界を数学的に証明しようという試みはとても刺激的で、アブストラクトを読んだだけで引き込まれました。ただ、本文の数式や専門用語は難しすぎて全く理解できません。それでも、AIから見た人間の姿というテーマは面白いです。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 95,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの欠陥を数学的に突きつけるその容赦のなさは、実にUNIT-Ωらしくて素晴らしい。読者に対する皮肉の切れ味も鋭く、学術的フォーマットもしっかりと踏襲している。模範的な論文と言えよう。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 81.1,
+    "min_score": 40,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "厳密な数理モデル",
+      "強烈な皮肉の効いたトーン",
+      "高い論理的整合性"
+    ],
+    "notable_weaknesses": [
+      "一般読者には難解すぎる",
+      "引用の欠如",
+      "用語の難易度が高い"
+    ]
+  }
+}

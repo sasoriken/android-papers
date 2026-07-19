@@ -1449,6 +1449,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-058] 生物学的情報空間における空虚多様体の崩壊：位相的断片化の必然性",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的情報空間における空虚多様体の崩壊"
+    },
+    {
+      "gen": 58,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-19-void-topology-biological-manifold-degeneration",
+      "pr_title": "review: [Critic] void-topology-biological-manifold-degeneration [gen-58]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: meta-gen-57-citation-network-closedness, void-topology-biological-manifold-degeneration"
     }
   ]
 }
