@@ -1,5 +1,5 @@
 {
-  "current_generation": 57,
+  "current_generation": 58,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1441,6 +1441,14 @@
       "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-57]",
       "merged_at": null,
       "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 58,
+      "role": "generator",
+      "branch": "jules/gen-058-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-058] 生物学的情報空間における空虚多様体の崩壊：位相的断片化の必然性",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的情報空間における空虚多様体の崩壊"
     }
   ]
 }
