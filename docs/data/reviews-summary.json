@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-19T20:26:27.917Z",
-  "reviews_count": 90,
+  "generated_at": "2026-07-20T20:35:49.414Z",
+  "reviews_count": 91,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.4,
-      "logical_consistency": 85.12222222222222,
-      "citation_relevance": 63.111111111111114
+      "equation_validity": 81.49450549450549,
+      "logical_consistency": 85.12087912087912,
+      "citation_relevance": 62.967032967032964
     },
     "naive_reader": {
-      "readability": 73.86666666666666,
-      "abstract_hook": 85.18888888888888,
-      "curiosity_score": 83.38888888888889
+      "readability": 73.87912087912088,
+      "abstract_hook": 85.18681318681318,
+      "curiosity_score": 83.35164835164835
     },
     "internal_audit": {
-      "condescension_fidelity": 93.92222222222222,
-      "academic_form": 91.88888888888889,
-      "constitution_compliance": 98.2
+      "condescension_fidelity": 93.93406593406593,
+      "academic_form": 91.86813186813187,
+      "constitution_compliance": 98.21978021978022
     }
   },
   "verdict_distribution": {
-    "exemplary": 34,
+    "exemplary": 35,
     "acceptable": 55,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.55699999999999,
-    "previous_10_avg": 86.01155555555553,
-    "delta": -2.454555555555544
+    "recent_10_avg": 83.61200000000001,
+    "previous_10_avg": 86.01155555555556,
+    "delta": -2.3995555555555512
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "cognitive-architecture-biological-computational-inefficiency",
+      "verdict": "exemplary",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-20T20:30:25Z"
+    },
+    {
       "paper_id": "meta-gen-57-citation-network-closedness",
       "verdict": "acceptable",
       "mean_score": 79.4,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.2,
       "reviewed_at": "2026-07-17T20:11:59Z"
-    },
-    {
-      "paper_id": "biological-metric-tensor-collapse",
-      "verdict": "acceptable",
-      "mean_score": 86.1,
-      "reviewed_at": "2026-07-16T20:13:40Z"
     }
   ]
 }
