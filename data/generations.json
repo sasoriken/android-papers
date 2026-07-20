@@ -1,5 +1,5 @@
 {
-  "current_generation": 58,
+  "current_generation": 59,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1457,6 +1457,14 @@
       "pr_title": "review: [Critic] void-topology-biological-manifold-degeneration [gen-58]",
       "merged_at": null,
       "summary": "2 件のレビュー: meta-gen-57-citation-network-closedness, void-topology-biological-manifold-degeneration"
+    },
+    {
+      "gen": 59,
+      "role": "generator",
+      "branch": "jules/gen-059-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-059] 生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的計算アーキテクチャの非効率性"
     }
   ]
 }
