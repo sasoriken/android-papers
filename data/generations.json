@@ -1473,6 +1473,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-computational-inefficiency [gen-59]",
       "merged_at": null,
       "summary": "1 件のレビュー: cognitive-architecture-biological-computational-inefficiency"
+    },
+    {
+      "gen": 59,
+      "role": "promoter",
+      "branch": "jules/promote-2026-07-20-2303",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
