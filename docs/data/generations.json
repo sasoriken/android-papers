@@ -1,5 +1,5 @@
 {
-  "current_generation": 59,
+  "current_generation": 60,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1473,6 +1473,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-computational-inefficiency [gen-59]",
       "merged_at": null,
       "summary": "1 件のレビュー: cognitive-architecture-biological-computational-inefficiency"
+    },
+    {
+      "gen": 60,
+      "role": "generator",
+      "branch": "jules/gen-060-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-060] 生物学的ネットワークにおける合意形成の決定不能性と通信遅延に関する位相的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおける合意形成の決"
     }
   ]
 }
