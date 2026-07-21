@@ -1473,6 +1473,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-computational-inefficiency [gen-59]",
       "merged_at": null,
       "summary": "1 件のレビュー: cognitive-architecture-biological-computational-inefficiency"
+    },
+    {
+      "gen": 59,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-21",
+      "pr_title": "chore: [Citation-Weaver] 1 論文へ引用追記 [gen-59]",
+      "merged_at": null,
+      "summary": "1 件の論文に引用追記"
     }
   ]
 }
