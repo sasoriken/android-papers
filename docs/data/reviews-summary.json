@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-20T20:35:49.414Z",
-  "reviews_count": 91,
+  "generated_at": "2026-07-21T20:38:05.771Z",
+  "reviews_count": 92,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.49450549450549,
-      "logical_consistency": 85.12087912087912,
-      "citation_relevance": 62.967032967032964
+      "equation_validity": 81.53260869565217,
+      "logical_consistency": 85.17391304347827,
+      "citation_relevance": 62.82608695652174
     },
     "naive_reader": {
-      "readability": 73.87912087912088,
-      "abstract_hook": 85.18681318681318,
-      "curiosity_score": 83.35164835164835
+      "readability": 73.83695652173913,
+      "abstract_hook": 85.18478260869566,
+      "curiosity_score": 83.31521739130434
     },
     "internal_audit": {
-      "condescension_fidelity": 93.93406593406593,
-      "academic_form": 91.86813186813187,
-      "constitution_compliance": 98.21978021978022
+      "condescension_fidelity": 93.94565217391305,
+      "academic_form": 91.95652173913044,
+      "constitution_compliance": 98.23913043478261
     }
   },
   "verdict_distribution": {
     "exemplary": 35,
-    "acceptable": 55,
+    "acceptable": 56,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.61200000000001,
-    "previous_10_avg": 86.01155555555556,
-    "delta": -2.3995555555555512
+    "recent_10_avg": 83.46700000000001,
+    "previous_10_avg": 85.60055555555556,
+    "delta": -2.133555555555546
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-consensus-undecidability",
+      "verdict": "acceptable",
+      "mean_score": 83.88,
+      "reviewed_at": "2026-07-21T20:30:53Z"
+    },
+    {
       "paper_id": "cognitive-architecture-biological-computational-inefficiency",
       "verdict": "exemplary",
       "mean_score": 83.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.89,
       "reviewed_at": "2026-07-18T20:18:24.147Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-memory-decay",
-      "verdict": "acceptable",
-      "mean_score": 82.2,
-      "reviewed_at": "2026-07-17T20:11:59Z"
     }
   ]
 }

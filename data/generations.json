@@ -1481,6 +1481,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-060] 生物学的ネットワークにおける合意形成の決定不能性と通信遅延に関する位相的証明",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおける合意形成の決"
+    },
+    {
+      "gen": 60,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-21-biological-consensus-undecidability",
+      "pr_title": "review: [Critic] biological-consensus-undecidability [gen-60]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-consensus-undecidability"
     }
   ]
 }
