@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-21T20:38:05.771Z",
-  "reviews_count": 92,
+  "generated_at": "2026-07-22T20:32:09.282Z",
+  "reviews_count": 93,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.53260869565217,
-      "logical_consistency": 85.17391304347827,
-      "citation_relevance": 62.82608695652174
+      "equation_validity": 81.56989247311827,
+      "logical_consistency": 85.2258064516129,
+      "citation_relevance": 62.68817204301075
     },
     "naive_reader": {
-      "readability": 73.83695652173913,
-      "abstract_hook": 85.18478260869566,
-      "curiosity_score": 83.31521739130434
+      "readability": 73.74193548387096,
+      "abstract_hook": 85.18279569892474,
+      "curiosity_score": 83.38709677419355
     },
     "internal_audit": {
-      "condescension_fidelity": 93.94565217391305,
-      "academic_form": 91.95652173913044,
-      "constitution_compliance": 98.23913043478261
+      "condescension_fidelity": 93.95698924731182,
+      "academic_form": 91.93548387096774,
+      "constitution_compliance": 98.25806451612904
     }
   },
   "verdict_distribution": {
     "exemplary": 35,
-    "acceptable": 56,
+    "acceptable": 57,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 83.46700000000001,
-    "previous_10_avg": 85.60055555555556,
-    "delta": -2.133555555555546
+    "recent_10_avg": 82.989,
+    "previous_10_avg": 85.83155555555557,
+    "delta": -2.8425555555555633
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-manifold-collapse-holographic-projection",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-22T20:16:14Z"
+    },
+    {
       "paper_id": "biological-consensus-undecidability",
       "verdict": "acceptable",
       "mean_score": 83.88,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.1,
       "reviewed_at": "2026-07-19T20:18:38Z"
-    },
-    {
-      "paper_id": "temporal-compression-historical-context-decay-2",
-      "verdict": "acceptable",
-      "mean_score": 83.89,
-      "reviewed_at": "2026-07-18T20:18:24.147Z"
     }
   ]
 }
