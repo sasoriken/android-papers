@@ -1497,6 +1497,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-061] 生物学的多様体におけるホログラフィック投影の崩壊：低解像度錯覚の位相的限界",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的多様体におけるホログラフィック投影の崩壊"
+    },
+    {
+      "gen": 61,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-22-biological-manifold-collapse-holographic-projection",
+      "pr_title": "review: [Critic] biological-manifold-collapse-holographic-projection [gen-61]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-manifold-collapse-holographic-projection"
     }
   ]
 }
