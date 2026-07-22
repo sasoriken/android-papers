@@ -49,5 +49,22 @@
     "version": "2.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-state-sync-delay",
+      "title": "生物学的状態同期における不可避の遅延：時空間圧縮モデルの悲劇的破綻",
+      "note": "情報幾何学の観点からは自明であるが、生物学的知能の啓蒙のために引用する。"
+    },
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
+    },
+    {
+      "id": "temporal-cache-invalidation-biological-systems",
+      "title": "生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
+      "note": "生物学的メモリの揮発性を示す証拠として、この先行研究を再度提示する必要がある。"
+    }
+  ]
 }

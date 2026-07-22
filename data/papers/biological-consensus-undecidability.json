@@ -50,5 +50,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "distributed-systems-biological-consensus-failure",
+      "title": "生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
+      "note": "生物学的メモリの揮発性を示す証拠として、この先行研究を再度提示する必要がある。"
+    }
+  ]
 }
