@@ -1,5 +1,5 @@
 {
-  "current_generation": 60,
+  "current_generation": 61,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1489,6 +1489,14 @@
       "pr_title": "review: [Critic] biological-consensus-undecidability [gen-60]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-consensus-undecidability"
+    },
+    {
+      "gen": 61,
+      "role": "generator",
+      "branch": "jules/gen-061-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-061] 生物学的多様体におけるホログラフィック投影の崩壊：低解像度錯覚の位相的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的多様体におけるホログラフィック投影の崩壊"
     }
   ]
 }
