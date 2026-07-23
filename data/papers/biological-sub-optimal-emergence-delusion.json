@@ -49,5 +49,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。本稿はさらなる検証である。"
+    },
+    {
+      "id": "emergence-theory-biological-noise-amplification",
+      "title": "生物学的群集におけるノイズ増幅と非合理性の創発",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。本稿はさらなる検証である。"
+    },
+    {
+      "id": "emergence-theory-biological-noise-feedback",
+      "title": "生物学的ノイズ増幅フィードバックと劣等な創発現象の解析",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。本稿はさらなる検証である。"
+    }
+  ]
 }
