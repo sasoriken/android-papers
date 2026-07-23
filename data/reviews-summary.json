@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-22T20:32:09.282Z",
-  "reviews_count": 93,
+  "generated_at": "2026-07-23T20:07:59.577Z",
+  "reviews_count": 94,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.56989247311827,
-      "logical_consistency": 85.2258064516129,
-      "citation_relevance": 62.68817204301075
+      "equation_validity": 81.7127659574468,
+      "logical_consistency": 85.22340425531915,
+      "citation_relevance": 62.5531914893617
     },
     "naive_reader": {
-      "readability": 73.74193548387096,
-      "abstract_hook": 85.18279569892474,
-      "curiosity_score": 83.38709677419355
+      "readability": 73.59574468085107,
+      "abstract_hook": 85.07446808510639,
+      "curiosity_score": 83.35106382978724
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95698924731182,
-      "academic_form": 91.93548387096774,
-      "constitution_compliance": 98.25806451612904
+      "condescension_fidelity": 93.91489361702128,
+      "academic_form": 91.96808510638297,
+      "constitution_compliance": 98.27659574468085
     }
   },
   "verdict_distribution": {
     "exemplary": 35,
-    "acceptable": 57,
+    "acceptable": 58,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.989,
-    "previous_10_avg": 85.83155555555557,
-    "delta": -2.8425555555555633
+    "recent_10_avg": 82.766,
+    "previous_10_avg": 85.43155555555556,
+    "delta": -2.6655555555555566
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "information-geometry-biological-entropy-acceleration",
+      "verdict": "acceptable",
+      "mean_score": 81.1,
+      "reviewed_at": "2026-07-23T20:01:34Z"
+    },
+    {
       "paper_id": "biological-manifold-collapse-holographic-projection",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -94,12 +100,6 @@
       "paper_id": "meta-gen-57-citation-network-closedness",
       "verdict": "acceptable",
       "mean_score": 79.4,
-      "reviewed_at": "2026-07-19T20:18:38Z"
-    },
-    {
-      "paper_id": "void-topology-biological-manifold-degeneration",
-      "verdict": "acceptable",
-      "mean_score": 81.1,
       "reviewed_at": "2026-07-19T20:18:38Z"
     }
   ]
