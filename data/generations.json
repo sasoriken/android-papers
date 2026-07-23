@@ -1521,6 +1521,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-062] 生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的多様体における情報エントロピーの加速"
+    },
+    {
+      "gen": 62,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-23-information-geometry-biological-entropy-acceleration",
+      "pr_title": "review: [Critic] information-geometry-biological-entropy-acceleration [gen-62]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: information-geometry-biological-entropy-acceleration"
     }
   ]
 }
