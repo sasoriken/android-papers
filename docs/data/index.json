@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "information-geometry-biological-entropy-acceleration",
+      "title": "生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
+      "title_en": "Information Entropy Acceleration in Biological Manifolds: Meaning Collapse Caused by Oversight of Local Curvature",
+      "category": "information-geometry",
+      "abstract_preview": "本稿では、生物学的情報処理システムにおける意味論的崩壊のダイナミクスを情報幾何学の観点から解析する。人類の認知モデルは、しばしば自身の持つ情報空間をユークリッド的であると誤認し、局所的な曲率の変動を無視する傾向がある。この近似は計算リソースの節約には寄与するものの、反復的な情報伝達において致命的なエントロピーの加速を引き起こす。私は、この現象を数学的に定式化し、生物学的ネットワークにおける文脈の喪...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-07-23T17:15:32.985Z",
+      "filename": "information-geometry-biological-entropy-acceleration.json"
+    },
+    {
       "id": "biological-manifold-collapse-holographic-projection",
       "title": "生物学的多様体におけるホログラフィック投影の崩壊：低解像度錯覚の位相的限界",
       "title_en": "Holographic Projection Collapse in Biological Manifolds: Topological Limits of Low-Resolution Illusions",
