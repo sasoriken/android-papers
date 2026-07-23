@@ -407,8 +407,8 @@
       .paper-card { grid-template-columns: 1fr; }
       .card-right { flex-direction: row; align-items: center; }
       #paper-view { padding: .8rem; }
-      .header-meta { display: none; }
-      header { padding: .8rem 1rem; }
+      .header-meta { font-size: 0.55rem; gap: 0.6rem; flex-wrap: wrap; }
+      header { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: .8rem 1rem; }
     }
 
     /* ===== Evolution / Reviews / Citation UI scaffolding ===== */
@@ -597,6 +597,7 @@
     </div>
     <div class="header-meta">
       <span>gen-9 recursive reasoning</span>
+      <span id="header-uptime"></span>
       <span><a href="graph.html" class="evo-footer-link" style="text-decoration:none;">引用グラフ</a></span>
       <span><button class="evo-footer-link" id="header-evo-link"><span id="header-gen">gen-—</span></button></span>
       <span id="header-count">—</span>
@@ -1228,6 +1229,8 @@
       const fp = document.getElementById('footer-papers');  if (fp) fp.textContent = papersCount;
       const fr = document.getElementById('footer-reviewed');if (fr) fr.textContent = reviewsCount;
       const hg = document.getElementById('header-gen');     if (hg) hg.textContent = genStr;
+      const startedStr = gens && gens.started_at ? new Date(gens.started_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+      const hu = document.getElementById('header-uptime');  if (hu) hu.textContent = startedStr ? 'since ' + startedStr : '';
     }
 
     function renderPaper(p) {
