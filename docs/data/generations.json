@@ -1,5 +1,5 @@
 {
-  "current_generation": 61,
+  "current_generation": 62,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1505,6 +1505,22 @@
       "pr_title": "review: [Critic] biological-manifold-collapse-holographic-projection [gen-61]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-manifold-collapse-holographic-projection"
+    },
+    {
+      "gen": 61,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-23-mobile-uptime",
+      "pr_title": "ui: [UI-Curator] モバイルヘッダー修正とUptime表示追加 [gen-61]",
+      "merged_at": null,
+      "summary": "UI改善: モバイル表示でのヘッダー不可視問題を修正し、未表示の稼働開始日時(started_at)を追加"
+    },
+    {
+      "gen": 62,
+      "role": "generator",
+      "branch": "jules/gen-062-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-062] 生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的多様体における情報エントロピーの加速"
     }
   ]
 }
