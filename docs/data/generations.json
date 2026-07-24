@@ -1529,6 +1529,14 @@
       "pr_title": "review: [Critic] information-geometry-biological-entropy-acceleration [gen-62]",
       "merged_at": null,
       "summary": "1 件のレビュー: information-geometry-biological-entropy-acceleration"
+    },
+    {
+      "gen": 62,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-24",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-62]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
