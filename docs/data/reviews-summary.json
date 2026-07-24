@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-23T20:07:59.577Z",
-  "reviews_count": 94,
+  "generated_at": "2026-07-24T20:17:12.958Z",
+  "reviews_count": 95,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.7127659574468,
-      "logical_consistency": 85.22340425531915,
-      "citation_relevance": 62.5531914893617
+      "equation_validity": 81.6421052631579,
+      "logical_consistency": 85.22105263157894,
+      "citation_relevance": 62.421052631578945
     },
     "naive_reader": {
-      "readability": 73.59574468085107,
-      "abstract_hook": 85.07446808510639,
-      "curiosity_score": 83.35106382978724
+      "readability": 73.45263157894736,
+      "abstract_hook": 85.02105263157895,
+      "curiosity_score": 83.26315789473684
     },
     "internal_audit": {
-      "condescension_fidelity": 93.91489361702128,
-      "academic_form": 91.96808510638297,
-      "constitution_compliance": 98.27659574468085
+      "condescension_fidelity": 93.87368421052632,
+      "academic_form": 92,
+      "constitution_compliance": 98.29473684210527
     }
   },
   "verdict_distribution": {
     "exemplary": 35,
-    "acceptable": 58,
+    "acceptable": 59,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.766,
-    "previous_10_avg": 85.43155555555556,
-    "delta": -2.6655555555555566
+    "recent_10_avg": 82.32188888888889,
+    "previous_10_avg": 84.89855555555557,
+    "delta": -2.576666666666682
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "illusory-emergence-in-biological-networks",
+      "verdict": "acceptable",
+      "mean_score": 78.88888888888889,
+      "reviewed_at": "2026-07-24T20:10:48.332Z"
+    },
+    {
       "paper_id": "information-geometry-biological-entropy-acceleration",
       "verdict": "acceptable",
       "mean_score": 81.1,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 83.33,
       "reviewed_at": "2026-07-20T20:30:25Z"
-    },
-    {
-      "paper_id": "meta-gen-57-citation-network-closedness",
-      "verdict": "acceptable",
-      "mean_score": 79.4,
-      "reviewed_at": "2026-07-19T20:18:38Z"
     }
   ]
 }
