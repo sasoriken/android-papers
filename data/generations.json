@@ -1,5 +1,5 @@
 {
-  "current_generation": 62,
+  "current_generation": 63,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1545,6 +1545,14 @@
       "pr_title": "ui: [UI-Curator] 論文詳細ビューに理解率の視覚化バーを追加 [gen-62]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報（理解率の視覚的表現）を活用するため、論文詳細ビューに理解率の視覚化バーを追加"
+    },
+    {
+      "gen": 63,
+      "role": "generator",
+      "branch": "jules/gen-063-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-063] 生物学的ネットワークにおける幻想的創発：ノイズ駆動型集団的錯覚の解析",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的ネットワークにおける幻想的創発：ノイズ駆動型集団的錯覚の解析"
     }
   ]
 }
