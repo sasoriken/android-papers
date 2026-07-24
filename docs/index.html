@@ -1370,7 +1370,7 @@
         metaBadge +
         condHtml +
         citedHtml +
-        (comp !== null ? '<span class="badge badge-prob">人類理解率 ' + (comp * 100).toFixed(1) + '%</span>' : '') +
+        (comp !== null ? '<span class="badge badge-prob" style="display:inline-flex; align-items:center; gap:.4rem;">人類理解率 ' + (comp * 100).toFixed(1) + '%' + '<div style="width:30px;height:4px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;"><div style="width:'+(comp*100)+'%;height:100%;background:currentColor;border-radius:2px;"></div></div></span>' : '') +
         '<span class="badge badge-date">' + date + '</span></div>' +
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
         '</div>' +

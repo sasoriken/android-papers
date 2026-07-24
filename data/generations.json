@@ -1537,6 +1537,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-62]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 62,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-24-detailed-comp-percentage",
+      "pr_title": "ui: [UI-Curator] 論文詳細ビューに理解率の視覚化バーを追加 [gen-62]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（理解率の視覚的表現）を活用するため、論文詳細ビューに理解率の視覚化バーを追加"
     }
   ]
 }
