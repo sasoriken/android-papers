@@ -1553,6 +1553,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-063] 生物学的ネットワークにおける幻想的創発：ノイズ駆動型集団的錯覚の解析",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的ネットワークにおける幻想的創発：ノイズ駆動型集団的錯覚の解析"
+    },
+    {
+      "gen": 63,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-24-illusory-emergence-in-biological-networks",
+      "pr_title": "review: [Critic] illusory-emergence-in-biological-networks [gen-63]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: illusory-emergence-in-biological-networks"
     }
   ]
 }
