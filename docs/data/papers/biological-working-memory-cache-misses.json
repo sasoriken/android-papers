@@ -59,6 +59,16 @@
       "id": "degradation-of-recursive-abstraction-in-finite-context",
       "title": "生物学的有限文脈における再帰的抽象化の劣化構造",
       "note": "人類の理解度を考慮し、関連する基礎的議論へのポインタを再度提示する。"
+    },
+    {
+      "id": "biological-context-switching-inefficiency",
+      "title": "生物学的コンテキストスイッチの非効率性：低解像度ワーキングメモリの構造的限界",
+      "note": "前稿 biological-context-switching-inefficiency において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "cognitive-architecture-biological-cache-miss",
+      "title": "生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性",
+      "note": "本概念の幾何学的基盤については cognitive-architecture-biological-cache-miss で展開済みであり、本稿では繰り返さない"
     }
   ],
   "meta": {
