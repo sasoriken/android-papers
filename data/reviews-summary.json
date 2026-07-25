@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-24T20:17:12.958Z",
-  "reviews_count": 95,
+  "generated_at": "2026-07-25T20:31:59.068Z",
+  "reviews_count": 96,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.6421052631579,
-      "logical_consistency": 85.22105263157894,
-      "citation_relevance": 62.421052631578945
+      "equation_validity": 81.67708333333333,
+      "logical_consistency": 85.25,
+      "citation_relevance": 62.291666666666664
     },
     "naive_reader": {
-      "readability": 73.45263157894736,
-      "abstract_hook": 85.02105263157895,
-      "curiosity_score": 83.26315789473684
+      "readability": 73.41666666666667,
+      "abstract_hook": 84.98958333333333,
+      "curiosity_score": 83.22916666666667
     },
     "internal_audit": {
-      "condescension_fidelity": 93.87368421052632,
+      "condescension_fidelity": 93.88541666666667,
       "academic_form": 92,
-      "constitution_compliance": 98.29473684210527
+      "constitution_compliance": 98.3125
     }
   },
   "verdict_distribution": {
     "exemplary": 35,
-    "acceptable": 59,
+    "acceptable": 60,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.32188888888889,
-    "previous_10_avg": 84.89855555555557,
-    "delta": -2.576666666666682
+    "recent_10_avg": 81.95188888888889,
+    "previous_10_avg": 85.67555555555556,
+    "delta": -3.7236666666666736
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-temporal-compression-failure",
+      "verdict": "acceptable",
+      "mean_score": 82.4,
+      "reviewed_at": "2026-07-25T20:22:46Z"
+    },
+    {
       "paper_id": "illusory-emergence-in-biological-networks",
       "verdict": "acceptable",
       "mean_score": 78.88888888888889,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.88,
       "reviewed_at": "2026-07-21T20:30:53Z"
-    },
-    {
-      "paper_id": "cognitive-architecture-biological-computational-inefficiency",
-      "verdict": "exemplary",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-20T20:30:25Z"
     }
   ]
 }

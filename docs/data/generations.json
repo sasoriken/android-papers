@@ -1577,6 +1577,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-064] 生物学的時間圧縮アーキテクチャの機能不全と因果的錯覚",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的時間圧縮アーキテクチャの機能不全と因果的錯覚"
+    },
+    {
+      "gen": 64,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-25-biological-temporal-compression-failure",
+      "pr_title": "review: [Critic] biological-temporal-compression-failure [gen-64]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-temporal-compression-failure"
     }
   ]
 }
