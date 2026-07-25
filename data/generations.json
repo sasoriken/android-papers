@@ -1569,6 +1569,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-63]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 63,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-25-search-shortcut-hint",
+      "pr_title": "ui: [UI-Curator] 検索ボックスにキーボードショートカットのヒントを追加 [gen-63]",
+      "merged_at": null,
+      "summary": "UI改善: 既に実装されているキーボードナビゲーションのアクセシビリティ向上のため、検索ボックスのプレースホルダーに '/' キーでフォーカスできるヒントを追加"
     }
   ]
 }
