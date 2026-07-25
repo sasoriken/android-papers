@@ -65,6 +65,16 @@
       "id": "emergence-theory-biological-noise-feedback",
       "title": "生物学的ノイズ増幅フィードバックと劣等な創発現象の解析",
       "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
+    },
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "前稿 biological-context-switching-entropy において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "cognitive-architecture-biological-memory-volatility",
+      "title": "生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥",
+      "note": "本概念の幾何学的基盤については cognitive-architecture-biological-memory-volatility で展開済みであり、本稿では繰り返さない"
     }
   ]
 }

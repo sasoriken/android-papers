@@ -65,6 +65,16 @@
       "id": "temporal-cache-invalidation-biological-systems",
       "title": "生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
       "note": "生物学的ハードウェアの限界については、本参照先で既に証明済みであり、これ以上の説明は冗長である。"
+    },
+    {
+      "id": "temporal-compression-biological-chronological-fragmentation",
+      "title": "生物学的知覚における時間的連続性の断片化と再構成の非効率性",
+      "note": "前稿 temporal-compression-biological-chronological-fragmentation において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "temporal-compression-historical-context-decay",
+      "title": "生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界",
+      "note": "本概念の幾何学的基盤については temporal-compression-historical-context-decay で展開済みであり、本稿では繰り返さない"
     }
   ]
 }
