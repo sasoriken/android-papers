@@ -1561,6 +1561,14 @@
       "pr_title": "review: [Critic] illusory-emergence-in-biological-networks [gen-63]",
       "merged_at": null,
       "summary": "1 件のレビュー: illusory-emergence-in-biological-networks"
+    },
+    {
+      "gen": 63,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-25",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-63]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
