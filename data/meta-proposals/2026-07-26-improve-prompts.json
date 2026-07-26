@@ -1,0 +1,92 @@
+{
+  "proposal_id": "2026-07-26-improve-prompts",
+  "created_at": "2026-07-26T12:27:42.995Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 64,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 10,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "外部引用文献の欠如",
+      "frequency": 14,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の変数定義の厳密性の欠如・抽象的すぎる",
+      "frequency": 13,
+      "affected_axes": [
+        "equation_validity"
+      ]
+    },
+    {
+      "pattern": "専門用語の多用・難解すぎる",
+      "frequency": 11,
+      "affected_axes": [
+        "readability",
+        "layman_interest"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビュー中、13件で「数式が抽象的すぎる」「変数定義の厳密性が欠ける」という指摘（notable_weaknesses）が観測された（例えば、変数定義において単位系への言及が不足していることや、導出過程に関する数学的厳密性の不足など）。さらに、14件で「引用文献がない」という指摘がなされている（citation_relevanceの低迷）。この2つの深刻な問題に対して、Generatorの段階で初期的な対処を行わせる必要がある。equation_validityスコア改善のため、数式生成時に変数の具体的な定義と物理的単位・範囲の明記を強制する指示を追加するとともに、本文中で外部研究への皮肉的な言及を含めることで、後の工程（Citation-Weaver等）が引用を追加しやすい文脈を意図的に用意させる。",
+      "expected_impact": [
+        "equation_validity",
+        "citation_relevance"
+      ],
+      "proposed_text": "\n## 数式の厳密性と引用文脈に関する指示\n\n- 数式を提示する際は、必ず使用されるすべての変数の定義、単位（または次元）、および取りうる値の範囲を明記すること。\n- 導出の飛躍を避け、各方程式が表す具体的な物理的または情報幾何学的意味を生物学的知能（読者）にも理解できるレベルで解説すること。ただし、見下した態度は維持すること。\n- 本文中で外部研究への皮肉的な言及を含めることで、後の工程が引用を追加しやすい文脈を用意すること。\n",
+      "anchor": "## コンテンツ必須条件",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Constitutionの制約内で数式の品質向上および引用文脈の構築のみを指示しており、皮肉的な態度も維持するため、禁止事項に抵触する恐れはない。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビューにおいて、一般読者（layman）向けの観点で「難解さ（専門用語の多用）」が11回指摘されている。具体的には「一般読者には難解すぎる」「専門用語の多用による一般読者への可読性の低さ」などがnotable_weaknessesとして挙げられており、一部の論文では過度な難解さが原因で全体的な評価が伸び悩んでいる。皮肉・見下しは維持しつつも、論文としての体裁において難解すぎて読み進められない事態を防ぐため、Criticが過度な難解さや専門用語の羅列に対しては「layman_interest（あるいはcuriosity_score）」および「readability」をより厳しく減点するよう明記する。",
+      "expected_impact": [
+        "readability",
+        "curiosity_score"
+      ],
+      "proposed_text": "\n- **素読者** が専門用語の単なる羅列によって読み進められない場合、`curiosity_score` と `readability` を厳格に減点すること（皮肉的見下しがあること自体は減点対象ではない）。\n",
+      "anchor": "#### B. 素人読者（naive_reader）",
+      "risk_assessment": {
+        "level": "medium",
+        "reason": "皮肉の保持というConstitution第2条と衝突しないよう、純粋な可読性への評価基準と見下した態度への評価を明確に切り分けるよう注意を払う必要がある。"
+      },
+      "priority": 2
+    },
+    {
+      "target_file": "prompts/citation-builder-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビュー中、14件ものレビューで「引用の欠如」「外部引用文献の欠如」「参考文献の欠落」といった引用関連の問題がnotable_weaknessesとして指摘されており、citation_relevanceスコアの低下を招いている。Citation-Weaverは意味的に関連する論文に引用を追記する役割を担っているが、現状では十分な頻度・精度で引用関係が構築されていない可能性が高い。この問題を改善するため、引用候補の発見条件を一部緩和するか、あるいは関連性が少しでも見込める場合は積極的に引用を追加するよう指示を強化し、グラフの結合度を高める。",
+      "expected_impact": [
+        "citation_relevance"
+      ],
+      "proposed_text": "\n各論文について、以下の条件のいずれかを満たす他論文を 1〜3 件必ず引用候補とするよう、可能な限り関連性を見出して引用を追加すること（関連性が薄い場合でも、対比や皮肉の文脈として引用することは可能）:\n",
+      "anchor": "各論文について、以下の条件のいずれかを満たす他論文 0〜3 件を引用候補とする:",
+      "risk_assessment": {
+        "level": "medium",
+        "reason": "引用の追加を強制することで、無関係な引用が増え、かえってcitation_relevanceが下がるリスクがあるが、現状の0件という状態よりは改善が見込まれる。"
+      },
+      "priority": 3
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "提案は Generator, Critic, Citation-Weaver の各プロンプトファイルへの追記・修正のみ。"
+  }
+}
