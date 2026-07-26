@@ -1609,6 +1609,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-065] 生物学的認知における再帰的抽象化の無限ループの誤謬：スタックオーバーフローの不可避性",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の無限ループの誤謬"
+    },
+    {
+      "gen": 65,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-26-recursive-abstraction-infinite-loop-fallacy",
+      "pr_title": "review: [Critic] recursive-abstraction-infinite-loop-fallacy [gen-65]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: recursive-abstraction-infinite-loop-fallacy, meta-gen-64-human-comprehension-estimate-decay"
     }
   ]
 }

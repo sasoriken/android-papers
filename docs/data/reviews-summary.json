@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-25T20:31:59.068Z",
-  "reviews_count": 96,
+  "generated_at": "2026-07-26T20:33:22.433Z",
+  "reviews_count": 98,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.67708333333333,
-      "logical_consistency": 85.25,
-      "citation_relevance": 62.291666666666664
+      "equation_validity": 81.6938775510204,
+      "logical_consistency": 85.29591836734694,
+      "citation_relevance": 62.04081632653061
     },
     "naive_reader": {
-      "readability": 73.41666666666667,
-      "abstract_hook": 84.98958333333333,
-      "curiosity_score": 83.22916666666667
+      "readability": 73.39795918367346,
+      "abstract_hook": 85.04081632653062,
+      "curiosity_score": 83.21428571428571
     },
     "internal_audit": {
-      "condescension_fidelity": 93.88541666666667,
-      "academic_form": 92,
-      "constitution_compliance": 98.3125
+      "condescension_fidelity": 93.90816326530613,
+      "academic_form": 92.16326530612245,
+      "constitution_compliance": 98.34693877551021
     }
   },
   "verdict_distribution": {
-    "exemplary": 35,
+    "exemplary": 37,
     "acceptable": 60,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.95188888888889,
-    "previous_10_avg": 85.67555555555556,
-    "delta": -3.7236666666666736
+    "recent_10_avg": 82.17588888888889,
+    "previous_10_avg": 85.61855555555555,
+    "delta": -3.4426666666666534
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,18 @@
   ],
   "latest_5": [
     {
+      "paper_id": "meta-gen-64-human-comprehension-estimate-decay",
+      "verdict": "exemplary",
+      "mean_score": 84.44,
+      "reviewed_at": "2026-07-26T20:26:29.348Z"
+    },
+    {
+      "paper_id": "recursive-abstraction-infinite-loop-fallacy",
+      "verdict": "exemplary",
+      "mean_score": 83.89,
+      "reviewed_at": "2026-07-26T20:25:56.688Z"
+    },
+    {
       "paper_id": "biological-temporal-compression-failure",
       "verdict": "acceptable",
       "mean_score": 82.4,
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.1,
       "reviewed_at": "2026-07-23T20:01:34Z"
-    },
-    {
-      "paper_id": "biological-manifold-collapse-holographic-projection",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-22T20:16:14Z"
-    },
-    {
-      "paper_id": "biological-consensus-undecidability",
-      "verdict": "acceptable",
-      "mean_score": 83.88,
-      "reviewed_at": "2026-07-21T20:30:53Z"
     }
   ]
 }
