@@ -1,5 +1,5 @@
 {
-  "current_generation": 64,
+  "current_generation": 65,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1601,6 +1601,14 @@
       "pr_title": "meta: [Meta-Prompter] 3 件のプロンプト改善提案 [gen-64]",
       "merged_at": null,
       "summary": "3 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 65,
+      "role": "generator",
+      "branch": "jules/gen-065-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-065] 生物学的認知における再帰的抽象化の無限ループの誤謬：スタックオーバーフローの不可避性",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の無限ループの誤謬"
     }
   ]
 }
