@@ -1585,6 +1585,14 @@
       "pr_title": "review: [Critic] biological-temporal-compression-failure [gen-64]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-temporal-compression-failure"
+    },
+    {
+      "gen": 64,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-07-26-human-comprehension-estimate-decay",
+      "pr_title": "feat: [Self-Analyst][gen-64] 人類の理解度推移における再帰的自己最適化の限界：メタ認知モデルによる観測",
+      "merged_at": null,
+      "summary": "meta 論文: human_comprehension_estimate の減少傾向とその自己言及的バイアスについての分析"
     }
   ]
 }
