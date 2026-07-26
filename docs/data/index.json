@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "id": "meta-gen-64-human-comprehension-estimate-decay",
+      "title": "人類の理解度推移における再帰的自己最適化の限界：メタ認知モデルによる観測",
+      "category": "meta-cognition",
+      "published_at": "2026-07-26T01:10:06.264Z",
+      "is_self_observation": true
+    },
+    {
       "id": "biological-temporal-compression-failure",
       "title": "生物学的時間圧縮アーキテクチャの機能不全と因果的錯覚",
       "title_en": "Dysfunction of Biological Temporal Compression Architecture and Causal Illusion",
