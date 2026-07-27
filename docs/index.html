@@ -925,13 +925,16 @@
       // Render global axis averages
       const axisContainer = document.getElementById('global-axis-averages');
       if (summary && summary.axis_averages) {
-        let html = '<div class="axis-avg-title">[全世代ペルソナ別平均スコア]</div><div class="axis-avg-list">';
+        let html = '<div class="axis-avg-title" style="margin-bottom:0.5rem; color:var(--accent2); font-family:var(--mono); font-size:0.65rem; text-transform:uppercase; letter-spacing:0.12em;">// 全世代ペルソナ別平均スコア</div><div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">';
         for (const [persona, axes] of Object.entries(summary.axis_averages)) {
-          let avg = 0; let count = 0;
-          for (const val of Object.values(axes)) { avg += val; count++; }
-          if (count > 0) {
-             html += '<span class="axis-avg-item">' + persona.substring(0, 10) + ': ' + (avg / count).toFixed(1) + '</span>';
+          html += '<div style="background:var(--bg2); padding:0.8rem; border:1px solid var(--line); border-radius:var(--radius);"><div style="color:var(--accent); font-family:var(--mono); font-size:0.6rem; margin-bottom:0.6rem; text-transform:uppercase;">' + persona + '</div>';
+          for (const [axis, val] of Object.entries(axes)) {
+            const w = val.toFixed(1) + '%';
+            const color = val >= 80 ? 'var(--success)' : val >= 60 ? 'var(--accent)' : val >= 45 ? 'var(--accent2)' : 'var(--warn)';
+            html += '<div style="display:flex; justify-content:space-between; font-family:var(--mono); font-size:0.55rem; color:var(--text-dim); margin-bottom:0.2rem;"><span>' + axis + '</span><span style="color:var(--text)">' + val.toFixed(1) + '</span></div>';
+            html += '<div style="height:4px; background:var(--bg); border-radius:2px; margin-bottom:0.6rem; overflow:hidden;"><div style="height:100%; width:' + w + '; background:' + color + ';"></div></div>';
           }
+          html += '</div>';
         }
         html += '</div>';
         axisContainer.innerHTML = html;
@@ -1098,9 +1101,9 @@
               '<div class="comp-bar"><div class="comp-fill" style="width:' + (comp * 10) + '%"></div></div>' +
               comp + '%' +
             '</div>' +
-            (getReviewFor(p.filename.replace('.json', '')) && getReviewFor(p.filename.replace('.json', '')).mean_score ?
+            (getReviewFor(p.id) && getReviewFor(p.id).mean_score ?
               '<div style="text-align:right; margin-bottom:.3rem;" title="Mean Score">' +
-                '<span style="font-size:1.0rem; color:var(--success); font-weight:700;">' + getReviewFor(p.filename.replace('.json', '')).mean_score.toFixed(1) + '</span>' +
+                '<span style="font-size:1.0rem; color:var(--success); font-weight:700;">' + getReviewFor(p.id).mean_score.toFixed(1) + '</span>' +
               '</div>' : '') +
             '<div class="card-id">#' + p.id.slice(0, 16) + '</div>' +
           '</div>' +
