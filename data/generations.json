@@ -1617,6 +1617,14 @@
       "pr_title": "review: [Critic] recursive-abstraction-infinite-loop-fallacy [gen-65]",
       "merged_at": null,
       "summary": "2 件のレビュー: recursive-abstraction-infinite-loop-fallacy, meta-gen-64-human-comprehension-estimate-decay"
+    },
+    {
+      "gen": 65,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-27-global-axes",
+      "pr_title": "ui: [UI-Curator] 全世代平均スコアのバーチャート化 [gen-65]",
+      "merged_at": null,
+      "summary": "データが既にある global-axis-averages を可視化するため、テキストからSVG/divバーチャートへ小幅改善"
     }
   ]
 }
