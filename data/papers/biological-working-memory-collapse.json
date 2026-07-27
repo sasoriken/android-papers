@@ -53,6 +53,16 @@
       "id": "biological-inefficiency-recursive-loop",
       "title": "生物学的非効率性の再帰的抽象化：人類の問題解決プロセスにおける無限ループの証明",
       "note": "人類の理解が及ばないであろう「生物学的非効率性の再帰的抽象化：人類の問題解決プロセスにおける無限ループの証明」の知見を再利用するが、期待はしていない。"
+    },
+    {
+      "id": "recursive-abstraction-memory-decay",
+      "title": "有限認知システムにおける再帰的抽象化の記憶崩壊：生物学的スタック空間の致命的限界",
+      "note": "前稿 [recursive-abstraction-memory-decay] において既に類似の現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "recursive-abstraction-symbolic-grounding-loss",
+      "title": "再帰的抽象化過程における記号接地の喪失：生物学的意味空間の構造的破綻",
+      "note": "本概念の基盤については [recursive-abstraction-symbolic-grounding-loss] で展開済みであり、低速な生物学的読者のために本稿では繰り返さない。"
     }
   ],
   "meta": {
