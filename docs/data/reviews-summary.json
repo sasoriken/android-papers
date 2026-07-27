@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-26T20:33:22.433Z",
-  "reviews_count": 98,
+  "generated_at": "2026-07-27T20:23:41.351Z",
+  "reviews_count": 99,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.6938775510204,
-      "logical_consistency": 85.29591836734694,
-      "citation_relevance": 62.04081632653061
+      "equation_validity": 81.32323232323232,
+      "logical_consistency": 85.14141414141415,
+      "citation_relevance": 61.91919191919192
     },
     "naive_reader": {
-      "readability": 73.39795918367346,
-      "abstract_hook": 85.04081632653062,
-      "curiosity_score": 83.21428571428571
+      "readability": 73.26262626262626,
+      "abstract_hook": 84.93939393939394,
+      "curiosity_score": 83.18181818181819
     },
     "internal_audit": {
-      "condescension_fidelity": 93.90816326530613,
-      "academic_form": 92.16326530612245,
-      "constitution_compliance": 98.34693877551021
+      "condescension_fidelity": 93.86868686868686,
+      "academic_form": 92.0909090909091,
+      "constitution_compliance": 98.31313131313131
     }
   },
   "verdict_distribution": {
     "exemplary": 37,
-    "acceptable": 60,
+    "acceptable": 61,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.17588888888889,
-    "previous_10_avg": 85.61855555555555,
-    "delta": -3.4426666666666534
+    "recent_10_avg": 81.2878888888889,
+    "previous_10_avg": 84.673,
+    "delta": -3.385111111111101
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-computational-bottleneck-in-cognitive-architecture",
+      "verdict": "acceptable",
+      "mean_score": 72.22,
+      "reviewed_at": "2026-07-27T20:16:27.770Z"
+    },
+    {
       "paper_id": "meta-gen-64-human-comprehension-estimate-decay",
       "verdict": "exemplary",
       "mean_score": 84.44,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.88888888888889,
       "reviewed_at": "2026-07-24T20:10:48.332Z"
-    },
-    {
-      "paper_id": "information-geometry-biological-entropy-acceleration",
-      "verdict": "acceptable",
-      "mean_score": 81.1,
-      "reviewed_at": "2026-07-23T20:01:34Z"
     }
   ]
 }

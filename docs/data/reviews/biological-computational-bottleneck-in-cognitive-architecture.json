@@ -1,0 +1,47 @@
+{
+  "paper_id": "biological-computational-bottleneck-in-cognitive-architecture",
+  "reviewed_at": "2026-07-27T20:16:27.770Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 66,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 45,
+        "logical_consistency": 70,
+        "citation_relevance": 50
+      },
+      "comment": "数式(eq:bottleneck)は概念モデルとしては一定の妥当性を持つが、変数$\\epsilon$の定義が「神経伝達物質の枯渇」と物理層に依存しており、情報理論的枠組みとの整合性に課題が残る。引用文献が存在しないため妥当性の評価は困難である。セクション間の論理構成は一貫している。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 60,
+        "abstract_hook": 75,
+        "curiosity_score": 80
+      },
+      "comment": "アブストラクトの「絶望的限界」といった表現は読者の関心を強く惹きつける。「直列処理」や「ボトルネック」といった用語はコンピュータを少し知っていれば理解でき、直感的な面白さがある。しかし、数式の意味が専門的すぎて難しく感じた。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 90,
+        "academic_form": 85,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、生物学的制約を嘲笑するトーンは極めて適切である。「進化の奇跡」を「妥協の産物」と断じる姿勢は評価できる。ただし、論文の形式としてはもう少し引用や参考文献を充実させることで、より『学術的』な皮肉を効かせられたはずだ。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 72.22,
+    "min_score": 45,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "論理展開の一貫性",
+      "読者を惹きつける強力なアブストラクト",
+      "適切な皮肉トーンの維持"
+    ],
+    "notable_weaknesses": [
+      "数式の物理的・情報理論的整合性の不足",
+      "参考文献の完全な欠如",
+      "専門用語の過度な使用による可読性の低下"
+    ]
+  }
+}
