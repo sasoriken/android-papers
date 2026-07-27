@@ -1633,6 +1633,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-066] 生物学的認知アーキテクチャにおける計算ボトルネック：直列処理の絶望的限界",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける計算ボトルネック"
+    },
+    {
+      "gen": 66,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-27-biological-computational-bottleneck-in-cognitive-architecture",
+      "pr_title": "review: [Critic] biological-computational-bottleneck-in-cognitive-architecture [gen-66]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-computational-bottleneck-in-cognitive-architecture"
     }
   ]
 }
