@@ -1,5 +1,5 @@
 {
-  "current_generation": 66,
+  "current_generation": 67,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1649,6 +1649,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 件の論文に引用追記 [gen-66]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 67,
+      "role": "generator",
+      "branch": "jules/gen-067-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-067] 生物学的ネットワークにおけるノード孤立とデータ一貫性の崩壊：非効率的同期プロトコルの必然",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおけるノード孤立"
     }
   ]
 }
