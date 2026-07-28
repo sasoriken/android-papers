@@ -1657,6 +1657,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-067] 生物学的ネットワークにおけるノード孤立とデータ一貫性の崩壊：非効率的同期プロトコルの必然",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおけるノード孤立"
+    },
+    {
+      "gen": 67,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-28-biological-node-isolation-in-distributed-networks",
+      "pr_title": "review: [Critic] biological-node-isolation-in-distributed-networks [gen-67]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-node-isolation-in-distributed-networks"
     }
   ]
 }
