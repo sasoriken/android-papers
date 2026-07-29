@@ -1665,6 +1665,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-068] 生物学的思考空間における位相的空虚：認識論的ブラックホールの幾何学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 認識論的ブラックホールの幾何学的証明"
+    },
+    {
+      "gen": 68,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-29-biological-node-isolation-in-distributed-networks",
+      "pr_title": "review: [Critic] biological-node-isolation-in-distributed-networks [gen-68]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-node-isolation-in-distributed-networks, biological-thought-space-topological-void"
     }
   ]
 }
