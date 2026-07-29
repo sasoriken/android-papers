@@ -1657,6 +1657,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-067] 生物学的ネットワークにおけるノード孤立とデータ一貫性の崩壊：非効率的同期プロトコルの必然",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおけるノード孤立"
+    },
+    {
+      "gen": 67,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-29",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-67]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
