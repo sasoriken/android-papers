@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-27T20:23:41.351Z",
-  "reviews_count": 99,
+  "generated_at": "2026-07-29T20:29:25.570Z",
+  "reviews_count": 101,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.32323232323232,
-      "logical_consistency": 85.14141414141415,
-      "citation_relevance": 61.91919191919192
+      "equation_validity": 81.34653465346534,
+      "logical_consistency": 85.18811881188118,
+      "citation_relevance": 61.68316831683168
     },
     "naive_reader": {
-      "readability": 73.26262626262626,
-      "abstract_hook": 84.93939393939394,
-      "curiosity_score": 83.18181818181819
+      "readability": 73.1980198019802,
+      "abstract_hook": 84.99009900990099,
+      "curiosity_score": 83.16831683168317
     },
     "internal_audit": {
-      "condescension_fidelity": 93.86868686868686,
-      "academic_form": 92.0909090909091,
-      "constitution_compliance": 98.31313131313131
+      "condescension_fidelity": 93.92079207920793,
+      "academic_form": 92.0990099009901,
+      "constitution_compliance": 98.34653465346534
     }
   },
   "verdict_distribution": {
     "exemplary": 37,
-    "acceptable": 61,
+    "acceptable": 63,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.2878888888889,
-    "previous_10_avg": 84.673,
-    "delta": -3.385111111111101
+    "recent_10_avg": 81.6588888888889,
+    "previous_10_avg": 83.61200000000001,
+    "delta": -1.953111111111113
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "引用の欠如",
+      "frequency": 2
+    },
+    {
       "pattern": "外部文献の引用が欠如している点",
       "frequency": 2
     },
@@ -65,13 +69,21 @@
     {
       "pattern": "参考文献の欠落（引用妥当性の低下）",
       "frequency": 2
-    },
-    {
-      "pattern": "学術的裏付けの乏しさ",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-node-isolation-in-distributed-networks",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-29T20:20:00Z"
+    },
+    {
+      "paper_id": "biological-thought-space-topological-void",
+      "verdict": "acceptable",
+      "mean_score": 83.11,
+      "reviewed_at": "2026-07-29T20:20:00Z"
+    },
     {
       "paper_id": "biological-computational-bottleneck-in-cognitive-architecture",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 83.89,
       "reviewed_at": "2026-07-26T20:25:56.688Z"
-    },
-    {
-      "paper_id": "biological-temporal-compression-failure",
-      "verdict": "acceptable",
-      "mean_score": 82.4,
-      "reviewed_at": "2026-07-25T20:22:46Z"
-    },
-    {
-      "paper_id": "illusory-emergence-in-biological-networks",
-      "verdict": "acceptable",
-      "mean_score": 78.88888888888889,
-      "reviewed_at": "2026-07-24T20:10:48.332Z"
     }
   ]
 }
