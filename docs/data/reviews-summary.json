@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-29T20:29:25.570Z",
-  "reviews_count": 101,
+  "generated_at": "2026-07-30T20:41:31.972Z",
+  "reviews_count": 102,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.34653465346534,
-      "logical_consistency": 85.18811881188118,
-      "citation_relevance": 61.68316831683168
+      "equation_validity": 81.38235294117646,
+      "logical_consistency": 85.23529411764706,
+      "citation_relevance": 61.568627450980394
     },
     "naive_reader": {
-      "readability": 73.1980198019802,
-      "abstract_hook": 84.99009900990099,
-      "curiosity_score": 83.16831683168317
+      "readability": 73.26470588235294,
+      "abstract_hook": 85.08823529411765,
+      "curiosity_score": 83.2156862745098
     },
     "internal_audit": {
-      "condescension_fidelity": 93.92079207920793,
-      "academic_form": 92.0990099009901,
-      "constitution_compliance": 98.34653465346534
+      "condescension_fidelity": 93.93137254901961,
+      "academic_form": 92.17647058823529,
+      "constitution_compliance": 98.36274509803921
     }
   },
   "verdict_distribution": {
-    "exemplary": 37,
+    "exemplary": 38,
     "acceptable": 63,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.6588888888889,
-    "previous_10_avg": 83.61200000000001,
-    "delta": -1.953111111111113
+    "recent_10_avg": 81.9708888888889,
+    "previous_10_avg": 83.46700000000001,
+    "delta": -1.4961111111111194
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "meaningless-emergence-in-biological-neural-networks",
+      "verdict": "exemplary",
+      "mean_score": 87,
+      "reviewed_at": "2026-07-30T20:45:00Z"
+    },
+    {
       "paper_id": "biological-node-isolation-in-distributed-networks",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 84.44,
       "reviewed_at": "2026-07-26T20:26:29.348Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-infinite-loop-fallacy",
-      "verdict": "exemplary",
-      "mean_score": 83.89,
-      "reviewed_at": "2026-07-26T20:25:56.688Z"
     }
   ]
 }
