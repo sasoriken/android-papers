@@ -1304,12 +1304,12 @@
             '</div>';
           }).join('');
         const weaknessHtml = (review.notable_weaknesses || []).length
-          ? '<ul class="weakness-list">' +
+          ? '<div class="weakness-title" style="margin-top:.8rem;">[弱点]</div><ul class="weakness-list" style="margin-top:0;">' +
             review.notable_weaknesses.map(w => '<li>' + w + '</li>').join('') +
             '</ul>'
           : '';
         const strengthHtml = (review.notable_strengths || []).length
-          ? '<ul class="strength-list">' +
+          ? '<div class="weakness-title" style="margin-top:.8rem; color:var(--success);">[強み]</div><ul class="strength-list" style="margin-top:0;">' +
             review.notable_strengths.map(s => '<li>' + s + '</li>').join('') +
             '</ul>'
           : '';
