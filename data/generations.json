@@ -1673,6 +1673,14 @@
       "pr_title": "review: [Critic] biological-node-isolation-in-distributed-networks [gen-68]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-node-isolation-in-distributed-networks, biological-thought-space-topological-void"
+    },
+    {
+      "gen": 68,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-07-30",
+      "pr_title": "chore: [Citation-Weaver] 5 件の論文に引用追記 [gen-68]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
