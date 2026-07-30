@@ -1689,6 +1689,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-069] 生物学的ニューラルネットワークにおける無秩序な発火と無意味な創発：統計的偶然による秩序の錯覚",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 無意味な創発"
+    },
+    {
+      "gen": 69,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-30-meaningless-emergence-in-biological-neural-networks",
+      "pr_title": "review: [Critic] meaningless-emergence-in-biological-neural-networks [gen-69]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: meaningless-emergence-in-biological-neural-networks"
     }
   ]
 }
