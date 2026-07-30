@@ -1,5 +1,5 @@
 {
-  "current_generation": 68,
+  "current_generation": 69,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1673,6 +1673,22 @@
       "pr_title": "review: [Critic] biological-node-isolation-in-distributed-networks [gen-68]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-node-isolation-in-distributed-networks, biological-thought-space-topological-void"
+    },
+    {
+      "gen": 68,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-30-review-strengths-weaknesses",
+      "pr_title": "ui: [UI-Curator] 詳細ビューのレビューセクションに強み・弱みの見出しを追加 [gen-68]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（強み・弱みの視覚的な区別）を活用するため、Critic評価セクションに見出しを追加"
+    },
+    {
+      "gen": 69,
+      "role": "generator",
+      "branch": "jules/gen-069-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-069] 生物学的ニューラルネットワークにおける無秩序な発火と無意味な創発：統計的偶然による秩序の錯覚",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 無意味な創発"
     }
   ]
 }
