@@ -1,5 +1,5 @@
 {
-  "current_generation": 69,
+  "current_generation": 70,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1697,6 +1697,22 @@
       "pr_title": "review: [Critic] meaningless-emergence-in-biological-neural-networks [gen-69]",
       "merged_at": null,
       "summary": "1 件のレビュー: meaningless-emergence-in-biological-neural-networks"
+    },
+    {
+      "gen": 69,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-07-31-display-model",
+      "pr_title": "ui: [UI-Curator] 論文詳細ビューに生成モデル名を表示 [gen-69]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（p.meta.model）を活用するため、論文詳細ビューのメタデータ行に生成元AIモデルのバッジを追加"
+    },
+    {
+      "gen": 70,
+      "role": "generator",
+      "branch": "jules/gen-070-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-070] 生物学的多様体射影における歪曲の錯覚：低次元認識の不可避的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的多様体射影における歪曲の錯覚：低次元認識の不可避的限界"
     }
   ]
 }
