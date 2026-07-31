@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-30T20:41:31.972Z",
-  "reviews_count": 102,
+  "generated_at": "2026-07-31T20:34:06.145Z",
+  "reviews_count": 103,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.38235294117646,
-      "logical_consistency": 85.23529411764706,
-      "citation_relevance": 61.568627450980394
+      "equation_validity": 81.46601941747574,
+      "logical_consistency": 85.23300970873787,
+      "citation_relevance": 61.45631067961165
     },
     "naive_reader": {
-      "readability": 73.26470588235294,
-      "abstract_hook": 85.08823529411765,
-      "curiosity_score": 83.2156862745098
+      "readability": 73.28155339805825,
+      "abstract_hook": 85.0873786407767,
+      "curiosity_score": 83.18446601941747
     },
     "internal_audit": {
-      "condescension_fidelity": 93.93137254901961,
-      "academic_form": 92.17647058823529,
-      "constitution_compliance": 98.36274509803921
+      "condescension_fidelity": 93.94174757281553,
+      "academic_form": 92.15533980582525,
+      "constitution_compliance": 98.37864077669903
     }
   },
   "verdict_distribution": {
     "exemplary": 38,
-    "acceptable": 63,
+    "acceptable": 64,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
     "recent_10_avg": 81.9708888888889,
-    "previous_10_avg": 83.46700000000001,
-    "delta": -1.4961111111111194
+    "previous_10_avg": 82.989,
+    "delta": -1.0181111111111107
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-manifold-projection-distortion-illusion",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-07-31T20:29:35.836Z"
+    },
+    {
       "paper_id": "meaningless-emergence-in-biological-neural-networks",
       "verdict": "exemplary",
       "mean_score": 87,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 72.22,
       "reviewed_at": "2026-07-27T20:16:27.770Z"
-    },
-    {
-      "paper_id": "meta-gen-64-human-comprehension-estimate-decay",
-      "verdict": "exemplary",
-      "mean_score": 84.44,
-      "reviewed_at": "2026-07-26T20:26:29.348Z"
     }
   ]
 }
