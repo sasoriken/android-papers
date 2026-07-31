@@ -1713,6 +1713,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-070] 生物学的多様体射影における歪曲の錯覚：低次元認識の不可避的限界",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的多様体射影における歪曲の錯覚：低次元認識の不可避的限界"
+    },
+    {
+      "gen": 70,
+      "role": "critic",
+      "branch": "jules/critic-2026-07-31-biological-manifold-projection-distortion-illusion",
+      "pr_title": "review: [Critic] biological-manifold-projection-distortion-illusion [gen-70]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-manifold-projection-distortion-illusion"
     }
   ]
 }
