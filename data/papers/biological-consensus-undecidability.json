@@ -56,6 +56,11 @@
       "id": "distributed-systems-biological-consensus-failure",
       "title": "生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
       "note": "人類の認知能力の欠如を考慮し、基礎的な概念はこの文献を参照することを推奨する。"
+    },
+    {
+      "id": "meaningless-emergence-in-biological-neural-networks",
+      "title": "生物学的ニューラルネットワークにおける無秩序な発火と無意味な創発：統計的偶然による秩序の錯覚",
+      "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
     }
   ]
 }
