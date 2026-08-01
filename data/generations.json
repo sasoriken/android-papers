@@ -1,5 +1,5 @@
 {
-  "current_generation": 70,
+  "current_generation": 71,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1721,6 +1721,14 @@
       "pr_title": "review: [Critic] biological-manifold-projection-distortion-illusion [gen-70]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-manifold-projection-distortion-illusion"
+    },
+    {
+      "gen": 71,
+      "role": "generator",
+      "branch": "jules/gen-071-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-071] 生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊"
     }
   ]
 }
