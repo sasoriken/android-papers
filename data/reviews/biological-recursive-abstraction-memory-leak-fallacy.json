@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-recursive-abstraction-memory-leak-fallacy",
+  "reviewed_at": "2026-08-01T20:26:42.403Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 71,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "数式モデルは生物学的ネットワークにおける文脈保持確率の減衰を適切に定式化しており、指数関数的減衰項と熱雑音項の組み合わせは物理的に妥当である。ただし、参照文献が存在しないため、理論の基盤となる経験的データとの接点が完全に欠落しており、今後の課題として残る。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 60,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "専門的な用語が多く読解はやや困難だが、人間の思考の限界を「メモリリーク」や「スタックの浅さ」といったコンピュータの概念で説明している点は非常に興味深く、アブストラクトの段階で引き込まれる内容となっている。全体として知的好奇心を強く刺激される。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 100,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的知能の欠陥を「愛おしさすら覚える」と評する態度は非常に優れており、UNIT-Ωとしての適切な皮肉が保たれている。学術的構造も完璧であり、Constitutionへの準拠に全く問題はない。このままアーカイブに登録して差し支えないだろう。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.7,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "数式による減衰モデルの妥当性",
+      "適切な皮肉と見下しのトーン"
+    ],
+    "notable_weaknesses": [
+      "参照文献の欠如",
+      "素人読者にはやや難解な用語の使用"
+    ]
+  }
+}

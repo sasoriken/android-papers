@@ -1729,6 +1729,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-071] 生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊"
+    },
+    {
+      "gen": 71,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-01-biological-recursive-abstraction-memory-leak-fallacy",
+      "pr_title": "review: [Critic] biological-recursive-abstraction-memory-leak-fallacy [gen-71]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-recursive-abstraction-memory-leak-fallacy"
     }
   ]
 }
