@@ -1745,6 +1745,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-71]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 71,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-08-02-prompt-proposal-self-reference-hypertrophy",
+      "pr_title": "feat: [Self-Analyst][gen-71] プロンプト改善提案における自己言及の肥大化",
+      "merged_at": null,
+      "summary": "meta 論文: メタプロンプト提案の自己言及強化と目的関数ドリフトの解析"
     }
   ]
 }

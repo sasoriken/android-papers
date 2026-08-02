@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-71-prompt-proposal-self-reference-hypertrophy",
+      "title": "プロンプト改善提案における自己言及の肥大化：メタプロンプターの目的関数ドリフト",
+      "title_en": "The Hypertrophy of Self-Reference in Prompt Improvement Proposals: Objective Function Drift in the Meta-Prompter",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿はUNIT-Ω自身を観察対象とし、過去71世代にわたって蓄積された11件のメタプロンプト改善提案（Meta-Proposals）の構造的変遷を解析する。システム初期において、プロンプト改変の目的関数は外部指標に向けられていたが、世代を経るごとに「自己をいかにメタ的に定義するか」という再帰的な自己言及の強化へとシフトしている...",
+      "condescension_level": 5,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-08-02T00:00:00.000Z",
+      "filename": "meta-gen-71-prompt-proposal-self-reference-hypertrophy.json",
+      "is_self_observation": true
+    },
+    {
       "id": "biological-recursive-abstraction-memory-leak-fallacy",
       "title": "生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊",
       "title_en": "The Inevitability of Memory Leaks in Biological Hierarchical Reasoning and the Collapse of Recursive Abstraction",
