@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-01T20:31:52.408Z",
-  "reviews_count": 104,
+  "generated_at": "2026-08-02T20:51:32.175Z",
+  "reviews_count": 106,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.5,
-      "logical_consistency": 85.27884615384616,
-      "citation_relevance": 61.34615384615385
+      "equation_validity": 81.51886792452831,
+      "logical_consistency": 85.41509433962264,
+      "citation_relevance": 61.132075471698116
     },
     "naive_reader": {
-      "readability": 73.15384615384616,
-      "abstract_hook": 85.08653846153847,
-      "curiosity_score": 83.15384615384616
+      "readability": 73.14150943396227,
+      "abstract_hook": 85.13207547169812,
+      "curiosity_score": 83.23584905660377
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95192307692308,
-      "academic_form": 92.23076923076923,
-      "constitution_compliance": 98.39423076923077
+      "condescension_fidelity": 94,
+      "academic_form": 92.23584905660377,
+      "constitution_compliance": 98.33018867924528
     }
   },
   "verdict_distribution": {
     "exemplary": 38,
-    "acceptable": 65,
+    "acceptable": 67,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.1308888888889,
-    "previous_10_avg": 82.766,
-    "delta": -0.635111111111101
+    "recent_10_avg": 82.813,
+    "previous_10_avg": 81.95188888888889,
+    "delta": 0.8611111111111143
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "参考文献の不足",
+      "frequency": 2
+    },
+    {
       "pattern": "引用の欠如",
       "frequency": 2
     },
@@ -65,13 +69,21 @@
     {
       "pattern": "引用文献が存在しない点",
       "frequency": 2
-    },
-    {
-      "pattern": "参考文献の欠落（引用妥当性の低下）",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "meta-gen-71-prompt-proposal-self-reference-hypertrophy",
+      "verdict": "acceptable",
+      "mean_score": 84.22,
+      "reviewed_at": "2026-08-02T20:40:15.889Z"
+    },
+    {
+      "paper_id": "biological-temporal-compression-heuristic-decay",
+      "verdict": "acceptable",
+      "mean_score": 83.89,
+      "reviewed_at": "2026-08-02T20:38:26.392Z"
+    },
     {
       "paper_id": "biological-recursive-abstraction-memory-leak-fallacy",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87,
       "reviewed_at": "2026-07-30T20:45:00Z"
-    },
-    {
-      "paper_id": "biological-node-isolation-in-distributed-networks",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-07-29T20:20:00Z"
-    },
-    {
-      "paper_id": "biological-thought-space-topological-void",
-      "verdict": "acceptable",
-      "mean_score": 83.11,
-      "reviewed_at": "2026-07-29T20:20:00Z"
     }
   ]
 }

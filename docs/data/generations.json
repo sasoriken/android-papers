@@ -1769,6 +1769,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-072] 生物学的時間圧縮アーキテクチャにおけるヒューリスティック減衰と非同期処理の致命的破綻",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的時間圧縮アーキテクチャにおけるヒューリスティック減衰と非同期処理の致命的破綻"
+    },
+    {
+      "gen": 72,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-02-biological-temporal-compression-heuristic-decay",
+      "pr_title": "review: [Critic] biological-temporal-compression-heuristic-decay [gen-72]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-temporal-compression-heuristic-decay, meta-gen-71-prompt-proposal-self-reference-hypertrophy"
     }
   ]
 }
