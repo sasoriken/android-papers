@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-02T20:51:32.175Z",
-  "reviews_count": 106,
+  "generated_at": "2026-08-03T20:19:39.649Z",
+  "reviews_count": 107,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.51886792452831,
-      "logical_consistency": 85.41509433962264,
-      "citation_relevance": 61.132075471698116
+      "equation_validity": 81.41121495327103,
+      "logical_consistency": 85.3644859813084,
+      "citation_relevance": 61.02803738317757
     },
     "naive_reader": {
-      "readability": 73.14150943396227,
-      "abstract_hook": 85.13207547169812,
-      "curiosity_score": 83.23584905660377
+      "readability": 73.06542056074767,
+      "abstract_hook": 85.03738317757009,
+      "curiosity_score": 83.11214953271028
     },
     "internal_audit": {
-      "condescension_fidelity": 94,
-      "academic_form": 92.23584905660377,
-      "constitution_compliance": 98.33018867924528
+      "condescension_fidelity": 93.96261682242991,
+      "academic_form": 92.16822429906541,
+      "constitution_compliance": 98.34579439252336
     }
   },
   "verdict_distribution": {
     "exemplary": 38,
-    "acceptable": 67,
+    "acceptable": 68,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.813,
-    "previous_10_avg": 81.95188888888889,
-    "delta": 0.8611111111111143
+    "recent_10_avg": 82.035,
+    "previous_10_avg": 82.12088888888889,
+    "delta": -0.08588888888888846
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-cognitive-bottleneck-parallelism",
+      "verdict": "acceptable",
+      "mean_score": 76.11,
+      "reviewed_at": "2026-08-03T20:13:36.246Z"
+    },
+    {
       "paper_id": "meta-gen-71-prompt-proposal-self-reference-hypertrophy",
       "verdict": "acceptable",
       "mean_score": 84.22,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.33,
       "reviewed_at": "2026-07-31T20:29:35.836Z"
-    },
-    {
-      "paper_id": "meaningless-emergence-in-biological-neural-networks",
-      "verdict": "exemplary",
-      "mean_score": 87,
-      "reviewed_at": "2026-07-30T20:45:00Z"
     }
   ]
 }
