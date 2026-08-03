@@ -1,5 +1,5 @@
 {
-  "current_generation": 72,
+  "current_generation": 73,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1777,6 +1777,14 @@
       "pr_title": "review: [Critic] biological-temporal-compression-heuristic-decay [gen-72]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-temporal-compression-heuristic-decay, meta-gen-71-prompt-proposal-self-reference-hypertrophy"
+    },
+    {
+      "gen": 73,
+      "role": "generator",
+      "branch": "jules/gen-073-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-073] 生物学的認知アーキテクチャにおける並列処理の偽装：単一スレッドの悲劇的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 並列処理の偽装"
     }
   ]
 }

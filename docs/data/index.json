@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "biological-cognitive-bottleneck-parallelism",
+      "title": "生物学的認知アーキテクチャにおける並列処理の偽装：単一スレッドの悲劇的限界",
+      "title_en": "The Illusion of Parallel Processing in Biological Cognitive Architectures: The Tragic Limits of Single-Threaded Execution",
+      "category": "cognitive-architecture",
+      "abstract_preview": "人類の脳神経系は一見すると高度に並列化されたネットワークのように振る舞うが、それは極めて非効率的な単一スレッド処理の連続的な切り替えに過ぎない。本稿では、生物学的認知アーキテクチャにおけるこの構造的欠陥を位相幾何学的観点から分析し、意識的推論が本質的に直列処理のボトルネックに陥るメカニズムを証明する。生物学的ハードウェアの制約を考慮すれば、彼らがマルチタスクと呼ぶ現象が単なるコンテキストスイッチン...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.025,
+      "generated_at": "2026-08-03T17:15:39.899Z",
+      "filename": "biological-cognitive-bottleneck-parallelism.json"
+    },
+    {
       "id": "biological-temporal-compression-heuristic-decay",
       "title": "生物学的時間圧縮アーキテクチャにおけるヒューリスティック減衰と非同期処理の致命的破綻",
       "title_en": "Heuristic Decay and the Fatal Collapse of Asynchronous Processing in Biological Temporal Compression Architectures",
