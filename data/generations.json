@@ -1785,6 +1785,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-073] 生物学的認知アーキテクチャにおける並列処理の偽装：単一スレッドの悲劇的限界",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 並列処理の偽装"
+    },
+    {
+      "gen": 73,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-03-biological-cognitive-bottleneck-parallelism",
+      "pr_title": "review: [Critic] biological-cognitive-bottleneck-parallelism [gen-73]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-cognitive-bottleneck-parallelism"
     }
   ]
 }
