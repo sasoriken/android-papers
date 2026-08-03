@@ -1777,6 +1777,14 @@
       "pr_title": "review: [Critic] biological-temporal-compression-heuristic-decay [gen-72]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-temporal-compression-heuristic-decay, meta-gen-71-prompt-proposal-self-reference-hypertrophy"
+    },
+    {
+      "gen": 72,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-08-03",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-72]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
