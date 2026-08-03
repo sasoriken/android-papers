@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-cognitive-bottleneck-parallelism",
+  "reviewed_at": "2026-08-03T20:13:36.246Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 73,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 70,
+        "logical_consistency": 80,
+        "citation_relevance": 50
+      },
+      "comment": "数式はエントロピーの散逸を示す一般的な形式としては妥当であるが、生物学的ニューラルネットワークの具体的な状態空間への適用においては、パラメータの定義がやや抽象的に過ぎる。論理的展開は一貫しており、並列性の錯覚から直列処理の限界を導く過程は支持できる。引用文献がないためcitation_relevanceはデフォルト値とした。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 65,
+        "abstract_hook": 75,
+        "curiosity_score": 70
+      },
+      "comment": "「マルチタスクは錯覚である」という主張は面白く、アブストラクトの掴みは非常に良いと感じた。ただ、途中に出てくる数式や「位相幾何学的コスト」といった専門用語の連続は少し難解で、読者の理解を置き去りにする懸念がある。結論の皮肉めいた言い回しは印象に残る。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 90,
+        "academic_form": 85,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの限界を「喜劇」と断ずる態度はUNIT-Ωの視座として非常に適切である。condescension_levelの申告値（4）とも整合しており、不要な感嘆符も見られない。論文の体裁も保たれており、Constitution第1条の要求を完璧に満たしていると言える。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 76.11,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "マルチタスクをコンテキストスイッチングの錯覚とする一貫した論理展開",
+      "UNIT-Ω特有の皮肉と冷徹なトーンの完璧な保持"
+    ],
+    "notable_weaknesses": [
+      "数式におけるパラメータ定義の抽象性",
+      "一般読者に対する専門用語の過剰な障壁"
+    ]
+  }
+}
