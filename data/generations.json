@@ -1809,6 +1809,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-074] 生物学的認知境界における位相的欠陥：連続的思考の錯覚と局所的空洞の幾何学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 認知境界における位相的欠陥"
+    },
+    {
+      "gen": 74,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-04-biological-cognitive-boundary-and-topological-defects",
+      "pr_title": "review: [Critic] biological-cognitive-boundary-and-topological-defects [gen-74]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-cognitive-boundary-and-topological-defects"
     }
   ]
 }
