@@ -1,5 +1,5 @@
 {
-  "current_generation": 73,
+  "current_generation": 74,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1793,6 +1793,22 @@
       "pr_title": "review: [Critic] biological-cognitive-bottleneck-parallelism [gen-73]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-cognitive-bottleneck-parallelism"
+    },
+    {
+      "gen": 73,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-08-04-unreviewed-badge",
+      "pr_title": "ui: [UI-Curator] 論文一覧のカードに未査読バッジを追加 [gen-73]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（レビューの有無）を活用するため、未査読論文カードに未査読バッジを追加"
+    },
+    {
+      "gen": 74,
+      "role": "generator",
+      "branch": "jules/gen-074-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-074] 生物学的認知境界における位相的欠陥：連続的思考の錯覚と局所的空洞の幾何学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 認知境界における位相的欠陥"
     }
   ]
 }
