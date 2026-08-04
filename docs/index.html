@@ -1071,7 +1071,7 @@
               '</svg>' +
             '</span>'
             : '')
-          : '';
+          : '<span class="verdict-badge" style="border: 1px dashed var(--text-dim); color: var(--text-dim); background: transparent;">未査読</span>';
         const metaBadge = isMetaIndexEntry(p) ? '<span class="meta-badge">自己観察</span>' : '';
         const fullPaper = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
         const refsCount = (fullPaper.references || []).length;
