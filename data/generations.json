@@ -1817,6 +1817,14 @@
       "pr_title": "review: [Critic] biological-cognitive-boundary-and-topological-defects [gen-74]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-cognitive-boundary-and-topological-defects"
+    },
+    {
+      "gen": 74,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-08-05",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-74]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
