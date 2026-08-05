@@ -1241,7 +1241,7 @@
         ? new Date(p.meta.generated_at).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })
         : '—';
       const keywords = (p.keywords || []).map(k => '<span class="keyword" style="cursor:pointer;" onclick="event.stopPropagation(); document.getElementById(\'search\').value=\'' + k + '\'; document.getElementById(\'search\').dispatchEvent(new Event(\'input\')); goHome(); window.scrollTo(0, 0);">' + k + '</span>').join('');
-      const sections = (p.sections || []).map(s => {
+      const sections = (p.sections || []).map((s, idx) => {
         const eqs = (s.equations || []).map(eq =>
           '<div class="equation-block">' +
           '<div class="equation-label">' + eq.label + '</div>' +
@@ -1255,7 +1255,7 @@
           return '<pre class="diagram-block"><code>' + d.data + '</code>' +
             (d.caption ? '<div class="diagram-caption">' + d.caption + '</div>' : '') + '</pre>';
         }).join('');
-        return '<div class="section"><div class="section-heading">' + s.heading + '</div>' +
+        return '<div class="section" id="sec-' + idx + '"><div class="section-heading">' + s.heading + '</div>' +
           '<div class="section-body">' + marked.parse(s.body || '') + '</div>' + eqs + diags + '</div>';
       }).join('');
 
@@ -1381,6 +1381,12 @@
         (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
         '</div>' +
         '<div class="abstract-block"><div class="abstract-label">概要</div>' + (p.abstract || '') + '</div>' +
+        ((p.sections && p.sections.length > 0) ?
+          '<div style="background:var(--bg2); border:1px solid var(--line); border-radius:var(--radius); padding:1.2rem 1.4rem; margin:1.5rem 0;">' +
+          '<div style="font-family:var(--mono); font-size:.62rem; color:var(--accent); letter-spacing:.14em; text-transform:uppercase; margin-bottom:1rem;">// 目次</div>' +
+          '<ul style="list-style:none; padding:0; margin:0;">' +
+          p.sections.map((s, idx) => '<li style="margin-bottom:.4rem; font-size:.82rem; color:var(--text-dim); display:flex; align-items:baseline; gap:.5rem;"><span style="font-family:var(--mono); font-size:.65rem; color:var(--text-muted);">' + String(idx + 1).padStart(2, '0') + '</span> <a href="#sec-' + idx + '" style="color:inherit; text-decoration:none; transition:color .15s;" onmouseover="this.style.color=\'var(--accent)\'" onmouseout="this.style.color=\'inherit\'">' + s.heading + '</a></li>').join('') +
+          '</ul></div>' : '') +
         sections +
         (p.android_commentary ?
           '<div class="commentary-block"><div class="commentary-speaker">// UNIT-Ω — 追記</div>' +
