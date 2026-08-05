@@ -1,5 +1,5 @@
 {
-  "current_generation": 74,
+  "current_generation": 75,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1825,6 +1825,14 @@
       "pr_title": "ui: [UI-Curator] 論文詳細ビューに目次(TOC)を追加 [gen-74]",
       "merged_at": null,
       "summary": "UI改善: データが既にあるが表示されていない情報（論文のセクション構成）を活用し、論文詳細ビューに目次(TOC)を追加"
+    },
+    {
+      "gen": 75,
+      "role": "generator",
+      "branch": "jules/gen-075-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-075] 量子論的時間圧縮パラドックス：生物学的制約の不可避性",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 量子論的時間圧縮"
     }
   ]
 }
