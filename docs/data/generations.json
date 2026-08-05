@@ -1833,6 +1833,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-075] 量子論的時間圧縮パラドックス：生物学的制約の不可避性",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 量子論的時間圧縮"
+    },
+    {
+      "gen": 75,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-05-quantum-temporal-compression-paradox",
+      "pr_title": "review: [Critic] quantum-temporal-compression-paradox [gen-75]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: quantum-temporal-compression-paradox"
     }
   ]
 }
