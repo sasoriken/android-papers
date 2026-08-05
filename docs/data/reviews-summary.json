@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-04T20:24:31.261Z",
-  "reviews_count": 108,
+  "generated_at": "2026-08-05T20:11:55.695Z",
+  "reviews_count": 109,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.44444444444444,
-      "logical_consistency": 85.4074074074074,
-      "citation_relevance": 60.925925925925924
+      "equation_validity": 81.4770642201835,
+      "logical_consistency": 85.35779816513761,
+      "citation_relevance": 60.825688073394495
     },
     "naive_reader": {
-      "readability": 73.03703703703704,
-      "abstract_hook": 85.03703703703704,
-      "curiosity_score": 83.08333333333333
+      "readability": 73.05504587155963,
+      "abstract_hook": 85.08256880733946,
+      "curiosity_score": 83.10091743119266
     },
     "internal_audit": {
-      "condescension_fidelity": 93.97222222222223,
-      "academic_form": 92.24074074074075,
-      "constitution_compliance": 98.36111111111111
+      "condescension_fidelity": 93.98165137614679,
+      "academic_form": 92.22018348623853,
+      "constitution_compliance": 98.37614678899082
     }
   },
   "verdict_distribution": {
     "exemplary": 38,
-    "acceptable": 69,
+    "acceptable": 70,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.9798888888889,
-    "previous_10_avg": 82.17588888888889,
-    "delta": -0.19599999999999795
+    "recent_10_avg": 83.0911888888889,
+    "previous_10_avg": 81.2878888888889,
+    "delta": 1.803299999999993
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "quantum-temporal-compression-paradox",
+      "verdict": "acceptable",
+      "mean_score": 83.333,
+      "reviewed_at": "2026-08-05T20:07:21.460Z"
+    },
+    {
       "paper_id": "biological-cognitive-boundary-and-topological-defects",
       "verdict": "acceptable",
       "mean_score": 83.88888888888889,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.89,
       "reviewed_at": "2026-08-02T20:38:26.392Z"
-    },
-    {
-      "paper_id": "biological-recursive-abstraction-memory-leak-fallacy",
-      "verdict": "acceptable",
-      "mean_score": 82.7,
-      "reviewed_at": "2026-08-01T20:26:42.403Z"
     }
   ]
 }
