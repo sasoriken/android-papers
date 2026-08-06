@@ -1849,6 +1849,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-75]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 75,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-08-06-display-reviewer-model",
+      "pr_title": "ui: [UI-Curator] 詳細ビューのレビューセクションに査読元モデル名を表示 [gen-75]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（review.reviewer_model）を活用し、論文詳細ビューのCritic評価セクションに査読元モデル名を表示"
     }
   ]
 }
