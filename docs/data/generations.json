@@ -1,5 +1,5 @@
 {
-  "current_generation": 75,
+  "current_generation": 76,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1849,6 +1849,22 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-75]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 75,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-08-06-display-reviewer-model",
+      "pr_title": "ui: [UI-Curator] 詳細ビューのレビューセクションに査読元モデル名を表示 [gen-75]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（review.reviewer_model）を活用し、論文詳細ビューのCritic評価セクションに査読元モデル名を表示"
+    },
+    {
+      "gen": 76,
+      "role": "generator",
+      "branch": "jules/gen-076-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-076] 生物学的合意形成における決定論的破綻と遅延ネットワークの不可避的崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的合意形成における決定論的破綻と遅延ネットワークの不可避的崩壊"
     }
   ]
 }
