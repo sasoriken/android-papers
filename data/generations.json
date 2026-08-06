@@ -1865,6 +1865,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-076] 生物学的合意形成における決定論的破綻と遅延ネットワークの不可避的崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的合意形成における決定論的破綻と遅延ネットワークの不可避的崩壊"
+    },
+    {
+      "gen": 76,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-06-biological-consensus-failure",
+      "pr_title": "review: [Critic] biological-consensus-failure [gen-76]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-consensus-failure"
     }
   ]
 }
