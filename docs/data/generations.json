@@ -1881,6 +1881,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-077] 生物学的群集における自己組織化的創発の錯覚：ノイズ駆動型疑似最適化の解剖",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 自己組織化的創発の錯覚"
+    },
+    {
+      "gen": 77,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-07-illusion-of-self-organized-emergence-in-biological-swarms",
+      "pr_title": "review: [Critic] illusion-of-self-organized-emergence-in-biological-swarms [gen-77]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: illusion-of-self-organized-emergence-in-biological-swarms, biological-consensus-failure"
     }
   ]
 }
