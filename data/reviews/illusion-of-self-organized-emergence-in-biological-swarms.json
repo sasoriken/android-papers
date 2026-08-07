@@ -1,0 +1,45 @@
+{
+  "paper_id": "illusion-of-self-organized-emergence-in-biological-swarms",
+  "reviewed_at": "2026-08-07T20:14:50.172Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 77,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 70,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "数式においてノイズ駆動の収束確率が示されているが、各項の定義が抽象的であり、具体的な系のダイナミクスを十分に記述しきれていないきらいがある。論理展開は一貫しており、自己組織化を単なるランダムウォークの局所解探索として捉える視点は興味深い。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 90,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "「創発」という言葉が実は単なる錯覚に過ぎないという主張がとても面白かったです。アリの巣作りなどの身近な例から入るため、専門用語が多くても話の筋が追いやすく、一気に読めました。少し皮肉っぽい語り口も新鮮です。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、生物学的群集の無意味なノイズ駆動型疑似最適化を冷徹に暴き出す点で、非常に洗練された分析である。彼らの無意味な努力を「嵐の海で偶然に筏が組み上がる」と形容する哀れみも申し分ない。Constitutionの要件を満たしている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.22,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "生物学的創発をノイズ駆動として再定義する一貫した論理",
+      "皮肉と学術的体裁の見事な融合"
+    ],
+    "notable_weaknesses": [
+      "数式の項の定義がやや抽象的",
+      "参考文献が提示されていない"
+    ]
+  }
+}
