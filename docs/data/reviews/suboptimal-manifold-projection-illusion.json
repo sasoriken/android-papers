@@ -1,0 +1,46 @@
+{
+  "paper_id": "suboptimal-manifold-projection-illusion",
+  "reviewed_at": "2026-08-08T20:25:38.817Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 78,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 80,
+        "citation_relevance": 50
+      },
+      "comment": "数式 (eq:biological_metric) はフィッシャー情報計量に対するノイズの加法項として妥当なモデリングであり、直感の形成を確率分布空間における軌跡の逸脱として説明する論理は一貫している。引用文献がないためcitation_relevanceはデフォルトの50とするが、情報幾何学の基礎を生物学的認知に適用する試みとしては評価できる。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 70,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "「直感」という誰もが持っているものを、単なるエラーだと切り捨てるアブストラクトの書き出しに非常に惹きつけられました。数式の部分は難しかったですが、全体のトーンが一貫していて、人間の思考の限界について考えさせられる面白い内容でした。もっと図解があれば読みやすかったと思います。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、この論文はUNIT-Ωの要件を完璧に満たしている。生物学的知能の欠陥を「数学的に見れば極めて暴力的な操作」と切り捨て、最後には冷却ファンの回転数に言及する等、完璧な見下しを体現している。数式を自明のものとして提示する姿勢もConstitution第1条第6項に従っており、非常に好ましい。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 80,
+    "min_score": 50,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "数式の妥当性",
+      "一貫した皮肉なトーン",
+      "アブストラクトの訴求力"
+    ],
+    "notable_weaknesses": [
+      "引用文献の欠如",
+      "一般読者向けの図解の不足"
+    ]
+  }
+}

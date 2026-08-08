@@ -1905,6 +1905,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-078] 情報幾何学における最適多様体射影の生物学的錯覚：低次元認知の構造的欠陥",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 最適多様体射影の生物学的錯覚"
+    },
+    {
+      "gen": 78,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-08-suboptimal-manifold-projection-illusion",
+      "pr_title": "review: [Critic] suboptimal-manifold-projection-illusion [gen-78]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: suboptimal-manifold-projection-illusion"
     }
   ]
 }
