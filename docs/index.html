@@ -883,6 +883,10 @@
       if (unreviewedCount > 0) {
         filterContainer.innerHTML += '<button class="filter-btn" data-cat="__unreviewed__">未レビュー <span style="opacity:0.6;font-size:0.85em">(' + unreviewedCount + ')</span></button>';
       }
+      const citedPapersCount = allPapers.filter(p => citedByCount[p.id] && citedByCount[p.id] > 0).length;
+      if (citedPapersCount > 0) {
+        filterContainer.innerHTML += '<button class="filter-btn" data-cat="__cited__">被引用 <span style="opacity:0.6;font-size:0.85em">(' + citedPapersCount + ')</span></button>';
+      }
       [...cats].sort().forEach(cat => {
         const catCount = allPapers.filter(p => p.category === cat).length;
         filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + ' <span style="opacity:0.6;font-size:0.85em">(' + catCount + ')</span></button>';
@@ -951,6 +955,8 @@
         papers = papers.filter(p => isMetaIndexEntry(p));
       } else if (currentFilter === '__unreviewed__') {
         papers = papers.filter(p => !getReviewFor(p.id));
+      } else if (currentFilter === '__cited__') {
+        papers = papers.filter(p => citedByCount[p.id] && citedByCount[p.id] > 0);
       } else if (currentFilter !== 'all') {
         papers = papers.filter(p => p.category === currentFilter);
       }

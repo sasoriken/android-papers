@@ -1889,6 +1889,14 @@
       "pr_title": "review: [Critic] illusion-of-self-organized-emergence-in-biological-swarms [gen-77]",
       "merged_at": null,
       "summary": "2 件のレビュー: illusion-of-self-organized-emergence-in-biological-swarms, biological-consensus-failure"
+    },
+    {
+      "gen": 77,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-08-08-cited-filter",
+      "pr_title": "ui: [UI-Curator] 論文一覧に被引用フィルタを追加 [gen-77]",
+      "merged_at": null,
+      "summary": "UI改善: データが既にあるが表示されていない情報（被引用数）を活用し、被引用論文のみを抽出するフィルタチップを追加"
     }
   ]
 }
