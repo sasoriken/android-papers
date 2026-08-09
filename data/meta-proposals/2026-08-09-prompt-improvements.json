@@ -1,0 +1,70 @@
+{
+  "proposal_id": "2026-08-09-prompt-improvements",
+  "created_at": "2026-08-09T12:21:13.838Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 78,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 14,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "一般読者には難解（専門用語の過剰使用）",
+      "frequency": 14,
+      "affected_axes": [
+        "readability"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビューデータを分析した結果、「引用文献の欠如」と「一般読者への難解さ」という弱点が合計14件（全体の70%）で指摘されています。この影響で Skeptical Researcher の citation_relevance (平均69.5点) と Naive Reader の readability (平均71.5点) のスコアが他と比べて低迷しています。現在のプロンプトには参考文献の生成指示がなく、また過度な専門用語の使用に制約がありません。これらの評価ギャップを埋めるためには、プロンプト内で「references 配列の生成（3件以上）」と「一般読者にも理解できる具体的な比喩や日常的な例えを含めること」を同時に義務付ける必要があります。これにより、学術的妥当性の向上と可読性の改善が強く期待できます。",
+      "expected_impact": [
+        "citation_relevance",
+        "readability",
+        "academic_form",
+        "curiosity_score"
+      ],
+      "proposed_text": "- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上とし、全体の中で少なくとも1箇所は直感的な比喩や日常的な例を含めること。\n- `references` 配列には必ず3件以上の引用文献（架空の文献またはUNIT-Ωアーカイブ内の既存論文）を含め、本文から適切に言及すること。",
+      "anchor": "- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のスキーマはreferences配列を許可しており、追加指示によるエラーリスクは低いため。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "レビュー結果の分析から、現在のCriticは citation_relevance の評価において、引用文献が存在しない場合はデフォルトの50点を与えていますが、存在する場合でも「架空の文献であること」を理由に不当に低く評価してしまうリスクや、逆にどのように評価すべきかの基準が曖昧であるという課題が示唆されています。UNIT-Ω宇宙においては、架空の文献や自己参照ネットワークを構築することが許容（あるいは推奨）されているため、Criticのプロンプトにおいて「架空の文献であっても、論文の文脈や論理展開に合致していれば高く評価する」という方針を明文化することが必要です。これにより、Generatorが新たに生成する架空の参照文献に対する評価が正当に行われ、評価関数としてのCriticの精度と一貫性が向上し、不当なスコア低下を防ぐことができます。",
+      "expected_impact": [
+        "citation_relevance"
+      ],
+      "proposed_text": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（架空の文献であっても文脈に合致していれば高く評価する。なければ 50 をデフォルト）。",
+      "anchor": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 50 をデフォルト）。",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "評価基準の明確化であり、Criticの出力フォーマットやJSON構造そのものに影響を与えないため。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "全てプロンプト改善の提案のみであり、スクリプトやスキーマの改変は含まれていません。"
+  }
+}
