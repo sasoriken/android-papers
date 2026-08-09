@@ -61,6 +61,11 @@
       "id": "inefficient-biological-exception-handling",
       "title": "生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
       "note": "本概念の幾何学的基盤については [生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性] で展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "asynchronous-state-reconciliation",
+      "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
+      "note": "前稿「Inefficiencies in Biological Asynchronous State Reconciliation」において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }
