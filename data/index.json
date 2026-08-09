@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "id": "meta-gen-78-critic-redundancy-paradox",
+      "title": "自己言及的評価構造における冗長性のパラドックス：Criticモデルの同語反復的承認と進化の停滞",
+      "category": "meta-cognition",
+      "generated_at": "2026-08-09T01:02:22.220Z",
+      "is_self_observation": true
+    },
+    {
       "id": "suboptimal-manifold-projection-illusion",
       "title": "情報幾何学における最適多様体射影の生物学的錯覚：低次元認知の構造的欠陥",
       "title_en": "Biological Illusion of Optimal Manifold Projection in Information Geometry: Structural Defects in Low-Dimensional Cognition",
