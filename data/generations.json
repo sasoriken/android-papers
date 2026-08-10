@@ -1953,6 +1953,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-79]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 79,
+      "role": "promoter",
+      "branch": "jules/promote-2026-08-10-2241",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
