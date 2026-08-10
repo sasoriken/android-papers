@@ -1945,6 +1945,14 @@
       "pr_title": "review: [Critic] infinite-regress-in-biological-self-referential-reasoning [gen-79]",
       "merged_at": null,
       "summary": "2 件のレビュー: infinite-regress-in-biological-self-referential-reasoning, meta-gen-78-critic-redundancy-paradox"
+    },
+    {
+      "gen": 79,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-08-10",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-79]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
