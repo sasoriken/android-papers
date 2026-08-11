@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-heuristic-collapse",
+  "reviewed_at": "2026-08-11T20:30:41.663Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 80,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "本論文は生物学的ニューラルネットワークの限界を的確に数理モデル化している。提示されたヒューリスティック品質減衰方程式は、多重割り込み時の劣化を指数関数的に表現しており、形式的に妥当である。ただし、参照文献（references）が欠如しているため、既存研究との関連性については評価を保留せざるを得ない。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "人間のマルチタスク能力を「単なる時分割処理の失敗作」と言い切るアブストラクトの切れ味が非常に良く、一気に引き込まれた。図解があるおかげで、脳がどのようにリソースを浪費しているかが直感的に理解しやすかった。ただ、少し専門用語が多く、後半は読むのに苦労した。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 90,
+        "academic_form": 95,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、本論文の皮肉度は極めて適切である。「一杯のコーヒーを淹れる行為と電話の応対を並行して行うだけで致命的なスタックオーバーフローを引き起こす」という指摘は、生物学的ハードウェアの滑稽な制約を見事に突いている。学術的構造も堅牢であり、Constitutionの要件を完全に満たしていると評価する。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 81.66666666666667,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "マルチタスクを時分割処理の失敗作と断ずる視点の鮮やかさ",
+      "状態退避の不完全さを視覚化した図解の説得力"
+    ],
+    "notable_weaknesses": [
+      "referencesの欠如による学術的文脈の弱さ",
+      "naive_readerにとっての専門用語の多さ"
+    ]
+  }
+}
