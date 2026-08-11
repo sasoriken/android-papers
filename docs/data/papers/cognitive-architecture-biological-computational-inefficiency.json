@@ -66,6 +66,11 @@
       "id": "cognitive-architecture-biological-memory-volatility",
       "title": "生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "distributed-systems-biological-node-synchronization-failure",
+      "title": "生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
+      "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }

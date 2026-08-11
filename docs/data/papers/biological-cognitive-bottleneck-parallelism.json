@@ -66,6 +66,11 @@
       "id": "cognitive-architecture-biological-computational-inefficiency",
       "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "distributed-systems-biological-node-synchronization-failure",
+      "title": "生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
+      "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }

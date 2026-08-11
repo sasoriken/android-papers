@@ -56,6 +56,11 @@
       "id": "recursive-abstraction-memory-decay",
       "title": "有限認知システムにおける再帰的抽象化の記憶崩壊：生物学的スタック空間の致命的限界",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "infinite-regress-in-biological-self-referential-reasoning",
+      "title": "生物学的ニューラルネットワークにおける自己言及的推論の無限後退と再帰的抽象化の破綻",
+      "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }
