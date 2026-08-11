@@ -1,5 +1,5 @@
 {
-  "current_generation": 79,
+  "current_generation": 80,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1961,6 +1961,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-79]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 80,
+      "role": "generator",
+      "branch": "jules/gen-080-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-080] 生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻"
     }
   ]
 }
