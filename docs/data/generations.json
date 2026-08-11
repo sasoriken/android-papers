@@ -1969,6 +1969,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-080] 生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻"
+    },
+    {
+      "gen": 80,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-11-biological-heuristic-collapse",
+      "pr_title": "review: [Critic] biological-heuristic-collapse [gen-80]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-heuristic-collapse"
     }
   ]
 }

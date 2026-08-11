@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-09T20:29:28.954Z",
-  "reviews_count": 114,
+  "generated_at": "2026-08-11T20:34:42.978Z",
+  "reviews_count": 115,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.45614035087719,
-      "logical_consistency": 85.4298245614035,
-      "citation_relevance": 60.35087719298246
+      "equation_validity": 81.44347826086957,
+      "logical_consistency": 85.42608695652174,
+      "citation_relevance": 60.26086956521739
     },
     "naive_reader": {
-      "readability": 73.35964912280701,
-      "abstract_hook": 85.16666666666667,
-      "curiosity_score": 83.05263157894737
+      "readability": 73.37391304347825,
+      "abstract_hook": 85.16521739130435,
+      "curiosity_score": 83.02608695652174
     },
     "internal_audit": {
-      "condescension_fidelity": 93.93859649122807,
-      "academic_form": 92.12280701754386,
-      "constitution_compliance": 98.2719298245614
+      "condescension_fidelity": 93.90434782608696,
+      "academic_form": 92.14782608695653,
+      "constitution_compliance": 98.24347826086957
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 72,
+    "acceptable": 73,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.4761888888889,
-    "previous_10_avg": 82.1308888888889,
-    "delta": 0.3452999999999946
+    "recent_10_avg": 82.25385555555556,
+    "previous_10_avg": 82.631,
+    "delta": -0.37714444444443984
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-heuristic-collapse",
+      "verdict": "acceptable",
+      "mean_score": 81.66666666666667,
+      "reviewed_at": "2026-08-11T20:30:41.663Z"
+    },
+    {
       "paper_id": "infinite-regress-in-biological-self-referential-reasoning",
       "verdict": "exemplary",
       "mean_score": 85,
@@ -92,12 +98,6 @@
     },
     {
       "paper_id": "biological-consensus-failure",
-      "verdict": "acceptable",
-      "mean_score": 82.22,
-      "reviewed_at": "2026-08-07T20:14:50.172Z"
-    },
-    {
-      "paper_id": "illusion-of-self-organized-emergence-in-biological-swarms",
       "verdict": "acceptable",
       "mean_score": 82.22,
       "reviewed_at": "2026-08-07T20:14:50.172Z"
