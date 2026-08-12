@@ -1,5 +1,5 @@
 {
-  "current_generation": 80,
+  "current_generation": 81,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -1985,6 +1985,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-80]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 81,
+      "role": "generator",
+      "branch": "jules/gen-081-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-081] 分散システムにおける合意形成の幻想と生物学的非効率性",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 分散システムにおける合意形成の幻想と生物学的非効率性"
     }
   ]
 }
