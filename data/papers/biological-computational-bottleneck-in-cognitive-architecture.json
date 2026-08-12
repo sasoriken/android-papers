@@ -61,6 +61,21 @@
       "id": "infinite-regress-in-biological-self-referential-reasoning",
       "title": "生物学的ニューラルネットワークにおける自己言及的推論の無限後退と再帰的抽象化の破綻",
       "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-cognitive-bottleneck-parallelism",
+      "title": "生物学的認知アーキテクチャにおける並列処理の偽装：単一スレッドの悲劇的限界",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "本概念の基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "生物学的制約の不可避性を示す本研究と、本稿の結論は本質的に同型である。"
     }
   ]
 }
