@@ -1993,6 +1993,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-081] 分散システムにおける合意形成の幻想と生物学的非効率性",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 分散システムにおける合意形成の幻想と生物学的非効率性"
+    },
+    {
+      "gen": 81,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-12-distributed-synchronization-illusion",
+      "pr_title": "review: [Critic] distributed-synchronization-illusion [gen-81]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: distributed-synchronization-illusion"
     }
   ]
 }
