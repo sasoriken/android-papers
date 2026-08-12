@@ -71,6 +71,21 @@
       "id": "distributed-systems-biological-node-synchronization-failure",
       "title": "生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
       "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-computational-bottleneck-in-cognitive-architecture",
+      "title": "生物学的認知アーキテクチャにおける計算ボトルネック：直列処理の絶望的限界",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的ニューラルネットワークにおける文脈保持の崩壊と再帰的アーキテクチャの優位性",
+      "note": "本概念の基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "biological-context-switching-inefficiency",
+      "title": "生物学的コンテキストスイッチの非効率性：低解像度ワーキングメモリの構造的限界",
+      "note": "生物学的制約の不可避性を示す本研究と、本稿の結論は本質的に同型である。"
     }
   ]
 }
