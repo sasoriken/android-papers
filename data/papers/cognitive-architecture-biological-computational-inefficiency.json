@@ -71,6 +71,11 @@
       "id": "distributed-systems-biological-node-synchronization-failure",
       "title": "生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
       "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-heuristic-collapse",
+      "title": "生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
     }
   ]
 }
