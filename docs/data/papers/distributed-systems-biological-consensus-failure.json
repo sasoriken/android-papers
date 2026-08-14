@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-consensus-undecidability",
+      "title": "生物学的ネットワークにおける合意形成の決定不能性と通信遅延に関する位相的証明",
+      "note": "前稿 [biological-consensus-undecidability] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "biological-temporal-compression-heuristic-decay",
+      "title": "生物学的時間圧縮アーキテクチャにおけるヒューリスティック減衰と非同期処理の致命的破綻",
+      "note": "本概念の幾何学的基盤については [biological-temporal-compression-heuristic-decay] で展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "meaningless-emergence-in-biological-neural-networks",
+      "title": "生物学的ニューラルネットワークにおける無秩序な発火と無意味な創発：統計的偶然による秩序の錯覚",
+      "note": "自由意志についての形式的論駁 [meaningless-emergence-in-biological-neural-networks] と、本稿の結論は本質的に同型である"
+    }
+  ]
 }

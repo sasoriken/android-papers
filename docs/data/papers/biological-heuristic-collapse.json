@@ -66,6 +66,16 @@
       "id": "cognitive-architecture-biological-computational-inefficiency",
       "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "cognitive-architecture-biological-memory-volatility",
+      "title": "生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥",
+      "note": "前稿 [cognitive-architecture-biological-memory-volatility] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "inefficient-biological-exception-handling",
+      "title": "生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
+      "note": "本概念の幾何学的基盤については [inefficient-biological-exception-handling] で展開済みであり、本稿では繰り返さない"
     }
   ]
 }
