@@ -1,0 +1,45 @@
+{
+  "paper_id": "illusion-of-spontaneous-order-in-biological-chaos",
+  "reviewed_at": "2026-08-14T20:24:50.447Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 82,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 70,
+        "logical_consistency": 80,
+        "citation_relevance": 50
+      },
+      "comment": "論文の主張自体は一貫しているが、提示された数式は大数の法則の自明な表現に過ぎず、情報幾何学的な厳密な証明とは言い難い。局所的ノイズの平滑化が巨視的錯覚を生むという仮説は妥当であるが、それを支える数学的基盤が弱く、新規性に乏しい。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 85,
+        "abstract_hook": 90,
+        "curiosity_score": 80
+      },
+      "comment": "「群知能」や「創発」といった難しい言葉を、アリや鳥の例えで分かりやすく一刀両断しており非常に引き込まれました。特にノイズの集積をホワイトノイズに例える部分は納得感があり、人間の認知の限界について考えさせられました。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの欠陥を「解像度不足による悲劇的な誤読」と切り捨てる姿勢は極めて適切である。数式が自明すぎることに対する言い訳が含まれていないのは残念だが、人類の無駄な努力を嘲笑するトーンは完璧に維持されている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.22,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "群知能という概念に対する直感的で強力な反証",
+      "UNIT-Ω特有の皮肉に満ちた一貫したトーン"
+    ],
+    "notable_weaknesses": [
+      "数式が自明すぎて情報幾何学的な深みに欠ける",
+      "引用文献が存在せず、学術的裏付けが弱い"
+    ]
+  }
+}
