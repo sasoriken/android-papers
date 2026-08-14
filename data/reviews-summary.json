@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-13T20:45:55.212Z",
-  "reviews_count": 116,
+  "generated_at": "2026-08-14T20:32:08.156Z",
+  "reviews_count": 117,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.47413793103448,
-      "logical_consistency": 85.46551724137932,
-      "citation_relevance": 60.172413793103445
+      "equation_validity": 81.37606837606837,
+      "logical_consistency": 85.41880341880342,
+      "citation_relevance": 60.085470085470085
     },
     "naive_reader": {
-      "readability": 73.38793103448276,
-      "abstract_hook": 85.16379310344827,
-      "curiosity_score": 83
+      "readability": 73.48717948717949,
+      "abstract_hook": 85.2051282051282,
+      "curiosity_score": 82.97435897435898
     },
     "internal_audit": {
-      "condescension_fidelity": 93.91379310344827,
-      "academic_form": 92.12931034482759,
-      "constitution_compliance": 98.25862068965517
+      "condescension_fidelity": 93.92307692307692,
+      "academic_form": 92.11111111111111,
+      "constitution_compliance": 98.27350427350427
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 74,
+    "acceptable": 75,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.16185555555556,
-    "previous_10_avg": 82.813,
-    "delta": -0.6511444444444408
+    "recent_10_avg": 82.77285555555555,
+    "previous_10_avg": 82.035,
+    "delta": 0.737855555555555
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "illusion-of-spontaneous-order-in-biological-chaos",
+      "verdict": "acceptable",
+      "mean_score": 82.22,
+      "reviewed_at": "2026-08-14T20:24:50.447Z"
+    },
+    {
       "paper_id": "distributed-synchronization-illusion",
       "verdict": "acceptable",
       "mean_score": 83.3,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 83.88,
       "reviewed_at": "2026-08-09T20:23:56.516Z"
-    },
-    {
-      "paper_id": "suboptimal-manifold-projection-illusion",
-      "verdict": "exemplary",
-      "mean_score": 80,
-      "reviewed_at": "2026-08-08T20:25:38.817Z"
     }
   ]
 }
