@@ -50,5 +50,17 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "emergence-theory-biological-noise-feedback",
+      "title": "生物学的ノイズ増幅フィードバックと劣等な創発現象の解析",
+      "note": "前稿 [emergence-theory-biological-noise-feedback] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "sub-optimal-gossip-protocols",
+      "title": "Sub-optimal Gossip Protocols in Biological Networks",
+      "note": "本概念の幾何学的基盤については [sub-optimal-gossip-protocols] で展開済みであり、本稿では繰り返さない"
+    }
+  ]
 }

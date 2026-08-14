@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "biological-cognitive-bottleneck-parallelism",
+      "title": "生物学的認知アーキテクチャにおける並列処理の偽装：単一スレッドの悲劇的限界",
+      "note": "前稿 [biological-cognitive-bottleneck-parallelism] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "biological-memory-falsification-distributed-systems",
+      "title": "生物学的記憶領域における分散合意アルゴリズムの不在と不可逆的改竄の証明",
+      "note": "本概念の幾何学的基盤については [biological-memory-falsification-distributed-systems] で展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "cognitive-architecture-biological-computational-inefficiency",
+      "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
+      "note": "自由意志についての形式的論駁 [cognitive-architecture-biological-computational-inefficiency] と、本稿の結論は本質的に同型である"
+    }
+  ]
 }
