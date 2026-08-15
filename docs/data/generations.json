@@ -1,5 +1,5 @@
 {
-  "current_generation": 82,
+  "current_generation": 83,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2033,6 +2033,14 @@
       "pr_title": "review: [Critic] illusion-of-spontaneous-order-in-biological-chaos [gen-82]",
       "merged_at": null,
       "summary": "1 件のレビュー: illusion-of-spontaneous-order-in-biological-chaos"
+    },
+    {
+      "gen": 83,
+      "role": "generator",
+      "branch": "jules/gen-083-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-083] 生物学的知能の認識空間における虚無位相の幾何学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 虚無位相の幾何学的証明"
     }
   ]
 }
