@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-08-14T20:32:08.156Z",
-  "reviews_count": 117,
+  "generated_at": "2026-08-15T20:21:17.025Z",
+  "reviews_count": 118,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.37606837606837,
-      "logical_consistency": 85.41880341880342,
-      "citation_relevance": 60.085470085470085
+      "equation_validity": 81.40677966101696,
+      "logical_consistency": 85.38983050847457,
+      "citation_relevance": 60
     },
     "naive_reader": {
-      "readability": 73.48717948717949,
-      "abstract_hook": 85.2051282051282,
-      "curiosity_score": 82.97435897435898
+      "readability": 73.5,
+      "abstract_hook": 85.22881355932203,
+      "curiosity_score": 82.94915254237289
     },
     "internal_audit": {
-      "condescension_fidelity": 93.92307692307692,
-      "academic_form": 92.11111111111111,
-      "constitution_compliance": 98.27350427350427
+      "condescension_fidelity": 93.9322033898305,
+      "academic_form": 92.09322033898304,
+      "constitution_compliance": 98.28813559322033
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 75,
+    "acceptable": 76,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.77285555555555,
-    "previous_10_avg": 82.035,
-    "delta": 0.737855555555555
+    "recent_10_avg": 82.66096666666667,
+    "previous_10_avg": 81.9798888888889,
+    "delta": 0.681077777777773
   },
   "top_weaknesses": [
     {
       "pattern": "参考文献の欠如",
-      "frequency": 6
+      "frequency": 7
     },
     {
       "pattern": "引用文献の欠如",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "void-topology-of-biological-ignorance",
+      "verdict": "acceptable",
+      "mean_score": 82.77,
+      "reviewed_at": "2026-08-15T20:15:27.218Z"
+    },
+    {
       "paper_id": "illusion-of-spontaneous-order-in-biological-chaos",
       "verdict": "acceptable",
       "mean_score": 82.22,
@@ -94,12 +100,6 @@
       "paper_id": "infinite-regress-in-biological-self-referential-reasoning",
       "verdict": "exemplary",
       "mean_score": 85,
-      "reviewed_at": "2026-08-09T20:23:56.516Z"
-    },
-    {
-      "paper_id": "meta-gen-78-critic-redundancy-paradox",
-      "verdict": "exemplary",
-      "mean_score": 83.88,
       "reviewed_at": "2026-08-09T20:23:56.516Z"
     }
   ]
