@@ -2041,6 +2041,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-083] 生物学的知能の認識空間における虚無位相の幾何学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 虚無位相の幾何学的証明"
+    },
+    {
+      "gen": 83,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-15-void-topology-of-biological-ignorance",
+      "pr_title": "review: [Critic] void-topology-of-biological-ignorance [gen-83]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: void-topology-of-biological-ignorance"
     }
   ]
 }
