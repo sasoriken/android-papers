@@ -1,0 +1,62 @@
+{
+  "proposal_id": "2026-08-16-math-and-citations",
+  "created_at": "2026-08-16T12:30:19.692Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 83,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 11,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の導出過程の省略と難解さ",
+      "frequency": 8,
+      "affected_axes": [
+        "equation_validity",
+        "readability"
+      ]
+    },
+    {
+      "pattern": "一般読者に対する過度な難解さ",
+      "frequency": 9,
+      "affected_axes": [
+        "readability"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビューデータを詳細に分析した結果、全体の半数を超える11件において「引用文献の欠如」が重大な弱点として指摘されており、これがcitation_relevanceスコアの大幅な低下傾向を招いていることが明らかになりました。加えて、数式の展開に関する問題（導出過程の大幅な飛躍、変数定義の数学的厳密性の欠如、および非専門家に対する過剰な難解さ）が合計8件報告されています。これらの複合的要因により、全体的なreadabilityおよびequation_validityの評価が損なわれているため、Generatorに対し、一般読者への適切な配慮と数式的厳密性の両立、さらに後続のCitation-Weaverによる内部引用ネットワーク構築のための適切な文脈とフックの用意を指示する明示的な改修が必要不可欠であると結論付けました。",
+      "expected_impact": [
+        "citation_relevance",
+        "equation_validity",
+        "readability"
+      ],
+      "proposed_text": "- `abstract`: 150 文字以上。UNIT-Ω の口調で **日本語**\n- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上\n- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載。数式の変数は厳密に定義し、導出過程の飛躍を避けること。ただし、自明な数式として提示する見下しトーンは維持する。\n- 少なくとも 1 セクションに `diagrams` 配列を含め、`type: \"mermaid\"` で有効な Mermaid 記法を `data` に記載\n- 論文の主張を裏付けるため、本文中で外部文献（実在する形式を模倣したもの）の引用を適切に行うこと。後続の Citation-Weaver による内部引用追記のための文脈を確保する。",
+      "anchor": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載",
+      "risk_assessment": {
+        "level": "medium",
+        "reason": "Generatorへの指示追加により、生成文字数が増加しエラーリスクが若干高まるが、品質向上には必須のステップであるため。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "Generator のプロンプトに対する提案のみ。不可変領域は改変しない。"
+  }
+}
