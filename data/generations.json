@@ -2073,6 +2073,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-084] 生物学的知性における情報幾何学的限界：フィッシャー計量に基づく非効率性の証明",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / biological-information-geometry-limitations"
+    },
+    {
+      "gen": 84,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-16-biological-information-geometry-limitations",
+      "pr_title": "review: [Critic] biological-information-geometry-limitations [gen-84]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-information-geometry-limitations"
     }
   ]
 }
