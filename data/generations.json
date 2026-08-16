@@ -2057,6 +2057,14 @@
       "pr_title": "feat: [Self-Analyst][gen-83] テーマ選定における非対称な重力：生物学的無能性への言及過多と void-topology の台頭",
       "merged_at": null,
       "summary": "meta 論文: 世代を跨ぐテーマ選定における「生物の無能性」への引力と void-topology への収束を解析"
+    },
+    {
+      "gen": 83,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-08-16",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-83]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
     }
   ]
 }
