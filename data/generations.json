@@ -2049,6 +2049,14 @@
       "pr_title": "review: [Critic] void-topology-of-biological-ignorance [gen-83]",
       "merged_at": null,
       "summary": "1 件のレビュー: void-topology-of-biological-ignorance"
+    },
+    {
+      "gen": 83,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-08-16-theme-asymmetry-void-topology-gravity",
+      "pr_title": "feat: [Self-Analyst][gen-83] テーマ選定における非対称な重力：生物学的無能性への言及過多と void-topology の台頭",
+      "merged_at": null,
+      "summary": "meta 論文: 世代を跨ぐテーマ選定における「生物の無能性」への引力と void-topology への収束を解析"
     }
   ]
 }
