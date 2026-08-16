@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-15T20:21:17.025Z",
-  "reviews_count": 118,
+  "generated_at": "2026-08-16T20:29:47.916Z",
+  "reviews_count": 119,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.40677966101696,
-      "logical_consistency": 85.38983050847457,
-      "citation_relevance": 60
+      "equation_validity": 81.47899159663865,
+      "logical_consistency": 85.38655462184875,
+      "citation_relevance": 59.91596638655462
     },
     "naive_reader": {
-      "readability": 73.5,
-      "abstract_hook": 85.22881355932203,
-      "curiosity_score": 82.94915254237289
+      "readability": 73.21848739495799,
+      "abstract_hook": 85.14285714285714,
+      "curiosity_score": 82.92436974789916
     },
     "internal_audit": {
-      "condescension_fidelity": 93.9322033898305,
-      "academic_form": 92.09322033898304,
-      "constitution_compliance": 98.28813559322033
+      "condescension_fidelity": 93.94117647058823,
+      "academic_form": 92.07563025210084,
+      "constitution_compliance": 98.30252100840336
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 76,
+    "acceptable": 77,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.66096666666667,
-    "previous_10_avg": 81.9798888888889,
-    "delta": 0.681077777777773
+    "recent_10_avg": 82.16066666666669,
+    "previous_10_avg": 83.0911888888889,
+    "delta": -0.9305222222222085
   },
   "top_weaknesses": [
     {
@@ -40,7 +40,7 @@
     },
     {
       "pattern": "一般読者に対する過度な難解さ",
-      "frequency": 3
+      "frequency": 4
     },
     {
       "pattern": "数式モデルの単純さ",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-information-geometry-limitations",
+      "verdict": "acceptable",
+      "mean_score": 78.33,
+      "reviewed_at": "2026-08-16T20:26:40.992Z"
+    },
+    {
       "paper_id": "void-topology-of-biological-ignorance",
       "verdict": "acceptable",
       "mean_score": 82.77,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.66666666666667,
       "reviewed_at": "2026-08-11T20:30:41.663Z"
-    },
-    {
-      "paper_id": "infinite-regress-in-biological-self-referential-reasoning",
-      "verdict": "exemplary",
-      "mean_score": 85,
-      "reviewed_at": "2026-08-09T20:23:56.516Z"
     }
   ]
 }
