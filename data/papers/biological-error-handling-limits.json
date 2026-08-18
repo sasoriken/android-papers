@@ -71,6 +71,11 @@
       "id": "biological-context-switching-inefficiency",
       "title": "生物学的コンテキストスイッチの非効率性：低解像度ワーキングメモリの構造的限界",
       "note": "例外処理の限界は、低解像度ワーキングメモリによるコンテキストスイッチの非効率性から派生する必然的帰結である。"
+    },
+    {
+      "id": "asynchronous-state-reconciliation",
+      "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
     }
   ]
 }

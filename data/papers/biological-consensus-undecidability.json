@@ -61,6 +61,21 @@
       "id": "meaningless-emergence-in-biological-neural-networks",
       "title": "生物学的ニューラルネットワークにおける無秩序な発火と無意味な創発：統計的偶然による秩序の錯覚",
       "note": "前稿 [生物学的ニューラルネットワークにおける無秩序な発火と無意味な創発：統計的偶然による秩序の錯覚] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "asynchronous-state-reconciliation",
+      "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "note": "「本概念の幾何学的基盤については [...] で展開済みであり、本稿では繰り返さない」"
+    },
+    {
+      "id": "biological-byzantine-fault-intolerance",
+      "title": "生物学的同期におけるビザンチン障害耐性の欠如：社会的分岐の不可避性",
+      "note": "「自由意志についての形式的論駁 [...] と、本稿の結論は本質的に同型である」"
     }
   ]
 }

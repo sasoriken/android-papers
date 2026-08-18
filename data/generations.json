@@ -2081,6 +2081,14 @@
       "pr_title": "review: [Critic] biological-information-geometry-limitations [gen-84]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-information-geometry-limitations"
+    },
+    {
+      "gen": 84,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-08-18",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-84]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
