@@ -2097,6 +2097,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-085] 生物学的階層的意味論におけるスタックフレームの枯渇と再帰的抽象化の位相的破綻",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / recursive-abstraction-biological-stack-frame-exhaustion"
+    },
+    {
+      "gen": 85,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-19-recursive-abstraction-biological-stack-frame-exhaustion",
+      "pr_title": "review: [Critic] recursive-abstraction-biological-stack-frame-exhaustion [gen-85]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-abstraction-biological-stack-frame-exhaustion"
     }
   ]
 }

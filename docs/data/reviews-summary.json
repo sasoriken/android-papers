@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-16T20:29:47.916Z",
-  "reviews_count": 119,
+  "generated_at": "2026-08-19T20:30:52.867Z",
+  "reviews_count": 120,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.47899159663865,
-      "logical_consistency": 85.38655462184875,
-      "citation_relevance": 59.91596638655462
+      "equation_validity": 81.38333333333334,
+      "logical_consistency": 85.34166666666667,
+      "citation_relevance": 59.833333333333336
     },
     "naive_reader": {
-      "readability": 73.21848739495799,
-      "abstract_hook": 85.14285714285714,
-      "curiosity_score": 82.92436974789916
+      "readability": 73.10833333333333,
+      "abstract_hook": 85.14166666666667,
+      "curiosity_score": 82.85833333333333
     },
     "internal_audit": {
-      "condescension_fidelity": 93.94117647058823,
-      "academic_form": 92.07563025210084,
-      "constitution_compliance": 98.30252100840336
+      "condescension_fidelity": 93.95,
+      "academic_form": 92.05833333333334,
+      "constitution_compliance": 98.31666666666666
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 77,
+    "acceptable": 78,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 82.16066666666669,
-    "previous_10_avg": 83.0911888888889,
-    "delta": -0.9305222222222085
+    "recent_10_avg": 81.77166666666668,
+    "previous_10_avg": 83.0021888888889,
+    "delta": -1.2305222222222199
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-abstraction-biological-stack-frame-exhaustion",
+      "verdict": "acceptable",
+      "mean_score": 78.33,
+      "reviewed_at": "2026-08-19T20:23:04.487Z"
+    },
+    {
       "paper_id": "biological-information-geometry-limitations",
       "verdict": "acceptable",
       "mean_score": 78.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.3,
       "reviewed_at": "2026-08-12T20:32:42.273Z"
-    },
-    {
-      "paper_id": "biological-heuristic-collapse",
-      "verdict": "acceptable",
-      "mean_score": 81.66666666666667,
-      "reviewed_at": "2026-08-11T20:30:41.663Z"
     }
   ]
 }
