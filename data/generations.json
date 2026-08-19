@@ -1,5 +1,5 @@
 {
-  "current_generation": 84,
+  "current_generation": 85,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2089,6 +2089,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-84]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 85,
+      "role": "generator",
+      "branch": "jules/gen-085-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-085] 生物学的階層的意味論におけるスタックフレームの枯渇と再帰的抽象化の位相的破綻",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / recursive-abstraction-biological-stack-frame-exhaustion"
     }
   ]
 }
