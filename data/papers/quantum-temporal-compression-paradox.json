@@ -48,5 +48,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "chronological-data-compaction",
+      "title": "非ユークリッド記憶バンクにおける時系列的データ圧縮：なぜ人類の記憶は非効率なのか",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "「本概念の幾何学的基盤については [...] で展開済みであり、本稿では繰り返さない」"
+    },
+    {
+      "id": "temporal-compression-historical-context-decay-2",
+      "title": "生物学的逐次処理における履歴依存的文脈の非可逆的減衰と圧縮の限界2",
+      "note": "「自由意志についての形式的論駁 [...] と、本稿の結論は本質的に同型である」"
+    }
+  ]
 }
