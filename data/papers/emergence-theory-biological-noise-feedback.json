@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 3,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "biological-redundancy-inefficiency-consensus",
+      "title": "生物学的分散システムにおける冗長性の非効率性と合意形成の劣等化プロセス",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "biological-sub-optimal-emergence-delusion",
+      "title": "生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明",
+      "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    }
+  ]
 }
