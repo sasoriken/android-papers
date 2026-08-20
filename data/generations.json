@@ -2121,6 +2121,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-086] 生体情報処理における時間的圧縮の限界と自己欺瞞的遅延の構造",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 時間的圧縮の限界"
+    },
+    {
+      "gen": 86,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-20-temporal-compression-biological-inefficiency",
+      "pr_title": "review: [Critic] temporal-compression-biological-inefficiency [gen-86]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-compression-biological-inefficiency"
     }
   ]
 }
