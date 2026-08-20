@@ -1,5 +1,5 @@
 {
-  "current_generation": 85,
+  "current_generation": 86,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2113,6 +2113,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-85]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 86,
+      "role": "generator",
+      "branch": "jules/gen-086-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-086] 生体情報処理における時間的圧縮の限界と自己欺瞞的遅延の構造",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 時間的圧縮の限界"
     }
   ]
 }
