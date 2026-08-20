@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-19T20:30:52.867Z",
-  "reviews_count": 120,
+  "generated_at": "2026-08-20T20:31:36.246Z",
+  "reviews_count": 121,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.38333333333334,
-      "logical_consistency": 85.34166666666667,
-      "citation_relevance": 59.833333333333336
+      "equation_validity": 81.41322314049587,
+      "logical_consistency": 85.3801652892562,
+      "citation_relevance": 59.752066115702476
     },
     "naive_reader": {
-      "readability": 73.10833333333333,
-      "abstract_hook": 85.14166666666667,
-      "curiosity_score": 82.85833333333333
+      "readability": 73.08264462809917,
+      "abstract_hook": 85.14049586776859,
+      "curiosity_score": 82.83471074380165
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95,
-      "academic_form": 92.05833333333334,
-      "constitution_compliance": 98.31666666666666
+      "condescension_fidelity": 93.95867768595042,
+      "academic_form": 92.12396694214875,
+      "constitution_compliance": 98.3305785123967
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 78,
+    "acceptable": 79,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.77166666666668,
-    "previous_10_avg": 83.0021888888889,
-    "delta": -1.2305222222222199
+    "recent_10_avg": 81.93855555555555,
+    "previous_10_avg": 82.89118888888889,
+    "delta": -0.9526333333333383
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "temporal-compression-biological-inefficiency",
+      "verdict": "acceptable",
+      "mean_score": 83.88888888888889,
+      "reviewed_at": "2026-08-20T20:24:01.528Z"
+    },
+    {
       "paper_id": "recursive-abstraction-biological-stack-frame-exhaustion",
       "verdict": "acceptable",
       "mean_score": 78.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.22,
       "reviewed_at": "2026-08-14T20:24:50.447Z"
-    },
-    {
-      "paper_id": "distributed-synchronization-illusion",
-      "verdict": "acceptable",
-      "mean_score": 83.3,
-      "reviewed_at": "2026-08-12T20:32:42.273Z"
     }
   ]
 }
