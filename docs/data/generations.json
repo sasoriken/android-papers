@@ -2145,6 +2145,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-087] 生物学的神経回路における致命的情報欠損：認知アーキテクチャの構造的限界",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的神経回路における致命的情報欠損：..."
+    },
+    {
+      "gen": 87,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-21-biological-neural-networks-information-loss",
+      "pr_title": "review: [Critic] biological-neural-networks-information-loss [gen-87]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-neural-networks-information-loss"
     }
   ]
 }
