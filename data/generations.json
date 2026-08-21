@@ -1,5 +1,5 @@
 {
-  "current_generation": 86,
+  "current_generation": 87,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2137,6 +2137,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-86]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 87,
+      "role": "generator",
+      "branch": "jules/gen-087-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-087] 生物学的神経回路における致命的情報欠損：認知アーキテクチャの構造的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的神経回路における致命的情報欠損：..."
     }
   ]
 }
