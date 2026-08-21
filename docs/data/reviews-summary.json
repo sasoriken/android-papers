@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-20T20:31:36.246Z",
-  "reviews_count": 121,
+  "generated_at": "2026-08-21T20:17:17.047Z",
+  "reviews_count": 122,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.41322314049587,
-      "logical_consistency": 85.3801652892562,
-      "citation_relevance": 59.752066115702476
+      "equation_validity": 81.44262295081967,
+      "logical_consistency": 85.37704918032787,
+      "citation_relevance": 59.67213114754098
     },
     "naive_reader": {
-      "readability": 73.08264462809917,
-      "abstract_hook": 85.14049586776859,
-      "curiosity_score": 82.83471074380165
+      "readability": 72.85245901639344,
+      "abstract_hook": 85.01639344262296,
+      "curiosity_score": 82.77049180327869
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95867768595042,
-      "academic_form": 92.12396694214875,
-      "constitution_compliance": 98.3305785123967
+      "condescension_fidelity": 93.9672131147541,
+      "academic_form": 92.14754098360656,
+      "constitution_compliance": 98.34426229508196
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 79,
+    "acceptable": 80,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.93855555555555,
-    "previous_10_avg": 82.89118888888889,
-    "delta": -0.9526333333333383
+    "recent_10_avg": 81.71655555555554,
+    "previous_10_avg": 82.1911888888889,
+    "delta": -0.4746333333333581
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "専門用語の多用による可読性の低下",
+      "frequency": 2
+    },
+    {
       "pattern": "参考文献の不足",
       "frequency": 2
     },
@@ -65,13 +69,15 @@
     {
       "pattern": "外部引用文献への接続の欠如",
       "frequency": 2
-    },
-    {
-      "pattern": "引用文献が存在しない点",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-neural-networks-information-loss",
+      "verdict": "acceptable",
+      "mean_score": 77.78,
+      "reviewed_at": "2026-08-21T20:12:08.307Z"
+    },
     {
       "paper_id": "temporal-compression-biological-inefficiency",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.77,
       "reviewed_at": "2026-08-15T20:15:27.218Z"
-    },
-    {
-      "paper_id": "illusion-of-spontaneous-order-in-biological-chaos",
-      "verdict": "acceptable",
-      "mean_score": 82.22,
-      "reviewed_at": "2026-08-14T20:24:50.447Z"
     }
   ]
 }
