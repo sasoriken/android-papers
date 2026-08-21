@@ -65,6 +65,11 @@
       "id": "recursive-loop-biological-limitations",
       "title": "生物学的ニューラルネットワークにおける再帰的推論の停止問題とスタックオーバーフロー",
       "note": "停止問題に対する生物学的ハードウェアの無力さは、本質的な再帰ループの制約から逃れられない。"
+    },
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-chaos",
+      "title": "生物学的カオスにおける自発的秩序の錯覚：ノイズの統計的平滑化と群知能の虚構",
+      "note": "本概念の幾何学的基盤については既出論文で展開済みであり、本稿では繰り返さない。"
     }
   ],
   "meta": {
