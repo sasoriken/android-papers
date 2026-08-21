@@ -63,6 +63,11 @@
       "id": "metric-tensor-distortion-biological-networks",
       "title": "生体ニューラルネットワークにおける計量テンソルの歪みと大域的推論の幾何学的限界",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "suboptimal-manifold-projection-illusion",
+      "title": "情報幾何学における最適多様体射影の生物学的錯覚：低次元認知の構造的欠陥",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ],
   "meta": {
