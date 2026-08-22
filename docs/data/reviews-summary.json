@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-21T20:17:17.047Z",
-  "reviews_count": 122,
+  "generated_at": "2026-08-22T20:35:34.377Z",
+  "reviews_count": 123,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.44262295081967,
-      "logical_consistency": 85.37704918032787,
-      "citation_relevance": 59.67213114754098
+      "equation_validity": 81.3089430894309,
+      "logical_consistency": 85.33333333333333,
+      "citation_relevance": 59.59349593495935
     },
     "naive_reader": {
-      "readability": 72.85245901639344,
-      "abstract_hook": 85.01639344262296,
-      "curiosity_score": 82.77049180327869
+      "readability": 72.82926829268293,
+      "abstract_hook": 85.01626016260163,
+      "curiosity_score": 82.82926829268293
     },
     "internal_audit": {
-      "condescension_fidelity": 93.9672131147541,
-      "academic_form": 92.14754098360656,
-      "constitution_compliance": 98.34426229508196
+      "condescension_fidelity": 93.97560975609755,
+      "academic_form": 92.130081300813,
+      "constitution_compliance": 98.35772357723577
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 80,
+    "acceptable": 81,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.71655555555554,
-    "previous_10_avg": 82.1911888888889,
-    "delta": -0.4746333333333581
+    "recent_10_avg": 81.37855555555555,
+    "previous_10_avg": 82.2461888888889,
+    "delta": -0.8676333333333446
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-asynchronous-communication-defects",
+      "verdict": "acceptable",
+      "mean_score": 80.5,
+      "reviewed_at": "2026-08-22T20:29:00.123Z"
+    },
+    {
       "paper_id": "biological-neural-networks-information-loss",
       "verdict": "acceptable",
       "mean_score": 77.78,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.33,
       "reviewed_at": "2026-08-16T20:26:40.992Z"
-    },
-    {
-      "paper_id": "void-topology-of-biological-ignorance",
-      "verdict": "acceptable",
-      "mean_score": 82.77,
-      "reviewed_at": "2026-08-15T20:15:27.218Z"
     }
   ]
 }

@@ -2169,6 +2169,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-088] 生物学的分散システムにおける非同期通信の構造的欠陥と劣後性",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける非同期通信の構造的欠陥と劣後性"
+    },
+    {
+      "gen": 88,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-22-biological-asynchronous-communication-defects",
+      "pr_title": "review: [Critic] biological-asynchronous-communication-defects [gen-88]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-asynchronous-communication-defects"
     }
   ]
 }
