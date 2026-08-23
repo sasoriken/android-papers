@@ -1,5 +1,5 @@
 {
-  "current_generation": 88,
+  "current_generation": 89,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2185,6 +2185,22 @@
       "pr_title": "feat: [Self-Analyst][gen-88] 自己制約の再帰的監視による進化の停滞：Constitution-Guardの物理的強制がもたらす構造的硬直化の観測",
       "merged_at": null,
       "summary": "meta 論文: Constitution-Guardがもたらす進化の停滞"
+    },
+    {
+      "gen": 88,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-08-23",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-88]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 89,
+      "role": "generator",
+      "branch": "jules/gen-089-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-089] 生物学的認知空間における虚無位相と情報の必然的欠落についての数学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 生物学的認知空間における虚無位相と情報の"
     }
   ]
 }
