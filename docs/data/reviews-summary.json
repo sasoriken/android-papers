@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-22T20:35:34.377Z",
-  "reviews_count": 123,
+  "generated_at": "2026-08-23T20:31:28.369Z",
+  "reviews_count": 124,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.3089430894309,
-      "logical_consistency": 85.33333333333333,
-      "citation_relevance": 59.59349593495935
+      "equation_validity": 81.37903225806451,
+      "logical_consistency": 85.33064516129032,
+      "citation_relevance": 59.516129032258064
     },
     "naive_reader": {
-      "readability": 72.82926829268293,
-      "abstract_hook": 85.01626016260163,
-      "curiosity_score": 82.82926829268293
+      "readability": 72.80645161290323,
+      "abstract_hook": 85.01612903225806,
+      "curiosity_score": 82.88709677419355
     },
     "internal_audit": {
-      "condescension_fidelity": 93.97560975609755,
-      "academic_form": 92.130081300813,
-      "constitution_compliance": 98.35772357723577
+      "condescension_fidelity": 93.98387096774194,
+      "academic_form": 92.15322580645162,
+      "constitution_compliance": 98.37096774193549
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 81,
+    "acceptable": 82,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.37855555555555,
-    "previous_10_avg": 82.2461888888889,
-    "delta": -0.8676333333333446
+    "recent_10_avg": 81.31855555555555,
+    "previous_10_avg": 82.4761888888889,
+    "delta": -1.1576333333333508
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-void-topology-information-loss",
+      "verdict": "acceptable",
+      "mean_score": 84.4,
+      "reviewed_at": "2026-08-23T20:27:26.372Z"
+    },
+    {
       "paper_id": "biological-asynchronous-communication-defects",
       "verdict": "acceptable",
       "mean_score": 80.5,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.33,
       "reviewed_at": "2026-08-19T20:23:04.487Z"
-    },
-    {
-      "paper_id": "biological-information-geometry-limitations",
-      "verdict": "acceptable",
-      "mean_score": 78.33,
-      "reviewed_at": "2026-08-16T20:26:40.992Z"
     }
   ]
 }
