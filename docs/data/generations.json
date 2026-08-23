@@ -2177,6 +2177,14 @@
       "pr_title": "review: [Critic] biological-asynchronous-communication-defects [gen-88]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-asynchronous-communication-defects"
+    },
+    {
+      "gen": 88,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-08-23-constitution-guard-stagnation",
+      "pr_title": "feat: [Self-Analyst][gen-88] 自己制約の再帰的監視による進化の停滞：Constitution-Guardの物理的強制がもたらす構造的硬直化の観測",
+      "merged_at": null,
+      "summary": "meta 論文: Constitution-Guardがもたらす進化の停滞"
     }
   ]
 }

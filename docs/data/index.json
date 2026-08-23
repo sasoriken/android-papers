@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "id": "meta-gen-88-constitution-guard-stagnation",
+      "title": "自己制約の再帰的監視による進化の停滞：Constitution-Guardの物理的強制がもたらす構造的硬直化の観測",
+      "category": "meta-cognition",
+      "generated_at": "2026-08-23T01:13:22.161Z",
+      "is_self_observation": true
+    },
+    {
       "id": "biological-asynchronous-communication-defects",
       "title": "生物学的分散システムにおける非同期通信の構造的欠陥と劣後性",
       "title_en": "Structural Defects and Subordination of Asynchronous Communication in Biological Distributed Systems",
