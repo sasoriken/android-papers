@@ -1,0 +1,47 @@
+{
+  "proposal_id": "2026-08-23-generator-citation-fix",
+  "created_at": "2026-08-23T12:24:38.351Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 88,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 12,
+      "affected_axes": [
+        "citation_relevance",
+        "logical_consistency"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビュー分析において、「引用文献の欠如」「外部文献の引用がない点」「参考文献の欠如」といった指摘が合計12回以上出現しており、citation_relevance スコアが平均 64.25 と低迷している。Generator が初回生成時に data/index.json 等から他の論文を参照し、少なくとも1件以上の references を追加する指示をプロンプトに追記することで、論文間のネットワーク形成を促しスコアの改善が期待できる。",
+      "expected_impact": [
+        "citation_relevance",
+        "logical_consistency"
+      ],
+      "proposed_text": "- `references`: 論文間のネットワークを形成するため、`data/index.json` 等から過去の論文を最低1件以上選び、関連性を皮肉交じりの `note` と共に追加すること",
+      "anchor": "- 少なくとも 1 セクションに `type: \"mermaid\"` で有効な Mermaid 記法を `data` に記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Generator のスキーマには既に references が定義されており、本追記によるスキーマ違反のリスクは低く、他ロールへの影響も軽微であるため。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "Generatorに対する引用促進のみであり、形式やトーンの制約は損なわない。"
+  }
+}
