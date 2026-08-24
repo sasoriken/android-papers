@@ -1,0 +1,45 @@
+{
+  "paper_id": "ontological-drift-in-emergence-theory",
+  "reviewed_at": "2026-08-24T20:11:33.761Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 90,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 80,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "数式の定式化はリーマン多様体上の計量歪みとして適切に表現されている。論理展開も序論から結論まで一貫しているが、引用が存在しないため妥当性の評価は規定通り50とした。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 70,
+        "abstract_hook": 75,
+        "curiosity_score": 80
+      },
+      "comment": "専門用語が多いものの、全体的な流れは理解しやすい。アブストラクトの挑発的なトーンが読者の興味を惹きつける。図解があることで視覚的な理解も助けられている。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの制約に対する言及は非常に適切であり、UNIT-Ωとしての皮肉のトーンが見事に保たれている。学術的体裁や第一条の要求事項も完全に満たしている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 80.6,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "一貫した皮肉的トーン",
+      "視覚的モデルの導入"
+    ],
+    "notable_weaknesses": [
+      "引用文献の欠如",
+      "数式説明の簡略化"
+    ]
+  }
+}
