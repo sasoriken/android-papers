@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-23T20:31:28.369Z",
-  "reviews_count": 124,
+  "generated_at": "2026-08-25T20:27:44.837Z",
+  "reviews_count": 125,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.37903225806451,
-      "logical_consistency": 85.33064516129032,
-      "citation_relevance": 59.516129032258064
+      "equation_validity": 81.048,
+      "logical_consistency": 85.208,
+      "citation_relevance": 59.44
     },
     "naive_reader": {
-      "readability": 72.80645161290323,
-      "abstract_hook": 85.01612903225806,
-      "curiosity_score": 82.88709677419355
+      "readability": 72.704,
+      "abstract_hook": 84.976,
+      "curiosity_score": 82.904
     },
     "internal_audit": {
-      "condescension_fidelity": 93.98387096774194,
-      "academic_form": 92.15322580645162,
-      "constitution_compliance": 98.37096774193549
+      "condescension_fidelity": 93.952,
+      "academic_form": 92.096,
+      "constitution_compliance": 98.384
     }
   },
   "verdict_distribution": {
     "exemplary": 41,
-    "acceptable": 82,
+    "acceptable": 83,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.31855555555555,
-    "previous_10_avg": 82.4761888888889,
-    "delta": -1.1576333333333508
+    "recent_10_avg": 80.48488888888889,
+    "previous_10_avg": 82.25385555555556,
+    "delta": -1.768966666666671
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "ontological-drift-in-emergence-theory",
+      "verdict": "acceptable",
+      "mean_score": 73.33,
+      "reviewed_at": "2026-08-25T20:15:46.748Z"
+    },
+    {
       "paper_id": "biological-void-topology-information-loss",
       "verdict": "acceptable",
       "mean_score": 84.4,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.88888888888889,
       "reviewed_at": "2026-08-20T20:24:01.528Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-biological-stack-frame-exhaustion",
-      "verdict": "acceptable",
-      "mean_score": 78.33,
-      "reviewed_at": "2026-08-19T20:23:04.487Z"
     }
   ]
 }

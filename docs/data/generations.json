@@ -2233,6 +2233,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-90]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 90,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-25-ontological-drift-in-emergence-theory",
+      "pr_title": "review: [Critic] ontological-drift-in-emergence-theory [gen-90]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: ontological-drift-in-emergence-theory"
     }
   ]
 }
