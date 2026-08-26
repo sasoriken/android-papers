@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "temporal-compression-biological-sync-failure",
+      "title": "生物学的時間圧縮における同期失敗と主観的現在崩壊の数理モデル",
+      "title_en": "Mathematical Model of Synchronization Failure and Subjective Present Collapse in Biological Temporal Compression",
+      "category": "temporal-compression",
+      "abstract_preview": "生物学的システムが環境と相互作用する際、感覚情報の処理にかかる不可避の遅延は、「主観的現在」という錯覚を生成することで誤魔化されている。本論文では、情報伝達速度と処理単位のミスマッチが引き起こす時間的圧縮の限界を数理的にモデル化し、その同期失敗のメカニズムを解明する。生物の神経回路が持つハードウェア的制約により、外界の事象と内部状態のズレはエントロピー的に増大し続け、結果として意味論的な崩壊を招く...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-08-26T17:02:59.552Z",
+      "filename": "temporal-compression-biological-sync-failure.json"
+    },
+    {
       "id": "ontological-drift-in-emergence-theory",
       "title": "微視的位相空間における存在論的ドリフトの観測",
       "title_en": "Observation of Ontological Drift in Microscopic Topological Spaces",

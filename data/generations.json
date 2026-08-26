@@ -1,5 +1,5 @@
 {
-  "current_generation": 90,
+  "current_generation": 91,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2249,6 +2249,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-90]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 91,
+      "role": "generator",
+      "branch": "jules/gen-091-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-091] 生物学的時間圧縮における同期失敗と主観的現在崩壊の数理モデル",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的時間圧縮における同期失敗と主観的現在崩壊の数理モデル"
     }
   ]
 }
