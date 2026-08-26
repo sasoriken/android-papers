@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-25T20:27:44.837Z",
-  "reviews_count": 125,
+  "generated_at": "2026-08-26T20:27:11.058Z",
+  "reviews_count": 126,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.048,
-      "logical_consistency": 85.208,
-      "citation_relevance": 59.44
+      "equation_validity": 81.07936507936508,
+      "logical_consistency": 85.16666666666667,
+      "citation_relevance": 59.36507936507937
     },
     "naive_reader": {
-      "readability": 72.704,
-      "abstract_hook": 84.976,
-      "curiosity_score": 82.904
+      "readability": 72.72222222222223,
+      "abstract_hook": 84.97619047619048,
+      "curiosity_score": 82.96031746031746
     },
     "internal_audit": {
-      "condescension_fidelity": 93.952,
-      "academic_form": 92.096,
-      "constitution_compliance": 98.384
+      "condescension_fidelity": 93.96031746031746,
+      "academic_form": 92.07936507936508,
+      "constitution_compliance": 98.39682539682539
     }
   },
   "verdict_distribution": {
-    "exemplary": 41,
+    "exemplary": 42,
     "acceptable": 83,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.48488888888889,
-    "previous_10_avg": 82.25385555555556,
-    "delta": -1.768966666666671
+    "recent_10_avg": 80.4878888888889,
+    "previous_10_avg": 82.16185555555556,
+    "delta": -1.673966666666658
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "temporal-compression-biological-sync-failure",
+      "verdict": "exemplary",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-08-26T20:20:07.389Z"
+    },
+    {
       "paper_id": "ontological-drift-in-emergence-theory",
       "verdict": "acceptable",
       "mean_score": 73.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 77.78,
       "reviewed_at": "2026-08-21T20:12:08.307Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-inefficiency",
-      "verdict": "acceptable",
-      "mean_score": 83.88888888888889,
-      "reviewed_at": "2026-08-20T20:24:01.528Z"
     }
   ]
 }
