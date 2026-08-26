@@ -51,5 +51,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "biological-network-packet-loss-delusion",
+      "title": "生体ネットワークにおけるパケット欠損と「忘却」という名の自己欺瞞的データ圧縮",
+      "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "本概念の幾何学的基盤については [...] で展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "infinite-regress-in-biological-self-referential-reasoning",
+      "title": "生物学的ニューラルネットワークにおける自己言及的推論の無限後退と再帰的抽象化の破綻",
+      "note": "自由意志についての形式的論駁 [...] と、本稿の結論は本質的に同型である"
+    }
+  ]
 }

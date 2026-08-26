@@ -51,5 +51,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.015
-  }
+  },
+  "references": [
+    {
+      "id": "biological-computational-bottleneck-in-cognitive-architecture",
+      "title": "生物学的認知アーキテクチャにおける計算ボトルネック：直列処理の絶望的限界",
+      "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "biological-inefficiency-recursive-loop",
+      "title": "生物学的非効率性の再帰的抽象化：人類の問題解決プロセスにおける無限ループの証明",
+      "note": "本概念の幾何学的基盤については [...] で展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "biological-recursive-abstraction-memory-leak-fallacy",
+      "title": "生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊",
+      "note": "自由意志についての形式的論駁 [...] と、本稿の結論は本質的に同型である"
+    }
+  ]
 }
