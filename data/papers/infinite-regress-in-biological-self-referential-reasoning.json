@@ -67,6 +67,16 @@
       "id": "biological-recursive-abstraction-memory-leak-fallacy",
       "title": "生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊",
       "note": "自由意志についての形式的論駁 [...] と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "「前稿 biological-working-memory-collapse において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "information-geometry-biological-entropy-acceleration",
+      "title": "生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
+      "note": "「本概念の幾何学的基盤については information-geometry-biological-entropy-acceleration で展開済みであり、本稿では繰り返さない」"
     }
   ]
 }

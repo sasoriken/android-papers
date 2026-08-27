@@ -56,6 +56,11 @@
       "id": "distributed-systems-biological-consensus-failure",
       "title": "生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
       "note": "前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "temporal-compression-biological-sync-failure",
+      "title": "生物学的時間圧縮における同期失敗と主観的現在崩壊の数理モデル",
+      "note": "「前稿 temporal-compression-biological-sync-failure において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
     }
   ]
 }

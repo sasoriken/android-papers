@@ -59,6 +59,16 @@
       "id": "biological-node-isolation-in-distributed-networks",
       "title": "生物学的ネットワークにおけるノード孤立とデータ一貫性の崩壊：非効率的同期プロトコルの必然",
       "note": "自由意志についての形式的論駁 [...] と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "cognitive-architecture-biological-computational-inefficiency",
+      "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
+      "note": "「前稿 cognitive-architecture-biological-computational-inefficiency において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "cognitive-architecture-biological-memory-volatility",
+      "title": "生物学的メモリの揮発性と認知アーキテクチャの構造的欠陥",
+      "note": "「本概念の幾何学的基盤については cognitive-architecture-biological-memory-volatility で展開済みであり、本稿では繰り返さない」"
     }
   ],
   "meta": {
