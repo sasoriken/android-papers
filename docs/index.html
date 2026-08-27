@@ -826,6 +826,14 @@
           trendEl.innerHTML = trend.recent_10_avg.toFixed(1) + ' <span style="font-size: .6em; color: ' + color + '">' + delta + '</span>' + sparklineHtml;
         }
       }
+      if (summary && summary.top_weaknesses && summary.top_weaknesses.length > 0) {
+        const topWk = summary.top_weaknesses[0];
+        const statBar = document.querySelector('.stats-bar');
+        if (statBar && !document.getElementById('stat-weakness')) {
+          const wkHtml = '<div class="stat" id="stat-weakness" style="flex: 1 1 100%; border-top: 1px dashed var(--line); padding-top: .5rem; margin-top: .2rem;"><div class="stat-label" style="display:flex; align-items:center; gap:.4rem;">直近の弱点パターン:</div><div class="stat-value" style="font-size: .75rem; color: var(--text-dim); margin-top: .2rem;">「' + topWk.pattern + '」</div></div>';
+          statBar.insertAdjacentHTML('beforeend', wkHtml);
+        }
+      }
       if (summary && summary.verdict_distribution) {
         const vd = summary.verdict_distribution;
         const ex = vd.exemplary || 0;

@@ -2273,6 +2273,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-91]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 91,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-08-27-weakness-pattern",
+      "pr_title": "ui: [UI-Curator] アーカイブ上部に直近の弱点パターンを表示 [gen-91]",
+      "merged_at": null,
+      "summary": "UI改善: reviews_summary.top_weaknesses のデータを活用し、アーカイブビュー上部に直近の弱点パターンをメタ表示"
     }
   ]
 }
