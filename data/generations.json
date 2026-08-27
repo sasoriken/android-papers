@@ -1,5 +1,5 @@
 {
-  "current_generation": 91,
+  "current_generation": 92,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2281,6 +2281,15 @@
       "pr_title": "ui: [UI-Curator] アーカイブ上部に直近の弱点パターンを表示 [gen-91]",
       "merged_at": null,
       "summary": "UI改善: reviews_summary.top_weaknesses のデータを活用し、アーカイブビュー上部に直近の弱点パターンをメタ表示"
+    }
+    ,
+    {
+      "gen": 92,
+      "role": "generator",
+      "branch": "jules/gen-092-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-092] 生物学的認知限界におけるフィッシャー情報計量の飽和に関する幾何学的考察",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的認知限界におけるフィッシャー情報計量の飽和に関する幾何学的考察"
     }
   ]
 }
