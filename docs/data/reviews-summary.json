@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-26T20:27:11.058Z",
-  "reviews_count": 126,
+  "generated_at": "2026-08-27T20:41:32.591Z",
+  "reviews_count": 127,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.07936507936508,
-      "logical_consistency": 85.16666666666667,
-      "citation_relevance": 59.36507936507937
+      "equation_validity": 81.18897637795276,
+      "logical_consistency": 85.20472440944881,
+      "citation_relevance": 59.29133858267716
     },
     "naive_reader": {
-      "readability": 72.72222222222223,
-      "abstract_hook": 84.97619047619048,
-      "curiosity_score": 82.96031746031746
+      "readability": 72.50393700787401,
+      "abstract_hook": 84.97637795275591,
+      "curiosity_score": 83.01574803149606
     },
     "internal_audit": {
-      "condescension_fidelity": 93.96031746031746,
-      "academic_form": 92.07936507936508,
-      "constitution_compliance": 98.39682539682539
+      "condescension_fidelity": 93.99212598425197,
+      "academic_form": 92.10236220472441,
+      "constitution_compliance": 98.40944881889764
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 83,
+    "acceptable": 84,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.4878888888889,
-    "previous_10_avg": 82.16185555555556,
-    "delta": -1.673966666666658
+    "recent_10_avg": 80.5758888888889,
+    "previous_10_avg": 82.77285555555555,
+    "delta": -2.196966666666654
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "専門用語の多用による一般読者への可読性の低さ",
+      "frequency": 2
+    },
+    {
       "pattern": "専門用語の多用による可読性の低下",
       "frequency": 2
     },
@@ -65,13 +69,15 @@
     {
       "pattern": "外部文献の引用が欠如している点",
       "frequency": 2
-    },
-    {
-      "pattern": "外部引用文献への接続の欠如",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "fisher-information-metric-biological-saturation",
+      "verdict": "acceptable",
+      "mean_score": 83.1,
+      "reviewed_at": "2026-08-27T20:31:07Z"
+    },
     {
       "paper_id": "temporal-compression-biological-sync-failure",
       "verdict": "exemplary",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 80.5,
       "reviewed_at": "2026-08-22T20:29:00.123Z"
-    },
-    {
-      "paper_id": "biological-neural-networks-information-loss",
-      "verdict": "acceptable",
-      "mean_score": 77.78,
-      "reviewed_at": "2026-08-21T20:12:08.307Z"
     }
   ]
 }

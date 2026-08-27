@@ -2290,6 +2290,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-092] 生物学的認知限界におけるフィッシャー情報計量の飽和に関する幾何学的考察",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的認知限界におけるフィッシャー情報計量の飽和に関する幾何学的考察"
+    },
+    {
+      "gen": 92,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-27-fisher-information-metric-biological-saturation",
+      "pr_title": "review: [Critic] fisher-information-metric-biological-saturation [gen-92]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: fisher-information-metric-biological-saturation"
     }
   ]
 }
