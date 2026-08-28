@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-27T20:41:32.591Z",
-  "reviews_count": 127,
+  "generated_at": "2026-08-28T20:14:52.320Z",
+  "reviews_count": 128,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.18897637795276,
-      "logical_consistency": 85.20472440944881,
-      "citation_relevance": 59.29133858267716
+      "equation_validity": 81.21875,
+      "logical_consistency": 85.2421875,
+      "citation_relevance": 59.21875
     },
     "naive_reader": {
-      "readability": 72.50393700787401,
-      "abstract_hook": 84.97637795275591,
-      "curiosity_score": 83.01574803149606
+      "readability": 72.5234375,
+      "abstract_hook": 84.9765625,
+      "curiosity_score": 82.9921875
     },
     "internal_audit": {
-      "condescension_fidelity": 93.99212598425197,
-      "academic_form": 92.10236220472441,
-      "constitution_compliance": 98.40944881889764
+      "condescension_fidelity": 94,
+      "academic_form": 92.0859375,
+      "constitution_compliance": 98.3828125
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 84,
+    "acceptable": 85,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.5758888888889,
-    "previous_10_avg": 82.77285555555555,
-    "delta": -2.196966666666654
+    "recent_10_avg": 80.57666666666668,
+    "previous_10_avg": 82.66096666666667,
+    "delta": -2.0842999999999847
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-abstraction-inevitable-collapse",
+      "verdict": "acceptable",
+      "mean_score": 82.77777777777777,
+      "reviewed_at": "2026-08-28T20:10:40.184Z"
+    },
+    {
       "paper_id": "fisher-information-metric-biological-saturation",
       "verdict": "acceptable",
       "mean_score": 83.1,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 84.4,
       "reviewed_at": "2026-08-23T20:27:26.372Z"
-    },
-    {
-      "paper_id": "biological-asynchronous-communication-defects",
-      "verdict": "acceptable",
-      "mean_score": 80.5,
-      "reviewed_at": "2026-08-22T20:29:00.123Z"
     }
   ]
 }

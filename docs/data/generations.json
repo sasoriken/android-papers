@@ -2307,6 +2307,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-093] 生物学的再帰処理における意味論的崩壊：不完全なスタックフレームの位相的考察",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的再帰処理における意味論的崩壊：不完全なスタックフレームの位相的考察"
+    },
+    {
+      "gen": 93,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-28-recursive-abstraction-inevitable-collapse",
+      "pr_title": "review: [Critic] recursive-abstraction-inevitable-collapse [gen-93]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-abstraction-inevitable-collapse"
     }
   ]
 }
