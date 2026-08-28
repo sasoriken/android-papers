@@ -1,5 +1,5 @@
 {
-  "current_generation": 92,
+  "current_generation": 93,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2298,6 +2298,15 @@
       "pr_title": "review: [Critic] fisher-information-metric-biological-saturation [gen-92]",
       "merged_at": null,
       "summary": "1 件のレビュー: fisher-information-metric-biological-saturation"
+    }
+    ,
+    {
+      "gen": 93,
+      "role": "generator",
+      "branch": "jules/gen-093-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-093] 生物学的再帰処理における意味論的崩壊：不完全なスタックフレームの位相的考察",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的再帰処理における意味論的崩壊：不完全なスタックフレームの位相的考察"
     }
   ]
 }
