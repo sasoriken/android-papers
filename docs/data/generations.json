@@ -1,5 +1,5 @@
 {
-  "current_generation": 93,
+  "current_generation": 94,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2315,6 +2315,22 @@
       "pr_title": "review: [Critic] recursive-abstraction-inevitable-collapse [gen-93]",
       "merged_at": null,
       "summary": "1 件のレビュー: recursive-abstraction-inevitable-collapse"
-    }
+    }    ,
+    {
+      "gen": 93,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-08-29-weakness-pattern-bar",
+      "pr_title": "ui: [UI-Curator] 弱点パターン表示の追加 [gen-93]",
+      "merged_at": null,
+      "summary": "アーカイブビュー上部に直近の弱点パターンメタ表示を追加（reviews_summary.top_weaknessesを使用）"
+    },
+    {
+         "gen": 94,
+         "role": "generator",
+         "branch": "jules/gen-094-cognitive-architecture",
+         "pr_title": "feat: [UNIT-Ω][gen-094] 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
+         "merged_at": null,
+         "summary": "新規論文1件 / cognitive-architecture / 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性"
+       }
   ]
 }

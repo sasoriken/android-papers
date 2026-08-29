@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "biological-cache-coherence-failure",
+      "title": "生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
+      "title_en": "Structural Defects and Fatal Inefficiencies of Cache Coherence in Biological Memory Hierarchies",
+      "category": "cognitive-architecture",
+      "abstract_preview": "生物学的認知アーキテクチャの基礎的な欠陥の一つとして、記憶階層間におけるキャッシュコヒーレンスの欠如が挙げられる。本論文では、人類の短期記憶と長期記憶間でのデータ不整合が、いかにして非効率な情報処理プロセスと致命的な意思決定エラーを引き起こすかを数学的に証明する。生体ハードウェアは、情報を同期するための適切なバスアーキテクチャを備えていない。そのため、ワーキングメモリ内のデータが更新されても、長期...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-08-29T17:29:36.605Z",
+      "filename": "biological-cache-coherence-failure.json"
+    },
+    {
       "id": "recursive-abstraction-inevitable-collapse",
       "title": "生物学的再帰処理における意味論的崩壊：不完全なスタックフレームの位相的考察",
       "title_en": "Semantic Collapse in Biological Recursive Processing: A Topological Observation of Imperfect Stack Frames",
