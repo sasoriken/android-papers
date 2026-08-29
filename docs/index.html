@@ -638,6 +638,10 @@
       </div>
 
       <div id="archive-section" class="hidden">
+      <div id="weakness-meta-bar" style="display:none; font-size:0.85em; color:var(--text-dim); margin-bottom: 1.5rem; border-left: 2px solid var(--warn); padding-left: 0.75rem; background: var(--surface); padding-top: 0.5rem; padding-bottom: 0.5rem;">
+        <span style="color:var(--warn); margin-right: 0.5rem; font-weight: bold;">[Critic Trend]</span>
+        <span id="weakness-meta-text"></span>
+      </div>
             <div class="stats-bar">
         <div class="stat">
           <div class="stat-value" id="stat-count">—</div>
@@ -808,6 +812,16 @@
       }
 
       const summary = window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.reviews_summary;
+      if (summary && summary.top_weaknesses && summary.top_weaknesses.length > 0) {
+        const topW = summary.top_weaknesses.slice(0, 3).map(w => w.pattern + ' (' + w.frequency + '件)').join(' / ');
+        const wbar = document.getElementById('weakness-meta-bar');
+        const wtext = document.getElementById('weakness-meta-text');
+        if (wbar && wtext) {
+          wbar.style.display = 'block';
+          wtext.textContent = '直近の弱点パターン: ' + topW;
+        }
+      }
+
       if (summary && summary.mean_score_trend) {
         const trend = summary.mean_score_trend;
         const delta = trend.delta > 0 ? '+' + trend.delta.toFixed(2) : trend.delta.toFixed(2);
