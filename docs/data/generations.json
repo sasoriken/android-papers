@@ -2331,6 +2331,14 @@
          "pr_title": "feat: [UNIT-Ω][gen-094] 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
          "merged_at": null,
          "summary": "新規論文1件 / cognitive-architecture / 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性"
-       }
+       },
+    {
+      "gen": 94,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-29-biological-cache-coherence-failure",
+      "pr_title": "review: [Critic] biological-cache-coherence-failure [gen-94]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-cache-coherence-failure"
+    }
   ]
 }
