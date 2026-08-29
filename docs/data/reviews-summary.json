@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-28T20:14:52.320Z",
-  "reviews_count": 128,
+  "generated_at": "2026-08-29T20:34:35.398Z",
+  "reviews_count": 129,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.21875,
-      "logical_consistency": 85.2421875,
-      "citation_relevance": 59.21875
+      "equation_validity": 81.24806201550388,
+      "logical_consistency": 85.2015503875969,
+      "citation_relevance": 59.41860465116279
     },
     "naive_reader": {
-      "readability": 72.5234375,
-      "abstract_hook": 84.9765625,
-      "curiosity_score": 82.9921875
+      "readability": 72.42635658914729,
+      "abstract_hook": 84.97674418604652,
+      "curiosity_score": 82.93023255813954
     },
     "internal_audit": {
-      "condescension_fidelity": 94,
-      "academic_form": 92.0859375,
-      "constitution_compliance": 98.3828125
+      "condescension_fidelity": 94.0077519379845,
+      "academic_form": 92.06976744186046,
+      "constitution_compliance": 98.3953488372093
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 85,
+    "acceptable": 86,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.57666666666668,
-    "previous_10_avg": 82.66096666666667,
-    "delta": -2.0842999999999847
+    "recent_10_avg": 81.13166666666667,
+    "previous_10_avg": 82.16066666666669,
+    "delta": -1.0290000000000106
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-cache-coherence-failure",
+      "verdict": "acceptable",
+      "mean_score": 83.88,
+      "reviewed_at": "2026-08-29T20:26:43.500Z"
+    },
+    {
       "paper_id": "recursive-abstraction-inevitable-collapse",
       "verdict": "acceptable",
       "mean_score": 82.77777777777777,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 73.33,
       "reviewed_at": "2026-08-25T20:15:46.748Z"
-    },
-    {
-      "paper_id": "biological-void-topology-information-loss",
-      "verdict": "acceptable",
-      "mean_score": 84.4,
-      "reviewed_at": "2026-08-23T20:27:26.372Z"
     }
   ]
 }
