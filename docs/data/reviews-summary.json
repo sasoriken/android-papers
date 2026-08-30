@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-29T20:34:35.398Z",
-  "reviews_count": 129,
+  "generated_at": "2026-08-30T20:19:20.818Z",
+  "reviews_count": 130,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.24806201550388,
-      "logical_consistency": 85.2015503875969,
-      "citation_relevance": 59.41860465116279
+      "equation_validity": 81.16153846153846,
+      "logical_consistency": 85.2,
+      "citation_relevance": 59.34615384615385
     },
     "naive_reader": {
-      "readability": 72.42635658914729,
-      "abstract_hook": 84.97674418604652,
-      "curiosity_score": 82.93023255813954
+      "readability": 72.48461538461538,
+      "abstract_hook": 85.01538461538462,
+      "curiosity_score": 82.94615384615385
     },
     "internal_audit": {
-      "condescension_fidelity": 94.0077519379845,
-      "academic_form": 92.06976744186046,
-      "constitution_compliance": 98.3953488372093
+      "condescension_fidelity": 94.01538461538462,
+      "academic_form": 92.05384615384615,
+      "constitution_compliance": 98.4076923076923
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 86,
+    "acceptable": 87,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.13166666666667,
-    "previous_10_avg": 82.16066666666669,
-    "delta": -1.0290000000000106
+    "recent_10_avg": 81.56866666666666,
+    "previous_10_avg": 81.77166666666668,
+    "delta": -0.20300000000001717
   },
   "top_weaknesses": [
     {
@@ -39,12 +39,12 @@
       "frequency": 5
     },
     {
-      "pattern": "一般読者に対する過度な難解さ",
+      "pattern": "数式モデルの単純さ",
       "frequency": 4
     },
     {
-      "pattern": "数式モデルの単純さ",
-      "frequency": 3
+      "pattern": "一般読者に対する過度な難解さ",
+      "frequency": 4
     },
     {
       "pattern": "用語の難解さ",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-distributed-consensus-inevitable-divergence",
+      "verdict": "acceptable",
+      "mean_score": 82.7,
+      "reviewed_at": "2026-08-30T20:13:56.986Z"
+    },
+    {
       "paper_id": "biological-cache-coherence-failure",
       "verdict": "acceptable",
       "mean_score": 83.88,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 83.33,
       "reviewed_at": "2026-08-26T20:20:07.389Z"
-    },
-    {
-      "paper_id": "ontological-drift-in-emergence-theory",
-      "verdict": "acceptable",
-      "mean_score": 73.33,
-      "reviewed_at": "2026-08-25T20:15:46.748Z"
     }
   ]
 }
