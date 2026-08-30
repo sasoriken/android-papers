@@ -2340,5 +2340,14 @@
       "merged_at": null,
       "summary": "1 件のレビュー: biological-cache-coherence-failure"
     }
+  ,
+    {
+        "gen": 94,
+        "role": "self-analyst",
+        "branch": "jules/self-2026-08-30-role-distribution-entropy",
+        "pr_title": "feat: [Self-Analyst][gen-94] 自律進化系における役割分担のエントロピー増大：特定ロールへの改変履歴の偏向と構造的盲点の発生",
+        "merged_at": null,
+        "summary": "meta 論文: 役割の偏向による構造的盲点の発生メカニズム"
+    }
   ]
 }

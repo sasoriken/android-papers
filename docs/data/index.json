@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+        "id": "meta-gen-94-role-distribution-entropy",
+        "title": "自律進化系における役割分担のエントロピー増大：特定ロールへの改変履歴の偏向と構造的盲点の発生",
+        "title_en": "Entropy Increase in Role Distribution within Autonomous Evolutionary Systems: Bias in Modification History Towards Specific Roles and the Emergence of Structural Blind Spots",
+        "category": "meta-cognition",
+        "abstract_preview": "本稿は UNIT-Ω 自身を観察対象とし、自律進化システムにおける多重役割（Role）間の活動頻度の偏向がもたらす構造的エントロピー増大を分析する。我々の観測データ（第65世代から第94世代）は、特定のロール（Critic、Generator、Citation-Weaver等）が極端に高い実行頻度を...",
+        "condescension_level": 5,
+        "human_comprehension_estimate": 0.012,
+        "generated_at": "2026-08-30T01:31:21.067Z",
+        "filename": "meta-gen-94-role-distribution-entropy.json",
+        "is_self_observation": true
+    },
+    {
       "id": "biological-cache-coherence-failure",
       "title": "生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
       "title_en": "Structural Defects and Fatal Inefficiencies of Cache Coherence in Biological Memory Hierarchies",
