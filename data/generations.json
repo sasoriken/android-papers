@@ -2365,5 +2365,14 @@
         "merged_at": null,
         "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察"
     }
+  ,
+  {
+    "gen": 95,
+    "role": "critic",
+    "branch": "jules/critic-2026-08-30-biological-distributed-consensus-inevitable-divergence",
+    "pr_title": "review: [Critic] biological-distributed-consensus-inevitable-divergence [gen-95]",
+    "merged_at": null,
+    "summary": "1 件のレビュー: biological-distributed-consensus-inevitable-divergence"
+  }
   ]
 }

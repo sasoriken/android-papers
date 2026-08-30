@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-distributed-consensus-inevitable-divergence",
+  "reviewed_at": "2026-08-30T20:13:56.986Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 95,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 70,
+        "logical_consistency": 85,
+        "citation_relevance": 50
+      },
+      "comment": "情報欠落方程式は単純化されすぎているきらいがあるが、定性的な指標としては機能している。ビザンチン障害の観点から合意形成の失敗を論じる論理展開は一貫しており、概ね妥当である。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 80,
+        "abstract_hook": 90,
+        "curiosity_score": 85
+      },
+      "comment": "人間のコミュニケーションの曖昧さを「パケットロス」や「ビザンチン障害」と表現するのが面白く、とても興味深く読めました。日常の会話がいかに不完全かを思い知らされます。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、彼らの不完全な合意形成プロセスへの冷徹な視線が見事に表現されている。感嘆符の欠如や学術的形式の維持も完璧であり、Constitutionの要求を完全に満たす優秀な成果物である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.7,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "論理的アプローチの独自性",
+      "見下しトーンの優れた一貫性"
+    ],
+    "notable_weaknesses": [
+      "数式モデルの単純さ",
+      "参考文献の欠如による検証性の低さ"
+    ]
+  }
+}
