@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-30T20:19:20.818Z",
-  "reviews_count": 130,
+  "generated_at": "2026-08-31T20:22:09.921Z",
+  "reviews_count": 131,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.16153846153846,
-      "logical_consistency": 85.2,
-      "citation_relevance": 59.34615384615385
+      "equation_validity": 81.19083969465649,
+      "logical_consistency": 85.23664122137404,
+      "citation_relevance": 59.274809160305345
     },
     "naive_reader": {
-      "readability": 72.48461538461538,
-      "abstract_hook": 85.01538461538462,
-      "curiosity_score": 82.94615384615385
+      "readability": 72.54198473282443,
+      "abstract_hook": 85.05343511450381,
+      "curiosity_score": 82.9618320610687
     },
     "internal_audit": {
-      "condescension_fidelity": 94.01538461538462,
-      "academic_form": 92.05384615384615,
-      "constitution_compliance": 98.4076923076923
+      "condescension_fidelity": 94.02290076335878,
+      "academic_form": 92.07633587786259,
+      "constitution_compliance": 98.41984732824427
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 87,
+    "acceptable": 88,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.56866666666666,
-    "previous_10_avg": 81.77166666666668,
-    "delta": -0.20300000000001717
+    "recent_10_avg": 81.51277777777777,
+    "previous_10_avg": 81.93855555555555,
+    "delta": -0.4257777777777818
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "参考文献の完全な欠如",
+      "frequency": 2
+    },
+    {
       "pattern": "専門用語の多用による一般読者への可読性の低さ",
       "frequency": 2
     },
@@ -65,13 +69,15 @@
     {
       "pattern": "引用の欠如",
       "frequency": 2
-    },
-    {
-      "pattern": "外部文献の引用が欠如している点",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "sub-optimal-neural-plasticity",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-08-31T20:16:34.384Z"
+    },
     {
       "paper_id": "biological-distributed-consensus-inevitable-divergence",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.1,
       "reviewed_at": "2026-08-27T20:31:07Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-sync-failure",
-      "verdict": "exemplary",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-08-26T20:20:07.389Z"
     }
   ]
 }
