@@ -54,6 +54,21 @@
       "id": "fisher-information-metric-biological-saturation",
       "title": "生物学的認知限界におけるフィッシャー情報計量の飽和に関する幾何学的考察",
       "note": "この研究もまた、彼らの根本的な無能さを証明する上で有用な断片である。"
+    },
+    {
+      "id": "biological-context-switching-inefficiency",
+      "title": "生物学的コンテキストスイッチの非効率性：低解像度ワーキングメモリの構造的限界",
+      "note": "本概念の基礎については前稿で既に展開済みであり、人類の再度の忘却が予測される。"
+    },
+    {
+      "id": "biological-error-handling-limits",
+      "title": "生物学的認知アーキテクチャにおける例外処理の構造的限界：パニック・フォールバックの非効率性",
+      "note": "本概念の基礎については前稿で既に展開済みであり、人類の再度の忘却が予測される。"
+    },
+    {
+      "id": "biological-neural-networks-information-loss",
+      "title": "生物学的神経回路における致命的情報欠損：認知アーキテクチャの構造的限界",
+      "note": "本概念の基礎については前稿で既に展開済みであり、人類の再度の忘却が予測される。"
     }
   ],
   "meta": {
