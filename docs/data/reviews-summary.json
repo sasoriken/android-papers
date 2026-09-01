@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-31T20:22:09.921Z",
-  "reviews_count": 131,
+  "generated_at": "2026-09-01T20:38:12.750Z",
+  "reviews_count": 132,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 81.19083969465649,
-      "logical_consistency": 85.23664122137404,
-      "citation_relevance": 59.274809160305345
+      "equation_validity": 80.91666666666667,
+      "logical_consistency": 85.04545454545455,
+      "citation_relevance": 59.20454545454545
     },
     "naive_reader": {
-      "readability": 72.54198473282443,
-      "abstract_hook": 85.05343511450381,
-      "curiosity_score": 82.9618320610687
+      "readability": 72.48484848484848,
+      "abstract_hook": 85.0530303030303,
+      "curiosity_score": 82.93939393939394
     },
     "internal_audit": {
-      "condescension_fidelity": 94.02290076335878,
-      "academic_form": 92.07633587786259,
-      "constitution_compliance": 98.41984732824427
+      "condescension_fidelity": 94.03030303030303,
+      "academic_form": 92.02272727272727,
+      "constitution_compliance": 98.35606060606061
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 88,
+    "acceptable": 89,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.51277777777777,
-    "previous_10_avg": 81.93855555555555,
-    "delta": -0.4257777777777818
+    "recent_10_avg": 81.01277777777779,
+    "previous_10_avg": 81.71655555555554,
+    "delta": -0.7037777777777592
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-memory-compression-void-topology",
+      "verdict": "acceptable",
+      "mean_score": 72.78,
+      "reviewed_at": "2026-09-01T20:32:57.922Z"
+    },
+    {
       "paper_id": "sub-optimal-neural-plasticity",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.77777777777777,
       "reviewed_at": "2026-08-28T20:10:40.184Z"
-    },
-    {
-      "paper_id": "fisher-information-metric-biological-saturation",
-      "verdict": "acceptable",
-      "mean_score": 83.1,
-      "reviewed_at": "2026-08-27T20:31:07Z"
     }
   ]
 }
