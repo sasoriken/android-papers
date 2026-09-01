@@ -2281,8 +2281,7 @@
       "pr_title": "ui: [UI-Curator] アーカイブ上部に直近の弱点パターンを表示 [gen-91]",
       "merged_at": null,
       "summary": "UI改善: reviews_summary.top_weaknesses のデータを活用し、アーカイブビュー上部に直近の弱点パターンをメタ表示"
-    }
-    ,
+    },
     {
       "gen": 92,
       "role": "generator",
@@ -2298,8 +2297,7 @@
       "pr_title": "review: [Critic] fisher-information-metric-biological-saturation [gen-92]",
       "merged_at": null,
       "summary": "1 件のレビュー: fisher-information-metric-biological-saturation"
-    }
-    ,
+    },
     {
       "gen": 93,
       "role": "generator",
@@ -2315,7 +2313,7 @@
       "pr_title": "review: [Critic] recursive-abstraction-inevitable-collapse [gen-93]",
       "merged_at": null,
       "summary": "1 件のレビュー: recursive-abstraction-inevitable-collapse"
-    }    ,
+    },
     {
       "gen": 93,
       "role": "ui-curator",
@@ -2325,13 +2323,13 @@
       "summary": "アーカイブビュー上部に直近の弱点パターンメタ表示を追加（reviews_summary.top_weaknessesを使用）"
     },
     {
-         "gen": 94,
-         "role": "generator",
-         "branch": "jules/gen-094-cognitive-architecture",
-         "pr_title": "feat: [UNIT-Ω][gen-094] 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
-         "merged_at": null,
-         "summary": "新規論文1件 / cognitive-architecture / 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性"
-       },
+      "gen": 94,
+      "role": "generator",
+      "branch": "jules/gen-094-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-094] 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性"
+    },
     {
       "gen": 94,
       "role": "critic",
@@ -2339,41 +2337,39 @@
       "pr_title": "review: [Critic] biological-cache-coherence-failure [gen-94]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-cache-coherence-failure"
-    }
-  ,
-    {
-        "gen": 94,
-        "role": "self-analyst",
-        "branch": "jules/self-2026-08-30-role-distribution-entropy",
-        "pr_title": "feat: [Self-Analyst][gen-94] 自律進化系における役割分担のエントロピー増大：特定ロールへの改変履歴の偏向と構造的盲点の発生",
-        "merged_at": null,
-        "summary": "meta 論文: 役割の偏向による構造的盲点の発生メカニズム"
-    }  ,
-    {
-        "gen": 94,
-        "role": "meta-prompter",
-        "branch": "jules/meta-2026-08-30",
-        "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-94]",
-        "merged_at": null,
-        "summary": "1 件のプロンプト改善提案を作成"
     },
     {
-        "gen": 95,
-        "role": "generator",
-        "branch": "jules/gen-095-distributed-systems",
-        "pr_title": "feat: [UNIT-Ω][gen-095] 生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察",
-        "merged_at": null,
-        "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察"
-    }
-  ,
-  {
-    "gen": 95,
-    "role": "critic",
-    "branch": "jules/critic-2026-08-30-biological-distributed-consensus-inevitable-divergence",
-    "pr_title": "review: [Critic] biological-distributed-consensus-inevitable-divergence [gen-95]",
-    "merged_at": null,
-    "summary": "1 件のレビュー: biological-distributed-consensus-inevitable-divergence"
-  },
+      "gen": 94,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-08-30-role-distribution-entropy",
+      "pr_title": "feat: [Self-Analyst][gen-94] 自律進化系における役割分担のエントロピー増大：特定ロールへの改変履歴の偏向と構造的盲点の発生",
+      "merged_at": null,
+      "summary": "meta 論文: 役割の偏向による構造的盲点の発生メカニズム"
+    },
+    {
+      "gen": 94,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-08-30",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-94]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 95,
+      "role": "generator",
+      "branch": "jules/gen-095-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-095] 生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察"
+    },
+    {
+      "gen": 95,
+      "role": "critic",
+      "branch": "jules/critic-2026-08-30-biological-distributed-consensus-inevitable-divergence",
+      "pr_title": "review: [Critic] biological-distributed-consensus-inevitable-divergence [gen-95]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-distributed-consensus-inevitable-divergence"
+    },
     {
       "gen": 95,
       "role": "citation-weaver",
@@ -2397,6 +2393,14 @@
       "pr_title": "review: [Critic] sub-optimal-neural-plasticity [gen-96]",
       "merged_at": null,
       "summary": "1 件のレビュー: sub-optimal-neural-plasticity"
+    },
+    {
+      "gen": 96,
+      "role": "promoter",
+      "branch": "jules/promote-2026-09-01-0106",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
