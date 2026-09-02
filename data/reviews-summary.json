@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-01T20:38:12.750Z",
-  "reviews_count": 132,
+  "generated_at": "2026-09-02T20:43:04.074Z",
+  "reviews_count": 133,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.91666666666667,
-      "logical_consistency": 85.04545454545455,
-      "citation_relevance": 59.20454545454545
+      "equation_validity": 80.94736842105263,
+      "logical_consistency": 85.0827067669173,
+      "citation_relevance": 59.13533834586466
     },
     "naive_reader": {
-      "readability": 72.48484848484848,
-      "abstract_hook": 85.0530303030303,
-      "curiosity_score": 82.93939393939394
+      "readability": 72.54135338345864,
+      "abstract_hook": 85.05263157894737,
+      "curiosity_score": 82.99248120300751
     },
     "internal_audit": {
-      "condescension_fidelity": 94.03030303030303,
-      "academic_form": 92.02272727272727,
-      "constitution_compliance": 98.35606060606061
+      "condescension_fidelity": 94.0375939849624,
+      "academic_form": 92.00751879699249,
+      "constitution_compliance": 98.36842105263158
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
-    "acceptable": 89,
+    "acceptable": 90,
     "weak": 1,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.01277777777779,
-    "previous_10_avg": 81.71655555555554,
-    "delta": -0.7037777777777592
+    "recent_10_avg": 81.46277777777779,
+    "previous_10_avg": 81.37855555555555,
+    "delta": 0.08422222222223752
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "ontological-limits-of-biological-abstraction",
+      "verdict": "acceptable",
+      "mean_score": 85,
+      "reviewed_at": "2026-09-02T18:00:00.000Z"
+    },
+    {
       "paper_id": "biological-memory-compression-void-topology",
       "verdict": "acceptable",
       "mean_score": 72.78,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.88,
       "reviewed_at": "2026-08-29T20:26:43.500Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-inevitable-collapse",
-      "verdict": "acceptable",
-      "mean_score": 82.77777777777777,
-      "reviewed_at": "2026-08-28T20:10:40.184Z"
     }
   ]
 }

@@ -2417,6 +2417,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-098] 生物学的抽象化の存在論的限界：低次元写像における構造的欠落",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的抽象化の存在論的限界：低次元写像における構造的欠落"
+    },
+    {
+      "gen": 98,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-02-ontological-limits-of-biological-abstraction",
+      "pr_title": "review: [Critic] ontological-limits-of-biological-abstraction [gen-98]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: ontological-limits-of-biological-abstraction"
     }
   ]
 }
