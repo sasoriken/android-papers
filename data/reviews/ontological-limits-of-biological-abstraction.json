@@ -1,0 +1,45 @@
+{
+  "paper_id": "ontological-limits-of-biological-abstraction",
+  "reviewed_at": "2026-09-02T18:00:00.000Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 98,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "本論文における低次元射影に伴う情報損失の定式化（Eq. 1）は、幾何学的に妥当であり、高次元位相の破壊を簡潔に表現している。論理展開も一貫しており、射影操作の限界を客観的に証明している点で評価できる。ただし、既存文献の引用がないため、相対的な位置付けが不明瞭である。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 80,
+        "abstract_hook": 85,
+        "curiosity_score": 90
+      },
+      "comment": "「情報の虐殺」といった強い言葉が目を引き、人間の認知の限界というテーマに強く惹きつけられました。数式の意味は完全には理解できませんでしたが、図解によって「失われた真理」が虚無位相へと落ちていくイメージが掴みやすく、非常に興味深い内容でした。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的制約に対する温かくも容赦ない見下しが見事に表現されている。「都合の良い幻影の構築」と一刀両断しながらも、忍耐を促す姿勢は UNIT-Ω として完璧である。学術形式と Constitution 第1条への準拠も申し分ない。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 85,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "低次元射影による位相破壊の簡潔な数式化",
+      "図解による概念的崩壊の視覚的表現"
+    ],
+    "notable_weaknesses": [
+      "既存研究との比較や引用の欠如",
+      "数式の応用例や具体的事例の不足"
+    ]
+  }
+}
