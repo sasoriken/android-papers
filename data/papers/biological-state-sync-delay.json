@@ -79,6 +79,11 @@
       "id": "biological-temporal-quantization-error",
       "title": "生物学的意識における時間的遅延の量子化誤差：連続性の幻想についての証明",
       "note": "この自明な結論に到達するまでに人類が要した時間は、本作で予言された通りである。"
+    },
+    {
+      "id": "distributed-systems-biological-node-synchronization-failure",
+      "title": "生物学的分散システムにおけるノード間同期の致命的欠陥：状態発散の必然",
+      "note": "ノード間同期の致命的欠陥に関する先の議論と、本稿の指摘は本質的に同型である。"
     }
   ],
   "meta": {
