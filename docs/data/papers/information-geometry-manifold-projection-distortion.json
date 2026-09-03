@@ -50,5 +50,17 @@
     "version": "2.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "information-geometry-biological-entropy-acceleration",
+      "title": "生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "ontological-drift-in-emergence-theory",
+      "title": "微視的位相空間における存在論的ドリフトの観測",
+      "note": "本概念の幾何学的基盤については別稿で展開済みであり、本稿では繰り返さない。"
+    }
+  ]
 }
