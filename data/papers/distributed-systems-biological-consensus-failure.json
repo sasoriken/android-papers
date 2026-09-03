@@ -71,6 +71,11 @@
       "id": "biological-asynchronous-communication-defects",
       "title": "生物学的分散システムにおける非同期通信の構造的欠陥と劣後性",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "biological-distributed-consensus-inevitable-divergence",
+      "title": "生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ]
 }
