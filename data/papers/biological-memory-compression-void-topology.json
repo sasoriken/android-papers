@@ -49,5 +49,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的認知空間における注意の減衰と虚無位相の発生",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-context-collapse",
+      "title": "生物学的コンテキストの崩壊：再帰的抽象化による意味の消失",
+      "note": "本概念の幾何学的基盤については別稿で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "void-topology-biological-manifold-degeneration",
+      "title": "虚無位相における生物学的な多様体の退化：記憶の幾何学的消滅",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
+  ]
 }
