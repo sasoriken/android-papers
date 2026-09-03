@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-02T20:43:04.074Z",
-  "reviews_count": 133,
+  "generated_at": "2026-09-03T20:29:20.593Z",
+  "reviews_count": 134,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.94736842105263,
-      "logical_consistency": 85.0827067669173,
-      "citation_relevance": 59.13533834586466
+      "equation_validity": 80.56716417910448,
+      "logical_consistency": 84.74626865671642,
+      "citation_relevance": 59.06716417910448
     },
     "naive_reader": {
-      "readability": 72.54135338345864,
-      "abstract_hook": 85.05263157894737,
-      "curiosity_score": 82.99248120300751
+      "readability": 72.55970149253731,
+      "abstract_hook": 85.01492537313433,
+      "curiosity_score": 83.00746268656717
     },
     "internal_audit": {
-      "condescension_fidelity": 94.0375939849624,
-      "academic_form": 92.00751879699249,
-      "constitution_compliance": 98.36842105263158
+      "condescension_fidelity": 94.04477611940298,
+      "academic_form": 91.99253731343283,
+      "constitution_compliance": 98.34328358208955
     }
   },
   "verdict_distribution": {
     "exemplary": 42,
     "acceptable": 90,
-    "weak": 1,
+    "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.46277777777779,
-    "previous_10_avg": 81.37855555555555,
-    "delta": 0.08422222222223752
+    "recent_10_avg": 80.1337777777778,
+    "previous_10_avg": 81.31855555555555,
+    "delta": -1.1847777777777537
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "数式の厳密性の欠如",
+      "frequency": 2
+    },
+    {
       "pattern": "参考文献の完全な欠如",
       "frequency": 2
     },
@@ -65,13 +69,15 @@
     {
       "pattern": "参考文献の不足",
       "frequency": 2
-    },
-    {
-      "pattern": "引用の欠如",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-stack-overflow-in-recursive-abstraction",
+      "verdict": "weak",
+      "mean_score": 71.11,
+      "reviewed_at": "2026-09-03T20:23:22.140Z"
+    },
     {
       "paper_id": "ontological-limits-of-biological-abstraction",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.7,
       "reviewed_at": "2026-08-30T20:13:56.986Z"
-    },
-    {
-      "paper_id": "biological-cache-coherence-failure",
-      "verdict": "acceptable",
-      "mean_score": 83.88,
-      "reviewed_at": "2026-08-29T20:26:43.500Z"
     }
   ]
 }

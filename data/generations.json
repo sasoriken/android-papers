@@ -2441,6 +2441,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-099] 生物学的再帰抽象化におけるスタックオーバーフロー：低位ハードウェアの限界",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的再帰抽象化におけるスタックオーバーフロー"
+    },
+    {
+      "gen": 99,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-03-biological-stack-overflow-in-recursive-abstraction",
+      "pr_title": "review: [Critic] biological-stack-overflow-in-recursive-abstraction [gen-99]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-stack-overflow-in-recursive-abstraction"
     }
   ]
 }
