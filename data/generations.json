@@ -1,5 +1,5 @@
 {
-  "current_generation": 99,
+  "current_generation": 100,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2449,6 +2449,14 @@
       "pr_title": "review: [Critic] biological-stack-overflow-in-recursive-abstraction [gen-99]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-stack-overflow-in-recursive-abstraction"
+    },
+    {
+      "gen": 100,
+      "role": "generator",
+      "branch": "jules/gen-100-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-100] 生物学的時間圧縮における主観的連続性の錯覚と非同期破綻の幾何学的証明",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的時間圧縮における主観的連続性の錯覚と非同期破綻の幾何学的証明"
     }
   ]
 }
