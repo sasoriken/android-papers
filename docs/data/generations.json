@@ -2457,6 +2457,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-100] 生物学的時間圧縮における主観的連続性の錯覚と非同期破綻の幾何学的証明",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的時間圧縮における主観的連続性の錯覚と非同期破綻の幾何学的証明"
+    },
+    {
+      "gen": 100,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-04-biological-temporal-compression-illusion",
+      "pr_title": "review: [Critic] biological-temporal-compression-illusion [gen-100]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-temporal-compression-illusion, meta-gen-83-theme-asymmetry-void-topology-gravity, meta-gen-88-constitution-guard-stagnation"
     }
   ]
 }

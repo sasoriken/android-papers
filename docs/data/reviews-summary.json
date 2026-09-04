@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-03T20:29:20.593Z",
-  "reviews_count": 134,
+  "generated_at": "2026-09-04T20:35:02.528Z",
+  "reviews_count": 137,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.56716417910448,
-      "logical_consistency": 84.74626865671642,
-      "citation_relevance": 59.06716417910448
+      "equation_validity": 80.51824817518248,
+      "logical_consistency": 84.78102189781022,
+      "citation_relevance": 58.86861313868613
     },
     "naive_reader": {
-      "readability": 72.55970149253731,
-      "abstract_hook": 85.01492537313433,
-      "curiosity_score": 83.00746268656717
+      "readability": 72.51094890510949,
+      "abstract_hook": 84.86861313868613,
+      "curiosity_score": 82.91970802919708
     },
     "internal_audit": {
-      "condescension_fidelity": 94.04477611940298,
-      "academic_form": 91.99253731343283,
-      "constitution_compliance": 98.34328358208955
+      "condescension_fidelity": 94.05109489051095,
+      "academic_form": 92.02919708029196,
+      "constitution_compliance": 98.37956204379562
     }
   },
   "verdict_distribution": {
-    "exemplary": 42,
-    "acceptable": 90,
+    "exemplary": 43,
+    "acceptable": 92,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.1337777777778,
-    "previous_10_avg": 81.31855555555555,
-    "delta": -1.1847777777777537
+    "recent_10_avg": 80.5020777777778,
+    "previous_10_avg": 80.5758888888889,
+    "delta": -0.07381111111109817
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,24 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-temporal-compression-illusion",
+      "verdict": "acceptable",
+      "mean_score": 81.555,
+      "reviewed_at": "2026-09-04T20:25:47.520Z"
+    },
+    {
+      "paper_id": "meta-gen-83-theme-asymmetry-void-topology-gravity",
+      "verdict": "acceptable",
+      "mean_score": 79.444,
+      "reviewed_at": "2026-09-04T20:25:47.520Z"
+    },
+    {
+      "paper_id": "meta-gen-88-constitution-guard-stagnation",
+      "verdict": "exemplary",
+      "mean_score": 82.444,
+      "reviewed_at": "2026-09-04T20:25:47.520Z"
+    },
+    {
       "paper_id": "biological-stack-overflow-in-recursive-abstraction",
       "verdict": "weak",
       "mean_score": 71.11,
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85,
       "reviewed_at": "2026-09-02T18:00:00.000Z"
-    },
-    {
-      "paper_id": "biological-memory-compression-void-topology",
-      "verdict": "acceptable",
-      "mean_score": 72.78,
-      "reviewed_at": "2026-09-01T20:32:57.922Z"
-    },
-    {
-      "paper_id": "sub-optimal-neural-plasticity",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-08-31T20:16:34.384Z"
-    },
-    {
-      "paper_id": "biological-distributed-consensus-inevitable-divergence",
-      "verdict": "acceptable",
-      "mean_score": 82.7,
-      "reviewed_at": "2026-08-30T20:13:56.986Z"
     }
   ]
 }
