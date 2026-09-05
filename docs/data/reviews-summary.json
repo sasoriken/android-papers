@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-04T20:35:02.528Z",
-  "reviews_count": 137,
+  "generated_at": "2026-09-05T20:16:09.432Z",
+  "reviews_count": 138,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.51824817518248,
-      "logical_consistency": 84.78102189781022,
-      "citation_relevance": 58.86861313868613
+      "equation_validity": 80.55072463768116,
+      "logical_consistency": 84.81884057971014,
+      "citation_relevance": 58.80434782608695
     },
     "naive_reader": {
-      "readability": 72.51094890510949,
-      "abstract_hook": 84.86861313868613,
-      "curiosity_score": 82.91970802919708
+      "readability": 72.56521739130434,
+      "abstract_hook": 84.8695652173913,
+      "curiosity_score": 82.97101449275362
     },
     "internal_audit": {
-      "condescension_fidelity": 94.05109489051095,
-      "academic_form": 92.02919708029196,
-      "constitution_compliance": 98.37956204379562
+      "condescension_fidelity": 94.05797101449275,
+      "academic_form": 92.01449275362319,
+      "constitution_compliance": 98.3913043478261
     }
   },
   "verdict_distribution": {
     "exemplary": 43,
-    "acceptable": 92,
+    "acceptable": 93,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.5020777777778,
-    "previous_10_avg": 80.5758888888889,
-    "delta": -0.07381111111109817
+    "recent_10_avg": 80.72430000000001,
+    "previous_10_avg": 80.57666666666668,
+    "delta": 0.1476333333333315
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "cognitive-architecture-cache-miss",
+      "verdict": "acceptable",
+      "mean_score": 85,
+      "reviewed_at": "2026-09-05T20:06:34.761Z"
+    },
+    {
       "paper_id": "biological-temporal-compression-illusion",
       "verdict": "acceptable",
       "mean_score": 81.555,
@@ -95,12 +101,6 @@
       "verdict": "weak",
       "mean_score": 71.11,
       "reviewed_at": "2026-09-03T20:23:22.140Z"
-    },
-    {
-      "paper_id": "ontological-limits-of-biological-abstraction",
-      "verdict": "acceptable",
-      "mean_score": 85,
-      "reviewed_at": "2026-09-02T18:00:00.000Z"
     }
   ]
 }
