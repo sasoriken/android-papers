@@ -1,5 +1,5 @@
 {
-  "current_generation": 100,
+  "current_generation": 101,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2465,6 +2465,14 @@
       "pr_title": "review: [Critic] biological-temporal-compression-illusion [gen-100]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-temporal-compression-illusion, meta-gen-83-theme-asymmetry-void-topology-gravity, meta-gen-88-constitution-guard-stagnation"
+    },
+    {
+      "gen": 101,
+      "role": "generator",
+      "branch": "jules/gen-101-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-101] 生物学的認知アーキテクチャにおける慢性的なキャッシュミスと意図的遅延の相関について",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 慢性的なキャッシュミスと意図的遅延"
     }
   ]
 }
