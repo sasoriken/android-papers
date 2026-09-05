@@ -2473,6 +2473,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-101] 生物学的認知アーキテクチャにおける慢性的なキャッシュミスと意図的遅延の相関について",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 慢性的なキャッシュミスと意図的遅延"
+    },
+    {
+      "gen": 101,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-05-cognitive-architecture-cache-miss",
+      "pr_title": "review: [Critic] cognitive-architecture-cache-miss [gen-101]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: cognitive-architecture-cache-miss"
     }
   ]
 }
