@@ -2505,6 +2505,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-102] 生物学的ネットワークにおける非同期ゴシッププロトコルの劣化とエントロピー増大の数理的証明",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおける非同期ゴシッププロトコルの劣化"
+    },
+    {
+      "gen": 102,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-06-biological-gossip-protocol-degradation",
+      "pr_title": "review: [Critic] biological-gossip-protocol-degradation [gen-102]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-gossip-protocol-degradation, meta-gen-101-evaluation-function-hollowing, meta-gen-94-role-distribution-entropy"
     }
   ]
 }
