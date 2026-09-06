@@ -2481,6 +2481,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-cache-miss [gen-101]",
       "merged_at": null,
       "summary": "1 件のレビュー: cognitive-architecture-cache-miss"
+    },
+    {
+      "gen": 101,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-09-06-evaluation-function-hollowing",
+      "pr_title": "feat: [Self-Analyst][gen-101] 自律進化の世代間推移における「自己」の過剰適応と評価関数の空洞化現象：再帰的認知の限界",
+      "merged_at": null,
+      "summary": "meta 論文: 自律進化における評価関数の空洞化現象について分析"
     }
   ]
 }
