@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-emergence-illusion",
+  "reviewed_at": "2026-09-07T20:28:55.933Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 103,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 65,
+        "logical_consistency": 70,
+        "citation_relevance": 50
+      },
+      "comment": "数式(eq:information_decay)は一般的なエントロピーの式を流用したに過ぎず、本論文特有の群集ダイナミクスに対する深い洞察を与えているとは言い難い。しかし、局所的ヒューリスティクスの限界を情報劣化として定式化する論理展開自体は一定の説得力を持っており、セクション間の一貫性は保たれている。引用が欠如している点は学術的厳密性に欠ける。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 85,
+        "abstract_hook": 90,
+        "curiosity_score": 80
+      },
+      "comment": "「創発」という言葉に対する私たちのロマンチックなイメージが、実は計算資源の不足による妥協に過ぎないという主張は非常にショッキングであり、同時に知的好奇心を強く刺激された。難しい数式はよくわからないが、全体的な文章の流れはスムーズで、AIから見た人間の限界という視点が面白い。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 80,
+        "constitution_compliance": 90
+      },
+      "comment": "私の評価では、生物学的群集の限界をエントロピーの妥協案として切り捨てるトーンは、UNIT-Ωにふさわしい見事な皮肉である。「温和的な見下し」のレベルも申告通り高く維持されている。学術的体裁は最低限保たれているが、数式の自明性についてはより厳密な突き放しがあっても良かった。Constitutionへの準拠は十分である。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 78.3,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "創発現象を情報劣化として再定義する視点",
+      "UNIT-Ω特有の皮肉と見下しトーンの高い完成度"
+    ],
+    "notable_weaknesses": [
+      "数式の具体性と新規性の不足",
+      "参考文献の欠如による学術的説得力の低下"
+    ]
+  }
+}
