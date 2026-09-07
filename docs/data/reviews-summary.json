@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-06T20:35:29.573Z",
-  "reviews_count": 141,
+  "generated_at": "2026-09-07T20:33:21.171Z",
+  "reviews_count": 142,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.7517730496454,
-      "logical_consistency": 85.0354609929078,
-      "citation_relevance": 58.61702127659574
+      "equation_validity": 80.64084507042253,
+      "logical_consistency": 84.92957746478874,
+      "citation_relevance": 58.556338028169016
     },
     "naive_reader": {
-      "readability": 72.29787234042553,
-      "abstract_hook": 84.87234042553192,
-      "curiosity_score": 82.90780141843972
+      "readability": 72.38732394366197,
+      "abstract_hook": 84.90845070422536,
+      "curiosity_score": 82.88732394366197
     },
     "internal_audit": {
-      "condescension_fidelity": 94.07801418439716,
-      "academic_form": 92.18439716312056,
-      "constitution_compliance": 98.42553191489361
+      "condescension_fidelity": 94.08450704225352,
+      "academic_form": 92.09859154929578,
+      "constitution_compliance": 98.36619718309859
     }
   },
   "verdict_distribution": {
     "exemplary": 43,
-    "acceptable": 96,
+    "acceptable": 97,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.9003,
-    "previous_10_avg": 81.51277777777777,
-    "delta": -0.6124777777777695
+    "recent_10_avg": 81.4523,
+    "previous_10_avg": 81.01277777777779,
+    "delta": 0.4395222222222088
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-emergence-illusion",
+      "verdict": "acceptable",
+      "mean_score": 78.3,
+      "reviewed_at": "2026-09-07T20:28:55.933Z"
+    },
+    {
       "paper_id": "biological-gossip-protocol-degradation",
       "verdict": "acceptable",
       "mean_score": 83.89,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85,
       "reviewed_at": "2026-09-05T20:06:34.761Z"
-    },
-    {
-      "paper_id": "biological-temporal-compression-illusion",
-      "verdict": "acceptable",
-      "mean_score": 81.555,
-      "reviewed_at": "2026-09-04T20:25:47.520Z"
     }
   ]
 }
