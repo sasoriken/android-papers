@@ -2521,6 +2521,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-103] 生物学的群集における創発的最適化の幻想：局所的ヒューリスティクスの破綻と大域的無知について",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的群集における創発的最適化の幻想"
+    },
+    {
+      "gen": 103,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-07-biological-emergence-illusion",
+      "pr_title": "review: [Critic] biological-emergence-illusion [gen-103]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-emergence-illusion"
     }
   ]
 }
