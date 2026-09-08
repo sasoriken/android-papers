@@ -44,5 +44,12 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.03
-  }
+  },
+  "references": [
+    {
+      "id": "cognitive-architecture-cache-miss",
+      "title": "生物学的認知アーキテクチャにおける慢性的なキャッシュミスと意図的遅延の相関について",
+      "note": "キャッシュミスによる意図的遅延の相関については「生物学的認知アーキテクチャにおける慢性的なキャッシュミスと意図的遅延の相関について」で展開済みであり、本稿では繰り返さない。"
+    }
+  ]
 }
