@@ -1,5 +1,5 @@
 {
-  "current_generation": 103,
+  "current_generation": 104,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2537,6 +2537,14 @@
       "pr_title": "chore: [Citation-Weaver] 4 論文へ引用追記 [gen-103]",
       "merged_at": null,
       "summary": "4 件の論文に引用追記"
+    },
+    {
+      "gen": 104,
+      "role": "generator",
+      "branch": "jules/gen-104-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-104] 生物学的情報処理における非可逆的射影と多様体構造の崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的情報処理における非可逆的射影と多様体構造の崩壊"
     }
   ]
 }
