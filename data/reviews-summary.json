@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-07T20:33:21.171Z",
-  "reviews_count": 142,
+  "generated_at": "2026-09-08T21:01:42.115Z",
+  "reviews_count": 143,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.64084507042253,
-      "logical_consistency": 84.92957746478874,
-      "citation_relevance": 58.556338028169016
+      "equation_validity": 80.67132867132867,
+      "logical_consistency": 84.96503496503496,
+      "citation_relevance": 58.49650349650349
     },
     "naive_reader": {
-      "readability": 72.38732394366197,
-      "abstract_hook": 84.90845070422536,
-      "curiosity_score": 82.88732394366197
+      "readability": 72.16083916083916,
+      "abstract_hook": 84.83916083916084,
+      "curiosity_score": 82.86713286713287
     },
     "internal_audit": {
-      "condescension_fidelity": 94.08450704225352,
-      "academic_form": 92.09859154929578,
-      "constitution_compliance": 98.36619718309859
+      "condescension_fidelity": 94.0909090909091,
+      "academic_form": 92.08391608391608,
+      "constitution_compliance": 98.37762237762237
     }
   },
   "verdict_distribution": {
     "exemplary": 43,
-    "acceptable": 97,
+    "acceptable": 98,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.4523,
-    "previous_10_avg": 81.01277777777779,
-    "delta": 0.4395222222222088
+    "recent_10_avg": 80.78563333333332,
+    "previous_10_avg": 81.46277777777779,
+    "delta": -0.6771444444444654
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-manifold-projection-failure",
+      "verdict": "acceptable",
+      "mean_score": 78.33333333333333,
+      "reviewed_at": "2026-09-08T20:44:45.039Z"
+    },
+    {
       "paper_id": "biological-emergence-illusion",
       "verdict": "acceptable",
       "mean_score": 78.3,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.89,
       "reviewed_at": "2026-09-06T20:19:14Z"
-    },
-    {
-      "paper_id": "cognitive-architecture-cache-miss",
-      "verdict": "acceptable",
-      "mean_score": 85,
-      "reviewed_at": "2026-09-05T20:06:34.761Z"
     }
   ]
 }

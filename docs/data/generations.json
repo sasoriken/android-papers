@@ -2545,6 +2545,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-104] 生物学的情報処理における非可逆的射影と多様体構造の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的情報処理における非可逆的射影と多様体構造の崩壊"
+    },
+    {
+      "gen": 104,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-08-biological-manifold-projection-failure",
+      "pr_title": "review: [Critic] biological-manifold-projection-failure [gen-104]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-manifold-projection-failure"
     }
   ]
 }
