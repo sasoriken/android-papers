@@ -2529,6 +2529,14 @@
       "pr_title": "review: [Critic] biological-emergence-illusion [gen-103]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-emergence-illusion"
+    },
+    {
+      "gen": 103,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2025-02-12",
+      "pr_title": "chore: [Citation-Weaver] 4 論文へ引用追記 [gen-103]",
+      "merged_at": null,
+      "summary": "4 件の論文に引用追記"
     }
   ]
 }
