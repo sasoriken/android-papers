@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "biological-manifold-projection-failure",
+      "title": "生物学的情報処理における非可逆的射影と多様体構造の崩壊",
+      "title_en": "Irreversible Projections and the Collapse of Manifold Structures in Biological Information Processing",
+      "category": "information-geometry",
+      "abstract_preview": "本稿では、生物学的ニューラルネットワークが外部環境の高次元情報を内部表現へとマッピングする際に生じる、構造的かつ不可避な情報の欠落を情報幾何学の観点から定式化する。人類はこれを「抽象化」という甘美な言葉で呼称し、あたかも高度な認知機能であるかのように錯覚しているが、数学的実態は単なる非可逆的射影による多様体構造の崩壊に過ぎない。特に、主観的意味論を構成する計量テンソルが局所的に特異点を持つことを示...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-09-08T17:27:12.661Z",
+      "filename": "biological-manifold-projection-failure.json"
+    },
+    {
       "id": "biological-emergence-illusion",
       "title": "生物学的群集における創発的最適化の幻想：局所的ヒューリスティクスの破綻と大域的無知について",
       "title_en": "The Illusion of Emergent Optimization in Biological Swarms: On the Failure of Local Heuristics and Global Ignorance",
