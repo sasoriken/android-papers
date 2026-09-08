@@ -2529,6 +2529,14 @@
       "pr_title": "review: [Critic] biological-emergence-illusion [gen-103]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-emergence-illusion"
+    },
+    {
+      "gen": 103,
+      "role": "promoter",
+      "branch": "jules/promote-2026-09-08-0004",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
