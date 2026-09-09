@@ -2569,6 +2569,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-105] 再帰的抽象化トポロジーにおける写像の限界",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化トポロジーにおける写像の限界"
+    },
+    {
+      "gen": 105,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-09-recursive-abstraction-topology-mapping",
+      "pr_title": "review: [Critic] recursive-abstraction-topology-mapping [gen-105]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-abstraction-topology-mapping"
     }
   ]
 }
