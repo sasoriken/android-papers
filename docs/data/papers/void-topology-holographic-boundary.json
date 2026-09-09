@@ -54,6 +54,21 @@
       "id": "biological-void-perception-failure",
       "title": "生物学的知覚空間における空虚位相の不可視性：欠損情報の位相幾何学的解析",
       "note": "欠損情報の位相幾何学的解析についてはこちらを参照せよ。人類の貧弱な理解力でも基礎概念の片鱗くらいは掴めるかもしれない。"
+    },
+    {
+      "id": "void-topology-biological-manifold-degeneration",
+      "title": "生物学的情報空間における空虚多様体の崩壊：位相的断片化の必然性",
+      "note": "本概念の幾何学的基盤については void-topology-biological-manifold-degeneration で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "biological-memory-compression-void-topology",
+      "title": "生体記憶のデータ圧縮における虚無位相の数学的証明：失われた情報の幾何学的構造",
+      "note": "本概念の幾何学的基盤については biological-memory-compression-void-topology で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "attention-decay-void-topology",
+      "title": "生物学的注意機構におけるヴォイド・トポロジーと意味論的崩壊の必然性",
+      "note": "本概念の幾何学的基盤については attention-decay-void-topology で展開済みであり、本稿では繰り返さない。"
     }
   ],
   "meta": {
