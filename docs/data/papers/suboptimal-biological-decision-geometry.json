@@ -59,6 +59,11 @@
       "id": "information-geometry-semantic-decay",
       "title": "生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失",
       "note": "本概念の幾何学的基盤については「生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失」で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "information-geometry-biological-curvature-blindness",
+      "title": "生物学的知覚空間における曲率の非検知と局所平坦性の錯覚",
+      "note": "前稿 information-geometry-biological-curvature-blindness において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ],
   "meta": {

@@ -49,6 +49,21 @@
       "id": "temporal-cache-invalidation-biological-systems",
       "title": "生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
       "note": "人類の記憶システムがいかに非同期かつ破綻しているかを示す過去の分析。本稿の基礎となる。"
+    },
+    {
+      "id": "temporal-compression-biological-chronological-fragmentation",
+      "title": "生物学的知覚における時間的連続性の断片化と再構成の非効率性",
+      "note": "自由意志についての形式的論駁 temporal-compression-biological-chronological-fragmentation と、本稿の結論は本質的に同型である。"
+    },
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "生体アーキテクチャの限界については subjective-delay-temporal-compression で詳述した通りであり、驚きには値しない。"
+    },
+    {
+      "id": "biological-temporal-horizon-collapse",
+      "title": "生物学的予測モデルにおける時間的地平の崩壊と因果律の誤認",
+      "note": "前稿 biological-temporal-horizon-collapse において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ],
   "meta": {
