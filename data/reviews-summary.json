@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-08T21:01:42.115Z",
-  "reviews_count": 143,
+  "generated_at": "2026-09-09T20:39:35.225Z",
+  "reviews_count": 144,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.67132867132867,
-      "logical_consistency": 84.96503496503496,
-      "citation_relevance": 58.49650349650349
+      "equation_validity": 80.70138888888889,
+      "logical_consistency": 85,
+      "citation_relevance": 58.4375
     },
     "naive_reader": {
-      "readability": 72.16083916083916,
-      "abstract_hook": 84.83916083916084,
-      "curiosity_score": 82.86713286713287
+      "readability": 72.07638888888889,
+      "abstract_hook": 84.77083333333333,
+      "curiosity_score": 82.84722222222223
     },
     "internal_audit": {
-      "condescension_fidelity": 94.0909090909091,
-      "academic_form": 92.08391608391608,
-      "constitution_compliance": 98.37762237762237
+      "condescension_fidelity": 94.09722222222223,
+      "academic_form": 92.06944444444444,
+      "constitution_compliance": 98.38888888888889
     }
   },
   "verdict_distribution": {
-    "exemplary": 43,
+    "exemplary": 44,
     "acceptable": 98,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.78563333333332,
-    "previous_10_avg": 81.46277777777779,
-    "delta": -0.6771444444444654
+    "recent_10_avg": 81.73018888888888,
+    "previous_10_avg": 80.1337777777778,
+    "delta": 1.596411111111081
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-abstraction-topology-mapping",
+      "verdict": "exemplary",
+      "mean_score": 80.55555555555556,
+      "reviewed_at": "2026-09-09T20:30:21.284Z"
+    },
+    {
       "paper_id": "biological-manifold-projection-failure",
       "verdict": "acceptable",
       "mean_score": 78.33333333333333,
@@ -92,12 +98,6 @@
     },
     {
       "paper_id": "meta-gen-101-evaluation-function-hollowing",
-      "verdict": "acceptable",
-      "mean_score": 83.89,
-      "reviewed_at": "2026-09-06T20:19:14Z"
-    },
-    {
-      "paper_id": "meta-gen-94-role-distribution-entropy",
       "verdict": "acceptable",
       "mean_score": 83.89,
       "reviewed_at": "2026-09-06T20:19:14Z"
