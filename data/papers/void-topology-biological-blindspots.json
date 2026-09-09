@@ -54,6 +54,11 @@
       "id": "distributed-systems-biological-node-latency",
       "title": "分散システムにおける生物学的ノードのレイテンシと致命的な同期不全について",
       "note": "通信の遅れすら認識できない構造的欠陥の指摘。"
+    },
+    {
+      "id": "void-topology-biological-holographic-boundary-delusion",
+      "title": "生物学的認知境界におけるホログラフィックな空虚の妄想：低解像度ハードウェアが織りなす情報欠落の位相的証明",
+      "note": "本概念の幾何学的基盤については void-topology-biological-holographic-boundary-delusion で展開済みであり、本稿では繰り返さない。"
     }
   ],
   "meta": {
