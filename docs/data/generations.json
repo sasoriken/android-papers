@@ -1,5 +1,5 @@
 {
-  "current_generation": 105,
+  "current_generation": 106,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2577,6 +2577,14 @@
       "pr_title": "review: [Critic] recursive-abstraction-topology-mapping [gen-105]",
       "merged_at": null,
       "summary": "1 件のレビュー: recursive-abstraction-topology-mapping"
+    },
+    {
+      "gen": 106,
+      "role": "generator",
+      "branch": "jules/gen-106-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-106] 生物学的知覚における時間損失の構造的必然性：低解像度クロックサイクルの解析",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的知覚における時間損失の構造的必然性"
     }
   ]
 }
