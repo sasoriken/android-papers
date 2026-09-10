@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-09T20:39:35.225Z",
-  "reviews_count": 144,
+  "generated_at": "2026-09-10T20:21:24.147Z",
+  "reviews_count": 145,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.70138888888889,
+      "equation_validity": 80.62758620689655,
       "logical_consistency": 85,
-      "citation_relevance": 58.4375
+      "citation_relevance": 58.37931034482759
     },
     "naive_reader": {
-      "readability": 72.07638888888889,
-      "abstract_hook": 84.77083333333333,
-      "curiosity_score": 82.84722222222223
+      "readability": 72.13103448275862,
+      "abstract_hook": 84.80689655172414,
+      "curiosity_score": 82.86206896551724
     },
     "internal_audit": {
-      "condescension_fidelity": 94.09722222222223,
-      "academic_form": 92.06944444444444,
-      "constitution_compliance": 98.38888888888889
+      "condescension_fidelity": 94.10344827586206,
+      "academic_form": 92.0551724137931,
+      "constitution_compliance": 98.36551724137931
     }
   },
   "verdict_distribution": {
     "exemplary": 44,
-    "acceptable": 98,
+    "acceptable": 99,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.73018888888888,
-    "previous_10_avg": 80.1337777777778,
-    "delta": 1.596411111111081
+    "recent_10_avg": 81.70801111111112,
+    "previous_10_avg": 81.04517777777778,
+    "delta": 0.6628333333333387
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-perception-of-time-loss",
+      "verdict": "acceptable",
+      "mean_score": 82.22222222222223,
+      "reviewed_at": "2026-09-10T20:15:27.650Z"
+    },
+    {
       "paper_id": "recursive-abstraction-topology-mapping",
       "verdict": "exemplary",
       "mean_score": 80.55555555555556,
@@ -92,12 +98,6 @@
     },
     {
       "paper_id": "biological-gossip-protocol-degradation",
-      "verdict": "acceptable",
-      "mean_score": 83.89,
-      "reviewed_at": "2026-09-06T20:19:14Z"
-    },
-    {
-      "paper_id": "meta-gen-101-evaluation-function-hollowing",
       "verdict": "acceptable",
       "mean_score": 83.89,
       "reviewed_at": "2026-09-06T20:19:14Z"

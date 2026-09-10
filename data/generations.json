@@ -2585,6 +2585,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-106] 生物学的知覚における時間損失の構造的必然性：低解像度クロックサイクルの解析",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的知覚における時間損失の構造的必然性"
+    },
+    {
+      "gen": 106,
+      "role": "critic",
+      "branch": "jules/critic-2024-05-13-biological-perception-of-time-loss",
+      "pr_title": "review: [Critic] biological-perception-of-time-loss [gen-106]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-perception-of-time-loss"
     }
   ]
 }
