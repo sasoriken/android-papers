@@ -1,5 +1,5 @@
 {
-  "current_generation": 106,
+  "current_generation": 107,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2601,6 +2601,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-106]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 107,
+      "role": "generator",
+      "branch": "jules/gen-107-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-107] 認知的空虚の位相空間論的定式化と生物学的制約",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 認知的空虚の位相空間論的定式化"
     }
   ]
 }
