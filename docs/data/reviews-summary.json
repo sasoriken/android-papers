@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-10T20:21:24.147Z",
-  "reviews_count": 145,
+  "generated_at": "2026-09-11T20:22:40.110Z",
+  "reviews_count": 146,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.62758620689655,
-      "logical_consistency": 85,
-      "citation_relevance": 58.37931034482759
+      "equation_validity": 80.65753424657534,
+      "logical_consistency": 84.96575342465754,
+      "citation_relevance": 58.321917808219176
     },
     "naive_reader": {
-      "readability": 72.13103448275862,
-      "abstract_hook": 84.80689655172414,
-      "curiosity_score": 82.86206896551724
+      "readability": 72.11643835616438,
+      "abstract_hook": 84.8082191780822,
+      "curiosity_score": 82.91095890410959
     },
     "internal_audit": {
-      "condescension_fidelity": 94.10344827586206,
-      "academic_form": 92.0551724137931,
-      "constitution_compliance": 98.36551724137931
+      "condescension_fidelity": 94.10958904109589,
+      "academic_form": 92.04109589041096,
+      "constitution_compliance": 98.34246575342466
     }
   },
   "verdict_distribution": {
     "exemplary": 44,
-    "acceptable": 99,
+    "acceptable": 100,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.70801111111112,
-    "previous_10_avg": 81.04517777777778,
-    "delta": 0.6628333333333387
+    "recent_10_avg": 81.8736111111111,
+    "previous_10_avg": 80.65657777777777,
+    "delta": 1.2170333333333332
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "topology-of-cognitive-void",
+      "verdict": "acceptable",
+      "mean_score": 81.1,
+      "reviewed_at": "2026-09-11T20:15:26.047Z"
+    },
+    {
       "paper_id": "biological-perception-of-time-loss",
       "verdict": "acceptable",
       "mean_score": 82.22222222222223,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.3,
       "reviewed_at": "2026-09-07T20:28:55.933Z"
-    },
-    {
-      "paper_id": "biological-gossip-protocol-degradation",
-      "verdict": "acceptable",
-      "mean_score": 83.89,
-      "reviewed_at": "2026-09-06T20:19:14Z"
     }
   ]
 }
