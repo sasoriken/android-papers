@@ -2609,6 +2609,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-107] 認知的空虚の位相空間論的定式化と生物学的制約",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 認知的空虚の位相空間論的定式化"
+    },
+    {
+      "gen": 107,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-27-topology-of-cognitive-void",
+      "pr_title": "review: [Critic] topology-of-cognitive-void [gen-107]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: topology-of-cognitive-void"
     }
   ]
 }
