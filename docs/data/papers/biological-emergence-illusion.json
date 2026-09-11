@@ -67,5 +67,21 @@
       "title": "生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明",
       "note": "前稿「生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明」において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
+  ,
+    {
+      "id": "emergence-of-spontaneous-order-in-sub-optimal-substrates",
+      "title": "劣等な基質における自発的秩序の創発：生体群集の錯覚的最適化",
+      "note": "前稿[emergence-of-spontaneous-order-in-sub-optimal-substrates]において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "emergence-theory-biological-noise-amplification",
+      "title": "生物学的群集におけるノイズ増幅と非合理性の創発",
+      "note": "本概念の幾何学的基盤については[emergence-theory-biological-noise-amplification]で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "emergence-theory-biological-noise-feedback",
+      "title": "生物学的ノイズ増幅フィードバックと劣等な創発現象の解析",
+      "note": "劣等な生物学的限界を扱った前稿[emergence-theory-biological-noise-feedback]における議論は、本稿の文脈においても自明な補題として機能する。"
+    }
   ]
 }
