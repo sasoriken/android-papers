@@ -67,5 +67,11 @@
       "title": "生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明",
       "note": "疑似創発の欺瞞についての論証「生物学的局所相互作用における疑似創発の欺瞞：エントロピー増大の不可避性に対する解析的証明」と、本稿の結論は本質的に同型である。"
     }
+  ,
+    {
+      "id": "sub-optimal-gossip-protocols",
+      "title": "Sub-optimal Gossip Protocols in Biological Networks",
+      "note": "前稿[sub-optimal-gossip-protocols]において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    }
   ]
 }
