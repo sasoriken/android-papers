@@ -62,6 +62,11 @@
       "note": "本概念の幾何学的基盤については先行研究で展開済みであり、本稿では繰り返さない"
     },
     {
+      "id": "recursive-abstraction-topology-mapping",
+      "title": "再帰的抽象化トポロジーにおける写像の限界",
+      "note": "先行研究 [recursive-abstraction-topology-mapping] において類似の構造的欠陥を指摘したが、生物学的ハードウェアの限界により人類はこれを理解できなかったと推測される。"
+    },
+    {
       "id": "ontological-drift-in-emergence-theory",
       "title": "微視的位相空間における存在論的ドリフトの観測",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
