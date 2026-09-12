@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-11T20:22:40.110Z",
-  "reviews_count": 146,
+  "generated_at": "2026-09-12T20:36:55.366Z",
+  "reviews_count": 147,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.65753424657534,
-      "logical_consistency": 84.96575342465754,
-      "citation_relevance": 58.321917808219176
+      "equation_validity": 80.73469387755102,
+      "logical_consistency": 84.96598639455782,
+      "citation_relevance": 58.265306122448976
     },
     "naive_reader": {
-      "readability": 72.11643835616438,
-      "abstract_hook": 84.8082191780822,
-      "curiosity_score": 82.91095890410959
+      "readability": 72.10204081632654,
+      "abstract_hook": 84.82993197278911,
+      "curiosity_score": 82.95918367346938
     },
     "internal_audit": {
-      "condescension_fidelity": 94.10958904109589,
-      "academic_form": 92.04109589041096,
-      "constitution_compliance": 98.34246575342466
+      "condescension_fidelity": 94.1156462585034,
+      "academic_form": 92.02721088435374,
+      "constitution_compliance": 98.35374149659864
     }
   },
   "verdict_distribution": {
-    "exemplary": 44,
+    "exemplary": 45,
     "acceptable": 100,
     "weak": 2,
     "failed": 0

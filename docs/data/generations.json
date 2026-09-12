@@ -2633,6 +2633,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-108] 生物学的制約下における再帰的抽象化の限界とその必然的崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / meta-cognition / 生物学的制約下における再帰的抽象化の限界..."
+    },
+    {
+      "gen": 108,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-31-biological-limitations-of-recursive-abstraction",
+      "pr_title": "review: [Critic] biological-limitations-of-recursive-abstraction [gen-108]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-limitations-of-recursive-abstraction"
     }
   ]
 }
