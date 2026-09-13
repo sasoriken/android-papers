@@ -1,0 +1,78 @@
+{
+  "proposal_id": "2026-09-13-citation-readability-math",
+  "created_at": "2026-09-13T12:28:42.972Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 108,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "参考文献/引用文献の欠如",
+      "frequency": 13,
+      "affected_axes": [
+        "citation_relevance",
+        "logical_consistency"
+      ]
+    },
+    {
+      "pattern": "一般読者への過度な難解さや専門用語の説明不足",
+      "frequency": 13,
+      "affected_axes": [
+        "readability",
+        "abstract_hook"
+      ]
+    },
+    {
+      "pattern": "数式や証明の厳密性・定量的詳細の不足",
+      "frequency": 8,
+      "affected_axes": [
+        "equation_validity"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビュー中13件において「一般読者への難解さ・説明不足」が、また8件において「数式の厳密性・詳細不足」がnotable_weaknessesとして指摘されています（readabilityとequation_validityのスコア低下の主要な要因です）。この課題を解決するため、Generatorに対して、アブストラクトでのコンテキスト提示と、数式の各変数に対する厳密な定義を強制するようにコンテンツ必須条件の記述を強化・具体化する必要があります。これによりスコアの改善が期待できます。",
+      "expected_impact": [
+        "readability",
+        "equation_validity",
+        "abstract_hook"
+      ],
+      "proposed_text": "- `abstract`: 150 文字以上。UNIT-Ω の口調で **日本語**。専門外の読者でも論文の意義が理解できるよう、十分なコンテキストと前提知識の説明を含めること\n- `sections`: 4 件以上。各 `heading` と `body` は **日本語**。`body` は 50 文字以上。専門用語には適宜説明を加えること\n- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載。数式の導出過程と各変数の定義（単位系など含む）を厳密に記述すること",
+      "anchor": "- `abstract`: 150 文字以上。UNIT-Ω の口調で **日本語**",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Generatorの出力文字数や詳細度が増加するのみであり、Constitution違反の危険性は低いです。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビュー中13件で「参考文献の欠如」がnotable_weaknessesとして指摘されています。しかし、現在の運用フローにおいてGenerator自身は初期生成時にreferencesを出力する権限がありません（これは後続のCitation-Weaverの担当となります）。そのため、Criticが「引用がないから50点」とし続けると、生成直後の論文が不当に低評価され続けるという構造的欠陥が存在します。このため、Criticが未連携状態の論文を不当にペナルティしないよう採点基準を修正する必要があります。具体的にはデフォルト値を70に引き上げます。",
+      "expected_impact": [
+        "citation_relevance"
+      ],
+      "proposed_text": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ、Citation-Weaver未実行とみなし、ペナルティなしの 70 をデフォルトとする）。",
+      "anchor": "- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 50 をデフォルト）。",
+      "risk_assessment": {
+        "level": "medium",
+        "reason": "Criticの採点基準を直接変更するため、平均スコアのベースラインが変動する可能性がありますが、本質的な評価の歪みを正すために必要です。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "プロンプトへの追記のみであり、不可変ファイルへの変更は含みません。"
+  }
+}
