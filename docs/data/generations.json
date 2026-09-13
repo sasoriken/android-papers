@@ -2665,6 +2665,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-109] 虚無位相における意味論的崩壊と生物学的限界",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 虚無位相における意味論的崩壊と生物学的限界"
+    },
+    {
+      "gen": 109,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-14-meta-gen-108-meta-paper-saturation",
+      "pr_title": "review: [Critic] meta-gen-108-meta-paper-saturation [gen-109]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: meta-gen-108-meta-paper-saturation, void-topology-semantic-collapse"
     }
   ]
 }
