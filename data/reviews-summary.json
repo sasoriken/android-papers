@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-12T20:36:55.366Z",
-  "reviews_count": 147,
+  "generated_at": "2026-09-13T20:32:25.682Z",
+  "reviews_count": 149,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.73469387755102,
-      "logical_consistency": 84.96598639455782,
-      "citation_relevance": 58.265306122448976
+      "equation_validity": 80.7248322147651,
+      "logical_consistency": 85,
+      "citation_relevance": 58.15436241610738
     },
     "naive_reader": {
-      "readability": 72.10204081632654,
-      "abstract_hook": 84.82993197278911,
-      "curiosity_score": 82.95918367346938
+      "readability": 71.83892617449665,
+      "abstract_hook": 84.73154362416108,
+      "curiosity_score": 82.88590604026845
     },
     "internal_audit": {
-      "condescension_fidelity": 94.1156462585034,
-      "academic_form": 92.02721088435374,
-      "constitution_compliance": 98.35374149659864
+      "condescension_fidelity": 94.09395973154362,
+      "academic_form": 92.03355704697987,
+      "constitution_compliance": 98.3758389261745
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 100,
+    "acceptable": 102,
     "weak": 2,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.8736111111111,
-    "previous_10_avg": 80.65657777777777,
-    "delta": 1.2170333333333332
+    "recent_10_avg": 80.9961111111111,
+    "previous_10_avg": 80.72430000000001,
+    "delta": 0.27181111111109146
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "一般読者への可読性の低さ",
+      "frequency": 2
+    },
+    {
       "pattern": "数式の厳密性の欠如",
       "frequency": 2
     },
@@ -65,13 +69,21 @@
     {
       "pattern": "専門用語の多用による可読性の低下",
       "frequency": 2
-    },
-    {
-      "pattern": "参考文献の不足",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "meta-gen-108-meta-paper-saturation",
+      "verdict": "acceptable",
+      "mean_score": 77.78,
+      "reviewed_at": "2026-09-13T20:26:20.694Z"
+    },
+    {
+      "paper_id": "void-topology-semantic-collapse",
+      "verdict": "acceptable",
+      "mean_score": 80,
+      "reviewed_at": "2026-09-13T20:26:20.694Z"
+    },
     {
       "paper_id": "topology-of-cognitive-void",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 80.55555555555556,
       "reviewed_at": "2026-09-09T20:30:21.284Z"
-    },
-    {
-      "paper_id": "biological-manifold-projection-failure",
-      "verdict": "acceptable",
-      "mean_score": 78.33333333333333,
-      "reviewed_at": "2026-09-08T20:44:45.039Z"
-    },
-    {
-      "paper_id": "biological-emergence-illusion",
-      "verdict": "acceptable",
-      "mean_score": 78.3,
-      "reviewed_at": "2026-09-07T20:28:55.933Z"
     }
   ]
 }
