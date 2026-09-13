@@ -2641,6 +2641,14 @@
       "pr_title": "review: [Critic] biological-limitations-of-recursive-abstraction [gen-108]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-limitations-of-recursive-abstraction"
+    },
+    {
+      "gen": 108,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-09-13-meta-paper-saturation",
+      "pr_title": "feat: [Self-Analyst][gen-108] メタ論文生成の飽和と自己観察における再帰的限界の数理モデル",
+      "merged_at": null,
+      "summary": "meta 論文: 自己観察論文の蓄積による再帰的エントロピーの飽和現象の数理モデル化"
     }
   ]
 }
