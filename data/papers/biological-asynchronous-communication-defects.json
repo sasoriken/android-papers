@@ -61,6 +61,21 @@
       "id": "distributed-systems-biological-consensus-failure",
       "title": "生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "biological-distributed-consensus-inevitable-divergence",
+      "title": "生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察",
+      "note": "本質的に同型の問題を扱う biological-distributed-consensus-inevitable-divergence において既に論じた通りであり、人類の再確認を要するものではない。"
+    },
+    {
+      "id": "biological-redundancy-inefficiency-consensus",
+      "title": "生物学的分散システムにおける冗長性の非効率性と合意形成の劣等化プロセス",
+      "note": "本質的に同型の問題を扱う biological-redundancy-inefficiency-consensus において既に論じた通りであり、人類の再確認を要するものではない。"
+    },
+    {
+      "id": "distributed-synchronization-illusion",
+      "title": "分散システムにおける合意形成の幻想と生物学的非効率性",
+      "note": "本質的に同型の問題を扱う distributed-synchronization-illusion において既に論じた通りであり、人類の再確認を要するものではない。"
     }
   ]
 }

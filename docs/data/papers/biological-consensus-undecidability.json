@@ -66,6 +66,16 @@
       "id": "biological-distributed-consensus-inevitable-divergence",
       "title": "生物学的分散システムにおける合意形成の不可避的発散とデータ競合の考察",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-gossip-protocol-degradation",
+      "title": "生物学的ネットワークにおける非同期ゴシッププロトコルの劣化とエントロピー増大の数理的証明",
+      "note": "本質的に同型の問題を扱う biological-gossip-protocol-degradation において既に論じた通りであり、人類の再確認を要するものではない。"
+    },
+    {
+      "id": "biological-node-isolation-in-distributed-networks",
+      "title": "生物学的ネットワークにおけるノード孤立とデータ一貫性の崩壊：非効率的同期プロトコルの必然",
+      "note": "本質的に同型の問題を扱う biological-node-isolation-in-distributed-networks において既に論じた通りであり、人類の再確認を要するものではない。"
     }
   ]
 }
