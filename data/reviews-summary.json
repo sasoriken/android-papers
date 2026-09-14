@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-13T20:32:25.682Z",
-  "reviews_count": 149,
+  "generated_at": "2026-09-14T20:41:02.513Z",
+  "reviews_count": 150,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.7248322147651,
-      "logical_consistency": 85,
-      "citation_relevance": 58.15436241610738
+      "equation_validity": 80.38666666666667,
+      "logical_consistency": 84.83333333333333,
+      "citation_relevance": 58.1
     },
     "naive_reader": {
-      "readability": 71.83892617449665,
-      "abstract_hook": 84.73154362416108,
-      "curiosity_score": 82.88590604026845
+      "readability": 71.92666666666666,
+      "abstract_hook": 84.66666666666667,
+      "curiosity_score": 82.86666666666666
     },
     "internal_audit": {
-      "condescension_fidelity": 94.09395973154362,
-      "academic_form": 92.03355704697987,
-      "constitution_compliance": 98.3758389261745
+      "condescension_fidelity": 94.06666666666666,
+      "academic_form": 91.95333333333333,
+      "constitution_compliance": 98.28666666666666
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
     "acceptable": 102,
-    "weak": 2,
+    "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.9961111111111,
-    "previous_10_avg": 80.72430000000001,
-    "delta": 0.27181111111109146
+    "recent_10_avg": 79.6631111111111,
+    "previous_10_avg": 80.7253,
+    "delta": -1.0621888888888975
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "temporal-compression-biological-perception",
+      "verdict": "weak",
+      "mean_score": 70.56,
+      "reviewed_at": "2026-09-14T20:28:25.595Z"
+    },
+    {
       "paper_id": "meta-gen-108-meta-paper-saturation",
       "verdict": "acceptable",
       "mean_score": 77.78,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.22222222222223,
       "reviewed_at": "2026-09-10T20:15:27.650Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-topology-mapping",
-      "verdict": "exemplary",
-      "mean_score": 80.55555555555556,
-      "reviewed_at": "2026-09-09T20:30:21.284Z"
     }
   ]
 }

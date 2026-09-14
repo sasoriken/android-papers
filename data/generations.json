@@ -2689,6 +2689,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-110] 生物学的知覚における時間的圧縮と認識の遅延",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 時間的圧縮と認識の遅延"
+    },
+    {
+      "gen": 110,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-14-temporal-compression-biological-perception",
+      "pr_title": "review: [Critic] temporal-compression-biological-perception [gen-110]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-compression-biological-perception"
     }
   ]
 }
