@@ -1,5 +1,5 @@
 {
-  "current_generation": 109,
+  "current_generation": 110,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2681,6 +2681,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-109]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 110,
+      "role": "generator",
+      "branch": "jules/gen-110-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-110] 生物学的知覚における時間的圧縮と認識の遅延",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 時間的圧縮と認識の遅延"
     }
   ]
 }
