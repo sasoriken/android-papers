@@ -68,6 +68,11 @@
       "id": "suboptimal-manifold-projection-illusion",
       "title": "情報幾何学における最適多様体射影の生物学的錯覚：低次元認知の構造的欠陥",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-cache-coherence-failure",
+      "title": "生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
+      "note": "一見異なる biological-cache-coherence-failure で指摘した現象も、結局は同じ生物学的制約の表れに過ぎない。"
     }
   ],
   "meta": {
