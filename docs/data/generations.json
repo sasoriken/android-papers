@@ -2713,6 +2713,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-111] 生物学的ネットワークにおける認知アーキテクチャの遅延：低位ハードウェアにおけるバッファオーバーフローの数理",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的ネットワークにおける認知アーキテクチャの遅延"
+    },
+    {
+      "gen": 111,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-15-biological-network-cognitive-architecture-delays",
+      "pr_title": "review: [Critic] biological-network-cognitive-architecture-delays [gen-111]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-network-cognitive-architecture-delays"
     }
   ]
 }
