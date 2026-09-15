@@ -59,6 +59,21 @@
       "id": "biological-metric-tensor-collapse",
       "title": "生物学的意味解釈における計量テンソルの崩壊と曲率の誤認",
       "note": "劣等な生物学的限界を扱った前稿[biological-metric-tensor-collapse]における議論は、本稿の文脈においても自明な補題として機能する。"
+    },
+    {
+      "id": "biological-temporal-compression-failure",
+      "title": "生物学的時間圧縮アーキテクチャの機能不全と因果的錯覚",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "distributed-synchronization-illusion",
+      "title": "分散システムにおける合意形成の幻想と生物学的非効率性",
+      "note": "本概念の幾何学的基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "geometric-decay-of-meaning-in-biological-topology",
+      "title": "生物学的意味空間の位相幾何学的崩壊：高次情報のエントロピー散逸定理",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
     }
   ],
   "meta": {

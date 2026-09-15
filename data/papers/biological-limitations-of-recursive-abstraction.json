@@ -59,6 +59,21 @@
       "id": "biological-gossip-protocol-degradation",
       "title": "生物学的ネットワークにおける非同期ゴシッププロトコルの劣化とエントロピー増大の数理的証明",
       "note": "一見異なる biological-gossip-protocol-degradation で指摘した現象も、結局は同じ生物学的制約の表れに過ぎない。"
+    },
+    {
+      "id": "biological-inefficiency-recursive-loop",
+      "title": "生物学的非効率性の再帰的抽象化：人類の問題解決プロセスにおける無限ループの証明",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-recursive-abstraction-memory-leak-fallacy",
+      "title": "生物学的階層的推論におけるメモリリークの不可避性と再帰的抽象化の崩壊",
+      "note": "本概念の幾何学的基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "biological-working-memory-collapse",
+      "title": "生物学的短期記憶の限界と無限再帰構造の崩壊",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
     }
   ],
   "meta": {
