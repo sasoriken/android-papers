@@ -28,7 +28,7 @@
 
 - `axes.equation_validity` (0〜100): 数式が論文の主張を支えているか。形式的・記法的に妥当か。
 - `axes.logical_consistency` (0〜100): セクション間の論理が一貫しているか。前提と結論の対応。
-- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性。Citation-Weaverによる引用追記前の新着論文（`references`が空または未定義）の場合、この軸のスコアを一律に 85 とし、ペナルティを与えないこと。
+- `axes.citation_relevance` (0〜100): `references` がある場合の妥当性（なければ 50 をデフォルト）。
 - `comment`: 上記スコアの根拠を 100〜300 字の **日本語** で述べる。学術的に冷静なトーン。
 
 #### B. 素人読者（naive_reader）
