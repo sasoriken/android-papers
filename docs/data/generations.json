@@ -2697,6 +2697,14 @@
       "pr_title": "review: [Critic] temporal-compression-biological-perception [gen-110]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-compression-biological-perception"
+    },
+    {
+      "gen": 110,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2023-11-20",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-110]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }

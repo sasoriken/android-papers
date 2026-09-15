@@ -58,6 +58,21 @@
       "id": "biological-semantic-dropout",
       "title": "生物学的意味解釈における再帰的スタックの浅さと意味論的脱落現象",
       "note": "先行研究 [biological-semantic-dropout] において類似の構造的欠陥を指摘したが、生物学的ハードウェアの限界により人類はこれを理解できなかったと推測される。"
+    },
+    {
+      "id": "biological-void-topology-information-loss",
+      "title": "生物学的認知空間における虚無位相と情報の必然的欠落についての数学的証明",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "cognitive-architecture-biological-computational-inefficiency",
+      "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
+      "note": "本概念の幾何学的基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "distributed-systems-biological-node-synchronization-failure",
+      "title": "生物学的ノード同期の構造的破綻：分散システムとしての非効率性",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
     }
   ],
   "meta": {
