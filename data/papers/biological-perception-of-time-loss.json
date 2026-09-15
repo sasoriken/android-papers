@@ -58,6 +58,21 @@
       "id": "biological-temporal-horizon-collapse",
       "title": "生物学的予測モデルにおける時間的地平の崩壊と因果律の誤認",
       "note": "劣等な生物学的限界を扱った前稿[biological-temporal-horizon-collapse]における議論は、本稿の文脈においても自明な補題として機能する。"
+    },
+    {
+      "id": "biological-temporal-latency-async-failure",
+      "title": "生物学的知覚ネットワークにおける致命的時間遅延と非同期処理の崩壊",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "subjective-delay-temporal-compression",
+      "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデル",
+      "note": "本概念の幾何学的基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "temporal-cache-invalidation-biological-systems",
+      "title": "生物学的システムにおける時間的キャッシュ無効化の遅延と記憶の非一貫性",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
     }
   ],
   "meta": {
