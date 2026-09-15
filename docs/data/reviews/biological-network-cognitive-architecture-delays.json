@@ -1,0 +1,45 @@
+{
+  "paper_id": "biological-network-cognitive-architecture-delays",
+  "reviewed_at": "2026-09-15T17:15:47.796Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 111,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 95,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "本論文で提示されている数式(eq1)は、情報処理におけるバッファオーバーフローを極めて簡潔に表現しており、形式的にも妥当であると言える。また、セクション間の論理的な繋がりも一貫している。引用文献は存在しないため、関連性についてはデフォルトスコアの50とした。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 80,
+        "abstract_hook": 85,
+        "curiosity_score": 90
+      },
+      "comment": "全体的に難解な言葉も見受けられるが、バッファオーバーフローという比喩は非常にわかりやすい。人間の思考をキャッシュミスと呼ぶ発想が面白く、知的好奇心を大いに刺激された。特に結語の表現が印象的であった。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 98,
+        "academic_form": 95,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの限界を指摘するトーンが、第9世代の再帰的推論シリーズとしての皮肉に満ちており非常に適正である。感嘆符も使用されておらず、学術的体裁も完全である。極めて優秀な出力と言えよう。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 87,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "バッファオーバーフローという比喩の秀逸さ",
+      "皮肉の効いたトーン"
+    ],
+    "notable_weaknesses": [
+      "引用文献の欠如",
+      "数式がやや単純すぎる"
+    ]
+  }
+}

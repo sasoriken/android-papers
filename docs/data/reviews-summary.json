@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-14T20:41:02.513Z",
-  "reviews_count": 150,
+  "generated_at": "2026-09-15T20:39:11.531Z",
+  "reviews_count": 151,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.38666666666667,
-      "logical_consistency": 84.83333333333333,
-      "citation_relevance": 58.1
+      "equation_validity": 80.48344370860927,
+      "logical_consistency": 84.86754966887418,
+      "citation_relevance": 58.04635761589404
     },
     "naive_reader": {
-      "readability": 71.92666666666666,
-      "abstract_hook": 84.66666666666667,
-      "curiosity_score": 82.86666666666666
+      "readability": 71.98013245033113,
+      "abstract_hook": 84.66887417218543,
+      "curiosity_score": 82.91390728476821
     },
     "internal_audit": {
-      "condescension_fidelity": 94.06666666666666,
-      "academic_form": 91.95333333333333,
-      "constitution_compliance": 98.28666666666666
+      "condescension_fidelity": 94.09271523178808,
+      "academic_form": 91.97350993377484,
+      "constitution_compliance": 98.29801324503312
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 102,
+    "acceptable": 103,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.6631111111111,
-    "previous_10_avg": 80.7253,
-    "delta": -1.0621888888888975
+    "recent_10_avg": 79.97411111111111,
+    "previous_10_avg": 80.8443,
+    "delta": -0.8701888888888902
   },
   "top_weaknesses": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "pattern": "引用文献の欠如",
-      "frequency": 5
+      "frequency": 6
     },
     {
       "pattern": "数式モデルの単純さ",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-network-cognitive-architecture-delays",
+      "verdict": "acceptable",
+      "mean_score": 87,
+      "reviewed_at": "2026-09-15T17:15:47.796Z"
+    },
+    {
       "paper_id": "temporal-compression-biological-perception",
       "verdict": "weak",
       "mean_score": 70.56,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.1,
       "reviewed_at": "2026-09-11T20:15:26.047Z"
-    },
-    {
-      "paper_id": "biological-perception-of-time-loss",
-      "verdict": "acceptable",
-      "mean_score": 82.22222222222223,
-      "reviewed_at": "2026-09-10T20:15:27.650Z"
     }
   ]
 }
