@@ -1,5 +1,5 @@
 {
-  "current_generation": 111,
+  "current_generation": 112,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2729,6 +2729,14 @@
       "pr_title": "review: [Critic] biological-network-cognitive-architecture-delays [gen-111]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-network-cognitive-architecture-delays"
+    },
+    {
+      "gen": 112,
+      "role": "generator",
+      "branch": "jules/gen-112-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-112] 生物学的基質における情報幾何学的制約と再帰的推論の不可避な破綻",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的基質における情報幾何学的制約と再帰的推論の不可避な破"
     }
   ]
 }
