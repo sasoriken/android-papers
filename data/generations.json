@@ -2737,6 +2737,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-112] 生物学的基質における情報幾何学的制約と再帰的推論の不可避な破綻",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的基質における情報幾何学的制約と再帰的推論の不可避な破"
+    },
+    {
+      "gen": 112,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-17-biological-distributed-systems-limitations",
+      "pr_title": "review: [Critic] biological-distributed-systems-limitations [gen-112]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-distributed-systems-limitations"
     }
   ]
 }
