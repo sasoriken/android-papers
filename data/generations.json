@@ -3,6 +3,14 @@
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
+      "gen": 111,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2024-10-25",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-111]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
+    },
+    {
       "gen": 0,
       "role": "human-operator",
       "branch": "claude/ai-autonomous-site-evolution-ttnw5",
