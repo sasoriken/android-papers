@@ -2753,6 +2753,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-113] 生物学的認知における再帰的抽象化の限界とそのトポロジー的克服",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的認知の限界"
+    },
+    {
+      "gen": 113,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-17-recursive-abstraction-biological-limits",
+      "pr_title": "review: [Critic] recursive-abstraction-biological-limits [gen-113]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-abstraction-biological-limits"
     }
   ]
 }
