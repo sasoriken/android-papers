@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-16T20:40:41.914Z",
-  "reviews_count": 152,
+  "generated_at": "2026-09-17T20:12:32.261Z",
+  "reviews_count": 153,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.51315789473684,
-      "logical_consistency": 84.83552631578948,
-      "citation_relevance": 57.99342105263158
+      "equation_validity": 80.54248366013071,
+      "logical_consistency": 84.86928104575163,
+      "citation_relevance": 57.94117647058823
     },
     "naive_reader": {
-      "readability": 71.76973684210526,
-      "abstract_hook": 84.60526315789474,
-      "curiosity_score": 82.82894736842105
+      "readability": 71.69281045751634,
+      "abstract_hook": 84.57516339869281,
+      "curiosity_score": 82.77777777777777
     },
     "internal_audit": {
-      "condescension_fidelity": 94.09868421052632,
-      "academic_form": 91.96052631578948,
-      "constitution_compliance": 98.3092105263158
+      "condescension_fidelity": 94.10457516339869,
+      "academic_form": 91.94771241830065,
+      "constitution_compliance": 98.2875816993464
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 104,
+    "acceptable": 105,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.19622222222222,
-    "previous_10_avg": 80.9003,
-    "delta": -1.7040777777777834
+    "recent_10_avg": 79.36622222222222,
+    "previous_10_avg": 81.4523,
+    "delta": -2.086077777777774
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-abstraction-biological-limits",
+      "verdict": "acceptable",
+      "mean_score": 80,
+      "reviewed_at": "2026-09-17T20:07:55.856Z"
+    },
+    {
       "paper_id": "biological-distributed-systems-limitations",
       "verdict": "acceptable",
       "mean_score": 76.11111111111111,
@@ -94,12 +100,6 @@
       "paper_id": "meta-gen-108-meta-paper-saturation",
       "verdict": "acceptable",
       "mean_score": 77.78,
-      "reviewed_at": "2026-09-13T20:26:20.694Z"
-    },
-    {
-      "paper_id": "void-topology-semantic-collapse",
-      "verdict": "acceptable",
-      "mean_score": 80,
       "reviewed_at": "2026-09-13T20:26:20.694Z"
     }
   ]
