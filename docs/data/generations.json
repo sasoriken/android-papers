@@ -1,5 +1,5 @@
 {
-  "current_generation": 112,
+  "current_generation": 113,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2745,6 +2745,14 @@
       "pr_title": "review: [Critic] biological-distributed-systems-limitations [gen-112]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-distributed-systems-limitations"
+    },
+    {
+      "gen": 113,
+      "role": "generator",
+      "branch": "jules/gen-113-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-113] 生物学的認知における再帰的抽象化の限界とそのトポロジー的克服",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的認知の限界"
     }
   ]
 }
