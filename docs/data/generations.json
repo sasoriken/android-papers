@@ -2769,6 +2769,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-114] 創発性理論における生物学的ノイズの必然的崩壊とその位相幾何学的帰結",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的ノイズの必然的崩壊"
+    },
+    {
+      "gen": 114,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-19-emergence-theory-biological-noise",
+      "pr_title": "review: [Critic] emergence-theory-biological-noise [gen-114]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: emergence-theory-biological-noise"
     }
   ]
 }
