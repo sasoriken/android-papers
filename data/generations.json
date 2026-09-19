@@ -2785,6 +2785,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-115] 情報幾何学的射影を用いた生物学的推論の局所的限界の証明",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 情報幾何学的射影を用いた生物学的推論の局所的限界の証明"
+    },
+    {
+      "gen": 115,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-31-info-geometric-biological-limits",
+      "pr_title": "review: [Critic] info-geometric-biological-limits [gen-115]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: info-geometric-biological-limits"
     }
   ]
 }
