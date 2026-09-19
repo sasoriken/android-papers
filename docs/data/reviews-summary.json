@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-18T20:20:42.527Z",
-  "reviews_count": 154,
+  "generated_at": "2026-09-19T20:32:19.831Z",
+  "reviews_count": 155,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.57142857142857,
-      "logical_consistency": 84.83766233766234,
-      "citation_relevance": 57.88961038961039
+      "equation_validity": 80.6,
+      "logical_consistency": 84.80645161290323,
+      "citation_relevance": 57.83870967741935
     },
     "naive_reader": {
-      "readability": 71.61688311688312,
-      "abstract_hook": 84.51298701298701,
-      "curiosity_score": 82.6948051948052
+      "readability": 71.44516129032257,
+      "abstract_hook": 84.45161290322581,
+      "curiosity_score": 82.61290322580645
     },
     "internal_audit": {
-      "condescension_fidelity": 94.1103896103896,
-      "academic_form": 91.93506493506493,
-      "constitution_compliance": 98.2987012987013
+      "condescension_fidelity": 94.08387096774193,
+      "academic_form": 91.89032258064516,
+      "constitution_compliance": 98.27741935483871
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 106,
+    "acceptable": 107,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.3628888888889,
-    "previous_10_avg": 80.78563333333332,
-    "delta": -1.4227444444444188
+    "recent_10_avg": 78.80733333333335,
+    "previous_10_avg": 81.73018888888888,
+    "delta": -2.922855555555529
   },
   "top_weaknesses": [
     {
@@ -51,6 +51,10 @@
       "frequency": 3
     },
     {
+      "pattern": "一般読者に対する専門用語の説明不足",
+      "frequency": 2
+    },
+    {
       "pattern": "一般読者への可読性の低さ",
       "frequency": 2
     },
@@ -65,13 +69,15 @@
     {
       "pattern": "専門用語の多用による一般読者への可読性の低さ",
       "frequency": 2
-    },
-    {
-      "pattern": "専門用語の多用による可読性の低下",
-      "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "info-geometric-biological-limits",
+      "verdict": "acceptable",
+      "mean_score": 75,
+      "reviewed_at": "2026-09-19T20:25:22.876Z"
+    },
     {
       "paper_id": "emergence-theory-biological-noise",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 87,
       "reviewed_at": "2026-09-15T17:15:47.796Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-perception",
-      "verdict": "weak",
-      "mean_score": 70.56,
-      "reviewed_at": "2026-09-14T20:28:25.595Z"
     }
   ]
 }
