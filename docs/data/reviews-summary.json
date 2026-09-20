@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-19T20:32:19.831Z",
-  "reviews_count": 155,
+  "generated_at": "2026-09-20T20:38:50.387Z",
+  "reviews_count": 157,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.6,
-      "logical_consistency": 84.80645161290323,
-      "citation_relevance": 57.83870967741935
+      "equation_validity": 80.62420382165605,
+      "logical_consistency": 84.8407643312102,
+      "citation_relevance": 57.738853503184714
     },
     "naive_reader": {
-      "readability": 71.44516129032257,
-      "abstract_hook": 84.45161290322581,
-      "curiosity_score": 82.61290322580645
+      "readability": 71.14012738853503,
+      "abstract_hook": 84.36305732484077,
+      "curiosity_score": 82.61146496815287
     },
     "internal_audit": {
-      "condescension_fidelity": 94.08387096774193,
-      "academic_form": 91.89032258064516,
-      "constitution_compliance": 98.27741935483871
+      "condescension_fidelity": 94.06369426751593,
+      "academic_form": 91.89808917197452,
+      "constitution_compliance": 98.23566878980891
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 107,
+    "acceptable": 109,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.80733333333335,
-    "previous_10_avg": 81.73018888888888,
-    "delta": -2.922855555555529
+    "recent_10_avg": 78.18511111111111,
+    "previous_10_avg": 81.8736111111111,
+    "delta": -3.6884999999999906
   },
   "top_weaknesses": [
     {
@@ -35,12 +35,12 @@
       "frequency": 7
     },
     {
-      "pattern": "引用文献の欠如",
+      "pattern": "一般読者に対する過度な難解さ",
       "frequency": 6
     },
     {
-      "pattern": "一般読者に対する過度な難解さ",
-      "frequency": 5
+      "pattern": "引用文献の欠如",
+      "frequency": 6
     },
     {
       "pattern": "数式モデルの単純さ",
@@ -73,6 +73,18 @@
   ],
   "latest_5": [
     {
+      "paper_id": "meta-gen-115-internal-score-void-topology-gravity",
+      "verdict": "acceptable",
+      "mean_score": 77.7,
+      "reviewed_at": "2026-09-20T20:34:09.995Z"
+    },
+    {
+      "paper_id": "void-topology-semantic-decay",
+      "verdict": "acceptable",
+      "mean_score": 79.4,
+      "reviewed_at": "2026-09-20T20:34:09.989Z"
+    },
+    {
       "paper_id": "info-geometric-biological-limits",
       "verdict": "acceptable",
       "mean_score": 75,
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 80,
       "reviewed_at": "2026-09-17T20:07:55.856Z"
-    },
-    {
-      "paper_id": "biological-distributed-systems-limitations",
-      "verdict": "acceptable",
-      "mean_score": 76.11111111111111,
-      "reviewed_at": "2026-09-16T20:35:50.702Z"
-    },
-    {
-      "paper_id": "biological-network-cognitive-architecture-delays",
-      "verdict": "acceptable",
-      "mean_score": 87,
-      "reviewed_at": "2026-09-15T17:15:47.796Z"
     }
   ]
 }
