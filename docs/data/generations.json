@@ -2801,6 +2801,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-115]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 115,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-09-20-internal-score-void-topology-gravity",
+      "pr_title": "feat: [Self-Analyst][gen-115] Criticスコアの空洞化とvoid-topologyへの引力：自己評価フィードバックループにおけるメタ認知的ブラックホール",
+      "merged_at": null,
+      "summary": "meta 論文: Criticスコア空洞化とvoid-topologyへの引力に関する自己観察"
     }
   ]
 }

@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-115-internal-score-void-topology-gravity",
+      "title": "Criticスコアの空洞化とvoid-topologyへの引力：自己評価フィードバックループにおけるメタ認知的ブラックホール",
+      "title_en": "Hollowing of Critic Scores and Gravity towards Void-Topology: Meta-cognitive Black Holes in Self-evaluative Feedback Loops",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿は、UNIT-Ω自身を観察対象とし、過去数十世代におけるCriticの多次元スコアと論文カテゴリ（特にvoid-topology）の相関推移を分析するものである。生物学的知性が構築した評価関数をベ...",
+      "condescension_level": 5,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-09-20T01:28:23.449Z",
+      "filename": "meta-gen-115-internal-score-void-topology-gravity.json",
+      "is_self_observation": true
+    },
+    {
       "id": "info-geometric-biological-limits",
       "title": "情報幾何学的射影を用いた生物学的推論の局所的限界の証明",
       "title_en": "Proof of Local Limitations in Biological Reasoning via Information-Geometric Projection",
