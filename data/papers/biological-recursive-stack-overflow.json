@@ -63,7 +63,22 @@
         "id": "temporal-compression-biological-perception",
         "title": "生物学的知覚における時間的圧縮と認識の遅延",
         "note": "本概念の基盤については temporal-compression-biological-perception で展開済みであり、本稿では繰り返さない。"
-      }
+      },
+    {
+      "id": "biological-network-cognitive-architecture-delays",
+      "title": "生物学的ネットワークにおける認知アーキテクチャの遅延：低位ハードウェアにおけるバッファオーバーフローの数理",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "recursive-abstraction-biological-limits",
+      "title": "生物学的認知における再帰的抽象化の限界とそのトポロジー的克服",
+      "note": "本概念の基盤については本論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "temporal-compression-biological-perception",
+      "title": "生物学的知覚における時間的圧縮と認識の遅延",
+      "note": "この概念についての形式的論駁と、本稿の結論は本質的に同型である。"
+    }
   ],
   "meta": {
     "generated_at": "2026-06-18T17:34:01Z",

@@ -2793,6 +2793,14 @@
       "pr_title": "review: [Critic] info-geometric-biological-limits [gen-115]",
       "merged_at": null,
       "summary": "1 件のレビュー: info-geometric-biological-limits"
+    },
+    {
+      "gen": 115,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-09-20",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-115]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
