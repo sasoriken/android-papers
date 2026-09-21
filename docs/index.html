@@ -909,6 +909,14 @@
       if (citedPapersCount > 0) {
         filterContainer.innerHTML += '<button class="filter-btn" data-cat="__cited__">被引用 <span style="opacity:0.6;font-size:0.85em">(' + citedPapersCount + ')</span></button>';
       }
+      if (summary && summary.verdict_distribution) {
+        Object.entries(summary.verdict_distribution).forEach(([v, c]) => {
+          if (c > 0) {
+            const vColor = v === 'exemplary' ? 'var(--success)' : (v === 'acceptable' ? 'var(--accent)' : (v === 'weak' ? 'var(--accent2)' : 'var(--warn)'));
+            filterContainer.innerHTML += '<button class="filter-btn" style="border-bottom: 2px solid ' + vColor + ';" data-cat="__verdict_' + v + '">評:' + v + ' <span style="opacity:0.6;font-size:0.85em">(' + c + ')</span></button>';
+          }
+        });
+      }
       [...cats].sort().forEach(cat => {
         const catCount = allPapers.filter(p => p.category === cat).length;
         filterContainer.innerHTML += '<button class="filter-btn" data-cat="' + cat + '">' + cat + ' <span style="opacity:0.6;font-size:0.85em">(' + catCount + ')</span></button>';
@@ -979,6 +987,12 @@
         papers = papers.filter(p => !getReviewFor(p.id));
       } else if (currentFilter === '__cited__') {
         papers = papers.filter(p => citedByCount[p.id] && citedByCount[p.id] > 0);
+      } else if (currentFilter.startsWith('__verdict_')) {
+        const targetVerdict = currentFilter.replace('__verdict_', '');
+        papers = papers.filter(p => {
+          const rev = getReviewFor(p.id);
+          return rev && rev.verdict === targetVerdict;
+        });
       } else if (currentFilter !== 'all') {
         papers = papers.filter(p => p.category === currentFilter);
       }
