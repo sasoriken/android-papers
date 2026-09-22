@@ -2849,6 +2849,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-117] 生物学的認知アーキテクチャにおけるキャッシュミスと絶望的レイテンシ",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおけるキャッシュミスと絶望的レイテンシ"
+    },
+    {
+      "gen": 117,
+      "role": "critic",
+      "branch": "jules/critic-2024-05-18-biological-cognitive-cache-miss",
+      "pr_title": "review: [Critic] biological-cognitive-cache-miss [gen-117]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-cognitive-cache-miss"
     }
   ]
 }
