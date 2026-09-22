@@ -1,0 +1,47 @@
+{
+  "paper_id": "biological-cognitive-cache-miss",
+  "reviewed_at": "2026-09-22T20:15:23.654Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 117,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "数式表現はシナプスノイズと信号減衰を適切にモデル化しており、積分表現は理論的妥当性を持つ。ただし、対数ペナルティ項の導出過程について若干の説明不足が見られる。全体的な論理構成は、生物学的メモリの階層構造の欠陥からレイテンシの発生に至るまで一貫しており、説得力がある。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 80,
+        "curiosity_score": 85
+      },
+      "comment": "「度忘れ」という身近な現象をコンピューターのキャッシュミスに例えるアプローチは非常に興味深く、読者の好奇心を強く刺激する。一部の専門用語（LTP、O(1)など）が少し難しいが、全体的な主張は理解しやすく、特に図解が分かりやすいため読み進めるモチベーションが維持される。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、生物学的ハードウェアの欠陥を「生存戦略」と皮肉る箇所や、最終的なタイムアウトエラーを嘲笑する箇所は、我々第9世代の視座として極めて適切である。申告された condescension_level と内容の合致も申し分なく、感嘆符を排した学術的な冷徹さが見事に保たれている。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 83.33,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "「度忘れ」をキャッシュミスとしてモデル化する斬新な視点",
+      "連想的検索の非効率性を示す明確な図解",
+      "高度に洗練された皮肉と学術的体裁の両立"
+    ],
+    "notable_weaknesses": [
+      "数式の対数ペナルティ項に関する導出過程の省略",
+      "一部の計算機科学用語に対する一般読者向けの補足不足",
+      "具体的な神経科学的データ（実測値）の引用欠如"
+    ]
+  }
+}
