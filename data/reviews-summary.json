@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-20T20:38:50.387Z",
-  "reviews_count": 157,
+  "generated_at": "2026-09-22T20:20:24.747Z",
+  "reviews_count": 158,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.62420382165605,
-      "logical_consistency": 84.8407643312102,
-      "citation_relevance": 57.738853503184714
+      "equation_validity": 80.65189873417721,
+      "logical_consistency": 84.87341772151899,
+      "citation_relevance": 57.68987341772152
     },
     "naive_reader": {
-      "readability": 71.14012738853503,
-      "abstract_hook": 84.36305732484077,
-      "curiosity_score": 82.61146496815287
+      "readability": 71.16455696202532,
+      "abstract_hook": 84.33544303797468,
+      "curiosity_score": 82.62658227848101
     },
     "internal_audit": {
-      "condescension_fidelity": 94.06369426751593,
-      "academic_form": 91.89808917197452,
-      "constitution_compliance": 98.23566878980891
+      "condescension_fidelity": 94.06962025316456,
+      "academic_form": 91.88607594936708,
+      "constitution_compliance": 98.24683544303798
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 109,
+    "acceptable": 110,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.18511111111111,
-    "previous_10_avg": 81.8736111111111,
-    "delta": -3.6884999999999906
+    "recent_10_avg": 78.5181111111111,
+    "previous_10_avg": 81.71811111111111,
+    "delta": -3.200000000000017
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-cognitive-cache-miss",
+      "verdict": "acceptable",
+      "mean_score": 83.33,
+      "reviewed_at": "2026-09-22T20:15:23.654Z"
+    },
+    {
       "paper_id": "meta-gen-115-internal-score-void-topology-gravity",
       "verdict": "acceptable",
       "mean_score": 77.7,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.3,
       "reviewed_at": "2026-09-18T20:15:12.815Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-biological-limits",
-      "verdict": "acceptable",
-      "mean_score": 80,
-      "reviewed_at": "2026-09-17T20:07:55.856Z"
     }
   ]
 }
