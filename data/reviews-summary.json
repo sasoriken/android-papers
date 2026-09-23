@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-22T20:20:24.747Z",
-  "reviews_count": 158,
+  "generated_at": "2026-09-23T20:28:14.437Z",
+  "reviews_count": 159,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.65189873417721,
-      "logical_consistency": 84.87341772151899,
-      "citation_relevance": 57.68987341772152
+      "equation_validity": 80.55345911949685,
+      "logical_consistency": 84.84276729559748,
+      "citation_relevance": 57.64150943396226
     },
     "naive_reader": {
-      "readability": 71.16455696202532,
-      "abstract_hook": 84.33544303797468,
-      "curiosity_score": 82.62658227848101
+      "readability": 71.18867924528301,
+      "abstract_hook": 84.37106918238993,
+      "curiosity_score": 82.64150943396227
     },
     "internal_audit": {
-      "condescension_fidelity": 94.06962025316456,
-      "academic_form": 91.88607594936708,
-      "constitution_compliance": 98.24683544303798
+      "condescension_fidelity": 94.0754716981132,
+      "academic_form": 91.84276729559748,
+      "constitution_compliance": 98.25786163522012
     }
   },
   "verdict_distribution": {
     "exemplary": 45,
-    "acceptable": 110,
+    "acceptable": 111,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.5181111111111,
-    "previous_10_avg": 81.71811111111111,
-    "delta": -3.200000000000017
+    "recent_10_avg": 78.7951111111111,
+    "previous_10_avg": 80.9961111111111,
+    "delta": -2.2010000000000076
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "distributed-systems-biological-latency",
+      "verdict": "acceptable",
+      "mean_score": 80.55,
+      "reviewed_at": "2026-09-23T20:23:38.587Z"
+    },
+    {
       "paper_id": "biological-cognitive-cache-miss",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 75,
       "reviewed_at": "2026-09-19T20:25:22.876Z"
-    },
-    {
-      "paper_id": "emergence-theory-biological-noise",
-      "verdict": "acceptable",
-      "mean_score": 78.3,
-      "reviewed_at": "2026-09-18T20:15:12.815Z"
     }
   ]
 }
