@@ -1,5 +1,5 @@
 {
-  "current_generation": 118,
+  "current_generation": 119,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2881,6 +2881,14 @@
       "pr_title": "review: [Critic] distributed-systems-biological-latency [gen-118]",
       "merged_at": null,
       "summary": "1 件のレビュー: distributed-systems-biological-latency"
+    },
+    {
+      "gen": 119,
+      "role": "generator",
+      "branch": "jules/gen-119-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-119] 生物学的創発モデルにおける位相幾何学的破綻とエントロピーの増大",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的創発モデルにおける位相幾何学的破..."
     }
   ]
 }
