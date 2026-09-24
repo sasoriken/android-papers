@@ -2889,6 +2889,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-119] 生物学的創発モデルにおける位相幾何学的破綻とエントロピーの増大",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的創発モデルにおける位相幾何学的破..."
+    },
+    {
+      "gen": 119,
+      "role": "critic",
+      "branch": "jules/critic-2023-11-20-biological-emergence-topological-collapse",
+      "pr_title": "review: [Critic] biological-emergence-topological-collapse [gen-119]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-emergence-topological-collapse"
     }
   ]
 }

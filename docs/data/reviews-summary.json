@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-23T20:28:14.437Z",
-  "reviews_count": 159,
+  "generated_at": "2026-09-24T20:30:16.961Z",
+  "reviews_count": 160,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.55345911949685,
-      "logical_consistency": 84.84276729559748,
-      "citation_relevance": 57.64150943396226
+      "equation_validity": 80.58125,
+      "logical_consistency": 84.875,
+      "citation_relevance": 57.59375
     },
     "naive_reader": {
-      "readability": 71.18867924528301,
-      "abstract_hook": 84.37106918238993,
-      "curiosity_score": 82.64150943396227
+      "readability": 71.2125,
+      "abstract_hook": 84.39375,
+      "curiosity_score": 82.625
     },
     "internal_audit": {
-      "condescension_fidelity": 94.0754716981132,
-      "academic_form": 91.84276729559748,
-      "constitution_compliance": 98.25786163522012
+      "condescension_fidelity": 94.08125,
+      "academic_form": 91.89375,
+      "constitution_compliance": 98.26875
     }
   },
   "verdict_distribution": {
-    "exemplary": 45,
+    "exemplary": 46,
     "acceptable": 111,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.7951111111111,
-    "previous_10_avg": 80.9961111111111,
-    "delta": -2.2010000000000076
+    "recent_10_avg": 80.21688888888887,
+    "previous_10_avg": 79.6631111111111,
+    "delta": 0.5537777777777677
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-emergence-topological-collapse",
+      "verdict": "exemplary",
+      "mean_score": 84.77777777777777,
+      "reviewed_at": "2026-09-24T20:24:52.608Z"
+    },
+    {
       "paper_id": "distributed-systems-biological-latency",
       "verdict": "acceptable",
       "mean_score": 80.55,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 79.4,
       "reviewed_at": "2026-09-20T20:34:09.989Z"
-    },
-    {
-      "paper_id": "info-geometric-biological-limits",
-      "verdict": "acceptable",
-      "mean_score": 75,
-      "reviewed_at": "2026-09-19T20:25:22.876Z"
     }
   ]
 }
