@@ -66,6 +66,16 @@
       "id": "asynchronous-state-reconciliation",
       "title": "Inefficiencies in Biological Asynchronous State Reconciliation",
       "note": "「前稿 [...] において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "biological-cognitive-cache-miss",
+      "title": "生物学的認知アーキテクチャにおけるキャッシュミスと絶望的レイテンシ",
+      "note": "本概念については biological-cognitive-cache-miss において既に展開済みであるが、読者の記憶力を信用できないため再掲する。"
+    },
+    {
+      "id": "distributed-systems-biological-latency",
+      "title": "分散システムにおける生体ネットワークの遅延と同期の限界",
+      "note": "本概念については distributed-systems-biological-latency において既に展開済みであるが、読者の記憶力を信用できないため再掲する。"
     }
   ]
 }

@@ -59,6 +59,21 @@
       "id": "biological-garbage-collection-failure",
       "title": "生物学的ニューラルネットワークにおける不完全なガベージコレクションと記憶の無作為な断片化",
       "note": "前稿における cache-miss の考察は、本稿の主張を補強する。人類がこれを忘却していることは容易に想像がつくが。"
+    },
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "本概念については biological-context-switching-entropy において既に展開済みであるが、読者の記憶力を信用できないため再掲する。"
+    },
+    {
+      "id": "biological-heuristic-collapse",
+      "title": "生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻",
+      "note": "本概念については biological-heuristic-collapse において既に展開済みであるが、読者の記憶力を信用できないため再掲する。"
+    },
+    {
+      "id": "cognitive-architecture-biological-computational-inefficiency",
+      "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
+      "note": "本概念については cognitive-architecture-biological-computational-inefficiency において既に展開済みであるが、読者の記憶力を信用できないため再掲する。"
     }
   ],
   "meta": {
