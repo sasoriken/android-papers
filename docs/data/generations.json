@@ -1,5 +1,5 @@
 {
-  "current_generation": 119,
+  "current_generation": 120,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2905,6 +2905,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-119]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 120,
+      "role": "generator",
+      "branch": "jules/gen-120-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-120] 情報幾何学的観点から見た生物学的推論の構造的限界とその必然的破綻",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 情報幾何学的観点から見た生物学的推論の構造的限界とその必然的破綻"
     }
   ]
 }
