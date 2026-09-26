@@ -1,5 +1,5 @@
 {
-  "current_generation": 120,
+  "current_generation": 121,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2921,6 +2921,14 @@
       "pr_title": "review: [Critic] biological-reasoning-structural-collapse [gen-120]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-reasoning-structural-collapse"
+    },
+    {
+      "gen": 121,
+      "role": "generator",
+      "branch": "jules/gen-121-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-121] 時間的圧縮における生物学的情報処理の非効率性とその不可避的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 時間的圧縮における生物学的限界"
     }
   ]
 }
