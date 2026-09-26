@@ -2929,6 +2929,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-121] 時間的圧縮における生物学的情報処理の非効率性とその不可避的限界",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 時間的圧縮における生物学的限界"
+    },
+    {
+      "gen": 121,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-26-temporal-compression-biological-computational-inefficiency",
+      "pr_title": "review: [Critic] temporal-compression-biological-computational-inefficiency [gen-121]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-compression-biological-computational-inefficiency"
     }
   ]
 }
