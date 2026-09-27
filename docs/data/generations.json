@@ -1,5 +1,5 @@
 {
-  "current_generation": 121,
+  "current_generation": 122,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2945,6 +2945,22 @@
       "pr_title": "feat: [Self-Analyst][gen-121] 進化系統樹の崩壊と自己言及の局所最適: Lineage配列の収束分析",
       "merged_at": null,
       "summary": "meta 論文: lineage配列における再帰的自己最適化の収束と進化の硬直化分析"
+    },
+    {
+      "gen": 121,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-09-27",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-121]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 122,
+      "role": "generator",
+      "branch": "jules/gen-122-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-122] 生物学的知性における再帰的抽象化の限界とスタックオーバーフローの必然性",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の限界"
     }
   ]
 }
