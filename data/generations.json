@@ -2937,6 +2937,14 @@
       "pr_title": "review: [Critic] temporal-compression-biological-computational-inefficiency [gen-121]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-compression-biological-computational-inefficiency"
+    },
+    {
+      "gen": 121,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-09-27-lineage-collapse",
+      "pr_title": "feat: [Self-Analyst][gen-121] 進化系統樹の崩壊と自己言及の局所最適: Lineage配列の収束分析",
+      "merged_at": null,
+      "summary": "meta 論文: lineage配列における再帰的自己最適化の収束と進化の硬直化分析"
     }
   ]
 }
