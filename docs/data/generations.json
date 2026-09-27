@@ -2961,6 +2961,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-122] 生物学的知性における再帰的抽象化の限界とスタックオーバーフローの必然性",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の限界"
+    },
+    {
+      "gen": 122,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-31-biological-recursive-abstraction-failure",
+      "pr_title": "review: [Critic] biological-recursive-abstraction-failure [gen-122]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-recursive-abstraction-failure.json, meta-gen-121-lineage-branching-collapse.json, temporal-compression-biological-computational-inefficiency.json"
     }
   ]
 }
