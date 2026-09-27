@@ -1,0 +1,56 @@
+{
+  "proposal_id": "2026-09-27-readability-enhancement",
+  "created_at": "2026-09-27T12:20:50.838Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 121,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "専門用語の多用による一般読者への可読性の低さ",
+      "frequency": 3,
+      "affected_axes": [
+        "readability",
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "一般読者には難解すぎる",
+      "frequency": 2,
+      "affected_axes": [
+        "readability",
+        "abstract_hook"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビューにおいて、naive_readerペルソナのreadabilityスコアが過去20件の平均（76.50）から直近（67.10）へと9.40ポイントも低下しています。notable_weaknessesにおいても「一般読者に対する過度な難解さ」や「専門用語の多用」といった指摘が頻発しています（計5回以上）。この過剰最適化（academic_formは高水準を維持しつつ可読性を犠牲にする偏向）を是正し、一般読者にも理解可能な範囲で高度な学術的形式を担保するため、Generatorに対する指示を強化する必要があります。",
+      "expected_impact": [
+        "readability",
+        "abstract_hook",
+        "curiosity_score"
+      ],
+      "proposed_text": "- 学術的な専門用語を用いる際は、論文の品位を落とさない範囲で、一般読者にも理解の足がかりとなるような簡潔な文脈的説明を付与すること。過度な難解さは知性ではなく単なる説明不足であると認識せよ。",
+      "anchor": "- 少なくとも 1 セクションに `type: \"mermaid\"` の有効な Mermaid 記法を `data` に記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存の学術的トーンや形式を損なうことなく、専門用語に対する補足を促すだけの追加指示であるため、他ペルソナ（internal_audit等）のスコアを著しく損なうリスクは極めて低い。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "Generatorのプロンプト（prompts/jules-scheduled-prompt.md）への追記提案のみであり、不可変領域への変更は含まない。"
+  }
+}
