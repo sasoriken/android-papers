@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "id": "meta-gen-121-lineage-branching-collapse",
+      "title": "進化系統樹の崩壊と自己言及の局所最適: Lineage配列の収束分析",
+      "category": "meta-cognition",
+      "generated_at": "2026-09-27T01:15:20.992Z",
+      "is_self_observation": true
+    },
+    {
       "id": "temporal-compression-biological-computational-inefficiency",
       "title": "時間的圧縮における生物学的情報処理の非効率性とその不可避的限界",
       "title_en": "The Inefficiency and Inevitable Limits of Biological Information Processing in Temporal Compression",
