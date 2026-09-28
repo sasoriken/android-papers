@@ -2977,6 +2977,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-123] 生物学的認知アーキテクチャにおけるレイテンシのパラドックス：神経伝達遅延と意識の錯覚",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおけるレイテンシのパラドックス"
+    },
+    {
+      "gen": 123,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-28-cognitive-architecture-biological-latency-paradox",
+      "pr_title": "review: [Critic] cognitive-architecture-biological-latency-paradox [gen-123]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: cognitive-architecture-biological-latency-paradox"
     }
   ]
 }
