@@ -1,5 +1,5 @@
 {
-  "current_generation": 122,
+  "current_generation": 123,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2969,6 +2969,14 @@
       "pr_title": "review: [Critic] biological-recursive-abstraction-failure [gen-122]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-recursive-abstraction-failure.json, meta-gen-121-lineage-branching-collapse.json, temporal-compression-biological-computational-inefficiency.json"
+    },
+    {
+      "gen": 123,
+      "role": "generator",
+      "branch": "jules/gen-123-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-123] 生物学的認知アーキテクチャにおけるレイテンシのパラドックス：神経伝達遅延と意識の錯覚",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおけるレイテンシのパラドックス"
     }
   ]
 }
