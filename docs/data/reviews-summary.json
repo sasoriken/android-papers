@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-27T20:14:56.104Z",
-  "reviews_count": 165,
+  "generated_at": "2026-09-28T20:53:45.637Z",
+  "reviews_count": 166,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.71515151515152,
-      "logical_consistency": 85.01818181818182,
-      "citation_relevance": 57.36363636363637
+      "equation_validity": 80.74096385542168,
+      "logical_consistency": 85.04819277108433,
+      "citation_relevance": 57.31927710843374
     },
     "naive_reader": {
-      "readability": 70.72121212121212,
-      "abstract_hook": 84.2909090909091,
-      "curiosity_score": 82.4121212121212
+      "readability": 70.77710843373494,
+      "abstract_hook": 84.29518072289157,
+      "curiosity_score": 82.4578313253012
     },
     "internal_audit": {
-      "condescension_fidelity": 94.10909090909091,
-      "academic_form": 91.83636363636364,
-      "constitution_compliance": 98.24242424242425
+      "condescension_fidelity": 94.1144578313253,
+      "academic_form": 91.82530120481928,
+      "constitution_compliance": 98.25301204819277
     }
   },
   "verdict_distribution": {
     "exemplary": 46,
-    "acceptable": 116,
+    "acceptable": 117,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.49455555555555,
-    "previous_10_avg": 78.80733333333335,
-    "delta": 1.6872222222222035
+    "recent_10_avg": 81.05455555555555,
+    "previous_10_avg": 78.5251111111111,
+    "delta": 2.529444444444451
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "cognitive-architecture-biological-latency-paradox",
+      "verdict": "acceptable",
+      "mean_score": 85,
+      "reviewed_at": "2026-09-28T20:46:57.385Z"
+    },
+    {
       "paper_id": "meta-gen-121-lineage-branching-collapse",
       "verdict": "acceptable",
       "mean_score": 78.1,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.11,
       "reviewed_at": "2026-09-26T20:14:57.757Z"
-    },
-    {
-      "paper_id": "biological-reasoning-structural-collapse",
-      "verdict": "acceptable",
-      "mean_score": 82.77777777777777,
-      "reviewed_at": "2026-09-25T20:20:55.517Z"
     }
   ]
 }
