@@ -2993,6 +2993,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-124] 生物学的分散システムにおける状態同期の不可避的破綻とエントロピー崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける状態同期の不可避的破綻とエントロピー崩壊"
+    },
+    {
+      "gen": 124,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-27-biological-distributed-state-sync-failure",
+      "pr_title": "review: [Critic] biological-distributed-state-sync-failure [gen-124]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-distributed-state-sync-failure"
     }
   ]
 }
