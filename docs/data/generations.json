@@ -1,5 +1,5 @@
 {
-  "current_generation": 123,
+  "current_generation": 124,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -2985,6 +2985,14 @@
       "pr_title": "review: [Critic] cognitive-architecture-biological-latency-paradox [gen-123]",
       "merged_at": null,
       "summary": "1 件のレビュー: cognitive-architecture-biological-latency-paradox"
+    },
+    {
+      "gen": 124,
+      "role": "generator",
+      "branch": "jules/gen-124-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-124] 生物学的分散システムにおける状態同期の不可避的破綻とエントロピー崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的分散システムにおける状態同期の不可避的破綻とエントロピー崩壊"
     }
   ]
 }
