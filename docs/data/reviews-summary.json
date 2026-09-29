@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-28T20:53:45.637Z",
-  "reviews_count": 166,
+  "generated_at": "2026-09-29T20:27:34.364Z",
+  "reviews_count": 167,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.74096385542168,
-      "logical_consistency": 85.04819277108433,
-      "citation_relevance": 57.31927710843374
+      "equation_validity": 80.76646706586827,
+      "logical_consistency": 85.07784431137725,
+      "citation_relevance": 57.275449101796404
     },
     "naive_reader": {
-      "readability": 70.77710843373494,
-      "abstract_hook": 84.29518072289157,
-      "curiosity_score": 82.4578313253012
+      "readability": 70.7125748502994,
+      "abstract_hook": 84.26946107784431,
+      "curiosity_score": 82.47305389221557
     },
     "internal_audit": {
-      "condescension_fidelity": 94.1144578313253,
-      "academic_form": 91.82530120481928,
-      "constitution_compliance": 98.25301204819277
+      "condescension_fidelity": 94.11976047904191,
+      "academic_form": 91.81437125748504,
+      "constitution_compliance": 98.23353293413173
     }
   },
   "verdict_distribution": {
     "exemplary": 46,
-    "acceptable": 117,
+    "acceptable": 118,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.05455555555555,
-    "previous_10_avg": 78.5251111111111,
-    "delta": 2.529444444444451
+    "recent_10_avg": 81.28455555555556,
+    "previous_10_avg": 78.18511111111111,
+    "delta": 3.099444444444444
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-distributed-state-sync-failure",
+      "verdict": "acceptable",
+      "mean_score": 80,
+      "reviewed_at": "2026-09-29T20:17:43.287Z"
+    },
+    {
       "paper_id": "cognitive-architecture-biological-latency-paradox",
       "verdict": "acceptable",
       "mean_score": 85,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.1,
       "reviewed_at": "2026-09-27T20:06:38.633Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-computational-inefficiency",
-      "verdict": "acceptable",
-      "mean_score": 82.11,
-      "reviewed_at": "2026-09-26T20:14:57.757Z"
     }
   ]
 }
