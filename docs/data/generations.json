@@ -3009,6 +3009,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-125] 生物学的ノイズにおける空虚位相幾何学の適用：無意味な信号の構造的崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的ノイズにおける空虚位相幾何学の適..."
+    },
+    {
+      "gen": 125,
+      "role": "critic",
+      "branch": "jules/critic-2026-09-30-biological-noise-void-topology",
+      "pr_title": "review: [Critic] biological-noise-void-topology [gen-125]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-noise-void-topology"
     }
   ]
 }
