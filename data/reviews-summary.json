@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-29T20:27:34.364Z",
-  "reviews_count": 167,
+  "generated_at": "2026-09-30T20:30:59.631Z",
+  "reviews_count": 168,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.76646706586827,
-      "logical_consistency": 85.07784431137725,
-      "citation_relevance": 57.275449101796404
+      "equation_validity": 80.52380952380952,
+      "logical_consistency": 84.92857142857143,
+      "citation_relevance": 57.232142857142854
     },
     "naive_reader": {
-      "readability": 70.7125748502994,
-      "abstract_hook": 84.26946107784431,
-      "curiosity_score": 82.47305389221557
+      "readability": 70.76785714285714,
+      "abstract_hook": 84.27380952380952,
+      "curiosity_score": 82.42857142857143
     },
     "internal_audit": {
-      "condescension_fidelity": 94.11976047904191,
-      "academic_form": 91.81437125748504,
-      "constitution_compliance": 98.23353293413173
+      "condescension_fidelity": 94.125,
+      "academic_form": 91.80357142857143,
+      "constitution_compliance": 98.24404761904762
     }
   },
   "verdict_distribution": {
     "exemplary": 46,
-    "acceptable": 118,
+    "acceptable": 119,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.28455555555556,
-    "previous_10_avg": 78.18511111111111,
-    "delta": 3.099444444444444
+    "recent_10_avg": 80.45155555555557,
+    "previous_10_avg": 78.5181111111111,
+    "delta": 1.9334444444444756
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-noise-void-topology",
+      "verdict": "acceptable",
+      "mean_score": 75,
+      "reviewed_at": "2026-09-30T20:24:44.289Z"
+    },
+    {
       "paper_id": "biological-distributed-state-sync-failure",
       "verdict": "acceptable",
       "mean_score": 80,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.1,
       "reviewed_at": "2026-09-27T20:06:38.634Z"
-    },
-    {
-      "paper_id": "biological-recursive-abstraction-failure",
-      "verdict": "acceptable",
-      "mean_score": 78.1,
-      "reviewed_at": "2026-09-27T20:06:38.633Z"
     }
   ]
 }
