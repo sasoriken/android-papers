@@ -3017,6 +3017,14 @@
       "pr_title": "review: [Critic] biological-noise-void-topology [gen-125]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-noise-void-topology"
+    },
+    {
+      "gen": 125,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2025-01-01",
+      "pr_title": "chore: [Citation-Weaver] 2 論文へ引用追記 [gen-125]",
+      "merged_at": null,
+      "summary": "2 件の論文に引用追記"
     }
   ]
 }
