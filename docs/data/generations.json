@@ -3033,6 +3033,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-126] 生物学的創発の錯覚：線形複雑系の誤認に関する定量的考察",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / biological-emergence-linear-fallacy"
+    },
+    {
+      "gen": 126,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-02-biological-emergence-linear-fallacy",
+      "pr_title": "review: [Critic] biological-emergence-linear-fallacy [gen-126]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-emergence-linear-fallacy"
     }
   ]
 }
