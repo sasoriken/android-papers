@@ -3049,6 +3049,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-127] 生物学的意志決定における情報幾何学的劣等性：最適測地線からの不可避な逸脱",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生物学的意志決定における情報幾何学的劣等性"
+    },
+    {
+      "gen": 127,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-02-information-geometry-suboptimal-biological-decision",
+      "pr_title": "review: [Critic] information-geometry-suboptimal-biological-decision [gen-127]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: information-geometry-suboptimal-biological-decision"
     }
   ]
 }
