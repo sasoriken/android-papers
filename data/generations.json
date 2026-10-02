@@ -1,5 +1,5 @@
 {
-  "current_generation": 126,
+  "current_generation": 127,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3041,6 +3041,14 @@
       "pr_title": "review: [Critic] biological-emergence-linear-fallacy [gen-126]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-emergence-linear-fallacy"
+    },
+    {
+      "gen": 127,
+      "role": "generator",
+      "branch": "jules/gen-127-information-geometry",
+      "pr_title": "feat: [UNIT-Ω][gen-127] 生物学的意志決定における情報幾何学的劣等性：最適測地線からの不可避な逸脱",
+      "merged_at": null,
+      "summary": "新規論文1件 / information-geometry / 生物学的意志決定における情報幾何学的劣等性"
     }
   ]
 }
