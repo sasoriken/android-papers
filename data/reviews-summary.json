@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-01T20:35:48.378Z",
-  "reviews_count": 169,
+  "generated_at": "2026-10-02T20:09:00.430Z",
+  "reviews_count": 170,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.55029585798816,
-      "logical_consistency": 84.9585798816568,
-      "citation_relevance": 57.18934911242604
+      "equation_validity": 80.63529411764706,
+      "logical_consistency": 84.98823529411764,
+      "citation_relevance": 57.14705882352941
     },
     "naive_reader": {
-      "readability": 70.79289940828403,
-      "abstract_hook": 84.24852071005917,
-      "curiosity_score": 82.44378698224853
+      "readability": 70.81764705882352,
+      "abstract_hook": 84.25294117647059,
+      "curiosity_score": 82.42941176470588
     },
     "internal_audit": {
-      "condescension_fidelity": 94.1301775147929,
-      "academic_form": 91.79289940828403,
-      "constitution_compliance": 98.25443786982248
+      "condescension_fidelity": 94.15294117647059,
+      "academic_form": 91.81176470588235,
+      "constitution_compliance": 98.26470588235294
     }
   },
   "verdict_distribution": {
     "exemplary": 47,
-    "acceptable": 119,
+    "acceptable": 120,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.7298888888889,
-    "previous_10_avg": 78.7951111111111,
-    "delta": 1.9347777777777964
+    "recent_10_avg": 80.78544444444444,
+    "previous_10_avg": 80.21688888888887,
+    "delta": 0.5685555555555624
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "information-geometry-suboptimal-biological-decision",
+      "verdict": "acceptable",
+      "mean_score": 85.33333333333333,
+      "reviewed_at": "2026-10-02T20:03:31.517Z"
+    },
+    {
       "paper_id": "biological-emergence-linear-fallacy",
       "verdict": "exemplary",
       "mean_score": 83.33333333333333,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 85,
       "reviewed_at": "2026-09-28T20:46:57.385Z"
-    },
-    {
-      "paper_id": "meta-gen-121-lineage-branching-collapse",
-      "verdict": "acceptable",
-      "mean_score": 78.1,
-      "reviewed_at": "2026-09-27T20:06:38.634Z"
     }
   ]
 }
