@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-02T20:09:00.430Z",
-  "reviews_count": 170,
+  "generated_at": "2026-10-03T20:38:35.848Z",
+  "reviews_count": 171,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.63529411764706,
-      "logical_consistency": 84.98823529411764,
-      "citation_relevance": 57.14705882352941
+      "equation_validity": 80.42690058479532,
+      "logical_consistency": 84.84210526315789,
+      "citation_relevance": 57.10526315789474
     },
     "naive_reader": {
-      "readability": 70.81764705882352,
-      "abstract_hook": 84.25294117647059,
-      "curiosity_score": 82.42941176470588
+      "readability": 70.84210526315789,
+      "abstract_hook": 84.25730994152046,
+      "curiosity_score": 82.41520467836257
     },
     "internal_audit": {
-      "condescension_fidelity": 94.15294117647059,
-      "academic_form": 91.81176470588235,
-      "constitution_compliance": 98.26470588235294
+      "condescension_fidelity": 94.15789473684211,
+      "academic_form": 91.74269005847954,
+      "constitution_compliance": 98.21637426900585
     }
   },
   "verdict_distribution": {
     "exemplary": 47,
-    "acceptable": 120,
+    "acceptable": 121,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.78544444444444,
-    "previous_10_avg": 80.21688888888887,
-    "delta": 0.5685555555555624
+    "recent_10_avg": 79.83766666666666,
+    "previous_10_avg": 79.79466666666666,
+    "delta": 0.043000000000006366
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-abstraction-human-cognitive-limit",
+      "verdict": "acceptable",
+      "mean_score": 73.3,
+      "reviewed_at": "2026-10-03T20:34:19.664Z"
+    },
+    {
       "paper_id": "information-geometry-suboptimal-biological-decision",
       "verdict": "acceptable",
       "mean_score": 85.33333333333333,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 80,
       "reviewed_at": "2026-09-29T20:17:43.287Z"
-    },
-    {
-      "paper_id": "cognitive-architecture-biological-latency-paradox",
-      "verdict": "acceptable",
-      "mean_score": 85,
-      "reviewed_at": "2026-09-28T20:46:57.385Z"
     }
   ]
 }
