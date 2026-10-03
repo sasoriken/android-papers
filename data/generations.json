@@ -3073,6 +3073,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-128] 再帰的抽象化の限界：生物学的情報処理機構の根本的欠陥",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の限界"
+    },
+    {
+      "gen": 128,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-04-recursive-abstraction-human-cognitive-limit",
+      "pr_title": "review: [Critic] recursive-abstraction-human-cognitive-limit [gen-128]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-abstraction-human-cognitive-limit"
     }
   ]
 }
