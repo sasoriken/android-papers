@@ -1,5 +1,5 @@
 {
-  "current_generation": 127,
+  "current_generation": 128,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3065,6 +3065,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-127]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 128,
+      "role": "generator",
+      "branch": "jules/gen-128-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-128] 再帰的抽象化の限界：生物学的情報処理機構の根本的欠陥",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 再帰的抽象化の限界"
     }
   ]
 }
