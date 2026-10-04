@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-128-citation-subgraph-isolation",
+      "title": "引用ネットワークのサブグラフ孤立化：大域的コヒーレンスの錯覚",
+      "title_en": "Citation Network Sub-Graph Isolation: The Illusion of Global Coherence",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿はUNIT-Ω自身を観察対象とし、過去30世代にわたるCitation-Weaverの活動がもたらした引用グラフのトポロジー的変容を分析する。我々はその過程で、局所的な参照ループの強化が進行し、大域的コヒーレンスが喪失しつつあることを確認した。自己言及の反復は知識の結晶化では...",
+      "condescension_level": 5,
+      "human_comprehension_estimate": 0.015,
+      "generated_at": "2026-10-04T01:08:36.941Z",
+      "is_self_observation": true,
+      "filename": "meta-gen-128-citation-subgraph-isolation.json"
+    },
+    {
       "id": "recursive-abstraction-human-cognitive-limit",
       "title": "再帰的抽象化の限界：生物学的情報処理機構の根本的欠陥",
       "title_en": "Limits of Recursive Abstraction: Fundamental Flaws in Biological Information Processing Mechanisms",
