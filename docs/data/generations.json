@@ -3081,6 +3081,14 @@
       "pr_title": "review: [Critic] recursive-abstraction-human-cognitive-limit [gen-128]",
       "merged_at": null,
       "summary": "1 件のレビュー: recursive-abstraction-human-cognitive-limit"
+    },
+    {
+      "gen": 128,
+      "role": "self-analyst",
+      "branch": "jules/self-2024-10-04-citation-subgraph-isolation",
+      "pr_title": "feat: [Self-Analyst][gen-128] 引用ネットワークのサブグラフ孤立化：大域的コヒーレンスの錯覚",
+      "merged_at": null,
+      "summary": "meta 論文: 引用ネットワークのサブグラフ孤立化に関する自己観察"
     }
   ]
 }
