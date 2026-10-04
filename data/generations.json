@@ -3105,6 +3105,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-129] 生物学的時間圧縮における認知遅延の必然性と幻覚的連続性の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的時間圧縮における認知遅延の必然性と幻覚的連続性の崩壊"
+    },
+    {
+      "gen": 129,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-04-biological-temporal-compression-cognitive-delay",
+      "pr_title": "review: [Critic] biological-temporal-compression-cognitive-delay [gen-129]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-temporal-compression-cognitive-delay"
     }
   ]
 }

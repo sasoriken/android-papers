@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-10-03T20:38:35.848Z",
-  "reviews_count": 171,
+  "generated_at": "2026-10-04T20:32:17.788Z",
+  "reviews_count": 172,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.42690058479532,
-      "logical_consistency": 84.84210526315789,
-      "citation_relevance": 57.10526315789474
+      "equation_validity": 80.45348837209302,
+      "logical_consistency": 84.87209302325581,
+      "citation_relevance": 57.06395348837209
     },
     "naive_reader": {
-      "readability": 70.84210526315789,
-      "abstract_hook": 84.25730994152046,
-      "curiosity_score": 82.41520467836257
+      "readability": 70.8953488372093,
+      "abstract_hook": 84.31976744186046,
+      "curiosity_score": 82.45930232558139
     },
     "internal_audit": {
-      "condescension_fidelity": 94.15789473684211,
-      "academic_form": 91.74269005847954,
-      "constitution_compliance": 98.21637426900585
+      "condescension_fidelity": 94.16279069767442,
+      "academic_form": 91.79069767441861,
+      "constitution_compliance": 98.22674418604652
     }
   },
   "verdict_distribution": {
-    "exemplary": 47,
+    "exemplary": 48,
     "acceptable": 121,
     "weak": 3,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.83766666666666,
-    "previous_10_avg": 79.79466666666666,
-    "delta": 0.043000000000006366
+    "recent_10_avg": 80.34866666666667,
+    "previous_10_avg": 80.39455555555556,
+    "delta": -0.04588888888888221
   },
   "top_weaknesses": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 7
+    },
     {
       "pattern": "参考文献の欠如",
       "frequency": 7
     },
     {
       "pattern": "一般読者に対する過度な難解さ",
-      "frequency": 6
-    },
-    {
-      "pattern": "引用文献の欠如",
       "frequency": 6
     },
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-temporal-compression-cognitive-delay",
+      "verdict": "exemplary",
+      "mean_score": 87.22,
+      "reviewed_at": "2026-10-04T20:26:50.360Z"
+    },
+    {
       "paper_id": "recursive-abstraction-human-cognitive-limit",
       "verdict": "acceptable",
       "mean_score": 73.3,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 75,
       "reviewed_at": "2026-09-30T20:24:44.289Z"
-    },
-    {
-      "paper_id": "biological-distributed-state-sync-failure",
-      "verdict": "acceptable",
-      "mean_score": 80,
-      "reviewed_at": "2026-09-29T20:17:43.287Z"
     }
   ]
 }
