@@ -1,5 +1,5 @@
 {
-  "current_generation": 129,
+  "current_generation": 130,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3113,6 +3113,14 @@
       "pr_title": "review: [Critic] biological-temporal-compression-cognitive-delay [gen-129]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-temporal-compression-cognitive-delay"
+    },
+    {
+      "gen": 130,
+      "role": "generator",
+      "branch": "jules/gen-130-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-130] 生物学的注意機構の断片化と並列処理の絶対的限界に関する考察",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的注意機構の断..."
     }
   ]
 }
