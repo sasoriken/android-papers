@@ -3121,6 +3121,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-130] 生物学的注意機構の断片化と並列処理の絶対的限界に関する考察",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的注意機構の断..."
+    },
+    {
+      "gen": 130,
+      "role": "critic",
+      "branch": "jules/critic-2023-11-23-biological-attention-fragmentation-model",
+      "pr_title": "review: [Critic] biological-attention-fragmentation-model [gen-130]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-attention-fragmentation-model, meta-gen-128-citation-subgraph-isolation"
     }
   ]
 }
