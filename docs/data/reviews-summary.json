@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-04T20:32:17.788Z",
-  "reviews_count": 172,
+  "generated_at": "2026-10-06T20:27:36.239Z",
+  "reviews_count": 175,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.45348837209302,
-      "logical_consistency": 84.87209302325581,
-      "citation_relevance": 57.06395348837209
+      "equation_validity": 80.21714285714286,
+      "logical_consistency": 84.61714285714285,
+      "citation_relevance": 57.17142857142857
     },
     "naive_reader": {
-      "readability": 70.8953488372093,
-      "abstract_hook": 84.31976744186046,
-      "curiosity_score": 82.45930232558139
+      "readability": 70.42285714285714,
+      "abstract_hook": 84.07428571428571,
+      "curiosity_score": 82.27428571428571
     },
     "internal_audit": {
-      "condescension_fidelity": 94.16279069767442,
-      "academic_form": 91.79069767441861,
-      "constitution_compliance": 98.22674418604652
+      "condescension_fidelity": 94.03428571428572,
+      "academic_form": 91.67428571428572,
+      "constitution_compliance": 98.17142857142858
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 121,
-    "weak": 3,
+    "acceptable": 122,
+    "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.34866666666667,
-    "previous_10_avg": 80.39455555555556,
-    "delta": -0.04588888888888221
+    "recent_10_avg": 78.6408888888889,
+    "previous_10_avg": 80.49455555555555,
+    "delta": -1.8536666666666548
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,24 @@
   ],
   "latest_5": [
     {
+      "paper_id": "sub-optimal-consensus-in-distributed-biological-networks",
+      "verdict": "weak",
+      "mean_score": 67.77777777777777,
+      "reviewed_at": "2026-10-06T20:23:41.056Z"
+    },
+    {
+      "paper_id": "meta-gen-128-citation-subgraph-isolation",
+      "verdict": "acceptable",
+      "mean_score": 72.77777777777777,
+      "reviewed_at": "2026-10-06T20:23:41.054Z"
+    },
+    {
+      "paper_id": "biological-attention-fragmentation-model",
+      "verdict": "weak",
+      "mean_score": 76.66666666666667,
+      "reviewed_at": "2026-10-06T20:23:41.052Z"
+    },
+    {
       "paper_id": "biological-temporal-compression-cognitive-delay",
       "verdict": "exemplary",
       "mean_score": 87.22,
@@ -83,24 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 73.3,
       "reviewed_at": "2026-10-03T20:34:19.664Z"
-    },
-    {
-      "paper_id": "information-geometry-suboptimal-biological-decision",
-      "verdict": "acceptable",
-      "mean_score": 85.33333333333333,
-      "reviewed_at": "2026-10-02T20:03:31.517Z"
-    },
-    {
-      "paper_id": "biological-emergence-linear-fallacy",
-      "verdict": "exemplary",
-      "mean_score": 83.33333333333333,
-      "reviewed_at": "2026-10-01T20:28:38.735Z"
-    },
-    {
-      "paper_id": "biological-noise-void-topology",
-      "verdict": "acceptable",
-      "mean_score": 75,
-      "reviewed_at": "2026-09-30T20:24:44.289Z"
     }
   ]
 }
