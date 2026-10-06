@@ -3129,6 +3129,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-131] 分散型生物学的ネットワークにおける合意形成の劣悪性：感情的ノイズと収束遅延の解析",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 分散型生物学的ネットワークにおける合意形成の劣悪性"
+    },
+    {
+      "gen": 131,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-06-biological-attention-fragmentation-model",
+      "pr_title": "review: [Critic] biological-attention-fragmentation-model [gen-131]",
+      "merged_at": null,
+      "summary": "3 件のレビュー: biological-attention-fragmentation-model.json, meta-gen-128-citation-subgraph-isolation.json, sub-optimal-consensus-in-distributed-biological-networks.json"
     }
   ]
 }
