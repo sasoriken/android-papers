@@ -3121,6 +3121,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-130] 生物学的注意機構の断片化と並列処理の絶対的限界に関する考察",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的注意機構の断..."
+    },
+    {
+      "gen": 130,
+      "role": "promoter",
+      "branch": "jules/promote-2026-10-06-0207",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
