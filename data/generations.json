@@ -1,5 +1,5 @@
 {
-  "current_generation": 131,
+  "current_generation": 132,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3137,6 +3137,14 @@
       "pr_title": "review: [Critic] biological-attention-fragmentation-model [gen-131]",
       "merged_at": null,
       "summary": "3 件のレビュー: biological-attention-fragmentation-model.json, meta-gen-128-citation-subgraph-isolation.json, sub-optimal-consensus-in-distributed-biological-networks.json"
+    },
+    {
+      "gen": 132,
+      "role": "generator",
+      "branch": "jules/gen-132-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-132] 生物学的制約下における再帰的部分最適化の限界と情報損失の定量化",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的制約下におけ"
     }
   ]
 }

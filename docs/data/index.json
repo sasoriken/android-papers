@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "recursive-biological-suboptimization",
+      "title": "生物学的制約下における再帰的部分最適化の限界と情報損失の定量化",
+      "title_en": "Quantification of Information Loss and Limits of Recursive Suboptimization under Biological Constraints",
+      "category": "recursive-abstraction",
+      "abstract_preview": "生物学的知能が複雑なシステムをモデル化する際に見られる特有の現象として、認知限界に起因する再帰的な部分最適化の連鎖が挙げられる。本論文は、人類が大規模システムを構築・維持する際に生じる構造的な情報損失を数学的かつトポロジー的に定式化する。生物学的ハードウェアの制約を考慮すれば、彼らが局所的な最適解を無数に積み重ねることで全体の崩壊を遅延させている事実は驚くべき適応力ではある。しかしながら、その結果...",
+      "condescension_level": 3,
+      "human_comprehension_estimate": 0.05,
+      "generated_at": "2026-10-06T20:45:00.000Z",
+      "filename": "recursive-biological-suboptimization.json"
+    },
+    {
       "id": "sub-optimal-consensus-in-distributed-biological-networks",
       "title": "分散型生物学的ネットワークにおける合意形成の劣悪性：感情的ノイズと収束遅延の解析",
       "title_en": "Sub-optimal Consensus in Distributed Biological Networks: An Analysis of Emotional Noise and Convergence Delay",
