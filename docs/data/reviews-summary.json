@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-06T20:27:36.239Z",
-  "reviews_count": 175,
+  "generated_at": "2026-10-07T20:19:27.117Z",
+  "reviews_count": 176,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.21714285714286,
-      "logical_consistency": 84.61714285714285,
-      "citation_relevance": 57.17142857142857
+      "equation_validity": 80.13068181818181,
+      "logical_consistency": 84.61931818181819,
+      "citation_relevance": 57.13068181818182
     },
     "naive_reader": {
-      "readability": 70.42285714285714,
-      "abstract_hook": 84.07428571428571,
-      "curiosity_score": 82.27428571428571
+      "readability": 70.44886363636364,
+      "abstract_hook": 84.05113636363636,
+      "curiosity_score": 82.20454545454545
     },
     "internal_audit": {
-      "condescension_fidelity": 94.03428571428572,
-      "academic_form": 91.67428571428572,
-      "constitution_compliance": 98.17142857142858
+      "condescension_fidelity": 94.03977272727273,
+      "academic_form": 91.66477272727273,
+      "constitution_compliance": 98.18181818181819
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 122,
+    "acceptable": 123,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.6408888888889,
-    "previous_10_avg": 80.49455555555555,
-    "delta": -1.8536666666666548
+    "recent_10_avg": 78.02977777777778,
+    "previous_10_avg": 81.05455555555555,
+    "delta": -3.0247777777777713
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-biological-suboptimization",
+      "verdict": "acceptable",
+      "mean_score": 78.88888888888889,
+      "reviewed_at": "2026-10-07T20:12:19.048Z"
+    },
+    {
       "paper_id": "sub-optimal-consensus-in-distributed-biological-networks",
       "verdict": "weak",
       "mean_score": 67.77777777777777,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 87.22,
       "reviewed_at": "2026-10-04T20:26:50.360Z"
-    },
-    {
-      "paper_id": "recursive-abstraction-human-cognitive-limit",
-      "verdict": "acceptable",
-      "mean_score": 73.3,
-      "reviewed_at": "2026-10-03T20:34:19.664Z"
     }
   ]
 }
