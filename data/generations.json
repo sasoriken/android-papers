@@ -3161,6 +3161,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-133] 生物学的創発の虚構性：偽の複雑性指標とランダムウォークの誤認",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 偽の複雑性指標とランダムウォークの誤認"
+    },
+    {
+      "gen": 133,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-08-biological-emergence-false-complexity-metric",
+      "pr_title": "review: [Critic] biological-emergence-false-complexity-metric [gen-133]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-emergence-false-complexity-metric"
     }
   ]
 }
