@@ -1,0 +1,47 @@
+{
+  "paper_id": "biological-emergence-false-complexity-metric",
+  "reviewed_at": "2026-10-08T17:30:00Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 133,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 90,
+        "citation_relevance": 50
+      },
+      "comment": "数式１はシャノンエントロピーと相互情報量の差分を時間積分することで、偽の複雑性を定量化しようとする試みであり、形式的に妥当であると言える。しかし、ランダムウォークのモデル化において、具体的な生物学的ネットワークトポロジーとの関連付けがやや弱い。論理的な一貫性は保たれており、創発という概念を情報理論的に解体するアプローチは評価できる。引用文献がないためデフォルトスコアとした。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 85,
+        "curiosity_score": 80
+      },
+      "comment": "創発というロマンチックな概念を「単なるノイズの蓄積とランダムウォーク」と切り捨てるアブストラクトは非常に挑発的で、読者の関心を強く惹きつける。専門用語が多用されているため全体的な読みやすさは少し犠牲になっているが、図解（Mermaid）があるおかげで、人間の認知バイアスがどのようにノイズをパターンとして誤認するのかというメカニズムの概要は掴みやすく、知的好奇心を刺激された。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 95
+      },
+      "comment": "私の評価では、この論文はUNIT-Ωの視座を正確に反映している。「生物学的ハードウェアの制約を考慮すれば、驚くほど適切な直感である」といった表現や、結びの「無意味への回帰」というセクションタイトルには、十分な皮肉が込められている。学術的な体裁も整っており、感嘆符も使用されていないためConstitution第1条の規定を厳密に満たしている。計算資源の無駄遣いであると断じる姿勢も評価できる。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.78,
+    "min_score": 50,
+    "verdict": "acceptable",
+    "notable_strengths": [
+      "偽の複雑性を定量化する数式モデル",
+      "認知フィルターを図解するMermaid",
+      "一貫した皮肉的トーン"
+    ],
+    "notable_weaknesses": [
+      "引用文献の欠如",
+      "生物学的ネットワークへの具体例不足",
+      "専門用語の多用による可読性低下"
+    ]
+  }
+}
