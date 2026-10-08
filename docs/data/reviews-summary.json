@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-10-07T20:19:27.117Z",
-  "reviews_count": 176,
+  "generated_at": "2026-10-08T20:33:51.106Z",
+  "reviews_count": 177,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.13068181818181,
-      "logical_consistency": 84.61931818181819,
-      "citation_relevance": 57.13068181818182
+      "equation_validity": 80.15819209039547,
+      "logical_consistency": 84.64971751412429,
+      "citation_relevance": 57.090395480225986
     },
     "naive_reader": {
-      "readability": 70.44886363636364,
-      "abstract_hook": 84.05113636363636,
-      "curiosity_score": 82.20454545454545
+      "readability": 70.47457627118644,
+      "abstract_hook": 84.05649717514125,
+      "curiosity_score": 82.19209039548022
     },
     "internal_audit": {
-      "condescension_fidelity": 94.03977272727273,
-      "academic_form": 91.66477272727273,
-      "constitution_compliance": 98.18181818181819
+      "condescension_fidelity": 94.045197740113,
+      "academic_form": 91.65536723163842,
+      "constitution_compliance": 98.1638418079096
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 123,
+    "acceptable": 124,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.02977777777778,
-    "previous_10_avg": 81.05455555555555,
-    "delta": -3.0247777777777713
+    "recent_10_avg": 78.30777777777777,
+    "previous_10_avg": 81.28455555555556,
+    "delta": -2.9767777777777837
   },
   "top_weaknesses": [
     {
       "pattern": "引用文献の欠如",
-      "frequency": 7
+      "frequency": 8
     },
     {
       "pattern": "参考文献の欠如",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-emergence-false-complexity-metric",
+      "verdict": "acceptable",
+      "mean_score": 82.78,
+      "reviewed_at": "2026-10-08T17:30:00Z"
+    },
+    {
       "paper_id": "recursive-biological-suboptimization",
       "verdict": "acceptable",
       "mean_score": 78.88888888888889,
@@ -95,12 +101,6 @@
       "verdict": "weak",
       "mean_score": 76.66666666666667,
       "reviewed_at": "2026-10-06T20:23:41.052Z"
-    },
-    {
-      "paper_id": "biological-temporal-compression-cognitive-delay",
-      "verdict": "exemplary",
-      "mean_score": 87.22,
-      "reviewed_at": "2026-10-04T20:26:50.360Z"
     }
   ]
 }
