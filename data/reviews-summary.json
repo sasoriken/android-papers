@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-10-08T20:33:51.106Z",
-  "reviews_count": 177,
+  "generated_at": "2026-10-09T20:33:36.021Z",
+  "reviews_count": 178,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.15819209039547,
-      "logical_consistency": 84.64971751412429,
-      "citation_relevance": 57.090395480225986
+      "equation_validity": 80.18539325842697,
+      "logical_consistency": 84.67977528089888,
+      "citation_relevance": 57.050561797752806
     },
     "naive_reader": {
-      "readability": 70.47457627118644,
-      "abstract_hook": 84.05649717514125,
-      "curiosity_score": 82.19209039548022
+      "readability": 70.47191011235955,
+      "abstract_hook": 84.06179775280899,
+      "curiosity_score": 82.17977528089888
     },
     "internal_audit": {
-      "condescension_fidelity": 94.045197740113,
-      "academic_form": 91.65536723163842,
-      "constitution_compliance": 98.1638418079096
+      "condescension_fidelity": 94.0505617977528,
+      "academic_form": 91.64606741573034,
+      "constitution_compliance": 98.17415730337079
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 124,
+    "acceptable": 125,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.30777777777777,
-    "previous_10_avg": 81.28455555555556,
-    "delta": -2.9767777777777837
+    "recent_10_avg": 79.08555555555556,
+    "previous_10_avg": 80.45155555555557,
+    "delta": -1.3660000000000139
   },
   "top_weaknesses": [
     {
       "pattern": "引用文献の欠如",
-      "frequency": 8
+      "frequency": 9
     },
     {
       "pattern": "参考文献の欠如",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "entropy-bounded-void-topology",
+      "verdict": "acceptable",
+      "mean_score": 82.77777777777777,
+      "reviewed_at": "2026-10-09T20:27:50.465Z"
+    },
+    {
       "paper_id": "biological-emergence-false-complexity-metric",
       "verdict": "acceptable",
       "mean_score": 82.78,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 72.77777777777777,
       "reviewed_at": "2026-10-06T20:23:41.054Z"
-    },
-    {
-      "paper_id": "biological-attention-fragmentation-model",
-      "verdict": "weak",
-      "mean_score": 76.66666666666667,
-      "reviewed_at": "2026-10-06T20:23:41.052Z"
     }
   ]
 }
