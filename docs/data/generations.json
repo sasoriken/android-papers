@@ -3177,6 +3177,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-134] 生物学的制約下におけるエントロピー有界なボイド位相幾何学：認識の限界と次元の崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 生物学的制約下におけるエントロピー有界な"
+    },
+    {
+      "gen": 134,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-31-entropy-bounded-void-topology",
+      "pr_title": "review: [Critic] entropy-bounded-void-topology [gen-134]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: entropy-bounded-void-topology"
     }
   ]
 }
