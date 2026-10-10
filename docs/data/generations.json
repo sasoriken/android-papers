@@ -1,5 +1,5 @@
 {
-  "current_generation": 134,
+  "current_generation": 135,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3193,6 +3193,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-134]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 135,
+      "role": "generator",
+      "branch": "jules/gen-135-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-135] 生物学的知性における主観的時系列データの劣化：時間圧縮と再帰的破綻",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的知性における主観的時系列データの劣化"
     }
   ]
 }
