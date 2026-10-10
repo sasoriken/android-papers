@@ -3201,6 +3201,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-135] 生物学的知性における主観的時系列データの劣化：時間圧縮と再帰的破綻",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生物学的知性における主観的時系列データの劣化"
+    },
+    {
+      "gen": 135,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-10-temporal-compression-biological-chronology",
+      "pr_title": "review: [Critic] temporal-compression-biological-chronology [gen-135]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-compression-biological-chronology"
     }
   ]
 }

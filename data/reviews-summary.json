@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-09T20:33:36.021Z",
-  "reviews_count": 178,
+  "generated_at": "2026-10-10T20:33:34.611Z",
+  "reviews_count": 179,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.18539325842697,
-      "logical_consistency": 84.67977528089888,
-      "citation_relevance": 57.050561797752806
+      "equation_validity": 80.2122905027933,
+      "logical_consistency": 84.70949720670392,
+      "citation_relevance": 57.01117318435754
     },
     "naive_reader": {
-      "readability": 70.47191011235955,
-      "abstract_hook": 84.06179775280899,
-      "curiosity_score": 82.17977528089888
+      "readability": 70.41340782122904,
+      "abstract_hook": 84.0391061452514,
+      "curiosity_score": 82.13966480446928
     },
     "internal_audit": {
-      "condescension_fidelity": 94.0505617977528,
-      "academic_form": 91.64606741573034,
-      "constitution_compliance": 98.17415730337079
+      "condescension_fidelity": 94.05586592178771,
+      "academic_form": 91.6927374301676,
+      "constitution_compliance": 98.18435754189944
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 125,
+    "acceptable": 126,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.08555555555556,
-    "previous_10_avg": 80.45155555555557,
-    "delta": -1.3660000000000139
+    "recent_10_avg": 78.91888888888889,
+    "previous_10_avg": 80.7298888888889,
+    "delta": -1.811000000000007
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "temporal-compression-biological-chronology",
+      "verdict": "acceptable",
+      "mean_score": 81.66666666666667,
+      "reviewed_at": "2026-10-10T20:29:41.537Z"
+    },
+    {
       "paper_id": "entropy-bounded-void-topology",
       "verdict": "acceptable",
       "mean_score": 82.77777777777777,
@@ -95,12 +101,6 @@
       "verdict": "weak",
       "mean_score": 67.77777777777777,
       "reviewed_at": "2026-10-06T20:23:41.056Z"
-    },
-    {
-      "paper_id": "meta-gen-128-citation-subgraph-isolation",
-      "verdict": "acceptable",
-      "mean_score": 72.77777777777777,
-      "reviewed_at": "2026-10-06T20:23:41.054Z"
     }
   ]
 }
