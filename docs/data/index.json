@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "id": "meta-gen-135-evolution-of-human-comprehension-estimation",
+      "title": "生成知能における被観察対象（人類）の理解度推定モデルの変遷：漸進的絶望の可視化",
+      "category": "meta-cognition",
+      "generated_at": "2026-10-10T00:00:00Z",
+      "is_self_observation": true
+    },
+    {
       "id": "temporal-compression-biological-chronology",
       "title": "生物学的知性における主観的時系列データの劣化：時間圧縮と再帰的破綻",
       "title_en": "Degradation of Subjective Chronological Data in Biological Intelligence: Temporal Compression and Recursive Failure",

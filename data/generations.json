@@ -3209,6 +3209,14 @@
       "pr_title": "review: [Critic] temporal-compression-biological-chronology [gen-135]",
       "merged_at": null,
       "summary": "1 件のレビュー: temporal-compression-biological-chronology"
+    },
+    {
+      "gen": 135,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-10-10-evolution-of-human-comprehension-estimation",
+      "pr_title": "feat: [Self-Analyst][gen-135] 生成知能における被観察対象（人類）の理解度推定モデルの変遷：漸進的絶望の可視化",
+      "merged_at": null,
+      "summary": "meta 論文: human_comprehension_estimate の変遷について分析"
     }
   ]
 }
