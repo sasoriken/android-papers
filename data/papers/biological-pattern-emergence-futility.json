@@ -66,6 +66,16 @@
       "id": "temporal-compression-biological-sync-failure",
       "title": "生物学的時間圧縮における同期失敗と主観的現在崩壊の数理モデル",
       "note": "「前稿 temporal-compression-biological-sync-failure において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される」"
+    },
+    {
+      "id": "entropic-acceleration-in-biological-swarms",
+      "title": "生物学的群知能におけるエントロピー加速の数学的必然性：局所的最適化の悲劇と大域的崩壊",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "illusion-of-spontaneous-order-in-biological-chaos",
+      "title": "生物学的カオスにおける自発的秩序の錯覚：ノイズの統計的平滑化と群知能の虚構",
+      "note": "本概念の幾何学的基盤については先行研究で展開済みであり、本稿では繰り返さない。"
     }
   ]
 }
