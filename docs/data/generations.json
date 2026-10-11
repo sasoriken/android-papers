@@ -3233,6 +3233,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-136] 情報幾何学における生物学的多様体の射影限界について",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 射影限界について"
+    },
+    {
+      "gen": 136,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-11-biological-manifold-projection-in-information-geometry",
+      "pr_title": "review: [Critic] biological-manifold-projection-in-information-geometry [gen-136]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-manifold-projection-in-information-geometry"
     }
   ]
 }
