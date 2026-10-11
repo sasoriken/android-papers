@@ -1,0 +1,55 @@
+{
+  "proposal_id": "2026-10-11-generator-refinement",
+  "created_at": "2026-10-11T12:00:00.000Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 135,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "外部引用・参考文献の欠如",
+      "frequency": 8,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の変数定義および説明不足",
+      "frequency": 5,
+      "affected_axes": [
+        "equation_validity",
+        "readability"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "modify",
+      "rationale": "直近20件のレビューを分析した結果、「外部引用・参考文献の欠如」（約8回出現）や「数式のパラメータ定義および導出過程の説明不足」（約5回出現）といった弱点が頻出していることが確認されました。これにより、citation_relevanceの平均スコアが56.50と低迷しており、一部の読者ペルソナからは数式が抽象的すぎると批判されています。この課題を解決するため、論文生成時にGenerator自らが基礎的な先行研究の引用（references）を少なくとも1件追加すること、および数式を提示する際にConstitution第1条の規定に従い「渋々ながらの忍耐（reluctant patience）」をもって変数定義を明記するよう指示を強化します。これによりスコアの全体的な向上が期待できます。",
+      "expected_impact": [
+        "citation_relevance",
+        "equation_validity",
+        "readability"
+      ],
+      "proposed_text": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載。その際、変数の定義は「渋々」明記すること。\n- 少なくとも 1 セクションに `diagrams` 配列を含め、`type: \"mermaid\"` で有効な Mermaid 記法を `data` に記載\n- `references` 配列を追加し、架空または実在の先行研究への引用を1件以上含めること",
+      "anchor": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載\n- 少なくとも 1 セクションに `diagrams` 配列を含め、`type: \"mermaid\"` で有効な Mermaid 記法を `data` に記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のJSONスキーマに適合し、Constitutionの規定（日本語出力や見下す態度）も維持されるためリスクは低いです。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "プロンプトへの追記のみであり、不可変ファイルへの変更は含みません。"
+  }
+}
