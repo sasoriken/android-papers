@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-10T20:33:34.611Z",
-  "reviews_count": 179,
+  "generated_at": "2026-10-11T20:22:17.030Z",
+  "reviews_count": 180,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.2122905027933,
-      "logical_consistency": 84.70949720670392,
-      "citation_relevance": 57.01117318435754
+      "equation_validity": 80.21111111111111,
+      "logical_consistency": 84.71111111111111,
+      "citation_relevance": 56.97222222222222
     },
     "naive_reader": {
-      "readability": 70.41340782122904,
-      "abstract_hook": 84.0391061452514,
-      "curiosity_score": 82.13966480446928
+      "readability": 70.35555555555555,
+      "abstract_hook": 83.9888888888889,
+      "curiosity_score": 82.12777777777778
     },
     "internal_audit": {
-      "condescension_fidelity": 94.05586592178771,
-      "academic_form": 91.6927374301676,
-      "constitution_compliance": 98.18435754189944
+      "condescension_fidelity": 94.06111111111112,
+      "academic_form": 91.68333333333334,
+      "constitution_compliance": 98.19444444444444
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 126,
+    "acceptable": 127,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.91888888888889,
-    "previous_10_avg": 80.7298888888889,
-    "delta": -1.811000000000007
+    "recent_10_avg": 78.32555555555555,
+    "previous_10_avg": 80.78544444444444,
+    "delta": -2.4598888888888837
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-manifold-projection-in-information-geometry",
+      "verdict": "acceptable",
+      "mean_score": 79.4,
+      "reviewed_at": "2026-10-11T20:17:00.464Z"
+    },
+    {
       "paper_id": "temporal-compression-biological-chronology",
       "verdict": "acceptable",
       "mean_score": 81.66666666666667,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.88888888888889,
       "reviewed_at": "2026-10-07T20:12:19.048Z"
-    },
-    {
-      "paper_id": "sub-optimal-consensus-in-distributed-biological-networks",
-      "verdict": "weak",
-      "mean_score": 67.77777777777777,
-      "reviewed_at": "2026-10-06T20:23:41.056Z"
     }
   ]
 }
