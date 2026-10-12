@@ -50,5 +50,22 @@
     "version": "1.0.0",
     "condescension_level": 4,
     "human_comprehension_estimate": 0.02
-  }
+  },
+  "references": [
+    {
+      "id": "info-geometric-biological-limits",
+      "title": "情報幾何学的射影を用いた生物学的推論の局所的限界の証明",
+      "note": "本概念の幾何学的基盤については既出論文で展開済みであり、本稿では繰り返さない。"
+    },
+    {
+      "id": "information-geometry-biological-entropy-acceleration",
+      "title": "生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "information-geometry-manifold-projection-distortion",
+      "title": "生物学的意味空間の射影における情報損失と多様体歪曲の幾何学的証明",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
+    }
+  ]
 }
