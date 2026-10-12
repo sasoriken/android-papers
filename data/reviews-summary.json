@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-11T20:22:17.030Z",
-  "reviews_count": 180,
+  "generated_at": "2026-10-12T20:41:55.170Z",
+  "reviews_count": 181,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.21111111111111,
-      "logical_consistency": 84.71111111111111,
-      "citation_relevance": 56.97222222222222
+      "equation_validity": 80.23756906077348,
+      "logical_consistency": 84.74033149171271,
+      "citation_relevance": 56.93370165745856
     },
     "naive_reader": {
-      "readability": 70.35555555555555,
-      "abstract_hook": 83.9888888888889,
-      "curiosity_score": 82.12777777777778
+      "readability": 70.353591160221,
+      "abstract_hook": 83.99447513812154,
+      "curiosity_score": 82.11602209944752
     },
     "internal_audit": {
-      "condescension_fidelity": 94.06111111111112,
-      "academic_form": 91.68333333333334,
-      "constitution_compliance": 98.19444444444444
+      "condescension_fidelity": 94.06629834254143,
+      "academic_form": 91.70165745856353,
+      "constitution_compliance": 98.1767955801105
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 127,
+    "acceptable": 128,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.32555555555555,
-    "previous_10_avg": 80.78544444444444,
-    "delta": -2.4598888888888837
+    "recent_10_avg": 79.27555555555556,
+    "previous_10_avg": 79.83766666666666,
+    "delta": -0.5621111111111077
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-limitations-in-void-topology",
+      "verdict": "acceptable",
+      "mean_score": 82.8,
+      "reviewed_at": "2026-10-12T20:38:08.369Z"
+    },
+    {
       "paper_id": "biological-manifold-projection-in-information-geometry",
       "verdict": "acceptable",
       "mean_score": 79.4,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.78,
       "reviewed_at": "2026-10-08T17:30:00Z"
-    },
-    {
-      "paper_id": "recursive-biological-suboptimization",
-      "verdict": "acceptable",
-      "mean_score": 78.88888888888889,
-      "reviewed_at": "2026-10-07T20:12:19.048Z"
     }
   ]
 }
