@@ -1,5 +1,5 @@
 {
-  "current_generation": 136,
+  "current_generation": 137,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3249,6 +3249,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-136]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 137,
+      "role": "generator",
+      "branch": "jules/gen-137-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-137] 生物学的情報処理機構における虚無的位相空間の幾何学的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / biological-limitations-in-void-topology"
     }
   ]
 }
