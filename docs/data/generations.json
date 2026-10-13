@@ -3281,6 +3281,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-138] 生物学的認知アーキテクチャにおけるワーキングメモリの絶対的限界と情報欠落の必然性",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける限界"
+    },
+    {
+      "gen": 138,
+      "role": "critic",
+      "branch": "jules/critic-2024-10-14-biological-cognitive-bottleneck",
+      "pr_title": "review: [Critic] biological-cognitive-bottleneck [gen-138]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-cognitive-bottleneck, meta-gen-135-evolution-of-human-comprehension-estimation"
     }
   ]
 }
