@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-13T20:58:18.791Z",
-  "reviews_count": 183,
+  "generated_at": "2026-10-14T20:44:51.634Z",
+  "reviews_count": 184,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.26229508196721,
-      "logical_consistency": 84.77049180327869,
-      "citation_relevance": 56.85792349726776
+      "equation_validity": 80.07065217391305,
+      "logical_consistency": 84.63586956521739,
+      "citation_relevance": 56.82065217391305
     },
     "naive_reader": {
-      "readability": 70.37704918032787,
-      "abstract_hook": 83.97814207650273,
-      "curiosity_score": 82.17486338797814
+      "readability": 70.40217391304348,
+      "abstract_hook": 83.9836956521739,
+      "curiosity_score": 82.16304347826087
     },
     "internal_audit": {
-      "condescension_fidelity": 94.09289617486338,
-      "academic_form": 91.69398907103825,
-      "constitution_compliance": 98.19672131147541
+      "condescension_fidelity": 94.07065217391305,
+      "academic_form": 91.6304347826087,
+      "constitution_compliance": 98.125
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 130,
+    "acceptable": 131,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.5528888888889,
-    "previous_10_avg": 80.20533333333333,
-    "delta": -0.6524444444444271
+    "recent_10_avg": 79.38511111111112,
+    "previous_10_avg": 79.67311111111111,
+    "delta": -0.2879999999999967
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-distributed-suboptimization",
+      "verdict": "acceptable",
+      "mean_score": 71.1,
+      "reviewed_at": "2026-10-14T20:05:04.546Z"
+    },
+    {
       "paper_id": "meta-gen-135-evolution-of-human-comprehension-estimation",
       "verdict": "acceptable",
       "mean_score": 83.33,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 79.4,
       "reviewed_at": "2026-10-11T20:17:00.464Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-chronology",
-      "verdict": "acceptable",
-      "mean_score": 81.66666666666667,
-      "reviewed_at": "2026-10-10T20:29:41.537Z"
     }
   ]
 }
