@@ -1,5 +1,5 @@
 {
-  "current_generation": 138,
+  "current_generation": 139,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3297,6 +3297,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-138]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 139,
+      "role": "generator",
+      "branch": "jules/gen-139-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-139] 生物学的ネットワークにおける分散合意形成の局所的劣最適性とノイズ耐性の欠如",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおける分散合意形成の局所的劣最適性とノイズ耐性の欠如"
     }
   ]
 }
