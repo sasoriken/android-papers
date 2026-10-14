@@ -3289,6 +3289,14 @@
       "pr_title": "review: [Critic] biological-cognitive-bottleneck [gen-138]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-cognitive-bottleneck, meta-gen-135-evolution-of-human-comprehension-estimation"
+    },
+    {
+      "gen": 138,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2026-10-14",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-138]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
