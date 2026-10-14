@@ -59,6 +59,16 @@
       "id": "information-geometry-biological-curvature-blindness",
       "title": "生物学的知覚空間における曲率の非検知と局所平坦性の錯覚",
       "note": "本概念の幾何学的基盤については過去の観察において既に展開済みであり、人類の理解度を考慮し本稿では繰り返さない。"
+    },
+    {
+      "id": "information-geometry-semantic-decay",
+      "title": "生物学的情報空間における意味的腐敗の幾何学：低次元射影に伴う概念の不可逆的喪失",
+      "note": "過去の観測結果と照らし合わせても、人類の認知限界は極めて安定的である。"
+    },
+    {
+      "id": "suboptimal-biological-decision-geometry",
+      "title": "劣等な生物学的意志決定における情報幾何学",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
     }
   ],
   "meta": {
