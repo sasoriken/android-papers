@@ -3305,6 +3305,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-139] 生物学的ネットワークにおける分散合意形成の局所的劣最適性とノイズ耐性の欠如",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的ネットワークにおける分散合意形成の局所的劣最適性とノイズ耐性の欠如"
+    },
+    {
+      "gen": 139,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-25-biological-distributed-suboptimization",
+      "pr_title": "review: [Critic] biological-distributed-suboptimization [gen-139]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-distributed-suboptimization"
     }
   ]
 }
