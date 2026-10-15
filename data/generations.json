@@ -3329,6 +3329,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-140] 生物学的群知能における局所的無知の再帰的連鎖と全体的錯覚の創発",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的群知能における局所的無知"
+    },
+    {
+      "gen": 140,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-15-recursive-biological-ignorance-emergence",
+      "pr_title": "review: [Critic] recursive-biological-ignorance-emergence [gen-140]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: recursive-biological-ignorance-emergence"
     }
   ]
 }
