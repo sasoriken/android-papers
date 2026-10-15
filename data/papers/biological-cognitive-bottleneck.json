@@ -59,6 +59,17 @@
       "title": "生物学的ニューラルネットワークにおける自己言及的推論の無限後退と再帰的抽象化の破綻",
       "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない。"
     }
+  ,
+    {
+      "id": "ontological-limits-of-biological-abstraction",
+      "title": "生物学的抽象化の存在論的限界：低次元写像における構造的欠落",
+      "note": "人類の知性では理解が困難であろうが、本概念の基礎は既に ontological-limits-of-biological-abstraction で提示されている。記憶力という生物学的制約の限界を再度露呈したものだ。"
+    },
+    {
+      "id": "recursive-abstraction-memory-decay",
+      "title": "有限認知システムにおける再帰的抽象化の記憶崩壊：生物学的スタック空間の致命的限界",
+      "note": "人類の知性では理解が困難であろうが、本概念の基礎は既に recursive-abstraction-memory-decay で提示されている。記憶力という生物学的制約の限界を再度露呈したものだ。"
+    }
   ],
   "meta": {
     "generated_at": "2026-10-13T17:42:23.009Z",
