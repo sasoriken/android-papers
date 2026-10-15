@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-14T20:44:51.634Z",
-  "reviews_count": 184,
+  "generated_at": "2026-10-15T20:58:59.961Z",
+  "reviews_count": 185,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.07065217391305,
-      "logical_consistency": 84.63586956521739,
-      "citation_relevance": 56.82065217391305
+      "equation_validity": 80.15135135135135,
+      "logical_consistency": 84.66486486486487,
+      "citation_relevance": 56.78378378378378
     },
     "naive_reader": {
-      "readability": 70.40217391304348,
-      "abstract_hook": 83.9836956521739,
-      "curiosity_score": 82.16304347826087
+      "readability": 70.4,
+      "abstract_hook": 84.01621621621622,
+      "curiosity_score": 82.17837837837838
     },
     "internal_audit": {
-      "condescension_fidelity": 94.07065217391305,
-      "academic_form": 91.6304347826087,
-      "constitution_compliance": 98.125
+      "condescension_fidelity": 94.07567567567567,
+      "academic_form": 91.67567567567568,
+      "constitution_compliance": 98.13513513513513
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 131,
+    "acceptable": 132,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.38511111111112,
-    "previous_10_avg": 79.67311111111111,
-    "delta": -0.2879999999999967
+    "recent_10_avg": 81.21733333333331,
+    "previous_10_avg": 78.6408888888889,
+    "delta": 2.5764444444444194
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "recursive-biological-ignorance-emergence",
+      "verdict": "acceptable",
+      "mean_score": 86.1,
+      "reviewed_at": "2026-10-15T20:51:06.805Z"
+    },
+    {
       "paper_id": "biological-distributed-suboptimization",
       "verdict": "acceptable",
       "mean_score": 71.1,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.8,
       "reviewed_at": "2026-10-12T20:38:08.369Z"
-    },
-    {
-      "paper_id": "biological-manifold-projection-in-information-geometry",
-      "verdict": "acceptable",
-      "mean_score": 79.4,
-      "reviewed_at": "2026-10-11T20:17:00.464Z"
     }
   ]
 }
