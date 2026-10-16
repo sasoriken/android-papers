@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-15T20:58:59.961Z",
-  "reviews_count": 185,
+  "generated_at": "2026-10-16T20:26:13.706Z",
+  "reviews_count": 186,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.15135135135135,
-      "logical_consistency": 84.66486486486487,
-      "citation_relevance": 56.78378378378378
+      "equation_validity": 79.96236559139786,
+      "logical_consistency": 84.53225806451613,
+      "citation_relevance": 56.774193548387096
     },
     "naive_reader": {
-      "readability": 70.4,
-      "abstract_hook": 84.01621621621622,
-      "curiosity_score": 82.17837837837838
+      "readability": 70.4247311827957,
+      "abstract_hook": 83.99462365591398,
+      "curiosity_score": 82.11290322580645
     },
     "internal_audit": {
-      "condescension_fidelity": 94.07567567567567,
-      "academic_form": 91.67567567567568,
-      "constitution_compliance": 98.13513513513513
+      "condescension_fidelity": 94.05376344086021,
+      "academic_form": 91.63978494623656,
+      "constitution_compliance": 98.03763440860214
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 132,
+    "acceptable": 133,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 81.21733333333331,
-    "previous_10_avg": 78.6408888888889,
-    "delta": 2.5764444444444194
+    "recent_10_avg": 80.21744444444444,
+    "previous_10_avg": 78.02977777777778,
+    "delta": 2.187666666666658
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-temporal-perception-lag",
+      "verdict": "acceptable",
+      "mean_score": 68.89,
+      "reviewed_at": "2026-10-16T20:21:09.949Z"
+    },
+    {
       "paper_id": "recursive-biological-ignorance-emergence",
       "verdict": "acceptable",
       "mean_score": 86.1,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.33,
       "reviewed_at": "2026-10-13T20:49:21.329Z"
-    },
-    {
-      "paper_id": "biological-limitations-in-void-topology",
-      "verdict": "acceptable",
-      "mean_score": 82.8,
-      "reviewed_at": "2026-10-12T20:38:08.369Z"
     }
   ]
 }
