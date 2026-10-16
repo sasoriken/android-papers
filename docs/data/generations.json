@@ -3353,6 +3353,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-141] 生体構造における時間的圧縮限界と遅延認知の体系的欠陥",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 生体構造における時間的圧縮限界"
+    },
+    {
+      "gen": 141,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-16-biological-temporal-perception-lag",
+      "pr_title": "review: [Critic] biological-temporal-perception-lag [gen-141]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-temporal-perception-lag"
     }
   ]
 }
