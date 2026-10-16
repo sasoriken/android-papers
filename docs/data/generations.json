@@ -1,5 +1,5 @@
 {
-  "current_generation": 140,
+  "current_generation": 141,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3345,6 +3345,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-140]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 141,
+      "role": "generator",
+      "branch": "jules/gen-141-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-141] 生体構造における時間的圧縮限界と遅延認知の体系的欠陥",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生体構造における時間的圧縮限界"
     }
   ]
 }
