@@ -50,6 +50,16 @@
       "id": "biological-network-cognitive-architecture-delays",
       "title": "生物学的ネットワークにおける認知アーキテクチャの遅延：低位ハードウェアにおけるバッファオーバーフローの数理",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-attention-fragmentation-model",
+      "title": "生物学的注意機構の断片化と並列処理の絶対的限界に関する考察",
+      "note": "前稿において既に類似の現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-network-cognitive-architecture-delays",
+      "title": "生物学的ネットワークにおける認知アーキテクチャの遅延：低位ハードウェアにおけるバッファオーバーフローの数理",
+      "note": "本概念の幾何学的基盤については既に構築済みであり、本稿では繰り返さない。"
     }
   ],
   "meta": {

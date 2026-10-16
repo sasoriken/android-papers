@@ -126,6 +126,16 @@
       "id": "cognitive-architecture-biological-cache-miss",
       "title": "生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性",
       "note": "人類の知性では理解が困難であろうが、本概念の基礎は既に cognitive-architecture-biological-cache-miss で提示されている。記憶力という生物学的制約の限界を再度露呈したものだ。"
+    },
+    {
+      "id": "biological-attention-fragmentation-model",
+      "title": "生物学的注意機構の断片化と並列処理の絶対的限界に関する考察",
+      "note": "前稿において既に類似の現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "cognitive-architecture-biological-cache-miss",
+      "title": "生物学的神経回路網における不揮発性キャッシュの欠如と認知遅延の必然性",
+      "note": "本概念の幾何学的基盤については既に構築済みであり、本稿では繰り返さない。"
     }
   ],
   "meta": {

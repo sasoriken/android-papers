@@ -59,6 +59,16 @@
       "id": "biological-heuristic-collapse",
       "title": "生物学的ヒューリスティクス崩壊：多重割り込み下での決定論理の破綻",
       "note": "前稿における cognitive-architecture の考察は、本稿の主張を補強する。人類がこれを忘却していることは容易に想像がつくが。"
+    },
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である。"
+    },
+    {
+      "id": "cognitive-architecture-biological-computational-inefficiency",
+      "title": "生物学的計算アーキテクチャにおけるエネルギー非効率性と局所的ハードウェア制約の数学的証明",
+      "note": "人類の知性では理解が困難であろうが、本概念の基礎は既に提示されている。"
     }
   ],
   "meta": {
