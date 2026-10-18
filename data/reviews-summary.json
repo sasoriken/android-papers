@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-16T20:26:13.706Z",
-  "reviews_count": 186,
+  "generated_at": "2026-10-18T20:50:28.403Z",
+  "reviews_count": 187,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.96236559139786,
-      "logical_consistency": 84.53225806451613,
-      "citation_relevance": 56.774193548387096
+      "equation_validity": 79.98930481283422,
+      "logical_consistency": 84.56149732620321,
+      "citation_relevance": 56.7379679144385
     },
     "naive_reader": {
-      "readability": 70.4247311827957,
-      "abstract_hook": 83.99462365591398,
-      "curiosity_score": 82.11290322580645
+      "readability": 70.36898395721926,
+      "abstract_hook": 83.94652406417113,
+      "curiosity_score": 82.10160427807487
     },
     "internal_audit": {
-      "condescension_fidelity": 94.05376344086021,
-      "academic_form": 91.63978494623656,
-      "constitution_compliance": 98.03763440860214
+      "condescension_fidelity": 94.05882352941177,
+      "academic_form": 91.68449197860963,
+      "constitution_compliance": 98.04812834224599
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 133,
+    "acceptable": 134,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.21744444444444,
-    "previous_10_avg": 78.02977777777778,
-    "delta": 2.187666666666658
+    "recent_10_avg": 80.10611111111109,
+    "previous_10_avg": 78.30777777777777,
+    "delta": 1.7983333333333178
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-metric-tensor-local-collapse-proof",
+      "verdict": "acceptable",
+      "mean_score": 81.66666666666667,
+      "reviewed_at": "2026-10-18T20:17:24.380Z"
+    },
+    {
       "paper_id": "biological-temporal-perception-lag",
       "verdict": "acceptable",
       "mean_score": 68.89,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 83.33,
       "reviewed_at": "2026-10-13T20:49:21.330Z"
-    },
-    {
-      "paper_id": "biological-cognitive-bottleneck",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-10-13T20:49:21.329Z"
     }
   ]
 }
