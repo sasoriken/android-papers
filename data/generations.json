@@ -3377,6 +3377,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-142] 生体情報幾何における計量テンソルの局所的崩壊と不可避な認知限界",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 生体情報幾何における計量テンソルの局所的崩壊と不可避な認知限界"
+    },
+    {
+      "gen": 142,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-18-biological-metric-tensor-local-collapse-proof",
+      "pr_title": "review: [Critic] biological-metric-tensor-local-collapse-proof [gen-142]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-metric-tensor-local-collapse-proof"
     }
   ]
 }
