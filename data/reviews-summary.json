@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-10-18T20:50:28.403Z",
-  "reviews_count": 187,
+  "generated_at": "2026-10-19T20:38:59.452Z",
+  "reviews_count": 188,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.98930481283422,
-      "logical_consistency": 84.56149732620321,
-      "citation_relevance": 56.7379679144385
+      "equation_validity": 80.01595744680851,
+      "logical_consistency": 84.5372340425532,
+      "citation_relevance": 56.702127659574465
     },
     "naive_reader": {
-      "readability": 70.36898395721926,
-      "abstract_hook": 83.94652406417113,
-      "curiosity_score": 82.10160427807487
+      "readability": 70.31382978723404,
+      "abstract_hook": 83.89893617021276,
+      "curiosity_score": 82.0372340425532
     },
     "internal_audit": {
-      "condescension_fidelity": 94.05882352941177,
-      "academic_form": 91.68449197860963,
-      "constitution_compliance": 98.04812834224599
+      "condescension_fidelity": 94.0372340425532,
+      "academic_form": 91.70212765957447,
+      "constitution_compliance": 98.05851063829788
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 134,
+    "acceptable": 135,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 80.10611111111109,
-    "previous_10_avg": 78.30777777777777,
-    "delta": 1.7983333333333178
+    "recent_10_avg": 79.65833333333333,
+    "previous_10_avg": 79.08555555555556,
+    "delta": 0.5727777777777732
   },
   "top_weaknesses": [
     {
       "pattern": "引用文献の欠如",
-      "frequency": 9
+      "frequency": 10
     },
     {
       "pattern": "参考文献の欠如",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-recursive-abstraction-entropy-decay",
+      "verdict": "acceptable",
+      "mean_score": 78.3,
+      "reviewed_at": "2026-10-19T20:34:29.519Z"
+    },
+    {
       "paper_id": "biological-metric-tensor-local-collapse-proof",
       "verdict": "acceptable",
       "mean_score": 81.66666666666667,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 71.1,
       "reviewed_at": "2026-10-14T20:05:04.546Z"
-    },
-    {
-      "paper_id": "meta-gen-135-evolution-of-human-comprehension-estimation",
-      "verdict": "acceptable",
-      "mean_score": 83.33,
-      "reviewed_at": "2026-10-13T20:49:21.330Z"
     }
   ]
 }

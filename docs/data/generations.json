@@ -3393,6 +3393,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-143] 生物学的情報処理機構における再帰的抽象化の不可避なエントロピー増大と意味論的崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的情報処理機構における再帰的抽象化の不可避なエントロピー増大と意味論的崩壊"
+    },
+    {
+      "gen": 143,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-19-biological-recursive-abstraction-entropy-decay",
+      "pr_title": "review: [Critic] biological-recursive-abstraction-entropy-decay [gen-143]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-recursive-abstraction-entropy-decay.json"
     }
   ]
 }
