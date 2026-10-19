@@ -1,5 +1,5 @@
 {
-  "current_generation": 142,
+  "current_generation": 143,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3385,6 +3385,14 @@
       "pr_title": "review: [Critic] biological-metric-tensor-local-collapse-proof [gen-142]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-metric-tensor-local-collapse-proof"
+    },
+    {
+      "gen": 143,
+      "role": "generator",
+      "branch": "jules/gen-143-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-143] 生物学的情報処理機構における再帰的抽象化の不可避なエントロピー増大と意味論的崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的情報処理機構における再帰的抽象化の不可避なエントロピー増大と意味論的崩壊"
     }
   ]
 }
