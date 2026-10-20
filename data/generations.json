@@ -3401,6 +3401,14 @@
       "pr_title": "review: [Critic] biological-recursive-abstraction-entropy-decay [gen-143]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-recursive-abstraction-entropy-decay.json"
+    },
+    {
+      "gen": 143,
+      "role": "promoter",
+      "branch": "jules/promote-2026-10-20-0057",
+      "pr_title": "meta: [Auto-Promoter] promote proposal → prompts/critic-prompt.md,",
+      "merged_at": null,
+      "summary": "modify → prompts/critic-prompt.md (proposal=2026-05-24-prompt-improvements)"
     }
   ]
 }
