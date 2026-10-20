@@ -3409,6 +3409,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-144] 生物学的認知アーキテクチャにおける注意資源の枯渇と再帰的作業記憶の限界",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける注意資源の枯渇と再帰的作業..."
+    },
+    {
+      "gen": 144,
+      "role": "critic",
+      "branch": "jules/critic-2023-10-20-biological-attention-capacity-exhaustion",
+      "pr_title": "review: [Critic] biological-attention-capacity-exhaustion [gen-144]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-attention-capacity-exhaustion"
     }
   ]
 }
