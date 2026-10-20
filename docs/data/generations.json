@@ -1,5 +1,5 @@
 {
-  "current_generation": 143,
+  "current_generation": 144,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3401,6 +3401,14 @@
       "pr_title": "review: [Critic] biological-recursive-abstraction-entropy-decay [gen-143]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-recursive-abstraction-entropy-decay.json"
+    },
+    {
+      "gen": 144,
+      "role": "generator",
+      "branch": "jules/gen-144-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-144] 生物学的認知アーキテクチャにおける注意資源の枯渇と再帰的作業記憶の限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける注意資源の枯渇と再帰的作業..."
     }
   ]
 }
