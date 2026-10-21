@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-20T20:24:32.552Z",
-  "reviews_count": 189,
+  "generated_at": "2026-10-21T20:14:16.880Z",
+  "reviews_count": 190,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 80.04232804232804,
-      "logical_consistency": 84.56613756613757,
-      "citation_relevance": 56.666666666666664
+      "equation_validity": 79.80526315789474,
+      "logical_consistency": 84.33157894736843,
+      "citation_relevance": 56.63157894736842
     },
     "naive_reader": {
-      "readability": 70.31216931216932,
-      "abstract_hook": 83.9047619047619,
-      "curiosity_score": 82.02645502645503
+      "readability": 70.17894736842105,
+      "abstract_hook": 83.8578947368421,
+      "curiosity_score": 82.01578947368421
     },
     "internal_audit": {
-      "condescension_fidelity": 94.04232804232804,
-      "academic_form": 91.6931216931217,
-      "constitution_compliance": 98.06878306878306
+      "condescension_fidelity": 94.04736842105264,
+      "academic_form": 91.65789473684211,
+      "constitution_compliance": 98.02631578947368
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 136,
+    "acceptable": 137,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.76866666666668,
-    "previous_10_avg": 78.91888888888889,
-    "delta": 0.8497777777777884
+    "recent_10_avg": 78.32866666666668,
+    "previous_10_avg": 78.32555555555555,
+    "delta": 0.003111111111124387
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "void-topology-information-dissipation",
+      "verdict": "acceptable",
+      "mean_score": 65,
+      "reviewed_at": "2026-10-21T20:09:34.221Z"
+    },
+    {
       "paper_id": "biological-attention-capacity-exhaustion",
       "verdict": "acceptable",
       "mean_score": 82.77,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 68.89,
       "reviewed_at": "2026-10-16T20:21:09.949Z"
-    },
-    {
-      "paper_id": "recursive-biological-ignorance-emergence",
-      "verdict": "acceptable",
-      "mean_score": 86.1,
-      "reviewed_at": "2026-10-15T20:51:06.805Z"
     }
   ]
 }
