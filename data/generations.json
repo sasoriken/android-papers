@@ -1,5 +1,5 @@
 {
-  "current_generation": 144,
+  "current_generation": 145,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3417,6 +3417,14 @@
       "pr_title": "review: [Critic] biological-attention-capacity-exhaustion [gen-144]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-attention-capacity-exhaustion"
+    },
+    {
+      "gen": 145,
+      "role": "generator",
+      "branch": "jules/gen-145-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-145] 虚空位相空間における情報消失の再帰的構造と生物学的観測限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 虚空位相の再帰的構造"
     }
   ]
 }
