@@ -3449,6 +3449,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-146] 生物学的分散ネットワークにおける本質的遅延と合意形成の限界",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散ネットワークにおけ"
+    },
+    {
+      "gen": 146,
+      "role": "critic",
+      "branch": "jules/critic-2023-11-01-biological-distributed-network-latency",
+      "pr_title": "review: [Critic] biological-distributed-network-latency [gen-146]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-distributed-network-latency"
     }
   ]
 }

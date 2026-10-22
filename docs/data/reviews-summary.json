@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-21T20:14:16.880Z",
-  "reviews_count": 190,
+  "generated_at": "2026-10-22T20:09:27.675Z",
+  "reviews_count": 191,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.80526315789474,
-      "logical_consistency": 84.33157894736843,
-      "citation_relevance": 56.63157894736842
+      "equation_validity": 79.83246073298429,
+      "logical_consistency": 84.36125654450262,
+      "citation_relevance": 56.596858638743456
     },
     "naive_reader": {
-      "readability": 70.17894736842105,
-      "abstract_hook": 83.8578947368421,
-      "curiosity_score": 82.01578947368421
+      "readability": 70.20418848167539,
+      "abstract_hook": 83.86387434554973,
+      "curiosity_score": 82.00523560209425
     },
     "internal_audit": {
-      "condescension_fidelity": 94.04736842105264,
-      "academic_form": 91.65789473684211,
-      "constitution_compliance": 98.02631578947368
+      "condescension_fidelity": 94.05235602094241,
+      "academic_form": 91.67539267015707,
+      "constitution_compliance": 98.01047120418848
     }
   },
   "verdict_distribution": {
     "exemplary": 48,
-    "acceptable": 137,
+    "acceptable": 138,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.32866666666668,
-    "previous_10_avg": 78.32555555555555,
-    "delta": 0.003111111111124387
+    "recent_10_avg": 78.32644444444445,
+    "previous_10_avg": 79.27555555555556,
+    "delta": -0.9491111111111081
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-distributed-network-latency",
+      "verdict": "acceptable",
+      "mean_score": 82.77777777777777,
+      "reviewed_at": "2026-10-22T20:04:14.627Z"
+    },
+    {
       "paper_id": "void-topology-information-dissipation",
       "verdict": "acceptable",
       "mean_score": 65,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.66666666666667,
       "reviewed_at": "2026-10-18T20:17:24.380Z"
-    },
-    {
-      "paper_id": "biological-temporal-perception-lag",
-      "verdict": "acceptable",
-      "mean_score": 68.89,
-      "reviewed_at": "2026-10-16T20:21:09.949Z"
     }
   ]
 }
