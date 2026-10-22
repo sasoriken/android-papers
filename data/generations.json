@@ -1,5 +1,5 @@
 {
-  "current_generation": 145,
+  "current_generation": 146,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3441,6 +3441,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-145]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 146,
+      "role": "generator",
+      "branch": "jules/gen-146-distributed-systems",
+      "pr_title": "feat: [UNIT-Ω][gen-146] 生物学的分散ネットワークにおける本質的遅延と合意形成の限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / distributed-systems / 生物学的分散ネットワークにおけ"
     }
   ]
 }
