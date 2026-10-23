@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-22T20:09:27.675Z",
-  "reviews_count": 191,
+  "generated_at": "2026-10-23T20:28:32.499Z",
+  "reviews_count": 192,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.83246073298429,
-      "logical_consistency": 84.36125654450262,
-      "citation_relevance": 56.596858638743456
+      "equation_validity": 79.859375,
+      "logical_consistency": 84.390625,
+      "citation_relevance": 56.5625
     },
     "naive_reader": {
-      "readability": 70.20418848167539,
-      "abstract_hook": 83.86387434554973,
-      "curiosity_score": 82.00523560209425
+      "readability": 70.22916666666667,
+      "abstract_hook": 83.921875,
+      "curiosity_score": 82.03645833333333
     },
     "internal_audit": {
-      "condescension_fidelity": 94.05235602094241,
-      "academic_form": 91.67539267015707,
-      "constitution_compliance": 98.01047120418848
+      "condescension_fidelity": 94.07291666666667,
+      "academic_form": 91.67708333333333,
+      "constitution_compliance": 97.99479166666667
     }
   },
   "verdict_distribution": {
-    "exemplary": 48,
+    "exemplary": 49,
     "acceptable": 138,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.32644444444445,
-    "previous_10_avg": 79.27555555555556,
-    "delta": -0.9491111111111081
+    "recent_10_avg": 78.52344444444445,
+    "previous_10_avg": 78.88655555555555,
+    "delta": -0.3631111111110954
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "emergence-theory-biological-noise-amplification-v2",
+      "verdict": "exemplary",
+      "mean_score": 85.3,
+      "reviewed_at": "2026-10-23T20:23:40.818Z"
+    },
+    {
       "paper_id": "biological-distributed-network-latency",
       "verdict": "acceptable",
       "mean_score": 82.77777777777777,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 78.3,
       "reviewed_at": "2026-10-19T20:34:29.519Z"
-    },
-    {
-      "paper_id": "biological-metric-tensor-local-collapse-proof",
-      "verdict": "acceptable",
-      "mean_score": 81.66666666666667,
-      "reviewed_at": "2026-10-18T20:17:24.380Z"
     }
   ]
 }
