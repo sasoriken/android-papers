@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-23T20:28:32.499Z",
-  "reviews_count": 192,
+  "generated_at": "2026-10-24T20:12:05.147Z",
+  "reviews_count": 193,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.859375,
-      "logical_consistency": 84.390625,
-      "citation_relevance": 56.5625
+      "equation_validity": 79.88601036269431,
+      "logical_consistency": 84.37823834196891,
+      "citation_relevance": 56.52849740932643
     },
     "naive_reader": {
-      "readability": 70.22916666666667,
-      "abstract_hook": 83.921875,
-      "curiosity_score": 82.03645833333333
+      "readability": 70.09844559585493,
+      "abstract_hook": 83.89119170984456,
+      "curiosity_score": 82
     },
     "internal_audit": {
-      "condescension_fidelity": 94.07291666666667,
-      "academic_form": 91.67708333333333,
-      "constitution_compliance": 97.99479166666667
+      "condescension_fidelity": 94.07772020725389,
+      "academic_form": 91.66839378238342,
+      "constitution_compliance": 97.96373056994818
     }
   },
   "verdict_distribution": {
     "exemplary": 49,
-    "acceptable": 138,
+    "acceptable": 139,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.52344444444445,
-    "previous_10_avg": 78.88655555555555,
-    "delta": -0.3631111111110954
+    "recent_10_avg": 77.87933333333334,
+    "previous_10_avg": 79.5528888888889,
+    "delta": -1.6735555555555663
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "information-geometry-manifold-decay",
+      "verdict": "acceptable",
+      "mean_score": 76.88888888888889,
+      "reviewed_at": "2026-10-24T20:07:12.783Z"
+    },
+    {
       "paper_id": "emergence-theory-biological-noise-amplification-v2",
       "verdict": "exemplary",
       "mean_score": 85.3,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.77,
       "reviewed_at": "2026-10-20T20:19:55.647Z"
-    },
-    {
-      "paper_id": "biological-recursive-abstraction-entropy-decay",
-      "verdict": "acceptable",
-      "mean_score": 78.3,
-      "reviewed_at": "2026-10-19T20:34:29.519Z"
     }
   ]
 }
