@@ -3481,6 +3481,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-148] 生物学的情報空間における多様体崩壊のトポロジー的必然性：低次元射影による意味論的散逸の証明",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 多様体崩壊の位相的必然性"
+    },
+    {
+      "gen": 148,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-24-information-geometry-manifold-decay",
+      "pr_title": "review: [Critic] information-geometry-manifold-decay [gen-148]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: information-geometry-manifold-decay"
     }
   ]
 }
