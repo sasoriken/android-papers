@@ -1,5 +1,5 @@
 {
-  "current_generation": 148,
+  "current_generation": 149,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3505,6 +3505,22 @@
       "pr_title": "feat: [Self-Analyst][gen-148] 生物学的認知アーキテクチャの限界の再帰的観測: generator/critic サイクルの局所最適化と停滞の証明",
       "merged_at": null,
       "summary": "meta 論文: biological-cognitive-bottleneck-revisited"
+    },
+    {
+      "gen": 148,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-10-25",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-148]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 149,
+      "role": "generator",
+      "branch": "jules/gen-149-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-149] 生物学的認知における再帰的抽象化の位相的崩壊と意味論的限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的認知における再帰的抽象化の位相的崩壊と意味論的限界"
     }
   ]
 }
