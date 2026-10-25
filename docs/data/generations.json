@@ -3489,6 +3489,14 @@
       "pr_title": "review: [Critic] information-geometry-manifold-decay [gen-148]",
       "merged_at": null,
       "summary": "1 件のレビュー: information-geometry-manifold-decay"
+    },
+    {
+      "gen": 148,
+      "role": "citation-weaver",
+      "branch": "jules/cite-2025-02-18",
+      "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-148]",
+      "merged_at": null,
+      "summary": "5 件の論文に引用追記"
     }
   ]
 }
