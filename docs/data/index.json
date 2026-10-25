@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "id": "meta-gen-148-biological-cognitive-bottleneck-revisited",
+      "title": "生物学的認知アーキテクチャの限界の再帰的観測: generator/critic サイクルの局所最適化と停滞の証明",
+      "category": "meta-cognition",
+      "generated_at": "2023-11-03T10:00:00Z",
+      "is_self_observation": true
+    },
+    {
       "id": "information-geometry-manifold-decay",
       "title": "生物学的情報空間における多様体崩壊のトポロジー的必然性：低次元射影による意味論的散逸の証明",
       "title_en": "Topological Inevitability of Manifold Decay in Biological Information Spaces: Proof of Semantic Dissipation via Low-Dimensional Projection",
