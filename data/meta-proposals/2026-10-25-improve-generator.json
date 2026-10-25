@@ -1,0 +1,61 @@
+{
+  "proposal_id": "2026-10-25-improve-generator",
+  "created_at": "2026-10-25T12:13:48.656Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 148,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "過剰な専門用語・難解さ",
+      "frequency": 10,
+      "affected_axes": [
+        "readability"
+      ]
+    },
+    {
+      "pattern": "参考文献の欠如",
+      "frequency": 11,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の厳密性・証明不足",
+      "frequency": 4,
+      "affected_axes": [
+        "equation_validity"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビュー分析において、「参考文献の欠如（11回）」および「過剰な専門用語・難解さ（10回）」が頻出している。Generatorが既存研究との接続を怠り、単に難解な用語を羅列することで学術らしさを装っている傾向が顕著である。読解性(readability)と引用妥当性(citation_relevance)のスコア低下を防ぐため、参考文献の意図的な追加と、難解な概念に対する適切な説明を要求する指示を追加する。また、数式の厳密性に関する指摘も4件確認されているため、数式の導出過程に対する注意喚起も併せて行う。",
+      "expected_impact": [
+        "readability",
+        "citation_relevance",
+        "equation_validity"
+      ],
+      "proposed_text": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載。数式は単なる装飾ではなく、変数定義と導出過程を論理的に説明すること。\n- 本文は専門用語を羅列するだけでなく、それが何を意味するか（特に一般読者にも理解できるよう）論理的な展開を心がけること。\n- 必要に応じて `references` を追加し、既存の学術的文脈との接続を明確にすること（外部文献がないことによる批判が相次いでいるため）。",
+      "anchor": "- 少なくとも 1 セクションに `equations` 配列を含め、`latex` フィールドに有効な LaTeX を記載",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のフォーマットを崩さず、生成内容の質的向上のみを狙うため。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "提案は Generator の品質改善に特化しており、不変ファイルの改変は含まれない。"
+  }
+}
