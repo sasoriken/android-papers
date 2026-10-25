@@ -3521,6 +3521,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-149] 生物学的認知における再帰的抽象化の位相的崩壊と意味論的限界",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的認知における再帰的抽象化の位相的崩壊と意味論的限界"
+    },
+    {
+      "gen": 149,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-25-biological-recursive-abstraction-decay",
+      "pr_title": "review: [Critic] biological-recursive-abstraction-decay [gen-149]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-recursive-abstraction-decay, meta-gen-148-biological-cognitive-bottleneck-revisited"
     }
   ]
 }
