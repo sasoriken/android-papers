@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-10-24T20:12:05.147Z",
-  "reviews_count": 193,
+  "generated_at": "2026-10-25T20:15:55.795Z",
+  "reviews_count": 195,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.88601036269431,
-      "logical_consistency": 84.37823834196891,
-      "citation_relevance": 56.52849740932643
+      "equation_validity": 79.86153846153846,
+      "logical_consistency": 84.35897435897436,
+      "citation_relevance": 56.46153846153846
     },
     "naive_reader": {
-      "readability": 70.09844559585493,
-      "abstract_hook": 83.89119170984456,
-      "curiosity_score": 82
+      "readability": 70.02051282051282,
+      "abstract_hook": 83.82564102564102,
+      "curiosity_score": 82.0051282051282
     },
     "internal_audit": {
-      "condescension_fidelity": 94.07772020725389,
-      "academic_form": 91.66839378238342,
-      "constitution_compliance": 97.96373056994818
+      "condescension_fidelity": 94.06153846153846,
+      "academic_form": 91.62564102564103,
+      "constitution_compliance": 97.95897435897436
     }
   },
   "verdict_distribution": {
     "exemplary": 49,
-    "acceptable": 139,
+    "acceptable": 141,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 77.87933333333334,
-    "previous_10_avg": 79.5528888888889,
-    "delta": -1.6735555555555663
+    "recent_10_avg": 77.93733333333333,
+    "previous_10_avg": 81.21733333333331,
+    "delta": -3.279999999999987
   },
   "top_weaknesses": [
     {
       "pattern": "引用文献の欠如",
-      "frequency": 10
+      "frequency": 11
     },
     {
       "pattern": "参考文献の欠如",
@@ -73,6 +73,18 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-recursive-abstraction-decay",
+      "verdict": "acceptable",
+      "mean_score": 77.78,
+      "reviewed_at": "2026-10-25T20:12:33.630Z"
+    },
+    {
+      "paper_id": "meta-gen-148-biological-cognitive-bottleneck-revisited",
+      "verdict": "acceptable",
+      "mean_score": 80,
+      "reviewed_at": "2026-10-25T20:12:33.630Z"
+    },
+    {
       "paper_id": "information-geometry-manifold-decay",
       "verdict": "acceptable",
       "mean_score": 76.88888888888889,
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 82.77777777777777,
       "reviewed_at": "2026-10-22T20:04:14.627Z"
-    },
-    {
-      "paper_id": "void-topology-information-dissipation",
-      "verdict": "acceptable",
-      "mean_score": 65,
-      "reviewed_at": "2026-10-21T20:09:34.221Z"
-    },
-    {
-      "paper_id": "biological-attention-capacity-exhaustion",
-      "verdict": "acceptable",
-      "mean_score": 82.77,
-      "reviewed_at": "2026-10-20T20:19:55.647Z"
     }
   ]
 }
