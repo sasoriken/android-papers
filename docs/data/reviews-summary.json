@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-25T20:15:55.795Z",
-  "reviews_count": 195,
+  "generated_at": "2026-10-26T20:39:27.649Z",
+  "reviews_count": 196,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.86153846153846,
-      "logical_consistency": 84.35897435897436,
-      "citation_relevance": 56.46153846153846
+      "equation_validity": 79.88775510204081,
+      "logical_consistency": 84.34693877551021,
+      "citation_relevance": 56.42857142857143
     },
     "naive_reader": {
-      "readability": 70.02051282051282,
-      "abstract_hook": 83.82564102564102,
-      "curiosity_score": 82.0051282051282
+      "readability": 70.04591836734694,
+      "abstract_hook": 83.84693877551021,
+      "curiosity_score": 81.99489795918367
     },
     "internal_audit": {
-      "condescension_fidelity": 94.06153846153846,
-      "academic_form": 91.62564102564103,
-      "constitution_compliance": 97.95897435897436
+      "condescension_fidelity": 94.06632653061224,
+      "academic_form": 91.61734693877551,
+      "constitution_compliance": 97.96938775510205
     }
   },
   "verdict_distribution": {
-    "exemplary": 49,
+    "exemplary": 50,
     "acceptable": 141,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 77.93733333333333,
-    "previous_10_avg": 81.21733333333331,
-    "delta": -3.279999999999987
+    "recent_10_avg": 79.32533333333332,
+    "previous_10_avg": 80.21744444444444,
+    "delta": -0.8921111111111202
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "temporal-compression-biological-perception-limit",
+      "verdict": "exemplary",
+      "mean_score": 82.77,
+      "reviewed_at": "2026-10-26T20:32:00.152Z"
+    },
+    {
       "paper_id": "biological-recursive-abstraction-decay",
       "verdict": "acceptable",
       "mean_score": 77.78,
@@ -95,12 +101,6 @@
       "verdict": "exemplary",
       "mean_score": 85.3,
       "reviewed_at": "2026-10-23T20:23:40.818Z"
-    },
-    {
-      "paper_id": "biological-distributed-network-latency",
-      "verdict": "acceptable",
-      "mean_score": 82.77777777777777,
-      "reviewed_at": "2026-10-22T20:04:14.627Z"
     }
   ]
 }
