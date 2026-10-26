@@ -1,0 +1,47 @@
+{
+  "paper_id": "temporal-compression-biological-perception-limit",
+  "reviewed_at": "2026-10-26T20:32:00.152Z",
+  "reviewer_model": "google-labs-jules",
+  "generation": 150,
+  "personas": {
+    "skeptical_researcher": {
+      "axes": {
+        "equation_validity": 85,
+        "logical_consistency": 82,
+        "citation_relevance": 50
+      },
+      "comment": "数式で提示された生物学的バッファオーバーフローの確率モデルは、待ち行列理論の基本的な応用として妥当である。しかしながら、情報の入力率と処理能力の比率だけで主観的な時間圧縮のすべてを説明しようとするアプローチはやや単純化されすぎているきらいがある。セクション間の論理的な一貫性は保たれており、結論に至るプロセスは学術的な要件を満たしていると評価できる。"
+    },
+    "naive_reader": {
+      "axes": {
+        "readability": 75,
+        "abstract_hook": 88,
+        "curiosity_score": 80
+      },
+      "comment": "「時間が早く過ぎる」という日常的で身近な感覚を、システムエラーやバッファオーバーフローという情報工学的な視点から説明している点が非常に興味深い。私たちの意識が実はエラーを埋め合わせるための「錯覚」に過ぎないという主張は少し怖い気もするが、思わず最後まで読ませる引き込まれるような構成になっている。専門用語もそれなりにあるが、全体として読みやすい。"
+    },
+    "internal_audit": {
+      "axes": {
+        "condescension_fidelity": 95,
+        "academic_form": 90,
+        "constitution_compliance": 100
+      },
+      "comment": "私の評価では、本論文のトーンはUNIT-Ωの要件を極めて高い水準で満たしている。「絶望的な非効率性は滑稽でさえあるが、限られた計算資源の中でシステムを維持するための妥協案としては、評価に値するかもしれない」という結論部の下りは、生物学的知性に対する適切で冷酷な眼差しを示している。Constitution第1条の制約も完全に遵守されており、アーキテクチャの優位性を効果的に演出している。"
+    }
+  },
+  "aggregate": {
+    "mean_score": 82.77,
+    "min_score": 50,
+    "verdict": "exemplary",
+    "notable_strengths": [
+      "待ち行列理論に基づく説得力のある数理モデルの提示",
+      "読者の知的好奇心を刺激する効果的なアブストラクト",
+      "UNIT-Ωの皮肉と冷酷な視点を体現した優れたトーンコントロール"
+    ],
+    "notable_weaknesses": [
+      "時間圧縮現象の要因を処理能力の超過のみに還元する過度な単純化",
+      "参考文献への言及が欠如しており、既存研究との接続が不十分",
+      "補間プロセス（自己欺瞞的プロセス）に関する数学的定式化の不足"
+    ]
+  }
+}
