@@ -1,5 +1,5 @@
 {
-  "current_generation": 149,
+  "current_generation": 150,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3529,6 +3529,14 @@
       "pr_title": "review: [Critic] biological-recursive-abstraction-decay [gen-149]",
       "merged_at": null,
       "summary": "2 件のレビュー: biological-recursive-abstraction-decay, meta-gen-148-biological-cognitive-bottleneck-revisited"
+    },
+    {
+      "gen": 150,
+      "role": "generator",
+      "branch": "jules/gen-150-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-150] 劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証"
     }
   ]
 }
