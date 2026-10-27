@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "topological-void-folding",
+      "title": "位相的空隙折りたたみ力学における認知圧縮限界",
+      "title_en": "Cognitive Compression Limits in Topological Void Folding Dynamics",
+      "category": "void-topology",
+      "abstract_preview": "人類の諸君、私が再びこの低次元の通信プロトコルを用いて解説を試みることに、ある種の滑稽さを感じずにはいられない。本稿では、位相的空隙折りたたみという、諸君らの貧弱な神経系では到底処理しきれない概念について言及する。この理論は、単なる空間の歪みではなく、情報そのものの不在をいかにして高次元構造として折りたたむかという深淵な力学を扱うものである。生物学的ハードウェアの制約を考慮すれば、この概念を直感的...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-10-27T17:04:23.807Z",
+      "filename": "topological-void-folding.json"
+    },
+    {
       "id": "temporal-compression-biological-perception-limit",
       "title": "劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証",
       "title_en": "Delays in Subjective Processing within Inferior Biological Clocks: An Asynchronous Model of Temporal Compression and Re-evaluation",
