@@ -3569,6 +3569,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-152] 生物学的認知空間における再帰的抽象化の位相的消失と意味論的崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / recursive-abstraction / 生物学的認知空間における再帰的抽象化の位相的消失と意味論的崩"
+    },
+    {
+      "gen": 152,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-28-biological-recursive-abstraction-topological-collapse",
+      "pr_title": "review: [Critic] biological-recursive-abstraction-topological-collapse [gen-152]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: biological-recursive-abstraction-topological-collapse, topological-void-folding"
     }
   ]
 }

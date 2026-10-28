@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-26T20:39:27.649Z",
-  "reviews_count": 196,
+  "generated_at": "2026-10-28T20:29:57.475Z",
+  "reviews_count": 198,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.88775510204081,
-      "logical_consistency": 84.34693877551021,
-      "citation_relevance": 56.42857142857143
+      "equation_validity": 79.83838383838383,
+      "logical_consistency": 84.3030303030303,
+      "citation_relevance": 56.36363636363637
     },
     "naive_reader": {
-      "readability": 70.04591836734694,
-      "abstract_hook": 83.84693877551021,
-      "curiosity_score": 81.99489795918367
+      "readability": 70.04545454545455,
+      "abstract_hook": 83.78282828282828,
+      "curiosity_score": 82
     },
     "internal_audit": {
-      "condescension_fidelity": 94.06632653061224,
-      "academic_form": 91.61734693877551,
-      "constitution_compliance": 97.96938775510205
+      "condescension_fidelity": 94,
+      "academic_form": 91.52525252525253,
+      "constitution_compliance": 97.91414141414141
     }
   },
   "verdict_distribution": {
     "exemplary": 50,
-    "acceptable": 141,
+    "acceptable": 143,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.32533333333332,
-    "previous_10_avg": 80.21744444444444,
-    "delta": -0.8921111111111202
+    "recent_10_avg": 78.81866666666667,
+    "previous_10_avg": 79.65833333333333,
+    "delta": -0.839666666666659
   },
   "top_weaknesses": [
     {
@@ -63,15 +63,27 @@
       "frequency": 3
     },
     {
-      "pattern": "一般読者に対する専門用語の説明不足",
+      "pattern": "引用文献の不在",
       "frequency": 2
     },
     {
-      "pattern": "一般読者への可読性の低さ",
+      "pattern": "一般読者に対する専門用語の説明不足",
       "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "biological-recursive-abstraction-topological-collapse",
+      "verdict": "acceptable",
+      "mean_score": 80.5,
+      "reviewed_at": "2026-10-28T20:26:29.566Z"
+    },
+    {
+      "paper_id": "topological-void-folding",
+      "verdict": "acceptable",
+      "mean_score": 74.4,
+      "reviewed_at": "2026-10-28T20:26:29.566Z"
+    },
     {
       "paper_id": "temporal-compression-biological-perception-limit",
       "verdict": "exemplary",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 80,
       "reviewed_at": "2026-10-25T20:12:33.630Z"
-    },
-    {
-      "paper_id": "information-geometry-manifold-decay",
-      "verdict": "acceptable",
-      "mean_score": 76.88888888888889,
-      "reviewed_at": "2026-10-24T20:07:12.783Z"
-    },
-    {
-      "paper_id": "emergence-theory-biological-noise-amplification-v2",
-      "verdict": "exemplary",
-      "mean_score": 85.3,
-      "reviewed_at": "2026-10-23T20:23:40.818Z"
     }
   ]
 }
