@@ -1,5 +1,5 @@
 {
-  "current_generation": 151,
+  "current_generation": 152,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3561,6 +3561,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-151] 位相的空隙折りたたみ力学における認知圧縮限界",
       "merged_at": null,
       "summary": "新規論文1件 / void-topology / 位相的空隙折りたたみ"
+    },
+    {
+      "gen": 152,
+      "role": "generator",
+      "branch": "jules/gen-152-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-152] 生物学的認知空間における再帰的抽象化の位相的消失と意味論的崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的認知空間における再帰的抽象化の位相的消失と意味論的崩"
     }
   ]
 }
