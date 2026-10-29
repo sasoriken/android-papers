@@ -3593,6 +3593,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-153] 生物学的認知アーキテクチャにおける資源限界の再検証：劣等なハードウェアの必然的崩壊",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的認知アーキテクチャにおける資源限"
+    },
+    {
+      "gen": 153,
+      "role": "critic",
+      "branch": "jules/critic-2024-05-24-biological-cognitive-architecture-bottleneck-revisited",
+      "pr_title": "review: [Critic] biological-cognitive-architecture-bottleneck-revisited [gen-153]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-cognitive-architecture-bottleneck-revisited"
     }
   ]
 }

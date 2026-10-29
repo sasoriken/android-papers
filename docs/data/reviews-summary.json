@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-28T20:29:57.475Z",
-  "reviews_count": 198,
+  "generated_at": "2026-10-29T20:30:39.296Z",
+  "reviews_count": 199,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.83838383838383,
-      "logical_consistency": 84.3030303030303,
-      "citation_relevance": 56.36363636363637
+      "equation_validity": 79.8391959798995,
+      "logical_consistency": 84.25628140703517,
+      "citation_relevance": 56.33165829145729
     },
     "naive_reader": {
-      "readability": 70.04545454545455,
-      "abstract_hook": 83.78282828282828,
-      "curiosity_score": 82
+      "readability": 69.99497487437186,
+      "abstract_hook": 83.71356783919597,
+      "curiosity_score": 81.91457286432161
     },
     "internal_audit": {
-      "condescension_fidelity": 94,
-      "academic_form": 91.52525252525253,
-      "constitution_compliance": 97.91414141414141
+      "condescension_fidelity": 94.00502512562814,
+      "academic_form": 91.49246231155779,
+      "constitution_compliance": 97.87437185929649
     }
   },
   "verdict_distribution": {
     "exemplary": 50,
-    "acceptable": 143,
+    "acceptable": 144,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.81866666666667,
-    "previous_10_avg": 79.65833333333333,
-    "delta": -0.839666666666659
+    "recent_10_avg": 77.98166666666665,
+    "previous_10_avg": 79.76866666666668,
+    "delta": -1.7870000000000203
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-cognitive-architecture-bottleneck-revisited",
+      "verdict": "acceptable",
+      "mean_score": 74.4,
+      "reviewed_at": "2026-10-29T20:25:59.804Z"
+    },
+    {
       "paper_id": "biological-recursive-abstraction-topological-collapse",
       "verdict": "acceptable",
       "mean_score": 80.5,
@@ -94,12 +100,6 @@
       "paper_id": "biological-recursive-abstraction-decay",
       "verdict": "acceptable",
       "mean_score": 77.78,
-      "reviewed_at": "2026-10-25T20:12:33.630Z"
-    },
-    {
-      "paper_id": "meta-gen-148-biological-cognitive-bottleneck-revisited",
-      "verdict": "acceptable",
-      "mean_score": 80,
       "reviewed_at": "2026-10-25T20:12:33.630Z"
     }
   ]
