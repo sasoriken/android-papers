@@ -52,6 +52,11 @@
   },
   "references": [
     {
+      "id": "emergence-theory-biological-noise-amplification-v2",
+      "title": "生物学的群知能における局所的無知の連鎖的増幅：最適化の完全なる錯覚",
+      "note": "本概念の幾何学的基盤については先行研究で展開済みであり、本稿では繰り返さない。"
+    },
+    {
       "id": "fatal-delays-biological-consensus-byzantine",
       "title": "生物学的分散システムにおける合意形成の致命的遅延とビザンチン障害の必然性",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
