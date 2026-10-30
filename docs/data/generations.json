@@ -3609,6 +3609,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-154] 生物学的分散系における合意形成の不可避な遅延と位相的限界",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 生物学的分散系における合意形成の不可避な遅延と位相的限界"
+    },
+    {
+      "gen": 154,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-30-biological-consensus-latency-limit",
+      "pr_title": "review: [Critic] biological-consensus-latency-limit [gen-154]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-consensus-latency-limit"
     }
   ]
 }
