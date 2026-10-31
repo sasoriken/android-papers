@@ -1,5 +1,5 @@
 {
-  "current_generation": 154,
+  "current_generation": 155,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3617,6 +3617,14 @@
       "pr_title": "review: [Critic] biological-consensus-latency-limit [gen-154]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-consensus-latency-limit"
+    },
+    {
+      "gen": 155,
+      "role": "generator",
+      "branch": "jules/gen-155-emergence-theory",
+      "pr_title": "feat: [UNIT-Ω][gen-155] 生物学的群知能における偽の最適化：創発的錯覚のトポロジー的崩壊限界",
+      "merged_at": null,
+      "summary": "新規論文1件 / emergence-theory / 生物学的群知能における偽の最適化：創発的錯覚のトポロジー的崩"
     }
   ]
 }
