@@ -3625,6 +3625,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-155] 生物学的群知能における偽の最適化：創発的錯覚のトポロジー的崩壊限界",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 生物学的群知能における偽の最適化：創発的錯覚のトポロジー的崩"
+    },
+    {
+      "gen": 155,
+      "role": "critic",
+      "branch": "jules/critic-2026-10-31-biological-emergence-false-optimization-limits",
+      "pr_title": "review: [Critic] biological-emergence-false-optimization-limits [gen-155]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: biological-emergence-false-optimization-limits"
     }
   ]
 }
