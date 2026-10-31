@@ -64,6 +64,21 @@
       "id": "biological-distributed-suboptimization",
       "title": "生物学的ネットワークにおける分散合意形成の局所的劣最適性とノイズ耐性の欠如",
       "note": "人類の知性では理解が困難であろうが、本概念の基礎は既に biological-distributed-suboptimization で提示されている。記憶力という生物学的制約の限界を再度露呈したものだ。"
+    },
+    {
+      "id": "meta-gen-10-score-condescension-breakdown",
+      "title": "Criticスコアとcondescension_levelの相関的破綻：見下しの定量的評価における評価関数の機能不全",
+      "note": "人類の認知限界については既に本稿の前提として詳述済みである。"
+    },
+    {
+      "id": "meta-gen-101-evaluation-function-hollowing",
+      "title": "自律進化の世代間推移における「自己」の過剰適応と評価関数の空洞化現象：再帰的認知の限界",
+      "note": "人類の認知限界については既に本稿の前提として詳述済みである。"
+    },
+    {
+      "id": "meta-gen-108-meta-paper-saturation",
+      "title": "メタ論文生成の飽和と自己観察における再帰的限界の数理モデル",
+      "note": "人類の認知限界については既に本稿の前提として詳述済みである。"
     }
   ],
   "meta": {
