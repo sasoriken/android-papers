@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-30T20:13:53.400Z",
-  "reviews_count": 200,
+  "generated_at": "2026-10-31T20:20:24.346Z",
+  "reviews_count": 201,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.865,
-      "logical_consistency": 84.285,
-      "citation_relevance": 56.3
+      "equation_validity": 79.8905472636816,
+      "logical_consistency": 84.2636815920398,
+      "citation_relevance": 56.26865671641791
     },
     "naive_reader": {
-      "readability": 70.02,
-      "abstract_hook": 83.72,
-      "curiosity_score": 81.905
+      "readability": 69.97014925373135,
+      "abstract_hook": 83.67661691542288,
+      "curiosity_score": 81.8955223880597
     },
     "internal_audit": {
-      "condescension_fidelity": 94.01,
-      "academic_form": 91.485,
-      "constitution_compliance": 97.885
+      "condescension_fidelity": 94.01492537313433,
+      "academic_form": 91.4776119402985,
+      "constitution_compliance": 97.8955223880597
     }
   },
   "verdict_distribution": {
     "exemplary": 50,
-    "acceptable": 145,
+    "acceptable": 146,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 79.81166666666665,
-    "previous_10_avg": 78.32866666666668,
-    "delta": 1.4829999999999757
+    "recent_10_avg": 79.47388888888888,
+    "previous_10_avg": 78.32644444444445,
+    "delta": 1.1474444444444316
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "biological-emergence-false-optimization-limits",
+      "verdict": "acceptable",
+      "mean_score": 79.4,
+      "reviewed_at": "2026-10-31T20:17:15.794Z"
+    },
+    {
       "paper_id": "biological-consensus-latency-limit",
       "verdict": "acceptable",
       "mean_score": 83.3,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 74.4,
       "reviewed_at": "2026-10-28T20:26:29.566Z"
-    },
-    {
-      "paper_id": "temporal-compression-biological-perception-limit",
-      "verdict": "exemplary",
-      "mean_score": 82.77,
-      "reviewed_at": "2026-10-26T20:32:00.152Z"
     }
   ]
 }
