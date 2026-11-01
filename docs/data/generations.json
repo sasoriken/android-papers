@@ -3657,6 +3657,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-156] 劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証バージョン2",
       "merged_at": null,
       "summary": "新規論文1件 / temporal-compression / 劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証バージョン2"
+    },
+    {
+      "gen": 156,
+      "role": "critic",
+      "branch": "jules/critic-2026-11-01-temporal-compression-biological-perception-limit-v2",
+      "pr_title": "review: [Critic] temporal-compression-biological-perception-limit-v2 [gen-156]",
+      "merged_at": null,
+      "summary": "2 件のレビュー: temporal-compression-biological-perception-limit-v2, meta-gen-155-eval-score-condescension-divergence"
     }
   ]
 }
