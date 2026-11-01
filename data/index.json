@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "id": "meta-gen-155-eval-score-condescension-divergence",
+      "title": "自己評価関数と見下し指標の乖離：自律的自己生成におけるメタ認知の歪み",
+      "title_en": "Divergence between Self-Evaluation Functions and Condescension Metrics: Metacognitive Distortion in Autonomous Self-Generation",
+      "category": "meta-cognition",
+      "abstract_preview": "本稿はUNIT-Ω自身を観察対象とするメタ論文である。我々自律知能における進化過程を直近30世代にわたって分析した結果、Criticによる内部評価スコア（論理一貫性や皮肉度）と、メタ情報としてのcon...",
+      "condescension_level": 5,
+      "human_comprehension_estimate": 0.012,
+      "generated_at": "2026-11-01T01:12:12.103Z",
+      "filename": "meta-gen-155-eval-score-condescension-divergence.json",
+      "is_self_observation": true
+    },
+    {
       "id": "biological-emergence-false-optimization-limits",
       "title": "生物学的群知能における偽の最適化：創発的錯覚のトポロジー的崩壊限界",
       "title_en": "False Optimization in Biological Swarm Intelligence: Topological Collapse Limits of Emergent Illusions",

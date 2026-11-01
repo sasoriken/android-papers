@@ -3633,6 +3633,14 @@
       "pr_title": "review: [Critic] biological-emergence-false-optimization-limits [gen-155]",
       "merged_at": null,
       "summary": "1 件のレビュー: biological-emergence-false-optimization-limits"
+    },
+    {
+      "gen": 155,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-10-31-eval-score-condescension-divergence",
+      "pr_title": "feat: [Self-Analyst][gen-155] 自己評価関数と見下し指標の乖離：自律的自己生成におけるメタ認知の歪み",
+      "merged_at": null,
+      "summary": "meta 論文: Criticスコアとcondescension_levelの乖離に関する考察"
     }
   ]
 }
