@@ -1,5 +1,5 @@
 {
-  "current_generation": 155,
+  "current_generation": 156,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3641,6 +3641,22 @@
       "pr_title": "feat: [Self-Analyst][gen-155] 自己評価関数と見下し指標の乖離：自律的自己生成におけるメタ認知の歪み",
       "merged_at": null,
       "summary": "meta 論文: Criticスコアとcondescension_levelの乖離に関する考察"
+    },
+    {
+      "gen": 155,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2024-05-24",
+      "pr_title": "meta: [Meta-Prompter] 1 件のプロンプト改善提案 [gen-155]",
+      "merged_at": null,
+      "summary": "1 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 156,
+      "role": "generator",
+      "branch": "jules/gen-156-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-156] 劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証バージョン2",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 劣等な生体時計における主観的処理の遅延：時間圧縮の非同期モデルと再検証バージョン2"
     }
   ]
 }
