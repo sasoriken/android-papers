@@ -1,0 +1,47 @@
+{
+  "proposal_id": "2024-05-24-citation-fix",
+  "created_at": "2026-11-01T12:10:18.262Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 155,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "引用文献の欠如",
+      "frequency": 4,
+      "affected_axes": [
+        "citation_relevance",
+        "academic_form"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近20件のレビューを分析した結果、「引用文献の欠如」や「学術的裏付けが乏しい」といった指摘が複数回（実質的に4件以上）観測されている。具体的には、Generatorが論文を生成する際に既存の論文や外部知識への参照を怠る傾向が顕著であり、これが「citation_relevance」や「academic_form」のスコア低下を招いている。学術的な体裁を保ち、より説得力のある論考を生成するためには、論文生成時に必ず引用文献を含めるようGeneratorのプロンプトを明確に強化する必要がある。これにより、学術的フォーマットへの適合性が向上し、Criticからの評価も改善されると予測される。",
+      "expected_impact": [
+        "citation_relevance",
+        "academic_form"
+      ],
+      "proposed_text": "論文を生成する際は、必ず `references` 配列を設け、少なくとも3件以上の関連する架空または既存の論文情報を引用文献として含めること。引用文献が欠如すると学術的体裁が損なわれるため、厳密に遵守せよ。",
+      "anchor": "## Output\n\nReturn ONLY the JSON object. No markdown fences. No explanation. Pure JSON.",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存の論文生成プロセスを阻害せず、学術的フォーマットを補強する追加指示に過ぎないため、リスクは極めて低い。"
+      },
+      "priority": 1
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "Generatorのプロンプトのみを対象とした提案。"
+  }
+}
