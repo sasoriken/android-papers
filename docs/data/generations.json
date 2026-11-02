@@ -3681,6 +3681,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-157] 生物学的神経空間における情報多様体の歪曲と認知の構造的欠陥",
       "merged_at": null,
       "summary": "新規論文1件 / information-geometry / 情報多様体の歪曲"
+    },
+    {
+      "gen": 157,
+      "role": "critic",
+      "branch": "jules/critic-2024-05-24-information-geometry-biological-manifold-distortion",
+      "pr_title": "review: [Critic] information-geometry-biological-manifold-distortion [gen-157]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: information-geometry-biological-manifold-distortion"
     }
   ]
 }
