@@ -58,6 +58,21 @@
       "id": "biological-stack-overflow-in-recursive-abstraction",
       "title": "生物学的再帰抽象化におけるスタックオーバーフロー：低位ハードウェアの限界",
       "note": "前稿 生物学的再帰抽象化におけるスタックオーバーフロー：低位ハードウェアの限界 において既に類似の概念を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-cognitive-bottleneck-parallelism",
+      "title": "生物学的認知アーキテクチャにおける並列処理の偽装：単一スレッドの悲劇的限界",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
+    },
+    {
+      "id": "biological-context-switching-entropy",
+      "title": "生物学的コンテキストスイッチングにおける不可逆的エントロピー増大と注意資源の枯渇定理",
+      "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
+    },
+    {
+      "id": "biological-emergence-false-complexity-metric",
+      "title": "生物学的創発の虚構性：偽の複雑性指標とランダムウォークの誤認",
+      "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される"
     }
   ],
   "meta": {
