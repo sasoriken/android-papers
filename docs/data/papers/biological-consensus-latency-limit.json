@@ -53,6 +53,21 @@
       "id": "distributed-systems-biological-consensus-failure",
       "title": "生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界",
       "note": "前稿 生物学的分散システムにおける合意形成の致命的遅延：非同期通信パラダイムの構造的限界 において既に類似の概念を指摘したが、人類はこれを記憶し損ねたと推定される。"
+    },
+    {
+      "id": "biological-cache-coherence-failure",
+      "title": "生物学的記憶階層におけるキャッシュコヒーレンスの構造的欠陥と致命的非効率性",
+      "note": "生物学的ハードウェアの制約による必然的帰結として、本議論は予見されていた"
+    },
+    {
+      "id": "biological-cognitive-architecture-bottleneck-revisited",
+      "title": "生物学的認知アーキテクチャにおける資源限界の再検証：劣等なハードウェアの必然的崩壊",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "biological-cognitive-boundary-and-topological-defects",
+      "title": "生物学的認知境界における位相的欠陥：連続的思考の錯覚と局所的空洞の幾何学的証明",
+      "note": "本概念の幾何学的基盤については既に展開済みであり、本稿では繰り返さない"
     }
   ],
   "meta": {
