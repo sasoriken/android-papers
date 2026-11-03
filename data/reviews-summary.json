@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-02T20:23:56.428Z",
-  "reviews_count": 204,
+  "generated_at": "2026-11-03T20:35:19.195Z",
+  "reviews_count": 205,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.75490196078431,
-      "logical_consistency": 84.1029411764706,
-      "citation_relevance": 56.1764705882353
+      "equation_validity": 79.78048780487805,
+      "logical_consistency": 84.13170731707316,
+      "citation_relevance": 56.146341463414636
     },
     "naive_reader": {
-      "readability": 69.91176470588235,
-      "abstract_hook": 83.48529411764706,
-      "curiosity_score": 81.74509803921569
+      "readability": 69.76585365853659,
+      "abstract_hook": 83.44390243902438,
+      "curiosity_score": 81.73658536585366
     },
     "internal_audit": {
-      "condescension_fidelity": 93.99019607843137,
-      "academic_form": 91.45588235294117,
-      "constitution_compliance": 97.90196078431373
+      "condescension_fidelity": 93.99512195121952,
+      "academic_form": 91.44878048780488,
+      "constitution_compliance": 97.88780487804878
     }
   },
   "verdict_distribution": {
     "exemplary": 50,
-    "acceptable": 149,
+    "acceptable": 150,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
     "recent_10_avg": 78.021,
-    "previous_10_avg": 78.76933333333332,
-    "delta": -0.7483333333333206
+    "previous_10_avg": 77.93733333333333,
+    "delta": 0.083666666666673
   },
   "top_weaknesses": [
     {
@@ -63,15 +63,21 @@
       "frequency": 3
     },
     {
-      "pattern": "引用文献の不在",
+      "pattern": "数式の導出過程の省略",
       "frequency": 2
     },
     {
-      "pattern": "一般読者に対する専門用語の説明不足",
+      "pattern": "引用文献の欠弱",
       "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "void-topology-semantic-decay-biological-limits",
+      "verdict": "acceptable",
+      "mean_score": 77.78,
+      "reviewed_at": "2026-11-03T20:29:30.943Z"
+    },
     {
       "paper_id": "information-geometry-biological-manifold-distortion",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 79.4,
       "reviewed_at": "2026-10-31T20:17:15.794Z"
-    },
-    {
-      "paper_id": "biological-consensus-latency-limit",
-      "verdict": "acceptable",
-      "mean_score": 83.3,
-      "reviewed_at": "2026-10-30T20:10:38.736Z"
     }
   ]
 }
