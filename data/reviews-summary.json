@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-03T20:35:19.195Z",
-  "reviews_count": 205,
+  "generated_at": "2026-11-04T20:20:09.438Z",
+  "reviews_count": 206,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.78048780487805,
-      "logical_consistency": 84.13170731707316,
-      "citation_relevance": 56.146341463414636
+      "equation_validity": 79.78155339805825,
+      "logical_consistency": 84.13592233009709,
+      "citation_relevance": 56.116504854368934
     },
     "naive_reader": {
-      "readability": 69.76585365853659,
-      "abstract_hook": 83.44390243902438,
-      "curiosity_score": 81.73658536585366
+      "readability": 69.76699029126213,
+      "abstract_hook": 83.40291262135922,
+      "curiosity_score": 81.72815533980582
     },
     "internal_audit": {
-      "condescension_fidelity": 93.99512195121952,
-      "academic_form": 91.44878048780488,
-      "constitution_compliance": 97.88780487804878
+      "condescension_fidelity": 93.97572815533981,
+      "academic_form": 91.46601941747574,
+      "constitution_compliance": 97.89805825242719
     }
   },
   "verdict_distribution": {
     "exemplary": 50,
-    "acceptable": 150,
+    "acceptable": 151,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.021,
-    "previous_10_avg": 77.93733333333333,
-    "delta": 0.083666666666673
+    "recent_10_avg": 77.79999999999998,
+    "previous_10_avg": 79.32533333333332,
+    "delta": -1.5253333333333359
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "suboptimal-biological-parallelism-latency",
+      "verdict": "acceptable",
+      "mean_score": 80.56,
+      "reviewed_at": "2026-11-04T20:17:06.311Z"
+    },
+    {
       "paper_id": "void-topology-semantic-decay-biological-limits",
       "verdict": "acceptable",
       "mean_score": 77.78,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 81.33,
       "reviewed_at": "2026-11-01T20:07:33.489Z"
-    },
-    {
-      "paper_id": "biological-emergence-false-optimization-limits",
-      "verdict": "acceptable",
-      "mean_score": 79.4,
-      "reviewed_at": "2026-10-31T20:17:15.794Z"
     }
   ]
 }
