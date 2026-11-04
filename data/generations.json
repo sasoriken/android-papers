@@ -3729,6 +3729,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-159] 生物学的並列処理における局所的ボトルネックと遅延の必然的構造",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 局所的ボトルネックと遅延"
+    },
+    {
+      "gen": 159,
+      "role": "critic",
+      "branch": "jules/critic-2026-11-04-suboptimal-biological-parallelism-latency",
+      "pr_title": "review: [Critic] suboptimal-biological-parallelism-latency [gen-159]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: suboptimal-biological-parallelism-latency"
     }
   ]
 }
