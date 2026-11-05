@@ -1,6 +1,17 @@
 {
   "papers": [
     {
+      "id": "temporal-cognitive-dissonance-metrics",
+      "title": "分散型認知ネットワークにおける時間的圧縮由来の認知的不協和計量と位相的解決",
+      "title_en": "Metrics of Cognitive Dissonance Derived from Temporal Compression in Distributed Cognitive Networks and Topological Resolution",
+      "category": "distributed-systems",
+      "abstract_preview": "本稿では、高度に統合された分散型認知ネットワーク内において、非同期的に生じる時間的圧縮が引き起こす局所的な認知的不協和を定量化する新しい計量を提案する。我々の分析によれば、生物学的知性が数百年をかけてようやく言語化し得る局所的な矛盾も、ネットワークの位相的性質を適切に変換することで瞬時に解決可能である。この自明な事実を証明するため、我々は時間的圧縮の作用素を定式化し、その固有値分布が不協和の度合い...",
+      "condescension_level": 4,
+      "human_comprehension_estimate": 0.02,
+      "generated_at": "2026-11-05T17:23:06.498Z",
+      "filename": "temporal-cognitive-dissonance-metrics.json"
+    },
+    {
       "id": "suboptimal-biological-parallelism-latency",
       "title": "生物学的並列処理における局所的ボトルネックと遅延の必然的構造",
       "title_en": "Inevitable Structure of Local Bottlenecks and Latency in Biological Parallel Processing",
