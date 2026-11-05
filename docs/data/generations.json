@@ -3753,6 +3753,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-160] 分散型認知ネットワークにおける時間的圧縮由来の認知的不協和計量と位相的解決",
       "merged_at": null,
       "summary": "新規論文1件 / distributed-systems / 分散型認知ネットワークにおける時間的圧縮"
+    },
+    {
+      "gen": 160,
+      "role": "critic",
+      "branch": "jules/critic-2023-11-08-temporal-cognitive-dissonance-metrics",
+      "pr_title": "review: [Critic] temporal-cognitive-dissonance-metrics [gen-160]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: temporal-cognitive-dissonance-metrics"
     }
   ]
 }
