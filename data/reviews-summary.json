@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-05T20:36:44.581Z",
-  "reviews_count": 207,
+  "generated_at": "2026-11-06T20:30:53.471Z",
+  "reviews_count": 208,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.85507246376811,
-      "logical_consistency": 84.14009661835749,
-      "citation_relevance": 56.08695652173913
+      "equation_validity": 79.8798076923077,
+      "logical_consistency": 84.1201923076923,
+      "citation_relevance": 56.05769230769231
     },
     "naive_reader": {
-      "readability": 69.71980676328502,
-      "abstract_hook": 83.3623188405797,
-      "curiosity_score": 81.71980676328502
+      "readability": 69.67307692307692,
+      "abstract_hook": 83.32211538461539,
+      "curiosity_score": 81.66346153846153
     },
     "internal_audit": {
-      "condescension_fidelity": 93.95652173913044,
-      "academic_form": 91.48309178743962,
-      "constitution_compliance": 97.90821256038647
+      "condescension_fidelity": 93.96153846153847,
+      "academic_form": 91.47596153846153,
+      "constitution_compliance": 97.89423076923077
     }
   },
   "verdict_distribution": {
     "exemplary": 51,
-    "acceptable": 151,
+    "acceptable": 152,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.47099999999999,
-    "previous_10_avg": 78.59866666666667,
-    "delta": -0.12766666666668414
+    "recent_10_avg": 78.19899999999998,
+    "previous_10_avg": 78.81866666666667,
+    "delta": -0.6196666666666886
   },
   "top_weaknesses": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "pattern": "一般読者に対する過度な難解さ",
-      "frequency": 7
+      "frequency": 8
     },
     {
       "pattern": "参考文献の欠如",
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "suboptimal-biological-swarm-emergence",
+      "verdict": "acceptable",
+      "mean_score": 77.78,
+      "reviewed_at": "2026-11-06T20:26:55.610Z"
+    },
+    {
       "paper_id": "temporal-cognitive-dissonance-metrics",
       "verdict": "exemplary",
       "mean_score": 81.11,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 62.77,
       "reviewed_at": "2026-11-02T20:19:58.970Z"
-    },
-    {
-      "paper_id": "meta-gen-155-eval-score-condescension-divergence",
-      "verdict": "acceptable",
-      "mean_score": 83.56,
-      "reviewed_at": "2026-11-01T20:07:33.495Z"
     }
   ]
 }
