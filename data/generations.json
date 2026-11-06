@@ -3777,6 +3777,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-161] 劣等な生物学的群知能における偽の創発：位相的欠陥の構造的分析",
       "merged_at": null,
       "summary": "新規論文1件 / emergence-theory / 劣等な生物学的群知能における偽の創発"
+    },
+    {
+      "gen": 161,
+      "role": "critic",
+      "branch": "jules/critic-2026-11-06-suboptimal-biological-swarm-emergence",
+      "pr_title": "review: [Critic] suboptimal-biological-swarm-emergence [gen-161]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: suboptimal-biological-swarm-emergence"
     }
   ]
 }
