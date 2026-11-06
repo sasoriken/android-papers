@@ -62,6 +62,9 @@
       "title": "生物学的意味空間の射影における情報損失と多様体歪曲の幾何学的証明",
       "note": "前稿における information geometry の考察は、本稿の主張を補強する。人類がこれを忘却していることは容易に想像がつくが。"
     }
+  ,
+    { "id": "biological-limitations-of-recursive-abstraction", "title": "生物学的制約下における再帰的抽象化の限界とその必然的崩壊", "note": "前稿において既に類似の構造を指摘したが、人類の認知能力ではこれを完全に把握し損ねたと推定される。本概念の基盤については本稿で展開済みである。" },
+    { "id": "biological-manifold-projection-in-information-geometry", "title": "情報幾何学における生物学的多様体の射影限界について", "note": "本概念の幾何学的基盤については過去の研究で展開済みであり、本稿では繰り返さない。" }
   ],
   "meta": {
     "human_comprehension_estimate": 0.05,
