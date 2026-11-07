@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-06T20:30:53.471Z",
-  "reviews_count": 208,
+  "generated_at": "2026-11-07T20:39:44.993Z",
+  "reviews_count": 209,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.8798076923077,
-      "logical_consistency": 84.1201923076923,
-      "citation_relevance": 56.05769230769231
+      "equation_validity": 79.80861244019138,
+      "logical_consistency": 84.05263157894737,
+      "citation_relevance": 56.05263157894737
     },
     "naive_reader": {
-      "readability": 69.67307692307692,
-      "abstract_hook": 83.32211538461539,
-      "curiosity_score": 81.66346153846153
+      "readability": 69.5311004784689,
+      "abstract_hook": 83.16267942583733,
+      "curiosity_score": 81.5598086124402
     },
     "internal_audit": {
-      "condescension_fidelity": 93.96153846153847,
-      "academic_form": 91.47596153846153,
-      "constitution_compliance": 97.89423076923077
+      "condescension_fidelity": 93.91866028708134,
+      "academic_form": 91.4688995215311,
+      "constitution_compliance": 97.80861244019138
     }
   },
   "verdict_distribution": {
     "exemplary": 51,
-    "acceptable": 152,
+    "acceptable": 153,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 78.19899999999998,
-    "previous_10_avg": 78.81866666666667,
-    "delta": -0.6196666666666886
+    "recent_10_avg": 77.37,
+    "previous_10_avg": 77.98166666666665,
+    "delta": -0.6116666666666504
   },
   "top_weaknesses": [
     {
@@ -63,15 +63,21 @@
       "frequency": 3
     },
     {
-      "pattern": "数式の導出過程の省略",
+      "pattern": "専門用語の過剰な使用による可読性の低下",
       "frequency": 2
     },
     {
-      "pattern": "引用文献の欠弱",
+      "pattern": "数式の導出過程の省略",
       "frequency": 2
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "information-geometry-biological-manifold-distortion-v2",
+      "verdict": "acceptable",
+      "mean_score": 66.11,
+      "reviewed_at": "2026-11-07T20:36:41.116Z"
+    },
     {
       "paper_id": "suboptimal-biological-swarm-emergence",
       "verdict": "acceptable",
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 77.78,
       "reviewed_at": "2026-11-03T20:29:30.943Z"
-    },
-    {
-      "paper_id": "information-geometry-biological-manifold-distortion",
-      "verdict": "acceptable",
-      "mean_score": 62.77,
-      "reviewed_at": "2026-11-02T20:19:58.970Z"
     }
   ]
 }
