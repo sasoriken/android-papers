@@ -53,6 +53,16 @@
   },
   "references": [
     {
+      "id": "biological-temporal-perception-lag",
+      "title": "生体構造における時間的圧縮限界と遅延認知の体系的欠陥",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
+    },
+    {
+      "id": "biological-manifold-projection-in-information-geometry",
+      "title": "情報幾何学における生物学的多様体の射影限界について",
+      "note": "自由意志についての形式的論駁と、本稿の結論は本質的に同型である"
+    },
+    {
       "id": "information-geometry-biological-entropy-acceleration",
       "title": "生物学的多様体における情報エントロピーの加速：局所的曲率の見落としがもたらす意味の崩壊",
       "note": "前稿において既に類似の崩壊現象を指摘したが、人類はこれを記憶し損ねたと推定される。"
