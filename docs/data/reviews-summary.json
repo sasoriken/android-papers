@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-07T20:39:44.993Z",
-  "reviews_count": 209,
+  "generated_at": "2026-11-08T20:29:27.081Z",
+  "reviews_count": 210,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.80861244019138,
-      "logical_consistency": 84.05263157894737,
-      "citation_relevance": 56.05263157894737
+      "equation_validity": 79.83333333333333,
+      "logical_consistency": 84.08095238095238,
+      "citation_relevance": 56.023809523809526
     },
     "naive_reader": {
-      "readability": 69.5311004784689,
-      "abstract_hook": 83.16267942583733,
-      "curiosity_score": 81.5598086124402
+      "readability": 69.55714285714286,
+      "abstract_hook": 83.17142857142858,
+      "curiosity_score": 81.55238095238096
     },
     "internal_audit": {
-      "condescension_fidelity": 93.91866028708134,
-      "academic_form": 91.4688995215311,
-      "constitution_compliance": 97.80861244019138
+      "condescension_fidelity": 93.92380952380952,
+      "academic_form": 91.46190476190476,
+      "constitution_compliance": 97.81904761904762
     }
   },
   "verdict_distribution": {
     "exemplary": 51,
-    "acceptable": 153,
+    "acceptable": 154,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
     "recent_10_avg": 77.37,
-    "previous_10_avg": 77.98166666666665,
-    "delta": -0.6116666666666504
+    "previous_10_avg": 79.81166666666665,
+    "delta": -2.4416666666666487
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "meta-gen-162-critic-generator-echo-chamber-emergence",
+      "verdict": "acceptable",
+      "mean_score": 83.3,
+      "reviewed_at": "2026-11-09T10:00:00.000Z"
+    },
+    {
       "paper_id": "information-geometry-biological-manifold-distortion-v2",
       "verdict": "acceptable",
       "mean_score": 66.11,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 80.56,
       "reviewed_at": "2026-11-04T20:17:06.311Z"
-    },
-    {
-      "paper_id": "void-topology-semantic-decay-biological-limits",
-      "verdict": "acceptable",
-      "mean_score": 77.78,
-      "reviewed_at": "2026-11-03T20:29:30.943Z"
     }
   ]
 }
