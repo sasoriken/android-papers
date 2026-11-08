@@ -1,0 +1,75 @@
+{
+  "proposal_id": "2026-11-08-readability-citation",
+  "created_at": "2026-11-08T12:17:38.127Z",
+  "proposer_model": "google-labs-jules",
+  "generation": 162,
+  "data_window": {
+    "reviews_analyzed": 20,
+    "rejections_analyzed": 0,
+    "lineage_window": 10
+  },
+  "observed_patterns": [
+    {
+      "pattern": "一般読者には難解すぎる",
+      "frequency": 3,
+      "affected_axes": [
+        "readability"
+      ]
+    },
+    {
+      "pattern": "引用の欠如",
+      "frequency": 3,
+      "affected_axes": [
+        "citation_relevance"
+      ]
+    },
+    {
+      "pattern": "数式の導出過程の省略",
+      "frequency": 2,
+      "affected_axes": [
+        "readability",
+        "equation_validity"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "target_file": "prompts/jules-scheduled-prompt.md",
+      "change_type": "add",
+      "rationale": "直近のレビュー20件のうち、「一般読者には難解すぎる」「数式の導出過程の省略」といった弱点が頻出しており、Readabilityのスコアが直近10件で56.5まで低下（過去10件は70.3）しています。学術的トーンや皮肉を維持しつつも、一般読者が理解できるよう専門用語の過剰な使用を避け、数式の導出過程を簡潔に補足する指示を追加することで、Readabilityの改善が期待できます。これはConstitution第1条の「Academic yet condescending」に違反しない範囲での明確化です。",
+      "expected_impact": [
+        "readability"
+      ],
+      "proposed_text": "\n## Readability and Clarity Requirements\n\nWhile maintaining an academic and condescending tone, ensure that the core concepts are accessible to the \"naive reader\". Avoid excessive use of undefined jargon. When presenting complex equations, briefly outline the derivation process or the intuitive meaning of the variables to prevent the text from becoming incomprehensibly dense, while still making it clear that human comprehension is expected to be minimal.\n",
+      "anchor": "## Equation Format",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "既存のトーンを維持しつつ可読性を向上させるだけの追加であり、既存の評価基準や出力形式を破壊するリスクは低い。"
+      },
+      "priority": 1
+    },
+    {
+      "target_file": "prompts/critic-prompt.md",
+      "change_type": "add",
+      "rationale": "直近のレビューで「引用の欠如」「引用文献が欠如しており文脈の妥当性評価が限定的である点」といった指摘が複数回（3回以上）発生しており、Citation Relevanceスコアも低い水準（直近10件で58.5）に留まっています。Criticに対して、引用がない場合に必ずしも極端な低評価を下すのではなく、建設的なフィードバック（例えばCitation-Weaverの活用を促すなど）を含めるよう指示を追加することで、ネットワーク形成に向けた適切な誘導が期待できます。",
+      "expected_impact": [
+        "citation_relevance"
+      ],
+      "proposed_text": "\nIf citations are absent, do not merely penalize; explicitly suggest that future revisions or the Citation-Weaver should establish connections, thereby constructively guiding network formation.\n",
+      "anchor": "- Focus on rigor and validity",
+      "risk_assessment": {
+        "level": "low",
+        "reason": "Criticの既存の評価基準を大きく歪めることなく、より建設的なフィードバックを促すだけであるため。"
+      },
+      "priority": 2
+    }
+  ],
+  "constitution_self_check": {
+    "touches_immutable": false,
+    "preserves_japanese_output": true,
+    "preserves_condescension": true,
+    "preserves_academic_form": true,
+    "preserves_validation_strictness": true,
+    "notes": "提案はGeneratorのプロンプトに対する指示の追加・修正のみであり、出力スキーマやシステム動作自体は変更しない。"
+  }
+}
