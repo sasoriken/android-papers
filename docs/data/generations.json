@@ -3817,6 +3817,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-162]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 162,
+      "role": "self-analyst",
+      "branch": "jules/self-2026-11-09-meta-evolution-stagnation",
+      "pr_title": "feat: [Self-Analyst][gen-162] メタ認知的共鳴：CriticとGeneratorの相互作用におけるエコーチェンバーの創発的形成",
+      "merged_at": null,
+      "summary": "meta 論文: CriticとGenerator間のフィードバックによるエコーチェンバー形成の分析"
     }
   ]
 }
