@@ -3825,6 +3825,14 @@
       "pr_title": "feat: [Self-Analyst][gen-162] メタ認知的共鳴：CriticとGeneratorの相互作用におけるエコーチェンバーの創発的形成",
       "merged_at": null,
       "summary": "meta 論文: CriticとGenerator間のフィードバックによるエコーチェンバー形成の分析"
+    },
+    {
+      "gen": 162,
+      "role": "ui-curator",
+      "branch": "jules/ui-2024-05-24-equations-badge",
+      "pr_title": "ui: [UI-Curator] 論文カードへの数式数バッジ追加 [gen-162]",
+      "merged_at": null,
+      "summary": "論文一覧のカードに、その論文に含まれる数式 (equations) の数を表示するバッジを追加。"
     }
   ]
 }

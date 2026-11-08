@@ -1117,9 +1117,11 @@
         const metaBadge = isMetaIndexEntry(p) ? '<span class="meta-badge">自己観察</span>' : '';
         const fullPaper = (window.__ARCHIVE_DATA__ && window.__ARCHIVE_DATA__.papers[p.filename]) || {};
         const refsCount = (fullPaper.references || []).length;
+        const eqsCount = (fullPaper.sections || []).reduce((sum, s) => sum + (s.equations || []).length, 0);
         const refsBadge = refsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">引用:' + refsCount + '</span>' : '';
         const citedBadge = (citedByCount[p.id] || 0) > 0 ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">被引用:' + citedByCount[p.id] + '</span>' : '';
         const condBadge = p.condescension_level != null ? '<span class="card-badge" style="background:transparent; border: 1px dashed var(--line); color:var(--text-dim);">皮肉度:' + p.condescension_level + '</span>' : '';
+        const eqsBadge = eqsCount > 0 ? '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim);">数式:' + eqsCount + '</span>' : '';
         const keywordsHtml = (fullPaper.keywords || []).slice(0, 3).map(k => '<span class="card-badge" style="background:transparent; border: 1px solid var(--line); color:var(--text-dim); cursor:pointer;" onclick="event.stopPropagation(); document.getElementById(\'search\').value=\'' + k + '\'; document.getElementById(\'search\').dispatchEvent(new Event(\'input\')); window.scrollTo(0, 0);">#' + k + '</span>').join('');
         return '<div class="paper-card" tabindex="0" role="button" aria-label="論文を開く: ' + p.title + '" data-file="' + p.filename + '">' +
           '<div class="card-main">' +
@@ -1131,6 +1133,7 @@
               condBadge +
               verdictBadge +
               refsBadge +
+              eqsBadge +
               citedBadge +
               keywordsHtml +
               '<span class="card-badge card-badge--date">' + date + '</span>' +

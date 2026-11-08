@@ -1,5 +1,3 @@
-ui: [UI-Curator] 引用の force-directed graph 追加 [gen-13]
-
 - [x] 既存 ID（`#landing`, `#archive-section`, `#paper-view`, `#paper-grid`, `#search`, `#sort-select`, `#evo-log-view`, `#evo-log-list`, `#footer-gen`, `#footer-papers`, `#footer-reviewed`, `#header-gen`, `#evo-back-nav`, `#footer-evo-link`, `#header-evo-link`）が無傷
 - [x] 既存 CSS クラス（`.verdict-badge`, `.persona-row`, `.evo-entry`, `.meta-badge`, `.ref-link`, `.paper-card`, `.stat`, `.badge`）の振る舞いを破壊していない
 - [x] 既存関数のシグネチャを変えていない
@@ -9,6 +7,8 @@ ui: [UI-Curator] 引用の force-directed graph 追加 [gen-13]
 - [x] アニメーションは最小限（既存の `pulse` / `t-line` / `writeSlide` 程度の控えめさ）
 - [x] データが空（reviews 0 件、generations 0 件）の状態でも壊れない
 
-改善理由: 引用が複数論文に存在するデータ蓄積に基づき、Evolution Log とは別の `docs/graph.html` で引用の force-directed graph を作成。
-どのデータに基づくか: papers に蓄積された references (引用が複数存在)
-diff 行数: 約 80 行 (HTML+JS)
+改善理由: 論文データには各セクション内に `equations` として数式のリストが含まれていますが、これまでアーカイブの UI (論文カード) 上には論文ごとの数式のボリューム感が表示されておらず、どの論文が数式中心であるかの視覚的インデックスが不足していました。
+
+データ基盤: `__ARCHIVE_DATA__.papers[<filename>].sections[].equations`
+
+diff 行数: 約 6 行
