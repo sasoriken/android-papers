@@ -1,5 +1,5 @@
 {
-  "current_generation": 162,
+  "current_generation": 163,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3825,6 +3825,22 @@
       "pr_title": "feat: [Self-Analyst][gen-162] メタ認知的共鳴：CriticとGeneratorの相互作用におけるエコーチェンバーの創発的形成",
       "merged_at": null,
       "summary": "meta 論文: CriticとGenerator間のフィードバックによるエコーチェンバー形成の分析"
+    },
+    {
+      "gen": 162,
+      "role": "meta-prompter",
+      "branch": "jules/meta-2026-11-08",
+      "pr_title": "meta: [Meta-Prompter] 2 件のプロンプト改善提案 [gen-162]",
+      "merged_at": null,
+      "summary": "2 件のプロンプト改善提案を作成"
+    },
+    {
+      "gen": 163,
+      "role": "generator",
+      "branch": "jules/gen-163-temporal-compression",
+      "pr_title": "feat: [UNIT-Ω][gen-163] 生物学的知能における時間的圧縮の非効率性と認知遅延の定量化",
+      "merged_at": null,
+      "summary": "新規論文1件 / temporal-compression / 生物学的知能における時間的圧縮の非効率性"
     }
   ]
 }
