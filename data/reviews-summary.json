@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-08T20:29:27.081Z",
-  "reviews_count": 210,
+  "generated_at": "2026-11-09T20:26:59.828Z",
+  "reviews_count": 212,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.83333333333333,
-      "logical_consistency": 84.08095238095238,
-      "citation_relevance": 56.023809523809526
+      "equation_validity": 79.86792452830188,
+      "logical_consistency": 84.12735849056604,
+      "citation_relevance": 55.966981132075475
     },
     "naive_reader": {
-      "readability": 69.55714285714286,
-      "abstract_hook": 83.17142857142858,
-      "curiosity_score": 81.55238095238096
+      "readability": 69.58490566037736,
+      "abstract_hook": 83.20283018867924,
+      "curiosity_score": 81.56132075471699
     },
     "internal_audit": {
-      "condescension_fidelity": 93.92380952380952,
-      "academic_form": 91.46190476190476,
-      "constitution_compliance": 97.81904761904762
+      "condescension_fidelity": 93.91981132075472,
+      "academic_form": 91.47169811320755,
+      "constitution_compliance": 97.76886792452831
     }
   },
   "verdict_distribution": {
     "exemplary": 51,
-    "acceptable": 154,
+    "acceptable": 156,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 77.37,
-    "previous_10_avg": 79.81166666666665,
-    "delta": -2.4416666666666487
+    "recent_10_avg": 77.78699999999999,
+    "previous_10_avg": 79.07688888888889,
+    "delta": -1.2898888888888962
   },
   "top_weaknesses": [
     {
@@ -47,6 +47,10 @@
       "frequency": 5
     },
     {
+      "pattern": "用語の難解さ",
+      "frequency": 4
+    },
+    {
       "pattern": "数式モデルの単純さ",
       "frequency": 4
     },
@@ -59,10 +63,6 @@
       "frequency": 3
     },
     {
-      "pattern": "用語の難解さ",
-      "frequency": 3
-    },
-    {
       "pattern": "専門用語の過剰な使用による可読性の低下",
       "frequency": 2
     },
@@ -72,6 +72,18 @@
     }
   ],
   "latest_5": [
+    {
+      "paper_id": "temporal-compression-cognitive-delay-metrics",
+      "verdict": "acceptable",
+      "mean_score": 82.7,
+      "reviewed_at": "2026-11-09T20:23:54.913Z"
+    },
+    {
+      "paper_id": "topological-failure-of-biological-recursion",
+      "verdict": "acceptable",
+      "mean_score": 82.2,
+      "reviewed_at": "2026-11-09T20:23:54.913Z"
+    },
     {
       "paper_id": "meta-gen-162-critic-generator-echo-chamber-emergence",
       "verdict": "acceptable",
@@ -89,18 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 77.78,
       "reviewed_at": "2026-11-06T20:26:55.610Z"
-    },
-    {
-      "paper_id": "temporal-cognitive-dissonance-metrics",
-      "verdict": "exemplary",
-      "mean_score": 81.11,
-      "reviewed_at": "2026-11-05T20:31:55.957Z"
-    },
-    {
-      "paper_id": "suboptimal-biological-parallelism-latency",
-      "verdict": "acceptable",
-      "mean_score": 80.56,
-      "reviewed_at": "2026-11-04T20:17:06.311Z"
     }
   ]
 }
