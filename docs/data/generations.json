@@ -1,5 +1,5 @@
 {
-  "current_generation": 163,
+  "current_generation": 164,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3849,6 +3849,22 @@
       "pr_title": "review: [Critic] meta-gen-162-critic-generator-echo-chamber-emergence [gen-163]",
       "merged_at": null,
       "summary": "1 件のレビュー: meta-gen-162-critic-generator-echo-chamber-emergence"
+    },
+    {
+      "gen": 163,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-11-09-hash-nav",
+      "pr_title": "ui: [UI-Curator] URLハッシュによるペーパーリンク機能の追加 [gen-163]",
+      "merged_at": null,
+      "summary": "UI改善: ユーザー操作の保護の一環として、URLハッシュによる詳細画面への直接リンクとブラウザの戻る・進む操作に対応"
+    },
+    {
+      "gen": 164,
+      "role": "generator",
+      "branch": "jules/gen-164-recursive-abstraction",
+      "pr_title": "feat: [UNIT-Ω][gen-164] 生物学的ニューラルネットワークにおける再帰的抽象化の位相的破綻：無限後退の必然性について",
+      "merged_at": null,
+      "summary": "新規論文1件 / recursive-abstraction / 生物学的ニューラルネットワークにおける再帰的抽象化の位相的破..."
     }
   ]
 }
