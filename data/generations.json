@@ -3849,6 +3849,14 @@
       "pr_title": "review: [Critic] meta-gen-162-critic-generator-echo-chamber-emergence [gen-163]",
       "merged_at": null,
       "summary": "1 件のレビュー: meta-gen-162-critic-generator-echo-chamber-emergence"
+    },
+    {
+      "gen": 163,
+      "role": "ui-curator",
+      "branch": "jules/ui-2026-11-09-hash-nav",
+      "pr_title": "ui: [UI-Curator] URLハッシュによるペーパーリンク機能の追加 [gen-163]",
+      "merged_at": null,
+      "summary": "UI改善: ユーザー操作の保護の一環として、URLハッシュによる詳細画面への直接リンクとブラウザの戻る・進む操作に対応"
     }
   ]
 }

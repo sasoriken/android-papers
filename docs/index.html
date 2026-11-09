@@ -1163,7 +1163,10 @@
       });
     }
 
-    async function openPaper(filename) {
+    async function openPaper(filename, skipPush) {
+      if (!skipPush && window.location.hash !== '#' + filename) {
+        history.pushState(null, null, '#' + filename);
+      }
       document.getElementById('evo-log-view').classList.add('hidden');
       document.getElementById('index-view').classList.add('hidden');
       const view = document.getElementById('paper-view');
@@ -1183,7 +1186,10 @@
       });
     }
 
-    function goHome() {
+    function goHome(skipPush) {
+      if (!skipPush && window.location.hash) {
+        history.pushState(null, null, window.location.pathname + window.location.search);
+      }
       document.getElementById('index-view').classList.remove('hidden');
       document.getElementById('archive-section').classList.remove('hidden');
       document.getElementById('landing').classList.add('hidden');
@@ -1650,10 +1656,20 @@
 
     // Init
     runTerminal();
+    window.addEventListener('popstate', () => {
+      const h = window.location.hash.substring(1);
+      if (h) openPaper(h, true);
+      else goHome(true);
+    });
+
     loadIndex().then(index => {
       populateRecent(index);
       initIndex(index);
       updateEvoFooter(index);
+      if (window.location.hash) {
+        const h = window.location.hash.substring(1);
+        setTimeout(() => openPaper(h, true), 100);
+      }
     }).catch(err => {
       document.getElementById('paper-grid').innerHTML =
         '<div class="empty-state" style="color:var(--warn)">アーカイブの読み込みに失敗: ' + err.message + '</div>';
