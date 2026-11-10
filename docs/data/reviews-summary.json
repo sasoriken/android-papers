@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-09T20:26:59.828Z",
-  "reviews_count": 212,
+  "generated_at": "2026-11-10T20:15:09.990Z",
+  "reviews_count": 213,
   "axis_averages": {
     "skeptical_researcher": {
-      "equation_validity": 79.86792452830188,
-      "logical_consistency": 84.12735849056604,
-      "citation_relevance": 55.966981132075475
+      "equation_validity": 79.89201877934272,
+      "logical_consistency": 84.15492957746478,
+      "citation_relevance": 55.93896713615023
     },
     "naive_reader": {
-      "readability": 69.58490566037736,
-      "abstract_hook": 83.20283018867924,
-      "curiosity_score": 81.56132075471699
+      "readability": 69.5868544600939,
+      "abstract_hook": 83.18779342723005,
+      "curiosity_score": 81.5774647887324
     },
     "internal_audit": {
-      "condescension_fidelity": 93.91981132075472,
-      "academic_form": 91.47169811320755,
-      "constitution_compliance": 97.76886792452831
+      "condescension_fidelity": 93.92488262910798,
+      "academic_form": 91.51173708920187,
+      "constitution_compliance": 97.77934272300469
     }
   },
   "verdict_distribution": {
     "exemplary": 51,
-    "acceptable": 156,
+    "acceptable": 157,
     "weak": 5,
     "failed": 0
   },
   "mean_score_trend": {
-    "recent_10_avg": 77.78699999999999,
-    "previous_10_avg": 79.07688888888889,
-    "delta": -1.2898888888888962
+    "recent_10_avg": 77.82000000000001,
+    "previous_10_avg": 79.744,
+    "delta": -1.9239999999999924
   },
   "top_weaknesses": [
     {
@@ -73,6 +73,12 @@
   ],
   "latest_5": [
     {
+      "paper_id": "void-topology-biological-cognitive-collapse",
+      "verdict": "acceptable",
+      "mean_score": 83.89,
+      "reviewed_at": "2026-11-10T20:12:05.704Z"
+    },
+    {
       "paper_id": "temporal-compression-cognitive-delay-metrics",
       "verdict": "acceptable",
       "mean_score": 82.7,
@@ -95,12 +101,6 @@
       "verdict": "acceptable",
       "mean_score": 66.11,
       "reviewed_at": "2026-11-07T20:36:41.116Z"
-    },
-    {
-      "paper_id": "suboptimal-biological-swarm-emergence",
-      "verdict": "acceptable",
-      "mean_score": 77.78,
-      "reviewed_at": "2026-11-06T20:26:55.610Z"
     }
   ]
 }
