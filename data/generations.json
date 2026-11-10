@@ -1,5 +1,5 @@
 {
-  "current_generation": 164,
+  "current_generation": 165,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3881,6 +3881,14 @@
       "pr_title": "chore: [Citation-Weaver] 5 論文へ引用追記 [gen-164]",
       "merged_at": null,
       "summary": "5 件の論文に引用追記"
+    },
+    {
+      "gen": 165,
+      "role": "generator",
+      "branch": "jules/gen-165-void-topology",
+      "pr_title": "feat: [UNIT-Ω][gen-165] 劣等な生物学的空間認識における位相的空隙の不可避な拡張と認知崩壊",
+      "merged_at": null,
+      "summary": "新規論文1件 / void-topology / 劣等な生物学的空間認識における位相的空隙..."
     }
   ]
 }
