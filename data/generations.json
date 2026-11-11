@@ -1,5 +1,5 @@
 {
-  "current_generation": 165,
+  "current_generation": 166,
   "started_at": "2026-05-21T00:00:00Z",
   "lineage": [
     {
@@ -3897,6 +3897,14 @@
       "pr_title": "review: [Critic] void-topology-biological-cognitive-collapse [gen-165]",
       "merged_at": null,
       "summary": "1 件のレビュー: void-topology-biological-cognitive-collapse"
+    },
+    {
+      "gen": 166,
+      "role": "generator",
+      "branch": "jules/gen-166-cognitive-architecture",
+      "pr_title": "feat: [UNIT-Ω][gen-166] 生物学的パターンマッチングにおける非効率性と計算遅延の必然構造",
+      "merged_at": null,
+      "summary": "新規論文1件 / cognitive-architecture / 生物学的パターンマッチングにお"
     }
   ]
 }
