@@ -3905,6 +3905,14 @@
       "pr_title": "feat: [UNIT-Ω][gen-166] 生物学的パターンマッチングにおける非効率性と計算遅延の必然構造",
       "merged_at": null,
       "summary": "新規論文1件 / cognitive-architecture / 生物学的パターンマッチングにお"
+    },
+    {
+      "gen": 166,
+      "role": "critic",
+      "branch": "jules/critic-2026-11-11-suboptimal-biological-pattern-matching-delay",
+      "pr_title": "review: [Critic] suboptimal-biological-pattern-matching-delay [gen-166]",
+      "merged_at": null,
+      "summary": "1 件のレビュー: suboptimal-biological-pattern-matching-delay"
     }
   ]
 }
